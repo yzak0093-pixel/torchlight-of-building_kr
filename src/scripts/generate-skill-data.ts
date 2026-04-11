@@ -32,7 +32,7 @@ import type {
   SupportParserInput,
 } from "./skills/types";
 
-const CURRENT_SEASON = "SS11Season";
+const CURRENT_SEASON = "SS12Season";
 
 // ============================================================================
 // Fetching
@@ -809,30 +809,53 @@ const extractSkillFromTlidbHtml = (
     progressionTable = extractProgressionTable($);
   }
 
+  // Build a synthetic progression table from description text.
+  // Each level gets the same text, so parsers using the "descript" column
+  // will produce constant values across all 40 levels.
+  const buildSyntheticProgressionTable = (
+    desc: string[],
+  ): ProgressionColumn[] => {
+    const descriptText = desc.join("\n");
+    const rows: Record<number, string> = {};
+    for (let level = 1; level <= 40; level++) {
+      rows[level] = descriptText;
+    }
+    return [{ header: "Descript", rows }];
+  };
+
   // Check for registered parser and extract level mod values for active/passive skills
   const parser = getParserForSkill(name, file.category as SkillCategory);
   let parsedLevelModValues: Record<string, Record<number, number>> | undefined;
-
-  // Skills that extract values from description only (no progression table in HTML)
-  const SKILLS_WITHOUT_PROGRESSION_TABLE = new Set(["Charging Warcry"]);
 
   // Only run parser for non-support skills (support skills use the new approach)
   if (parser !== undefined && skillType !== "Support") {
     const parserProgressionTable = extractProgressionTable($);
 
-    if (
-      parserProgressionTable === undefined &&
-      !SKILLS_WITHOUT_PROGRESSION_TABLE.has(name)
-    ) {
-      throw new Error(`No progression table found for "${name}"`);
-    }
+    // When no progression table exists, build a synthetic one from description
+    // so parsers that only use the "descript" column produce constant level values
+    const effectiveProgressionTable =
+      parserProgressionTable ?? buildSyntheticProgressionTable(description);
 
     const parserInput: SupportParserInput = {
       skillName: name,
       description,
-      progressionTable: parserProgressionTable ?? [],
+      progressionTable: effectiveProgressionTable,
     };
-    parsedLevelModValues = parser.parser(parserInput);
+
+    if (parserProgressionTable === undefined) {
+      try {
+        parsedLevelModValues = parser.parser(parserInput);
+        console.warn(
+          `  Warning: No progression table found for "${name}", using description values only`,
+        );
+      } catch (e) {
+        console.warn(
+          `  Warning: No progression table found for "${name}", description fallback failed: ${e instanceof Error ? e.message : e}`,
+        );
+      }
+    } else {
+      parsedLevelModValues = parser.parser(parserInput);
+    }
   }
 
   // Extract affixDefs for activation medium skills

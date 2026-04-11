@@ -81,15 +81,15 @@ export const PassiveSkills = [
     name: "Deep Pain",
     tags: ["Aura", "Area"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional Damage Over Time.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Damage Over Time",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional Damage Over Time.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Damage Over Time",
     ],
     sealedManaPct: 50,
     levelValues: {
       dotDmgPct: [
-        15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-        33, 34, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41,
-        41.5, 42, 42.5, 43, 43.5, 44, 44.5,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16,
       ],
     },
   },
@@ -104,9 +104,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       areaDmgPct: [
-        14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
-        32, 33, 34, 34.5, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40,
-        40.5, 41, 41.5, 42, 42.5, 43, 43.5,
+        14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+        14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+        14, 14, 14, 14,
       ],
       skillAreaPct: [
         20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
@@ -120,15 +120,15 @@ export const PassiveSkills = [
     name: "Electric Conversion",
     tags: ["Aura", "Area", "Lightning"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional Lightning Damage.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Lightning Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional Lightning Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Lightning Damage",
     ],
     sealedManaPct: 50,
     levelValues: {
       lightningDmgPct: [
-        15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-        33, 34, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41,
-        41.5, 42, 42.5, 43, 43.5, 44, 44.5,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16,
       ],
     },
   },
@@ -153,16 +153,14 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       energyShield: [
-        67, 80.3, 93.6, 106.9, 120.2, 133.5, 146.8, 160.1, 173.4, 186.7, 200,
-        213.3, 226.6, 239.9, 253.2, 266.5, 279.8, 293.1, 306.4, 319.7, 333,
-        336.4, 339.7, 343.1, 346.4, 349.8, 353.1, 356.5, 359.8, 363.2, 366.5,
-        369.9, 373.2, 376.6, 379.9, 383.3, 386.6, 390, 393.3, 396.7,
+        67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67,
+        67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67,
+        67, 67, 67, 67,
       ],
       energyShieldPct: [
-        3.2, 3.735, 4.27, 4.805, 5.34, 5.875, 6.41, 6.945, 7.48, 8.015, 8.55,
-        9.085, 9.62, 10.16, 10.69, 11.23, 11.76, 12.3, 12.83, 13.37, 13.9, 14.1,
-        14.3, 14.5, 14.7, 14.9, 15.1, 15.3, 15.5, 15.7, 15.9, 16.1, 16.3, 16.5,
-        16.7, 16.9, 17.1, 17.3, 17.5, 17.7,
+        3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2,
+        3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2,
+        3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2, 3.2,
       ],
     },
   },
@@ -171,15 +169,15 @@ export const PassiveSkills = [
     name: "Erosion Amplification",
     tags: ["Aura", "Area", "Erosion"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional Erosion Damage.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Erosion Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional Erosion Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Erosion Damage",
     ],
     sealedManaPct: 50,
     levelValues: {
       erosionDmgPct: [
-        15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-        33, 34, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41,
-        41.5, 42, 42.5, 43, 43.5, 44, 44.5,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16,
       ],
     },
   },
@@ -188,8 +186,8 @@ export const PassiveSkills = [
     name: "Fearless",
     tags: ["Aura", "Area", "Melee"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\nMelee Skills 60% Critical Strike Rating, and 10% additional damage.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+79% Critical Strike Rating for Melee Skills\n+29% additional Melee Skill Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\nMelee Skills 61% Critical Strike Rating, and 11% additional damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+80% Critical Strike Rating for Melee Skills\n+30% additional Melee Skill Damage",
     ],
     sealedManaPct: 50,
   },
@@ -210,17 +208,10 @@ export const PassiveSkills = [
     name: "Frigid Domain",
     tags: ["Aura", "Area", "Cold"],
     description: [
-      "Activates the Aura, and enemies within 12m gain the following debuff:\n18% additional Cold Damage taken.",
-      "Activates the Aura, and enemies within 12m gain the following debuff:\n+37% additional Cold Damage against enemies affected by the skill",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional Cold Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Cold Damage",
     ],
     sealedManaPct: 50,
-    levelValues: {
-      coldDmgPct: [
-        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
-        36, 37, 38, 38.5, 39, 39.5, 40, 40.5, 41, 41.5, 42, 42.5, 43, 43.5, 44,
-        44.5, 45, 45.5, 46, 46.5, 47, 47.5,
-      ],
-    },
   },
   {
     type: "Passive",
@@ -268,15 +259,15 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       evasion: [
-        2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800, 4000, 4200, 4400,
-        4600, 4800, 5000, 5200, 5400, 5600, 5800, 6000, 6200, 6250, 6300, 6350,
-        6400, 6450, 6500, 6550, 6600, 6650, 6700, 6750, 6800, 6850, 6900, 6950,
-        7000, 7050, 7100, 7150,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200,
       ],
       evasionPct: [
-        0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9,
-        9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16,
-        16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
       ],
     },
   },
@@ -307,8 +298,8 @@ export const PassiveSkills = [
     name: "Precise: Charged Flames",
     tags: ["Aura", "Area", "Fire"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n20% additional Fire Damage.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+39% additional Fire Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n21% additional Fire Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+40% additional Fire Damage",
     ],
     sealedManaPct: 50,
   },
@@ -337,15 +328,14 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       attackDmgPct: [
-        12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19,
-        19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22.75, 23, 23.25, 23.5, 23.75, 24,
-        24.25, 24.5, 24.75, 25, 25.25, 25.5, 25.75, 26, 26.25, 26.5, 26.75, 27,
-        27.25,
+        12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
+        12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
+        12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
+        12.5, 12.5, 12.5, 12.5,
       ],
       auraEffPctPerCrueltyStack: [
-        2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5,
-        2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5,
-        2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
       ],
     },
   },
@@ -360,9 +350,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       dotDmgPct: [
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-        39, 40, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46, 46.5, 47,
-        47.5, 48, 48.5, 49, 49.5, 50, 50.5,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21,
       ],
       afflictionPerSec: [
         30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
@@ -382,9 +372,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       areaDmgPct: [
-        14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
-        32, 33, 34, 34.5, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40,
-        40.5, 41, 41.5, 42, 42.5, 43, 43.5,
+        14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+        14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+        14, 14, 14, 14,
       ],
       skillAreaPct: [
         20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
@@ -408,9 +398,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       lightningDmgPct: [
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-        39, 40, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46, 46.5, 47,
-        47.5, 48, 48.5, 49, 49.5, 50, 50.5,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21,
       ],
     },
   },
@@ -435,16 +425,14 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       energyShield: [
-        67, 80.3, 93.6, 106.9, 120.2, 133.5, 146.8, 160.1, 173.4, 186.7, 200,
-        213.3, 226.6, 239.9, 253.2, 266.5, 279.8, 293.1, 306.4, 319.7, 333,
-        336.4, 339.7, 343.1, 346.4, 349.8, 353.1, 356.5, 359.8, 363.2, 366.5,
-        369.9, 373.2, 376.6, 379.9, 383.3, 386.6, 390, 393.3, 396.7,
+        67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67,
+        67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67,
+        67, 67, 67, 67,
       ],
       energyShieldPct: [
-        7.9, 8.43, 8.96, 9.49, 10.02, 10.55, 11.08, 11.61, 12.14, 12.67, 13.2,
-        13.73, 14.26, 14.79, 15.32, 15.85, 16.38, 16.91, 17.44, 17.97, 18.5,
-        18.7, 18.9, 19.1, 19.3, 19.5, 19.7, 19.9, 20.1, 20.3, 20.5, 20.7, 20.9,
-        21.1, 21.3, 21.5, 21.7, 21.9, 22.1, 22.3,
+        7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9,
+        7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9,
+        7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9, 7.9,
       ],
     },
   },
@@ -459,9 +447,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       erosionDmgPct: [
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-        39, 40, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46, 46.5, 47,
-        47.5, 48, 48.5, 49, 49.5, 50, 50.5,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21,
       ],
     },
   },
@@ -470,20 +458,20 @@ export const PassiveSkills = [
     name: "Precise: Fearless",
     tags: ["Aura", "Area", "Melee"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\nMelee Skills 60% Critical Strike Rating, 10% additional damage, and 8% Attack Speed.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+79% Critical Strike Rating for Melee Skills\n+29% additional Melee Skill Damage\n+8% Melee Attack Speed",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\nMelee Skills 61% Critical Strike Rating, 11% additional damage, and 8% Attack Speed.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+80% Critical Strike Rating for Melee Skills\n+30% additional Melee Skill Damage\n+8% Melee Attack Speed",
     ],
     sealedManaPct: 50,
     levelValues: {
       meleeCritRatingPct: [
-        60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
-        78, 79, 80, 80.5, 81, 81.5, 82, 82.5, 83, 83.5, 84, 84.5, 85, 85.5, 86,
-        86.5, 87, 87.5, 88, 88.5, 89, 89.5,
+        80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80,
+        80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80,
+        80, 80, 80, 80,
       ],
       meleeDmgPct: [
-        10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
-        28, 29, 30, 30.5, 31, 31.5, 32, 32.5, 33, 33.5, 34, 34.5, 35, 35.5, 36,
-        36.5, 37, 37.5, 38, 38.5, 39, 39.5,
+        30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+        30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30,
+        30, 30, 30, 30,
       ],
       meleeAspdPct: [
         8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
@@ -508,17 +496,10 @@ export const PassiveSkills = [
     name: "Precise: Frigid Domain",
     tags: ["Aura", "Area", "Cold"],
     description: [
-      "Activates the Aura, and enemies within 12m gain the following debuff:\n25% additional Cold Damage taken.",
-      "Activates the Aura, and enemies within 12m gain the following debuff:\n+44% additional Cold Damage against enemies affected by the skill",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n21% additional Cold Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+40% additional Cold Damage",
     ],
     sealedManaPct: 50,
-    levelValues: {
-      coldDmgPct: [
-        25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,
-        43, 44, 45, 45.5, 46, 46.5, 47, 47.5, 48, 48.5, 49, 49.5, 50, 50.5, 51,
-        51.5, 52, 52.5, 53, 53.5, 54, 54.5,
-      ],
-    },
   },
   {
     type: "Passive",
@@ -566,15 +547,16 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       evasion: [
-        2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800, 4000, 4200, 4400,
-        4600, 4800, 5000, 5200, 5400, 5600, 5800, 6000, 6200, 6250, 6300, 6350,
-        6400, 6450, 6500, 6550, 6600, 6650, 6700, 6750, 6800, 6850, 6900, 6950,
-        7000, 7050, 7100, 7150,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200,
       ],
       evasionPct: [
-        10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17,
-        17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24,
-        24.5, 25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5,
       ],
     },
   },
@@ -583,20 +565,20 @@ export const PassiveSkills = [
     name: "Precise: Precise Projectiles",
     tags: ["Aura", "Area", "Projectile"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n20% additional Projectile Damage, 20% additional Ailment Damage by Projectiles, and 10% Projectile Speed.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+39% additional Projectile Damage\n+39% additional Ailment Damage dealt by Projectiles\n+10% Projectile Speed",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n21% additional Projectile Damage, 21% additional Ailment Damage by Projectiles, and 10% Projectile Speed.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+40% additional Projectile Damage\n+40% additional Ailment Damage dealt by Projectiles\n+10% Projectile Speed",
     ],
     sealedManaPct: 50,
     levelValues: {
       projectileDmgPct: [
-        20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
-        38, 39, 40, 40.5, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46,
-        46.5, 47, 47.5, 48, 48.5, 49, 49.5,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21,
       ],
       ailmentDmgPct: [
-        20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
-        38, 39, 40, 40.5, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46,
-        46.5, 47, 47.5, 48, 48.5, 49, 49.5,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21,
+        21, 21, 21, 21,
       ],
       projectileSpeedPct: [
         10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
@@ -620,10 +602,10 @@ export const PassiveSkills = [
     name: "Precise: Rejuvenation",
     tags: ["Aura", "Area"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n2 Life Restoration per Second, and 5% Life Restoration Speed",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+95 Life Regeneration per second\n+5% life restoration speed",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\nRegenerates 2% of Life per second",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\nRegenerates 8% Life per second",
     ],
-    sealedManaPct: 10,
+    sealedManaPct: 20,
   },
   {
     type: "Passive",
@@ -636,9 +618,9 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       spellDmgPct: [
-        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
-        39, 40, 41, 41.5, 42, 42.5, 43, 43.5, 44, 44.5, 45, 45.5, 46, 46.5, 47,
-        47.5, 48, 48.5, 49, 49.5, 50, 50.5,
+        40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40,
+        40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40,
+        40, 40, 40, 40,
       ],
     },
   },
@@ -653,15 +635,16 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       armor: [
-        2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800, 4000, 4200, 4400,
-        4600, 4800, 5000, 5200, 5400, 5600, 5800, 6000, 6200, 6250, 6300, 6350,
-        6400, 6450, 6500, 6550, 6600, 6650, 6700, 6750, 6800, 6850, 6900, 6950,
-        7000, 7050, 7100, 7150,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200,
       ],
       armorPct: [
-        10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17,
-        17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24,
-        24.5, 25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5, 10.5,
+        10.5, 10.5, 10.5, 10.5,
       ],
     },
   },
@@ -676,9 +659,9 @@ export const PassiveSkills = [
     sealedManaPct: 10,
     levelValues: {
       movementSpeedPct: [
-        11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5,
-        18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5,
-        25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 30.5,
+        11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11,
+        11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11,
+        11, 11, 11, 11,
       ],
     },
   },
@@ -700,8 +683,8 @@ export const PassiveSkills = [
     name: "Precise: Weapon Amplification",
     tags: ["Aura", "Area", "Physical"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional Physical Damage. 30% chance to inflict Paralysis on hit.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Physical Damage\n+30% chance to inflict Paralysis on hit",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n21% additional Physical Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+40% additional Physical Damage",
     ],
     sealedManaPct: 50,
   },
@@ -716,14 +699,14 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       projectileDmgPct: [
-        16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
-        34, 35, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41, 41.5, 42,
-        42.5, 43, 43.5, 44, 44.5, 45, 45.5,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16,
       ],
       ailmentDmgPct: [
-        16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
-        34, 35, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41, 41.5, 42,
-        42.5, 43, 43.5, 44, 44.5, 45, 45.5,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
+        16, 16, 16, 16,
       ],
       projectileSpeedPct: [
         10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
@@ -748,7 +731,7 @@ export const PassiveSkills = [
     tags: ["Aura", "Area"],
     description: [
       "Activates the Aura, you and allies within a certain area gain the following buff:\n2 Life Regeneration per Second.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+95 Life Regeneration per second",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+227 Life Regeneration per second",
     ],
     sealedManaPct: 10,
   },
@@ -757,15 +740,15 @@ export const PassiveSkills = [
     name: "Spell Amplification",
     tags: ["Aura", "Area", "Spell"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional damage for Spell Skills.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Spell Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional damage for Spell Skills.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Spell Damage",
     ],
     sealedManaPct: 50,
     levelValues: {
       spellDmgPct: [
-        15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
-        33, 34, 35, 35.5, 36, 36.5, 37, 37.5, 38, 38.5, 39, 39.5, 40, 40.5, 41,
-        41.5, 42, 42.5, 43, 43.5, 44, 44.5,
+        35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35,
+        35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35,
+        35, 35, 35, 35,
       ],
     },
   },
@@ -780,15 +763,15 @@ export const PassiveSkills = [
     sealedManaPct: 50,
     levelValues: {
       armor: [
-        2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800, 4000, 4200, 4400,
-        4600, 4800, 5000, 5200, 5400, 5600, 5800, 6000, 6200, 6250, 6300, 6350,
-        6400, 6450, 6500, 6550, 6600, 6650, 6700, 6750, 6800, 6850, 6900, 6950,
-        7000, 7050, 7100, 7150,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200, 2200,
+        2200, 2200, 2200, 2200,
       ],
       armorPct: [
-        0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9,
-        9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16,
-        16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+        0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
       ],
     },
   },
@@ -800,7 +783,6 @@ export const PassiveSkills = [
       "Activates the skill and summons 1 Erosion Magus.\nActivating the skill grants the character Origin of Spirit Magus: -6.3% additional Damage Over Time taken (Up to additional -50%).",
       "Summon Erosion Magus:\nSummons 1 Erosion Magus\nThis skill summons up to 1 Minions\nSpirit Magi become undefeatable\nWhen Spirit Magi become undefeatable, they gain Reconjuring\nConverts 100% of Physical Damage to Erosion Damage for Spirit Magi",
       "Origin of Spirit Magus:\n-9.15% additional Damage Over Time taken, up to -50% additional damage",
-      "Erosion Magus:\nBase Skill: Scattered Mud\nEmpower Skill: Withering Payback\nEnhanced Skill: Bleak Grass\nUltimate: World of Thorns",
     ],
     sealedManaPct: 20,
     mainStats: ["int"],
@@ -813,7 +795,6 @@ export const PassiveSkills = [
       "Activates the skill and summons 1 Fire Magus.\nActivating the skill grants the character Origin of Spirit Magus: 58 Critical Strike Rating.",
       "Summon Fire Magus:\nSummons 1 Fire Magus\nThis skill summons up to 1 Minions\nSpirit Magi become undefeatable\nWhen Spirit Magi become undefeatable, they gain Reconjuring",
       "Origin of Spirit Magus:\nGains Origin of Fire, giving the summoner +115 Attack and Spell Critical Strike Rating",
-      "Fire Magus:\nBase Skill: Blazing Dance.\nEmpower Skill: Blazing Spin.\nEnhanced Skill: Blazing Incineration.\nUltimate: Rising Molten.",
     ],
     sealedManaPct: 20,
     mainStats: ["str", "int"],
@@ -833,7 +814,6 @@ export const PassiveSkills = [
       "Activates the skill and summons 1 Frost Magus.\nActivating the skill grants the character Origin of Spirit Magus: Restores 2.4% Max Life and Max Energy Shield every second.",
       "Summon Frost Magus:\nSummons 1 Frost Magus\nThis skill summons up to 1 Minions\n+1 Max Frostbite Rating for the Minions summoned by this skill for every +1 Max Frostbite Rating\nSpirit Magi become undefeatable\nWhen Spirit Magi become undefeatable, they gain Reconjuring",
       "Origin of Spirit Magus:\nGains Origin of Ice, restoring 3.825% of Max Life and Max Energy Shield per second to the summoner",
-      "Frost Magus:\nBase Skill: Glacier Ripples.\nEmpower Skill: Frost Release.\nEnhanced Skill: Permafrost Cast.\nUltimate: Ice Earthshaker.",
     ],
     sealedManaPct: 20,
     mainStats: ["int"],
@@ -846,7 +826,6 @@ export const PassiveSkills = [
       "Activates the skill and summons 1 Rock Magus.\nActivating the skill grants the character Origin of Spirit Magus: -5.2% additional Hit Damage taken (Up to additional -50%).",
       "Summon Rock Magus:\nSummons 1 Rock Magus\nThis skill summons up to 1 Minions\nSpirit Magi become undefeatable\nWhen Spirit Magi become undefeatable, they gain Reconjuring",
       "Origin of Spirit Magus:\n-8.05% additional Hit Damage taken, up to -50% additional damage",
-      "Rock Magus:\nBase Skill: Shattered Stone\nEmpower Skill: Gold Rush\nEnhanced Skill: Rock Blast\nUltimate: Towering Mountains",
     ],
     sealedManaPct: 20,
     mainStats: ["str", "int"],
@@ -859,7 +838,6 @@ export const PassiveSkills = [
       "Activates the skill and summons 1 Thunder Magus.\nActivating the skill grants the character Origin of Spirit Magus: 6% additional Attack and Cast Speed and 2.5% additional damage.",
       "Summon Thunder Magus:\nSummons 1 Thunder Magus.\nThis skill summons up to 1 Minions\nSpirit Magi become undefeatable\nWhen Spirit Magi become undefeatable, they gain Reconjuring\nConverts 100% of Spirit Magi's Physical Damage to Lightning Damage.",
       "Origin of Spirit Magus:\nGains Origin of Thunder: +6% additional Attack and Cast Speed and 7.25% additional damage to the summoner",
-      "Thunder Magus:\nBase Skill: Lightning Star.\nEmpower Skill: Thundercloud Surge.\nEnhanced Skill: Thunderlight Arrow.\nUltimate: Lightning Surge.",
     ],
     sealedManaPct: 20,
     mainStats: ["dex", "int"],
@@ -903,8 +881,8 @@ export const PassiveSkills = [
     name: "Weapon Amplification",
     tags: ["Aura", "Area", "Physical"],
     description: [
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n15% additional Physical Damage.",
-      "Activates the Aura, you and allies within a certain area gain the following buff:\n+34% additional Physical Damage",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n16% additional Physical Damage.",
+      "Activates the Aura, you and allies within a certain area gain the following buff:\n+35% additional Physical Damage",
     ],
     sealedManaPct: 50,
   },
