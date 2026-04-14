@@ -3,8 +3,11 @@ import { Trans } from "@lingui/react/macro";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   type FilterAffixType,
+  getAffixForPercentage,
   getBaseGear,
   getFilteredAffixes,
+  getPercentageWithinTier,
+  groupAffixesByBaseName,
   isGroupableAffixType,
 } from "@/src/lib/affix-utils";
 import {
@@ -503,26 +506,44 @@ export const EditGearModal = ({
     }
 
     // Build prefixes
+    const prefixGroups = groupAffixesByBaseName(prefixAffixes, prefixAffixes);
     const newPrefixes: string[] = [];
     for (const slot of prefixes) {
       if (slot.type === "existing" && slot.value !== undefined) {
         newPrefixes.push(slot.value);
       } else if (slot.type === "new" && slot.affixIndex !== undefined) {
-        newPrefixes.push(
-          craft(prefixAffixes[slot.affixIndex], slot.percentage),
+        const group = prefixGroups.find((g) =>
+          g.originalIndices.includes(slot.affixIndex as number),
         );
+        if (group !== undefined) {
+          const affix = getAffixForPercentage(slot.percentage, group.affixes);
+          const percentageWithinTier = getPercentageWithinTier(
+            slot.percentage,
+            group.affixes.length,
+          );
+          newPrefixes.push(craft(affix, percentageWithinTier));
+        }
       }
     }
 
     // Build suffixes
+    const suffixGroups = groupAffixesByBaseName(suffixAffixes, suffixAffixes);
     const newSuffixes: string[] = [];
     for (const slot of suffixes) {
       if (slot.type === "existing" && slot.value !== undefined) {
         newSuffixes.push(slot.value);
       } else if (slot.type === "new" && slot.affixIndex !== undefined) {
-        newSuffixes.push(
-          craft(suffixAffixes[slot.affixIndex], slot.percentage),
+        const group = suffixGroups.find((g) =>
+          g.originalIndices.includes(slot.affixIndex as number),
         );
+        if (group !== undefined) {
+          const affix = getAffixForPercentage(slot.percentage, group.affixes);
+          const percentageWithinTier = getPercentageWithinTier(
+            slot.percentage,
+            group.affixes.length,
+          );
+          newSuffixes.push(craft(affix, percentageWithinTier));
+        }
       }
     }
 
