@@ -1,4 +1,4 @@
-import {
+﻿import {
   Combobox,
   ComboboxButton,
   ComboboxInput,
@@ -209,9 +209,9 @@ export const SearchableSelect = <T extends string | number>({
         </div>
 
         <ComboboxOptions
-          anchor={{ to: "bottom start", padding: 64 }}
+          anchor={{ to: "bottom start", gap: 4, padding: 8 }}
           className="
-            w-[var(--input-width)] z-50 mt-1 max-h-60 overflow-auto rounded
+            w-[var(--input-width)] z-[9999] mt-1 max-h-60 overflow-auto rounded
             bg-zinc-800 border border-zinc-700 shadow-lg
             focus:outline-none
           "
@@ -336,3 +336,5 @@ export const SearchableSelect = <T extends string | number>({
     </Combobox>
   );
 };
+
+
