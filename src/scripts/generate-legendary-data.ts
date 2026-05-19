@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import * as cheerio from "cheerio";
@@ -106,7 +106,7 @@ const fetchLegendaryPages = async (): Promise<void> => {
   console.log(`Fetching ${legendaryLinks.length} legendary pages...`);
 
   await processInBatches(legendaryLinks, async ({ href, name }) => {
-    const snakeCaseName = toSnakeCase(name);
+    const snakeCaseName = href.replace(/[^a-zA-Z0-9_-]/g, "_");
     const filename = `${snakeCaseName}.html`;
     const filepath = join(LEGENDARY_GEAR_DIR, filename);
 
@@ -473,7 +473,7 @@ interface Options {
 
 const main = async (options: Options): Promise<void> => {
   options.refetch = true; // 무조건 강제 다운로드 패치
-  if (options.refetch) {
+  if (true /* forced download */) {
     console.log("Refetching pages from tlidb...\n");
     await fetchLegendaryPages();
     console.log("");
