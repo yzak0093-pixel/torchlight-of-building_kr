@@ -336,5 +336,3 @@ export const SearchableSelect = <T extends string | number>({
     </Combobox>
   );
 };
-
-

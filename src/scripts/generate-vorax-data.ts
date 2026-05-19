@@ -125,10 +125,11 @@ const parseCraftableAffixes = (
  */
 const parseLegendaryNames = ($: cheerio.CheerioAPI): string[] => {
   const names: string[] = [];
-  const section = $("#Legendary, #전설, [id*='전설']");
-  if (section.length === 0) return names;
 
-  section.find(".flex-grow-1 > a[data-hover]").each((_, el) => {
+  // Legendary section may not have a reliable ID; scan all ItemGold links in 2-column rows
+  $(
+    ".row-cols-lg-2 .flex-grow-1 a[data-hover*='ItemGold'], .row-cols-lg-2 .flex-grow-1 a[data-hover*='ItemGold_hover']",
+  ).each((_, el) => {
     const name = $(el).text().trim();
     if (name.length > 0) {
       names.push(name);

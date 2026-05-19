@@ -554,3 +554,45 @@ msgstr "초기화"
 #: src/routes/index.tsx:355
 msgid "Import Failed"
 msgstr "불러오기 실패"
+
+msgid "Vorax Limb: Hands"
+msgstr "블러드러스트 부위: 손"
+
+msgid "Vorax Limb: Legs"
+msgstr "블러드러스트 부위: 다리"
+
+msgid "Vorax Limb: Chest"
+msgstr "블러드러스트 부위: 상체"
+
+msgid "Vorax Limb: Head"
+msgstr "블러드러스트 부위: 머리"
+
+msgid "Vorax Limb: Neck"
+msgstr "블러드러스트 부위: 목"
+
+msgid "Vorax Limb: Waist"
+msgstr "블러드러스트 부위: 허리"
+
+msgid "Vorax Limb: Digits"
+msgstr "블러드러스트 부위: 손가락"
+
+msgid "Vorax Limb: Hands"
+msgstr "블러드 러스트 부위: 팔"
+
+msgid "Vorax Limb: Legs"
+msgstr "블러드 러스트 부위: 다리"
+
+msgid "Vorax Limb: Chest"
+msgstr "블러드 러스트 부위: 상체"
+
+msgid "Vorax Limb: Head"
+msgstr "블러드 러스트 부위: 머리"
+
+msgid "Vorax Limb: Neck"
+msgstr "블러드 러스트 부위: 목"
+
+msgid "Vorax Limb: Waist"
+msgstr "블러드 러스트 부위: 허리"
+
+msgid "Vorax Limb: Digits"
+msgstr "블러드 러스트 부위: 손가락"
