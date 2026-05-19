@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import * as cheerio from "cheerio";
@@ -7,7 +7,7 @@ import type { VoraxLimbData } from "../data/vorax/types";
 import { fetchPage, processInBatches, toSnakeCase } from "./tlidb-tools";
 
 const BASE_URL = "https://tlidb.com/ko";
-const VORAX_DIR = join(process.cwd(), ".garbage", "tlidb", "vorax");
+const VORAX_DIR = join(process.cwd(), ".garbage", "tlidb", "ko", "vorax");
 const OUT_DIR = join(process.cwd(), "src", "data", "vorax");
 
 const VORAX_LIMB_PAGES = [
@@ -69,8 +69,8 @@ const mapLibraryToAffixType = (
   library: string,
 ): "Basic" | "Advanced" | "Ultimate" => {
   const lower = library.toLowerCase();
-  if (lower.includes("ultimate")) return "Ultimate";
-  if (lower.includes("advanced")) return "Advanced";
+  if (lower.includes("ultimate") || lower.includes("궁극")) return "Ultimate";
+  if (lower.includes("advanced") || lower.includes("고급")) return "Advanced";
   return "Basic";
 };
 
@@ -82,7 +82,7 @@ const parseCraftableAffixes = (
   $: cheerio.CheerioAPI,
 ): VoraxLimbData["craftableAffixes"] => {
   const affixes: VoraxLimbData["craftableAffixes"] = [];
-  const section = $("#Craft");
+  const section = $("#Craft, #제작, [id*='제작']");
   if (section.length === 0) return affixes;
 
   section.find("table").each((_, table) => {
@@ -90,9 +90,9 @@ const parseCraftableAffixes = (
     const caption = $table.find("caption").text().trim().toLowerCase();
 
     let sectionType: "prefix" | "suffix";
-    if (caption.includes("pre-fix")) {
+    if (caption.includes("pre-fix") || caption.includes("메인")) {
       sectionType = "prefix";
-    } else if (caption.includes("suffix")) {
+    } else if (caption.includes("suffix") || caption.includes("서브")) {
       sectionType = "suffix";
     } else {
       return; // Skip unknown tables
@@ -125,7 +125,7 @@ const parseCraftableAffixes = (
  */
 const parseLegendaryNames = ($: cheerio.CheerioAPI): string[] => {
   const names: string[] = [];
-  const section = $("#Legendary");
+  const section = $("#Legendary, #전설, [id*='전설']");
   if (section.length === 0) return names;
 
   section.find(".flex-grow-1 > a[data-hover]").each((_, el) => {
@@ -146,7 +146,9 @@ const parseBaseAffixes = (
   $: cheerio.CheerioAPI,
 ): VoraxLimbData["baseAffixes"] => {
   const affixes: VoraxLimbData["baseAffixes"] = [];
-  const section = $("#BaseAffix");
+  const section = $(
+    "#BaseAffix, #기본_속성, #기본_옵션, #기본_어픽스, [id*='기본']",
+  );
   if (section.length === 0) return affixes;
 
   const table = section.find("table");
@@ -220,7 +222,7 @@ interface Options {
 }
 
 const main = async (options: Options): Promise<void> => {
-  if (options.refetch) {
+  if (true /* forced download */) {
     console.log("Refetching vorax limb pages from tlidb...\n");
     await fetchVoraxPages();
     console.log("");
