@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import * as cheerio from "cheerio";
@@ -10,7 +10,7 @@ import { Gods, Trees } from "../data/talent/types";
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const TALENT_CACHE_DIR = join(process.cwd(), ".garbage", "tlidb", "talent");
 const TALENT_CACHE_FILE = join(TALENT_CACHE_DIR, "talent.html");
 
@@ -30,8 +30,41 @@ const fetchTalentPage = async (): Promise<void> => {
   console.log(`Saved: ${TALENT_CACHE_FILE}`);
 };
 
+const KO_TREE_MAP: Record<string, string> = {
+  "기만의 여신": "Goddess of Deception",
+  언데드: "Lich",
+  초능력자: "Psychic",
+  "섀도우 마스터": "Shadowmaster",
+  "어둠의 술사": "Warlock",
+  "새로운 신": "New God",
+  "사냥의 여신": "Goddess of Hunting",
+  어쌔신: "Assassin",
+  "블레이드 러너": "Bladerunner",
+  드루이드: "Druid",
+  명사수: "Marksman",
+  "지식의 여신": "Goddess of Knowledge",
+  예언가: "Prophet",
+  엘리멘탈리스트: "Elementalist",
+  마기스터: "Magister",
+  미스틱: "Arcanist",
+  "기계의 신": "God of Machines",
+  연금술사: "Alchemist",
+  장인: "Artisan",
+  정비공: "Machinist",
+  "철의 개척자": "Steel Vanguard",
+  "힘의 신": "God of Might",
+  약탈자: "Onslaughter",
+  용자: "The Brave",
+  장군: "Warlord",
+  투사: "Warrior",
+  "전쟁의 신": "God of War",
+  레인저: "Ranger",
+  사무라이: "Ronin",
+  철갑병: "Sentinel",
+  "섀도우 댄서": "Shadowdancer",
+};
 // ============================================================================
-// Tree → God mapping
+// Tree ??God mapping
 // ============================================================================
 
 // Trees are grouped by god in types.ts: 5 per god (except New God which has 1)
@@ -83,9 +116,9 @@ for (const god of Gods) {
 // ============================================================================
 
 const TYPE_LABEL_MAP: Record<string, Type> = {
-  "Micro Talent": "Micro",
-  "Medium Talent": "Medium",
-  "Legendary Medium Talent": "Legendary Medium",
+  "하위 재능": "Micro",
+  "중위 재능": "Medium",
+  "레전드 중위 재능": "Legendary Medium",
 };
 
 // ============================================================================
@@ -118,10 +151,10 @@ const extractTalentData = (html: string): Talent[] => {
   const $ = cheerio.load(html);
   const items: Talent[] = [];
 
-  // Find the Talent tab content (id="Talent")
-  const talentTab = $("#Talent");
+  // Find the Talent tab content (id="재능")
+  const talentTab = $("#재능");
   if (talentTab.length === 0) {
-    throw new Error('Could not find Talent tab (id="Talent")');
+    throw new Error('Could not find Talent tab (id="재능")');
   }
 
   // Each talent entry is a .col within the .row grid
@@ -138,7 +171,8 @@ const extractTalentData = (html: string): Talent[] => {
 
     // Extract tree from the link
     const treeLink = headerDiv.find("a");
-    const treeName = treeLink.text().trim() as Tree;
+    const koName = treeLink.text().trim();
+    const treeName = (KO_TREE_MAP[koName] ?? koName) as Tree;
 
     if (!Trees.includes(treeName)) {
       console.warn(`Unknown tree: "${treeName}", skipping entry`);

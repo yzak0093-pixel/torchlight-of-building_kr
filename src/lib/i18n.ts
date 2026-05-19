@@ -29,6 +29,7 @@ export const defaultLocale: Locale = "en";
 export const SUPPORTED_LOCALES = [
   { locale: "en" as const, name: "English" },
   { locale: "zh" as const, name: "简体中文" },
+  { locale: "ko" as const, name: "한국어" },
 ] as const;
 
 export const loadLocale = async (locale: Locale): Promise<void> => {

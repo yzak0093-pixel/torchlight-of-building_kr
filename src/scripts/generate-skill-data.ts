@@ -32,56 +32,62 @@ import type {
   SupportParserInput,
 } from "./skills/types";
 
-const CURRENT_SEASON = "SS12Season";
+const CURRENT_SEASON = "SS12시즌";
 
 // ============================================================================
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const SKILL_OUTPUT_DIR = join(process.cwd(), ".garbage", "tlidb", "skill");
+const SKILL_EN_OUTPUT_DIR = join(
+  process.cwd(),
+  ".garbage",
+  "tlidb",
+  "skill_en",
+);
 
 const SKILL_TYPES = [
   {
     name: "Active",
     listPath: "Active_Skill",
     outputDir: "active",
-    tabId: "ActiveSkillTag",
+    tabId: "액티브스킬Tag",
     expectedCount: 151,
   },
   {
     name: "Support",
     listPath: "Support_Skill",
     outputDir: "support",
-    tabId: "SupportSkillTag",
+    tabId: "보조스킬Tag",
     expectedCount: 121,
   },
   {
     name: "Passive",
     listPath: "Passive_Skill",
     outputDir: "passive",
-    tabId: "PassiveSkillTag",
+    tabId: "패시브스킬Tag",
     expectedCount: 55,
   },
   {
     name: "Activation Medium",
     listPath: "Activation_Medium_Skill",
     outputDir: "activation_medium",
-    tabId: "ActivationMediumSkillTag",
+    tabId: "촉발체스킬Tag",
     expectedCount: 28,
   },
   {
     name: "Noble Support",
     listPath: "Noble_Support_Skill",
     outputDir: "noble_support",
-    tabId: "ExclusiveSupportSkillTag",
+    tabId: "전용보조스킬Tag",
     expectedCount: 141,
   },
   {
     name: "Magnificent Support",
     listPath: "Magnificent_Support_Skill",
     outputDir: "magnificent_support",
-    tabId: "ExclusiveSupportSkillTag",
+    tabId: "전용보조스킬Tag",
     expectedCount: 131,
   },
 ] as const;
@@ -147,7 +153,8 @@ const extractSkillLinks = (html: string, tabId: string): string[] => {
   const tabContent = html.slice(startIdx, endIdx);
 
   const colRegex = /<div class="col"[^>]*>[\s\S]*?<\/div><\/div><\/div>/g;
-  const hrefRegex = /<a[^>]+href="([^"]+)"[^>]*>/;
+  // 작은따옴표와 큰따옴표 모두 대응하며, 인코딩된 문자열을 끝까지 캡처하도록 수정
+  const hrefRegex = /<a[^>]+href=["']([^"']+)["'][^>]*>/;
   const links: string[] = [];
 
   for (const colMatch of tabContent.matchAll(colRegex)) {
@@ -173,6 +180,8 @@ interface SkillFetchTask {
   url: string;
   filepath: string;
   skillName: string;
+  enUrl?: string;
+  enFilepath?: string;
 }
 
 const collectSkillFetchTasks = async (
@@ -195,12 +204,35 @@ const collectSkillFetchTasks = async (
     );
   }
 
+  // Create English skill directory for support types
+  const isSupportType = [
+    "support",
+    "magnificent_support",
+    "noble_support",
+    "activation_medium",
+  ].includes(skillType.outputDir);
+  if (isSupportType) {
+    await mkdir(join(SKILL_EN_OUTPUT_DIR, skillType.outputDir), {
+      recursive: true,
+    });
+  }
+
   return skillLinks.map((link) => {
     const decodedLink = decodeURIComponent(link);
-    const filename = `${decodedLink}.html`;
+    // Windows에서 파일명으로 사용할 수 없는 특수문자 치환 (: ? * | < > ")
+    const safeFilename = decodedLink.replace(/[:/?*|<>"']/g, "_");
+    const filename = `${safeFilename}.html`;
+
     const filepath = join(skillDir, filename);
+    // URL은 치환되지 않은 원본 decodedLink를 인코딩하여 사용
     const url = `${BASE_URL}/${encodeURIComponent(decodedLink)}`;
-    return { url, filepath, skillName: decodedLink };
+    const enFilepath = isSupportType
+      ? join(SKILL_EN_OUTPUT_DIR, skillType.outputDir, filename)
+      : undefined;
+    const enUrl = isSupportType
+      ? `https://tlidb.com/en/${encodeURIComponent(decodedLink)}`
+      : undefined;
+    return { url, filepath, skillName: decodedLink, enUrl, enFilepath };
   });
 };
 
@@ -236,6 +268,12 @@ const fetchSkillPages = async (): Promise<void> => {
     try {
       const html = await fetchPage(task.url);
       await writeFile(task.filepath, html);
+
+      // Also fetch English page for support skills
+      if (task.enUrl !== undefined && task.enFilepath !== undefined) {
+        const enHtml = await fetchPage(task.enUrl);
+        await writeFile(task.enFilepath, enHtml);
+      }
       completed++;
       if (completed % 50 === 0 || completed === allTasks.length) {
         console.log(`Progress: ${completed}/${allTasks.length} skills fetched`);
@@ -270,6 +308,7 @@ interface RawSkill {
   parsedLevelModValues?: Record<string, Record<number, number>>;
   parsedAffixDefs?: Record<0 | 1 | 2 | 3, ActivationMediumAffixDef[]>;
   progressionTable?: ProgressionColumn[];
+  enSupportDesc?: string; // English description for support target parsing (ko scraping mode)
 }
 
 // Set for fast tag validation
@@ -329,15 +368,122 @@ const parseTagsFromString = (
   return tags;
 };
 
+// ---------------------------------------------------------------------------
+// Korean → English support description translation map
+// Added for tlidb Korean page scraping support
+// ---------------------------------------------------------------------------
+const KO_TO_EN_SUPPORT_DESC: Record<string, string> = {
+  "적을 적중하는 스킬을 보조한다.": "Supports skills that hit enemies.",
+  "적을 적중하거나 지속 대미지를 입히는 스킬을 보조한다.":
+    "Supports skills that hit enemies or deal Damage Over Time.",
+  "공격 스킬을 보조한다.": "Supports Attack Skills.",
+  "공격 스킬을 보조한다. 이동 및 채널링 스킬은 보조할 수 없다.":
+    "Supports Attack Skills. Cannot support Movement or Channelling Skills.",
+  "공격 투사체 스킬을 보조한다.": "Supports Attack Projectile Skills.",
+  "공격 또는 주술 스킬을 보조한다.": "Supports Attack Skills or Spell Skills.",
+  "공격 스킬 및 주술 스킬을 보조한다. 채널링 스킬 및 패시브 스킬은 보조할 수 없다.":
+    "Supports Attack Skills and Spell Skills. Cannot support Channelling Skills and Passive Skills.",
+  "대미지를 주는 공격 스킬과 주술 스킬을 보조한다.":
+    "Supports Attack Skills and Spell Skills that deal damage.",
+  "대미지를 주는 공격 스킬을 보조한다.":
+    "Supports Attack Skills that deal damage.",
+  "대미지를 주는 주술 스킬을 보조한다.":
+    "Supports Spell Skills that deal damage.",
+  "광선 스킬을 보조한다.": "Supports Beam Skills.",
+  "근접 공격 스킬을 보조한다.": "Supports Melee Attack Skills.",
+  "근접 베기 스킬을 보조한다.": "Supports Melee Slash Skills.",
+  "근접 파괴 스킬을 보조한다.": "Supports Melee Smash Skills.",
+  "대미지 스킬을 보조한다.": "Supports skills that deal damage.",
+  "마령 소환 스킬을 보조한다.": "Supports skills that summon Spirit Magus.",
+  "마령 스킬을 보조한다.": "Supports Spirit Magus Skills.",
+  "범위 스킬을 보조한다.": "Supports Area Skills.",
+  "범위 주술 스킬을 보조한다.": "Supports Area Spell Skills.",
+  "보초병 스킬을 보조한다.": "Supports Sentry Skills.",
+  "상태 이상을 입히거나 지속시킬 수 있는 스킬을 보조한다.":
+    "Supports skills that can inflict Ailment or deal Damage Over Time.",
+  "지속 대미지를 입히거나 상태 이상을 부여하는 스킬을 보조한다.":
+    "Supports skills that deal Damage Over Time or inflict Ailments.",
+  "소환체 소환 스킬을 보조한다.": "Supports skills that summon Minions.",
+  "수직 투사체 스킬을 보조한다.": "Supports Vertical Projectile Skills.",
+  "수평 투사체 스킬 또는 체인 스킬을 보조한다.":
+    "Supports Horizontal Projectile Skills or Chain Skills.",
+  "수평 투사체 스킬을 보조한다.": "Supports Horizontal Projectile Skills.",
+  "스마트 웨폰 소환 스킬을 보조한다.":
+    "Supports skills that summon Synthetic Troops.",
+  "실드 스킬을 보조한다.": "Supports Shield Skills.",
+  "액티브 스킬 보조, 채널링 스킬 및 공격 스킬 보조 불가.":
+    "Supports Active Skills. Cannot support Channelling or Attack Skills.",
+  "액티브 스킬을 보조한다.": "Supports Active Skills.",
+  "대미지를 주는 액티브 스킬을 보조한다.":
+    "Supports Active Skills that deal damage.",
+  "액티브 주술 스킬을 보조한다.": "Supports Active Spell Skills.",
+  "영약 스킬을 보조한다.": "Supports Tonic Skills.",
+  "오라 스킬을 보조한다.": "Supports Aura Skills.",
+  "위치 이동 스킬을 보조한다.": "Supports Movement Skills.",
+  "이동 스킬을 보조한다.": "Supports Movement Skills.",
+  "임의의 스킬을 보조한다.": "Supports any skill.",
+  "자극 스킬을 보조한다.": "Supports DoT Skills.",
+  "자극 스킬을 보조한다. 소환 스킬은 보조할 수 없다.":
+    "Supports DoT Skills. Cannot support Summon Skills.",
+  "지속 스킬 및 상태 이상을 부여할 수 있는 스킬을 보조한다.":
+    "Supports Persistent Skills and skills that can inflict Ailment.",
+  "저주 스킬을 보조한다.": "Supports Curse Skills.",
+  "주술 스킬 또는 매직 버스트를 활성화할 수 있는 스킬을 보조한다.":
+    "Supports Spell Skills or skills that can activate Spell Burst.",
+  "대미지를 주는 주술 스킬 또는 매직 버스트를 활성화할 수 있는 스킬을 보조한다.":
+    "Supports Spell Skills that deal damage or skills that can activate Spell Burst.",
+  "주술 스킬을 보조한다.": "Supports Spell Skills.",
+  "주입 스킬을 보조한다.": "Supports Injection Skills.",
+  "지면 스킬을 보조한다.": "Supports Ground Skills.",
+  "지속 스킬을 보조한다.": "Supports Persistent Skills.",
+  "채널링 스킬을 보조한다.": "Supports Channelling Skills.",
+  "콤보 스킬을 보조한다.": "Supports Combo Skills.",
+  "투사체 스킬을 보조한다.": "Supports Projectile Skills.",
+  "패시브 스킬을 보조한다.": "Supports Passive Skills.",
+  "포물선 투사체 스킬을 보조한다.": "Supports Parabolic Projectile Skills.",
+  "폭격 스킬을 보조한다.": "Supports Bombardment Skills.",
+  "함성 스킬을 보조한다.": "Supports Warcry Skills.",
+  "회복 스킬을 보조한다.": "Supports Restoration Skills.",
+  "적을 적중할 수 있는 스킬을 보조한다.": "Supports skills that hit the enemy.",
+};
+
+/**
+ * If the description starts with a known Korean support clause,
+ * replace that clause with its English equivalent so that
+ * parseSupportTargets() can parse it correctly.
+ */
+const translateKoSupportDesc = (description: string): string => {
+  const firstLine = description.split("\n")[0]?.trim() ?? "";
+  for (const [ko, en] of Object.entries(KO_TO_EN_SUPPORT_DESC)) {
+    if (firstLine.startsWith(ko)) {
+      return en + description.slice(firstLine.length);
+    }
+  }
+  return description;
+};
+
 interface ParsedSupportTargets {
   supportTargets: SupportTarget[];
   cannotSupportTargets: SupportTarget[];
 }
 
+const translateSupportDesc = (description: string): string => {
+  const firstLine = description.split("\n")[0]?.trim() ?? "";
+  for (const [ko, en] of Object.entries(KO_TO_EN_SUPPORT_DESC)) {
+    if (firstLine.startsWith(ko.replace(/\.$/, ""))) {
+      return en + description.slice(firstLine.length);
+    }
+  }
+  return description;
+};
+
 const parseSupportTargets = (
   description: string,
   skillName: string,
 ): ParsedSupportTargets => {
+  // Translate Korean support description to English for pattern matching
+  description = translateKoSupportDesc(description);
+  description = translateSupportDesc(description);
   const supportTargets: SupportTarget[] = [];
   const cannotSupportTargets: SupportTarget[] = [];
 
@@ -630,7 +776,7 @@ const parseSkillSupportTarget = (description: string): string => {
   return SUPPORT_TARGET_NORMALIZATION[rawTarget] ?? rawTarget;
 };
 
-// Maps JSON type → file key and type names
+// Maps JSON type ??file key and type names
 // supportType: "none" | "generic" | "magnificent" | "noble"
 const SKILL_TYPE_CONFIG = {
   Active: { fileKey: "active", constName: "ActiveSkills", supportType: "none" },
@@ -742,11 +888,16 @@ const extractSkillFromTlidbHtml = (
     }
   });
 
-  // Extract Mana Cost Multiplier for support skills (e.g., "110.0%" → 110)
+  // Extract Mana Cost Multiplier for support skills (e.g., "110.0%" ??110)
   let manaCostMultiplierPct: number | undefined;
   currentCard.find("div.d-flex").each((_, elem) => {
     const label = $(elem).find("div").first().text().trim();
-    if (label === "Mana Cost Multiplier") {
+    if (
+      label === "Mana Cost Multiplier" ||
+      label === "MP 소모 배율" ||
+      label === "MP 소모 배율" ||
+      label === "MP 소모 배율"
+    ) {
       const value = $(elem).find("div.ps-2").text().trim();
       // Parse "110.0%" to 110
       const match = value.match(/^([\d.]+)%$/);
@@ -756,11 +907,11 @@ const extractSkillFromTlidbHtml = (
     }
   });
 
-  // Extract Sealed Mana for passive skills (e.g., "20%" → 20)
+  // Extract Sealed Mana for passive skills (e.g., "20%" ??20)
   let sealedManaPct: number | undefined;
   currentCard.find("div.d-flex").each((_, elem) => {
     const label = $(elem).find("div").first().text().trim();
-    if (label === "Sealed Mana") {
+    if (label === "Sealed Mana" || label === "MP 봉인") {
       const value = $(elem).find("div.ps-2").text().trim();
       // Parse "20%" to 20
       const match = value.match(/^([\d.]+)%$/);
@@ -807,6 +958,51 @@ const extractSkillFromTlidbHtml = (
   let progressionTable: ProgressionColumn[] | undefined;
   if (skillType === "Support") {
     progressionTable = extractProgressionTable($);
+  }
+
+  // For support/activation medium skills, use English description for support target parsing
+  // but keep Korean description for display
+  const isSupportSkill = [
+    "Support",
+    "Support (Magnificent)",
+    "Support (Noble)",
+    "Activation Medium",
+  ].includes(skillType);
+  if (isSupportSkill && file.enHtml !== undefined) {
+    const $en = cheerio.load(file.enHtml);
+    let enCard = $en("div.card.ui_item.popupItem")
+      .filter(
+        (_, el) =>
+          $en(el).find("div.item_ver").text().trim() === CURRENT_SEASON,
+      )
+      .first();
+    if (enCard.length === 0) {
+      enCard = $en("div.card.ui_item.popupItem:not(.previousItem)").first();
+    }
+    if (enCard.length > 0) {
+      $en(enCard).find("small.description").remove();
+      const enDescriptions: string[] = [];
+      $en(enCard)
+        .find("div.explicitMod")
+        .each((_, elem) => {
+          $en(elem).find("span.tier").remove();
+          let blockHtml = $en(elem).html() ?? "";
+          blockHtml = blockHtml.replace(/<br\s*\/?>/gi, "\n");
+          let text = cheerio.load(blockHtml).text();
+          text = text.replace(/\\n/g, "\n");
+          const cleaned = text
+            .split("\n")
+            .map((line) => line.replace(/\s+/g, " ").trim())
+            .filter((line) => line.length > 0)
+            .join("\n");
+          if (cleaned) enDescriptions.push(cleaned);
+        });
+      // Store English description separately for support target parsing
+      // Override first description block only (used for support target parsing)
+      if (enDescriptions.length > 0) {
+        (file as { enSupportDesc?: string }).enSupportDesc = enDescriptions[0];
+      }
+    }
   }
 
   // Build a synthetic progression table from description text.
@@ -881,6 +1077,8 @@ const extractSkillFromTlidbHtml = (
     parsedLevelModValues,
     parsedAffixDefs,
     progressionTable,
+    enSupportDesc: (file as TlidbSkillFile & { enSupportDesc?: string })
+      .enSupportDesc,
   };
 };
 
@@ -904,7 +1102,7 @@ const toTypeScript = (obj: unknown): string => {
   return String(obj);
 };
 
-// Convert Record<number, number> (level → value) to number[] (index = level - 1)
+// Convert Record<number, number> (level ??value) to number[] (index = level - 1)
 const recordToArray = (record: Record<number, number>): number[] => {
   const result: number[] = [];
   for (let level = 1; level <= 40; level++) {
@@ -1298,7 +1496,7 @@ const main = async (options: Options): Promise<void> => {
     if (config.supportType === "generic") {
       // Parse support targets for generic support skills
       const { supportTargets, cannotSupportTargets } = parseSupportTargets(
-        firstDescription,
+        raw.enSupportDesc ?? firstDescription,
         raw.name,
       );
 
@@ -1360,7 +1558,7 @@ const main = async (options: Options): Promise<void> => {
     } else if (config.supportType === "activation_medium") {
       // Parse support targets for activation medium skills
       const { supportTargets, cannotSupportTargets } = parseSupportTargets(
-        firstDescription,
+        raw.enSupportDesc ?? firstDescription,
         raw.name,
       );
 

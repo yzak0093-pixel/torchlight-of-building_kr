@@ -9,7 +9,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Elemental Resistance",
+    craftableAffix: "원소저항 +8%",
   },
   {
     equipmentSlot: "Shield",
@@ -17,7 +17,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+15% Max Life and Max Mana",
+    craftableAffix: "최대 HP와 최대 MP +15%",
   },
   {
     equipmentSlot: "Shield",
@@ -25,7 +25,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+40% Defense from Shield",
+    craftableAffix: "방패에서 획득한 방어 수치 +40%",
   },
   {
     equipmentSlot: "Shield",
@@ -33,7 +33,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+10% Attack and Spell Block Chance",
+    craftableAffix: "공격 및 주술 막기 확률 +10%",
   },
   {
     equipmentSlot: "Shield",
@@ -41,7 +41,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+10% Movement Speed",
+    craftableAffix: "이동 속도 +10%",
   },
   {
     equipmentSlot: "Shield",
@@ -49,7 +49,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+80% Critical Strike Rating",
+    craftableAffix: "크리티컬 수치 +80%",
   },
   {
     equipmentSlot: "Shield",
@@ -57,7 +57,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+40% Critical Strike Damage",
+    craftableAffix: "크리티컬 대미지 +40%",
   },
   {
     equipmentSlot: "Shield",
@@ -65,7 +65,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Restores 3% Life on Block. Interval: 0.3s",
+    craftableAffix: "막기 시, HP 3% 회복, 간격 0.3 초",
   },
   {
     equipmentSlot: "Shield",
@@ -73,7 +73,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Restores 3% Energy Shield on Block. Interval: 0.3s",
+    craftableAffix: "막기 시, 보호막 3% 회복, 간격 0.3 초",
   },
   {
     equipmentSlot: "Shield",
@@ -81,7 +81,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% all stats",
+    craftableAffix: "모든 속성 +8%",
   },
   {
     equipmentSlot: "Shield",
@@ -89,24 +89,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+8% Block Ratio Upper limit",
-  },
-  {
-    equipmentSlot: "Shield",
-    equipmentType: "Shield (INT)",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "All Passive Skill slots are supported by Lv. 30 Precise: Restrain",
-  },
-  {
-    equipmentSlot: "Shield",
-    equipmentType: "Shield (INT)",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix: "Immune to crowd control effects",
+    craftableAffix: "최대 막기 비율 +8%",
   },
   {
     equipmentSlot: "Shield",
@@ -115,7 +98,15 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Converts 25% of Physical Damage taken to random Elemental Damage\n-25% Defense",
+      "모든 패시브 스킬 슬롯이 30 레벨의 정밀 봉인 제어의 보조를 받는다.",
+  },
+  {
+    equipmentSlot: "Shield",
+    equipmentType: "Shield (INT)",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "제어류 상태 면역",
   },
   {
     equipmentSlot: "Shield",
@@ -124,7 +115,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+15% Armor Effective Rate for Non-Physical Damage\n+2400 Gear Armor",
+      "받은 물리 대미지의 25% 를 랜덤 원소대미지로 전환\n방어 수치 -25%",
   },
   {
     equipmentSlot: "Shield",
@@ -133,7 +124,7 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Spell Damage will not further reduce Evasion by default\n+1680 gear Evasion",
+      "비물리 대미지에 대한 아머 적용률 +15% .\n해당 장비 아머 수치 +2400",
   },
   {
     equipmentSlot: "Shield",
@@ -142,6 +133,15 @@ export const SHIELD_INT_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Energy Shield starts to Charge when Blocking\n+40% Energy Shield Charge Speed",
+      "기본적으로, 주술 대미지 회피 시, 회피 수치를 별도로 감소시키지 않습니다.\n해당 장비 회피 수치 +1680",
+  },
+  {
+    equipmentSlot: "Shield",
+    equipmentType: "Shield (INT)",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix:
+      "막기 시 보호막이 즉시 충전을 시작한다.\n보호막 에너지 충전 속도 +40%",
   },
 ];

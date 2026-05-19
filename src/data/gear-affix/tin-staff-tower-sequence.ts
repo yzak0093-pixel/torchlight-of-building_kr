@@ -9,7 +9,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% additional Spell Damage",
+    craftableAffix: "주술 대미지 별도 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -17,7 +17,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+12% Armor DMG Mitigation Penetration",
+    craftableAffix: "아머 대미지 감소 관통 +12%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -25,7 +25,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Fire Penetration",
+    craftableAffix: "화염 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -33,7 +33,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Cold Penetration",
+    craftableAffix: "냉기 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -41,7 +41,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Lightning Penetration",
+    craftableAffix: "번개 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -49,7 +49,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Erosion Resistance Penetration",
+    craftableAffix: "부식 저항 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -57,7 +57,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+32% Cast Speed",
+    craftableAffix: "시전 속도 +32%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -65,7 +65,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+110 Spell Critical Strike Rating",
+    craftableAffix: "주술 크리티컬 수치 +110",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -73,7 +73,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+20% additional damage on Critical Strike",
+    craftableAffix: "크리티컬 발동 시, 대미지 추가 +20%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -81,7 +81,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% all stats",
+    craftableAffix: "모든 속성 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -90,7 +90,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a 30% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius",
+      "공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -98,16 +98,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+50% additional Hit Damage for skills cast by Spell Burst",
-  },
-  {
-    equipmentSlot: "Two-Handed",
-    equipmentType: "Tin Staff",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "Adds 420 - 440 Cold Damage to Spells when having at least 800 Intelligence",
+    craftableAffix: "매직 버스트로 시전하는 스킬의 적중 대미지 별도 +50%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -116,7 +107,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "The Main Skill is supported by Lv. 25 Control Spell\n+25% additional Spell Damage",
+      "지혜가 800 포인트 이상이면 주술에 냉기 대미지가 420 - 440 포인트 추가된다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -125,15 +116,7 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+200% Spell Amplification Aura\n-30% additional Spell Amplification Sealed Mana Compensation",
-  },
-  {
-    equipmentSlot: "Two-Handed",
-    equipmentType: "Tin Staff",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix: "+70% additional damage\n-10% additional Cast Speed",
+      "25 레벨의 주술 제어가 메인 스킬을 보조한다.\n주술 대미지 별도 +25%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -142,7 +125,15 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+30% additional Deterioration Damage\n10% chance to inflict 2 additional stack(s) of Deterioration",
+      "주술 증폭 오라 효과 +200%\n주술 증폭의 MP 봉인 보상 추가 -30%",
+  },
+  {
+    equipmentSlot: "Two-Handed",
+    equipmentType: "Tin Staff",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "대미지 추가 +70%\n시전 속도 추가 -10%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -151,6 +142,15 @@ export const TIN_STAFF_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "-2 to Max Tenacity Blessing Stacks\n+2 to Max Focus Blessing Stacks\n+2 to Max Agility Blessing Stacks",
+      "악화 대미지 별도 +30%\n10% 의 확률로 악화를 2 회 추가 부여한다.",
+  },
+  {
+    equipmentSlot: "Two-Handed",
+    equipmentType: "Tin Staff",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix:
+      "강건한 축복 최대 중첩 수 -2\n집요한 축복 최대 중첩 수 +2\n황홀한 축복 최대 중첩 수 +2",
   },
 ];

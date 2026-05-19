@@ -6,7 +6,7 @@ import { program } from "commander";
 import type { VoraxLimbData } from "../data/vorax/types";
 import { fetchPage, processInBatches, toSnakeCase } from "./tlidb-tools";
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const VORAX_DIR = join(process.cwd(), ".garbage", "tlidb", "vorax");
 const OUT_DIR = join(process.cwd(), "src", "data", "vorax");
 
@@ -22,7 +22,7 @@ const VORAX_LIMB_PAGES = [
 
 /**
  * Parses modifier text from an element, handling:
- * - <span class="text-mod"> tags (keep inner text with ndash → hyphen)
+ * - <span class="text-mod"> tags (keep inner text with ndash ??hyphen)
  * - <e> hyperlink tags (remove, keep inner text)
  * - <br> tags (convert to newlines)
  * - Various dash characters to regular hyphens

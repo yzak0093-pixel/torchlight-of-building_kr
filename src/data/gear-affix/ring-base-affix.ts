@@ -9,7 +9,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(87-117) Max Energy Shield",
+    craftableAffix: "최대 보호막 +(87-117)",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,7 +57,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -65,7 +65,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -73,7 +73,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -81,7 +81,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(6-8)% Attack and Cast Speed",
+    craftableAffix: "공격 및 시전 속도 +(6-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -89,7 +89,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(8-10)% Movement Speed",
+    craftableAffix: "이동 속도 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -98,7 +98,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(20-25)% chance to launch one more wave when casting a Barrage Skill",
+      "폭격 스킬 시전 시, +(20-25)% 의 확률로 해당 폭격 스킬의 총 웨이브 수가 1회 증가한다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -106,7 +106,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(15-20)% Fervor effect",
+    craftableAffix: "전의 효과 +(15-20)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -114,7 +114,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Tenacity Blessing Stacks",
+    craftableAffix: "강건한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Trinket",
@@ -122,7 +122,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Agility Blessing Stacks",
+    craftableAffix: "황홀한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Trinket",
@@ -130,7 +130,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Focus Blessing Stacks",
+    craftableAffix: "집요한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Trinket",
@@ -138,7 +138,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "周围 15 米内敌人受到 20 级不祥诅咒",
+    craftableAffix: "주변 15 미터 내의 적이 20 레벨의 불길 저주를 받는다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -147,7 +147,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Timid Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입히면 20 레벨 위축 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -156,7 +156,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Entangled Pain Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 고통의 올가미 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -164,7 +164,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Immune to Trauma",
+    craftableAffix: "외상 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -172,7 +172,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Immune to Wilt",
+    craftableAffix: "몰락 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -180,7 +180,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to curse",
+    craftableAffix: "저주 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -188,7 +188,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (18-20)% of Physical Damage as Fire Damage",
+    craftableAffix: "물리 대미지 (18-20)% 가 추가된 화염 대미지",
   },
   {
     equipmentSlot: "Trinket",
@@ -196,7 +196,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (18-20)% of Physical Damage to Cold Damage",
+    craftableAffix: "(18-20)% 의 물리 대미지가 추가된 냉기 대미지",
   },
   {
     equipmentSlot: "Trinket",
@@ -204,7 +204,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (18-20)% of Physical Damage as Lightning Damage",
+    craftableAffix: "물리 대미지 (18-20)% 가 추가된 번개 대미지",
   },
   {
     equipmentSlot: "Trinket",
@@ -212,7 +212,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (18-20)% of Physical Damage as Erosion Damage",
+    craftableAffix: "물리 대미지 (18-20)% 를 추가한 부식 대미지",
   },
   {
     equipmentSlot: "Trinket",
@@ -220,7 +220,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Gains Spell Aggression when casting a Spell Skill",
+    craftableAffix: "주술 스킬 시전 시 주술 과격을 획득한다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -228,7 +228,7 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Gains Attack Aggression when casting an Attack Skill",
+    craftableAffix: "공격 스킬 시전 시 맹공을 획득한다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -236,6 +236,6 @@ export const RING_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(12-16)% Blur Effect",
+    craftableAffix: "방황 효과 +(12-16)%",
   },
 ];

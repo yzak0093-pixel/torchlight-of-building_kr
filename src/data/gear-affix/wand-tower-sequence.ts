@@ -9,7 +9,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% additional Spell Damage",
+    craftableAffix: "주술 대미지 별도 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -17,7 +17,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+6% Armor DMG Mitigation Penetration",
+    craftableAffix: "아머 대미지 감소 관통 +6%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -25,7 +25,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Fire Penetration",
+    craftableAffix: "화염 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -33,7 +33,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Cold Penetration",
+    craftableAffix: "냉기 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -41,7 +41,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Lightning Penetration",
+    craftableAffix: "번개 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -49,7 +49,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Erosion Resistance Penetration",
+    craftableAffix: "부식 저항 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -57,7 +57,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Cast Speed",
+    craftableAffix: "시전 속도 +16%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -65,7 +65,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+55 Spell Critical Strike Rating",
+    craftableAffix: "주술 크리티컬 수치 +55",
   },
   {
     equipmentSlot: "One-Handed",
@@ -73,7 +73,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+10% additional damage on Critical Strike",
+    craftableAffix: "크리티컬 발동 시, 대미지 추가 +10%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -81,7 +81,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% all stats",
+    craftableAffix: "모든 속성 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -90,7 +90,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a 15% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius",
+      "공격 또는 주술로 적 처치 시 15% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -98,24 +98,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+25% additional Hit Damage for skills cast by Spell Burst",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Wand",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "Adds 200 - 220 Cold Damage to Spells when having at least 800 Intelligence",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Wand",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix: "The Main Skill is supported by Lv. 25 Control Spell",
+    craftableAffix: "매직 버스트로 시전하는 스킬의 적중 대미지 별도 +25%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -124,7 +107,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+120% Spell Amplification Aura\n-20% additional Spell Amplification Sealed Mana Compensation",
+      "지혜가 800 포인트 이상이면 주술에 냉기 대미지가 200 - 220 포인트 추가된다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -132,16 +115,7 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+35% additional damage\n-10% additional Cast Speed",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Wand",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "+15% additional Deterioration Damage\n10% chance to inflict 1 additional stack(s) of Deterioration",
+    craftableAffix: "25 레벨의 주술 제어가 메인 스킬을 보조한다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -150,6 +124,32 @@ export const WAND_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "-1 to Max Tenacity Blessing Stacks\n+1 to Max Focus Blessing Stacks\n+1 to Max Agility Blessing Stacks",
+      "주술 증폭 오라 효과 +120%\n주술 증폭의 MP 봉인 보상 추가 -20%",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Wand",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "대미지 추가 +35%\n시전 속도 추가 -10%",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Wand",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix:
+      "악화 대미지 별도 +15%\n10% 의 확률로 악화를 1 회 추가 부여한다.",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Wand",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix:
+      "강건한 축복 최대 중첩 수 -1\n집요한 축복 최대 중첩 수 +1\n황홀한 축복 최대 중첩 수 +1",
   },
 ];

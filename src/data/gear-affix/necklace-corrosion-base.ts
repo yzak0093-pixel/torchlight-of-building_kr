@@ -9,7 +9,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "You can cast 1 additional Curses",
+    craftableAffix: "추가 저주를 1 개 시전할 수 있다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to Elemental Ailments",
+    craftableAffix: "원소 상태 이상에 면역된다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to Frostbite\nImmune to Numbed",
+    craftableAffix: "빙결 면역\n마취 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to Ignite\nImmune to Numbed",
+    craftableAffix: "점화 면역\n마취 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-15)% Sealed Mana Compensation for Charged Flames",
+    craftableAffix: "화염 충전의 MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-15)% Sealed Mana Compensation for Frigid Domain",
+    craftableAffix: "혹한지대의 MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,8 +57,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(10-15)% Sealed Mana Compensation for Electric Conversion",
+    craftableAffix: "전기 에너지 전환의 MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -66,8 +65,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(10-15)% Sealed Mana Compensation for Weapon Amplification",
+    craftableAffix: "무기 증폭의 MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -75,7 +73,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-15)% Sealed Mana Compensation for Deep Pain",
+    craftableAffix: "깊은 고통의 MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -83,7 +81,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(60-80) Attack and Spell Critical Strike Rating",
+    craftableAffix: "공격 및 주술 크리티컬 수치 +(60-80)",
   },
   {
     equipmentSlot: "Trinket",
@@ -91,7 +89,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-70)% damage",
+    craftableAffix: "대미지 +(50-70)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -99,7 +97,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-10)% Elemental Resistance",
+    craftableAffix: "원소저항 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -107,7 +105,7 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-40)% Skill Area",
+    craftableAffix: "스킬 범위 +(30-40)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -115,6 +113,6 @@ export const NECKLACE_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Skill Effect Duration",
+    craftableAffix: "스킬 효과 지속 시간 +(15-20)%",
   },
 ];

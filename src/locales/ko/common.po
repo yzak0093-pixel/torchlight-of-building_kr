@@ -1,0 +1,556 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-10 19:57+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ko\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/EditGearModal.tsx:948
+#: src/components/equipment/VoraxGearModule.tsx:912
+msgid ""
+"+10% Fire Damage\n"
+"+20 to Maximum Life\n"
+"+5% Attack Speed"
+msgstr ""
+"+10% Fire Damage\n"
+"+20 to Maximum Life\n"
+"+5% Attack Speed"
+
+#: src/components/equipment/EditGearModal.tsx:752
+msgid "Base Stats (1 max)"
+msgstr "기본 스탯 (최대 1개)"
+
+#: src/routes/builder/talents/$slot.tsx:408
+msgid "Tree"
+msgstr "트리"
+
+#: src/routes/index.tsx:417
+msgid "Create your first character build to get started"
+msgstr "빌드를 새로 만들어 시작하세요"
+
+#: src/components/equipment/EditGearModal.tsx:955
+#: src/components/equipment/VoraxGearModule.tsx:919
+msgid "Enter raw affix text, one per line. Use this for affixes not available in the dropdowns above."
+msgstr "한 줄에 하나씩 접사 텍스트를 직접 입력하세요. 위 드롭다운에 없는 접사에 사용하세요."
+
+#: src/components/equipment/EditGearModal.tsx:943
+#: src/components/equipment/VoraxGearModule.tsx:907
+msgid "Custom Affixes"
+msgstr "직접 입력 접사"
+
+#: src/routes/index.tsx:167
+msgid "Rename"
+msgstr "이름 변경"
+
+#: src/components/equipment/VoraxGearModule.tsx:832
+msgid "Vorax Limb"
+msgstr "블러드러스트 부위"
+
+#: src/routes/index.tsx:390
+msgid "Create New"
+msgstr "새로 만들기"
+
+#: src/routes/builder/equipment.tsx:146
+msgid "Craft New Item"
+msgstr "아이템 제작"
+
+#: src/routes/builder/equipment.tsx:238
+msgid "No items in inventory. Craft items above to add them here."
+msgstr "인벤토리가 비어 있습니다. 위에서 아이템을 제작하여 추가하세요."
+
+#: src/components/equipment/EditGearModal.tsx:987
+#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/VoraxGearModule.tsx:953
+msgid "Save to Inventory"
+msgstr "인벤토리에 저장"
+
+#. js-lingui-explicit-id
+#: src/routes/builder/skills.tsx:84
+msgid "Active Skills"
+msgstr "액티브 스킬"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/LegendaryGearModule.tsx:313
+msgid "Add Legendary"
+msgstr "전설 장비 추가"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:4
+#: src/data/translate/equipment-types.ts:5
+msgid "Belt"
+msgstr "벨트"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:6
+msgid "Boots"
+msgstr "신발"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:7
+msgid "Boots (DEX)"
+msgstr "신발 (민첩)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:8
+msgid "Boots (INT)"
+msgstr "신발 (지능)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:9
+msgid "Boots (STR)"
+msgstr "신발 (힘)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:10
+msgid "Bow"
+msgstr "활"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:11
+msgid "Calculations"
+msgstr "계산"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:11
+msgid "Cane"
+msgstr "지팡이"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:12
+msgid "Chest"
+msgstr "갑옷"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:13
+msgid "Chest Armor (DEX)"
+msgstr "갑옷 (민첩)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:14
+msgid "Chest Armor (INT)"
+msgstr "갑옷 (지능)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:15
+msgid "Chest Armor (STR)"
+msgstr "갑옷 (힘)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:16
+msgid "Claw"
+msgstr "클로"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:10
+msgid "Configuration"
+msgstr "설정"
+
+#. js-lingui-explicit-id
+#: src/components/talents/CoreTalentSelector.tsx:60
+msgid "Core Talent 1"
+msgstr "코어 재능 1"
+
+#. js-lingui-explicit-id
+#: src/components/talents/CoreTalentSelector.tsx:67
+msgid "Core Talent 2"
+msgstr "코어 재능 2"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/EditGearModal.tsx:713
+msgid "Craft New Item"
+msgstr "아이템 제작"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/VoraxGearModule.tsx:677
+#~ msgid "Craft Vorax Gear"
+#~ msgstr "Craft Vorax Gear"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:17
+msgid "Crossbow"
+msgstr "석궁"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:18
+msgid "Cudgel"
+msgstr "철퇴"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:19
+msgid "Dagger"
+msgstr "단검"
+
+#: src/routes/index.tsx:426
+msgid "Create New Build"
+msgstr "새 빌드 만들기"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:9
+msgid "Divinity Slate"
+msgstr "신성 석판"
+
+#: src/routes/index.tsx:384
+msgid "Import Build"
+msgstr "빌드 불러오기"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/EditGearModal.tsx:714
+msgid "Edit {equipmentType}"
+msgstr "{equipmentType} 편집"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:4
+msgid "Equipment"
+msgstr "장비"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:20
+msgid "Fire Cannon"
+msgstr "화염포"
+
+#: src/components/equipment/EditGearModal.tsx:843
+msgid "Tower Sequence (1 max)"
+msgstr "타워 시퀀스 (최대 1개)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:21
+msgid "Gloves"
+msgstr "장갑"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:22
+msgid "Gloves (DEX)"
+msgstr "장갑 (민첩)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:23
+msgid "Gloves (INT)"
+msgstr "장갑 (지능)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:24
+msgid "Gloves (STR)"
+msgstr "장갑 (힘)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:25
+msgid "Helmet"
+msgstr "투구"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:26
+msgid "Helmet (DEX)"
+msgstr "투구 (민첩)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:27
+msgid "Helmet (INT)"
+msgstr "투구 (지능)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:28
+msgid "Helmet (STR)"
+msgstr "투구 (힘)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:7
+msgid "Hero"
+msgstr "영웅"
+
+#: src/routes/index.tsx:414
+msgid "No builds yet"
+msgstr "저장된 빌드가 없습니다"
+
+#: src/routes/index.tsx:358
+msgid "The build code in the URL was invalid or could not be imported."
+msgstr "URL의 빌드 코드가 올바르지 않거나 불러올 수 없습니다."
+
+#: src/components/equipment/VoraxGearModule.tsx:951
+msgid "Save Changes"
+msgstr "변경사항 저장"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:29
+msgid "Left Ring"
+msgstr "왼손 반지"
+
+#. js-lingui-explicit-id
+#: src/components/talents/TalentNodeDisplay.tsx:84
+msgid "Legendary Talent"
+msgstr "레전드 재능"
+
+#. placeholder {0}: formatDate(save.createdAt)
+#: src/routes/index.tsx:119
+msgid "Created: {0}"
+msgstr "생성일: {0}"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:30
+msgid "Main Hand"
+msgstr "주무기"
+
+#. js-lingui-explicit-id
+#: src/components/talents/TalentNodeDisplay.tsx:83
+msgid "Medium Talent"
+msgstr "중위 재능"
+
+#. js-lingui-explicit-id
+#: src/components/talents/TalentNodeDisplay.tsx:81
+msgid "Micro Talent"
+msgstr "하위 재능"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:31
+msgid "Musket"
+msgstr "머스킷"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:32
+msgid "Neck"
+msgstr "목 장식"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:33
+msgid "Necklace"
+msgstr "목걸이"
+
+#: src/components/equipment/EditGearModal.tsx:799
+msgid "Base Affixes (2 max)"
+msgstr "기본 접사 (최대 2개)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:34
+msgid "Off Hand"
+msgstr "보조 무기"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:35
+msgid "One-Handed Axe"
+msgstr "한손 도끼"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:36
+msgid "One-Handed Hammer"
+msgstr "한손 망치"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:37
+msgid "One-Handed Sword"
+msgstr "한손 검"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:8
+msgid "Pactspirit"
+msgstr "계약령"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:38
+msgid "Pistol"
+msgstr "권총"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:39
+msgid "Right Ring"
+msgstr "오른손 반지"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:40
+msgid "Ring"
+msgstr "반지"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:41
+msgid "Rod"
+msgstr "로드"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:42
+msgid "Scepter"
+msgstr "홀"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/EditGearModal.tsx:740
+msgid "Select equipment type..."
+msgstr "장비 유형 선택..."
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:43
+msgid "Shield (DEX)"
+msgstr "방패 (민첩)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:44
+msgid "Shield (INT)"
+msgstr "방패 (지능)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:45
+msgid "Shield (STR)"
+msgstr "방패 (힘)"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:6
+msgid "Skills"
+msgstr "스킬"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:46
+msgid "Spirit Ring"
+msgstr "정령 반지"
+
+#. js-lingui-explicit-id
+#: src/data/translate/translate-tab.ts:5
+msgid "Talents"
+msgstr "재능"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:47
+msgid "Tin Staff"
+msgstr "주석 지팡이"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:48
+msgid "Two-Handed Axe"
+msgstr "양손 도끼"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:49
+msgid "Two-Handed Hammer"
+msgstr "양손 망치"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:50
+msgid "Two-Handed Sword"
+msgstr "양손 검"
+
+#: src/routes/index.tsx:377
+msgid "My Builds"
+msgstr "내 빌드"
+
+#: src/components/equipment/EditGearModal.tsx:971
+#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/VoraxGearModule.tsx:935
+msgid "No affixes"
+msgstr "접사 없음"
+
+#: src/routes/builder/equipment.tsx:124
+msgid "Equipment Slots"
+msgstr "장비 슬롯"
+
+#. js-lingui-explicit-id
+#: src/data/translate/equipment-types.ts:51
+msgid "Wand"
+msgstr "완드"
+
+#. placeholder {0}: formatDate(save.updatedAt)
+#: src/routes/index.tsx:123
+msgid "Updated: {0}"
+msgstr "수정일: {0}"
+
+#: src/components/equipment/EditGearModal.tsx:734
+msgid "Equipment Type"
+msgstr "장비 유형"
+
+#: src/routes/builder/talents/$slot.tsx:363
+msgid "Tree Slot"
+msgstr "트리 슬롯"
+
+#: src/components/equipment/EditGearModal.tsx:961
+#~ msgid "Select an equipment type to begin crafting"
+#~ msgstr "Select an equipment type to begin crafting"
+
+#: src/components/calculations/SkillSelector.tsx:45
+msgid "Active Skill"
+msgstr "액티브 스킬"
+
+#: src/routes/builder/equipment.tsx:183
+msgid "Inventory"
+msgstr "인벤토리"
+
+#: src/components/equipment/VoraxGearModule.tsx:735
+#: src/routes/index.tsx:145
+#: src/routes/index.tsx:179
+msgid "Delete"
+msgstr "삭제"
+
+#: src/components/equipment/EditGearModal.tsx:899
+#: src/components/equipment/VoraxGearModule.tsx:871
+msgid "Prefixes (3 max)"
+msgstr "접두사 (최대 3개)"
+
+#: src/components/equipment/EditGearModal.tsx:979
+#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/VoraxGearModule.tsx:943
+#: src/routes/index.tsx:108
+#: src/routes/index.tsx:151
+msgid "Cancel"
+msgstr "취소"
+
+#: src/components/equipment/VoraxGearModule.tsx:847
+msgid "Base Affix"
+msgstr "기본 접사"
+
+#: src/components/equipment/EditGearModal.tsx:863
+msgid "Blending (1 max)"
+msgstr "조향옵션 (최대 1개)"
+
+#: src/components/talents/PrismSection.tsx:66
+msgid "Prisms"
+msgstr "프리즘"
+
+#: src/routes/index.tsx:173
+msgid "Copy"
+msgstr "복사"
+
+#: src/routes/builder/equipment.tsx:184
+msgid "items"
+msgstr "개"
+
+#: src/components/equipment/EditGearModal.tsx:921
+#: src/components/equipment/VoraxGearModule.tsx:889
+msgid "Suffixes (3 max)"
+msgstr "접미사 (최대 3개)"
+
+#: src/components/equipment/EditGearModal.tsx:823
+msgid "Sweet Dream Affix (1 max)"
+msgstr "해몽 접사 (최대 1개)"
+
+#: src/components/equipment/VoraxGearModule.tsx:755
+#~ msgid "Select a vorax limb to configure"
+#~ msgstr "Select a vorax limb to configure"
+
+#: src/components/talents/CoreTalentSelector.tsx:90
+#: src/components/talents/CoreTalentSelector.tsx:102
+msgid "Core Talents"
+msgstr "코어 재능"
+
+#. placeholder {0}: save.name
+#: src/routes/index.tsx:135
+msgid "Are you sure you want to delete \"{0}\"?"
+msgstr "\"{0}\"을(를) 삭제하시겠습니까?"
+
+#: src/components/equipment/LegendaryGearModule.tsx:323
+msgid "Select Legendary"
+msgstr "전설 장비 선택"
+
+#: src/components/equipment/EditGearModal.tsx:989
+#: src/routes/index.tsx:102
+msgid "Save"
+msgstr "저장"
+
+#: src/components/equipment/EditGearModal.tsx:786
+msgid "Clear"
+msgstr "초기화"
+
+#: src/routes/index.tsx:355
+msgid "Import Failed"
+msgstr "불러오기 실패"

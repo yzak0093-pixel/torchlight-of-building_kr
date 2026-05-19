@@ -9,7 +9,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (10-13) - (14-19) Physical Damage to Attacks",
+    craftableAffix: "공격에 물리 대미지 (10-13) ~ (14-19) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -17,7 +17,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (9-14) - (15-20) Fire Damage to Attacks",
+    craftableAffix: "공격에 화염 대미지 (9-14) ~ (15-20) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -25,7 +25,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (10-13) - (14-19) Cold Damage to Attacks",
+    craftableAffix: "공격에 냉기 대미지 (10-13) ~ (14-19) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -33,7 +33,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (1-2) - (28-32) Lightning Damage to Attacks",
+    craftableAffix: "공격에 번개 대미지 (1-2) ~ (28-32) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -41,7 +41,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (11-13) - (15-18) Erosion Damage to Attacks",
+    craftableAffix: "공격에 부식 대미지 (11-13) ~ (15-18) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -49,7 +49,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Physical Damage",
+    craftableAffix: "물리 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -57,7 +57,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Elemental Damage",
+    craftableAffix: "원소 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -65,7 +65,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Erosion Damage",
+    craftableAffix: "부식 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -73,7 +73,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Melee Damage",
+    craftableAffix: "근접 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -81,7 +81,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(6-8)% Attack Speed",
+    craftableAffix: "공격 속도 +(6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -89,7 +89,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Shadow Quantity +1",
+    craftableAffix: "환영 수량 +1",
   },
   {
     equipmentSlot: "One-Handed",
@@ -97,7 +97,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% additional Attack Damage",
+    craftableAffix: "공격 대미지 추가 +(6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -105,7 +105,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% Elemental and Erosion Resistance Penetration",
+    craftableAffix: "원소와 부식 저항 관통 +(6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -113,7 +113,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(5-7)% Armor DMG Mitigation Penetration",
+    craftableAffix: "아머 대미지 감소 관통 +(5-7)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -121,7 +121,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Tenacity Blessing Stacks",
+    craftableAffix: "강건한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "One-Handed",
@@ -129,7 +129,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Agility Blessing Stacks",
+    craftableAffix: "황홀한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "One-Handed",
@@ -137,7 +137,7 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Focus Blessing Stacks",
+    craftableAffix: "집요한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "One-Handed",
@@ -145,6 +145,6 @@ export const DAGGER_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+8% Life Regain and Energy Shield Regain",
+    craftableAffix: "HP 반환 및 보호막 반환 +8%",
   },
 ];

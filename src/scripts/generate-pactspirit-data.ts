@@ -13,7 +13,7 @@ import type {
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const PACTSPIRIT_LIST_URL = `${BASE_URL}/Pactspirit`;
 const OUTPUT_DIR = ".garbage/tlidb";
 const PACTSPIRITS_DIR = `${OUTPUT_DIR}/pactspirits`;

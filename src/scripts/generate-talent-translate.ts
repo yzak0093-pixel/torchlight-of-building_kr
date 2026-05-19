@@ -69,7 +69,7 @@ const generateTranslateNames = async (
 
     const html = await readFile(filepath, "utf-8");
 
-    // Extract Chinese name from h1 label like  <div class="card-header">机械之神 /34 </div>
+    // Extract Chinese name from h1 label like  <div class="card-header">?�械之神 /34 </div>
     const cardHeaderMatch = html.match(
       /<div class="card-header">([^<]+)<\/div>/i,
     );

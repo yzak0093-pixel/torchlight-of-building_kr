@@ -9,7 +9,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(87-117) Max Energy Shield",
+    craftableAffix: "최대 보호막 +(87-117)",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,7 +57,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(3-4)% Elemental Resistance",
+    craftableAffix: "원소저항 +(3-4)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -65,7 +65,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -73,7 +73,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -81,7 +81,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "Trinket",
@@ -89,7 +89,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% damage\n+(20-24)% Minion Damage",
+    craftableAffix: "대미지 +(20-24)% \n소환체 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -97,7 +97,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(8-10)% Movement Speed",
+    craftableAffix: "이동 속도 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -105,7 +105,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(2-3)% damage per stack of any Blessing",
+    craftableAffix: "모든 축복 중첩 1회당, 대미지 +(2-3)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -113,7 +113,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+1% damage per 27 stats",
+    craftableAffix: "속성 27 포인트 당 대미지 +1%",
   },
   {
     equipmentSlot: "Trinket",
@@ -121,7 +121,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Adds 10 - 10 Base Ailment Damage",
+    craftableAffix: "상태이상 기본 대미지가 10 - 10 추가된다.",
   },
   {
     equipmentSlot: "Trinket",
@@ -129,7 +129,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% Sealed Mana Compensation",
+    craftableAffix: "MP 봉인 보상 +(6-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -138,7 +138,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Vulnerability Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 대미지 취약 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -147,7 +147,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Scorch Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 작열 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -156,7 +156,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Biting Cold Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 본 프로스트 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -165,7 +165,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Electrocute Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 감전 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -174,7 +174,7 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. 20 Corruption Curse upon inflicting damage. Cooldown: 0.2 s",
+      "대미지를 입힐 시, 20 레벨 사악한 침식 저주를 발동한다. 쿨타임 0.2 초",
   },
   {
     equipmentSlot: "Trinket",
@@ -182,6 +182,6 @@ export const NECKLACE_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Has Profane. Minions have Profane",
+    craftableAffix: "악령을 보유한다. 소환체가 악령을 보유한다.",
   },
 ];

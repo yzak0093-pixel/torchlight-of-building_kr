@@ -14,7 +14,7 @@ import { ALL_TREES, isTreeName } from "../data/talent-tree/types";
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const TALENT_TREE_DIR = join(process.cwd(), ".garbage", "tlidb", "talent_tree");
 
 const fetchPage = async (url: string): Promise<string> => {

@@ -1,2325 +1,2080 @@
 // This file is machine-generated. Do not modify manually.
 // To regenerate, run: pnpm exec tsx src/scripts/generate-hyperlink-data.ts
 export const Hyperlinks: Record<string, string> = {
-  "Elemental Ailment": "Ignite, Frostbite, Freeze, and Numbed",
-  Nearby: "Within 6m",
-  Recent: "Within 4s",
-  Armor: "Helmet, Chest Armor, Gloves, and Boots",
-  "Fatal Damage": "The instance of damage that defeats the target",
-  Split:
-    "Upon hitting a target, a Parabolic Projectile Splits into multiple secondary Projectiles",
-  Jump: "Upon hitting a target, a horizontal Projectile or Chain Skill jumps to another target nearby",
-  Multistrike:
-    "Chance to perform an additional attack when using Attack Skills. If the chance exceeds 100%, one additional attack will be performed with every 100% of the chance.\n+20% Attack Speed during Multistrikes.\nMultistrikes consume skill resources as normal and will be interrupted if there are insufficient resources. Moving or using other non-instant skills will interrupt Multistrike.\nMobility, Channeled Skills, and Sentry skills cannot Multistrike",
-  Penetrate:
-    "Horizontal Projectiles pass through the targets they hit, continuing along their original trajectory until reaching the Penetration limit.",
-  "Main-Hand Weapon":
-    "The weapon held in the Character's right hand is the Main-Hand Weapon",
-  "Off-Hand Weapon":
-    "The weapon held in the Character's left hand is the Off-Hand Weapon",
-  Reflect:
-    "Reflects negative effects back to the attacker. You will still be affected by the reflected effects",
-  Raid: "-20% additional Attack Speed to the target, and +20% Attack Speed to the caster. Each target can only be raided once",
-  "Freezing Physique": "When an enemy hits you, it gets slowed for 2s",
-  Lucky:
-    "Performs a random check or random roll twice and picks the result that benefits you the most",
-  Unlucky:
-    "Performs a random check or random roll twice and picks the result that benefits you the least",
-  Elemental: "Fire, Cold, and Lightning",
-  "Low Life": "When current Life is under 35% of Max Life",
-  Elimination:
-    "Directly defeats enemies under a certain percentage of Max Life on hit",
-  "Legendary Boss":
-    "These rarest monsters are the most challenging and provide the best drops.",
-  Elite: "Elite monsters include rare monsters and bosses",
-  Shatter: "Defeat Frostbitten enemies",
-  "Severe Injury":
-    "Takes damage that exceeds 50% of the sum of Max Life and Max Energy Shield within 0.5s",
-  "Sunder Armor":
-    "Your Armor no longer provides Physical Damage Mitigation, but instead increases Melee Physical Attack Damage equal to 1% of Armor.",
-  "Low Mana": "When current Mana is under 35% of Max Mana",
-  Charge:
-    "Energy Shield starts to charge after the character hasn't taken any damage for 2s at the rate of 20% of Max Energy Shield per second and stops charging if the character takes damage",
-  "Sealed Mana":
-    "A portion of Mana is reserved to maintain persistent effects such as auras",
-  "Sealed Life":
-    "A portion of Life is reserved to maintain persistent effects such as auras",
-  "Dual Wielding": "When using two One-Handed Weapons, one in each hand",
-  Unarmed: "When the character has no weapons equipped",
-  "Balance of All Things":
-    "Increases an enemy's Resistance against an element by 25% after dealing damage with that element, but reduces their Resistance against other elements by 25%",
-  "Steep Strike":
-    "Slash Strike Skills are cast in Sweep Slash form by default. When casting the skill, there is a chance that it will be cast in Steep Strike form. Some skills gain Steep Strike attempts at specific times. When there are Steep Strike attempts, the skill will be cast in Steep Strike form and consume 1 Steep Strike attempt.",
-  Phantom:
-    "Shadow Strike creates a Shadow that strikes at other targets with the same attack. If no other targets are present, it will strike the character's target.\nMultiple Shadows can attack the same target, and the Shadows' Shotgun Effect falloff coefficient is 70%\nShadow damage and character damage are independent of each other",
-  Affliction:
-    "When the Affliction inflicted per second is not 0, the Damage Over Time dealt will continuously inflicts Affliction on the target\nThe target takes 1% additional Damage Over Time for every Affliction point\nThe max Affliction is 100",
-  Reaping:
-    "Deals a certain amount of True Damage to the target, equivalent to the damage from all DoT effects over a certain period of time",
-  "Injury Buffer": "Delays a portion of Hit Damage taken in the next 4s.",
-  Reconjuring:
-    "Gains additional Life Restoration but cannot use skills or be targeted. Loses this status once fully healed",
-  Aggressiveness:
-    "Minions become more aggressive and will target enemies within a greater area",
-  "Enemy Count":
-    "Each Normal or Magic monster counts as 1 monster\nEach Rare monster counts as 2 monsters\nEach Boss counts as 5 monsters",
-  "One-Handed Melee Weapon":
-    "Includes One-Handed Sword, One-Handed Axe, One-Handed Hammer, Claw, Dagger, and Sacrificial Blade",
-  "One-Handed Ranged Weapon": "Includes Cane, Wand, and Pistol",
-  "Two-Handed Melee Weapon":
-    "Includes Two-Handed Sword, Two-Handed Axe, Two-Handed Hammer, Cudgel, and Tin Staff",
-  "Two-Handed Ranged Weapon": "Includes Bow, Crossbow, Cannon, and Musket",
-  Trinket: "Includes Necklace, Ring, and Belt",
-  "Craft Commodity": "Includes Embers, Fuel, Fossils, and Energy Cores",
-  "Demolisher Charge":
-    "Impact Skills gain 1 Demolisher Charge at regular intervals.\nUsing a Demolisher Skill will consume its charges and convert the skill into a stronger form",
-  Distant: "6m away",
-  "Terra Charge":
-    "Terra Skills gain 1 Terra Charge at regular intervals.\nUsing a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill",
-  "Full Life": "When current Life is above 95% of Max Life",
-  "Double Damage": "There's a chance to deal Double Damage on hit",
-  "Damage Transfer":
-    "Transfers a part of the Hit Damage and Secondary Damage taken to other units.\nUp to 90% of the damage can be transferred.",
-  "Contact Target": "When a Parabolic Projectile lands or hits an enemy",
-  "Base Skill":
-    "Spirit Magi's most frequently used initial skill, which is at a relatively low strength",
-  "Enhanced Skill":
-    "Chance to change the skill into a stronger Enhanced Skill when Spirit Magus uses a Base Skill. The chance can be increased, and at 100%, Spirit Magi will no longer use Base Skills and always use Enhanced Skills",
-  Ultimate:
-    "When in a certain state, Spirit Magi use their Ultimate with extremely high strength",
-  Deflection:
-    "Reduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection",
-  Proximity: "Within 4m",
-  "Armor Effective Rate":
-    "Effective Damage Reduction Provided by Armor: 100% by default for Physical Damage. 60% by default for Non-Physical Damage.",
-  "Supreme Boss":
-    "Supreme Bosses include the Watcher and Traveler of each plane, as well as formidable enemies from the Great Void",
-  "Full Mana": "When the current Mana is higher than 95% of the Max Mana",
-  "Next round": "When Channeled Skills gain 1 channeled stack",
-  "Additional Settlement": "This settlement does not count as Reaping.",
-  Preparation:
-    "If the skill is ready, triggers the skill once. If the skill is on cooldown, triggers the skill once immediately after the cooldown ends.",
-  "Resonance Activation":
-    "When activating Resonance, triggers all skills supported by [Activation Medium: Resonance].",
-  Resonance:
-    "Resonance can be activated by [Activation Medium: Resonance Activation].",
-  Instruction:
-    "Instructions can be received by [Activation Medium: Instruction] to enhance skills triggered by it.",
-  Lock: "[Activation Medium: Track] can trigger skills supported by it, with the locked-on enemy as the target.",
-  "Applied Weapon Bonuses":
-    "Includes a weapon's Base Damage and affixes, but does not affect Minions' Base Attack Speed and Base Critical Strike Rating.",
-  "Damage Taken Reduction":
-    "Damage mitigation from each independent source can at most reduce the damage taken by 90%.",
-  "Base Affix":
-    "Excludes base affixes obtained from Dream Interpretation or Corrosion",
-  Effective: "The portion that doesn't exceed the fixed upper limit",
-  Excess: "The portion that exceeds the fixed upper limit",
-  "Compulsory Damage Type Conversion":
-    "Converts all damage to a corresponding damage type and ignores conventional damage conversion effects.\nAdditional damage is applied before damage conversion and does not conflict with this effect.",
-  "Ill Omen":
-    "Inflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies",
-  Fearless:
-    "Increases additional Critical Strike Chance, Critical Strike Damage, and additional Melee Skill Area",
-  "Weapon Amplification": "Additionally increases Physical Damage",
-  Rejuvenation: "Increases Base Life Restoration",
-  "Electric Conversion":
-    "A percentage of Physical Damage added as Lightning Damage. Deals additional Lightning Damage",
-  "Frigid Domain":
-    "Affected enemies take increased Cold Damage. Aura effect increases persistently, up to 4s",
-  Nimbleness: "Increases Evasion by a certain percentage",
-  "Spell Amplification": "Additionally increases Damage for Spell Skills",
-  "Energy Fortress": "Increases Base Energy Shield by a certain percentage",
-  "Magical Source": "Increases Mana regeneration per second",
-  "Precise Projectiles":
-    "Increases additional Projectile Damage and Projectile Speed",
-  "Elemental Resistance":
-    "Increases Elemental Resistance and additionally reduces Elemental Damage taken",
-  Swiftness: "Increases Movement Speed",
-  "Deep Pain":
-    "Additionally increases Damage Over Time and provides additional Duration for Damage Over Time",
-  "Erosion Amplification":
-    "Increases additional Erosion Damage and Erosion Penetration",
-  "Charged Flames":
-    "Increases Attack Skills' additional Fire Damage and adds fixed Fire Damage to Spell Skills",
-  Steadfast: "Increases Armor by a certain percentage",
-  "Shadow Swamp":
-    "Erosion Spell Skill. Conjures a Shadow Swamp at the target location to deal damage and Weaken enemies. Shadow Swamp can be moved with Shadow Shot. Each time it is moved, its damage and Area will increase additionally.",
-  "Shadow Shot":
-    "Erosion Spell Skill. Fires a Projectile of shadow that travels forward and detonates on hit, dealing damage to Nearby enemies. Moves the existing Shadow Swamp to the target hit. Each move refreshes the Shadow Swamp Duration and additionally increases its damage and Area.",
-  Focus:
-    "Status effects provide different buff effects to different skills. Stacks up to 5 times.",
-  "Frost Terra":
-    "Conjures a Frost Terra at the target location, which deals damage continuously to enemies and inflicts Slow periodically",
-  "Flame Core":
-    "Places a sentry at the target location that throws flames at enemies nearby to deal damage.",
-  "Elemental corrosion": "Elemental corrosion",
-  Despair: "Despair",
-  Inertia: "Inertia",
-  "Armor Break": "Armor Break",
-  Timid: "Curse Skill. Additionally increases Hit Damage taken",
-  Vulnerability:
-    "Curse Skill. Additionally increases Physical Damage taken and chance to suffer Trauma",
-  Electrocute: "Curse Skill. Additionally increases Lightning Damage taken",
-  Scorch:
-    "Curse Skill. Increases additional Fire Damage taken and chance to be Ignited",
-  "Biting Cold": "Curse Skill. Additionally increases Cold Damage taken",
-  Corruption:
-    "Curse Skill. Additionally increases Erosion Damage taken and chance to suffer Wilt",
-  "Entangled Pain": "Curse. Additionally increases Damage Over Time taken",
-  Dazzled:
-    "Curse Skill. [Blinds] the victim and additionally reduces their Movement Speed",
-  Elapse: "Increase Damage Over Time taken",
-  "Aimed Shot":
-    "Fires a bullet that Penetrates 2 enemies, dealing Physical Attack Damage.",
-  Overpower:
-    "Deals Physical Attack Damage to enemies in a cone-shaped area in front of the caster.",
-  "Onslaught Punch":
-    "Charges the target, dealing Physical Attack Damage to enemies in the path. At the end of the charge, throws a powerful punch to deal Physical Attack Damage to enemies in front of you.",
-  "Frost Strike":
-    "Deals Spell Cold Damage to enemies in a cone-shaped area in front of the caster.",
-  "Frozen Breath":
-    "Deals Spell Cold Damage to enemies nearby, additionally increasing the Duration they are Frostbitten and the Skill Area of all the caster's skills.",
-  "Absolute Zero":
-    "Deals Spell Cold Damage to enemies nearby with an additional chance to inflict Frostbite. Enemies affected by crowd controls take even higher damage with a greater chance to be Frostbitten.",
-  "Ablaze Punch":
-    "Deals Spell Fire Damage to enemies in a cone-shaped area in front of the caster.",
-  "Blazing Spin": "Deals high Fire Damage to nearby enemies per second.",
-  "Frenzy Flames":
-    "Additionally increases damage dealt at the cost of taking secondary Fire Damage per second. Increases Life Restoration Speed.",
-  "Quick Electrocute":
-    "Fires a Lightning bolt that travels forward, dealing Lightning Attack Damage.",
-  "Lightning Punishment":
-    "Fires high speed current that Jumps 4 times, dealing Lightning Attack Damage. There's a chance to reduce additional damage dealt by enemies on hit.",
-  "Lucky Strike":
-    "Critical Strike grants a buff that increases Projectile Speed and Attack Speed. Stacks up to 4 times",
-  "Thunderlight Bond":
-    "Places a Sentry on the spot. The Sentry creates an area. Ally within the area gains Lucky Damage and inflicts additional Numbed Effect.",
-  "Arcane Circle":
-    "Creates an Arcane Circle that surrounds you. Every enemy that enters the circle for the first time will grant you additional Spell Damage.",
-  "Safeguard Ring":
-    "Place a Sentry on the spot. The Sentry creates a Safeguard Ring. Enemies within its range are Knocked Back periodically. Allies receive less damage within its range and take even less damage from enemies outside the ring.",
-  "Marked Rain of Arrows":
-    "Launches a Projectile that travels forward and deals Weapon Damage. The Projectile has a chance to Mark the enemy on hit. When Projectiles hit a Marked enemy, calls down multiple waves of Rain of Arrows on the enemy, dealing Weapon Damage.",
-  Blizzard:
-    "Calls down multiple waves of Blizzard that deal Spell Cold Damage and reduce enemy's Cold and Lightning Resistance.",
-  "Frost Touch":
-    "Curse Skill: When cursed, the victim takes additional Wilt Damage and has a chance to suffer an additional stack of Wilt when Frozen.",
-  "Secret Origin Unleash":
-    "Additionally increases Spell Damage while the skill lasts, and increases Cast Speed based on the stacks of Focus Blessing owned when casting the skill.",
-  "Black Hole":
-    "Creates a Black Hole at the target location. Black Hole deals Erosion Damage Over Time to enemies within it, knocks them back, and also additionally increases your character's Damage Over Time dealt to these enemies. Black Hole's knockback direction is reversed.",
-  "Ice Bond":
-    "Places a Sentry at the target location. The Sentry continuously fires a Cold Beam at the character, dealing Spell Cold Damage to and inflicting Frostbite on enemies caught in the beam, and additionally increases the character's Cold Damage dealt against Frostbitten enemies.",
-  "Scorching Pulse":
-    "Deals Spell Fire Damage to Nearby enemies once and Reaps Damage Over Time",
-  "Fire Burst":
-    "Deals Spell Fire Damage to enemies within range. Deals additional damage to enemies at the center of the area.",
-  "Flame Jet":
-    "Conjures a Fire Terra at the target location at regular intervals. Eruptions lock onto enemy units in an area and hurl a Projectile at the targets. The Projectile that falls on the ground forms a small Fire Terra on the spot.",
-  "Bull's Rage":
-    "Additionally increases Melee Skill Damage while the skill lasts.",
-  "Frigid Transmission":
-    'Blinks a distance to the target location, dealing damage to and inflicting 1 stack of SlowEach stack reduces Attack Speed, Cast Speed, and Movement Speed by 6%. Stacks up to 5 times">Slow on enemy units within a certain area at the starting point and target location. Refreshes Cooldown upon inflicting FreezeWhen a unit\'s Frostbite Rating exceeds 100, it becomes Frozen\nFrozen non-Legendary bosses will be Frost-Sealed periodically and cannot act. The Frost-Seal duration is 2s, and the Frost-Seal Interval is 3 for the same unit\nFrost-Seal ends when Frostbite ends">Freeze in any situation.',
-  "Ice Focus":
-    'Your Attacks gain additional Cold Damage with a chance to FrostbiteFrostbite is an Ailment that may be triggered on Cold Damage hits. Frostbitten enemies -10% Attack, Cast, and Movement Speed. Base Frostbite Rating: 10. For every 1 Frostbite Rating, +1% additional Cold Damage taken. The enemy will be Frozen once they have more than 100 Frostbite Rating.">Frostbite enemies. Defeating a FreezeWhen a unit\'s Frostbite Rating exceeds 100, it becomes Frozen\nFrozen non-Legendary bosses will be Frost-Sealed periodically and cannot act. The Frost-Seal duration is 2s, and the Frost-Seal Interval is 3 for the same unit\nFrost-Seal ends when Frostbite ends">Frozen target deals damage to enemies within a certain area.',
-  "Thunder Focus":
-    'Your Attacks gain additional Lightning Damage with a chance to NumbedAn Elemental Ailment that has a chance to be inflicted when Lightning Damage hits its target.\nWhen hitting a Numbed enemy, Lightning Damage inflicts 1 stack of Numbed for every 10% of the sum of Max Energy Shield and Life dealt by Lightning Damage. This threshold can be lowered or raised, but the minimum is 1%.\nThe default duration of Numbed is 2s, and the duration of each stack is calculated independently.\nMax Numbed stacks: 10. Each stack of Numbed increases the Lightning Damage taken by an additional +5%.">Numb enemies. Upon reaching 100 Focus Pts, using a non-Mobility Attack Skill will trigger a Thunderstrike to attack the enemy.',
-  "High Energy Beam":
-    "Fires a beam forward, dealing Spell Physical Damage to enemies within a rectangular area. When Command is above 50, the skill's range increases and its damage increases additionally every after the skill is cast 5 times. This skill is not affected by the beam length.",
-  "Destructive Light Cannon":
-    "Fires a beam to the designated location and causes an explosion, dealing Spell Physical Damage to enemies within a certain area.",
-  "Melting Explosion":
-    "Creates a huge pillar of fire with a 7.2m radius ahead, dealing Spell Fire Damage equal to 1912% of Base Damage to enemies within. The damage effect of this skill is 1912% (Lv. 20). Adds 300-400 Base Ignite Damage to this skill.",
-  "Critical Strike Damage Increase":
-    "Supports skills that hit enemies.\nThe supported skill deals additional damage on Critical Strike.",
-  Hardened:
-    "Supports Melee Skills.\nThe supported skill deals additional damage.\nGains hardened and further reduces the damage taken for 4s when the supported skill hits the target.",
-  "Multifaceted Guard":
-    "Supports Sentry Skills. Increases the maximum number of Sentries that the supported skill can place.\nThe supported skill deals additional damage.",
-  "Control Spell":
-    "Supports Spell Skills.\nThe supported skill deals additional damage.\nReduces the supported skill's Critical Strike Rating.",
-  "Wind Projectiles":
-    "Supports Projectile Skills.\nIncreases the supported skill's Projectile Speed.\nThe supported skill deals additional damage and Ailment Damage.",
-  "Servant Damage":
-    "Supports skills that summons Minions.\nMinions summoned by the supported skill deal additional damage.",
-  "Attack Focus":
-    "Supports Attack Skills.\nGain Fervor rating when the supported skill hits the target.\nEach point of Fervor rating increases the supported skill's additional damage.\nEach point of Fervor rating increases the supported skill's Critical Strike Rating by a certain percentage.",
-  Grudge:
-    "Supports Spell Skills.\nThe supported skill deals additional damage.\nUpon hitting a Cursed enemy, the supported skill will prolong the duration of their Curse.",
-  Cataclysm:
-    "Supports a skill that deals Damage Over Time or inflicts Ailment(s).\nThe supported skill inflicts Affliction on the enemy when dealing Damage Over Time.\nProvides additional Affliction Effect to the supported skill.",
-  "Dark Gate":
-    "Casts the skill, teleports all Minions to the character, and gains Command. Casts the skill and gains a buff that increases Command Return Speed and Minions' Movement Speed for a period of time.",
-  Arena:
-    "Casting the skill knocks back non-Elites within 8m to 8m away, then creates an Arena around itself and inflicts 1 stack of Notoriety on Elites within it. You gain 1 additional stack of Renown while inside the Arena",
-  "Part of Skills":
-    "Part of Skills include: Whirlwind Blade, Sentry Skills, and skills cast when activating Spell Burst.",
-  Shattering:
-    "Deals 328-493 Secondary Cold Damage to all enemies in a circle with a radius of 6.",
-  "Melting Strike":
-    "Rains down 1 meteor on enemies, dealing 20 - 20 Spell Fire Damage to enemies within a 4m radius, then dealing 571 Fire Damage Over Time per second to them for 1s.\nThe skill's Base Critical Strike Rating is 0.",
-  "Serpent Bind": "+30% additional damage taken from this skill for 2s",
-  "Moon Halo":
-    "For each stack of Moon Halo, this skill's Combo Starter +0.8% additional Skill Area, and its Combo Finisher +1.8% additional Skill Area. Stacks up to 60 times and lasts for 8s",
-  "Wind Wake":
-    "Each stack of Wind Wake grants this skill +1.5% additional Critical Strike Rating. Stacks up to 20 time(s). Lasts 3s",
-  Mark: "+30% additional damage taken from this skill for 5s",
-  Ominous:
-    '诅咒技能，被诅咒时可以获得Ill OmenInflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies">恶兆',
-  Bombard:
-    "8 cannon shells land within a 4m radius, each dealing 160% Physical Damage to enemies within 1.6m.",
-  Explosion:
-    "Deals 160% Physical Damage to targets within a area of 2m. Cooldown: 0.35s",
-  "Fire Tornado":
-    "Deals Fire Damage continuously to enemies in a circular area, reducing their Fire Resistance by 10%. Lasts for 4s.",
-  "Ring of Lightning":
-    "A lightning skill similar to frost bomb centered on the caster",
-  "Storm Shield":
-    "Target's Block Chance increased. Fires chain Lightning on Block",
-  Punishment:
-    "Punishment deals 5 times strength as Physical Damage and applies secondary damage.",
-  Defense: "The sum of Armor, Evasion, and Energy Shield",
-  "Block Ratio":
-    "By default, Blocking absorbs 30% damage. Increase Block Ratio to increase the damage absorption ratio.",
-  "Max Resistance":
-    "By default, the Max Resistance is 60%. This limit can be increased.",
-  Ailment: "Trauma, Ignite, Frostbite, Freeze, Numbed, and Wilt",
-  "Ailment Damage": "Trauma, Ignite, and Wilt",
-  "All Stats": "Strength, Dexterity, and Intelligence",
-  "Stats Required":
-    "The Strength, Dexterity, and Intelligence required to use a gear or skill",
-  "Drop quantity": "Affects the quantity of items dropped (all types)",
-  "Drop rarity": "Affects the rarity of gear and Hero Memories dropped",
-  "Damaging Ailment": "Trauma, Ignite, and Wilt",
-  "Fusion Energy":
-    "When there is 4/3/2/1 Energy, the depletion time is 1/2/4/6 s.\nWhen there is more than 4 Energy, the depletion time is 1s.\nIf the skill is both a Fire Skill and a Cold Skill, 2 Fusion Energy is gained when using it.",
-  "Fire Energy": "+10% Fire Damage and +10% chance to Ignite for every Energy",
-  "Cold Energy":
-    "Gains 1 Cold Energy upon casting a Cold Skill. When Cold Pulse consumes Cold Energy, various buffs are provided according to the amount of Cold Energy consumed.",
-  "Fire Pulse":
-    "A fire pulse spreads from the caster, dealing Fire Spell Damage increased with character level. Cooldown: 2s.",
-  "Cold Pulse":
-    "A Cold Energy Pulse spreads from the target, dealing Cold Spell Damage. Base Interval: 4s.\nSkill Tags: Spell, Cold, Elemental, Area",
-  "Fire Domain":
-    "Upon entering the Fire Explosion, your Fire Domain deals Fire Damage to enemies persistently, reducing their Fire Resistance",
-  "Ice Domain":
-    "Upon entering the Ice Explosion, your Ice Domain slows enemies within range, reducing their Cold Resistance",
-  "Lava Form":
-    "While in [Lava Form], you ignite Nearby enemies, reducing their Fire Resistance. Ignite damage increases with your Fire energy bars. Enemy Fire Resistance is further reduced as the ignite Duration increases.",
-  "Crystal Form":
-    "While in [Crystal Form], slow Nearby enemies, increasing their Cold Damage taken. The effects of slow and Cold Damage bonus increase with the Cold Energy bars.",
-  Explosive:
-    "Explosive units will leave 2 sparks within 3m upon death. When any unit approaches a spark, the spark explode in 0.5s, dealing the host's 3% Max Life as Fire Damage to Nearby units caught in the explosion. Sparks deal secondary damage. Sparks last for 5 second and explode when they expire.",
-  Spark:
-    "Explosive units will leave 2 sparks within 3m upon death. When any unit approaches a spark, the spark explode in 0.5s, dealing the host's 3% Max Life as Fire Damage to Nearby units caught in the explosion. Sparks deal secondary damage. Sparks last for 5 second and explode when they expire.",
-  "Energy Gauge":
-    "You have two energy gauges, respectively for your Cold and Fire energy\nEach gauge stores up to 3 bars of the corresponding energy\nWhen you are holding Cold (Fire) energy, using a Fire (Cold) skill consumes all of your Cold (Fire) energy and will not grant Fire (Cold) energy as it does otherwise\nWhen you haven't used any Cold (Fire) skill recently, the stored Cold (Fire) energy diminishes",
-  Depletion:
-    "After not casting Fire or Cold Skills, Fire and Cold Energy will deplete. The higher the bars, the shorter the depletion time.",
-  "Frostfire Rampage":
-    "+50% Fusion Energy effect for 5s during which Fusion Energy won't deplete. Loses all Fusion Energy when the Duration ends. Cooldown: 11s.",
-  Rage: "A Berserker exclusive energy that has a default upper limit of 100\nUpon reaching max Rage, Berserker enters Berserk",
-  Berserk:
-    "Gains bonuses twice the Max Rage while Berserk is active\nBerserk expires when you run out of Rage",
-  Burst:
-    "When triggered, deals powerful area explosion damage equal to 340% of Weapon Damage to enemies within 3 m. While Dual Wielding, the Base Damage is the average damage of both weapons.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Attack, Melee, Physical, Triggered, Area, Strength, Dexterity",
-  Cyclone:
-    "Creates a persistent cyclone that periodically deals damage to enemies within its range. The damage dealt and the ticking interval of the cyclone are based on your Base Damage and Attack Speed.",
-  "Special Ammo":
-    "Adds a Support Skill to the bottom left corner of the Hero Trait menu. There is a chance to reload the special ammo of the added Support Skill.\nThe special ammo will be successfully consumed and effects of the added Support Skill will be granted if the added Support Skill is not on the skill panel and able to support Projectile Skills.",
-  "Explosive Rounds":
-    "Explosive rounds grant +2 Projectiles but reduce the Projectile base range to 5m. Multiple Projectiles may hit the same target at once. Explosive rounds no longer have the base ammo effects and deal 20% less damage.",
-  "Speed Round":
-    "When firing Speed Rounds, +3% Attack Speed, Cast Speed, and Projectile Speed for 4s. The effect is stackable",
-  Reload:
-    "Projectile Skills consume ammo. When you are out of ammo, you must reload to use these skills again.",
-  "Magic Shot":
-    "While Magic Shot is active, each Projectile Skill used or triggered consumes 3 ammo. When multiple special ammo is consumed, Projectile Skills will gain corresponding effects of the Support Skills. As long as magic shot is on, reloading is instant.",
-  "Blank Firing":
-    "Projectile Skills can be used without ammo.\nNo ammo benefits are applied when Blank Firing.",
-  "Auto Reload":
-    "When no Projectile Skills have been used recently, the character will start reloading automatically. When a fixed quantity of ammo is auto-reloaded, it will complete instantly. Auto-reloading can be interrupted.",
-  "Spacetime Illusion":
-    "Spacetime Illusion can only use Spell Skills and cannot use any Channeled and Summon Skills.\nOnly 1 Spacetime Illusion may exist at a time. After reaching the summoning limit, click on the Trait Slot to call back the Spacetime Illusion",
-  Overload:
-    "Provides buffs for your Minions\nBonuses that apply to Empower Skill Effects are also applied to Overload Effect\nBonuses that apply to Skill Effect Duration are also applied to Overload Duration",
-  "Multistrike Damage Increment":
-    "Attacks during Multistrike gain damage bonus based on the current Multistrike Count",
-  "Multistrike Count":
-    "Records the current attack's number of attacks during Multistrike when a Multistrike is triggered. The next attack's count during Multistrike +1 for each attack made",
-  "Frost Restoration":
-    "Regenerates 1.2% of Life per second\n+10% Energy Shield Charge Speed.",
-  "Spacetime Turbulence":
-    "Deals True Damage equal to the shared damage every second for 2s",
-  "Twisted Spacetime":
-    "Gives buffs to allies within range\nGains great buffs while inside Twisted Spacetime",
-  "God's Boon":
-    "Consumes Tenacity Blessing, Agility Blessing, and Focus Blessing to send bestow God's Boon and gain Explosion for a short time.\nSkill Tags: Spell, Physical, Area",
-  "Cat's Agility":
-    "+40% Movement Speed and +40% additional Attack Damage.\n240% of the increase/decrease on Movement Speed is also applied to Attack Damage.",
-  "Feline Figure":
-    "Inflicts Numbed stacks equal to the number of Electrify stacks on enemies within the area\nSkill Tags: Spell, Lightning",
-  "Seething Spirit":
-    "An ancestor spirit that casts your Non-Mobility and Non-Channeled Main Melee Attack Skills when it appears",
-  "Self-Destruct Protocol":
-    "Synthetic Troop Minions are immediately defeated 1s after activation. The base multiplier for Minions to self-destruct is 115%.\nSkill Tags: Attack, Melee, Physical, Area, Strength, Dexterity, Intelligence",
-  Volley: "Fired Projectiles fly abrest",
-  "Secondary Skill": "The second skill on the Skill Wheel (bottom left)",
-  "Shotgun Effect":
-    "Multiple effects from the same skill can hit the same enemy. The first effect hit deals 100% damage, and subsequent effects hit deal less damage. This effect also applies to Ailment Damage dealt by skills.\nMost skills' subsequent on hit damage is 36%\nSpecial Skills' Shotgun Effect can be found in the Skill Stone's description.",
-  "Divine Realm":
-    "Converts all Tenacity Blessings to Agility Blessings and deals additional damage to Full Life enemies when outside the Divine Realm\nConverts all Agility Blessings to Tenacity Blessings and deals additional damage to Low Life enemies when within the Divine Realm",
-  Stalker:
-    "+13% additional damage during Multistrike for every stack of Stalker\nInitial max stacks: 3. Lasts for 4s",
-  "Self-Destruct": "Self-Destruct Damage",
-  "Additional Multistrike Damage Increment":
-    "Gains additional bonuses for damage increased with each strike for this time's attack based on the current Multistrike Count",
-  Landslide:
-    "During Magic Shot, casting or triggering Projectile Skills consumes all ammo in the magazine.\n+20% additional damage dealt by this Projectile Skill if 4 Special Ammo are consumed\n+40% additional damage dealt by this Projectile Skill if 5 Special Ammo are consumed\n+80% additional damage dealt by this Projectile Skill if 6 Special Ammo are consumed",
-  "Spacetime Speed-up":
-    "Each enemy within Twisted Spacetime restores Youga's Spacetime Energy equal to 15% of the Affliction inflicted per second.\n+2% additional Affliction effect for every 5 Spacetime Energy consumed within 10s, up to +40%",
-  "Cat Dive":
-    "During Multistrike, for every +4% Movement Speed, there is a +1% chance for this attack to deal damage equal to the Max Multistrike Count\n+1 Maximum Multistrike Count for every stack of Stalker",
-  "Last Stand":
-    "Minions won't be defeated when they have Overload\n-100% Life Restoration Speed for Minions when they have Overload\nMinions deal additional damage based on their Missing Life when they have Overload, up to +50%.",
-  "Desperate Measure":
-    "No longer reload ammo when using Mobility Skills.\n-25% additional Damage.\nYour Projectile Skills will consume all ammo\n+35% damage for each ammo consumed (multiplies).",
-  "Rage Accumulation":
-    "+50 Max Rage\nWhen Seething Spirit uses a skill, you gain 9 additional Rage",
-  "Frozen Flame":
-    "At Max Fusion Energy, Fire Damage can inflict Frostbite, and Cold Damage can inflict Ignite\nAt Max Fusion Energy, Fire Damage increases 4 Frostbite Rating on hit\nAt Max Fusion Energy, Ignite inflicted by a Spell Skill gains 100% of the skill's Cold Damage as Base Ignite Damage.\nAt Max Fusion Energy, Ignite inflicted by an Attack Skill adds 100% of the weapon's Physical Damage and Cold Damage to the Base Ignite Damage",
-  "Heroic Sacrifice":
-    "A 20% chance to drop a Mechanical Part for Synthetic Troop Minions when defeating an enemy or hitting an Elite.\n+5% Overload Effect for every Mechanical Part recently picked up.\nThe Self-Destruct triggered by Self-Destruct Protocol deals +1% additional Damage for every +2% Overload Effect",
-  "Frenzy Furious":
-    "+1% additional Critical Strike Rating for every 5 Rage you have\n+1% additional Attack Damage on Critical Strike for every 5 Rage you have",
-  "Frost Heart":
-    "+1% Frost Restoration Duration for every 1% Cold Resistance\n+2 Max Frost Restoration Stacks",
-  "Holy Domain":
-    "The Holy Domain automatically closes 1s after you leave the Holy Domain\nThe Holy Domain has a radius of 5m. Not affected by Skill Area bonuses",
-  "Seize Momentum":
-    "+30% Holy Domain radius\nIgnores physical collisions when in the Holy Domain\nFor every attack Blocked while inside the Holy Domain, gains 1 stack of Brave Advance\nFor every 10m of movement made, gains 1 stack of Brave Advance\nBrave Advance stacks up to 30 time(s)",
-  "Murderous Intent": "The base upper limit of Murderous Intent is 100",
-  "Divine Realm Power":
-    "-50% additional Blessing Duration\n+5% additional damage for every stack of blessing consumed when the Divine Realm is active. Stacks up to 25 time(s)",
-  "Doomsday Fission":
-    "Casts Empower Skill and gains Fission for 6s. Cooldown: 10s.\nUpon losing Fission, no bombs can be thrown until the trait node is fully cooled down.\n-20% Projectile Range.",
-  "Twisted Field":
-    "While inside Twisted Spacetime, additionally increases Spell Damage dealt by your Spacetime Illusion by 18% per second. The effect stops stacking after 6\nThe effect resets when you exit Twisted Spacetime for 0.5s.",
-  "Predicted Sacrifice":
-    "If the Divine Punishment consumes all stacks of Focus Blessing, you will gain Tenacity and Agility Blessing of half of the stacks of Focus Blessing.\n+40% additional damage if the Divine Punishment has consumed all stacks of Focus Blessing recently.",
-  "Run Away": "+2% additional Projectile Damage\n+1% Movement Speed",
-  Fission: "Doubles the bombs thrown.\n-10% additional Projectile Damage.",
-  "Uncontrolled Anger":
-    'All Damage additionally +80% while Berserk is active\nBerserkGains bonuses twice the Max Rage while Berserk is active\nBerserk expires when you run out of Rage">Berserk consumes 10% of Max Life per second\n+60% Rage Cost while Berserk is active',
-  "Split Form":
-    "No longer gain Rage when taking damage\nTaking damage reduces Rage instead\nEach point of Rage can only compensate for damage equal to 0.5% of the sum of Max Life and Max Energy Shield\nAll Max Resistances are fixed at 60%\n+2% additional Max Life for every 15% Resistance exceeding the Max Resistance",
-  "Frost Embrace":
-    '+5 Max FrostbiteEnemies are inflicted with a fixed amount of Frostbite Rating when they are Frostbitten. This can be increased by raising Max Frostbite Rating. The Max Frostbite Rating is 120.">Frostbite Rating for enemies for each time they have been hit by Cold Pulse recently. Cooldown: 0.1s\nWhen Cold Pulse hits an enemy recently, +1% Cold Pulse Cooldown Recovery Speed for every 6 points of Frostbite Rating the enemy has. Interval: 0.2s.',
-  "Death by Fire":
-    "Deals True Damage equal to the damage recorded by Brand to all enemies in an area.\nThe initial radius of Death by Fire is 5m. After Death by Fire is triggered, all damage recorded by Brand is removed",
-  "Full Bloom":
-    "Spirit Magi grow into their ultimate form, which unlocks their Ultimate that has an initial cooldown of 8s.\n50% of the Attack Speed bonus and additional bonus to Spirit Magi is also applied to additional Spirit Magi Attack Damage.\n50% of the Cast Speed bonus and additional bonus to Spirit Magi is also applied to additional Spirit Magi Spell Damage.",
-  Windrider:
-    "A Spell Channeled Skill with a base channel interval of 0.33s and can be channeled up to 5 stack(s).\nAt max channeled stacks, loses all channeled stacks and grants 3 stack(s) of Nourishment to Spirit Magi within 12m",
-  "Darkness Interval": "Shotgun Effect's subsequent Projectiles +2%",
-  Nourishment:
-    "When using a skill, +30% additional damage for that use. Lasts 15s and stacks up to 10 time(s). Effect of Nourishment enjoys Empower Skill Effect bonuses.",
-  Purgatory:
-    "Additionally increases the damage taken by enemies within the area of Purgatory",
-  Brand:
-    "Deals additional damage to Branded enemies\nRecords the damage enemies receive, then deals True Damage to enemies according to the recorded damage when inflicting Death by Fire",
-  "Amazing Friends":
-    "-1 to Max Spirit Magi In Map\nAfter gaining a total of 20 stack(s) of Nourishment, Spirit Magi enter Full Bloom for 12s\nFor every 10 Growth a Spirit Magus has, it +2% additional Full Bloom Duration",
-  "Scorching Trampling":
-    "-20% Brand-recorded damage that Death by Fire removes\nFor every +1 Fire Skill Level, -4% Brand-recorded damage that Death by Fire removes, up to -40%\nBrand disappears after Death by Fire is triggered 4 time(s)",
-  "Heat Up":
-    "Additionally increases Projectiles Damage based on Heat Up stacks and increases the Projectile Max Deviation Angle",
-  Overheated: "Forced to reload after being in Overheated for a period of time",
-  "Projectile Max Deviation Angle":
-    "Horizontal and Parabolic Projectiles will deviate from the shooting direction, and the max deviation angle is determined by the Projectile Max Deviation Angle\nWithin 0.5s after stopping shooting, the Deviation Angle returns to normal within 2s",
-  "Brave Advance":
-    "+1% Physique, +1% Movement Speed, +1% additional damage taken and +3% damage to enemies in the Holy Domain. Lasts 8s, affected by Skill Effect Duration bonuses.",
-  "Burning Red":
-    "Burning Red lasts for 10s. No longer gains Overheated or reloads while this is active\nGains 160% Heat Up effect bonuses but cannot trigger Empower, Curse, or Warcry skills.\nForced to reload after this effect ends",
-  "Projectile Size":
-    "Changes Projectile Size\nIn general, 100% of Projectile Size is applied to the size of Projectiles\nFor Projectiles affected by Skill Area Bonuses, 25% of the increase or decrease in Projectile Size is applied to the additional Skill Area of Projectiles\nFor Projectiles that have subsequent Area Effects, 25% of the increase or decrease in Projectile Size is also applied to the additional Skill Area of the subsequent effects\nSubsequent effects: Effects caused by Projectile after they are fired, such as explosions",
-  "Block Ratio Upper Limit":
-    "The Block Ratio's upper limit is 60% by default and can be increased to a maximum of 80%",
-  "Holy Illumination":
-    "When this is cast, consumes 5 Murderous Intent and forcefully drags all non-boss enemies in the area into the Holy Domain. Cooldown: 0.6s\nHoly Illumination's radius: 8m. Not affected by Skill Area bonuses",
-  Desperation:
-    "For every 5 Murderous Intent you currently have, +1% additional Attack and Cast Speed for all units in the Holy Domain\nFor every 5 you currently have, +2% additional damage dealt to enemies in the Holy Domain",
-  Arctic:
-    "Deals 12% additional damage to an enemy for every 1 stack(s) of Arctic the enemy has",
-  "Blooming Frost Flower":
-    'Upon inflicting Freeze, casts Cold PulseA Cold Energy Pulse spreads from the target, dealing Cold Spell Damage. Base Interval: 4s.\nSkill Tags: Spell, Cold, Elemental, Area">Cold Pulse at the Frozen target once without consuming any Cold EnergyGains 1 Cold Energy upon casting a Cold Skill. When Cold Pulse consumes Cold Energy, various buffs are provided according to the amount of Cold Energy consumed.">Cold Energy\nEnemies +12% additional Cold Damage taken for every Cold PulseA Cold Energy Pulse spreads from the target, dealing Cold Spell Damage. Base Interval: 4s.\nSkill Tags: Spell, Cold, Elemental, Area">Cold Pulse hit they took recently. Lasts for 4s. Stacks up to 5 time(s)',
-  Electrify:
-    "For every stack of Electrify, Feline Figure inflicts 1 stack of Numbed on enemies within the area",
-  "Lightning Fast":
-    "No longer triggers Feline Figure on hit\nWhen having Shock, 30% chance to trigger Feline Figure on up to 3 enemies for every 1m of movement made. Cooldown: 0.4s\nEvery time Feline Figure settles Shock Damage on an enemy, the enemy +5% additional Hit Damage taken from the character next time, up to +200% additional damage",
-  "Own Base Shock Damage":
-    "Own Base Shock Damage:\nThe character's own Base Shock Damage calculates the sum of Base Shock Damage added. For example: Adds 1 Base Shock Damage.\nHowever, it doesn't calculate the Base Shock Damage obtained. For example: Gains 3% of Lightning Damage as Base Shock Damage on hit.",
-  "Boiling Anger":
-    "For every 8 Rage, Seething Spirit +1% additional damage.\nThis bonus increases by 50% while standing still.",
-  "Annihilator Mode":
-    "+20% additional Attack and Cast Speed\nThe Projectile Quantity and Splits of Projectile Skills are only affected by the skill itself and linked Support Skills",
-  "Mobile Mode":
-    "+20% Movement Speed\nStandard Projectile mode, where the Projectile Quantity and Splits of Projectile Skills receive bonuses normally",
-  "Knocks Back Yourself":
-    "The base Knockback Distance is 1m\n80% of the Knockback Distance bonus is also applied to the Knockback Distance against you, up to +200%",
-  "Endless Frenzy":
-    "For every +2% Knockback Distance, +1% additional damage, up to +200%\nDuring Mobile Mode, you are guaranteed to Knock Back Yourself when casting a non-Channeled or non-Mobility Projectile Skill\nDuring Annihilator Mode, Heat Up gains an additional effect: +2% Knockback Distance",
-  "No Guard":
-    "+10% additional damage taken\nChanneled stacks lost increase the effect of No Guard, with the first 2 stacks lost increasing its effect by 100%, and each additional stack lost further increasing its effect by 100%",
-  "Hunting Instinct":
-    "+2 to Initial Multistrike Count and Max Multistrike Count. Lasts for 30s. Unable to gain Interest during Hunting Instinct",
-  Stun: "Cannot act",
-  Weaken: "Reduces damage dealt by 10%",
-  Blind: "Target's damage has a 20% chance to miss before addressed",
-  Knockback: "Forced to move back by a short distance",
-  Paralysis: "Increases damage taken by 15%",
-  Slow: "Each stack reduces Attack Speed, Cast Speed, and Movement Speed by 6%. Stacks up to 5 times",
-  Freeze:
-    "When a unit's Frostbite Rating exceeds 100, it becomes Frozen\nFrozen non-Legendary bosses will be Frost-Sealed periodically and cannot act. The Frost-Seal duration is 2s, and the Frost-Seal Interval is 3 for the same unit\nFrost-Seal ends when Frostbite ends",
-  Thaw: "Recovering from the Frostbite status and returning to normal speed",
-  Wilt: "An Ailment that may be triggered on hit, dealing Erosion Damage per second for 1.5s based on Base Wilt Damage. Stacks up to 30 time(s)\nWilt cannot be inflicted when Base Wilt Damage is 0",
-  Ignite:
-    "An Ailment that may be triggered on hit, dealing Fire Damage per second for 4s based on Base Ignite Damage. Unable to stack\nIgnite cannot be inflicted when Base Ignite Damage is 0",
-  Trauma:
-    "An Ailment that may be triggered on hit, dealing Physical Damage per second for 4s based on Base Trauma Damage. Unable to stack\nTrauma cannot be inflicted when Base Trauma Damage is 0",
-  Shock:
-    "The Shock status is an Ailment that could be triggered when Lightning Damage hits its target. It's affected by Shock Chance.\nShock Damage is settled one additional time every time enemies in the Shock status are hit.\nShock Damage is Secondary Lightning Damage. It is not affected by bonuses and ignores Resistance.\nEach Shock status can be settled up to 12 time(s).\nShock cannot be inflicted when Base Shock Damage is 0.",
-  Taunt: "Forced to attack the taunting unit",
-  Silence: "Cannot cast Spells and warcries",
-  Disarm:
-    "Deemed to be unarmed and unable to use Attack Skills when disarmed. You are not deemed to be Dual Wielding or holding a Shield when disarmed.",
-  "Agility Blessing":
-    "Every stack of Agility Blessing grants +4% Attack and Cast Speed and +2% additional damage. Initial max stacks: 4",
-  Surge:
-    "Increases Mana Restoration Speed and deals additional Spell Damage based on the effect level",
-  "Tenacity Blessing":
-    "Every stack of Tenacity Blessing grants an additional 4% damage reduction (multiplies). Initial max stacks: 4.",
-  Barrier:
-    "Gains a Shield equal to 20% of the sum of Max Life and Max Energy Shield, absorbing 50% of the Hit Damage taken. Cannot gain another Barrier when a Barrier is present.",
-  Blur: "Gains 100 points of Blur Rating\nOnce 100 points of Blur Rating is gained, 10 Blur Rating is lost per second. Blur is lost once Blur Rating drops to 0\n+0.2% Chance to Avoid Damage for every point of Blur Rating you have\nMax Blur Rating is 100",
-  Root: "Cannot move (including walking, sprinting, blinking, and knockback)",
-  "Frost-Seal":
-    "Frozen units non-Legendary bosses will be Frost-Sealed periodically and cannot act. The Frost-Sealed duration is 2s, and the Frost-Sealed Interval is 3 for the same unit",
-  "Life Regain":
-    "Based on the Missing Life (including Sealed Life), restores a portion of Life on hit. This effect has a 0.5s interval.",
-  "Shield regain":
-    "Based on the Missing Energy Shield, restores a portion of Energy Shield on hit. This effect may only appear once every 0.5s.",
-  Frostbite:
-    "Frostbite is an Ailment that may be triggered on Cold Damage hits. Frostbitten enemies -10% Attack, Cast, and Movement Speed. Base Frostbite Rating: 10. For every 1 Frostbite Rating, +1% additional Cold Damage taken. The enemy will be Frozen once they have more than 100 Frostbite Rating.",
-  "Focus Blessing":
-    "Every stack of Focus Blessing grants +5% additional damage. Initial max stacks: 4",
-  "Knockback direction is reversed": "Inverts the Knockback direction",
-  "Fighting Will":
-    "Accumulates Fervor Rating when you defeat enemies or hit Elite enemies while having Fervor. +2% Critical Strike Rating for every point of Fervor Rating. The Max Fervor Rating is 100 points.",
-  "Fervor rating":
-    "+2% Critical Strike Rating for every point of Fervor Rating you have. The Max Fervor Rating is 100.",
-  "Blur Rating":
-    "+0.3% Evasion and +0.2% chance to avoid damage for every point of Blur Rating you have. The Max Blur Rating is 100",
-  "Crowd Control Effects":
-    "Frostbite, Freeze, Paralysis, Knockback, Weaken, Slow, Taunt, and Blinding",
-  "Origin of Spirit Magus":
-    "Buff effect gained after Activating a Spirit Magus summoning skill.",
-  "Origin of Fire": "Increases Attack and Spell Critical Strike Rating.",
-  "Origin of Thunder": "Increases Attack and Cast Speed.",
-  "Wind Blade":
-    "Wind Blade counts as a Steep Strike. It passes through all enemies and deals damage to them.",
-  Command:
-    "装备能够召唤智械的技能时，拥有统御。每 1 点统御值会使智械召唤物额外 +3% 伤害（统御值低于 0 时恒定 +0%），额外 -2% 受到的伤害，+2% 移动速度且索敌范围增加。统御值下限为 -100，上限为 100。统御值不为 0 时，每秒回归（损失或获得） 13 点，每多10点统御值，回归值 +7 点，直至当前统御值为 0。",
-  "Six Gods' Blessings":
-    "Tenacity Blessing, Agility Blessing, Focus Blessing, Fervor, Blur, Barrier.",
-  "The new god is balancing Order and Chaos":
-    "Character affected by the Order and Chaos: Initially has 100 points of Order and loses 1 point of Order per 1s. Gains 1 point of Chaos for every point of Order lost.",
-  Order:
-    "The character initially has 100 points of Order and loses 1 point per 1s. Gains 1 point of Chaos for every point of Order lost.",
-  Chaos:
-    "The character initially has 100 points of Order and loses 1 point per 1s. Gains 1 point of Chaos for every point of Order lost.",
-  "The new god is devouring Six Gods' blessings":
-    "All Six Gods' Blessings the character has, including Tenacity Blessing, Agility Blessing, Focus Blessing, Fervor, Blur, and Barrier, will be devoured every 4s",
-  "Spell Burst":
-    "Automatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.",
-  Devour: "Nullifies Talents.",
-  Replicate:
-    "Additionally gains a copied Talent. When copying a devoured Talent, the duplicate Talent will become take effect normally. You can only copy the original Talents on the Divinity Slate and cannot copy Talents obtained via other replication effects.",
-  Growth:
-    "Spirit Magi grow into the next Stage for every 100 Growth. They start at Stage 1 and can grow until they reach Stage 5. For every 8 Growth they have, Spirit Magi gain +1% Physique, +10% additional Skill Area, and a bonus every stage:\nAt Stage 2, +30% chance for them to use Enhanced Skill chance.\nAt Stage 3, their Enhanced Skills become stronger.\nAt Stage 4, their Empower Skills become stronger.\nAt Stage 5, they +50% additional damage, +10% additional Skill Area, and gain increased Movement Speed and Tracking Area.\nThe max Growth is 1000.",
-  Notoriety:
-    "+2000 Critical Strike Rating, +100% Critical Strike Damage, and 20% Attack and Cast Speed for each stack of Notoriety. The Critical Strike Rating and Critical Strike Damage bonus granted by the skill is doubled against Low-Life enemies. This status is an Aura Status and is affected by Aura Effects",
-  Renown:
-    "For each stack of Renown, +20 Attack Critical Strike Rating, +24% Critical Strike Damage, and +7% additional damage. Stacks up to 3 time(s). This status is an Aura Status and is affected by Aura Effects.",
-  Numbed:
-    "An Elemental Ailment that has a chance to be inflicted when Lightning Damage hits its target.\nWhen hitting a Numbed enemy, Lightning Damage inflicts 1 stack of Numbed for every 10% of the sum of Max Energy Shield and Life dealt by Lightning Damage. This threshold can be lowered or raised, but the minimum is 1%.\nThe default duration of Numbed is 2s, and the duration of each stack is calculated independently.\nMax Numbed stacks: 10. Each stack of Numbed increases the Lightning Damage taken by an additional +5%.",
-  Deterioration:
-    "Lasts for 1s. When the duration ends, deals True Damage equal to 60% of the Hit Erosion Damage dealt. Stacks up to 99 times. Each stack is calculated independently",
-  "Cold Infiltration": "Reduces Cold Resistance by 10%",
-  "Dormant Entanglement":
-    "When having Dormant Entanglement, +40% additional Tangle Damage for each inactivated Tangle",
-  Tangle:
-    "Generated by the player, it can attach to an enemy and periodically trigger a specified Spell Skill",
-  "True Flame Immolation":
-    "Consumes all Blessings and deals Spell Cold Damage\nDeals 233 damage and +3% Base Skill Area for each stack of Blessing consumed\nFor every 1% Cooldown Recovery Speed, grants a Blessing with 2.5% Max Stacks after this skill is cast\nConverts 100% of this skill's Cold Damage to Fire Damage",
-  "Burst Blast":
-    "When triggered, deals 1458-2430 Spell Physical Damage to enemies within 3m. The damage effect of this skill is 360%.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Spell, Physical, Triggered, Area, Strength, Dexterity",
-  Icebound:
-    "Immunity to Frostbite. 20% of Physical Damage taken will be converted to Cold Damage; 20% of Lightning Damage taken will be converted to Cold Damage.",
-  "Icebound 2":
-    "Immunity to Frostbite. 40% of Physical Damage taken will be converted to Cold Damage; 40% of Lightning Damage taken will be converted to Cold Damage.",
-  "Icebound 3":
-    "Immunity to Frostbite. 60% of Physical Damage taken will be converted to Cold Damage; 60% of Lightning Damage taken will be converted to Cold Damage.",
-  "Fire Strike":
-    "Adds 20% of Physical Damage as Fire Damage to Attacks. Damage Penetrates 10% Fire Resistance.",
-  "Fire Strike 2":
-    "Adds 30% of Physical Damage as Fire Damage to Attacks. Damage Penetrates 15% Fire Resistance.",
-  "Fire Strike 3":
-    "Adds 40% of Physical Damage as Fire Damage to Attacks. Damage Penetrates 20% Fire Resistance.",
-  Superconductivity:
-    "Cannot deal Fire Damage. Lightning Damage against Shocked enemies triggers Lucky",
-  "Poison Lord": "60% chance to inflict Wilt. Wilt Damage increases by 20%.",
-  "Genius of Chaos": "Adds 20% Non-Erosion Damage as Erosion Damage",
-  "Genius of Chaos 2": "Adds 30% Non-Erosion Damage as Erosion Damage",
-  "Genius of Chaos 3": "Adds 40% Non-Erosion Damage as Erosion Damage",
-  "Thawing strike":
-    "When Frostbite is caused by monsters, inflicts 1 stack of [Slow]. Each stack of [Slow] caused by monsters reduces your Cold Resistance by 6%.",
-  "Miraculous Gain":
-    "Randomly triggers one of the following effects for 6s. This effect can be triggered up to 4 times within 1s:\nTriggers a Lv. 20 Empower Skill or Defensive Skill that might be useful\nGains 5 stacks of God of War's Blessing\nTriggers the Main Active Skill 10 times. Interval: 0.2s\nGains max stacks of Tenacity Blessing, Agility Blessing, and Focus Blessing.\nTriggers Frigid Transmission and -20% additional damage taken",
-  "Aember Blast":
-    "Aember energy gathered on the ground. Causes damage when it takes shape.",
-  "Devouring Black Hole":
-    "Black Hole power gathered on the ground. Gravitates surrounding units and deals Damage Over Time.",
-  Frenzy: "As damage and speed increase, the damage taken goes up.",
-  Restrained: "Reduces half Damage and Speed but grants double Defense.",
-  Giantism: "Enlarges the physique and increases the Skill Area",
-  "Malice Incarnation":
-    "Malice Incarnations are a special group of monsters in the Cube Season. There will be special marks for them on the map. Defeating Normal Malice Incarnations has a chance to grant Desire Crystals. Defeating Elite Malice Incarnations will grant Divinity Stones.",
-  "Desire Crystal":
-    "Desire Crystals are a special drop in the Cube Season. They could be granted by defeating Normal Malice Incarnations. You can use them to activate the Cube of Rapacity.",
-  "Divinity Stone":
-    "An incarnation of the power of the Six Gods. You can use them to exchange for items in Blessings from Gods.\n(Blessings from Gods can be accessed at the Spacetime Wanderer in Ember's Rest.)",
-  Deacon:
-    "The Deacons of Malice are special Elite in the Cube Season, including the Malice Flagellant and the Malice Martyr. Malice Flagellant will reduce the damage taken by allies nearby and slow them down, whereas Malice Martyr will do the opposite.",
-  "Malice Judge":
-    "The Malice Judge is a special Elite in the Cube Season. Defeat the Malice Judge to obtain precious rewards.",
-  "Special Event":
-    "Get 1 of the following rewards:\n2 R rewards.\n3 R rewards.\n4 R rewards.\n1 SR reward.",
-  "Surging Greed": "Additionally increases Rapacity.",
-  "Ambush of Desire": "The Malice Incarnation will come.",
-  "Greed Extermination":
-    "Destroys the Cube of Rapacity and takes away all the rewards.",
-  "Desire Incarnation":
-    "Desire Incarnations are a special group of Elites in the Cube Season. There will be special marks for them on the map. Desire Incarnations consist of Malice Confessor, Malice Watcher, Malice Executor, Malice Law Performer, Malice Oathbreaker, and Malice Liar. Defeating them will grant more Divinity Stones or Desire Crystals.",
-  "Malice Law Performer":
-    "The Malice Law Performer is a special Elite in the Cube Season, and it drops lots of Divinity Stones after being defeated.",
-  "Infinite City of Aeterna":
-    "Each time you clear the City of Aeterna at your current highest tier, the tier advances. Higher tiers mean higher difficulty and more rewards.\nThe initial max tier is 20 and can be raised by certain Psalms of Aeterna nodes.",
-  "Random 4 grids":
-    "Covers a relatively small area, but covered reward rooms provide double rewards.",
-  "Soul Candle Fusion":
-    "Combines 2 Soul Candles into 1. The new Soul Candle will retain some traits of the original Soul Candles and may also undergo some unpredictable changes.",
-  Unusual:
-    "The unusual City of Aeterna experiences unique changes, including reward rooms with relatively high rarity, increased numbers of reward rooms, or all reward rooms having the same type of reward.\nThese changes only appear after the Character reaches Lv.59.",
-  "Aeterna Tiles":
-    "Aeterna Tiles can be placed after the City of Aeterna is built to optimize the structure of the City of Aeterna",
-  "Tear of Aeterna": "Currency used when fusing Soul Candles",
-  "Warcry Affix": "Includes:\n- Warcry Cast Speed\n- Warcry Range",
-  "Shadow Strike Affix":
-    "Includes:\n- Shadow Strike Skill Damage\n- Shadow Damage",
-  "Slash Strike Affix":
-    "Includes:\n- Slash Strike Skill Damage\n- Chance to gain Steep Strike attempts",
-  "Demolisher Affix":
-    "Includes:\n- Demolisher Skill Damage\n- Demolisher Charge Restoration Speed",
-  "Horizontal Affix":
-    "Includes:\n- Horizontal Projectile Damage\n- Number of Jumps",
-  "Parabolic Affix":
-    "Includes:\n- Parabolic Projectile Damage\n- Parabolic Projectile Attack and Cast Speed",
-  "Vertical Affix": "Includes:\n- Vertical Skill Damage\n- Vertical Skill Area",
-  "Barrage Affix": "Includes:\n- Barrage Skill Damage\n- Barrage Skill Area",
-  "Physical Affix":
-    "Includes:\n- Physical Damage\n- Attack and Spell have a chance to ignore Armor",
-  "Lightning Affix": "Includes:\n- Lightning Damage\n- Lightning Penetration",
-  "Cold Affix": "Includes:\n- Cold Damage\n- Cold Penetration",
-  "Fire Affix": "Includes:\n- Fire Damage\n- Fire Penetration",
-  "Erosion Affix": "Includes:\n- Erosion Damage\n- Erosion Penetration",
-  "Channel Affix":
-    "Includes:\n- Channeled Skill Attack and Cast Speed\n- Max Channeled Stacks",
-  "Persistent Affix": "Includes:\n- DoT\n- Skill Duration",
-  "Curse Affix": "Includes:\n- Curse Effect\n- Curse Skill Area",
-  "Aura Affix":
-    "Includes:\n- Aura Effect\n+ Aura Skill Sealed Mana Compensation",
-  "Trigger Affix":
-    "Includes:\n- Triggered Skill Damage\n- Triggered Skill Cooldown Recovery Speed",
-  "Focus Affix": "Includes:\n- Focus Skill Damage\n- Focus Effect",
-  "Chain Affix":
-    "Includes:\n- Chain Skill Damage\n- Number of Chain Skill Jumps",
-  "Sentry Affix": "Includes:\n- Sentry Damage\n- Deployable Sentries Each Time",
-  "Summon Affix": "Includes:\n- Minion Damage\n- Minion Attack and Cast Speed",
-  "Terra Affix":
-    "Includes:\n- Terra Skill Damage\n- Terra Charge Restoration Speed",
-  "Beam Affix":
-    "Includes:\n- Beam Skill Damage\n- Additional Beam Skill Refractions",
-  "Aeterna Season Rewards":
-    "Includes Soul Candle, exclusive Legendary gear, and Queen's Wick",
-  "Aeterna Tier Upper Limit":
-    "The Aeterna Tier Upper Limit determines the max Aeterna Tier, and the selectable Aeterna Tiers cannot exceed the Aeterna Tier Upper Limit.\nThe initial Aeterna Tier Upper Limit is 20 and can be increased through certain nodes of Psalms of Aeterna.",
-  "Master Sniper":
-    "+100% additional Projectile Damage; +30% Projectile Speed; Projectiles Penetrate all targets. Lasts for 1s",
-  "Spell Overload":
-    "For the next 8s, each Spell Skill cast grants +1% Cast Speed and increases Mana Cost by 5%",
-  "Arcane Focus":
-    "The Skill Area of Area Spells alternates between receiving a 60% increase and a 30% decrease every 4s",
-  Conductivity:
-    "Each stack provides 10% Critical Strike Rating, 10% Critical Strike Damage, +5% chance to inflict Shock. Limited to 1 stack per second and lasts for 8s",
-  "Frost Advent":
-    "Each Attack hit reduces enemy Attack Speed and Movement Speed by 3% and increases your Attack Speed and Movement Speed by 3%. Stacks up to 30% and lasts for 8s",
-  Forbearance:
-    "Each point of Forbearance provides 1 Life Regeneration per second, 0.1% Life Regeneration per second, and 1% Armor. Each point of Forbearance lasts for 8s.",
-  Confusion:
-    "Each point of Chaos grants 0.5% Life Regain, 1% Critical Strike Damage, and Erosion Damage equal to 1% of Physical Damage. Each point of Chaos lasts for 12s.",
-  "Void Orb":
-    "Deals 50-100 Physical Damage to yourself. Interval: 0.5s. Lasts for 5s",
-  "Combo Lightning":
-    "Reduces enemy Lightning Resistance by 10% on hit for 8s, dealing minor damage. Projectile may chain up to 3 times",
-  "Emperor's Wrath":
-    "Immune to Curses; +30% Attack and Spell Block; -50% additional Skill Cost",
-  Pain: "+10% additional Erosion Damage taken and -8% Movement Speed. Upper limit: 5 stack(s)",
-  "Thrill Barrier":
-    "+20% additional Elemental Damage, and Reflects 100% Elemental Damage while the Barrier lasts",
-  "Hardened Barrier":
-    "+20% additional Physical Damage, and Reflects 100% Physical Damage while the Barrier lasts",
-  "Dragon's Heart":
-    "+50% additional Skill Cost, Main Skills gain +30% chance to deal Double Damage",
-  "Corroded Gear":
-    "Consumes 2% of Life to restore 8% of Max Life when you are hit. Interval: 1s.",
-  "Corroded Mana":
-    "Consumes 2% of Mana to restore 8% of Max Mana when you are hit",
-  "Corroded Energy Shield":
-    "-20% Energy Shield Charge Speed to restore 8% Max Energy Shield when you are hit. Interval: 0.2s.",
-  "Corroded Heart":
-    "-40% Elemental and Erosion Resistance for enemies within 15m",
-  "Lord of the Void":
-    "Converts 100% of Physical Damage to Erosion Damage. -20% additional Erosion Damage taken for 5s",
-  Throne:
-    "+1% additional Channeled Skill Damage per stack. -1% additional damage taken, up to 10 stacks. Lasts for 4s",
-  "Eternal Morale":
-    "+5% damage, +1% Attack and Cast Speed for every stack of Eternal Morale. Lasts for 45s",
-  "Eternal Nightmare":
-    "+5% Critical Strike Rating, +1% Critical Strike Damage for every stack of Eternal Nightmare. Lasts for 45s",
-  "Eternal Shadow":
-    "+5% Skill Area and +1% Movement Speed for every stack of Eternal Shadow. Upper limit: 50 stack(s). Lasts for 45s",
-  "Eternal Guard":
-    "+5% Defense, +1% chance to avoid Ailments for every stack of Eternal Guard. Lasts for 45s",
-  "Eternal Simulacra":
-    "+5% Skill Duration, +1% Skill Cooldown Recovery Speed for every stack of Eternal Simulacra. Lasts for 45s",
-  "Eternal Reign":
-    "+10% additional damage (multiplies) and +10% Physique for every stack of Eternal Reign. Upper limit: 10 stack(s). Lasts for 45s",
-  "Mass Enhancement Effect":
-    "+15% additional Attack Damage, +10% Skill Area. Stacks up to 3 times and lasts for 15s",
-  Impassioned:
-    "-0.3% additional Skill Cost, -0.3% additional Life Regain Interval, +5% damage. Stacks up to 100 times. Each stack lasts for 5s",
-  Meditate:
-    "Multistrikes deal 10% increasing damage, -5% additional damage taken. Stacks up to 5 times and lasts for 10s",
-  Intimidated:
-    "Takes +12% additional damage and deals -12% damage for 4s when at Low Life",
-  "You went against the will of the Gods":
-    "Fervor gains an additional base effect: -3% Critical Strike Rating for every point of Fervor Rating.\n-99% Blur effect. You are under the effect of Weaken while Blur is active.\nLoses 6% of Life and Energy Shield while a Barrier is active.\nTenacity Blessing gains an additional base effect: Additionally takes 5% damage for each stack.\nFocus Blessing gains an additional base effect: -6% Double Damage Chance for each stack.\nAgility Blessing gains an additional base effect: -15% Attack and Cast Speed for each stack.",
-  "Asynchronous Transfer":
-    "Cast Speed bonus and 75% of additional bonus are also applied to Attack Sentries' Cast Frequency\nAttack Speed bonus and 75% of additional bonus are also applied to Spell Sentries' Cast Frequency",
-  Solemn:
-    "+10% Skill Area for each stack. Adds Physical Damage equal to 1% of Max Energy Shield for each stack. Stacks up to 5 time(s)",
-  "Hatred of the Last Dragon":
-    "Ordrak's hatred for the God of Might is imbued in this Shield. When dealing damage to an enemy target that has Tenacity Blessing, there is a 20% chance to trigger Ordrak's attack. Interval: 0.2s. Enemies hit are dyed gold.",
-  "Mini Tough Guy":
-    "All Spirit Magi +60 initial Growth, -50% Physique, and gain immunity to damage while Reconjuring",
-  Banquet:
-    "-30% additional Regain Interval, +30% Armor Penetration, but your Armor is fixed at 0. Lasts 2s.",
-  Cage: "+14% additional Cold Damage and -7% additional Damage Over Time taken. Stacks up to 4 stack(s) and lasts 5s (multiplies)",
-  "Illusory Light":
-    "+10% chance for Shadow Strike Skills to deal triple damage. Upper limit: 10 stack(s)",
-  "Enduring Advance":
-    "-5% Physique, -5% additional Critical Strike Rating (multiplies). Loses 1% Life, Mana, and Energy Shield every second. Upper limit: 10 stack(s). Lasts 2s",
-  Miniaturization:
-    "-15% Physique, +10% Movement Speed, and -5% additional Damage Over Time taken",
-  "Blazing Sun":
-    "+1% Slash-Strike Skill Area and +1% additional Steep Strike Damage for every +6% Steep Strike chance",
-  Almighty: "Own massive Energy",
-  Mottled:
-    "+40% additional Elemental Damage and Erosion Damage for Minions if you have dealt Physical Damage recently. +40% additional Erosion Damage and Physical Damage for Minions if you have dealt Elemental Damage recently. +40% additional Minion Elemental Damage and Physical Damage if you have dealt Erosion Damage recently.",
-  "Barrier Burst":
-    "Deals Spell Fire Damage equal to a certain ratio of Barrier to nearby enemies.\nSkill Tags: Strength, Intelligence, Spell, Fire, Area",
-  Ash: "Cannot inflict Critical Strike. +30% additional Fire Damage and +30% Movement Speed. Unable to refresh",
-  "Divine Grace":
-    "Changes the base effect of all Blessings to: +4% additional damage and -4% additional damage taken\nMax stacks of each Blessing: 4",
-  "Caged Fury":
-    "If you have moved 12m or more in the last 1s, +15% additional Attack Speed and +15% Movement Speed\nIf you have moved less than 12m in the last 1s, +35% additional damage and +35% Physique",
-  "Rotted Taboo":
-    "Takes 100 Secondary Erosion Damage when casting a skill. Interval: 0.1s\n+3 to All Skills' Levels",
-  Comradeship: "Minions gain the Belt's bonuses.",
-  "Hallowed Journey":
-    "You have a Lv. 1 Precise: Magical Source\nPrecise: Magical Source gains an additional base effect: 20% of damage is taken from Mana before life",
-  "Stray Bird":
-    "Attack Horizontal Projectiles gain:\nAlways Penetrates\n-15% additional Projectile Speed\n+35% additional Returning Projectile Speed\n+30% additional Returning Projectile Damage",
-  Storm:
-    "Attack Horizontal Projectiles gain:\n+30% Projectile Speed\nDeal more damage to enemies that are more distant, dealing up to +150% additional damage to enemies 10m away",
-  Windfield:
-    "-20% additional Movement Speed for enemies inside the windfield. Knocks back enemies in the windfield toward you once every 0.4s.\nThe windfield's radius is 15m.",
-  "Low-Tier Eternal Morale":
-    "+5% damage, +1% Attack and Cast Speed for every stack of Low-Tier Eternal Morale. Lasts for 15s",
-  "Low-Tier Eternal Nightmare":
-    "+5% Critical Strike Rating, +1% Critical Strike Damage for every stack of Low-Tier Eternal Nightmare. Lasts for 15s",
-  "Low-Tier Eternal Shadow":
-    "+5% Skill Area and +1% Movement Speed for every stack of Low-Tier Eternal Shadow. Upper limit: 50 stack(s). Lasts for 15s",
-  "Law of Trinity":
-    "攻击击中造成元素伤害时，必定造成五倍元素伤害\n攻击击中时，随机选择一种元素，并会造成该元素的伤害，未被选择的元素无法造成伤害。对应元素类型的点伤占比越低，被选择的概率越高\n只能造成元素伤害\n伤害类型无法转化",
-  "Edict of Trinity":
-    "攻击击中造成元素伤害时，必定造成六倍元素伤害\n攻击击中时，随机选择一种元素，并会造成该元素的伤害，未被选择的元素无法造成伤害。对应元素类型的点伤占比越低，被选择的概率越高\n只能造成元素伤害\n伤害类型无法转化",
-  "Advanced Barrier Burst":
-    "Deals Spell Fire Damage equal to 400% of the remaining Barrier to nearby enemies then removes the Barrier. This damage is affected by Skill Level\n-60% additional Ailment Damage for this skill\nSkill Tags: Strength, Intelligence, Spell, Fire, Area",
-  Obliterate:
-    "Converts 100% of Physical Damage and Elemental Damage to Erosion Damage. Not applied to Sentry and Spell Tangle Skills",
-  "Gate of Dreams":
-    "Each stack +10% Movement Speed and -5% additional damage taken for 10s, up to 5 stack(s).",
-  Conspire:
-    "Off-Hand Weapons do not participate in attacks while Dual Wielding\nAdds 100% of the damage of the Off-Hand Weapon to the Base Damage of the Main-Hand Weapon instead",
-  "Insatiable Greed":
-    "150% of the bonuses to Attack Speed is also applied to Spell Burst Charge Speed",
-  "Solar Ring":
-    "+48% Skill Area\nEnemies within the Solar Ring take +40% additional damage\nEnemies within the Solar Ring are considered to be within 6m of you",
-  Corona:
-    "+48% Skill Area\nEnemies within the Corona take +60% additional damage\nEnemies within the Corona are considered to be within 3m of you",
-  Castling:
-    "Block Chance equals Block Ratio. The Block Ratio for a corresponding damage type equals its Block Chance\nBlocking is not guaranteed",
-  "Cause Without Effect":
-    "+30% Block Ratio when Attack Block Chance equals Spell Block Chance\nWhen they differ, the higher one gains Lucky Block",
-  "Wield My Sword":
-    '+10% Block RatioBy default, Blocking absorbs 30% damage. Increase Block Ratio to increase the damage absorption ratio.">Block Ratio and Block Ratio Upper LimitThe Block Ratio\'s upper limit is 60% by default and can be increased to a maximum of 80%">Block Ratio Upper Limit\n+1% additional damage for you and your Minions for every +4% Attack or Spell Block Chance',
-  "Absolve My Sin":
-    '+10% Block RatioBy default, Blocking absorbs 30% damage. Increase Block Ratio to increase the damage absorption ratio.">Block Ratio and Block Ratio Upper LimitThe Block Ratio\'s upper limit is 60% by default and can be increased to a maximum of 80%">Block Ratio Upper Limit\n-1% additional Damage Over Time taken for every +2% Block Ratio owned',
-  "Thrice Lucky":
-    "Changes Lucky Damage's effect to: Determines 3 random damage values and selects the optimal value\nLucky Damage",
-  "Advanced Elemental Impact":
-    "Supports skills that deal damage\n+16% additional damage for 2 other types of Elemental Damage if the supported skill recently dealt 1 type of Elemental Damage",
-  "Big Tough Guy":
-    "All Spirit Magi +80 initial Growth, +10% Physique, and gain immunity to damage while Reconjuring",
-  Rampaging:
-    "100% of the bonus and additional bonus to Attack Speed is also applied to Burst's Cooldown Recovery Speed",
-  Hysteria:
-    "Generates 1 point of Rage when taking damage equal to 3% of the sum of Max Life and Max Energy Shield\nGenerates 1 point of Rage for every 3% of Max Life consumed\n+0.3% additional Attack Damage for every 1% of Missing Life",
-  "Crushing Gale Trigger":
-    "15% of the increase/decrease on Attack and Cast Speed is also applied to the reload chance of special ammo\nReload Special Ammo slots in order",
-  "Never Stopping":
-    "While Magic Shot is active, for every Special Ammo consumed, extends Magic Shot's Duration by 0.04s",
-  "Evil Ouroboros":
-    "Projectiles will return after reaching their max range and will hit enemies on their path again\n-50% Projectile Range\n-70% additional Returning Projectile Damage",
-  "Dart Shot":
-    "When casting a Projectile Skill, for every ammo consumed, -20% current cooldown for Mobility Skills\n+15% additional damage for 4s after using a Mobility Skill",
-  "Extreme Heat":
-    "When having more Overheated stacks than Heat Up stacks for more than 10s, gains Burning Red instead for 10s\nImmediately reloads when Burning Red ends. For every 10 stacks of Overheated, +0.1s reloading time, up to +2s\nClick the Trait Skill twice within 0.3s to immediately activate Burning Red",
-  "Eternal Flames":
-    "When having max stacks of Heat Up, Heat Up will not be lost and ammo will not be reloaded after reloading\nDuring Blank Firing, each time a Projectile Skill is cast, +40% chance to gain 1 additional stack of Overheated and +25% additional Skill Damage for that cast",
-  "Have Fun":
-    "+6% additional Attack Speed for every 2m of movement made recently. Stacks up to 4 times",
-  "Wild Lightning":
-    "+0.5% additional Numbed Effect for every +1% Movement Speed, up to +60%",
-  "Electroplated Motif":
-    "+1% chance to double the duration of Numbed inflicted by Feline Figure for every +1% Numbed chance\n+20% additional Numbed Effect",
-  "Swift as Lightning":
-    "For every 4 stacks of Numbed inflicted on the enemy, +2% Movement Speed, +1% additional damage, and +3% Feline Figure Area. Stacks up to 10 times. Lasts for 10s",
-  "Dangerous Runaway":
-    "+1 Bomb Quantity when throwing bombs next time after moving at least 20m\n+1% Movement Speed for every 4m of movement made recently, up to +15%",
-  "Phantom Delivery":
-    "Doubles the bombs thrown\nBombs have a 40% chance to become duds that deal -95% additional damage",
-  "Frenzy Hound":
-    "Bombs do not automatically explode when the upper limit is not reached\nClick the Trait Skill to manually detonate all bombs on the ground\n+4% additional damage for every bomb on the battlefield when the bombs detonate, up to +48% additional damage",
-  "Restless Ice-Fire":
-    "+12% Elemental Penetration and +20% Movement Speed during Frostfire Rampage\n+20% Frostfire Rampage Cooldown Recovery Speed",
-  "Glacial Night":
-    "+100% additional Freeze Duration upon Freezing an enemy for the first time\n+40% additional damage against Frozen enemies",
-  "Ice to Blaze":
-    "Converts 99% of Cold Damage to Fire Damage\nThe Fire Resistance of Frostbitten enemies is fixed at 15%",
-  "Dress Licker":
-    "Converts 20% of Physical Damage taken to Fire Damage\nConverts 100% of Physical Damage taken by enemies within the range of Purgatory to Fire Damage\n+30% additional Fire Damage taken by enemies within the range of Purgatory\n+30% additional Fire Damage dealt by enemies within the range of Purgatory",
-  "Predicted Hope":
-    "God's Boon will now consume all Tenacity Blessing and Agility Blessing stacks\n+2% additional All Damage for each stack of Blessing that God's Boon consumes. Lasts for 10s. Stacks up to 20 times",
-  "Predicted Justice":
-    "The biggest max stack bonus of Agility Blessing or Tenacity Blessing is also applied to the max stack bonus of Focus Blessing\n-25% additional Cooldown Recovery Speed",
-  "Divine Spirit":
-    "-70% Divine Realm Skill Radius\n+1.7% additional damage taken for every 4% of Missing Life when outside the Divine Realm\nWhen dealing damage outside the Divine Realm, enemies with a higher percentage of Life than you will be considered Full-Life enemies",
-  "Tarnished Sage":
-    "Up to 2 Elites within 6m of a Desecrated target will also be inflicted with Desecration\nInstantly restores 5% of Max Life, Energy Shield, and Mana when defeating a Desecrated target\n+15% Attack, Movement, and Cast Speed when dealing damage to a Desecrated target. Lasts for 5s. This effect cannot stack",
-  "Extreme Desecration":
-    "When the max stacks of all Blessings are 0, converts the basic effects of affixes that increase Max Blessings Stacks into effects that increase Max Desecration Stacks\nThe effect of Desecration becomes: Additionally increases the target's Erosion Damage taken by 1.7% (multiplies) for every 5% of Max Life they loses",
-  "I'm Out of Mana":
-    "Casting of Spacetime Illusion will consume your Mana, equal to the Mana Cost of your Main Skill\n+5% additional damage for you and Spacetime Illusion for each time Spacetime Illusion consumed Mana recently. Stacks up to 10 times",
-  "Eeeendless Mana":
-    "Seals 35% Max Mana. Spacetime Illusion no longer has Cast Frequency limitations\n+1% additional Spacetime Illusion Damage for every +4% Spacetime Illusion Cast Frequency",
-  "Spacetime Upheaval":
-    "+30% additional Damage Over Time while Twisted Spacetime lasts\nTwisted Spacetime only inflicts Spacetime Turbulence on Elites within its area. Records are not cleared when there are no Elites within its area",
-  "Spacetime Expansion":
-    "+50% additional Duration for Twisted Spacetime and Spacetime Turbulence\nEnemies with Spacetime Turbulence are deemed as being within Twisted Spacetime",
-  "All In":
-    "+120% additional Overload Effect when a Minion gains Overload for the first time",
-  "Go for Broke":
-    "When a Minion gains and loses Overload, it takes Secondary Erosion Damage equal to 100% of Max Life and Energy Shield. Lasts for 3s\n+50% additional Overload Effect",
-  "Guerilla Tactics":
-    "+50% Mechanical Part Pick-Up Radius\n+2% additional Self-Destruct Protocol Charge Speed and +3% additional Self-Destruct Protocol Damage for each Mechanical Part collected recently. Stacks up to 10 times",
-  "Essential Speed":
-    "25% of the bonus and additional bonus to Minion Attack Speed is also applied to the bonus and additional bonus of Self-Destruct Protocol Damage",
-  "Struggle Free":
-    "+100% Sealed Mana Compensation for Spirit Magus Skills\n+1 to Max Nourishment stacks",
-  "Grow With It":
-    "Always attempts to auto-trigger the Trait Skill, Growing Breeze\nWhen a Spirit Magus casts a skill, for every +1 skill level of the corresponding skill, -4% chance to lose 1 stack of Nourishment, up to -20%",
-  "Breeze's Whisper":
-    "Spirit Magi +30% chance to use an Enhanced Skill\nWhenever a Merged Spirit Magus casts an Enhanced Skill, restores 2.5% of Max Life and +1 to Max Breeze Stacks. Interval: 0.9s. Up to +1 to Max Breeze Stacks, lasting until Reconjuring",
-  "Warmest Vigilance":
-    "+1 to Max Breeze Stacks for every 5% Max Life consumed by Merged Spirit Magi, up to +15\nMerged Spirit Magi gain 1 stack of Breeze when defeating an enemy",
-  "Nurturing Breeze":
-    "While in Vigilant, Iris -20% additional damage taken\n50% of the bonus and additional bonus to Life Regeneration Speed and Life Regeneration Per Second is also applied to Merged Spirit Magi\n100% of the bonus and additional bonus to Life Regain, Shield Regain, Life Regain Interval, and Shield Regain Interval is also applied to Merged Spirit Magi",
-  "Divine Intervention":
-    "For every 1 Murderous Intent you currently have, +0.3% additional damage dealt to enemies in the Holy Domain and +1% Murderous Intent restoration",
-  Improvision:
-    "When Blocking in the Holy Domain, +20% additional damage for 2s, up to an additional +40%",
-  "Undersea Ballad":
-    "Tide's area is no longer affected by Skill Area\n100% of the increase/decrease on Skill Area is also applied to Tide Effect, up to +90%",
-  "Sea Foam Nocturne":
-    "For every +1 to Max or Min Channeled Stacks, +12% bubble flying speed and +16% additional Tide Effect. Stacks up to 5 times\nMin Channeled Stacks takes effect twice on Bard Song",
-  "Artificial Moon: Origin":
-    'Base Traits now have Base Trait SlotMemory slots that affect a Hero\'s Base Traits, provided by the Revived Affixes of Hero Memories.">Special Memory slots that can be installed with an ULTRed">Ultimate or lower OriginMemory of Origin: Installable in Slot 1">Origin Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 20%\nBase Traits gain additional affixes upon reaching max level',
-  "Radical Evolution Theory: Cruelty":
-    "100% of the final bonus applied to Origin of Spirit MagusBuff effect gained after Activating a Spirit Magus summoning skill.\">Origin of Spirit Magus Effect is also applied to Cruelty's Aura Effect bonus",
-  "Reactive Rainbow":
-    '每拥有 1% ExcessThe portion that exceeds the fixed upper limit">溢出的避免元素异常几率，+0.5% 几率受到元素伤害时，将元素抗性上限视为EffectiveThe portion that doesn\'t exceed the fixed upper limit">有效元素抗性\n每拥有 1% ExcessThe portion that exceeds the fixed upper limit">溢出的避免元素异常几率，+0.5% 几率造成元素伤害时，使敌人元素抗性反转Changes the enemy\'s original Elemental Resistance to a corresponding negative value">元素抗性反转',
-  "Discord of the Second Will":
-    'When dealing damage, inflicts a random Crowd Control EffectsFrostbite, Freeze, Paralysis, Knockback, Weaken, Slow, Taunt, and Blinding">crowd control effect (except Freeze and Knockback), prioritizing effects that have not yet been inflicted. Interval: 1s\n+200% inflicted ParalysisIncreases damage taken by 15%">Paralysis and WeakenReduces damage dealt by 10%">Weaken Effect',
-  "Omni-Elixir Side Effect":
-    "Scent Bottles add unselected Potion Ingredient effects, and the selected ingredients and their base effects will no longer take effect",
-  "Basic Pharmacology Manuscript":
-    "+150% additional Ingredient Effect applied to Basic Scent Bottles",
-  "Hero's Resourcefulness":
-    'BurstWhen triggered, deals powerful area explosion damage equal to 340% of Weapon Damage to enemies within 3 m. While Dual Wielding, the Base Damage is the average damage of both weapons.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Attack, Melee, Physical, Triggered, Area, Strength, Dexterity">Burst becomes Burst BlastWhen triggered, deals 1458-2430 Spell Physical Damage to enemies within 3m. The damage effect of this skill is 360%.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Spell, Physical, Triggered, Area, Strength, Dexterity">Burst Blast and can activate Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst\nAll conditions of this trait that trigger on attack are changed to trigger on hit\nThe Base Trait effect that generates Rage from using Melee Skills is changed to generating Rage upon skill use. The effect that triggers Burst on attack hit is changed to triggering Burst BlastWhen triggered, deals 1458-2430 Spell Physical Damage to enemies within 3m. The damage effect of this skill is 360%.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Spell, Physical, Triggered, Area, Strength, Dexterity">Burst Blast on hit',
-  "Furious Roar":
-    'Attacks trigger BurstWhen triggered, deals powerful area explosion damage equal to 340% of Weapon Damage to enemies within 3 m. While Dual Wielding, the Base Damage is the average damage of both weapons.\nFor every +1 to Skill Level, Burst +10% additional damage (multiplies)\nSkill Tags: Attack, Melee, Physical, Triggered, Area, Strength, Dexterity">Burst once on Attack Critical Strike while BerserkGains bonuses twice the Max Rage while Berserk is active\nBerserk expires when you run out of Rage">Berserk is active. Cooldown: 0.3s',
-  "Ancestral Hate":
-    "对护盾返还间隔的额外加成也会作用于生命返还间隔\n愠怒之灵 2 秒内每使用一次攻击技能，额外 +2% 玩家自身受到的击中伤害，最多 40%",
-  "Starfall Wasteland":
-    'Seething SpiritAn ancestor spirit that casts your Non-Mobility and Non-Channeled Main Melee Attack Skills when it appears">Seething Spirit now only uses Ranged Projectile Skills (except Channeled and Parabolic Skills)\nGenerates 15 Rage when using a Ranged Skill\n+2 to Projectile Quantity, +2 Horizontal Projectile JumpUpon hitting a target, a horizontal Projectile or Chain Skill jumps to another target nearby">Jump(s), +2 Horizontal Projectile PenetrateHorizontal Projectiles pass through the targets they hit, continuing along their original trajectory until reaching the Penetration limit.">Penetration(s), +22% Projectile SizeChanges Projectile Size\nIn general, 100% of Projectile Size is applied to the size of Projectiles\nFor Projectiles affected by Skill Area Bonuses, 25% of the increase or decrease in Projectile Size is applied to the additional Skill Area of Projectiles\nFor Projectiles that have subsequent Area Effects, 25% of the increase or decrease in Projectile Size is also applied to the additional Skill Area of the subsequent effects\nSubsequent effects: Effects caused by Projectile after they are fired, such as explosions">Projectile Size for Ranged Skills cast by Seething Spirit\n66% chance for Ranged Projectiles launched by Seething Spirit to return after reaching their max range',
-  "Between the Holy Land and Hell":
-    'Gains Repent to the LightWhen in the Holy Domain, attacks yourself once after every 2 cast(s) of skills, dealing 10 Physical Damage\nFor every 1 attack(s) blocked when in the Holy Domain, +1% Block Ratio and Block Ratio Upper Limit and +2% additional damage. Stacks up to 15 time(s)">Repent to the Light for 8s after casting the Trait Skill',
-  "Apathy Blade":
-    "Intelligence no longer grants a damage bonus\nIntelligence is the sum of Strength and Dexterity\n+120% Strength and Dexterity",
-  "Mercury Purged":
-    'Realm of MercuryFor every 10% Unsealed Max Mana you have, +2% additional Attack Speed and +2% additional Elemental Damage\nRestores 15% of Unsealed Max Mana when using a non-Channeled Attack Skill. This effect does not apply to Burst.">Realm of Mercury keeps removing Elemental AilmentIgnite, Frostbite, Freeze, and Numbed">Elemental Ailments\nWhen inflicting or removing FrostbiteFrostbite is an Ailment that may be triggered on Cold Damage hits. Frostbitten enemies -10% Attack, Cast, and Movement Speed. Base Frostbite Rating: 10. For every 1 Frostbite Rating, +1% additional Cold Damage taken. The enemy will be Frozen once they have more than 100 Frostbite Rating.">Frostbite, grants Baptism: Impassive-30% additional Cold Damage taken and +60% Skill Area">Baptism: Impassive for 8s\nWhen inflicting or removing IgniteAn Ailment that may be triggered on hit, dealing Fire Damage per second for 4s based on Base Ignite Damage. Unable to stack\nIgnite cannot be inflicted when Base Ignite Damage is 0">Ignite, grants Baptism: Rage-30% additional Fire Damage taken and +30% additional damage on Critical Strike">Baptism: Rage for 8s\nWhen inflicting or removing NumbedAn Elemental Ailment that has a chance to be inflicted when Lightning Damage hits its target.\nWhen hitting a Numbed enemy, Lightning Damage inflicts 1 stack of Numbed for every 10% of the sum of Max Energy Shield and Life dealt by Lightning Damage. This threshold can be lowered or raised, but the minimum is 1%.\nThe default duration of Numbed is 2s, and the duration of each stack is calculated independently.\nMax Numbed stacks: 10. Each stack of Numbed increases the Lightning Damage taken by an additional +5%.">Numbed, grants Baptism: Indolent-30% additional Lightning Damage taken and +30% additional Max Damage">Baptism: Indolent for 8s',
-  "Telepathy Expert":
-    'When Spacetime IllusionSpacetime Illusion can only use Spell Skills and cannot use any Channeled and Summon Skills.\nOnly 1 Spacetime Illusion may exist at a time. After reaching the summoning limit, click on the Trait Slot to call back the Spacetime Illusion">Spacetime Illusion consumes Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst, it also attempts to consume Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst for Youga',
-  "Fifth Cosmic Velocity":
-    '-99% additional Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst Charge Speed\n100% chance to immediately gain 2 stack(s) of Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst Charge. Interval: 0.03s',
-  "To Myself in Another Spacetime":
-    '+1 to Max Twisted SpacetimeRecords the Damage Over Time you deal to enemies while Twisted Spacetime is active\nAfter moving the Twisted Spacetime, enemies within its area will be inflicted with Spacetime Turbulence that deals True Damage">Twisted Spacetime Quantity\nTwisted SpacetimeRecords the Damage Over Time you deal to enemies while Twisted Spacetime is active\nAfter moving the Twisted Spacetime, enemies within its area will be inflicted with Spacetime Turbulence that deals True Damage">Twisted Spacetime\'s Cast Interval is reduced to 1s\n+20% for all damage recorded by Twisted SpacetimeRecords the Damage Over Time you deal to enemies while Twisted Spacetime is active\nAfter moving the Twisted Spacetime, enemies within its area will be inflicted with Spacetime Turbulence that deals True Damage">Twisted Spacetime',
-  "Private Universe":
-    '+200% additional Twisted SpacetimeRecords the Damage Over Time you deal to enemies while Twisted Spacetime is active\nAfter moving the Twisted Spacetime, enemies within its area will be inflicted with Spacetime Turbulence that deals True Damage">Twisted Spacetime Skill Area\n+80% Spacetime TurbulenceDeals True Damage equal to the shared damage every second for 2s">Spacetime Turbulence Duration\nTwisted SpacetimeRecords the Damage Over Time you deal to enemies while Twisted Spacetime is active\nAfter moving the Twisted Spacetime, enemies within its area will be inflicted with Spacetime Turbulence that deals True Damage">Twisted Spacetime only follows you',
-  "Nourishing Spring Rain":
-    'NourishmentWhen using a skill, +30% additional damage for that use. Lasts 15s and stacks up to 10 time(s). Effect of Nourishment enjoys Empower Skill Effect bonuses.">Nourishment can be granted to Synthetic Troop Minions\nWhen there is a Spirit Magus, for every 1 Growth, +5% additional damage for Synthetic Troop Minions\nWhen there is a Spirit Magus, for every 1% chance to use an Enhanced Skill, -1% chance for Synthetic Troop Minions to lose Nourishment',
-  "Nature's Party":
-    'NourishmentWhen using a skill, +30% additional damage for that use. Lasts 15s and stacks up to 10 time(s). Effect of Nourishment enjoys Empower Skill Effect bonuses.">Nourishment applies additional base effects:\nFrost Magus: Restores 5% of Missing Life and Energy Shield to you on hit. Interval: 0.2s. +5 Max Frostbite Rating per Nourishment stack\nThunder Magus: Inflicts Numbed on hit. Interval: 0.2s. +5% additional Lightning Damage dealt to Numbed enemies per Nourishment stack\nFire Magus: +20% additional Critical Strike Damage and -20% Critical Strike Rating per Nourishment stack\nRock Magus: Transfers 20% of damage taken to this Minion, and adds Physical Damage equal to 0.1% of Armor per Nourishment stack\nErosion Magus: Inflicts Deterioration on hit and +5% Deterioration Damage per Nourishment stack',
-  "Soft Storm":
-    'While in VigilantAllows you to control Spirit Magi and attack enemies with Spirit Magus Skills.\nYou take all damage from enemies in place of the Spirit Magi under your control.\nAll skills except for the second skill are switched with Spirit Magus Skills, and the Ultimate of Merged Spirit Magi is unlocked.\nOnly skills that don\'t have an attacking or casting action can be installed as the second skill.\nWhen controlling a Spirit Magus, Iris\' Movement Speed is applied instead.">Vigilant, for every 2 use(s) of Enhanced SkillChance to change the skill into a stronger Enhanced Skill when Spirit Magus uses a Base Skill. The chance can be increased, and at 100%, Spirit Magi will no longer use Base Skills and always use Enhanced Skills">Enhanced Skills by Spirit Magi, triggers the UltimateWhen in a certain state, Spirit Magi use their Ultimate with extremely high strength">Ultimate\nSpirit Magi cannot use the UltimateWhen in a certain state, Spirit Magi use their Ultimate with extremely high strength">Ultimate. -30% additional UltimateWhen in a certain state, Spirit Magi use their Ultimate with extremely high strength">Ultimate Damage',
-  "Blowing Breeze":
-    'While in VigilantAllows you to control Spirit Magi and attack enemies with Spirit Magus Skills.\nYou take all damage from enemies in place of the Spirit Magi under your control.\nAll skills except for the second skill are switched with Spirit Magus Skills, and the Ultimate of Merged Spirit Magi is unlocked.\nOnly skills that don\'t have an attacking or casting action can be installed as the second skill.\nWhen controlling a Spirit Magus, Iris\' Movement Speed is applied instead.">Vigilant, for every 1 use(s) of the UltimateWhen in a certain state, Spirit Magi use their Ultimate with extremely high strength">Ultimate by Spirit Magi, +1 to Max Breeze+16% additional damage dealt by Merged Spirit Magi">Breeze Stacks, up to 15 to Max Breeze Stacks, lasting until ReconjuringGains additional Life Restoration but cannot use skills or be targeted. Loses this status once fully healed">Reconjuring',
-  "Neural Synchronization Training":
-    'After a Summon Skill is cast, you gain OverloadProvides buffs for your Minions\nBonuses that apply to Empower Skill Effects are also applied to Overload Effect\nBonuses that apply to Skill Effect Duration are also applied to Overload Duration">Overload for 4s\nWhile a Synthetic Troop Minion exists, +125% additional OverloadProvides buffs for your Minions\nBonuses that apply to Empower Skill Effects are also applied to Overload Effect\nBonuses that apply to Skill Effect Duration are also applied to Overload Duration">Overload effect granted on yourself\nFor every 1 Command每 1 点统御值会使智械召唤物额外 +3% 伤害，额外 -2% 受到的伤害，+2% 移动速度且索敌范围增加。\n统御值下限为 -100，上限为 100。统御值不为 0 时，每秒回归（损失或获得）13 点统御值，直至归0，每多 10 点统御值，回归值 +7 点。\n统御值不为负时，智械召唤物的持续时间不会计时。">Command, +3% additional damage for you',
-  "Machine's Joy":
-    '+4% additional OverloadProvides buffs for your Minions\nBonuses that apply to Empower Skill Effects are also applied to Overload Effect\nBonuses that apply to Skill Effect Duration are also applied to Overload Duration">Overload Effect on hit. Stacks up to 30 time(s) (multiplies). Removes all stacks when casting a Trait Skill',
-  "Peril of Synthetic Troops":
-    "Adds 18% of the player's Max Life to the Base Life of Synthetic Troop Minions\nAdds 12% of the player's Max Energy Shield to the Base Energy Shield of Synthetic Troop Minions",
-  "Three-Chambered Heart":
-    'The Main Skill is supported by a Lv. 40 Advanced Elemental ImpactSupports skills that deal damage\n+16% additional damage for 2 other types of Elemental Damage if the supported skill recently dealt 1 type of Elemental Damage">Advanced Elemental Impact',
-  "First Flake of Strange Snow":
-    '-50% additional FrostbiteFrostbite is an Ailment that may be triggered on Cold Damage hits. Frostbitten enemies -10% Attack, Cast, and Movement Speed. Base Frostbite Rating: 10. For every 1 Frostbite Rating, +1% additional Cold Damage taken. The enemy will be Frozen once they have more than 100 Frostbite Rating.">Frostbite Effect\nEach type of Crowd Control EffectsFrostbite, Freeze, Paralysis, Knockback, Weaken, Slow, Taunt, and Blinding">Crowd Control Effect, Ailment, and Curse afflicting an enemy is deemed to have 50 additional Frostbite Rating, up to 500',
-  "Sweet Pain":
-    "Converts 99% Fire Damage to Erosion Damage\nYou have a Lv. 20 Precise: Erosion Amplification\nYou have a Lv. 20 Precise: Corrosion Focus\nYou have a Lv. 20 Erosion Magus Origin of Spirit Magus Effect",
-  "Royal Arsenal":
-    "For every activated Magnificent Support Skill, +100% Projectile Speed, up to 300%\nFor every activated Noble Support Skill, +20% additional Projectile Damage, up to 60%",
-  "Into the Night":
-    '+2 to Max DeflectionReduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection">Deflection\nDeflectionReduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection">Deflection is no longer consumed when hit, but DeflectionReduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection">Deflection now only lasts for 3s\n+50% additional Projectile Damage when DeflectionReduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection">Deflection is active',
-  "Self-Imposed Shackles":
-    '静止时，每 0.5 秒额外 +20% 升温效果，上限 60%\n静止时，Heat UpAdditionally increases Projectiles Damage based on Heat Up stacks and increases the Projectile Max Deviation Angle">升温获得额外效果：每有一层升温，+1% 技能范围\n停止移动后， +20% 攻击和法术格挡率，+20% Block Ratio Upper LimitThe Block Ratio\'s upper limit is 60% by default and can be increased to a maximum of 80%">格挡比例上限，持续 8 秒\n移动时，-60% ElementalFire, Cold, and Lightning">元素抗性和腐蚀抗性上限',
-  "Cat's Night Safari":
-    'Gains 1 stack of Interest upon dealing damage to an Elite enemy. Interval: 1s\nGains Hunting Instinct+2 to Initial Multistrike Count and Max Multistrike Count. Lasts for 30s. Unable to gain Interest during Hunting Instinct">Hunting Instinct when having 5 stack(s) of Interest',
-  "Charging Tail":
-    'Feline FigureInflicts Numbed stacks equal to the number of Electrify stacks on enemies within the area\nSkill Tags: Spell, Lightning">Feline Figure can now land Critical Strikes\nOn Critical Strike, the effect of Numbed inflicted within 4s by Feline FigureInflicts Numbed stacks equal to the number of Electrify stacks on enemies within the area\nSkill Tags: Spell, Lightning">Feline Figure is doubled',
-  "Vengeful Wraith":
-    'For every 3 casts of VendettaTeleports to a random enemy within 9m, then triggers the Main Skill 1 time and +30% additional attack damage for the triggered skill. Cooldown: 3s">Vendetta, generates 1 Phantom that casts VendettaTeleports to a random enemy within 9m, then triggers the Main Skill 1 time and +30% additional attack damage for the triggered skill. Cooldown: 3s">Vendetta 1 additional time on a random target within 9m. The Phantom deals triple damage',
-  "Immolating World":
-    "Replaces the Main Skill with True Flame ImmolationConsumes all Blessings and deals Spell Cold Damage\nDeals 233 damage and +3% Base Skill Area for each stack of Blessing consumed\nFor every 1% Cooldown Recovery Speed, grants a Blessing with 2.5% Max Stacks after this skill is cast\nConverts 100% of this skill's Cold Damage to Fire Damage\">True Flame Immolation\nDuring God's BoonConsumes Tenacity Blessing, Agility Blessing, and Focus Blessing to send bestow God's Boon and gain Explosion for a short time.\nSkill Tags: Spell, Physical, Area\">God's Boon, triggers True Flame ImmolationConsumes all Blessings and deals Spell Cold Damage\nDeals 233 damage and +3% Base Skill Area for each stack of Blessing consumed\nFor every 1% Cooldown Recovery Speed, grants a Blessing with 2.5% Max Stacks after this skill is cast\nConverts 100% of this skill's Cold Damage to Fire Damage\">True Flame Immolation once every 0.5s. The Interval is affected by Cast Speed\nDuring God's Boon, each True Flame ImmolationConsumes all Blessings and deals Spell Cold Damage\nDeals 233 damage and +3% Base Skill Area for each stack of Blessing consumed\nFor every 1% Cooldown Recovery Speed, grants a Blessing with 2.5% Max Stacks after this skill is cast\nConverts 100% of this skill's Cold Damage to Fire Damage\">True Flame Immolation cast extends the duration of God's BoonConsumes Tenacity Blessing, Agility Blessing, and Focus Blessing to send bestow God's Boon and gain Explosion for a short time.\nSkill Tags: Spell, Physical, Area\">God's Boon by 0.2s",
-  "The Place of Oracle":
-    'During God\'s Boon, Tenacity BlessingEvery stack of Tenacity Blessing grants an additional 4% damage reduction (multiplies). Initial max stacks: 4.">Tenacity Blessing and Agility BlessingEvery stack of Agility Blessing grants +4% Attack and Cast Speed and +2% additional damage. Initial max stacks: 4">Agility Blessing gain an additional effect: +5% additional damage',
-  "Crossing the Divine Threshold":
-    'Immune to Ailments, Crowd Control EffectsFrostbite, Freeze, Paralysis, Knockback, Weaken, Slow, Taunt, and Blinding">Crowd Control Effects, and Curses while inside the Divine Realm\n+2 to max stacks of all Blessings when outside the Divine Realm',
-  "Inverted Shrine":
-    'Inflicts Desecration+15% additional Erosion Damage taken (multiplies) for each stack of Desecration. Initial max stacks: 3. Lasts for 5s. Can only affect 1 target">Desecration on yourself when inflicting Desecration+15% additional Erosion Damage taken (multiplies) for each stack of Desecration. Initial max stacks: 3. Lasts for 5s. Can only affect 1 target">Desecration on enemies\n+99% additional Erosion Damage when inflicted with Desecration+15% additional Erosion Damage taken (multiplies) for each stack of Desecration. Initial max stacks: 3. Lasts for 5s. Can only affect 1 target">Desecration',
-  "Bing's Big Bang Pack":
-    "33% chance to generate 3 additional reserve bomb(s) when bombs land a Critical Strike. -20% additional Reserve Bomb Damage",
-  "Genius Idea Generator":
-    "+2 to Whimsy Explosion Projectile Quantity, +100% Whimsy Effect, +50% Whimsy Signal Effect\n+2 to Max Spell Burst and +100% additional Spell Damage for Spells triggered by Ingenuity Overload",
-  "Ceaseless Tide":
-    'Deemed to be in the Loud SongIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect">Loud Song state while in the BardIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead">Bard state\nAttack, Cast, and Movement Speed are no longer additionally reduced while in the Loud SongIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect">Loud Song state',
-  "Artificial Moon: Discipline":
-    'Base Traits now have Base Trait SlotMemory slots that affect a Hero\'s Base Traits, provided by the Revived Affixes of Hero Memories.">Special Memory slots that can be installed with an ULTRed">Ultimate or lower DisciplineMemory of Discipline: Installable in Slot 2">Discipline Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 20%\nBase Traits gain additional affixes upon reaching max level',
-  "Artificial Moon: Progress":
-    'Base Traits now have Base Trait SlotMemory slots that affect a Hero\'s Base Traits, provided by the Revived Affixes of Hero Memories.">Special Memory slots that can be installed with an ULTRed">Ultimate or lower ProgressMemory of Progress: Installable in Slot 3">Progress Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 20%\nBase Traits gain additional affixes upon reaching max level',
-  "Radical Evolution Theory: Spell Amplification":
-    "100% of the final bonus applied to Origin of Spirit MagusBuff effect gained after Activating a Spirit Magus summoning skill.\">Origin of Spirit Magus Effect is also applied to Spell Amplification's Aura Effect bonus",
-  "Radical Evolution Theory: Radical Order":
-    "100% of the final bonus applied to Origin of Spirit MagusBuff effect gained after Activating a Spirit Magus summoning skill.\">Origin of Spirit Magus Effect is also applied to Radical Order's Aura Effect bonus",
-  "Radical Evolution Theory: Deep Pain":
-    "100% of the final bonus applied to Origin of Spirit MagusBuff effect gained after Activating a Spirit Magus summoning skill.\">Origin of Spirit Magus Effect is also applied to Deep Pain's Aura Effect bonus",
-  "Repent to the Light":
-    'When in the Holy DomainThe Holy Domain automatically closes 1s after you leave the Holy Domain\nThe Holy Domain has a radius of 5m. Not affected by Skill Area bonuses">Holy Domain, attacks yourself once after every 2 cast(s) of skills, dealing 10 Physical Damage\nFor every 1 attack(s) blocked when in the Holy DomainThe Holy Domain automatically closes 1s after you leave the Holy Domain\nThe Holy Domain has a radius of 5m. Not affected by Skill Area bonuses">Holy Domain, +1% Block RatioBy default, Blocking absorbs 30% damage. Increase Block Ratio to increase the damage absorption ratio.">Block Ratio and Block Ratio Upper LimitThe Block Ratio\'s upper limit is 60% by default and can be increased to a maximum of 80%">Block Ratio Upper Limit and +2% additional damage. Stacks up to 15 time(s)',
-  "Baptism: Impassive": "-30% additional Cold Damage taken and +60% Skill Area",
-  "Baptism: Rage":
-    "-30% additional Fire Damage taken and +30% additional damage on Critical Strike",
-  "Baptism: Indolent":
-    "-30% additional Lightning Damage taken and +30% additional Max Damage",
-  "Artificial Moon":
-    "Additional affixes granted upon reaching the max Base Trait level",
-  元素抗性反转:
-    "Changes the enemy's original Elemental Resistance to a corresponding negative value",
-  "By My Side - Anger":
-    "(The following effects only apply to Berserker Rehan - Anger)\nWhen the character has at least 2 of this affix:\nGains 3 Rage on hit. Cooldown: 0.3s.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +12% Cooldown Recovery Speed.\nWhen the character has at least 6 of this affix:\n+60% additional Burst Area while Berserk is active.",
-  "By My Side - Seething Silhouette":
-    "(The following effects only apply to Berserker Rehan - Seething Silhouette)\nWhen the character has at least 2 of this affix:\nFor every 1 10 Rage, +1% additional Attack Damage.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and -20% Rage Cost.\nWhen the character has at least 6 of this affix:\nUpon entering the Berserk status, Seething Spirit exists for 3s. Interval: 10s.",
-  "By My Side - Wind Stalker":
-    "(The following effects only apply to Cateye Erika - Wind Stalker)\nWhen the character has at least 2 of this affix:\n+25% additional Lightning Damage dealt by Steep Strikes.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances. Warcry is cast immediately.\nWhen the character has at least 6 of this affix:\n30% chance to obtain 1 Steep Strike(s) on each attack during Multistrike.",
-  "By My Side - Lightning Shadow":
-    "(The following effects only apply to Cateye Erika - Lightning Shadow)\nWhen the character has at least 2 of this affix:\n+30% Movement Speed.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +30% Shadow Tracking Area.\nWhen the character has at least 6 of this affix:\nEnemies within 10m +20% additional Lightning Damage taken.",
-  "By My Side - Ranger of Glory":
-    "(The following effects only apply to Divineshot Carino - Ranger of Glory)\nWhen the character has at least 2 of this affix:\n+20% chance to reload Special Ammo.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +8% additional Critical Strike Rating for the Projectile Skill when consuming Special Ammo.\nWhen the character has at least 6 of this affix:\nFor every Fervor Rating +1% Critical Strike Damage. Loses 50 Fervor Rating when losing Magic Shot.",
-  "By My Side - Lethal Flash":
-    "(The following effects only apply to Divineshot Carino - Lethal Flash)\nWhen the character has at least 2 of this affix:\nFor every +3% Projectile Speed, Shotgun Effect's subsequent Projectiles +1% damage, up to +30%.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +50% Projectile Speed.\nWhen the character has at least 6 of this affix:\nWhen using a Mobility Skill to reload ammo, the max magazine capacity is also increased by the same amount for 8s, up to +30.",
-  "By My Side - Ice-Fire Fusion":
-    "(The following effects only apply to Frostfire Gemma - Ice-Fire Fusion)\nWhen the character has at least 2 of this affix:\nTriggers Lv. 15 Elemental Destruction Curse on hit. Cooldown: 0.5s.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +20% Frostfire Rampage Duration.\nWhen the character has at least 6 of this affix:\n+20% additional Fire and Cold Damage.",
-  "By My Side - Frostbitten Heart":
-    "(The following effects only apply to Frostfire Gemma - Frostbitten Heart)\nWhen the character has at least 2 of this affix:\nCold Pulse inflicts 16 additional Frostbite Rating on hit.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +15% Freeze Effect.\nWhen the character has at least 6 of this affix:\nWhen inflicting Freeze, has a 30% chance to trigger Lv. 20 Blizzard, Frost Bond, or Frost Terra. Interval: 0.1s.",
-  "By My Side - Flame of Pleasure":
-    "(The following effects only apply to Frostfire Gemma - Flame of Pleasure)\nWhen the character has at least 2 of this affix:\n+30% Brand DMG Recording Ratio.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +20% additional Purgatory Duration.\nWhen the character has at least 6 of this affix:\n-15% Brand-recorded damage that Death by Fire removes.",
-  "By My Side - Blast Nova":
-    "(The following effects only apply to Escapist Bing - Blast Nova)\nWhen the character has at least 2 of this affix:\n+12% Cooldown Recovery Speed and +12% Skill Effect Duration.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +25% additional Projectile Skill Area.\nWhen the character has at least 6 of this affix:\n+1 bomb(s) thrown.",
-  "By My Side - Spacetime Illusion":
-    "(The following effects only apply to Spacetime Witness Youga - Spacetime Illusion)\nWhen the character has at least 2 of this affix:\n+2 Spell Skill Level.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +20% additional Spacetime Illusion Damage.\nWhen the character has at least 6 of this affix:\nUpon receiving Fatal Damage, loses the Spacetime Illusion and uses the power of Spacetime to become immune to the damage, Knock Back nearby enemies, and restore 30% of Missing Life and Energy Shield. Interval: 10s.",
-  "By My Side - Spacetime Elapse":
-    "(The following effects only apply to Spacetime Witness Youga - Spacetime Elapse)\nWhen the character has at least 2 of this affix:+200% Spacetime Energy Restoration provided by base Traits.\nWhen the character has at least 4 of this affix: +15% to all Resistances and +15% additional Affliction Effect.\nWhen the character has at least 6 of this affix: +15% additional Reaping Cooldown Recovery Speed.",
-  "By My Side - Wisdom of The Gods":
-    "(The following effects only apply to Oracle Thea - Wisdom of The Gods)\nWhen the character has at least 2 of this affix:\nFor each stack of Focus Blessing, +15 Critical Strike Rating, up to +150.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances. When activating Spell Burst, gains 1 stack of Tenacity Blessing and Agility Blessing.\nWhen the character has at least 6 of this affix:\n+2 Max Focus Blessing Stack(s).",
-  "By My Side - Incarnation of the Gods":
-    "(The following effects only apply to Oracle Thea - Incarnation of the Gods)\nWhen the character has at least 2 of this affix:\n+30% additional Steep Strike Damage.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances. Defeated enemies have a 10% chance to explode, dealing Secondary Fire Damage equal to 15% their Max Life.\nWhen the character has at least 6 of this affix:\n+2 Max Tenacity Blessing Stack(s) and +2 Max Agility Blessing Stack(s).",
-  "By My Side - Order Calling":
-    "(The following effects only apply to Commander Moto - Order Calling)\nWhen the character has at least 2 of this affix:\n+30% Overload Duration.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +20% Overload Effect.\nWhen the character has at least 6 of this affix:\nGain 1 Command when inflicting Overload.",
-  "By My Side - Charge Calling":
-    "(The following effects only apply to Commander Moto - Charge Calling)\nWhen the character has at least 2 of this affix:\n+20% Overload Cooldown Recovery Speed.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances. When a Synthetic Troop Minion initiates Self-Destruct Protocol, there is a 6% chance for it to drop 1 Mechanical Part.\nWhen the character has at least 6 of this affix:\nWhen picking up Mechanical Parts, there is a 20% chance to gain 1 Command.",
-  "By My Side - High Court Chariot":
-    "(The following effects only apply to Lightbringer Rosa - High Court Chariot)\nWhen the character has at least 2 of this affix:\nRestores 4 Murderous Intent every second.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances. Triggers Lv. 10 Burst of Anger when defeating an enemy.\nWhen the character has at least 6 of this affix:\nEvery 10s, the next time a Trait Skill is cast, it gains an additional effect: Eliminates all non-Elite enemies within the Area of Holy Illumination. All units in the Holy Domain +20% additional Physique and +20% additional damage.",
-  "By My Side - Growing Breeze":
-    "(The following effects only apply to The Forsaken Iris - Growing Breeze).\nWhen the character has at least 2 of this affix:\nWhen a Spirit Magus casts a skill, -8% chance to lose 1 stack of Nourishment.\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +1 Spirit Magus Skill Level.\nWhen the character has at least 6 of this affix:\nEvery 8s, enhances a random Spirit Magus: +200 additional Growth and +60% additional Attack Speed, Cast Speed, and Movement Speed.",
-  "By My Side - Zealot of War":
-    "(The following effects only apply to Divineshot Carino - Zealot of War)\nWhen the character has at least 2 of this affix:\n+2 Projectile Quantity\nWhen the character has at least 4 of this affix:\n+15% to all Resistances and +2 Horizontal Projectile Penetration(s)\nWhen the character has at least 6 of this affix:\nLoses 5 stack(s) of Overheated on defeat",
-  Corroded: "Corroded gear cannot be corroded or crafted again",
-  "High Item Level Normal Gear":
-    "Crafting with high-item-level gear, an affix can be granted with a higher affix tier. Crafting with normal gear can save you the costs of obtaining your desired affixes. Normal gear with high item levels can be purchased from Trade House or obtained from the exchange with the Fate Cards dropped by Netherrealm Watchers after you defeat them.",
-  ULT: "Each piece of gear can only possess 2 Ultimate affixes",
-  Sleepless: "Each piece of gear can only possess 1 sleepless affix",
-  "Success rate":
-    "There is a chance that some affixes may not be added successfully during Targeted Processing. When this happens, the gear will have a Blemish, which occupies an affix slot.",
-  "Short-term Inheritance":
-    "After clearing this stage, the card affixes will work on all stages in this plane\nThe inheritance effect vanishes after taking effect a few times or when this round ends\n- Activating a stage is counted as one time\n- The count is displayed after the colon",
-  Memory:
-    "Cards can take effect multiple times in this stage\n- Activating a stage is counted as one time\n- The remaining count is displayed after the colon",
-  "Takes effect after clearance":
-    "The card affixes will only take effect after this stage is cleared",
-  "Mirror Image": "This is a Mirror Image.",
-  "Dark Surge Undercurrent":
-    "Randomly draws 1 Dark Surge Confusion Card(s) after clearing this stage.\nEffect cannot be inherited",
-  "Mystery Treasure":
-    "Randomly draws 1 [Straightforward] after clearing this stage.\nEffect cannot be inherited",
-  "Oracle of War":
-    "Randomly draws 1 [Conquest - Hypocrisy] after clearing this stage.\nEffect cannot be inherited",
-  "Oracle of Might":
-    "Randomly draws 1 [Might - Hypocrisy] after clearing this stage.\nEffect cannot be inherited",
-  "Oracle of Hunting":
-    "Randomly draws 1 [Hunting - Hypocrisy] after clearing this stage.\nEffect cannot be inherited",
-  "Oracle of Machines":
-    "Randomly draws 1 [Machine - Hypocrisy] after clearing this stage.\nEffect cannot be inherited",
-  Attempts:
-    "After this stage is cleared, -1 attempt.\nThe next round of Chaos Invasion will start after all attempts are used up, and the latest Void Chart configuration will be applied when drawing cards again.\nIf a stage is not cleared after starting, cards will not take effect until the stage corresponding to them is cleared.",
-  Choice:
-    "Complete this stage to randomly draw three Trait Cards and choose to obtain a new card or upgrade an existing one.",
-  Complete:
-    "**After completing this level, start the next round of confrontation",
-  Obtain: "Not affected by other drop affixes.",
-  "Offset Degree":
-    "+0.3% Monster Damage and -1% Monster Damage taken for every point of Offset Degree",
-  "God of War Follower":
-    "Disciples are Magic monsters and will be affected by the Drop Affixes",
-  "Dwarven Automaton":
-    "Dwarven Automatons are special trial monsters that appear in Trial: God of Might. They are Rare monsters who are affected by drop affixes",
-  Drone:
-    "Drones are special attack monsters that appear in Trial: God of Machines. They are Normal monsters who are affected by drop affixes and have a higher chance of dropping Fluorescent Memory Shards exclusive to the current area.",
-  "Basic Rare Gear": "Rare Gear with 3~5 Affixes",
-  "Super Rare Gear": "Rare Gear with 6 Affixes",
-  "Replicate Legendary Boss":
-    "1 additional Legendary Boss(es) will be generated for every 100% Replicate chance",
-  "Drop Quantity Bonus":
-    "Magic/Rare/Legendary Boss Buffs will grant characters a 55%/60%/65% drop quantity bonus respectively\nRewards replaced will lose their original drops from gameplay",
-  "Empowered Sand Pirate":
-    "A Rare Sand Pirate that drops lots of Oasis Coins when defeated",
-  "Sand Pirate Boss":
-    "A Legendary Sand Pirate that drops lots of Oasis Coins when defeated",
-  "Rank 5+ Beacon":
-    "Rank 5+ Beacons can be used to unlock Netherrealm stages in Deep Space mode at Timemark 8 (the stage has an additional drop quantity bonus)",
-  "God of War Exclusive Legendary Gear":
-    "Includes Dragon Breath Armor, Fury Heart, Ghost Slaughter, and Crimson King.",
-  "God of Might Exclusive Legendary Gear":
-    "Includes Last Words of Chaos, Polygonal Enclosure, Forlorn Crystal, Imperial Might, and Divine Ember.",
-  "Goddess of Hunting Exclusive Legendary Gear":
-    "Includes Skin of Malice, Shadow of Thunderlight's Footsteps, Thunder Jawbone, Eternity, and Starlit Body.",
-  "God of Machines Exclusive Legendary Gear":
-    "Includes Necklace of Firebird, Decayed Mind, Mistaken Authority, and Surging Inspiration.",
-  "Nova Explosion":
-    "Collect 12 to exchange for a Precious Legendary gear from the Spacetime Wanderer",
-  "Supernova Explosion":
-    "Collect 12 to exchange for a Matchless Legendary gear from the Spacetime Wanderer",
-  "Pages of Aeterna":
-    "Used to upgrade nodes in the Psalms of Aeterna of the Aeterna Season",
-  "Aeterna Reverberation - Fleeting":
-    "A reverberation dropped by the remnants of the City of Aeterna. Give this to Kandel at Ember's Rest to open a passage to the Ruins of Aeterna.\n(Stage Level = 86)",
-  "Aeterna Reverberation - Eternal":
-    "A reverberation dropped by the remnants of the City of Aeterna. Give this to Kandel at Ember's Rest to open a passage to the Ruins of Aeterna.\n(Stage Level = 89)",
-  "Kin Warden's Obsession":
-    "A rare Kin of Aeterna monster. Upon defeating it, there's a chance to drop an Aeterna Reverberation.",
-  "Blade of Aeternal's Obsession":
-    "A Kin of Aeterna boss. Upon defeating it, an Aeterna Reverberation is guaranteed to drop.",
-  Agile:
-    "Progress (1/2): You can start the next round after completing this stage",
-  "The Narrow Path of Fate":
-    "Collect 1 to exchange for a Hero Relic or Hero Memory with at least 1 T2 affix(es) from the Spacetime Wanderer (Cannot be traded)",
-  "Divine Will Cannot be Defied":
-    "Collect 1 to exchange for a random Divinity Slate with 1 Legendary Medium Talent Node(s) but no Divinity Slots from the Spacetime Wanderer (Cannot be traded)",
-  "One-Handed Melee Weapons":
-    "Include One-Handed Sword, One-Handed Axe, One-Handed Hammer, Claw, Dagger, and Cane",
-  "Two-Handed Melee Weapons":
-    "Include Two-Handed Sword, Two-Handed Axe, Two-Handed Hammer, and Cudgel",
-  "Ranged Weapons": "Include Bow, Crossbow, Cannon, Pistol, and Musket",
-  "Spell Casting Weapons": "Include Wand, Staff, and Sacrificial Blade",
-  "Voyager Set":
-    "A Voyager Set consists of 7 pieces of Legendary gear of the Voyager series, including:\nDrops unlocked at Timemark 1: Chest Armor, Belt\nDrops unlocked at Timemark 3: Helmet, Boots\nDrops unlocked at Timemark 5: Gloves, Necklace, Ring.",
-  "Six Gods' Boon":
-    "Collect 6 to exchange for a random piece of Legendary gear from the Spacetime Wanderer",
-  Plasticity:
-    "Only pieces of gear that have reached Lv. 100 have the chance to have 200 Plasticity.",
-  "Hero Relic":
-    "Can be equipped in [Hero Trait] to provide Hero Trait-related special affixes\nHero Relics that are Lv. 73 or below only have 1 affix(es).\nWhen they are between Lv. 74-80, they have a 50% chance of having 2 affix(es).\nWhen they are higher than Lv. 81, they are guaranteed to have 2 affix(es)",
-  "Hero Memories":
-    "Can be equipped on a Hero Relic Engram in [Hero Trait] to provide Hero Trait-related special affixes\nHero Memories that are Lv. 80 or below only have 1 affix(es).\nWhen they are between Lv. 81-83, they have a 50% chance of having 2 affix(es).\nWhen they are higher than Lv. 84, they are guaranteed to have 2 affix(es)",
-  Priceless:
-    "Priceless gear is non-Legendary gear that has reached Item Lv. 100 and only drop in Lv. 86 stages and above.\nPriceless gear drop with 1 - 2 Base affixes.\nOnly Priceless gear can gain Ultimate affixes through crafting.",
-  Blessing:
-    "Blessed monsters become extremely dangerous but also have an increased Drop Quantity",
-  "Difficulty of Obtaining Legendary Gear":
-    "Legendary gear is categorized into the following types according to how difficult it is to obtain them: Common Legendary gear, Precious Legendary gear, Matchless Legendary gear, and Ultimate Legendary gear.",
-  "Tarnish the Stars":
-    "Collect 4 to exchange for a piece of Ultimate Legendary gear affected by Corrosion from the Spacetime Wanderer",
-  'Mistville "Resident"':
-    'Defeating a "Resident" may drop Resident\'s Eyes. Use it to gain Infection Progress. Spend Infection Progress at [Mistville Trader - Wally] to explore Mistville.',
-  "Voyager's Commemorative Cape":
-    "The Chest Armor of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Strap":
-    "The Belt of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Goggles":
-    "The Helmet of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Boots":
-    "The Boots of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Cufflinks":
-    "The Gloves of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Brooch":
-    "The Necklace of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Voyager's Commemorative Pinky Ring":
-    "The Ring of the Legendary gear set: Voyager\nEquipping 2/4/6 pieces of the set at the same time grants additional set bonuses.",
-  "Type III Supernova":
-    "Collect 12 to exchange for a piece of Legendary gear with 3 Legendary Aptitudes from the Spacetime Wanderer",
-  "Type IV Supernova":
-    "Collect 12 to exchange for a piece of Legendary gear with 4 Legendary Aptitudes from the Spacetime Wanderer",
-  "Energy Core": "Can be used to empower gear at the [Arms Dealer]",
-  "Ground Quartz":
-    "Can be used to craft gear at the [Arms Dealer], upgrading the affixes on the gear",
-  "Flame Sand":
-    "Can be used to craft gear at the [Arms Dealer], re-rolling the Craft Affixes on the gear",
-  "Netherrealm resonance":
-    "Can be used to add Base Affixes to Netherrealm stages or exchanged for Beacons at the [Netherrealm Mentor]",
-  "Truth Ember":
-    "Can be used to craft gear at the [Arms Dealer], re-rolling the values of affixes on the gear",
-  "Ultimate Ember":
-    "Can be used to craft gear at the [Arms Dealer], upgrading T1 affixes",
-  "Flame Elementium":
-    "Can be used to craft gear at the [Arms Dealer], upgrading the affixes of high-level gear or adding target affixes to the gear",
-  "Flame Fuel":
-    "Includes Flame Sand and Flame Elementium, and can be used to craft gear at the [Arms Dealer]",
-  "Brand Materials":
-    "Can be used to Brand Divinity Slates at the [Arms Dealer], adding additional Talent Nodes to Divinity Slates",
-  "Divinity Slate":
-    "Can be equipped in [Talent - Statue of The New God] to provide the character with additional Talent Nodes",
-  Compass:
-    "A map material that can be used to add additional Compass affixes to maps when starting a Netherrealm stage, once Compass slots are unlocked.",
-  "Forbidden Prophecy":
-    "Collect 1 to exchange for a random Fluorescent Memory from the Spacetime Wanderer",
-  "A weapon used by a Recommended for Beginners Build":
-    "Same as the initial weapon type, but with random affixes",
-  "Tomorrow's Direction":
-    "Collect 10 to exchange for random Compass x10 from the Spacetime Wanderer.",
-  "Radical - War": "Increases the duration of Trial: God of War",
-  "Brutal - War": "Increases the Max Level of Trial: God of War",
-  "Overbearing - War":
-    "There is a chance to be attacked by God of War Followers upon reaching a new level during Trial: God of War",
-  "Cruel - War":
-    "There is a chance to be attacked by God of War Followers upon reaching a new level during Trial: God of War. God of War Followers have a chance to drop additional Deep Space Beacons",
-  "Irritable - Might":
-    "Embers dropped during Trial: God of Might have a chance to be replicated once",
-  "Willful - Might":
-    "Additionally increases Drop Quantity during Trial: God of Might",
-  "Indignant - Might":
-    "Increases the Drop Rarity of Dwarven Automatons during Trial: God of Might",
-  "Enraged - Might":
-    "Dwarven Automatons have a chance to drop additional Legendary gear during Trial: God of Might",
-  "Mania - Might":
-    "Additionally increases Drop Quantity during Trial: God of Might. Additionally increases Drop Quantity for Dwarven Automatons during Trial: God of Might",
-  "Insidious - Hunting":
-    "There is a chance for all boss buff options to take effect during Trial: Goddess of Hunting",
-  "Mistrustful - Hunting":
-    "There is a chance for all boss buff options to take effect during Trial: Goddess of Hunting. There is a chance for the boss affected by Trial: Goddess of Hunting to be replicated",
-  "Cunning - Hunting":
-    "There is a chance for additional Compasses to drop during Trial: Goddess of Hunting",
-  "Crafty - Hunting":
-    "When a boss affected by Trial: Goddess of Hunting is defeated, there is a chance to spawn Plane Watcher Chests",
-  "Deceitful - Hunting":
-    "There is a chance that a boss affected by Trial: Goddess of Hunting will receive the Traveler's assistance, and Traveler Chests will spawn when they are defeated",
-  "Obstinate - Machine":
-    "Increases the chance for non-Legendary gear dropped during Trial: God of Machines to have Base affixes",
-  "Paranoid - Machine":
-    "In Netherrealm stages, there is a chance that there are additional attack rounds during Trial: God of Machines",
-  "Conservative - Machine":
-    "Additionally increases Drop Quantity during Trial: God of Machines",
-  "Rigid - Machine":
-    "Encounter 1 wealthy Mechanical Boxer every round in Trial: God of Machines",
-  "Obtuse - Machine":
-    "Additionally increases Drop Quantity for Drones during Trial: God of Machines",
-  "Dull - Machine":
-    "Attacking monsters have a chance to drop additional plane-exclusive Fluorescent Memories during Trial: God of Machines. Additionally increases attack rounds during Trial: God of Machines.",
-  "Slanderous - Dark Surge":
-    "Increases Corrosion Energy granted by monsters Corroded by Dark Surge",
-  "Disgraceful - Dark Surge":
-    "The chance of getting Legendary gear rewards from Dark Surge Eruption is increased",
-  "Humiliated - Dark Surge":
-    "There is an extremely high chance of getting Legendary gear from Dark Surge Eruption rewards",
-  "Resentful - Dark Surge":
-    "There is a chance to drop additional Aemberon Cores from each Dark Surge Eruption",
-  "Remorseful - Dark Surge":
-    "The chance of getting boss rewards from Dark Surge Eruption is increased",
-  "Heretical - Dark Surge":
-    "There is an extremely high chance of getting boss rewards from Dark Surge Eruption rewards",
-  "Desire Incarnation - Cube":
-    "Malice Incarnations have a chance to drop additional Desire Crystals",
-  "Spiteful - Cube":
-    'When Malice is accumulating in a stage, there is a chance for additional Malice JudgeThe Malice Judge is a special Elite in the Cube Season. Defeat the Malice Judge to obtain precious rewards.">Malice Judges to appear',
-  "Foolish - Cube":
-    "There is a chance that A Corner of Divinity will drop with Desire Crystals",
-  "Fallacious - Cube":
-    "Desire Crystals dropped by Malice Incarnations have a chance to be replicated once",
-  "Covetous - Cube":
-    "When Malice is accumulating in a stage, there is a chance for all monsters to be replaced with Malice Incarnations",
-  "Weary - Aeterna":
-    "Pages of Aeterna dropped by Kin of Aeterna have a chance to become Aeterna Reverberations",
-  "Lazy - Aeterna": "Gear drops have a chance to become Aeterna Reverberations",
-  "Negligent - Aeterna":
-    "In stages, there is a chance for an additional Blade of Aeternal's Obsession to appear",
-  "Indolent - Aeterna": "Bosses have a chance to drop additional Queen's Wicks",
-  "Regretful - Nightmare":
-    "Sleepwalkers have a chance to drop additional Shallow Dream Talking",
-  "Repentant - Nightmare":
-    "Sleepwalkers have a chance to drop additional Shallow Dream Talking. Netherrealm monsters have a chance to drop additional Shallow Dream Talking",
-  "Disappointed - Nightmare":
-    "In stages, increases the chance for additional Sweet Dream Mist to appear in a Sweet Dream",
-  "Hopeless - Nightmare":
-    "Reduces the chance to enter a Nightmare when you are not at the max Dream level",
-  "Disillusioned - Nightmare":
-    "When selecting a Dream Omen, there is a chance that all Nightmare Omens will become: Additionally increases Drop Quantity",
-  "Sorrowful - Whispering Mist":
-    'Resident\'s Eyes dropped by Mistville "Residents" have a chance to be replicated once',
-  "Shivering - Whispering Mist":
-    "Bosses have a chance to drop additional Mist Essence",
-  "Terrified - Whispering Mist":
-    'Mistville "Residents" have a chance to drop additional Resident\'s Eyes',
-  "Indulgent - Doll":
-    "In Clockwork Ballet Games, when a Booster Drink is triggered, there is a chance to drop additional Compasses",
-  "Vain - Doll":
-    "In Clockwork Ballet Games, when a Time Extender is triggered, there is a chance to drop additional Compasses",
-  "Ostentatious - Doll":
-    "When putting Cogwheel Vouchers into the Clockwork Ballet Podium, if the remaining time is greater than the specified time, there is a chance to get additional Rainbow or better Cogwheel Vouchers",
-  "Wasteful - Doll":
-    "When putting Cogwheel Vouchers into the Clockwork Ballet Podium, if the remaining time is less than the specified time, there is a chance to get additional Rainbow or better Cogwheel Vouchers",
-  "Extravagant - Doll":
-    "You gain a buff that increases Drop Quantity when starting Clockwork Ballet Games",
-  "Cold - The Frozen Canvas":
-    "Additional Snowpaper Fragments will drop when completing Netherrealm stages",
-  "Severe - The Frozen Canvas":
-    "Additional Dyed Snow Monsters appear in the stage",
-  "Harsh - The Frozen Canvas":
-    "Additional Rare monsters appear in stages. Rare monsters have a chance to be replaced with Dyed Snow Monsters",
-  "Brazen - Blacksail":
-    "The stage's Plane Anchor has a chance to drop additional Memory Scraps",
-  "Domineering - Blacksail":
-    "The stage's Plane Anchor has a chance to drop an additional Void Sea Invitation. The stage's Plane Anchor has a chance to be activated 1 additional time",
-  "Bizarre - Arcana":
-    "When completing a Tarot Trial, there is a higher chance for a Secret Path to appear in the Tarot Path",
-  "Secretive - Arcana":
-    "When completing a Tarot Trial, a Secret Path is guaranteed to appear in the Tarot Path",
-  "Persuasive - Arcana":
-    "When completing a Tarot Trial, there is a chance for the quality of dropped Notes of Arcana to increase",
-  "Bewitching - Arcana":
-    "When completing a Tarot Trial, there is a chance to drop additional Auspicious Notes: Increase",
-  "Abashed - Sandlord":
-    "Sand Pirates have a chance to drop additional Oasis Coins",
-  "Uptight - Sandlord":
-    "When Sand Pirates appear in a stage, there is a chance for additional Empowered Sand Pirates to appear",
-  "Oppressive - Outlaw":
-    "Additionally increases Drop Quantity for all Security personnel",
-  "Imperious - Outlaw":
-    "Rare monsters are guaranteed to appear in reinforcements",
-  "Dogmatic - Outlaw":
-    "Increases the chance for Bounty Orders to appear. There is a chance for an additional Bounty Chest to appear after Bounty Orders end",
-  "Conceited - Outlaw":
-    "Increases the chance for Bounty Orders to appear. Bounty Orders are guaranteed to be Astronomical",
-  "Punitive - Cage":
-    "Additionally increases Drop Quantity for all Original Sin monsters",
-  "Guilty - Cage":
-    "When Cages of Original Sin release sealed Original Sin monsters, they release an additional one",
-  "Restrained - Overrealm":
-    "Within the Overrealm, additionally increases Gear Drop Quantity",
-  "Assertive - Overrealm (Orange)":
-    "Within the Overrealm, the quality of the first Bottled Shadow obtained is guaranteed to be Red or better",
-  "Assertive - Overrealm (Rainbow)":
-    "Within the Overrealm, the quality of the first Bottled Shadow obtained is guaranteed to be Rainbow",
-  "Unhinged - Overrealm":
-    "Within the Overrealm, the chance for Floating Skull, Antimemetic Cage, and Doorhunter to appear increases",
-  "Mad - Might":
-    "Embers dropped during Trial: God of Might have a chance to become Ultimate Embers",
-  "Appalling - Vorax":
-    "Clearing Vorax monsters in Netherrealm stages additionally increases the Drop Quantity of Antidote Vials in Shelley's Operating Theater",
-  "Insane - Vorax":
-    "Additional Scavengers appear in Netherrealm stages. Clearing Scavengers in Netherrealm stages additionally increases the Drop Quantity of Antidote Vials in Shelley's Operating Theater",
-  "Simple - Creation":
-    "Additionally increases the Drop Quantity of Creation Engines",
-  "Ignorant - Creation":
-    "Each time a Creation Engine activates a Creation Crystal, there is a chance to activate additional Creation Crystals",
-  "Exclusive Fluorescent Memory":
-    "Includes Plane exclusive Fluorescent Memories and gameplay exclusive Fluorescent Memories",
-  "Gold Fluorescent Creation Crystal":
-    "特殊的造物晶体，掉落数量大幅提升，激活后立刻激活该造物机中所有的造物晶体",
-  "Catalyst Creation Engine":
-    "A special Creation Engine that grants a Drop Quantity Bonus corresponding to the type of the activated Creation Crystal",
-  "Prosperity Creation Engine":
-    "A special Creation Engine that has a higher Drop Quantity",
-  "Record Creation Engine":
-    "A special Creation Engine that records all settled Creation Crystals in this stage. When it settles, it additionally settles all recorded rewards. The more Crystals recorded, the stronger the guardians become.\nWhen a Record Creation Engine is present, the Drop Quantity of all Creation Engines are reduced.",
-  "Creation Incarnation":
-    "Activates 1 Creation Crystal(s) immediately when defeated",
-  "Whim Creation Crystal":
-    "A special Creation Crystal that cannot be activated through conventional methods. Whim Creation Crystals are automatically activated when 2 Creation Crystals of the same type are activated from the same Creation Engine\nHas a chance to drop Creation-exclusive Legendary gear",
-  "Additionally Added":
-    "Additionally added Surgical Protocols do not provide any Drop Quantity or Ultimate Activity bonuses",
-  "Light Vorax":
-    "Increases Attack, Cast, and Movement Speed and Skill Area. You will only be infected for a short time, while monsters will be infected permanently.",
-  "Whisper of Wealth":
-    "Whisper of Wealth typically increases the drop quantity of Hero Memory enhancement materials in Void Sea Treasures",
-  "Whisper of Armament":
-    "Whisper of Armament typically increases the drop quantity of Hero Memories in Void Sea Treasures",
-  "Whisper of Wonder":
-    "Whisper of Wonder typically increases the quantity and rarity of Void Sea Treasure drops",
-  Pirate:
-    "A specific type of monster that players will encounter when playing the exclusive content of the Blacksail Season",
-  "Seal Whisper":
-    "Complete the exclusive gameplay of the Blacksail Season to get Seal Whispers. Collect a certain amount of Seal Whispers to unseal the Void Sea Terminal and challenge the season boss. Different combinations of Seal Whispers grant different bonuses that affect the rewards from the season boss",
-  "Boss Whisper":
-    "Boss Whisper typically causes additional Void Sea Invitations to drop from Void Sea Treasures",
-  "Cold Blessing":
-    "+300% additional Life, +80% additional damage. +50% Cold Resistance, gains an Energy Shield of 75% Max Life, and +90% Movement, Attack, Cast, and Cooldown Recovery Speed. Upon receiving damage, there is a 60% chance to cast Ring Ice Spikes once. (Cooldown: 1s). Upon receiving lethal damage, get Frozen for 5s. (Cooldown: 10s.) When Frozen, additionally -80% damage taken and restores 10% Max Life and Energy Shield every second.",
-  "Fire Blessing":
-    "+600% additional Life, +80% additional damage, +50% Fire Resistance, and +90% Movement, Attack, Cast, and Cooldown Recovery Speed. Throws 6 Lava Balls (dealing Fire Damage Over Time on hit) at the target every 6s. Restores 15% Max Life on hit. Upon hitting a target suffering from Damage Over Time, restores 30% Max Life in 3s.",
-  "Lightning Blessing":
-    "+400% additional Life, +80% additional damage, +50% Lightning Resistance, gains 50% Damage Avoidance Chance, and +120% Movement, Attack, Cast, and Cooldown Recovery Speed. There is a 35% chance to additionally -75% Hit Damage taken within 10s and triggers a Hexa Lightning Strike against the target on hit. (Cooldown: 4s.)",
-  "Erosion Blessing":
-    "+650% additional Life, +60% Erosion Resistance, converts 75% damage taken into Erosion Damage, +120% Movement, Attack, Cast, and Cooldown Recovery Speed. Adds 80% Elemental Damage as Erosion Damage on hit. Triggers Erosion Terra at the target spot upon dealing damage. (Cooldown: 6s. Deals Damage Over Time. Expands gradually within 5s.)",
-  "Physical Blessing":
-    "+500% additional Life, +60% additional damage, +70% additional Armor, and +90% Movement, Attack, Cast, and Cooldown Recovery Speed. Fires 1 additional projectiles on hit. (Cooldown: 0.2s. Deals Physical Damage.) Upon receiving damage, +30% Armor and Elemental and Erosion Resistance for 10s. Stacks up to 5 times.",
-  "Queen's Disciple":
-    "-70% additional damage taken, +30% additional damage dealt, and +300% additional Life. Inflicts an Aura on monsters within 13m nearby: the monsters affected by the Aura have -50% additional damage taken, restore 10% Max Life on hit. (Cooldown: 0.5s), and deal Physical Damage once 3s after being defeated.",
-  "Disciple of Order":
-    "-35% additional damage taken, adds 20% of all damage as Erosion Damage, +600% additional Life. Inflicts an Aura on monsters within 13m nearby: the monsters affected by the Aura restore 50% Max Life every second and explode 2s after being defeated, dealing Erosion Damage.",
-  "Dark Surge Disciple":
-    "Gains 80% Injury Buffer. Captures 10% Elemental Resistance from the player on each hit. (Lasts 5s.) +300% additional Life. Inflicts an Aura on monsters within 13m nearby: the monsters affected by the Aura deal +80% additional damage and generate an Erosion Terra upon being defeated. Lasts 3s.",
-  "Void Sea Disciple":
-    "-50% additional Damage Over Time taken, adds 10s Acid Mist Corrosion on hit (Erosion Damage Over Time), and +300% additional Life. Inflicts an Aura on monsters within 13m nearby: the monsters affected by the Aura gain +90% additional Movement, Attack, and Cast Speed and explode 2s after being defeated, dealing random Fire/Lightning/Cold/Erosion Damage.",
-  Frosted:
-    "A special Frostbite status. Additionally reduces Movement Speed, Attack Speed, and Cast Speed. Frostbite Rating stops increasing automatically. Freezes the target at 5 stacks",
-  Maim: "A special Trauma status. Deals Physical Damage Over Time. Increases Maim Damage taken when moving",
-  Rot: "A special Wilt status. Deals Erosion Damage Over Time. Rot Damage bypass Energy Shield",
-  "Vengeful Spirit": "+5% additional damage taken",
-  "Vacuum Zone":
-    "Suffocates players caught inside. You will be instantly defeated upon reaching 100 stacks of Suffocation",
-  "Meteor Shower":
-    "Meteors keep falling around you. Cooldown of each wave of meteors: 20s (each wave is calculated independently). Up to 20 wave(s) of meteors may be present at the same time",
-  "Scorch (Female Knight 2)":
-    "A special Ignite status. Deals 10 Fire Damage Over Time. Reduces all Resistances by 25%. Fixed Duration: 4s",
-  "Hardened Tenacity": "-65% additional damage taken",
-  Legacy: "-12% additional damage taken",
-  Burden: "-6% additional damage dealt",
-  "Shadows Palace":
-    "The final stage of the main story. Complete it to unlock the Netherrealm",
-  Bard: "In the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead",
-  "Loud Song":
-    "In the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect",
-  "Bard Song":
-    "Base channeling Interval: 0.8s.\nWhen the corresponding skill is a Spell Skill, it is affected by Cast Speed bonuses and additional bonuses.\nWhen the corresponding skill is an Attack Skill, it is affected by Weapon Attack Speed, Attack Speed bonuses, and additional bonuses.\nMax channeled stacks: 4. Loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy, using the corresponding skill once at the location",
-  Tide: "While on the Tide, ignore physical collisions with enemies and +15% additional damage\nUp to 3 Tide(s) can be placed at the same time\n50% of the increase/decrease on Skill Area is also applied to Tide Area\n100% of the Skill Effect Duration bonus is also applied to the Tide Duration bonus",
-  "Instant Skill": "Skills that don't have an attacking or casting action",
-  Vigilant:
-    "Allows you to control Spirit Magi and attack enemies with Spirit Magus Skills.\nYou take all damage from enemies in place of the Spirit Magi under your control.\nAll skills except for the second skill are switched with Spirit Magus Skills, and the Ultimate of Merged Spirit Magi is unlocked.\nOnly skills that don't have an attacking or casting action can be installed as the second skill.\nWhen controlling a Spirit Magus, Iris' Movement Speed is applied instead.",
-  Breeze: "+16% additional damage dealt by Merged Spirit Magi",
-  "Merges with Spirit Magi":
-    "When casting the Trait Skill, selects Spirit Magi according to the Skill Slot order.\nWhen casting a Spirit Magus Skill in the Active Skill Slot, selects Spirit Magi corresponding to the skill.\nAmong Spirit Magi summoned by the same skill, prioritizes selecting the Spirit Magus with the highest Life that is not Reconjuring.\nCooldown: 3s",
-  Desecration:
-    "+15% additional Erosion Damage taken (multiplies) for each stack of Desecration. Initial max stacks: 3. Lasts for 5s. Can only affect 1 target",
-  "Sacrificial Pawn":
-    "-10% additional damage dealt and +10% additional Erosion Damage taken. This is considered a Crowd Control Effect",
-  "Mountain of Sins": "Reduces Erosion Resistance by 20%",
-  "Mystic Mercury":
-    "Attempts to consume 10% of Unsealed Max Mana when using a non-Channeled Attack Skill. If the Mana is consumed successfully, grants 10 Mercury Pts. When there is insufficient Mana, consumes 1% of Unsealed Max Mana and grants 5 Mercury. This effect does not apply to Burst.",
-  "Realm of Mercury":
-    "For every 10% Unsealed Max Mana you have, +2% additional Attack Speed and +2% additional Elemental Damage\nRestores 15% of Unsealed Max Mana when using a non-Channeled Attack Skill. This effect does not apply to Burst.",
-  "Mercury Baptism":
-    "Deals True Damage based on the damage recorded by Realm of Mercury to all enemies within it once and clears the record",
-  "Whimsy Explosion":
-    "Fires a projectile that creates an energy explosion on hit, consuming 100 Whimsy Essence while restoring 25 Ingenuity Essence",
-  "Whimsy Signal": "+20% additional Spell Damage taken for 5s",
-  "Ingenuity Overload":
-    "Triggers your Main Skill once immediately (this skill must be able to activate Spell Burst). +200% additional Max Spell Burst for the skill this time and immediately charges it to the max. Consumes 100 Ingenuity Essence",
-  "Contingency Inspiration Machine":
-    "Your Main Skill is automatically cast, and the Base Cast Frequency is equal to 100% of Cast Speed. Unable to move for 5s",
-  Whimsy: "+5% additional Spell Damage (multiplies) for 10s",
-  Vendetta:
-    "Teleports to a random enemy within 9m, then triggers the Main Skill 1 time and +30% additional attack damage for the triggered skill. Cooldown: 3s",
-  Incisive:
-    "Within 5m, damage dealt increases the closer you are to the enemy, up to +20% additional Attack Damage at 2m\nLasts for 3s",
-  "Endless Vendetta":
-    "Repeatedly casts Vendetta, targeting a random enemy within a 15m radius each time. Starts with -30% additional Attack Speed, +5% additional Attack Speed per repeat cast. Repeat limit: 30 time(s). Cooldown: 10s",
-  "Condensed Frost":
-    "+0.35% additional Cold Damage taken for each point of Frostbite Rating exceeding 120, up to +28%\n-10% additional Attack and Cast Speed to enemies (not affected by Condensed Frost)",
-  Momentum:
-    "+30% additional Attack Damage for the next Main Skill every 0.5s. Refreshes this interval on defeat.",
-  Tenacity:
-    "+100% chance to gain 1 stack(s) of Tenacity Blessing on hit\n+1 to Max Tenacity Blessing Stacks",
-  "Great Strength":
-    "-10% Attack Speed\n+30% additional Attack Damage\n+30% additional Ailment Damage dealt by attacks",
-  Fueling: "Damage ignores enemy Fire Resistance",
-  "Blazing Fire":
-    "+20% additional Fire Damage Over Time\nInflicts 10 Affliction when dealing Fire Damage. Cooldown: 0.1s",
-  Judgment:
-    "+100% chance for attacks to inflict Paralysis on hit\n+20% additional Critical Strike Damage against Paralyzed enemies",
-  Resolve: "+4% additional Armor for every 1 stack(s) of Tenacity Blessing",
-  "Joined Force":
-    "Off-Hand Weapons do not participate in attacks while Dual Wielding\nAdds 60% of the damage of the Off-Hand Weapon to the Main-Hand Weapon instead",
-  "Well Matched":
-    'Deals up to +25% additional attack damage to enemies in ProximityWithin 4m">proximity, and this effect reduces as the distance from the enemy grows\n-15% additional damage taken from enemies in ProximityWithin 4m">proximity, and this effect reduces as the distance from the enemy grows',
-  "Ember Armor": "+25% Armor Effective Rate for Non-Physical Damage",
-  Formless: "Warcry is cast immediately\n+25% additional Melee Damage",
-  Sweep:
-    "+20% additional Attack Damage when holding a Two-Handed Weapon\n+20% Attack Skill Area when holding a Two-Handed Weapon",
-  Arcane: "Converts 100% Mana Cost to Life Cost\n+20% additional Max Life",
-  Sacrifice:
-    "Changes the base effect of Tenacity Blessing to: +8% additional damage",
-  "No Loose Ends":
-    "+40% additional Attack Damage at Low Life\nYour Max Energy Shield is fixed at 0",
-  "Life Path":
-    "Life Regain doubles\nLife Regain is only effective when Life is lower than 50%",
-  "Survival Will":
-    "+30% additional Attack Damage when not at Low Life\nRestores 40% Max Life when at Low Life. Interval: 10s",
-  Wildfire:
-    "+100% additional Fire Damage against Low Life enemies\nMinions deal +100% additional Fire Damage against Low Life enemies",
-  Burnout:
-    "+15% additional Fire Damage\n+10% additional Fire Damage when taking damage. Lasts for 8s",
-  Rock: "+3% Fire Penetration for every 1 stack(s) of Tenacity Blessing",
-  "True Flame":
-    "When an enemy is Ignited, 60% of the additional bonus to Damage Over Time taken from Affliction is also applied to your Fire Hit Damage",
-  "Focused Strike":
-    "Area Skills deal up to 32% additional damage to enemies at the center\nMinions' Area Skills deal up to 32% additional damage to enemies at the center",
-  Starfire: "+1 Ignite Limit\n+30% Ignite Duration",
-  Perception:
-    "+100% chance to gain 1 stack(s) of Agility Blessing on hit\n+1 to Max Agility Blessing Stacks",
-  Flicker:
-    "+50% additional Cooldown Recovery Speed for Mobility Skills\n+25% additional Attack and Cast Speed for Mobility Skills",
-  Rushed: "+30% additional damage if you have recently moved more than 5m",
-  Impermanence: "-32% additional min damage\n+32% additional max damage",
-  "Flash of Brilliance":
-    "Spell Damage will not further reduce Evasion by default\n+20% additional Evasion",
-  Gale: "60% of the Projectile Speed bonus is also applied to the additional bonus for Projectile Damage",
-  "Mind Flow":
-    "+5% additional damage every 0.3s, stacking up to 8 times and resetting after you take a hit",
-  Euphoria: "+4% additional Evasion for every 1 stack(s) of Agility Blessing",
-  "Three Birds with One Stone":
-    "+2 to Projectile Quantity\n+2 to Parabolic Projectile Split Quantity\n+10% additional Projectile Damage",
-  "Master Escapist":
-    "+1 to Max Deflection Stacks\nGains 1 stack(s) of Deflection when evading",
-  "Close Range Fire":
-    "Projectiles deal up to +35% additional damage to enemies in proximity, and this damage reduces with the distance traveled by the Projectiles",
-  Conductive:
-    "Changes the base effect of Numbed to: +11% additional Lightning Damage taken",
-  Static:
-    "+10% additional damage every 0.5s while standing still, up to +40% additional damage\nRemoves the effect when no longer standing still",
-  Transition:
-    "When casting a skill, 50% chance to +16% additional damage for that cast\nWhen casting a skill, 25% chance to +32% additional damage for that cast\nWhen casting a skill, 10% chance to +80% additional damage for that cast",
-  "Queer Angle": "You and Minions deal Lucky Damage against Numbed enemies",
-  "Quick Advancement":
-    "Multistrikes deal 55% increasing damage\nMinions' Multistrikes deal 55% increasing damage",
-  "Waiting Attack":
-    "Consumes all Agility Blessing every 2s. For each 1 stack(s) consumed, +5% additional damage for the next 2s",
-  Cultivation:
-    "+6% Cast Speed for each skill recently used, stacking up to 10 time(s)",
-  Stability:
-    "Restores 5% of Life when Regaining Life\nRestores 5% of Energy Shield while Regaining Energy Shield",
-  Calm: "-30% additional damage taken at Low Life and Low Energy Shield\n+25% additional damage taken at Full Life",
-  Acquaintance:
-    "+30% chance to trigger the Main Spell Skill 1 additional time when using it",
-  Rebirth:
-    "Converts 50% of Life Regain and Energy Shield Regain to Restoration Over Time\nAdditionally -50% Regain Interval",
-  "Poisoned Relief":
-    "+25% Injury Buffer\n-15% additional damage taken at Low Life",
-  Beacon: "+2 Max Spell Burst",
-  Chilly:
-    "+100% chance to gain 1 stack(s) of Focus Blessing on hit\n+1 to Max Focus Blessing Stacks",
-  Winter:
-    "For every 2 Frostbite Rating an enemy has, deals +1% additional damage to the enemy",
-  Insight: "+30% additional Spell Damage\n+25% additional Skill Cost",
-  "Burning Touch": "+20% additional Cold and Fire Damage",
-  Bunch:
-    "Max Focus Blessing Stacks +1\n+3% additional Spell Damage for every 1 stack(s) of Focus Blessing",
-  "Inner Side": "Doubled Energy Shield regain",
-  Shell: "+30% additional Max Energy Shield\nYour Max Life is set to 100",
-  "Play Safe":
-    "100% of Cast Speed bonuses and additional bonuses also apply to the Spell Burst Charge Speed\n-50% additional damage for skills that are not cast by Spell Burst",
-  "Barrier of Radiance":
-    "Energy Shield Charge started recently cannot be interrupted by damage\n+50% Energy Shield Charge Speed",
-  "Mind Blade":
-    "+30% additional Spell Damage when not wielding a Wand or Tin Staff",
-  Frostbitten:
-    "+20% additional damage against Frozen enemies\nInflicts Frostbite and 100 Frostbite Rating when dealing Cold Damage to an enemy for the first time",
-  Mana: "20% of damage is taken from Mana instead of Life\n+12% additional Max Mana",
-  "Full Load":
-    "+40% additional damage for the next skill when Mana reaches the max",
-  "Extreme Coldness":
-    "Frostbite and Frostbite Rating will continue to be inflicted on Frozen enemies\nAfter Freeze ends, Frostbite and all Frostbite Rating will no longer be removed. +20% of the retained Frostbite Rating\n-25% additional Freeze Duration",
-  "Frozen Lotus":
-    "+25% additional Cold Damage\nWhen Mana is lower than 15%, -100% additional Skill Cost",
-  "Mind Focus":
-    "Changes the base effect of Focus Blessing to: Adds Cold Damage equal to 0.8% of Max Mana to Attacks and Spells",
-  Adaptation:
-    "Converts 25% of Physical Damage taken to random Elemental Damage\n+4% Max Elemental Resistance",
-  Translucent:
-    "+20% additional Lightning Damage if you have dealt Fire Damage recently\n+20% additional Cold Damage if you have dealt Lightning Damage recently\n+20% additional Fire Damage if you have dealt Cold Damage recently",
-  "Quick Ritual":
-    "+1 to Min Channeled Stacks\n+20% additional Channeled Skill Damage",
-  "Peculiar Vibe":
-    "+50% chance to inflict Elemental Ailment\n+25% additional damage dealt to enemies under Elemental Ailment",
-  Penetrating:
-    "Elemental Skill Ignores Armor\n+30% additional Physical Damage taken",
-  Cohesion:
-    "+50% additional Critical Strike Rating for the next Main Skill used every 1s",
-  Brutality:
-    "+25% additional Physical Damage.\n-1% additional Elemental Damage for every 5 level(s).",
-  Determined: "Upon taking fatal damage, you have a 50% chance to keep 1 Life",
-  "Automatic Upgrade":
-    "+20% chance to gain Hardened when you use a Melee Skill\n+25% additional Melee Damage when Hardened",
-  "Instant Smash": "+80% additional Trauma Damage dealt by Critical Strikes",
-  "Endless Fervor": "Have Fervor\n+12% Fervor Effect",
-  Blunt: "+24% additional Physical Damage\nEnemies +20% Injury Buffer",
-  Continuum:
-    "+350 Spell Critical Strike Rating for 4s on attack Critical Strike",
-  Ambition:
-    "Gains 10 Fervor Rating when hitting an Elite\nGains Fervor when there are enemies nearby.",
-  "Open Wounds":
-    "+50% Trauma Duration when inflicting Trauma on Traumatized enemies.\n+125% Critical Strike Damage against Traumatized enemies.\n+125% Minions' Critical Strike Damage against Traumatized enemies",
-  "Hair-trigger":
-    "For every 7 Fervor Rating, when a skill is triggered, +2% additional damage for the skill",
-  Versatile:
-    "+9% additional Spell Damage for every Attack Skill cast recently, stacking up to 3 time(s)\n+25% additional Attack Damage If you have hit a target with a Spell recently",
-  Sprinkle:
-    "Melee skills have a 30% chance to grant +30% Skill Area\n+18% additional Melee Damage",
-  Defensiveness: "+25% Block Ratio\nBlocks 100 additional damage",
-  Centralize:
-    "Gains additional 25% of current Fervor Rating on hit. Cooldown: 0.3s.\nConsumes half of the current Fervor Rating when hit. -0.8% additional damage for every 1 Fervor Rating consumed.",
-  Tradeoff:
-    "+25% Attack Speed when Dexterity is no less than Strength\n+25% Attack Damage when Strength is no less than Dexterity",
-  "Full Defense":
-    "+25% additional Defense gained from Shield\n-1% additional Damage Over Time taken for every 1% Block Ratio",
-  "Falling Leaves":
-    "-20% additional Weapon Damage.\n+40% additional Attack Damage.",
-  Fluke:
-    "Critical Strikes have the Lucky effect while having at least 50 Fervor Rating",
-  Gravity: "+20% additional Melee Damage\nMelee Skills can Knockback reversely",
-  "Shooting Arrows":
-    "+20% additional Projectile Damage\n+50% Knockback distance",
-  "Keep It Up":
-    "When triggering a Critical Strike, gains the following buff for the next 4s: +8% additional damage and -25% Critical Strike Rating on Critical Strike. Interval: 0.5s",
-  Impending:
-    "Every 0.25s, enemies within 10m of you take +6% additional damage from you. This effect stacks up to 5 time(s)",
-  "Rapid Shots":
-    "Projectile Damage increases with the distance traveled, dealing up to +35% additional damage to distant enemies",
-  Plague:
-    "Damage Over Time has a 50% chance to spread to targets nearby\n+10% Damage Over Time Duration",
-  Mixture: "+50% Deterioration Chance",
-  Windwalk:
-    "+25% additional Damage Over Time within 2 s after you inflict Damage Over Time. This effect cannot stack",
-  "Subtle Impact":
-    "Blur gains an additional effect: +25% additional Damage Over Time",
-  "Forbidden Power":
-    "+35% additional Erosion Damage\n-10% Elemental Resistance",
-  "Deceiver's Might":
-    "+1 to Max Tenacity Blessing Stacks if you have taken damage in the last 8s\n+1 to Max Agility Blessing Stacks if you have used a Mobility Skill in the last 8s\n+1 to Max Focus Blessing Stacks if you have landed a Critical Strike or Reaped in the last 8s",
-  Dirt: "+15% additional Erosion Damage\n10% additional damage to Life",
-  Ward: "Adds 13% of Sealed Mana as Energy Shield",
-  "Stealth Stab":
-    "-15% additional damage taken while Blur is active\n+25% additional damage for 3s after Blur ends",
-  "Beyond Cure":
-    "Upon inflicting damage, +6% additional Erosion Damage for every stack of Wilt or Deterioration the enemy has, up to +30%",
-  "Twisted Belief": "+3 Erosion Skill Level\n-15% Max Erosion Resistance",
-  "Life Conversion": "100% of the Max Life bonus is also applied to Max Mana",
-  Holiness:
-    "-95% Curse Effect against you\nAdditionally -15% damage taken from Cursed enemies",
-  Daze: "Blur gains an additional effect: +40% control effects and +20% additional Ailment Damage",
-  "More With Less":
-    "+30% additional Damage Over Time\n-10% additional Damage Over Time Duration",
-  "Verbal Abuse": "You can cast 1 additional Curses\n+10% Curse effect",
-  "Reap Purification":
-    "Additionally settles 25% of the remaining total damage when Reaping, then removes all Damage Over Time acting on the target",
-  Prelude:
-    "Using a Non-Main Skill will make the next Main Skill deal +25% additional damage. The effect can not stack",
-  Vile: "Duration of Ailments caused by Critical Strike is doubled.\n+1% additional Ailment Damage per +3% Critical Strike Damage",
-  Indifference: "+1 to All Skills' Levels\n+10% Sealed Mana Compensation",
-  "Off The Beaten Track":
-    "+4 Support Skill Level.\nSupport Skill's Mana Multiplier is set to 95%.",
-  "Dirty Tricks":
-    "Guaranteed to inflict all types of Ailments on hit.\nUpon inflicting damage, +6% additional damage for every type of Ailment the enemy has (multiplies)",
-  "Stab In The Back":
-    "While Blur is active, loses Blur after casting a Main Skill, and +40% additional damage for that cast",
-  Orders:
-    "+20% additional Minion Damage\n+50% additional Summon Skill Cast Speed",
-  Sentry:
-    "Max Sentry Quantity +1\n+100% additional Cast Speed for Sentry Skills",
-  "Shrink Back": "Gains Barrier every 1s\n+50% Barrier Shield",
-  "Mighty Guard":
-    "+2 level(s) for skills that summons Minions.\nGains 4 Command per second.\nSpirit Magi +40 initial Growth",
-  "Overly Modified":
-    "+30% additional Sentry Damage, -50% non-Sentry Active Skill damage",
-  "Isomorphic Arms":
-    "Minions gain the Main-Hand Weapon's bonuses (the Attack Speed and Base Critical Strike Rating of the weapon will not be applied)\nWhen wielding a Wand or Tin Staff, +30% additional Spell Damage for Minions",
-  Boss: "+1 to Max Summonable Synthetic Troops\n+10% additional Minion Damage",
-  Rally:
-    "+1 Synthetic Troop Minions summoned at a time\n+20% additional Minion Damage",
-  "Burning Aggression":
-    "Gains 30 Command every 2s when there is an Elite within 10m",
-  "Co-resonance":
-    "+25% additional Sentry Damage\n100% of the bonus and additional bonus to Attack Speed is also applied to Attack Sentries' Cast Frequency\n100% of the bonus and additional bonus to Cast Speed is also applied to Spell Sentries' Cast Frequency",
-  "United Stand":
-    '-5% additional damage taken for every nearby Synthetic Troop Minion within 10m\n-10% Minion AggressivenessMinions become more aggressive and will target enemies within a greater area">Aggressiveness',
-  Reflection:
-    "+5% additional damage for each type of Aura you are affected by\n+5% additional damage for each type of Aura Minions are affected by",
-  Resistance:
-    "+15% Elemental Resistance\n+20% chance to avoid Elemental Ailment",
-  Curtain: "+40% additional Barrier Shield",
-  Knowledgeable: "+10 Empower Skill Level\n+10 Defensive Skill Level",
-  "Poison Immunity":
-    "+5% Max Erosion Resistance\nConverts 25% of Physical Damage and Elemental Damage taken to Erosion Damage",
-  "Kinetic Conversion":
-    "+100% chance to gain a Barrier for every 5m of movement\nRefreshes Barrier when gaining it\n-40% additional Barrier Shield",
-  Source:
-    "+50% Sealed Mana Compensation for Spirit Magus Skills\n+30% additional Origin of Spirit Magus Effect\n+30% additional Empower Skill Effect for Spirit Magi",
-  Contingency:
-    "+1.5% Life Regeneration Speed for every 2% of Life lost\n+1.5% Mana Regeneration Speed for every 2% of Mana lost",
-  Empower:
-    "The number of Max Spirit Magi In Map is 1\n+85% additional Spirit Magus Damage",
-  "Battle Trumpet":
-    "-10% additional Minion Attack and Cast Speed\nSpirit Magi +50% chance to use an Enhanced Skill",
-  Panacea:
-    "+100% Restoration Effect for Restoration Skills\nRestoration Skills' Restoration Effects won't be removed",
-  "Talons of Abyss":
-    "For every 20 Growth a Spirit Magus has, it deals +1% additional damage\nFor every 40 Growth a Spirit Magus has, it +1% additional Ultimate Attack and Cast Speed",
-  "Peaceful Realm": "Gains 1 Order every 3s",
-  "Chaotic Realm":
-    "Loses 1 Order on defeat\nLoses half of the current Order upon encountering the first Boss",
-  "Silent Realm": "Has 50 fixed Order\n+25% Order effect\n+25% Chaos effect",
-  "Dying Dragon":
-    "+60% Skill Area and +30% additional damage for the next several Main Attack Skills after the Tenacity Blessing is devoured. +1 to the number of Main Attack Skill buffed for every 1 stack(s) of Tenacity Blessing devoured.\nThe new god is devouring Six Gods' blessings.",
-  "Falling Stars":
-    "After a stack of Agility Blessing is devoured, a certain instances of Hit Damage taken do not lose Deflection for the next 4s. +1 to the number of instances for every 1 stack(s) of Agility Blessing devoured. This effect has no effect on Channeled or Sentry skills\nThe new god is devouring Six Gods' blessings",
-  "Broken Dream":
-    "+100% chance to deal Double Damage for the next several Main Spell Skills after the Focus Blessing is devoured. +1 to the number of Main Spell Skills buffed for every 1 stack(s) of Focus Blessing devoured.\nThe new god is devouring Six Gods' blessings.",
-  "End of War":
-    "After Fervor is devoured, -25% additional Critical Strike Rating for the next 4s. +1% additional damage on Critical Strike for every 1 Fervor Rating devoured\nThe new god is devouring Six Gods' blessings",
-  "Revealed Truth":
-    "After Blur is devoured, cannot avoid damage for the next 4s. +1.5% chance to avoid Ailments, and +1.5% chance to avoid Crowd Control Effects for every 1 Blur Rating devoured\nThe new god is devouring Six Gods' blessings",
-  "Ruined City":
-    "After Barrier is devoured, Barrier Absorption Rate is fixed at 0 for the next 4s. Restores 1.5 Life and Energy Shield over the next 4s for every 1 Barrier Rating devoured, and the healing cannot exceed 400% of Max Life and Max Energy Shield\nThe new god is devouring Six Gods' blessings.",
-  "Dazzling Snowflake":
-    "During the Winter Festival, defeating monsters have a chance to drop this item. Collect a certain number of them to exchange them for great rewards in the Snow Gifts event",
-  "Commission Letter":
-    "During the event, defeating monsters have a chance to drop this item. Collect a certain number of them to exchange them for great rewards in the Mistville Detective Agency event.",
-  "Key Evidence":
-    "During the event, defeating monsters have a chance to drop this item. Collect a certain number of them to exchange them for great rewards in the Mistville Detective Agency event.",
-  "Hidden Mastery":
-    "Unable to evade\nGains Attack Aggression when casting an Attack Skill\n+15% Attack Speed, and +15% additional Attack Damage when having Attack Aggression",
-  "Third time's a charm":
-    'Has Hasten\nWhen having QuicknessAdditionally increases Attack Speed, Cast Speed, Movement Speed, and Mobility Skill Cooldown Recovery Time by 8%">Hasten, +7% Attack Speed and Cast Speed for every 3m moved recently. Stacks up to 3 time(s)',
-  "Steady Accumulation":
-    "+40% additional Hit Damage\n-30% additional Skill Effect Duration",
-  "Preemptive Strike":
-    "+1 to Initial Multistrike Count\n-20% Attack Speed during Multistrike",
-  Thunderclap:
-    "Consumes 1 stack(s) of Agility Blessing when casting a Main Skill. +35% additional Lightning Damage for that cast",
-  "Quick Wits":
-    "+25% additional Spell Damage when the Energy Shield is not low\n-20% additional damage taken when the Energy Shield is low",
-  "Inexorable Doom":
-    'Inflicts 1 additional stack(s) of Ill OmenInflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies">Ill Omen when inflicting Ill OmenInflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies">Ill Omen for the first time\nWhen triggering Ill OmenInflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies">Ill Omen, inflicts 3 stack(s) of Ill OmenInflicts enemies affected by Ominous Curse with 1 stack of Ill Omen whenever the damage they take from Damage Over Time or Reaping Damage reaches a certain percentage of their Max Life (7% for non-Elite enemies and 5% for Elite enemies)\nMaximum stacks of Ill Omen: 10\nUpon reaching max stacks, eliminates non-Elite enemies and deals True Damage equal to 20% of Max Life to Elite enemies">Ill Omen on 1 NearbyWithin 6m">Nearby non-EliteElite monsters include rare monsters and bosses">Elite enemy',
-  "Tailored Remedy":
-    "The Restoration Effect from Elixir Skills cannot be removed\nWhen equipped with no more than 1 Elixir Skill(s), -50% additional Elixir Skill Effect Duration\nWhen equipped with no more than 2 Elixir Skills, +50% additional Elixir Skill Effect",
-  "Shared Fate":
-    "Triggers the Sentry Main Skill when there are no Sentries within 10m. Interval: 1s\nDeployable Sentries Each Time is equal to the Max Sentry Quantity\n+25% additional Sentry Damage",
-  "Extreme Power":
-    "You can equip Shields when equipping Two-Handed Swords, Two-Handed Axes, or Two-Handed Hammers\n-20% additional damage\n-20% additional Minion Damage\n-20% additional Attack, Cast, and Movement Speed",
-  "One For All":
-    "Gains Cold and Lightning Resistance equal to 50% of Fire Resistance",
-  "Unwavering Fortress":
-    "Gains Defense equal to 2% of Armor and absorbs 100% of Non-True Damage taken every 10s. Defense is refreshed when gained again\nMax Life is fixed at 100\nYour Evasion and Max Energy Shield are fixed at 0",
-  "Unstoppable Force":
-    "When a Combo Finisher is in Multistrike, it is guaranteed to deal damage equal to the Max Multistrike Count",
-  "Hare's Agility":
-    "When exiting Stand Still, gains 1 stack of buff that lasts for 2s, up to 5 time(s)\n+14% additional damage dealt to enemies in proximity for each stack of this buff. +8% Attack Speed",
-  "Sweeping Fury":
-    "On hit, Main Ranged Horizontal Projectile Skills have a 100% chance to cast an additional Main Skill, whose projectiles fire in a ring and deal -60% additional damage. Interval: 0.03s. Does not affect Sentry Skills, Vertical Skills, and Channeled Skills.\nProjectile Quantity upper limit: 5\n+2 Horizontal Projectile Penetration(s)",
-  "Fortune's Flip":
-    "Lucky Damage\nLucky Critical Strike\nLucky Evading\nTriggering Non-Main Skills has a 100% chance to lose Lucky Damage, Lucky Critical Strike, and Lucky Evading for 4s",
-  "Keen Intellect":
-    "Gains different buffs based on the number of different Spell Skills equipped: For every Empower Skill equipped, +13% additional Spell Damage (multiplies)\nFor every Curse Skill equipped, +6% Elemental and Erosion Resistance Penetration and +6% Armor DMG Mitigation Penetration\nFor every Defensive Skill equipped, +13% additional Max Mana (multiplies)\nFor every Mobility Skill equipped, +13% additional Cast Speed (multiplies)",
-  "Towering Presence":
-    "Adds 100% of Main-Hand WeaponThe weapon held in the Character's right hand is the Main-Hand Weapon\">Main-Hand Weapon's Damage to Spells\nAdds 75% of Main-Hand WeaponThe weapon held in the Character's right hand is the Main-Hand Weapon\">Main-Hand Weapon's Critical Strike Rating to the Base Critical Strike Rating of Spell Skills\n-99% additional Ailment Damage",
-  "Spell Ripple":
-    "Spell Skills on hit have a 50% chance to spawn a Pulse, dealing True Damage equal to 150% of Hit Damage. Interval: 0.03s",
-  Juggernaut:
-    "Reduces 10% Armor and 2% Elemental and Erosion Resistance for enemies on Critical Strike for 8s. Stacks up to 10 time(s)",
-  "Adaptive Defense":
-    "If you haven't been hit recently, +40% Injury Buffer. This effect lasts for 4s longer when you are hit\nIf you have been hit recently, gains 1 stack of DeflectionReduces additional damage taken by 8% for every stack of Deflection, up to 3 stack(s). When hit, consumes all stacks of Deflection\">Deflection every 0.5s",
-  "Unmatched Valor": "Has 130 point(s) of fixed Fervor Rating",
-  "Self-Delusion":
-    "+12% additional Erosion Damage to an enemy for each type of Crowd Control Effect they are under\nCrowd Control Effects inflicted are reflected back onto you",
-  "Escalating Affliction":
-    "Changes the effect of each point of Affliction to: +0.1% - +3% additional Damage Over Time taken. Refreshes every 1s and is affected by Lucky Damage bonuses\n90% of the bonuses and additional bonuses for Max Damage is also applied to Damage Over Time",
-  "Guaranteed Reaping":
-    "When dealing Damage Over Time, if the Spell Burst reaches max charges, all charges will be consumed. Reaps 0.9s of Damage Over Time once for each Spell Burst charge consumed. Interval: 0.15s\nThis effect's Reaping causes an explosion, dealing equal damage to enemies within a 6m radius\n-60% additional Wilt Duration",
-  "Commander's Gambit":
-    "-100% additional Tenacity Blessing, Agility Blessing, and Focus Blessing Effect\nWhen gaining any Blessing, Minions within 10m also gain it\nMinions' max Blessing stacks are twice your own",
-  "Circle of Life":
-    "Gains Growth equal to 80% of the nearest Spirit Magus every 1s, and Growth gains Return Speed equal to Command\nFor every 10 Growth, +1% additional damage for Spirit Magi, +0.1% additional Physique and +0.5% Skill Area for yourself",
-  "Miraculous Touch":
-    "释放灵药技能时，触发Miraculous GainRandomly triggers one of the following effects for 6s. This effect can be triggered up to 4 times within 1s:\nTriggers a Lv. 20 Empower Skill or Defensive Skill that might be useful\nGains 5 stacks of God of War's Blessing\nTriggers the Main Active Skill 10 times. Interval: 0.2s\nGains max stacks of Tenacity Blessing, Agility Blessing, and Focus Blessing.\nTriggers Frigid Transmission and -20% additional damage taken\n\">妙手偶得\n灵药技能每秒获得 1 充能进度",
-  "Dark Advance":
-    "Moves in the target direction when casting Dark Gate\n+3 Max Charges for Dark Gate\n+50% additional Cooldown Recovery Speed for Dark Gate\n+30% additional Minion Damage if a Dark Gate has been cast recently",
-  "Effortless Command": "+1000 Max Energy",
-  "Crushing Blast":
-    "Enemies have a 25% chance to explode when defeated by Attacks or Spells, dealing True Damage equal to 250% of their Max Life to enemies within a 5m radius\n+30% additional damage dealt to Elites",
-  "Tainted Flesh":
-    "Converts 100% of Physical Damage and Elemental Damage taken to Erosion Damage\n-70% additional Erosion Resistance",
-  "Storm's Command":
-    "For each different Warcry cast, +35% additional Attack Damage for 8s\n-100% additional Empower Skill and Defensive Skill Effect",
-  "Fire's Allure":
-    'Inflicts Scorch (Female Knight 2)A special Ignite status. Deals 10 Fire Damage Over Time. Reduces all Resistances by 25%. Fixed Duration: 4s">Scorch instead of IgniteAn Ailment that may be triggered on hit, dealing Fire Damage per second for 4s based on Base Ignite Damage. Unable to stack\nIgnite cannot be inflicted when Base Ignite Damage is 0">Ignite\nNearby enemies within 10m -10% Fire Resistance for each stack of Scorch (Female Knight 2)A special Ignite status. Deals 10 Fire Damage Over Time. Reduces all Resistances by 25%. Fixed Duration: 4s">Scorch on them',
-  "Fiery Fantasy":
-    '+3% additional IgniteAn Ailment that may be triggered on hit, dealing Fire Damage per second for 4s based on Base Ignite Damage. Unable to stack\nIgnite cannot be inflicted when Base Ignite Damage is 0">Ignite Damage, up to +150%, for every +1% IgniteAn Ailment that may be triggered on hit, dealing Fire Damage per second for 4s based on Base Ignite Damage. Unable to stack\nIgnite cannot be inflicted when Base Ignite Damage is 0">Ignite Chance above 100%\n+3% additional WiltAn Ailment that may be triggered on hit, dealing Erosion Damage per second for 1.5s based on Base Wilt Damage. Stacks up to 30 time(s)\nWilt cannot be inflicted when Base Wilt Damage is 0">Wilt Damage, up to +150%, for every +1% WiltAn Ailment that may be triggered on hit, dealing Erosion Damage per second for 1.5s based on Base Wilt Damage. Stacks up to 30 time(s)\nWilt cannot be inflicted when Base Wilt Damage is 0">Wilt Chance above 100%\n+3% additional TraumaAn Ailment that may be triggered on hit, dealing Physical Damage per second for 4s based on Base Trauma Damage. Unable to stack\nTrauma cannot be inflicted when Base Trauma Damage is 0">Trauma Damage, up to +150%, for every +1% TraumaAn Ailment that may be triggered on hit, dealing Physical Damage per second for 4s based on Base Trauma Damage. Unable to stack\nTrauma cannot be inflicted when Base Trauma Damage is 0">Trauma Chance above 100%',
-  "Life Corrosion":
-    "Consumes 2% of Life to restore 8% of Max Life when you are hit. Interval: 0.2s.",
-  "Corrosion Shield":
-    "-20% Energy Shield Charge Speed to restore 8% Max Energy Shield when you are hit. Interval: 1s.",
-  "Star of Calamity boss":
-    "The Star of Calamity boss is exclusive to the Hunter's Odyssey gameplay. After the preseason concludes, Hunter's Odyssey will not be part of regular gameplay, but it may return in future preseasons.",
-  Gladiator:
-    "Rare monsters blessed by the God of War, which include 3 types: Bronze Gladiator, Silver Gladiator, and Gold Gladiator. (May appear in Invincible Champion Season-exclusive gameplay only. After the Invincible Champion Season concludes, Invincible Champion will not be part of the regular gameplay, but it may return in future Preseasons.)",
-  "Gold Gladiator":
-    "A rare monster blessed by the God of War that possesses great strength and wealth. (May appear in Invincible Champion Season-exclusive gameplay only. After the Invincible Champion Season concludes, Invincible Champion will not be part of the regular gameplay, but it may return in future preseasons.)",
-  "Queen's Wick":
-    "Used to challenge the Lone King of Aeterna in the Great Void",
-  "Dark Surge Edict": "Used to challenge the Tidemaster in the Great Void",
-  "Void Sea Invitation":
-    "Used to challenge the Lord of the Void Sea in the Great Void",
-  "Desire Core": "Used to challenge the Law Bearer in the Great Void",
-  Repentance:
-    "+4% additional Erosion Damage for every stack of Repentance (multiplies). Stacks up to 4 time(s). Lasts for 8s.",
-  Blasphemer:
-    "+1 Max stacks of Focus Blessing and +12% damage taken. Removed if Repentance is not at max stacks.",
-  "Valkyrie's Hymn":
-    "+4% additional Elemental Damage for Attack Skills for every stack of Valkyrie's Hymn (multiplies). Stacks up to 4 time(s). Lasts for 8s.",
-  "Pure Heart":
-    "+5% additional Attack Damage dealt to nearby enemies (multiplies) for every stack of Pure Heart. Stacks up to 5 time(s). Lasts for 10s.\nThe duration of each stack of Pure Heart is calculated separately.",
-  Squidnova:
-    '+16% additional Hit Damage for skills cast by Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst for 10s.',
-  "Feline Stimulant":
-    "+5% additional Attack Damage (multiplies) for every stack of Feline Stimulant. Stacks up to 3 time(s). Lasts for 9s.",
-  "White - Common":
-    "The lowest quality of Dream Bubbles\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Blue - Fine":
-    "The Tier 2 quality of Dream Bubbles\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Purple - Precious":
-    "The Tier 3 quality of Dream Bubbles\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Orange - Matchless":
-    "The Tier 4 quality of Dream Bubbles\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Red - Ultimate":
-    "The Tier 5 quality of Dream Bubbles\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Rainbow - Dream":
-    "The highest quality of Dream Bubbles. This quality cannot be reached through regular quality upgrades, and can only be reached if it is explicitly mentioned in an omen\nFrom low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream",
-  "Whim Bubble":
-    "It is said that countless possible rewards are contained inside such mysterious dream bubbles, which do not appear through regular type changes and only appear if they are explicitly mentioned in an omen.\nWhen determining a Dream Bubble's type, Whim counts as all types (counted once).",
-  Quality:
-    "From low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream\nAmong them, Rainbow - Dream cannot be reached through regular quality upgrades, and can only be reached if it is explicitly mentioned in an omen\nThe higher the quality of a bubble, the better the corresponding rewards",
-  Type: "The different types of Dream Bubbles are as follows:\nGear\nBlacksail\nCube\nCommodity\nNetherrealm\nFluorescent\nWhim\nEach type has different corresponding rewards\nWhen determining a Dream Bubble's type, Whim counts as all types (counted once).",
-  "Gear Bubble":
-    "Converted into gear rewards after successfully escaping from the nightmare",
-  "Blacksail Bubble":
-    "Converted into Hero Relic and Memory rewards after successfully escaping from the nightmare",
-  "Cube Bubble":
-    "Converted into Divinity Slate rewards after successfully escaping from the nightmare",
-  "Commodity Bubble":
-    "Converted into Fuel and Ember rewards after successfully escaping from the nightmare",
-  "Netherrealm Bubble":
-    "Converted into Netherrealm map material rewards after successfully escaping from the nightmare",
-  "Fluorescent Bubble":
-    "Converted into Fluorescent Memory rewards after successfully escaping from the nightmare",
-  "Fuel Bubble":
-    "Converted into Fuel rewards after successfully escaping from the nightmare",
-  Additional:
-    "Upon entering a Nightmare, the empty slots in the Vision will automatically expand from the 12 initial slots to accommodate additional bubbles from various effects",
-  "Dream Within a Dream":
-    "If the current sequence of this omen is 3, add 1 Rainbow Commodity Bubble. If the current sequence is lower than 3, this omen appears in the next omen selection and its sequence +1.",
-  "Initial Empty Slots":
-    "Empty slots used to store bubbles. There are initially 12 slots\nUpon entering a Nightmare, the empty slots in the Vision will automatically expand from the 12 initial slots to accommodate additional bubbles from various effects",
-  "Mirror Bubble":
-    "A type of Dream Bubble. The rewards obtained in Twinightmare are collectively called Dream Bubbles and only become real after you escape from the Nightmare.",
-  "Dream Omen":
-    "There are 2 types of Dream Omens: Sweet Dream Omens and Nightmare Omens. Sweet Dream Omens will change your Dream Bubbles in various ways, such as by changing the quality or type of bubbles. Nightmare Omens will remind you of the dangers you will encounter in your Nightmare.",
-  "Quality Increased":
-    "From low to high, Dream Bubbles have six quality levels:\nWhite - Common\nBlue - Fine\nPurple - Precious\nOrange - Matchless\nRed - Ultimate\nRainbow - Dream\nAmong them, Rainbow - Dream cannot be reached through regular quality upgrades, and can only be reached if it is explicitly mentioned in an omen",
-  "Omen Selection":
-    "After interacting with a Dream Lotus, you will need to select an omen if you have a Sweet Dream. If you enter a Nightmare, you won't need to select an omen (other effects may additionally increase the number of omen selections)",
-  "Dream Bubbles":
-    "The rewards obtained in Twinightmare are collectively called Dream Bubbles and only become real after you escape from the Nightmare.",
-  "Sweet Dream Omen":
-    "When selecting a Dream Omen, Sweet Dream Omens will change your Dream Bubbles in various ways, such as by changing the quality or type of bubbles.",
-  "Nightmare Omen":
-    "When selecting a Dream Omen, Nightmare Omens will remind you of the dangers you will encounter in your Nightmare.",
-  "Randomly leaves 1":
-    "All locked bubbles will be retained. In this situation, this omen will randomly pick a target from all the remaining bubbles and attempt to implement each effect as best as possible",
-  Whenever: "Each selection will only trigger this effect once",
-  Twinightmare:
-    "A round of Twinightmare consists of several Sweet Dreams and one Nightmare.",
-  "Quality Changed":
-    "Only valid after an actual change in quality.\nFor example: Attempting to change a bubble's quality yet its quality remains unchanged. This is not considered a change in quality.",
-  "Add or Remove":
-    "Only valid after an actual addition or removal.\nFor example: Attempting to add or remove a bubble yet the bubbles remain unchanged. This is not considered an addition or removal.",
-  "Type Changed":
-    "Only valid after an actual change in type.\nFor example: Attempting to change a bubble's type yet its type remains unchanged. This is not considered a change in type.",
-  "Tracking Firebolt":
-    "An affix skill that follows the player and deals damage to them in Nightmares.",
-  "Nightmare Flames":
-    "A dangerous affix skill that generates a firebolt and deals Fire Damage to the player in Nightmares.",
-  "Nightmare Frost":
-    "A dangerous affix skill that generates an icicle and deals Cold Damage to the player in Nightmares.",
-  "Nightmare Lightning":
-    "A dangerous affix skill that generates a thunderbolt and deals Lightning Damage to the player in Nightmares.",
-  "Nightmare Singularity":
-    "A dangerous affix skill that generates an erosion orb and deals Erosion Damage to the player in Nightmares.",
-  "Nightmare Roots":
-    "Search for and defeat the Nightmare Roots to clear the Nightmare.",
-  "Direction Guide":
-    "A minimap mark that guides the player to the location of the Nightmare Roots.",
-  "Guardian Monster":
-    "When you are near the Nightmare Roots, it will periodically summon guards that are not Nightmare monsters.",
-  "Eternity Effect":
-    "Equivalent to the gear effect of the Legendary gear: Eternity.",
-  Lightning:
-    "Lightning that appears in Sweet Dreams. It continuously deals damage to nearby monsters for a period of time.",
-  "Sweet Dream Mist":
-    "Mist that moves around randomly on the map during Sweet Dreams. When you approach the mist, it will dissipate and trigger special events, with a chance to grant you additional rewards.",
-  "Nightmare Elite Monster":
-    "A powerful enemy that appears in Nightmares and drops precious rewards.",
-  "Queen's Grace":
-    "Uses in the Great Void to open a portal to challenge the Queen of Eternal Sun",
-  "Shriveled Umbilical Cord":
-    "Old Stuff: Sanity lost -40% when encountering a Tentacle",
-  "Uncanny Tales: Gaze":
-    "Old Stuff: Gains 1 stack of Mistosis. (Each stack of Mistosis grants 20% increased Chest of Folklores Drop Quantity. You can only have up to 6 stacks of Mistosis.)\nThe Sanity cost of exploring a Cell +2.",
-  "Delicious Condiment":
-    "Old Stuff: Every time you consume Food, recover 3 Sanity",
-  "Uncanny Tales: Secret":
-    "Old Stuff: 30% chance to gain 1 stack of Mistosis when a new day begins. (Each stack of Mistosis grants 20% increased Chest of Folklores Drop Quantity. You can only have up to 6 stacks of Mistosis.)",
-  "Explorer's Glasses":
-    "Old Stuff: You can explore 8 instead of 4 Cells around a revealed Cell",
-  "Banker's IOU":
-    "Old Stuff: The number of Coins you receive from the bank is increased.",
-  "Pink Walnut":
-    "Food: Obtained Old Stuff [Brain in a Jar]: Your Sanity cannot drop below 0\nThis Old Stuff will disappear when a new day begins",
-  "Mistville Trader":
-    "May appear at a random location in Mistville. You can spend Coins to purchase Food and Old Stuff here.",
-  Tentacle:
-    "May appear at a random location in Mistville. Takes away a certain amount of your Sanity when revealed.",
-  Sanatorium:
-    "May appear at a random location in Mistville. You can recover some Sanity here.",
-  Bank: "May appear at a random location in Mistville. You can obtain a certain number of Coins here.",
-  Ruins:
-    "May appear at a random location in Mistville. The four Cells around it will not be explorable.",
-  "Alchemy Workshop":
-    "May appear at a random location in Mistville. You can spend Coins to upgrade Old Stuff here.",
-  "Clock Tower":
-    "May appear at a random location in Mistville. You can enter a battle here and start the day new.",
-  "Blank Stele": "A Bad Omen Stele with no special effects.",
-  "Bad Omen Stele - Blindness":
-    "Bad Omen Steles with the following special effect: When this stele is present, it seals off 8 nearby unrevealed Cells",
-  "Bad Omen Stele - Anxiety":
-    "Bad Omen Steles with the following special effect: The Sanity cost for removing this stele is doubled",
-  "Bad Omen Stele - Poverty":
-    "Bad Omen Steles with the following special effect: When this stele is present, you lose 10% of your current Coins for each Cell revealed",
-  "Bad Omen Stele - Anorexia":
-    "Bad Omen Steles with the following special effect: When this stele is present, you cannot consume Food",
-  "First Bank's Shackles": "Old Stuff: You cannot gain any more Coins.",
-  "Rusty Cranial Nail": "Old Stuff: You cannot restore any more Sanity.",
-  "Amnesia Patient's Key": "Old Stuff: You cannot gain any more Old Stuff.",
-  "Brain in a Jar":
-    "Old Stuff: Your Sanity cannot drop to 0. This Old Stuff will disappear when a new day begins.",
-  Mistosis:
-    "Each stack of Mistosis grants 20% increased Chest of Folklores Drop Quantity. (You can only have up to 6 stacks of Mistosis.)",
-  "Bad Omen Stele":
-    "May appear at a random location in Mistville. Seals off nearby Cells. Can be removed at the cost of Sanity.",
-  "Torn Map":
-    "Old Stuff: Preview the location of 1 random Cell when a new day begins\nUpgraded: Preview the location of the Clock Tower when a new day begins",
-  "Luxurious Golden Sauce": "Food: Quantity of another Food +3",
-  "Spoiled Sauce":
-    "Old Stuff: Every time you consume Food, there is a 30% chance that the Food's quantity will not be reduced",
-  "Resident's Old Bowl":
-    "Old Stuff: 50% chance to obtain 1 Food when a new day begins",
-  "Resident's Wooden Box":
-    "Old Stuff: 15% chance to obtain 1 Old Stuff when a new day begins",
-  '"Diviner"':
-    "Old Stuff: You can preview the locations of all Bad Omen Steles",
-  '"Banker"': "Old Stuff: Obtain 80 Coins when a new day begins",
-  '"Cartographer"': "Old Stuff: Preview 5 random Cells when a new day begins",
-  '"Explorer"': "Old Stuff: Reveal 5 random Cells when a new day begins",
-  "Egg of the Deep Mist":
-    "Old Stuff: The Sanity cost of removing a Bad Omen Stele -25\nThe Sanity cost of removing a Bad Omen Stele +5 when a new day begins",
-  "Egg of the Shallow Mist":
-    "Old Stuff: The Sanity cost of exploring a Cell -5\nThe Sanity cost of exploring a Cell +1 when a new day begins",
-  "White Crow Bonsai":
-    "Old Stuff: The Sanity cost of removing a Bad Omen Stele +10\nThe Sanity cost of removing a Bad Omen Stele -4 when a new day begins",
-  "Black Crow Bonsai":
-    "Old Stuff: The Sanity cost of exploring a Cell +4\nThe Sanity cost of exploring a Cell -2 when a new day begins",
-  "Chest of Folklores":
-    "Reward obtained by completing the Advent of Folklores after reaching the Clock Tower",
-  "Fine Activation Medium Skills":
-    "Activation Medium: Preparation, Activation Medium: Elite, and Activation Medium: Severe Injury",
-  "Precious Activation Medium Skills":
-    "Activation Medium: Motionless, Activation Medium: Preparation, Activation Medium: Elite, Activation Medium: Boss, Activation Medium: Life, Activation Medium: Energy Shield, Activation Medium: Severe Injury, Activation Medium: Multistrike, Activation Medium: Demolisher, Activation Medium: Spell Burst, Activation Medium: Start, Activation Medium: Root, Activation Medium: Resonance Activation, Activation Medium: Resonance",
-  "Matchless Activation Medium Skills":
-    "Activation Medium: Rhythm, Activation Medium: Root Attack, Activation Medium: Sentry, Activation Medium: Minion, Activation Medium: Critical Strike, Activation Medium: Channel, Activation Medium: Instruction, Activation Medium: Lock On, Activation Medium: Track",
-  "Ultimate Activation Medium Skills":
-    "Activation Medium: Perpetual Motion, Activation Medium: Wind Rhythm, Activation Medium: Still Attack, Activation Medium: Burst Activation, Activation Medium: Tangle",
-  Cogwheel:
-    "A mechanism that appears in the stage after Clockwork Ballet Games begin. Activate it and eliminate nearby monsters to obtain a Cogwheel Voucher of the same rarity and type.",
-  "Operation Cogwheel":
-    "Activating a Cogwheel and eliminating all the monsters nearby to complete Operation Cogwheel once. Upon doing so, you will usually get Cogwheel Vouchers of the same rarity as the Cogwheel.",
-  "Cogwheel Voucher":
-    "Complete Operation Cogwheel or specific challenges in stages to get Cogwheel Vouchers. When Clockwork Ballet Games end, Cogwheel Vouchers can be exchanged for rewards of corresponding types and rarities.",
-  Rating:
-    "Your rating in the game increases as you defeat Doll Employees or obtain Cogwheel Vouchers. There are 9 rating tiers, ranging from F to SSS, and the Cogwheel Vouchers obtained during the game will be exchanged for base rewards at the end. The higher your Challenge Rating, the higher the multiplier on those rewards.",
-  "Booster Drink":
-    "An item that appears in Clockwork Ballet Games. Touching it increases your Movement Speed for a period of time.",
-  "Time Extender":
-    "An item that appears in Clockwork Ballet Games. Touching it increases the remaining time of the current game.",
-  "Runaway Dancer":
-    "A Clockwork Ballet Doll Employee that is as strong as a Rare monster.",
-  "Low-Level Doll Employee":
-    "A Clockwork Ballet Doll Employee that is as strong as a Normal monster.",
-  "Bloody Mary":
-    "A Clockwork Ballet Doll Employee that is as strong as a Boss monster.",
-  "Clockwork Carnival":
-    "Go to the Clockwork Carnival to challenge the season endgame gameplay of Clockwork Ballet Games. You'll enter a map filled with Cogwheels, where your goal is to collect as many Cogwheel Vouchers as possible within the time limit and exchange them for fantastic rewards. Additional time can't be gained in this stage, and the rating can only be improved by completing Operation Cogwheel.",
-  "Outstanding Doll Employee":
-    "A Clockwork Ballet Doll Employee that is as strong as a Rare monster.",
-  "Iron Curtain of Eminence":
-    "Go to Iron Curtain of Eminence to challenge Clockwork Ballet President - Silverwing Danseuse, the supreme boss of the Clockwork Ballet Season.",
-  "Gold Member Services":
-    "In order of rarity, the Member Services that are selectable before Clockwork Ballet Games begin are Bronze Member Services, Amethyst Member Services, Gold Member Services, and Diamond Member Services.",
-  "Diamond Member Services":
-    "In order of rarity, the Member Services that are selectable before Clockwork Ballet Games begin are Bronze Member Services, Amethyst Member Services, Gold Member Services, and Diamond Member Services.",
-  "Blowout Sale":
-    "Before you start Clockwork Ballet Games, there's a chance that a portal to the Clockwork Carnival will appear, allowing you to go to the season endgame gameplay.",
-  "Clockwork Ball Ticket":
-    "Before you start Clockwork Ballet Games, there's a chance that a portal to Iron Curtain of Eminence will appear, allowing you to challenge the supreme boss Clockwork Ballet President - Silverwing Danseuse.",
-  "Member Services":
-    "Before Clockwork Ballet Games begin, you can select one of three effects. Completing the corresponding challenge will earn you a reward. In order of rarity, Member Services include Bronze Member Services, Amethyst Member Services, Gold Member Services, and Diamond Member Services.",
-  "All Tabs on Me":
-    "1-2 Rainbow Cogwheels will appear in the stage. Cogwheel Vouchers can't be exchanged for rewards until Operation Cogwheel is fully completed.",
-  "Dolls' Hunting Ground":
-    "When starting Operation Cogwheel, time gained is doubled, and there's a 50% chance to obtain 1 additional Cogwheel Voucher that is more likely to be a higher rarity voucher. This game will end immediately when you are defeated. The default time is 15s, and the default rating is S",
-  "Clockwork Roulette":
-    "Every time you obtain a Cogwheel Voucher, you also obtain 1 additional Cogwheel Voucher of a random rarity, and +1 to the number of Cogwheel Vouchers you obtain next time. +10% chance for you to immediately lose the challenge when starting Operation Cogwheel. When you are defeated, you will lose all Cogwheel Vouchers and this Member Service will immediately expire",
-  "Roses in the No-Man's Land":
-    "All monsters in the stage are replaced with Low-Level Doll Employees. There are only 7 Rainbow Cogwheels in this stage",
-  "Clockwork Heist":
-    "When completing the last Operation Cogwheel in the stage, 3 Runaway Dancers will appear. You obtain 1 Cogwheel Voucher of a random rarity (up to Red) for each Runaway Dancer defeated",
-  "Free Refill Day":
-    "1 new Cogwheel will be respawned nearby every time you obtain a Cogwheel Voucher. The default time is 75s, and no more time can be gained. The default Cogwheel quantity is 1",
-  "Nut Trick":
-    "Upon obtaining 3 Cogwheel Vouchers of the same rarity in a row, change the rarity of these 3 Cogwheel Vouchers to Rainbow",
-  "Member Privilege":
-    "After Clockwork Ballet Games begin, Cogwheels that appear in the stage have a chance to carry reward effects.",
-  "Reverse Pocket Watch":
-    "During the event, defeating monsters have a chance to drop this item. Collect a certain number of them to exchange them for great rewards in the Behind the Stage event",
-  "Clockwork Ballet Podium":
-    "A podium that appears at the end of Clockwork Ballet Games. Interact with this to put Cogwheel Vouchers into it, end the gameplay, and exchange rewards",
-  "Cogwheel Thief": "Drops Orange or better Cogwheel Vouchers when defeated",
-  "Doll Security":
-    "Doll monsters that appear randomly after Clockwork Ballet Games begin. When a Cogwheel is activated, Doll Securities will not be refreshed.",
-  "Rusted Abyss Quest": "Complete the story quests of Chapter 3",
-  "Moderate Symptom":
-    "Increases Vorax monsters' Life and Attack.\nOnly takes effect once even if multiple Moderate symptoms are present. When both Moderate and Severe symptoms are present, only the Severe symptoms take effect.",
-  "Severe Symptom":
-    "Significantly increases Vorax monsters' Life and Attack.\nOnly takes effect once even if multiple Severe symptoms are present. When both Moderate and Severe symptoms are present, only the Severe symptoms take effect.",
-  "Colored Snow":
-    "Used to upgrade nodes in Artistry of the Frozen Canvas gameplay",
-  "Splendor Egg":
-    "Complete Cell challenges in the Frozen Canvas to get rewards. The higher the Color Level of Splendor Eggs, the better the drops.\nSplendor Egg drops are only affected by the Splendor Egg Drop Quantity bonus and the Drop Quantity bonus of the corresponding Snowpaper difficulty",
-  "Max Possible Level":
-    "Expands the Snowpaper and the max possible level of dropped Paints while painting",
-  "Forced Color Mixing":
-    "Automatically completes the current Color Mixing Objective but applies debuffs. The more times Forced Color Mixing is used in a game, the more severe the debuffs.",
-  Spread:
-    "Makes it possible to apply Coloring Paints to Blocked Cells, Void Cells, or Discolored Cells to expand the Frozen Canvas map.",
-  "Fateful Contest":
-    "The Arcana Season's endgame gameplay can be challenged after completing the Tarot Path",
-  "Start Over": "Removes all the Paints that have been put in and start over",
-  "Chest of Destiny":
-    "A treasure chest containing rewards obtained from the Arcana gameplay. The higher the Color Level of Chests of Destiny, the better the drops",
-  "Tarot Path":
-    "Complete the Tarot Trials a certain number of times in Netherrealm stages to enter the Tarot Path and collect Chests of Destiny.",
-  "Notes of Arcana":
-    "There is a chance for Notes of Arcana to drop when completing Tarot Trials in Netherrealm stages. Notes of Arcana can be used in the Tarot Path. From least to most rare, the rarity levels of Notes of Arcana are: Bad, Good, Favorable, and Auspicious.",
-  "Destiny Slot": "Does not use Destiny Install Qualifications",
-  "Quicksand Treasure Stash":
-    "A special Treasure Stash with greater rewards and guaranteed battles",
-  Level:
-    "The base productivity of laborers increases with their level.\nFrom Lv. 5 onwards, laborers will start to gain random affixes.",
-  "Higher Level":
-    "The Laborer Level might exceed the unlocked max level (the upper limit cannot be exceeded)",
-  Laborer:
-    "In Netherrealm stages, there is a chance to recruit defeated Sand Pirates as laborers.\nThe productivity and wage cost of laborers increase with their level.",
-  "Production Line":
-    "In each production line, you can select 1 resource and assign up to 3 laborers to produce this resource.\nEach building can have up to 4 production lines.",
-  "Island Reputation Level":
-    "By trading with Floating Islands, you can earn Reputation with them. As your Reputation grows, your Island Reputation Level increases.\nThe higher your Reputation Level, the more items you can bring back from trading. Each Island Reputation Level unlocks different items that can be brought back.",
-  Miner: "A laborer who can produce Ingots in the Mine.",
-  "Crystal Worker": "A laborer who can produce Magic Crystals in the Mine.",
-  Chef: "A laborer who produces food at the Logistics Department.",
-  Aviator: "A laborer who engages in trades at the Port.",
-  Mercenary: "A laborer who goes on raids at the Port.",
-  "Extra Drop Goblin":
-    "An Extra Drop Goblin is a special boss monster that can drop lots of items when defeated.",
-  "Legendary Goblin":
-    "A Legendary Goblin is a special boss monster that can drop lots of Legendary gear when defeated.",
-  "Ember Goblin":
-    "An Ember Goblin is a special boss monster that can drop Ultimate Ember when defeated.",
-  "Fluorescent Goblin":
-    "A Fluorescent Goblin is a special boss monster that can drop lots of Fluorescent Memories when defeated.",
-  "Compass Goblin":
-    "A Compass Goblin is a special boss monster that can drop lots of Compasses when defeated.",
-  "Beacon Goblin":
-    "A Beacon Goblin is a special boss monster that can drop lots of Beacons when defeated.",
-  "Crafty Goblin":
-    "A Crafty Goblin is a special boss monster that can drop lots of gear when defeated.",
-  Carjack:
-    "After activating the Transport Vehicle in the Netherrealm stage, the escort bodyguards will attempt to flee with the payload. Chase after them and defeat incoming reinforcements to earn corresponding rewards",
-  "TOWER Co. Central Vault":
-    "Go to TOWER Co. Central Vault to challenge the endgame gameplay of the Outlaw season. You will enter a map with many small strongrooms. With each small strongroom you raid, security becomes tighter and tighter until you fail to raid a strongroom within the time limit and find yourself up against the boss. Defeat the boss to loot the bountiful rewards of the ultimate strongroom.",
-  "Bounty Order":
-    "Before the Carjack starts, you have a chance to receive a Bounty Order from the Black Market. Reveal the Bounty Order by inserting TOWER Coins, and complete it to get additional Bounty Chests. There are three Bounty Order qualities: Basic, Generous, and Astronomical.",
-  "Plane Watcher Chest":
-    "Includes Netherrealm Resonance and Ecliptic Astrolabe. Not affected by Drop Quantity bonuses, but are affected by Netherrealm Timemark",
-  "Traveler Chest":
-    "Includes Netherrealm Resonance and Ecliptic Astrolabe. Not affected by Drop Quantity bonuses, but are affected by Netherrealm Timemark",
-  "Gods Chest":
-    "Includes items such as Divinity Emblems, Astrolabes, and Netherrealm Resonances. Not affected by Drop Quantity bonuses, but are affected by Netherrealm Timemark",
-  "Divine Rite":
-    "Complete the Gods gameplay to obtain stacks. Spawns an additional Gods Chest in the boss area when reaching the required stacks.",
-  "Divine Blessing":
-    "Complete the Gods gameplay to obtain levels, up to 3 level(s). Each level grants additional drop quantity to the Trial of the Gods.",
-  "Onslaught Automaton":
-    "When the Trial: God of Might begins, the Onslaught Automaton gains Invincibility and fires spinning lasers towards both ends. Once the Trial: God of Might reaches its Max Levels, the Onslaught Automaton's Invincibility ends. Defeating it thereafter drastically increases the trial's drop.",
-  "Lesser Statue of Machines":
-    "Lesser Statues of Machine are scattered at random locations within the trial area, each possessing additional drop rewards. Monsters will attack all Lesser Statues of Machine simultaneously. Rewards carried by each statue will be lost if it is destroyed. The damage a Lesser Statue of Machine can take is not affected by Netherrealm Talent Constellation.",
-  "Gods Gameplay":
-    "The Gods gameplay includes Trial: God of War, Trial: God of Might, Trial: Goddess of Hunting, and Trial: God of Machines",
-  "Mini Cube of Rapacity":
-    "Touching a Mini Cube of Rapacity has a chance to drop Desire Crystal, spawn a Fortuitous Malice Executor, or spawn a Cube Goblin that drops a large amount of Desire Crystals when defeated.",
-  "Giant Goblin":
-    "A Might Goblin is a special boss monster that has a chance to generate 1 additional Trial(s): God of Might nearby when defeated.",
-  "Mechanical Goblin":
-    "A Machine Goblin is a special boss monster that has a chance to generate 1 additional Trial(s): God of Machines nearby when defeated.",
-  "Doll Goblin":
-    "A Doll Goblin is a special boss monster that can drop 1 additional Cogwheel Voucher(s) when defeated.",
-  "Outlaw Goblin":
-    "An Outlaw Goblin is a special boss monster that has a chance to generate 1 additional TOWER Transport Vehicle(s) nearby when defeated.",
-  "Attack Aggression":
-    "Additionally increases Attack Speed and Attack Damage by 5%. Increases Movement Speed by 10%",
-  "Spell Aggression":
-    "Additionally increases Cast Speed and Spell Damage by 7%. Increases Mobility Skill Cooldown Recovery Speed by 7%",
-  Frail: "Additionally increases Spell Damage taken by 15%",
-  "Fire Infiltration":
-    "Additionally increases Fire Damage taken by 13%. Reduces Skill Area by 8%",
-  "Lightning Infiltration":
-    "Additionally increases Lightning Damage taken by 13%. Reduces Attack Speed by 5%",
-  Quickness:
-    "Additionally increases Attack Speed, Cast Speed, Movement Speed, and Mobility Skill Cooldown Recovery Time by 8%",
-  Fortitude:
-    "Each stack of Fortitude additionally reduces Hit Damage taken by 5% for 10s.\nBase Max Fortitude Stacks: 3.",
-  Torment:
-    "Each stack of Torment additionally increases Damage Over Time dealt by 5% for 4s. Stacks up to 3 times",
-  Profane:
-    "+7% additional Wilt and Deterioration Duration. +7% additional Erosion Damage for 10s",
-  "Reverse Clock": "Upon touch, increases the remaining time for current level",
-  "Severed Wing":
-    "Upon touch, significantly increases Movement Speed, Attack and Cast Speed, and Mobility Skill Cooldown Recovery Speed for a period of time",
-  "Living Gun":
-    "Upon touch, fires ultra-high damage projectiles at nearby enemies for a period of time",
-  "Returning Anchor":
-    "Coordinates within the Overrealm. During exploration, you can teleport to these coordinates at any time",
-  "Max Levels":
-    "Filling the Containment Progress before the Overrealm expires grants a chance to open a door to a deeper level of the Overrealm.\nAfter filling the Containment Progress of the Overrealm Level 4, you will face the Doorkeeper when time expires (Doorkeepers at Profound Timemark 8 or above have a chance to drop Special Prisms: Inverse Image).",
-  "Overrealm Disturbance: Fall":
-    "At set intervals, the Overrealm rains down writhing tentacle clusters, dealing massive damage to the target area and spawning magical abnormalities with Additional Drop Quantity bonuses",
-  "Overrealm Disturbance: Resurrection":
-    "Upon death, abnormalities within the Overrealm have a chance to spawn Normal abnormalities with Additional Drop Quantity bonuses",
-  "Overrealm Disturbance: Imprisonment":
-    "At set intervals, Rare abnormalities with Additional Drop Quantity bonuses will spawn near you",
-  "Floating Skull":
-    "Abnormal Contained Objects carrying abundant drops and possessing extremely high Life. When defeated, they drop rare rewards and have a chance to revive",
-  "Antimemetic Cage":
-    "Upon touch, spawns an iron cage and several powerful Rare abnormalities carrying abundant drops around you. The cage only unlocks after all abnormalities are defeated",
-  Doorhunter:
-    "A hidden Boss abnormality in the Overrealm. Drops abundant rewards upon defeat",
-  "Bottled Shadow":
-    "Contains a reward affix that increases drops in the Overrealm, lasting for one Overrealm round. Multiple reward affixes can stack for even richer loot\nIn the Overrealm at Timemark 4 or above, filling the Containment Progress guarantees a Bottled Shadow. Entering Level 3 or 4 of the Overrealm guarantees an additional Bottled Shadow.",
-  Overrealm:
-    'A space accessible by passing through "Doors" in Netherrealm stages. It inherits the Timemark Bonuses, Netherrealm Resonance Bonuses, some Probes, Compasses, and Netherrealm Talent Bonuses from the Netherrealm stage it belongs to.\nThe drops in the Overrealm are not affected by any Pactspirits other than Overrealm Pactspirits',
-  "Overrealm Disturbance":
-    "Includes Overrealm Disturbance: Resurrection, Overrealm Disturbance: Fall, and Overrealm Disturbance: Imprisonment",
-  "3x3 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 2nd row, 2nd column within this Effect Area.",
-  "3x4 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 2nd row, 2nd column within this Effect Area.",
-  "4x3 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 2nd row, 2nd column within this Effect Area.",
-  "2x2 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 1st row, 1st column within this Effect Area.",
-  "7x1 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 1st row, 4th column within this Effect Area.",
-  "2x4 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 2nd row, 1st column within this Effect Area.",
-  "4x2 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 1st row, 2nd column within this Effect Area.",
-  "1x1 Rectangle":
-    "The Effect Area is an area expanded by the Prism, determining which Talents can be affected.\nThe Prism is located in the 1st row, 1st column within this Effect Area.",
-  Doorkeeper:
-    "A Boss abnormality in the Overrealm. Has a chance to drop Inverse Image upon defeat",
-  Temper:
-    "Affix values now roll within a dynamic random range, with their upper limit significantly increased.\n[Micro Talent Effect Range: -100-200]\n[Medium Talent Effect Range: -100-100]\n[Legendary Medium Talent Effect Range: -100-50]",
-  "Mirror Reflection":
-    "Mirror the Talent across the Talent Panel's center. If a Talent already exists in that position, its effect will be overwritten",
-  Awakened:
-    "When a monster awakens, its rarity changes, and it gains an Activity bonus based on its new rarity (Normal monsters +30 Activity, Magic monsters +60 Activity, Rare monsters and Bosses +120 Activity)",
-  Mutation:
-    "Transform the target monster into a group of monsters with a random Name, Archetype, and Rarity, while retaining the original Activity and Quantity\nActive Mechanics: Mutation",
-  Fuse: "Removes multiple monster groups and adds a new group whose Activity and Quantity are the sum of those removed.\nActive Mechanics: Removal, Addition, Fusion",
-  "Mutate into an Aemberon":
-    "Takes effect if the target monster Archetype is Aemberon",
-  "When adding a monster":
-    "When adding a monster, this will not trigger if the Incubation Tank is full. Incubation Tank Upper Limit: 6",
-  "Antidote Vial":
-    "A treasure chest containing rewards obtained from the Vorax gameplay. The higher the Color Quality, the better the drops. During the Surgical Preparation phase, the higher your Ultimate Activity level, the better the corresponding Antidote Vial you'll obtain. In Shelley's Operating Theater, defeat a Vorax monster matching your Ultimate Activity level to unlock the corresponding Antidote Vial and claim your rewards.",
-  "Surgical Instrument":
-    "Surgical Instruments are boost items obtained in the Vorax gameplay. They provide powerful special effects during the Preparation Phase, such as significantly increasing monster Quantity and Activity. They can also serve as core components for specific strategies, aiding you in training powerful Vorax monsters. In the Netherrealm, Surgical Instruments have a chance to drop when Vorax monsters are defeated. They can also be obtained when the Ultimate Activity reaches a certain level in the Surgical Preparation phase.",
-  "Incubation Elixir: Hollow Cocoon":
-    "Gain 1 group(s) of Hollow Cocoons. 2 additional special Potions(s) will be granted in the next round",
-  "F1 Gen: Parasite Egg":
-    "Select 1 group(s) of monsters, mutate them into random Pests, and +10 to their Activity. 2 additional special Potion(s) will be granted in the next round",
-  "F1 Gen: Vermin Egg Cluster":
-    "Replicate 1 group(s) of random Pests. +10 Quantity for both the original and the copy. 2 additional special Potion(s) will be granted in the next round",
-  "F2 Gen: Parasite Pupae":
-    "Select 1 group(s) of monsters, mutate them into random Pests, and +20 to their Activity. 2 additional special Potion(s) will be granted in the next round",
-  "F2 Gen: Vermin Pupal Cluster":
-    "Replicate 1 group(s) of random Pests. +20 Quantity for both the original and the copy. 2 additional special Potion(s) will be granted in the next round",
-  "F3 Gen: Parasitic Butterfly":
-    "Select 1 group(s) of monsters, mutate them into random Pests, and +30 to their Activity. 1 additional special Potion(s) will be granted in the next round",
-  "F3 Gen: Emergent Butterfly Swarm":
-    "Replicate 1 group(s) of random Pests. +30 Quantity for both the original and the copy. 1 additional special Potion(s) will be granted in the next round",
-  "Incubation Elixir: Hollow Matriarch":
-    "Fuse all monsters with Hollow Cocoons. For every 1 group(s) of Pests being fused, +15% additional Activity and Quantity for the resulting monsters(Magic Pests additionally +30%, Rare and Boss Pests additionally +75%)",
-  "First Rite Holy Water: Confession":
-    "Gain a Ritual Holy Water: Flagellation in the next round",
-  "Second Rite Holy Water: Flagellation":
-    "Gain a Ritual Holy Water: Illumination in the next round",
-  "Third Rite Holy Water: Illumination":
-    "Gain a Ritual Holy Water: Eucharist in the next round",
-  "Fourth Rite Holy Water: Eucharist":
-    "Remove all monsters and gain 6 group(s) of Agitoes. Each group's Activity and Quantity equal the total Activity and Quantity of all removed monsters",
-  "Dissection Infusion: Morbid Corpse":
-    "Gain 1 group(s) of Boss Bone Sentries. If the Incubation Tank is full, mutates the monsters with the highest Total Activity into Bone Sentries. 1 additional special Potion(s) will be granted in the next round",
-  "Dissection I: Vermectomy":
-    "When you have at least 1 group(s) of Bone Sentries, remove all Pests, +199 to other monsters' Quantity, grants 1 additional special Potion(s) will be granted in the next round",
-  "Dissection II: Daemonectomy":
-    "When you have at least 1 group(s) of Bone Sentries, remove all Aemberons, +199 to other monsters' Activity, and 1 additional special Potion(s) will be granted in the next round",
-  "Dissection III: Craniotomy":
-    "When you have at least 1 group(s) of Bone Sentries, remove all Agitoes, +199 to other monsters' Quantity, and replace the Potions in the next round with 1 special Potion(s)",
-  "Dissection Infusion: Intact Skeleton":
-    "Remove all monsters that are not Bone Sentries. Gain 1 group(s) of Boss Bone Sentries, then fill empty Incubation Tanks with random Bone Sentries. For every 1 group(s) of Bone Sentries you have, +199 to all Bone Sentries' Activity and +199 to their Quantity",
-  "Xenopanacea: Osteotrophy":
-    "Mutate 1 random group(s) of monsters into Aemberons, and +333 to their Activity. If any non-Aemberon monsters remain, replace the Potions in the next round with 2 special Potion(s)",
-  "Xenopanacea: Brood":
-    "Mutate 1 random group(s) of monsters into Aemberons and +333 to their Quantity. If any non-Aemberon monsters remain, replace the Potions in the next round with 2 special Potion(s)",
-  "Surgical Risk: Low":
-    "When you defeat a Vorax monster, that monster's Activity +5%. For each time you are defeated, the Ultimate Activity -1%",
-  "Surgical Risk: Medium":
-    "When you defeat a Vorax monster, that monster's Activity +10%. For each time you are defeated, the Ultimate Activity -2%",
-  "Surgical Risk: High":
-    "When you defeat a Vorax monster, that monster's Activity +20%. For each time you are defeated, the Ultimate Activity -5%",
-  "Cumulative Effect Count":
-    "The Cumulative Effect Count is equal to the number of times a Consultation Vorax Compass takes effect in this round of the Vorax gameplay. Affixes will be multiplied together when calculating their effect.",
-  "Base Stat Revival":
-    "Has a chance to increase the Base Stats of a Memory. The displayed values are the final result, with the increase shown in parentheses.",
-  "Base Trait Slot":
-    "Memory slots that affect a Hero's Base Traits, provided by the Revived Affixes of Hero Memories.",
-  Rarity: "Ultimate: Red\nEpic: Yellow\nRare: Purple",
-  "Memory Type":
-    "Memory of Origin: Installable in Slot 1\nMemory of Discipline: Installable in Slot 2\nMemory of Progress: Installable in Slot 3",
-  Origin: "Memory of Origin: Installable in Slot 1",
-  Discipline: "Memory of Discipline: Installable in Slot 2",
-  Progress: "Memory of Progress: Installable in Slot 3",
-  "Lunar Essence":
-    "弹奏月琴所需的能量，通过击败月族怪物获得。月能达到上限时，月琴获得一次弹奏次数。",
-  "Lunar Ring":
-    "月琴所影响的圆形范围区域，位于角色脚下，跟随角色移动。弹奏时，月轮内所有塑像会被同时激活。月轮范围可以通过安装月弦来提升。",
-  "Nascent Moon": "特殊的月族怪物，掉落等同于月族稀有怪物，但不受重奏加成。",
-  Rhapsody:
-    'A special gameplay theme reshapes the "rhythm" you play and delivers generous drop rewards.',
-  "Damage Boost Program: Physical":
-    "+15% additional Physical Damage for Minions summoned by this skill",
-  "Damage Boost Program: Cold":
-    "+15% additional Cold Damage for Minions summoned by this skill",
-  "Damage Boost Program: Fire":
-    "+15% additional Fire Damage for Minions summoned by this skill",
-  "Damage Boost Program: Lightning":
-    "+15% additional Lightning Damage for Minions summoned by this skill",
-  "Damage Boost Program: Erosion":
-    "+15% additional Erosion Damage for Minions summoned by this skill",
-  "Critical Strike Program": "该技能召唤的召唤物 +100% 暴击值、+100% 暴击伤害",
-  "Transience Program":
-    "该技能召唤的召唤物额外 -20% 最小伤害、额外 +30% 最大伤害",
-  "Fury Program":
-    "+25% additional damage when a Minion summoned by this skill is at Low Life",
-  "Spell Program":
-    '+1 Max Spell BurstAutomatically uses a Spell Skill a certain number of times.\nWhen Spell Burst is fully charged, the next Spell Skill used will activate Spell Burst, which will consume all stacks charged and automatically use the Spell Skill the same number of times.\nSkills that have a cooldown, Triggered Skills, Sentry Skills, Channeled Skills, and Combo Skills cannot activate Spell Burst.">Spell Burst and +5% additional Spell Damage for Minions summoned by this skill',
-  "Fearless Program":
-    "+10% additional Melee Damage and +30% Melee Skill Area for Minions summoned by this skill",
-  "Cold Protocol":
-    'Inflicts Cold InfiltrationAdditionally increases Cold Damage taken by 13%. Reduces Movement Speed by 5%">Cold Infiltration when Minions summoned by this skill deal Cold Damage',
-  "Fire Protocol":
-    'Inflicts Fire InfiltrationAdditionally increases Fire Damage taken by 13%. Reduces Skill Area by 8%">Fire Infiltration when Minions summoned by this skill deal Fire Damage',
-  "Lightning Protocol":
-    'Inflicts Lightning InfiltrationAdditionally increases Lightning Damage taken by 13%. Reduces Attack Speed by 5%">Lightning Infiltration when Minions summoned by this skill deal Lightning Damage',
-  "Erosion Protocol":
-    '+30% DeteriorationLasts for 1s. When the duration ends, deals True Damage equal to 60% of the Hit Erosion Damage dealt. Stacks up to 99 times. Each stack is calculated independently">Deterioration Chance for Minions summoned by this skill',
-  "Armor Break Protocol":
-    "+12% Armor DMG Mitigation Penetration for Minions summoned by this skill",
-  "Life Protocol":
-    "Minions summoned by this skill grant +10% additional Max Life to you and allies",
-  "Energy Shield Protocol":
-    "Minions summoned by this skill grant +10% additional Max Energy Shield to you and allies",
-  "Haste Protocol":
-    "+20% Attack, Cast, and Movement Speed for Minions summoned by this skill\nMinions summoned by this skill grant +20% Movement Speed to you and allies",
-  "Projectile Protocol":
-    "+2% Projectile Quantity and +2 Horizontal Projectile piercing counter for Minions summoned by this skill\nMinions summoned by this skill grant +90% Projectile Speed to you and allies",
-  "Area Protocol":
-    "+10% additional Area Damage for Minions summoned by this skill\nMinions summoned by this skill grant +60% Skill Area to you and allies",
-  "Resistance Protocol":
-    "+12% additional Elemental Damage for Minions summoned by this skill\nMinions summoned by this skill grant +10% Elemental Resistance to you and allies",
-  "Ailment Protocol":
-    'When Minions summoned by this skill deal damage, +3% additional damage for every type of AilmentTrauma, Ignite, Frostbite, Freeze, Numbed, and Wilt">Ailment the enemy has (multiplies)\nMinions summoned by this skill grant +12% Ailment Damage to you and allies',
-  "Block Protocol":
-    "+100% Attack and Spell Block Chance for Minions summoned by this skill. Minions taunt enemies when blocking",
-  "Knockback Protocol":
-    '+100% KnockbackForced to move back by a short distance">Knockback Chance for Minions summoned by this skill. Inflicts ParalysisIncreases damage taken by 15%">Paralysis when knocking back enemies',
-  "Restoration Protocol":
-    '+10% Life RegainBased on the Missing Life (including Sealed Life), restores a portion of Life on hit. This effect has a 0.5s interval.">Life Regain and Shield regainBased on the Missing Energy Shield, restores a portion of Energy Shield on hit. This effect may only appear once every 0.5s.">Shield Regain for Minions summoned by this skill\nMinions summoned by this skill grant 3% Life Regeneration to you and allies',
-  "Agile Protocol":
-    "Minions summoned by this skill grant +30% Attack and Cast Speed to you and allies",
-  "Elemental Protocol":
-    '该技能召唤的召唤物附加 5% 物理伤害的随机ElementalFire, Cold, and Lightning">元素伤害，并且 +100% Elemental AilmentIgnite, Frostbite, Freeze, and Numbed">元素异常几率',
-  "Aura Overwrite: Weapon Amplification":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Weapon Amplification to you and allies",
-  "Aura Overwrite: Charged Flames":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Charged Flames to you and allies",
-  "Aura Overwrite: Electric Conversion":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Electric Conversion to you and allies",
-  "Aura Overwrite: Erosion Amplification":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Erosion Amplification to you and allies",
-  "Aura Overwrite: Frigid Domain":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Frigid Domain to you and allies",
-  "Aura Overwrite: Steadfast":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Steadfast to you and allies",
-  "Aura Overwrite: Nimbleness":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Nimbleness to you and allies",
-  "Aura Overwrite: Energy Fortress":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Energy Fortress to you and allies",
-  "Aura Overwrite: Elemental Resistance":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Elemental Resistance to you and allies",
-  "Aura Overwrite: Swiftness":
-    "Minions summoned by this skill grant a Lv. 1 Precise: Swiftness to you and allies",
-  "Source Code: Tenacity Pulse":
-    'When Minions summoned by this skill hit, +50% chance to grant you and allies 1 stack of Tenacity BlessingEvery stack of Tenacity Blessing grants an additional 4% damage reduction (multiplies). Initial max stacks: 4.">Tenacity Blessing',
-  "Source Code: Agility Pulse":
-    'When Minions summoned by this skill hit, +50% chance to grant you and allies 1 stack of Agility BlessingEvery stack of Agility Blessing grants +4% Attack and Cast Speed and +2% additional damage. Initial max stacks: 4">Agility Blessing',
-  "Source Code: Focus Pulse":
-    'When Minions summoned by this skill hit, +50% chance to grant you and allies 1 stack of Focus BlessingEvery stack of Focus Blessing grants +5% additional damage. Initial max stacks: 4">Focus Blessing',
-  "Source Code: Condensation":
-    '每 +1 FrostbiteEnemies are inflicted with a fixed amount of Frostbite Rating when they are Frostbitten. This can be increased by raising Max Frostbite Rating. The Max Frostbite Rating is 120.">冰结值上限，该技能召唤的召唤物 +1 FrostbiteEnemies are inflicted with a fixed amount of Frostbite Rating when they are Frostbitten. This can be increased by raising Max Frostbite Rating. The Max Frostbite Rating is 120.">冰结值上限\n该技能召唤的召唤物使召唤者 +30 冰结值上限',
-  "Source Code: Meltdown":
-    "该技能召唤的召唤物攻击或者法术击败敌人时有 20% 几率爆炸，对半径 6 米内的敌人造成被击败的敌人最大生命 250% 的真实伤害",
-  "Source Code: Power Surge":
-    "该技能召唤的召唤物 +500% 移动速度\n该技能召唤的召唤物如果最近移动了超过 10 米，使自身和友军额外 +20% 闪电伤害",
-  "Source Code: Breakpoint":
-    "When you or allies deal damage through Minions summoned by this skill, eliminates enemies with less than 18% Life",
-  "Source Code: Dimensional Collapse":
-    "Minions summoned by this skill fix the Erosion Resistance of nearby enemies within 10m at 10",
-  "Source Code: Overclock Composition":
-    "+20% additional Cooldown Recovery Speed for Minions summoned by this skill\nMinions summoned by this skill grant +20% Cooldown Recovery Speed and +20% Injury Buffer to you and allies",
+  "원소 이상": "점화, 빙결, 동결, 마취 포함",
+  주위: "6미터 이내",
+  최근: "4초 이내",
+  방어구: "투구, 흉갑, 장갑, 신발 포함",
+  "치명적 일격": "타깃을 처치하는 적중 대미지 1회",
+  분열: "포물선 투사체가 타깃을 명중하면, 여러 개의 보조 투사체로 분리됩니다.",
+  바운스:
+    "수평 투사체 또는 체인 스킬로 타깃 명중 후, 근처의 다른 타깃에게로 점프한다.",
+  "연속 공격":
+    "공격 스킬 사용 시 일정 확률로 공격 후 추가 공격을 1회 진행한다. 확률이 100%를 초과할 경우 100%당 공격을 1회 더 진행한다.\n연속 공격 시 공격 속도가 20% 증가한다.\n연속 공격 시 스킬 자원을 정상적으로 소모하며, 자원 부족 시 연속 공격이 중단된다. 이동 또는 순간 스킬을 제외한 기타 스킬을 사용해도 연속 공격이 중단된다.\n이동, 채널링 및 보초병이 시전하는 스킬은 연속 공격이 불가하다.",
+  관통: "수평 투사체는 타깃 명중 후 관통 최대치에 도달할 때까지 계속 비행한다.",
+  "메인 무기": "캐릭터의 오른손 무기가 메인 무기다.",
+  "서브 무기": "캐릭터의 왼손 무기가 서브 무기다.",
+  반사: "디버프를 적에게 반사한다. 유저는 여전히 디버프의 영향을 받음",
+  약탈: "타겟의 공격 속도 20% 별도 감소, 자신의 공격 속도 20% 증가, 타깃은 한번씩만 약탈 가능",
+  "동결된 몸": "유저를 적중한 적이 감속 상태에 돌입한다. 지속 시간 2초",
+  행운: "두 번의 랜덤 판정 또는 수치 중 가장 유리한 결과 적용",
+  불행: "두 번의 랜덤 판정 수치 중 가장 불리한 결과가 적용됩니다.",
+  원소: "화염, 냉기와 번개 포함",
+  "위중 상태": "현재 HP가 최대 HP의 35% 미만일 경우",
+  도태: "현재 HP가 최대 HP의 일정비율 미만인 적을 적중할 경우, 해당 적을 즉시 처치한다.",
+  "레전드 보스":
+    "희귀도가 가장 높은 몬스터, 난이도가 가장 높고, 가장 좋은 보상을 드롭한다.",
+  강적: "레어 몬스터와 보스가 포함된 강적",
+  박살: "빙결 상태인 적 처치",
+  중상: "0.5 초 동안 최대 HP와 최대 보호막을 더한 값의 50%를 초과하는 대미지를 입는다.",
+  열갑: "플에이어의 아머가 더 이상 물리 대미지 감면을 제공하지 않고, 근접전 공격의 물리 대미지가 증가한다. 이 수치는 아머 수치의 1%에 해당한다.",
+  "MP 부족": "현재 MP가 최대 MP의 35% 미만일 경우",
+  "에너지 충전":
+    "캐릭터가 2초 동안 대미지를 입지 않을 경우, 보호막 에너지 충전을 시작한다. 에너지 충전 시, 초당 최대 보호막의 20%를 회복한다. 대미지를 입으면 회복이 중단된다.",
+  "MP 봉인":
+    "일부 MP가 사용할 수 없는 상태가 된다. 일반적으로 지속 효과를 가진 스킬들에 사용된다.",
+  "HP 봉인":
+    "일부 HP가 사용할 수 없는 상태가 된다. 일반적으로 지속 효과를 가진 스킬들에 사용된다.",
+  듀얼: "양손에 각기 한 손 무기를 장착하는 경우",
+  맨손: "무기를 장착하지 않은 경우",
+  "만물의 균형":
+    "원소 대미지에 적중한 적은, 일시적으로 해당 원소에 대한 저항이 25% 증가하지만, 다른 원소 속성에 대한 저항은 25% 감소한다.",
+  슬래시:
+    "베기 스킬 기본이 휘두르기 형태로 시전된다. 스킬 시전 시 일정 확률로 슬래시 형태로 시전할 수 있다. 일부 스킬은 특정 시기에 슬래시 횟수를 획득할 수 있다. 슬래시 횟수 보유 시, 스킬을 시전해도 슬래시 형태로 시전된 후 슬래시 횟수를 1 회 상실한다.",
+  환영: "그림자 습격 스킬 사용 시 환영을 만들어낸다. 같은 공격으로 다른 타깃을 조준하더라도, 다른 타깃이 없다면 캐릭터가 공격했던 타깃을 조준한다.\n여러 환영이 같은 적을 명중할 수 있으며, 환영의 산탄 효과 감소 계수는 70%이다.\n환영과 캐릭터의 대미지는 각각 적용된다.",
+  심화: "초당 시전되는 심화 수치가 0이 아닌 경우, 지속 대미지가 타깃에게 지속적으로 심화를 부여한다.\n심화 1포인트 당 타깃이 받는 지속 대미지 1% 추가\n심화는 최대 100포인트까지 시전 가능.",
+  수확: "타깃에게 트루 대미지를 입힌다. 해당 수치는 일정 시간 동안의 전체 지속 대미지와 동일하다.",
+  "대미지 완화": "받는 적중 대미지의 일부가 4초 동안 천천히 카운트된다.",
+  재결합:
+    "해당 상태에서, HP추가 회복 효과를 획득하고, 스킬을 사용하거나 표적이 될 수 없다. HP가 전부 회복되면 해당 상태는 사라진다.",
+  공격성: "미니언의 공격성이 높을수록, 정찰 범위가 커진다.",
+  "1명의 적":
+    "노멀과 매직 몬스터는 1마리로 간주한다\n레어 몬스터는 2마리로 간주한다\n보스는 5명으로 간주한다",
+  "한 손 근접 무기": "한손검, 한손 도끼, 한손 해머, 클로, 단검, 의식용 칼 포함",
+  "한 손 원거리 무기": "한손지팡이, 마법 지팡이, 권총 포함",
+  "양손 근접 무기": "양손 검, 양손 도끼, 양손 해머, 스틱, 주석 지팡이 포함",
+  "양손 원거리 무기": "활, 석궁, 포탄, 머스킷 포함",
+  장신구: "목걸이, 반지, 허리띠 포함",
+  "화폐 제작": "엠버, 연료, 화석, 에너지 코어 포함",
+  "파괴 에너지":
+    "파괴 스킬이 일정한 시간마다 파괴 에너지 축적을 1회 획득한다.\n파괴 스킬 사용 시 해당 스킬의 에너지를 소모할 수 있으며, 스킬 위력이 강해진다.",
+  원거리: "6미터 밖",
+  "지면 에너지 축적":
+    "지면 스킬이 일정 시간마다 지면 에너지 축적을 1회 획득한다.\n지면 스킬 사용 시 해당 스킬의 모든 에너지가 소모되며, 중첩 1회당 소모되는 에너지로 스킬이 강화된다.",
+  "건강 상태": "현재 HP가 최대 HP의 95%를 초과할 경우",
+  "이중 대미지":
+    "적군 적중 시, 일정 확률로 해당 공격으로 인한 대미지가 2배로 증가한다.",
+  "대미지 전이":
+    "받는 적중 및 간접 대미지 중 일부가 다른 유닛에게 전이된다.\n1회에 최대 60% 대미지가 전이되고, 총 전이 최대치는 90%",
+  "타겟 접촉": "포물선 투사체가 바닥에 착지하거나 적 적중 시",
+  "기본 스킬": "마령이 최초에 가장 자주 사용하는 스킬은 강도가 약하다.",
+  "강화 스킬":
+    "마령이 기본 스킬을 사용하는 경우, 일정 확률에 따라 강도가 더 높은 강화 스킬로 전환된다. 확률은 육성할 수 있으며, 100%에 도달하면 마령은 더는 기본 스킬을 사용하지 않고 강화 스킬만을 사용한다.",
+  "궁극 스킬": "마령이 특정 상태일 시 강도가 매우 높은 궁극 스킬을 사용한다.",
+  편향: "편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.",
+  근거리: "4미터 이내",
+  "아머 적용률":
+    "아머를 통한 대미지 감소의 적용 비율. 물리 대미지에 대한 기본 적용률은 100%이며, 비물리 대미지에 대한 기본 적용률은 60%이다.",
+  "최고 보스":
+    "최고 보스에는 각 차원의 감시자, 시공의 여행자 및 위대한 허공 속의 강력한 상대가 포함되어 있습니다.",
+  "최대 MP 근접": "현재 MP가 최대 MP의 95%보다 높을 경우",
+  "다음 단계": "채널링 스킬이 채널링 중첩 1회 획득 시",
+  "추가 카운트": "이 카운트는 수확에 해당하지 않는다.",
+  스탠바이:
+    "스킬 쿨타임이 종료되면 해당 스킬을 1회 발동한다. 스킬 쿨타임이 종료되지 않은 경우, 쿨타임 종료 후 즉시 1회 발동한다.",
+  "공명 활성화":
+    "공명 활성화 시, [촉발체: 공명]의 보조를 받는 스킬을 모두 발동한다.",
+  공명: "공명은 [촉발체: 공명 활성화]에 의해 활성화될 수 있다.",
+  지령: "지령은 [촉발체: 지령]으로 수신되며, 발동된 스킬의 강화에 사용된다.",
+  고정: "[촉발체: 추적] 고정된 적을 타깃으로 할 수 있으며, 보조받는 스킬을 발동한다.",
+  "무기 적용 보너스":
+    "무기의 기본 대미지 및 옵션을 포함하지만, 소환체의 기본 공격 속도 및 기본 크리티컬에는 영향을 주지 않는다.",
+  "받는 대미지 감소":
+    "각 단독 출처의 대미지 감면이 받는 대미지를 최대 90% 감소시킨다.",
+  "기본 옵션": "해몽, 침식 시스템에서 획득한 기본 옵션은 제외된다.",
+  유효: "고정 최대치를 초과하지 않는 부분",
+  과잉: "고정 최대치를 초과한 부분",
+  "대미지 유형 강제 전환":
+    "모든 대미지가 해당하는 대미지 유형으로 전환되며, 일반적인 대미지 전환 효과의 영향을 받지 않는다.\n추가 대미지는 대미지 전환 전에 적용되며, 해당 효과와 충돌하지 않는다.",
+  오멘: "불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.",
+  맹렬: "근접 스킬 크리티컬 확률이 별도로 추가, 근접 스킬 크리티컬 대미지 증가, 근접 스킬 범위 별도로 추가",
+  "무기 증폭": "물리 대미지 별도 증가",
+  재생: "기본 HP 회복 증가",
+  "전기 에너지 전환":
+    "물리 대미지와 동등한 비율의 번개 대미지 획득. 번개 대미지 별도 추가",
+  혹한지대:
+    "범위 내의 적이 입는 냉기 대미지가 증가, 적이 받는 오라 영향의 시간에 따라 효과가 높아지며, 4초 이내에 최대치에 도달",
+  민첩: "회피 수치 비율 증가",
+  "주술 증폭": "주술 스킬의 대미지 별도 추가",
+  "에너지 장벽": "에너지 보호막 비율 증가",
+  "마법의 근원": "초당 MP 자연 회복 증가",
+  "조준 투사": "투사체 대미지 별도 추가, 투사체 속도 증가",
+  "원소 저항": "원소 저항 증가, 받는 원소 대미지가 별도 감소한다.",
+  질주: "이동 속도 증가",
+  "깊은 고통": "지속 대미지 별도 추가, 지속 대미지의 시간 추가 연장",
+  "부식 증폭": "부식 대미지 별도 추가, 부식 관통 증가",
+  "화염 충전":
+    "공격 스킬의 화염 대미지 별도 추가, 주술 스킬에 고정 화염 대미지 추가",
+  견고: "아머 수치 비율 증가",
+  "어둠의 늪":
+    "부식 주술 스킬. 목표 위치에 어둠의 습지를 응집시켜, 범위내의 적에게 대미지를 입혀 약화시킨다. 어둠의 늪은 어둠의 탄환으로 이동할 수 있으며, 이동 할때마다 대미지와 범위가 별도로 추가된다.",
+  "어둠의 탄환":
+    "부식 주술 스킬. 전방에 어둠 투사체를 1개 발사한다. 명중 시 투사체는 폭발하며, 주변의 적에게 대미지를 입힌다. 동시에 기존의 어둠의 늪을 적중한 위치로 이동시킨다. 이동 할때마다 어둠의 늪 지속 시간이 갱신되고, 대미지와 범위가 별도로 추가된다.",
+  몰두: "상태 효과 중 하나로, 스킬 별로 각기 다른 버프 효과를 제공한다. 최대 5회 중첩 가능",
+  "프로스트 그라운드":
+    "목표 위치에 프로스트 그라운드를 소환한다. 프로스트가 범위내의 적에게 지속적으로 대미지를 입히고 주기적으로 감속을 부여한다.",
+  "플레임 코어":
+    "선택한 위치에 보초병 하나를 배치한다. 보초병은 주기적으로 화염 폭풍을 내뿜어, 주변의 적에게 대미지를 입힌다.",
+  "원소 침식": "원소 침식",
+  절망: "절망",
+  둔감: "둔감",
+  "아머 파괴": "아머 파괴",
+  위축: "저주 스킬, 저주를 받으면 받는 적중 대미지가 별도 추가된다.",
+  "대미지 취약":
+    "저주 스킬, 저주를 받으면 받는 물리 대미지가 별도로 추가하고, 외상 피해를 입을 확률이 증가한다.",
+  감전: "저주 스킬, 저주를 받으면 받는 번개 대미지가 별도로 추가된다.",
+  작열: "저주 스킬, 저주를 받으면 받는 화염 대미지가 별도로 추가하고, 점화될 확률이 증가한다.",
+  "본 프로스트": "저주 스킬, 저주를 받으면 받는 냉기 대미지가 별도로 추가된다.",
+  "사악한 침식":
+    "저주 스킬, 저주를 받으면 받는 부식 대미지가 별도로 추가되고, 몰락 당할 확률이 증가한다.",
+  "고통의 올가미":
+    "저주 스킬, 저주를 받으면 받는 지속 대미지가 별도로 추가된다.",
+  블라인드:
+    "저주 스킬, 저주를 받으면 [실명]하게 되어 이동 속도가 추가 감소한다.",
+  유실: "받는 지속 대미지 증가",
+  "블레이드 샷":
+    "전방에 2회 관통하는 탄환을 발사하여, 공격 물리 대미지를 입힌다.",
+  "압도적 스매시": "전방 부채꼴 범위 내의 적에게 공격 물리 대미지를 입힌다.",
+  "진격의 주먹":
+    "타깃을 향해 돌진하면서 경로 상의 적에게 공격 물리 대미지를 입힌다. 돌격이 종료 후 관성을 이용하여 앞으로 돌진하며, 전방의 적에게 공격 물리 대미지를 입힌다.",
+  "프로스트 스트라이크":
+    "전방 부채꼴 범위 내의 적에게 주술 냉기 대미지를 입힌다.",
+  "차가운 숨결":
+    "주변의 적에게 주술 냉기 대미지를 부여하여, 빙결 시간이 별도로 추가하고, 자신의 모든 스킬 범위가 증가한다.",
+  "절대 빙점":
+    "주변의 적에게 주술 냉기 대미지를 입히며, 해당 스킬의 빙결 확률이 추가된다. 통제된 상태의 적에게 주는 대미지가 더 높고, 빙결될 확률도 더 높다.",
+  "플레임 펀치": "전방 부채꼴 범위 내의 적에게 주술 화염 대미지를 입힌다.",
+  "플레임 스핀": "주변 적에게 1초마다 높은 지속 화염 대미지를 입힌다.",
+  "광포한 불꽃":
+    "초당 받는 간접 화염 대미지를 대가로, 자신이 주는 대미지가 별도로 추가하고 HP 회복 속도가 증가한다.",
+  "급속 전기 공격":
+    "전방에 라이트닝 볼트 1개를 발사하여, 공격 번개 대미지를 입힌다.",
+  "번개의 응징":
+    "전방에 4회 바운스하는 고속 전류를 1개 발사하여, 공격 번개 대미지를 입힌다. 적중 시 일정 확률로 적에게 주는 대미지가 별도로 감소한다.",
+  "행운의 일격":
+    "크리티컬 발동 시 버프 1회 획득, 중첩 1회당 투사체 속도 증가, 공격 속도 증가, 최대 4회 중첩 가능",
+  "번개의 속박":
+    "제자리에 보초병 하나를 배치하여, 보초병이 구역 하나를 생성한다. 해당 구역에 있는 아군은 행운 대미지를 획득하고, 부여하는 마취 효과가 증가한다.",
+  "시크릿 서클":
+    "자신의 주변에 시크릿 서클을 생성하며 서클에 적이 처음으로 진입할 때마다 자신의 주술 대미지가 별도 추가된다.",
+  "절망의 고리":
+    "기존 자리에 보초병 1 배치 시, 보초병이 절망의 고리 생성 및 고리 속 적을 주기적으로 넉백. 진영 내 우군이 받는 대미지 별도 감소, 진영 밖 적으로부터 받는 대미지 추가 재감소.",
+  "표식 화살비":
+    "전방으로 투사체를 1개 발사하여 무기 대미지 부여. 투사체로 적 적중 시, 일정 확률로 적에게 표식 부여. 투사체가 표식된 적에게 적중 시, 해당 위치에 화살비가 수 회 쏟아져 무기 대미지 부여",
+  블리자드:
+    "목표 위치에 블리자드가 수 회 쏟아져 적에게 주술 냉기 대미지를 부여하고, 냉기 및 번개 저항을 감소시킴.",
+  "프로스트 터치":
+    "저주 스킬, 저주를 받으면 받는 몰락 대미지가 별도로 추가되고, 동결될 경우 일정 확률로 몰락 1회가 추가로 시전된다.",
+  "비밀의 기원":
+    "스킬 지속 동안 주술 대미지가 별도 추가되고, 시전 시 집요한 축복 중첩 수에 따라 시전 속도가 증가한다.",
+  블랙홀:
+    "선택한 위치에 블랙홀 1개를 생성하고, 블랙홀 속 적에게 지속 부식 대미지 및 넉백을 부여하며, 캐릭터가 블랙홀 속 적에게 부여하는 지속 대미지가 별도 추가된다. 블랙홀 역방향 넉백 가능.",
+  "서리의 속박":
+    "선택한 위치에 보초병 1개 배치 시, 보초병이 캐릭터에 냉기 광선을 지속적으로 발사하여 그 속의 적에게 주술 냉기 대미지 및 빙결을 부여하고, 빙결된 적에 입히는 냉기 대미지가 별도 추가된다.",
+  "작열 웨이브": "주변에 주술 화염 대미지 1회 부여 및 지속 대미지 수확",
+  폭염술:
+    "지정된 범위 내의 적들에게 마법 화염 피해를 입히고 범위 중앙의 적들에게 추가 피해를 줍니다.",
+  "플레임 제트":
+    "일정한 간격으로 분출하는 지정된 위치에 불타는 대지를 응축시킨다. 폭발 시 일정 범위 내의 적을 가두고 적을 강타하는 투사체를 생성하며, 투사체가 지면에 명중한 후 작은 불타는 지면이 형성됩니다.",
+  "황소의 분노": "스킬 지속 시간 동안, 근접 스킬 대미지가 별도 추가된다.",
+  "프로스트 트랜스퍼":
+    '지정 방향으로 일정 거리 점멸, 시작점과 착지점의 일정 범위 내 적에게 대미지를 입히고 감속중첩 1회당 공격 속도, 시전 속도 및 이동 속도가 6% 감소한다. 최대 5회 중첩">감속을 1회 시전한다. 임의의 상황에서 동결한 유닛의 빙결이 100 포인트를 초과할 경우, 해당 유닛은 동결된다.\n동결된 비레전드 보스는 주기적으로 냉동되며, 행동 불가 상태가 된다. 냉동 지속 시간은 2 초, 동일 유닛이 냉동되는 간격 3 초\n빙결 상태 종료 시, 동결 상태도 함께 종료된다.">동결을 부여할 경우 해당 스킬의 쿨타임이 갱신된다.',
+  "냉기의 주입":
+    '공격 시 냉기 대미지가 별도 추가되고, 일정 확률로 적을 빙결빙결은 냉기 대미지 적중 시 일정 확률로 발생하는 상태 이상이다. 빙결된 적은 공격 속도, 시전 속도, 이동 속도가 10% 감소한다. 기본 빙결은 10 포인트, 빙결 1 포인트마다 받는 냉기 대미지 별도 + 1%, 빙결이 100 포인트를 초과하면 적은 동결된다.">빙결시킨다. 동결한 유닛의 빙결이 100 포인트를 초과할 경우, 해당 유닛은 동결된다.\n동결된 비레전드 보스는 주기적으로 냉동되며, 행동 불가 상태가 된다. 냉동 지속 시간은 2 초, 동일 유닛이 냉동되는 간격 3 초\n빙결 상태 종료 시, 동결 상태도 함께 종료된다.">동결 상태의 적을 처치할 경우 타깃 주변 일정 범위 내의 적에게 대미지를 1회 입힌다.',
+  "번개의 주입":
+    '공격 시 번개 대미지가 별도 추가되고, 일정 확률로 적을 마취번개 대미지 적중 시 일정 확률로 발생하는 원소 상태 이상\n마취 상태의 적에게 번개 대미지를 적중시켜 해당 적의 최대 보호막과 HP의 합의 10%에 해당하는 대미지를 입힐 때마다 마취를 1회 부여한다. 해당 한계값은 감소 또는 증가할 수 있으나 최소는 1%이다.\n마취 기본 지속 시간은 2 초이며, 횟수별로 따로 계산된다.\n마취는 최대 10 회 중첩되며, 마취 1회당 받는 번개 대미지 별도 +5%">마취시킨다. 주입 수치가 100 도달 후 비 위치 이동 공격 스킬을 사용하면 썬더를 내려 적을 타격한다.',
+  "고성능 광속":
+    "전방에 광선을 발사하여 직사각형 범위 내의 적에게 주술 물리 대미지를 입힌다. 통솔이 50보다 높을 경우, 해당 스킬의 범위가 5번째 증가될 때마다 대미지가 별도 추가된다. 해당 스킬은 광선 길이의 영향을 받지 않는다.",
+  "파멸의 페이저":
+    "선택한 위치에 광선을 발사하여 해당 위치에 폭발을 1회 일으키고, 일정 범위 내의 적에게 주술 물리 대미지를 입힌다.",
+  "화마 폭발":
+    "전방에 반경 7.2 미터의 대형 불기둥을 생성하여, 범위 내 적에게 기본 대미지의 1912%만큼 주술 화염 대미지를 입힌다. 해당 스킬의 대미지 효력은 1912%(20레벨)이다. 해당 스킬에 기본 점화 대미지 300-400 추가",
+  "크리티컬 대미지 증가":
+    "적을 적중하는 스킬을 보조한다.\n보조 대상 스킬 크리티컬 발동 시, 입히는 대미지가 별도 추가된다.",
+  경화: "근접 스킬을 보조한다.\n보조 대상 스킬로 입히는 대미지가 별도 추가된다.\n보조 대상 스킬 적중 시 경화를 획득하여 받는 대미지가 별도 감소한다. 4초간 지속.",
+  "멀티 가드":
+    "보초병 스킬을 보조한다. 보조 대상 스킬로 배치할 수 있는 보초병의 최대 수량이 증가한다.\n보조 대상 스킬로 입히는 대미지가 별도 추가된다.",
+  "주술 제어":
+    "주술 스킬을 보조한다.\n보조 대상 스킬로 입히는 대미지가 별도 추가된다.\n보조 대상 스킬의 크리티컬 비율이 감소한다.",
+  "질풍 투사":
+    "투사체 스킬을 보조한다.\n보조 대상 스킬의 투사체 속도가 증가한다.\n보조 대상 스킬로 입히는 대미지와 상태 이상 대미지가 별도 추가된다.",
+  "소환체 대미지":
+    "소환체를 소환하는 스킬을 보조한다.\n보조 대상 스킬로 소환하는 소환체가 입히는 대미지가 별도 추가된다.",
+  "공격 몰두":
+    "공격 스킬을 보조한다.\n보조 대상 스킬로 적중 시 전의를 획득한다.\n전의는 보조 대상 스킬이 입히는 대미지 별도 추가에 사용된다.\n전의는 보조 대상 스킬의 크리티컬 비율이 증가에 사용된다.",
+  원한: "주술 스킬을 보조한다.\n보조 대상 스킬로 입히는 대미지가 별도로 추가된다.\n보조 대상 스킬로 저주 상태의 적 적중 시, 적의 저주 지속 시간이 연장된다.",
+  "심화 보조":
+    "지속 대미지 또는 상태 이상을 입히는 스킬을 보조한다.\n보조 대상 스킬로 지속 대미지를 입힐 경우 적에게 심화를 시전한다.\n심화로 보조 대상 스킬의 효과가 별도 추가된다.",
+  "어둠의 문":
+    "해당 스킬을 사용하여 모든 소환체를 자신의 곁으로 전송하고, 자신은 통솔을 획득한다. 해당 스킬 시전 후 캐릭터 자신은 버프를 획득하고 일정 시간 동안 통솔 회복 속도가 증가하며, 모든 소환체의 이동 속도가 증가한다.",
+  투기장:
+    "해당 스킬 시전 시 8미터 내의 일반 적을 8미터 밖으로 넉백시키고, 자신을 중심으로 투기장이 형성되어 강적에게 악명을 1회 시전한다. 자신이 투기장에 있는 경우, 명성을 1회 추가 보유한다.",
+  "일부 스킬":
+    "일부 스킬에는 선회하는 칼날, 보초병 스킬, 매직 버스트 활성화 시 시전되는 스킬이 포함됩니다.",
+  "얼음 균열":
+    "반경 6미터의 원형 범위 안에 있는 적에게 328-493의 간접 냉기 대미지를 입힌다.",
+  "화마 공격":
+    "적에게 운석을 1개 떨어뜨리고, 착지 후 반경 4 미터 내의 적에게 20-20의 주술 화염 대미지를 입힌다. 이후 해당 적들에게 초당 571의 지속 화염 대미지를 입힌다. 1 초간 지속된다.\n해당 스킬의 기본 크리티컬은 0이다.",
+  "서펀트 바인딩": "받는 해당 스킬 대미지가 별도 +30%, 2 초간 지속한다.",
+  "문 헤일로":
+    "문 헤일로 중첩 1회당 해당 스킬의 콤보 스타트 스킬의 스킬 범위 추가 +0.8%, 콤보 피니시 스킬의 스킬 범위 추가 +1.8%. 최대 60 회 중첩되고, 8 초간 지속한다.",
+  급풍: "급풍 중첩 1회당 해당 스킬의 크리티컬 추가 +1.5%. 최대 20 회 중첩되고, 3 초간 지속한다.",
+  각인: "받는 해당 스킬 대미지가 별도 +30%, 5 초간 지속한다.",
+  불길: '저주 스킬, 저주를 받으면 오멘불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.">오멘을 획득할 수 있다.,',
+  포격: "반경 4m 범위 내에 포탄 8개를 랜덤으로 투하하며, 포탄 1개당 반경 1.6m 범위 내에 물리 대미지 160% 부여",
+  폭발: "반경 2m 내의 타깃에게 물리 대미지 160% 부여, 쿨타임 0.35초",
+  "화염 회오리":
+    "원형 범위 내에 지속적으로 화염 대미지를 부여, 화염 저항 10% 감소, 4초간 지속",
+  "라이트닝 링": "프로스트",
+  "스톰 배리어": "타깃의 막기 확률 증가, 막기 시 번개 사슬 발사",
+  응징: "응징으로 힘의 5배 만큼 물리 대미지를 입히며, 징계는 간접 대미지를 입힌다.",
+  방어: "아머 수치, 회피 수치, 보호막 수치의 총합",
+  "막기 비율":
+    "막기 시 기본적으로 30%의 대미지가 상쇄된다. 막기 비율 증가 시 상쇄 비율도 상승한다.",
+  "최대 저항":
+    "기본 최대 저항은 60%이며, 저항 상승 시 기본 상한을 돌파할 수 있다.",
+  "상태 이상": "외상, 점화, 빙결, 동결, 마취, 몰락 포함",
+  "상태이상 대미지": "외상, 점화, 몰락 포함",
+  "모든 속성": "힘, 민첩, 지혜 포함",
+  "속성 조건": "장비 또는 스킬을 사용하기 위해 달성해야 하는 힘, 민첩과 지혜",
+  "드롭 수량":
+    "아이템의 드롭 수량에 영향을 주며, 모든 유형의 드롭 아이템에 효력이 발생한다.",
+  "드롭 희귀도": "드롭 장비, 히어로 추억의 희귀도에 영향을 준다.",
+  "대미지 유형 상태 이상": "외상, 점화, 몰락 포함",
+  "융합 에너지":
+    "레벨 4/3/2/1일 경우, 하락 시간은 각각 1/2/4/6초이다.\n에너지가 4포인트를 초과하는 경우 하락 시간은 1초이다.\n스킬이 화염 스킬 또는 냉기 스킬일 경우, 사용 시 융합 에너지 2포인트를 획득한다.",
+  "불 에너지":
+    "에너지 1포인트 당, 화염 대미지가 10% 증가하고, 점화 부여 확률이 10% 증가한다.",
+  "얼음 에너지":
+    "냉기 스킬 시전 시, 얼음 에너지를 1포인트 획득한다. 서리 펄스가 얼음 에너지 소모 시, 소모되는 얼음 에너지에 따라 각종 버프가 제공된다.",
+  "화염 펄스":
+    "자신으로부터 확산된 화염 에너지 펄스로 화염 주술 대미지를 부여하며, 대미지는 캐릭터 레벨에 따라 증가한다. 쿨타임 2초",
+  "서리 펄스":
+    "타깃으로부터 확산된 냉기 에너지 펄스로 냉기 주술 대미지를 부여한다. 기본 간격 4 초\n스킬 태그: 주술, 냉기, 원소, 범위",
+  화염지대:
+    "화염 폭발 상태에 들어간 후 화염지대를 생성한다. 화염지대 내의 적은 화염 지속 대미지를 받게 되며, 화염 저항이 감소한다.",
+  "서리 영역":
+    "서리 폭발 상태에 들어간 후 서리 영역을 생성한다. 서리지대 내의 적은 속도와 냉기 저항이 감소한다.",
+  "용암 형태":
+    "[용암 형태]에서는, 주변의 적이 점화되며 화염 저항이 감소한다. 불 에너지 레벨이 높을수록 점화 대미지가 높아진다. 주변 적의 화염 저항 감소로 점화 시간은 자연히 증가한다.",
+  "얼음 결정 형태":
+    "[얼음 결정 형태]에서는, 주변 적의 속도가 감소하여 받는 냉기 대미지가 증가한다. 감속 효과와 받는 냉기 대미지 증가 효과는 현재의 얼음 에너지 레벨에 따라 증가한다.",
+  "폭발 취약":
+    "폭발하기 쉬운 유닛이 처치될 경우, 처치당한 지점 주변 3m 안에 화성 2개를 랜덤으로 남긴다. 어떤 유닛이든 화성 판정 범위에 들어가면, 0.5초 만에 화성이 폭발하며, 폭발은 판정 범위 내 유닛에게 유닛의 최대 HP 3%에 상응하는 화염 대미지를 입힌다. 화성는 화염 간접 대미지를 부여한다. 최대 5초간 지속되며, 지속시간이 끝날 때쯤 제자리에서 폭발한다.",
+  화성: "폭발하기 쉬운 유닛이 처치될 경우, 처치당한 지점 주변 3m 안에 화성 2개를 랜덤으로 남긴다. 어떤 유닛이든 화성 판정 범위에 들어가면, 0.5초 만에 화성이 폭발하며, 폭발은 판정 범위 내 유닛에게 유닛의 최대 HP 3%에 상응하는 화염 대미지를 입힌다. 화성는 화염 간접 대미지를 부여한다. 최대 5초간 지속되며, 지속시간이 끝날 때쯤 제자리에서 폭발한다.",
+  "에너지 슬롯":
+    "불 에너지 슬롯과 얼음 에너지 슬롯이 하나씩 있다.\n각 에너지 슬롯은 에너지를 최대 3레벨까지 축적한다.\n얼음(불) 에너지 보유 시, 화염(냉기) 스킬을 사용하면 모든 얼음(불) 에너지만 전부 소모하며 (즉, 반대 에너지), 상응하는 에너지는 증가하지 않는다.\n일정 시간 동안 냉기(화염) 스킬을 사용하지 않으면, 얼음(불) 에너지가 감소한다.",
+  "레벨 하락":
+    "얼음(불) 에너지 보유 시, 일정 시간 동안 냉기(화염) 스킬을 사용하지 않으면 얼음(불) 에너지의 레벨이 한 단계 내려간다. 현재 레벨이 높을수록, 레벨 하락 시간도 더 짧아진다.",
+  "얼음불의 폭주":
+    "융합 에너지 효과가 50% 증가한다, 5초간 지속. 지속 시간 동안 융합 에너지는 소멸되지 않는다. 지속 시간 종료 후, 모든 융합 에너지를 상실한다. 쿨타임 11초",
+  분노: "버서커 전용 에너지, 최초 최대 100포인트\n최대 분노에 도달하는 경우 버서커는 광분 상태가 된다.",
+  광분: "광분 상태에서는 최대 분노의 2배만큼 보너스를 획득한다.\n분노 소진 시 광분 상태가 종료된다.",
+  "회오리 바람":
+    "지속되는 회오리를 생성하여 범위 내 적에게 간헐적으로 대미지를 입힌다. 회오리 바람의 대미지 및 대미지 간격은 자신의 기본 대미지 및 공격 속도를 기반으로 계산된다.",
+  "특수 탄약":
+    "보조 스킬은 영웅 특성 인터페이스의 왼쪽 하단에 설치되며, 해당 보조 스킬에 해당하는 특수 탄약은 확률로 장전됩니다.\n특수 탄약 소모 시 해당 보조 스킬이 스킬 인터페이스와 겹치지 않고 투사체 스킬을 보조하면 특수 탄약을 성공적으로 소모한 것으로 간주하여 해당 보조 스킬 효과를 얻습니다.",
+  폭격탄:
+    "폭격탄 사용 시, 투사체가 2개 증가하고 투사체의 기본 비행 거리가 5미터로 감소한다. 발사된 투사체는 1명의 적에 여러 번 명중할 수 있다. 폭격탄은 더이상 기본 탄약 효과가 없으며, 20% 별도 감소된 대미지를 부여한다.",
+  속사포:
+    "속사포 소모 시, 공격 속도, 시전 속도 및 투사체 속도 +3%, 4초간 지속. 속사포의 가속 효과는 여러번 중첩 가능",
+  "탄창 교체":
+    "투사체 스킬 사용 시, 탄약이 소모된다. 탄약이 없을 경우, 재장전해야 스킬을 다시 사용할 수 있다.",
+  장전: "일정 시간 동안 장전으로 탄약을 보충하고 탄창을 최대로 채운다. 장전 중에는 투사체 스킬을 사용할 수 없다.",
+  "마술 사격":
+    "마술 사격을 하는 동안, 투사체 스킬이 발동되거나 사용하면 탄약 3개를 소모한다. 특수 탄약을 여러 발 소모했다면, 투사체 스킬은 보조 스킬 효과를 획득한다. 마술 사격 중에는 장전이 즉각 완료된다.",
+  "공탄 사격":
+    "탄약이 없어도 투사체 스킬을 사용할 수 있다.\\\n공탄 사격 동안에는 탄약을 소모하지 않으며, 탄약 효과가 부여되지 않는다.",
+  "자동 장전":
+    "일정 시간 동안 투사체 스킬을 사용하지 않는 경우, 자동 장전에 들어간다. 일정 수량의 탄약이 자동 장전되면, 순식간에 장전이 완료된다. 자동 장전은 중단할 수 있다.",
+  "시공간의 환상":
+    "시공간의 환상이 주술 스킬만 사용할 수 있으며, 채널링 스킬과 소환 스킬은 사용하지 않는다.\n최대 1개의 [시공간의 환상]이 존재할 수 있으며, [시공간의 환상]이 상한에 도달하면 특성 슬롯을 클릭해 [시공간의 환상]을 소환할 수 있다.",
+  과부하:
+    "나의 소환체에게 버프 효과를 제공한다.\n자극 스킬 효과 보너스가 과부하 효과에도 동일하게 적용된다.\n스킬 효과 지속 시간에 대한 보너스가 과부하 지속 시간에도 동일하게 적용된다.",
+  "연속 공격 대미지가 점차 증가한다.":
+    "현재 연속 공격 카운팅에 따라 해당 회차 연속 공격의 대미지가 보너스를 획득한다.",
+  "연속 공격 카운팅":
+    "연속 공격 발동 시, 연속 공격 과정 중 현재 공격 횟수를 기록한다. 공격 시마다 연속 공격 과정 중 다음 공격의 카운팅이 1 증가한다.",
+  "서리 회복":
+    "1초마다 HP를 1.2% 자연 회복한다.\n보호막 충전 속도가 10% 증가한다.",
+  "혼돈의 시공간":
+    "1초마다 균등하게 분담된 대미지에 해당하는 트루 대미지를 입힌다. 2초 지속",
+  "비틀어진 시공간":
+    "범위 내 아군에게 버프를 부여\n자신이 비틀어진 시공간에 있을 경우, 높은 버프를 획득할 수 있다.",
+  "신의 권능":
+    "집요한 축복을 소모해 신의 권능을 내리고, 짧은 시간 동안 폭발적인 힘을 획득한다.",
+  "고양이의 몸놀림":
+    "이동 속도 +40% 공격 대미지 별도 +40%\n이동 속도 증가 또는 감소의 240%가 공격 대미지에도 적용된다.",
+  "캣츠 실루엣":
+    "범위 내의 적에게 전광 중첩수와 동일한 마취 중첩수를 부여한다.\n스킬 태그: 주술, 번개",
+  "진노의 영혼":
+    "고대 선조의 영혼이 나타나면 위치 이동 및 채널링을 제외한 메인 근접 공격 스킬을 사용한다.",
+  "자폭 프로세스":
+    "발동 후 1 초, 스마트 웨폰 소환체가 즉시 처치된다. 소환체 자폭의 기본 배율은 115%.\n스킬 태그: 공격, 근접전, 물리, 범위, 힘, 민첩, 지혜",
+  "일제 사격": "포물선 투사체와 함께 비행",
+  "서브 스킬": "스킬 룰렛에 있는 두 번째 스킬(좌하단)",
+  "산탄 효과":
+    "1회 스킬로 생성된 여러 효과가 동일한 1명의 적을 적중할 수 있다. 첫 번째로 적중한 스킬 효과는 100%의 대미지를 입히며, 후속 적중 스킬 효과는 대미지가 별도 감소합니다. 해당 효과는 스킬로 부여하는 상태이상 대미지에도 영향을 준다.\n스킬 대부분의 후속 적중 대미지는 36%이다.\n특수 스킬의 산탄 효과는 스킬 스톤 설명에 명시되어 있다.",
+  "신의 영역":
+    "신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환되고, 건강 상태인 적에게 추가 대미지를 입힌다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환되고, HP가 위중 상태인 적에게 추가 대미지를 입힌다.",
+  추격: "추격 1회당 연속 공격 시 대미지 별도 +13%\n초기 최대 3회, 4초 지속",
+  자폭: "자폭 대미지",
+  "연속 공격 대미지가 점차 별도 추가된다.":
+    "현재 연속 공격 카운팅에 따라 해당 회차 공격의 대미지가 획득하는 추가 보너스가 점차 증가한다.",
+  "퍼붓는 빗줄기":
+    "마술 사격 중 투사체 스킬을 사용 및 발동하면 모든 탄약을 소모하며, 특수 탄약 소모량에 따라 투사체 스킬 대미지가 추가됩니다:\n4개 소모 시, +20%\n5개 소모 시, +40%\n6개 소모 시, +80%",
+  "시공간 가속":
+    '비틀어진 시공간에 존재하는 적 1명당, 유가가 1초마다 초당 시전 심화의 15%만큼 시공 에너지를 회복한다.\n10 초간 시공 에너지를 5포인트 소모할 때마다 심화초당 시전되는 심화 수치가 0이 아닌 경우, 지속 대미지가 타깃에게 지속적으로 심화를 부여한다.\n심화 1포인트 당 타깃이 받는 지속 대미지 1% 추가\n심화는 최대 100포인트까지 시전 가능.">심화 효과 추가 +2% , 최고 추가 +40% .',
+  "캣츠 다이브":
+    "연속 공격 시, 이동 속도가 4% 증가할 때마다 해당 공격으로 최대 연속 공격 카운팅만큼의 대미지를 줄 확률이 1% 증가한다.\n추격 중첩 1회당, 최대 연속 공격 카운팅이 1 증가한다.",
+  "배수진 전투":
+    "소환체가 과부하 보유 시, 처치되지 않는다.\n소환체가 과부하 보유 시, HP 회복 속도가 100% 감소한다.\n소환체가 과부하 보유 시, 손실된 HP에 따라 추가 대미지를 획득하며, 대미지는 최대 50% 별도 추가된다.",
+  "마지막 승부수":
+    "위치 이동 스킬 사용 시, 더이상 탄약을 장전하지 않는다.\n대미지 추가 -25%.\n자신의 투사체 스킬이 탄약을 전부 소모한다.\n탄약을 1개 소모할 때마다 대미지가 35% 별도 추가된다(곱연산).",
+  울분: "최대 분노가 50 증가한다.\n진노의 영혼이 스킬 사용 시, 분노 9포인트를 별도 획득할 수 있다.",
+  "불꽃 얼음":
+    "최대 융합 에너지 도달 시 화염 대미지가 빙결을 부여하고, 냉기 대미지가 점화를 부여한다.\\\n최대 융합 에너지 도달 시, 화염 대미지가 적중하는 경우 빙결이 4포인트 증가한다.\\\n최대 융합 에너지 도달 시, 주술 스킬로 점화를 부여하는 경우 스킬 냉기 대미지의 100%를 점화 기본 대미지로 획득한다.\\\n최대 융합 에너지 도달 시, 공격 스킬로 점화를 부여하는 경우 무기 물리 대미지와 냉기 대미지의 100%가 해당 점화 기본 대미지에 추가된다.",
+  "구국의 헌신":
+    "스마트 웨폰 소환체가 적을 처치하거나 강적 적중 시, 20%의 확률로 기계 부품 1개가 드롭된다.\n최근 주운 기계 부품 1개당, 과부하 효과가 5% 증가한다.\n과부하 효과가 2% 증가할 때마다 자폭 프로세스로 발생하는 자폭의 대미지가 1% 별도 추가된다.",
+  "참을 수 없는 분노":
+    "분노 5포인트 당, 1% 별도 추가\\\n분노 5포인트 당, 크리티컬 발동 시 공격 대미지 1% 별도 추가",
+  "얼어버린 마음":
+    "냉기 저항 1%당 서리 회복의 지속 시간이 1% 증가한다.\n서리 회복 중첩 상한 2 증가",
+  "성광의 영역":
+    "성광의 영역 이탈 1초 후 성광의 영역은 자동으로 폐쇄된다.\n성광의 영역 반경 5미터 안에서는 스킬 범위 보너스의 영향을 받지 않는다.",
+  "연승 추격":
+    "성광의 영역 반경이 30% 증가한다.\n성광의 영역에 있는 경우, 부피 충돌을 무시한다.\n성광의 영역에서 막기 1회당 용감한 직진을 1회 획득한다.\n10미터 이동할 때마다 용감한 직진을 1회 획득한다.\n용감한 직진 최대 30 회 중첩",
+  살의: "최대 기본 살의는 100포인트다.",
+  "신의 영역의 위엄":
+    "축복 지속 시간이 50% 별도 감소한다.\\\n신의 영역이 지속되는 동안 소모한 축복 1개당 대미지 별도 +5%, 최대 25회 중첩.",
+  "종말의 스플릿":
+    "촉발 스킬 사용 후 스플릿을 획득한다. 6 초간 지속, 쿨타임 10 초.\n스플릿 상실 후, 해당 특성 포인트의 쿨타임이 끝날 때까지 폭탄을 투척할 수 없다.\n투사체 사거리 20% 감소",
+  "비틀어진 포스 필드":
+    "자신이 비틀어진 시공간 안에 있을 경우, 1초마다 시공간의 환상 주술 대미지가18% 별도 추가된다. 6초 후에는 효과가 더 중첩되지 않는다.\n해당 효과는 비틀어진 시공간 이탈 0.5초 후 초기화된다.",
+  "희생의 예언":
+    "형벌로 최대 중첩 상태의 집요한 축복을 소모하는 경우, 집요한 축복의 절반에 해당하는 강건한 축복과 황홀한 축복을 획득한다.\n최근 형벌로 최대 중첩 상태의 집요한 축복을 소모하였다면 대미지가 40% 별도 추가된다.",
+  도망: "투사체 대미지가 2% 별도 증가한다.\n이동 속도가 1% 증가한다.",
+  스플릿: "폭탄 투척 수량 2배\n투사체 대미지 10% 별도 감소한다.",
+  "분노의 죄악":
+    '광분 상태에서 전체 대미지 80% 별도 추가\n광분광분 상태에서는 최대 분노의 2배만큼 보너스를 획득한다.\n분노 소진 시 광분 상태가 종료된다.">광분 상태에서 초당 최대 HP의 10% 소모\n광분 상태에서 분노 소모 60% 증가',
+  "분열 지형":
+    "대미지를 받아도 분노가 생성되지 않는다.\n대미지를 받으면 분노를 소모해 해당 대미지를 차감한다.\n분노 1 포인트 당 최대 HP+최대 보호막의 0.5% 만큼 대미지가 차감된다.\n모든 최대 저항이 60% 로 고정된다.\n저항이 최대 저항의 15% 를 초과할 때마다 최대 HP가 2% 추가된다.",
+  "눈서리의 포옹":
+    '최근 적이 서리 펄스에 1 회 적중될 때마다, 빙결적이 빙결되면 빙결을 보유하게 되고, 빙결은 고정된 수치를 가진다. 최대 빙결을 육성을 통해 증가시킬 수 있으며, 최대 빙결은 120 이다.">최대 빙결 5 증가, 쿨타임 0.1초\n최근의 서리 펄스가 적에게 적중한 경우, 적이 보유한 빙결 6당 서리 펄스 쿨타임 회복 속도 1% 증가, 간격 0.2 초',
+  화형: "구역 내의 모든 적에게 낙인 기록 대미지량에 해당하는 트루 대미지를 입힌다.\n화형 시작 반경은 5미터이다. 화형 발동 후 낙인 기록 대미지가 모두 제거된다.",
+  만개: "마령이 최종 단계까지 성장 시, 궁극 스킬이 잠금 해제된다. 궁극 스킬의 최초 쿨타임 8 초\n마령에 대한 공격 속도의 보너스와 추가 보너스의 50%가 마령 추가 공격 대미지에도 동일하게 적용된다.\n마령에 대한 시전 속도의 보너스와 추가 보너스의 50%가 마령 추가 주술 대미지에도 동일하게 적용된다.",
+  윈드라이드:
+    "주술 채널링 스킬. 주술 채널링 스킬. 채널링 기본 간격 0.33초, 최대 5회 중첩.\n최대 채널링까지 중첩 시, 중첩된 모든 채널링을 상실하고, 12미터 스킬 범위 내의 마령에게 양분을 3회 시전한다.",
+  "어둠 간격": "산탄 효과에서 후속 투사체의 대미지가 2% 증가한다.",
+  양분: "스킬 사용 시 해당 회차 스킬 대미지 추가 +30%, 15초 지속, 최대 10회 중첩. 양분 효과는 자극 스킬 효과 보너스를 받는다.",
+  지옥: "지옥 범위 내의 적이 받는 대미지가 별도 증가한다.",
+  낙인: "낙인을 보유한 적에게 별도 대미지를 입힌다.\n적이 받는 대미지를 기록하며, 적에게 화형 부여 시 기록된 대미지에 따라 적에게 트루 대미지를 입힌다.",
+  "대단한 친구":
+    "마령 최대 수량 -1\n마령은 양분을 20회 누적 획득한 후, 만개를 획득한다. 12초간 지속\n마령 성장치 10당, 만개 지속 시간이 2% 별도 추가된다.",
+  "불타는 발길질":
+    "화형이 제거하는 낙인 기록 대미지가 20% 감소한다\n화염 스킬 레벨이 1 증가할 때마다, 화형이 제거하는 낙인 기록 대미지가 4% 감소한다. 최대 40% 감소\n화형 4 회 발동 후, 낙인이 소멸된다.",
+  "온도 상승":
+    "온도 상승 중첩 수에 따라 투사체가 부여하는 대미지가 별도 추가되고, 투사체 최대 편향각이 증가한다.",
+  과열: "과열 상태가 일정 시간 유지된 후 강제 장전된다.",
+  "투사체 최대 편향각":
+    "수평 투사체, 포물선 투사체는 사격 방향과 편향이 생길 수 있으며, 편향된 최대 각도는 투사체의 최대 편향각에 따라 결정된다.\n사격 중지 0.5초 후, 발생한 편향각은 2초 내에 원래대로 회복된다.",
+  "용감한 직진":
+    "체격 1% 증가, 이동 속도 1% 증가, 받는 대미지 1% 별도 추가된다. 성광의 영역에 있는 적에게 주는 대미지가 3% 별도 추가하고, 8초 지속된다. 스킬 효과 지속 시간 보너스의 영향을 받는다.",
+  적온: "적온 10초간 지속, 지속 시간 동안, 더 이상 과열을 획득하지 않고, 장전도 하지 않는다.\n온도 상승 효과 보너스를 160% 획득하고, 자극, 저주, 함성 스킬을 발동할 수 없다.\n해당 효과 종료 후 강제로 장전된다.",
+  "투사체 사이즈":
+    "투사체의 크기가 변경된다.\n일반적으로 투사체 사이즈의 100%가 투사체의 사이즈에 적용된다.\n스킬 범위 보너스를 받는 투사체의 경우, 투사체 사이즈의 증가 또는 감소의 25%가 투사체의 추가 스킬 범위에 적용된다.\n투사체가 후속 범위 효과를 입힐 시, 투사체 사이즈의 증가 또는 감소의 25%가 후속 추가 스킬 범위에 동일하게 적용된다.\n후속: 폭발처럼 투사체가 발사된 후 입히는 효과",
+  "최대 막기 비율": "최대 막기 비율 기본 60%, 최대 80%",
+  "성스러운 빛":
+    "시전 시 살의를 5포인트 소모하여 범위 내에 있는 보스가 아닌 적을 성광의 영역으로 끌고 온다. 쿨타임 0.6초\n성스러운 빛 반경 8미터, 스킬 범위 보너스의 영향을 받지 않는다.",
+  "위험 감수":
+    "현재 보유한 살의 5포인트당, 성광의 영역에 있는 모든 유닛의 공격 및 시전 속도 별도 +1%.\n현재 보유한 살의 5포인트당, 성광의 영역에 있는 적의 대미지 별도 +2%.",
+  극한: "적이 보유한 극한 1회당, 해당 적에게 주는 대미지 별도 12%",
+  "얼음꽃의 만개":
+    '동결 부여 시, 동결된 타깃이 있는 위치에 얼음 에너지냉기 스킬 시전 시, 얼음 에너지를 1포인트 획득한다. 서리 펄스가 얼음 에너지 소모 시, 소모되는 얼음 에너지에 따라 각종 버프가 제공된다.">얼음 에너지를 소모하지 않는 서리 펄스타깃으로부터 확산된 냉기 에너지 펄스로 냉기 주술 대미지를 부여한다. 기본 간격 4 초\n스킬 태그: 주술, 냉기, 원소, 범위">서리 펄스를 1회 시전한다.\n최근 적이 적중당한 서리 펄스타깃으로부터 확산된 냉기 에너지 펄스로 냉기 주술 대미지를 부여한다. 기본 간격 4 초\n스킬 태그: 주술, 냉기, 원소, 범위">서리 펄스 1회당, 받는 냉기 대미지 별도 +12%, 4초 지속, 최대 5회 중첩',
+  전광: "전광 1회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1회 부여한다.",
+  번개속행:
+    "적중 시 더 이상 캣츠 실루엣이 발동되지 않는다.\n감전 보유 시, 1 미터 이동할 때마다 30%의 확률로 캣츠 실루엣이 최대 적 3명에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초\n적이 캣츠 실루엣이 결산한 감전 대미지를 1회 받을 때마다 다음 번에 캐릭터로부터 받는 적중 대미지가 5% 별도 추가된다. 최대 200% 별도 추가",
+  "자신이 보유하는 기본 감전 대미지":
+    "자신이 보유하는 기본 감전 대미지:\n자신이 보유하는 기본 감전 대미지는 추가된 [각종 기본 감전 대미지]의 총합으로 계산됩니다. 예:[기본 감전 대미지가 1 추가]된다,\n그러나[획득한 기본 감전 대미지]는 포함하지 않습니다. 예:적중 시, 적중 번개 대미지의 3%에 해당하는 [기본 감전 대미지]를 획득합니다.",
+  "들끓는 분노":
+    "분노 8포인트당, 진노의 영혼 대미지 별도 +1%\n정지 시, 해당 보너스 50% 증가",
+  섬멸모드:
+    "공격과 시전 속도가 20% 추가 증가한다.\n투사체 스킬로 발사한 투사체 수량과 분열 횟수는 스킬 자체 및 해당 스킬에 연결된 보조 스킬의 영향만 받는다.",
+  기동모드:
+    "이동 속도가 20% 증가한다.\n표준 투사체 모드, 투사체 스킬의 투사체 수량과 분열 횟수가 정상적으로 추가된다.",
+  "자신에게 넉백을 부여한다.":
+    "기본 넉백 거리는 1 미터이다.\n넉백 거리에 추가된 80%가 자신의 넉백 거리에도 동일하게 적용된다. 최대 200% 증가",
+  "광전사의 극":
+    "넉백 거리가 2% 증가할 때마다, 대미지가 1% 별도 추가된다. 최대 200% 추가\n기동모드가 지속되는 동안 비 채널링, 비 위치 이동 투사체 스킬을 시전할 경우, 자신에게 반드시 넉백을 부여한다.\n섬멸모드가 지속되는 동안 온도 상승이 추가 효과 획득: 넉백 거리 2% 증가",
+  "장비 해제":
+    "받는 대미지 별도 +10%\n상실한 채널링 중첩수는 장비 해제 효과를 증가하고, 초기 2회 중첩을 상실하면 장비 해제 효과가 100% 증가한다. 이후 1회 중첩을 추가로 상실할 때마다 해당 장비 해제 효과가 100% 증가한다.",
+  "사냥 본능":
+    "연속 공격 초기 카운팅과 연속 공격 최대 카운팅 상한 +2, 30 초간 지속한다. 사냥 본능이 지속되는 동안 유흥을 획득할 수 없다.",
+  경직: "행동 불가",
+  약화: "주는 대미지가 10% 별도 감소한다.",
+  실명: "타깃에게 적중 대미지를 입히기 전에, 20%의 확률로 명중되지 않은 것으로 판정된다.",
+  넉백: "대상을 밀침",
+  마비: "받는 대미지가 15% 추가된다.",
+  감속: "중첩 1회당 공격 속도, 시전 속도 및 이동 속도가 6% 감소한다. 최대 5회 중첩",
+  동결: "한 유닛의 빙결이 100 포인트를 초과할 경우, 해당 유닛은 동결된다.\n동결된 비레전드 보스는 주기적으로 냉동되며, 행동 불가 상태가 된다. 냉동 지속 시간은 2 초, 동일 유닛이 냉동되는 간격 3 초\n빙결 상태 종료 시, 동결 상태도 함께 종료된다.",
+  해동: "빙결 상태에서 회복. 점차 정상 속도로 돌아온다.",
+  몰락: "적중 시 일정 확률로 발생하는 상태 이상으로, 기본 몰락 대미지에 따라 1초마다 부식 대미지를 입힌다. 1.5 초간 지속, 최대 30 회 중첩한다.\n기본 몰락 대미지가 0인 경우, 몰락을 일으킬 수 없다.",
+  점화: "적중 시 일정 확률로 발생하는 상태 이상으로, 기본 점화 대미지에 따라 1초마다 화염 대미지를 입힌다. 4 초간 지속, 중첩 불가\n기본 점화 대미지가 0인 경우, 점화를 일으킬 수 없다.",
+  외상: "적중 시 일정 확률로 발생하는 상태 이상으로, 기본 외상 대미지에 따라 1초마다 물리 대미지를 입힌다. 4초간 지속, 중첩 불가\n기본 외상 대미지가 0인 경우 외상을 일으킬 수 없다.",
+  조롱: "수치심을 느껴 조롱을 가한 자를 강제로 공격",
+  침묵: "주술과 함성 스킬 사용 불가",
+  "무장 해제":
+    "무장 해제 시 맨손으로 간주하며, 공격 스킬을 사용할 수 없다. 무장 해제 시 듀얼 또는 방패 장착 상태로 간주되지 않는다.",
+  "황홀한 축복":
+    "황홀한 축복 1회당 공격 및 시전 속도가 4% 증가하고, 대미지가 2% 별도 증가한다. 초기 최대 4 회 중첩",
+  용솟음: "레벨에 따라 MP 회복 속도가 증가하며, 추가 주술 대미지를 부여",
+  표식: "타깃이 고정되어 회피 수치가 20% 감소하며, 받는 크리티컬 대미지가 10% 추가 증가한다.",
+  "강건한 축복":
+    "강건한 축복 중첩 1회당, 받는 대미지가 4% 별도 감소한다(곱연산). 최초에는 최대 4회 중첩",
+  장벽: "최대 HP+최대 보호막의 20%만큼 방어막을 획득하고, 적중 대미지의 50%를 흡수한다. 장벽 보유 시, 장벽을 획득할 수 없다.",
+  방황: "방황 수치를 100포인트 획득한다.\n1초마다 방황 수치를 10 포인트 상실하며, 0이 되면 방황을 상실한다.\n방황 수치 1포인트당, 대미지 면역 확률이 0.25% 증가한다.\n최대 방황 수치 100.",
+  속박: "어떤 방식으로도 이동 불가 (걷기, 대시, 점멸, 넉백 까지 포함)",
+  소생: "초당 2%의 최대 HP와 MP를 회복. [소생]을 하나 더 독자적으로 계산. 최대 5회 중첩 가능",
+  냉동: "동결된 비레전드 보스는 주기적으로 냉동되며, 행동 불가 상태가 된다. 냉동 지속 시간은 2 초, 동일 유닛이 냉동되는 간격 3 초",
+  "HP 반환":
+    "적중 시, 손실된 HP(봉인된 HP 포함)에 따라 일정 비율로 HP를 회복한다. 0.5초 간격으로 사용된다.",
+  "보호막 반환":
+    "적중 시, 손실된 보호막에 따라 일정 비율로 보호막을 회복한다. 0.5초 간격으로 사용된다.",
+  빙결: "빙결은 냉기 대미지 적중 시 일정 확률로 발생하는 상태 이상이다. 빙결된 적은 공격 속도, 시전 속도, 이동 속도가 10% 감소한다. 기본 빙결은 10 포인트, 빙결 1 포인트마다 받는 냉기 대미지 별도 + 1%, 빙결이 100 포인트를 초과하면 적은 동결된다.",
+  "집요한 축복":
+    "집요한 축복 1회당 대미지가 5% 별도 증가한다. 초기 최대 4 회 중첩",
+  "역방향 넉백": "넉백 방향이 반대로 바뀐다.",
+  전의: "전의 보유시, 적을 처치하거나 강적에 적중하면 전의가 누적된다. 전의 1포인트 당, 크리티컬이 2% 증가한다. 최대 전의 100",
+  "방황 수치": "每拥有 1 点迷踪值，+0.25% 几率避免伤害。迷踪值上限为100。",
+  "제어류 상태": "빙결, 동결, 마비, 넉백, 약화, 감속, 조롱 및 실명 포함",
+  "마령의 근원": "마령 소환 스킬 활성화 후 획득하는 버프 효과.",
+  "열화의 근원": "공격 및 주술 크리티컬이 증가한다.",
+  "천둥의 근원": "공격 및 시전 속도가 증가한다.",
+  "윈드 블레이드":
+    "윈드 블레이드는 슬래시에 속하며, 모든 적을 관통하고 대미지를 입힌다.",
+  통솔: "스마트 웨폰을 소환할 수 있는 스킬 장착 시, 통솔을 보유한다. 통솔 1포인트당, 스마트 웨폰 소환체의 대미지를 3% 별도 추가하고(통솔이 0 이하인 경우, +0% 고정), 받는 대미지 별도 -2%, 이동 속도 +2%, 정찰 범위가 증가한다. 통솔 하한 -100, 상한 100. 통솔이 0이 아닌 경우, 0이 될 때까지 초당 13포인트씩 회복(증가/감소)되며, 초과분 10포인트당 회복값도 7포인트 증가한다.",
+  "여섯 신의 은혜":
+    "강건한 축복, 황홀한 축복, 집요한 축복, 전의, 방황, 장벽을 포함한다.",
+  "새로운 신이 질서와 혼란의 균형을 조절하고 있다.":
+    "캐릭터는 질서와 혼돈의 영향을 받는다. 초기에 질서를 100포인트 보유하며, 1초마다 1포인트씩 상실한다. 질서를 1포인트 상실할 때마다 혼란을 1포인트 획득한다.",
+  질서: "캐릭터는 초기에 질서를 100포인트 보유하며, 1초마다 1포인트씩 상실한다. 질서를 1포인트 상실할 때마다 혼란을 1포인트 획득한다.",
+  혼란: "캐릭터는 초기에 질서를 100포인트 보유하며, 1초마다 1포인트씩 상실한다. 질서를 1포인트 상실할 때마다 혼란을 1포인트 획득한다.",
+  "새로운 신이 여섯 신의 은혜를 잠식하고 있다.":
+    "4초 간격으로 강건한 축복, 황홀한 축복, 집요한 축복, 전의, 방황, 장벽을 포함하여 캐릭터가 보유하는 여섯 신의 은혜를 전부 잠식한다.",
+  "매직 버스트":
+    "주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.",
+  잠식: "재능을 무효화시킨다.",
+  복제: "복제된 재능을 추가 획득한다. 잠식된 재능 복제 시, 복제로 획득한 재능이 정상적으로 적용된다. 복제는 신격의 석판이 원래 가지고 있던 재능만 적용되며, 다른 복제 효과로 획득한 재능은 복제할 수 없다.",
+  성장치:
+    "성장치 100포인트 당, 마령 소환체가 1티어 성장한다. 마령 소환체는 초기에 1 티어이며, 최고 5티어까지 성장할 수 있다. 마령 소환체의 성장치 8포인트 당, 체격이 1% 증가하며, 1티어씩 성장할 때마다 스킬 범위가 10% 별도 추가하고, 각각의 보너스를 획득한다.\n2티어 달성 시, 강화 스킬 확률이 30% 증가한다.\n3티어 달성 시, 강화 스킬이 강화된다.\n4티어 달성 시, 자극 스킬이 강화된다.\n5티어 달성 시, 대미지가 50% 별도 추가하고, 스킬 범위가 10% 별도 추가하며, 이동 속도 및 정찰 범위가 증가한다.\n최대 성장치는 1000이다.",
+  악명: "악명 중첩 1회당 크리티컬 +2000, 크리티컬 대미지 +100%, 공격 및 시전 속도 20%. 위중 상태인 적에 대한 해당 효과의 크리티컬 및 크리티컬 대미지 보너스는 2배. 해당 상태는 오라 상태이며, 오라 효과의 영향을 받음.",
+  명성: "명성 중첩 1회당 공격 크리티컬 +20, 크리티컬 대미지 +24%, 대미지 별도 +7%, 최대 3회까지 보유할 수 있다. 해당 상태는 오라 상태이며, 오라 효과의 영향을 받는다.",
+  마취: "번개 대미지 적중 시 일정 확률로 발생하는 원소 상태 이상\n마취 상태의 적에게 번개 대미지를 적중시켜 해당 적의 최대 보호막과 HP의 합의 10%에 해당하는 대미지를 입힐 때마다 마취를 1회 부여한다. 해당 한계값은 감소 또는 증가할 수 있으나 최소는 1%이다.\n마취 기본 지속 시간은 2 초이며, 횟수별로 따로 계산된다.\n마취는 최대 10 회 중첩되며, 마취 1회당 받는 번개 대미지 별도 +5%",
+  악화: "1초 지속되며, 지속 시간 종료 시 적중 부식 대미지의 60%에 해당하는 트루 대미지를 입힌다. 중첩 가능, 최대 99회, 중첩 횟수별로 따로 계산",
+  "냉기 침투": "냉기 저항 10% 감소",
+  "부착 동기화":
+    "부착 동기화 보유 시 비활성화된 부착을 1개 보유할 때마다 부착 대미지 별도 +40%.",
+  부착: "유저가 생성하고, 적에게 부착되어 주기적으로 지정된 주술 스킬을 발동한다.",
+  "화염의 정수":
+    "모든 축복을 소모하는 동시에 주술 냉기 대미지를 입힌다.\n축복을 1회 소모할 때마다 233 - 233 포인트 대미지를 입히는 동시에 기본 스킬 범위 +3%\n쿨타임 회복 속도 1%당 스킬 시전 종료 후 축복 최대 중첩수의 2.5%를 획득한다.\n해당 스킬의 냉기 대미지 100%가 화염 대미지로 전환된다.\n해당 스킬은 촉발체 스킬로 보조할 수 없다.",
+  폭발술:
+    "발동 시 3 미터 범위 내의 적에게 1458-2430 포인트 주술 물리 대미지를 입히고, 해당 스킬의 대미지 효율은 360%다.\n스킬이 1레벨 증가할 때마다 폭발 대미지 별도 +10%(곱연산)\n스킬 태그: 주술, 물리, 발동, 범위, 힘, 민첩",
+  "얼음의 영혼":
+    "빙결 면역. 받는 물리 대미지의 20%가 냉기 대미지로 전환된다. 받는 번개 대미지의 20%가 냉기 대미지로 전환된다.",
+  "얼음의 영혼2":
+    "빙결 면역. 받는 물리 대미지의 40%가 냉기 대미지로 전환된다. 받는 번개 대미지의 40%가 냉기 대미지로 전환된다.",
+  "얼음의 영혼3":
+    "빙결 면역. 받는 물리 대미지의 60%가 냉기 대미지로 전환된다. 받는 번개 대미지의 60%가 냉기 대미지로 전환된다.",
+  "화염의 일격":
+    "공격에 물리 대미지의 20%만큼 화염 대미지가 추가되며, 대미지가 화염 저항을 10% 관통한다.",
+  "화염의 일격2":
+    "공격에 물리 대미지의 30%만큼 화염 대미지가 추가되며, 대미지가 화염 저항을 15% 관통한다.",
+  "화염의 일격3":
+    "공격에 물리 대미지의 40%만큼 화염 대미지가 추가되며, 대미지가 화염 저항을 20% 관통한다.",
+  초전도성: "화염 대미지를 줄 수 없으며, 감전된 적에게 번개 대미지 행운 부여",
+  "독의 지배자2": "60% 확률로 몰락한다; 몰락 대미지 20% 증가",
+  "혼돈의 천재": "비 부식 대미지가 20% 추가된 부식 대미지",
+  "혼돈의 천재2": "비 부식 대미지가 30% 추가된 부식 대미지",
+  "혼돈의 천재3": "비 부식 대미지가 40% 추가된 부식 대미지",
+  "해동의 일격":
+    "몬스터가 빙결을 부여할 경우, [감속]이 1회 부여된다. 몬스터가 [감속]을 부여할 때마다 자신의 냉기 저항 -6%",
+  "교묘한 수단":
+    "랜덤으로 아래 효과를 하나 발동한다. 6초간 지속하고, 해당 효과는 1초 내에 최대 4회 발동한다:\n20레벨의 대체적으로 유용한 자극 스킬 또는 실드 스킬을 하나 발동한다.\n전쟁의 신 축복을 5회 획득한다.\n메인 액티브 스킬을 10회 발동한다. 간격 0.2초.\n최대 중첩의 강건, 황홀, 집요한 축복을 획득한다.\n프로스트 트랜스퍼를 발동하고 받는 대미지 별도 -20%",
+  "디스엠버 폭발":
+    "지면에 결집한 디스엠버 에너지는 형태가 갖춰지면 대미지를 입힘.",
+  "소멸의 블랙홀":
+    "지면에 결집한 블랙홀의 힘은 접근 시 흡수 효과 및 지속 대미지를 받음.",
+  "광폭화 상태": "대미지 및 속도가 향상되며, 받는 대미지도 증가함.",
+  "억제 상태": "대미지와 속도가 반감되나, 방어력이 2배로 증가함.",
+  거대화: "체격 증가와 동시에 스킬 범위도 비례해 증가한다.",
+  "야욕의 화신":
+    "야욕의 화신은 큐브 시즌의 특수 몬스터이며, 맵에 전용 마크로 표시된다. 노멀 야욕의 화신을 처치하면 일정 확률로 야심의 결정을 획득하며, 강적 야욕의 화신을 처치하면 신력 휘석이 드롭된다.",
+  "야심의 결정":
+    "야심의 결정은 큐브 시즌의 특수 드롭 아이템이다. 노멀 야욕의 화신을 처치하면 일정 확률로 획득할 수 있으며, 탐욕의 큐브 활성화에 사용된다.",
+  "신력 휘석":
+    "여섯 신의 위엄이 실체화된 것으로, 신들의 강복에서 아이템으로 교환할 수 있다.\n(신들의 강복은 엠버의 숨결 내 시공의 나그네에서 오픈 가능)",
+  사제: "야욕 고행자와 야욕 순교자로 구성된 야욕의 사제는 큐브 시즌의 특수 강적이다. 야욕 고행자는 주변의 아군이 받는 대미지를 줄이면서 속도를 감속시킨다. 야욕 헌신자는 주변의 아군이 받는 대미지를 높이면서 속도를 가속시킨다.",
+  "야욕 심판자":
+    "야욕 심판자는 큐브 시즌의 특수 강적이다. 처치 시 진귀한 보상을 획득할 수 있다.",
+  "스페셜 이벤트":
+    "다음 보상 중 1가지 획득:\nR등급 보상 2개 획득.\nR등급 보상 3개 획득.\nR등급 보상 4개 획득.\nSR등급 보상 1개 획득.",
+  "커지는 욕심": "탐욕이 별도 추가됩니다.",
+  "욕심 억제": "야욕의 화신이 강림한다.",
+  "욕심 파괴": "탐욕의 큐브를 파괴하고 모든 보상을 몰수한다.",
+  "극욕의 화신":
+    "야욕 고해자, 야욕 감시자, 야욕 처형관, 야욕 계율자, 야욕 배신자, 야욕 기만자로 구성된 극욕의 화신은 큐브 시즌의 특수 강적으로, 맵에서 특수한 마크로 표시된다. 이들을 처치하면 더 많은 신력 휘석 또는 야심의 결정이 드롭된다.",
+  "야욕 계율자":
+    "야욕 계율자는 큐브 시즌의 특수 강적이다. 처치 시 신력 휘석이 대량 드롭된다.",
+  "무한 영원한 미궁의 도시":
+    "현재 최고 레벨의 영원한 미궁의 도시를 클리어할 때마다 승급하며, 레벨이 높을수록 난이도가 높아지고 보상도 많아진다.\n초기 최고 레벨은 20이며, 영원의 시의 일부 노드를 통하여 올릴 수 있다.",
+  "랜덤 4칸":
+    "커버 가능한 구역이 좁으나, 커버된 보상의 방에서 더블 보상을 제공한다.",
+  "혼불 융합":
+    "혼불 두 개를 하나로 합쳐 새로 생성된 혼불은 재료의 특성을 일부 보존하며, 예측하기 어려운 변화가 발생하기도 한다.",
+  스페셜:
+    "특별한 영원한 미궁의 도시는 보상의 방의 희귀도가 높아지거나, 보상의 방이 많아지거나, 모든 보상의 방이 동일한 타입의 보상을 보유하는 등 특별한 변화가 발생한다.\n캐릭터 레벨이 59레벨 이상인 경우에만 출현한다.",
+  "미궁 벽돌":
+    "미궁 벽돌은 미궁 건축이 완료 후 배치하며, 영원의 미궁 구조를 개선할 수 있다.",
+  "미궁 촛농": "혼불 융합 시 사용하는 화폐",
+  "함성 옵션": "포함:\n- 함성 시전 속도\n- 함성 범위",
+  "그림자 습격 옵션": "포함:\n- 그림자 습격 스킬 대미지\n- 환영 대미지",
+  "베기 옵션": "포함:\n- 베기 스킬 대미지\n- 확률적으로 획득하는 슬래시 횟수",
+  "파괴 옵션": "포함:\n- 파괴 스킬 대미지\n- 파괴 에너지 축적 회복 속도",
+  "수평 사격 옵션": "포함:\n- 수평 투사체 대미지\n- 바운스 횟수",
+  "발사 옵션":
+    "포함:\n- 포물선 투사체 대미지\n- 포물선 투사체 공격 및 시전 속도",
+  "추락 옵션": "포함:\n- 수직 스킬 대미지\n- 수직 스킬 범위",
+  "폭격 옵션": "포함:\n- 폭격 스킬 대미지\n- 폭격 스킬 범위",
+  "물리 옵션": "포함:\n- 물리 대미지\n- 공격 및 주술이 일정 확률로 아머 무시",
+  "번개 옵션": "포함:\n- 번개 대미지\n- 번개 관통",
+  "냉기 옵션": "포함:\n- 냉기 대미지\n- 냉기 관통",
+  "화염 옵션": "포함:\n- 화염 대미지\n- 화염 관통",
+  "부식 옵션": "포함:\n- 부식 대미지\n- 부식 관통",
+  "채널링 옵션": "포함:\n- 채널링 스킬 공격 및 시전 속도\n- 최대 채널링",
+  "지속 옵션": "포함:\n- 지속 대미지\n- 스킬 지속 시간",
+  "저주 옵션": "포함:\n- 저주 효과\n- 저주 스킬 범위",
+  "오라 옵션": "포함:\n오라 효과 감소\n오라 스킬 MP 봉인 보상 증가",
+  "발동 옵션": "포함:\n- 촉발 스킬 대미지\n- 촉발 스킬 쿨타임 회복 속도",
+  "주입 옵션": "포함:\n- 주입 스킬 대미지\n- 주입 효과",
+  "체인 옵션": "포함:\n-체인 스킬 대미지\n-체인 스킬 바운스 횟수",
+  "보초병 옵션": "포함:\n-보초병 대미지\n-한 번에 배치할 수 있는 보초병 수",
+  "소환 옵션": "포함:\n-소환체 대미지\n-소환체 공격 및 시전 속도",
+  "지면 옵션": "포함:\n-지면 스킬 대미지\n-지면 에너지 축적 회복 속도",
+  "광선 옵션": "포함:\n-광선 스킬 대미지\n-광선 스킬 추가 굴절 횟수",
+  "미궁 시즌 보상": "혼불, 한정 레전드 장비, 왕후의 심지 포함",
+  "미궁 최고 레벨":
+    "미궁 최고 레벨의 제약으로 미궁 최고 레벨보다 높은 레벨을 선택할 수 없습니다.\n최초 미궁 최고 레벨은 20이며, 영원의 시 포인트를 통해 향상시킬 수 있습니다.",
+  "일류 저격수":
+    "투사체 대미지가 100% 별도 추가하고, 투사체 속도가 30% 증가하며, 투사체가 모든 타깃을 관통한다. 1초간 지속",
+  "주술 과부하":
+    "8초 내에 주술 스킬을 1회 시전할 때마다 시전 속도가 1% 증가하고, MP 5%를 소모한다.",
+  "불가사의한 수련":
+    "범위 주술 스킬 범위에 4초마다 60% 확장 및 30% 축소 효과가 교대로 나타난다.",
+  전도성:
+    "중첩 1회당, 크리티컬 10%와 크리티컬 대미지 10%가 제공되며, 감전 발생 확률이 5% 증가한다. 초당 최대 1회 획득 가능, 8초간 지속",
+  "서리안개의 강림":
+    "공격이 적중할 때마다 나와 적에게 상태를 부여한다. 중첩 1회당, 공격 속도와 이동 속도가 3% 감소하고, 자신의 공격 속도와 이동 속도는 3% 증가한다. 최대 30%까지 증가, 8초간 지속",
+  인내: "인내 1포인트 당, 1초마다 HP 1포인트 자연 회복, 1초마다 HP 0.1% 자연 회복, 아머 1%를 제공한다. 인내 1포인트 8초간 지속",
+  "공허 고스트 스피어":
+    "자신에게 물리 대미지 50-100 부여, 간격 0.5 초, 5 초간 지속",
+  "번개 체인":
+    "적을 적중하는 경우, 적의 번개 저항을 10% 감소시킨다. 8초간 지속. 낮은 대미지를 입히고, 투사체는 체인을 3회 부여한다.",
+  "황제의 진노":
+    "저주에 면역된다. 공격 및 주술 막기가 30% 증가하며, 스킬 소모가 50% 별도 감소한다.",
+  고통: "받는 부식 대미지가 10% 추가 증가하고, 이동 속도가 8% 감소한다. 최대 5회",
+  "흥분 장벽":
+    "장벽이 지속되는 동안 원소 대미지가 20% 별도 추가하며, 원소 대미지가 100% 반사된다.",
+  "경화된 장벽":
+    "장벽이 지속되는 동안 물리 대미지가 20% 별도 추가하며, 물리 대미지가 100% 반사된다.",
+  "드래곤 하트":
+    "스킬 소모가 50% 별도 추가하며, 메인 스킬의 이중 대미지 부여 확률이 30% 증가한다.",
+  "침식의 근원":
+    "1초마다 HP를 2% 소모하며, 적중당할 경우 최대 HP를 8% 회복한다. 간격 1초",
+  "그로시브 에너지":
+    "1초마다 MP를 2% 소모하며, 적중당할 경우 최대 MP를 8% 회복한다.",
+  "보호막 침식":
+    "보호막 충전 속도가 20% 감소하며, 적중당할 경우 최대 보호막을 8% 회복한다. 간격 0.2초",
+  "그로시브 하트": "15미터 내의 적의 원소 및 부식 저항 -40%",
+  "공허의 주인":
+    "물리 대미지의 100%가 부식 대미지로 전환되며, 받는 부식 대미지가 20% 별도 감소한다. 5초간 지속",
+  왕권: "중첩 1회당, 채널링 스킬 대미지가 1% 별도 추가하고, 받는 대미지가 1% 별도 감소한다. 최대 10회 중첩, 4초간 지속",
+  "영원한 투지":
+    "영원한 투지 중첩 1회당, 대미지가 5% 증가하고, 공격 및 시전 속도가 1% 증가한다. 45초간 지속",
+  "영원한 악몽":
+    "영원한 악몽 중첩 1회당, 크리티컬 수치가 1% 증가하고, 크리티컬 대미지가 1% 증가한다. 45초간 지속",
+  "영원의 허영":
+    "영원의 허영 중첩 1회당, 스킬 범위 +5%, 이동 속도 +1%, 최대 50 회, 45 초간 지속",
+  "영원의 수호":
+    "영원의 수호 중첩 1회당, 방어가 5% 증가하고, 상태 이상 회피 확률이 1% 증가한다. 45초간 지속",
+  "영원의 클론":
+    "영원의 클론 중첩 1회당, 스킬 지속시간이 5% 증가하고, 스킬 쿨타임 회복 속도가 1% 증가한다. 45초간 지속",
+  "영원의 지배자":
+    "영원의 지배자 중첩 1회당 별도 대미지 +10%(곱연산), 체격 +10%, 최대 10회, 45초 지속",
+  "증강 효과":
+    "공격 대미지가 15% 별도 추가하고, 스킬 범위가 10% 증가한다. 최대 3회 중첩, 15초간 지속",
+  격앙됨:
+    "스킬 소모가 0.3% 별도 감소하고, HP 반환 간격이 0.3% 별도 감소하며, 대미지가 5% 증가한다. 최대 100회 중첩, 중첩 1회당 5초간 지속",
+  명상: "연속 공격 대미지가 10%씩 증가하고, 받는 대미지가 5% 별도 감소한다. 최대 5회 중첩, 10초간 지속",
+  압도: "위중 상태 상태에서 받는 대미지가 12% 별도 추가된다. 위중 상태 상태에서 입히는 대미지가 12% 별도 감소한다. 4 초간 지속",
+  "신의 뜻을 거역한다.":
+    "전의가 추가 기본 효과 획득: 전의 1포인트 당 크리티컬 3% 감소.\n방황 효과 99% 감소. 방황 보유 시 약화 보유.\n장벽 보유 시 1초마다 HP와 보호막을 6% 상실한다.\n강건한 축복이 추가 기본 효과 획득: 중첩 1회당 5%의 추가 대미지를 입는다.\n집요한 축복이 추가 기본 효과 획득: 중첩 1회당 이중 대미지를 입힐 확률 6% 감소.\n황홀한 축복이 추가 기본 효과 획득: 중첩 1회당 공격 및 시전 속도 15% 감소.",
+  "비동기 호출":
+    "시전 속도의 보너스와 추가 보너스의 75%가 공격 보초병의 시전 빈도에 동일하게 적용된다.\n공격 속도의 보너스와 추가 보너스의 75%가 주술 보초병의 시전 빈도에 동일하게 적용된다.",
+  엄숙: "중첩 1회당 스킬 범위가 10% 증가하며, 최대 보호막의 1%만큼 물리 대미지가 추가된다. 최대 5 회",
+  "거룡의 후예의 증오":
+    "이 방패에는 힘의 신에 대한 사악한 용의 증오가 담겨 있다. 강건한 축복을 보유한 적 타깃에게 대미지를 입힐 때, 20%의 확률로 사악한 용의 공격이 발동된다, 간격 0.2초. 적 적중 시, 적을 금색으로 물들인다.",
+  "작은 사나이":
+    "모든 마령의 초기 성장치가 60 증가하고, 체격이 -50% 감소한다. 재결합 시 대미지에 면역된다.",
+  향연: "반환 간격이 30% 별도 감소하고, 아머 관통이 30% 증가하며, 자신의 아머가 0로 고정된다, 2초간 지속.",
+  굴레: "냉기 대미지 별도 +14%, 받는 지속 대미지 별도 -7%, 최대 4 회, 5 초 지속(곱연산)",
+  "눈부신 빛":
+    "그림자 습격 스킬이 +10%의 확률로 대미지를 3배 부여한다, 최대 10회 중첩.",
+  "속죄자의 행진":
+    "체격이 5% 축소하고, 크리티컬이 5% 별도 감소한다(곱연산). 1초마다 HP, MP, 보호막을 1% 상실한다. 최대 10회, 2초 지속",
+  소형화:
+    "체격 15% 축소하고, 이동 속도가 10% 증가하며, 받는 지속 대미지가 5% 별도 감소한다.",
+  "빛나는 태양":
+    "슬래시 확률 +6%당, 베기 스킬 범위 +1%, 슬래시 대미지 별도 +1%",
+  전지전능: "에너지 대량 보유",
+  얼룩: "최근 부여한 물리 대미지에 소환체 원소 대미지 및 부식 대미지 별도 +40%. 최근 부여한 원소 대미지에 소환체 부식 대미지 및 물리 별도 +40%. 최근 부여한 부식 대미지에 소환체 원소 대미지 및 물리 대미지 별도 +40%",
+  "장벽 폭발":
+    "주변 적에게 장벽 수치의 일정 비율만큼 주술 화염 대미지를 입힌다.\n스킬 태그: 힘, 지혜, 주술, 화염, 범위",
+  엠버: "크리티컬 불가, 화염 대미지 별도 +30%, 이동 속도 +30%, 갱신 불가",
+  "신의 향유":
+    "모든 축복의 기본 효과 전환: 대미지 별도 +4%, 받는 대미지 별도 -4%\n각 축복의 최대 중첩 수는 4",
+  "철장 속의 맹수":
+    "최근 1 초 동안 이동 거리가 12 미터 이상일 경우, 공격 속도 추가 +15%, 이동 속도 +15%\n최근 1 초 동안 이동 거리가 12 미터를 초과하지 않을 경우, 대미지 별도 +35%, 체형 +35%",
+  "부패의 과실":
+    "스킬 시전 시, 부식 간접 대미지를 100 포인트 받는다. 간격 0.1초\n모든 스킬 레벨 +3",
+  "전우의 우애": "소환체가 허리띠의 보너스를 획득한다.",
+  "축성 고행":
+    "정밀 마법의 근원 1 레벨을 보유한다.\n정밀 마법의 근원이 추가 기본 효과 획득: 대미지의 20%를 MP로 우선 차감",
+  "길 잃은 새":
+    "공격 수평 투사체 획득:\n영구 관통\n투사체 속도 추가 -15%\n돌아오는 투사체의 투사체 속도 추가 +35%\n돌아오는 투사체의 대미지 별도 +30%",
+  폭풍: "공격 수평 투사체 획득:\n투사체 속도 +30%\n적의 거리가 멀수록 주는 대미지가 추가된다. 최대 10미터 밖의 적에 대한 대미지 별도 +150%",
+  윈드필드:
+    "윈드필드 안에 있는 적의 이동 속도 추가 -20%, 0.4 초 간격으로 유저가 있는 방향으로 1회 넉백된다.\n윈드필드의 반경은 15 미터이다.",
+  "영원한 투지(하급)":
+    "영원한 투지(하급) 중첩 1회당 대미지 +5%, 공격 및 시전 속도 +1%, 15 초간 지속",
+  "영원한 악몽(하급)":
+    "영원한 악몽(하급) 중첩 1회당, 크리티컬 +5%, 크리티컬 대미지 +1%, 15 초간 지속",
+  "영원의 허영(하급)":
+    "영원의 허영(하급) 중첩 1회당, 스킬 범위 +5%, 이동 속도 +1%, 최대 50 회, 15 초간 지속",
+  "삼상 율법":
+    "공격 적중으로 원소 대미지 부여 시 무조건 원소 대미지 5배 부여\n공격 적중 시 원소 1개가 랜덤으로 선택되어 해당 원소의 대미지를 입히고, 선택되지 않은 원소는 대미지를 입힐 수 없다. 플랫 대미지 비율이 낮은 원소일수록 선택될 확률 증가\n원소 대미지만 입힐 수 있다\n대미지 유형 전환 불가",
+  "삼상 신성율법":
+    "공격 적중으로 원소 대미지 부여 시 무조건 원소 대미지 6배 부여\n공격 적중 시 원소 1개가 랜덤으로 선택되어 해당 원소의 대미지를 입히고, 선택되지 않은 원소는 대미지를 입힐 수 없다. 플랫 대미지 비율이 낮은 원소일수록 선택될 확률 증가\n원소 대미지만 입힐 수 있다\n대미지 유형 전환 불가",
+  "고급 장벽 폭발":
+    "주변 적에게 남은 장벽의 400%만큼 주술 화염 대미지를 입힌 후 장벽 제거. 해당 대미지는 스킬 레벨에 따라 달라짐.\n해당 스킬의 이상 대미지 별도 -60%\n스킬 태그: 힘, 지혜, 주술, 화염, 범위",
+  소거: "물리 및 원소 대미지의 100%가 부식 대미지로 전환된다. 보초병 및 주술 부착 스킬에 적용 불가",
+  "드림 게이트":
+    "중첩 1회당 이동 속도 +10%, 받는 대미지 별도 -5%, 10 초간 지속, 최대 5 회 중첩된다.",
+  공모: "듀얼 시, 서브 무기는 공격하지 않는다.\n서브 무기 대미지의 100%가 메인 무기 기본 대미지에 추가된다.",
+  "끝없는 탐욕":
+    "공격 속도 보너스의 150%가 매직 버스트 충전 속도에도 동일하게 적용된다.",
+  광환: "스킬 범위 +48%\n광환 범위 내의 적이 받는 대미지 별도 +40%\n광환 범위 내의 적은 자신의 6 미터 내에 있는 것으로 간주된다.",
+  헤일로:
+    "스킬 범위 +48%\n헤일로 범위 내의 적이 받는 대미지 별도 +60%\n헤일로 범위 내의 적은 자신의 3 미터 내에 있는 것으로 간주된다.",
+  캐슬링:
+    "막기 확률은 막기 비율과 동일하며, 해당 대미지 유형의 막기 비율은 그 막기 확률과 동일합니다.\n반드시 막기 불가",
+  "무효의 인과":
+    "공격 막기 확률과 주술 막기 확률이 같을 경우, 막기 비율 +30%\n공격 막기 확률과 주술 막기 확률이 다를 경우, 높은 수치가 막기 행운을 획득한다.",
+  "신념의 검":
+    '막기 비율막기 시 기본적으로 30%의 대미지가 상쇄된다. 막기 비율 증가 시 상쇄 비율도 상승한다.">막기 비율과 최대 막기 비율최대 막기 비율 기본 60%, 최대 80%">최대 막기 비율 +10%\n공격 또는 주술 막기 확률 +4% 보유 시마다 자신과 소환체의 대미지 별도 +1%',
+  "죄의 사면":
+    '막기 비율막기 시 기본적으로 30%의 대미지가 상쇄된다. 막기 비율 증가 시 상쇄 비율도 상승한다.">막기 비율과 최대 막기 비율최대 막기 비율 기본 60%, 최대 80%">최대 막기 비율 +10%\n막기 비율 +2% 보유 시마다 받는 지속 대미지 별도 -1%',
+  "삼생의 가호":
+    "행운 대미지 효과 전환: 3회의 랜덤 대미지 수치를 판정하여 가장 높은 값을 취한다.\n행운 대미지",
+  "고급 원소 충격":
+    "대미지 스킬을 보조한다.\n보조 대상 스킬이 최근 원소 대미지를 1가지 부여한 경우, 다른 2가지 원소 대미지 별도 +16%",
+  "거대한 사나이":
+    "모든 마령의 초기 성장치가 80 증가하고, 체격이 +10% 감소한다. 재결합 시 대미지에 면역된다.",
+  "흩날리는 마음":
+    "공격 속도 보너스와 추가 보너스의 100%가 폭발 쿨타임 회복 속도에도 동일하게 적용된다.",
+  히스테리:
+    "최대 HP와 최대 보호막을 더한 값의 3%에 해당하는 대미지를 입을 때마다 분노가 1포인트씩 생성된다.\n최대 HP의 3%를 소모할 때마다 분노가 1포인트씩 생성된다.\n손실된 HP 1%당 공격 대미지 별도 +0.3%",
+  "바람의 방아쇠":
+    "공격 및 시전 속도 증가 또는 감소의 15%가 특수 탄약의 장전 확률에도 동일하게 적용된다.\n특수 탄약은 슬롯 순서에 따라 장전된다.",
+  "영원한 동력":
+    "마술 사격 중 특수 탄약을 1개 소모할 때마다 마술 사격 지속 시간이 0.04초씩 연장된다.",
+  우로보로스:
+    "투사체는 최대 비행 거리에 도달한 뒤 되돌아와서 경로 상의 적을 다시 적중할 수 있다.\n투사체 사거리 -50%\n반환된 투사체의 대미지 별도 -70%",
+  "돌진 사격":
+    "투사체 스킬 시전 시 탄약 1개를 소모할 때마다 위치 이동 스킬의 현재 쿨타임 -20%\n위치 이동 스킬 사용 후 대미지 별도 +15%, 4초 지속",
+  "극단적 온도차":
+    "과열 중첩수가 온도 상승을 초과하고 10초 이상 지속되면, 10초 동안 적온 상태를 획득한다.\n적온이 끝나면 즉시 장전하며, 과열 10회당 장전 시간 +0.1초, 최대 +2초\n0.3초 내에 특성 스킬을 연속 2회 누르면 즉시 적온이 가동된다.",
+  "불타오르는 전쟁":
+    "온도 상승이 최대 중첩 상태일 경우 장전 완료 후 온도 상승을 상실하지 않고, 탄약도 장전하지 않는다.\n공탄 사격 동안 투사체 스킬을 시전할 때마다 +40%의 확률로 과열 1회 추가 획득, 해당 스킬의 대미지 별도 +25%",
+  놀이: "최근 이동한 거리 2미터당 공격 속도 추가 +6%, 최대 4회 중첩",
+  "야성의 전광": "이동 속도 +1%당 마취 효과 추가 +0.5%, 최대 +60%",
+  "금빛 무늬":
+    "마취 확률 +1%당 +1%의 확률로 캣츠 실루엣이 부여하는 마취 지속 시간이 2배가 된다.\n마취 효과 추가 +20%",
+  스피드캣:
+    "적에게 마취를 4회 부여할 때마다 이동 속도 +2%, 대미지 별도 +1%, 캣츠 실루엣 범위 +3%, 최대 10회 중첩, 10초 지속",
+  "위험한 도망":
+    "최소 20미터 이동 후 다음번 폭탄 투척 시 폭탄 수량 +1\n최근 이동한 거리 4미터당 이동 속도 +1%, 최대 +15%",
+  "허실 투척":
+    "폭탄 투척 수량 2배\n폭탄이 40%의 확률로 불발탄이 되어 입히는 대미지 별도 -95%",
+  "미친 사냥개":
+    "폭탄이 최대가 아닌 경우 더 이상 자동으로 폭발되지 않는다.\n특성 스킬을 눌러 땅에 떨어진 모든 폭탄을 수동으로 폭파할 수 있다.\n폭탄 폭파 시 현존하는 폭탄 1개당 대미지 별도 +4%, 최대 별도 +48%",
+  "움직이는 얼음불":
+    "얼음불의 폭주시 원소 관통 +12%, 이동 속도 +20%\n얼음불의 폭주 쿨타임 회복 속도 +20%",
+  "겨울밤의 결빙":
+    "처음으로 적에게 동결 부여 시 동결 지속 시간 추가 +100%\n동결된 적에게 주는 대미지 별도 +40%",
+  빙화전환:
+    "냉기 대미지의 99%가 화염 대미지로 전환된다.\n빙결된 적의 화염 저항이 15%로 고정된다.",
+  "치맛속 신하":
+    "받는 물리 대미지의 20%가 화염 대미지로 전환된다.\n지옥 범위 내의 적이 받는 물리 대미지의 100%가 화염 대미지로 전환된다.\n지옥 범위 내의 적이 받는 화염 대미지 별도 +30%\n지옥 범위 내의 적이 받는 화염 대미지 별도 +30%",
+  "희망의 예언":
+    "신의 은총이 현재 모든 강건한 축복과 황홀한 축복을 소모한다.\n신의 은총이 축복을 1회 소모할 때마다 모든 대미지 별도 +2%, 10초 지속, 최대 20회 중첩",
+  "공정한 예언":
+    "황홀한 축복 또는 강건한 축복 최대 중첩수 보너스의 최대가 집요한 축복 최대 중첩수 보너스에도 동일하게 적용된다.\n쿨타임 회복 속도 추가 -25%",
+  "성자의 걸음":
+    "신의 영역 스킬 반경 -70%\n신의 영역 범위 안에 있지 않은 경우 손실된 HP 4%당 받는 대미지 별도 +1.7%\n신의 영역 범위 안에 있지 않은 경우 대미지를 입히면 현재 HP 백분율이 자신보다 높은 적도 건강 상태로 간주한다.",
+  "현자의 오명":
+    "모독 타깃 6미터 내의 강적도 모독을 최대 2개까지 받을 수 있다.\n모독 타깃을 처치하는 즉시 최대 HP, 보호막, MP를 5% 회복한다.\n모독 타깃에게 대미지를 입히는 경우 공격, 이동, 시전 속도 +15%, 5초 지속, 중첩 불가",
+  "모독의 끝":
+    "모든 최대 축복이 0인 경우 최대 축복을 높이는 옵션의 기본 효과가 최대 모독 증가로 전환된다.\n모독 효과 변경: 타깃이 최대 HP를 5% 상실할 때마다 받는 부식 대미지가 1.7% 별도 추가(곱연산)된다.",
+  "MP 없어":
+    "시공간의 환상을 시전하면 자신의 MP를 메인 스킬의 MP 소모량만큼 소모한다.\n최근 시공간의 환상이 MP를 소모할 때마다 자신과 시공간의 환상 대미지 별도 +5%, 최대 10회 중첩",
+  "MP 좀 채울게":
+    "최대 MP를 35% 봉인하고, 시공간의 환상이 더는 시전 빈도의 제한을 받지 않는다.\n시공간의 환상 시전 빈동 +4%당 시공간의 환상 대미지 별도 +1%",
+  "시공 격변":
+    "비틀어진 시공간이 지속되는 동안 지속 대미지 별도 +30%\n비틀어진 시공간은 범위 내의 강적에게만 혼돈의 시공간을 부여하며, 범위 내에 강적이 없는 경우 기록을 초기화할 수 없다.",
+  "시공 팽창":
+    "비틀어진 시공간 및 혼돈의 시공간 지속 시간 추가 +50%\n혼돈의 시공간을 보유한 적도 비틀어진 시공간에 있는 것으로 간주된다.",
+  베르세르크: "소환체가 처음 획득하는 과부하의 과부하 효과 추가 +120%",
+  "사생결단의 각오":
+    "소환체가 과부하를 획득 및 상실하는 경우 1초마다 최대 HP와 보호막을 합한 값의 100%에 해당하는 간접 부식 대미지를 받는다. 3초 지속\n과부하 효과 추가 +50%",
+  "유격 전술":
+    "기계 부품의 줍기 반경 +50%\n최근 주운 기계 부품 1개당 자폭 프로세스의 돌격 속도 추가 +2%, 자폭 프로세스 대미지 별도 +3%, 최대 10회 중첩",
+  "속도가 재산":
+    "소환체 공격 속도 보너스와 추가 보너스의 25%가 자폭 프로세스 대미지 보너스와 별도 보너스에도 동일하게 적용된다.",
+  "속박을 벗어던져라": "마령 스킬의 MP 봉인 보상 +100%\n양분 최대 중첩수 +1",
+  "그것과 함께 자라다":
+    "특성 스킬 성장의 미풍을 자동으로 발동한다.\n마령과 매치되는 스킬의 스킬 레벨 +1당 마령이 스킬 시전 시 -4%의 확률로 양분을 1회 상실한다. 최대 -20%",
+  "산들바람의 속삭임":
+    "마령의 강화 스킬 사용 확률 +30%\n융합된 마령이 강화 스킬을 시전할 때마다 최대 HP 2.5%회복, 온풍 최대 중첩수 +1, 0.9초 간격으로 온풍 최대 중첩수 +1, 재결합 상태에 진입할 때까지 지속된다.",
+  "따뜻한 수호":
+    "융합된 마령이 최대 HP를 5% 소모할 때마다 온풍 최대 중첩수 +1, 최대 +15\n융합된 마령이 적을 처치하는 경우 온풍을 1회 획득한다.",
+  "만물의 온기":
+    "수호 상태인 동안 아이리스가 받는 대미지 별도 -20%\nHP 자연 회복 속도와 초당 HP 자연 회복 속도의 보너스 또는 추가 보너스의 50%가 융합된 마령에도 동일하게 적용된다.\nHP 반환과 보호막 반환, HP 반환 간격과 보호막 반환 간격의 보너스 또는 추가 보너스의 100%가 융합된 마령에도 동일하게 적용된다.",
+  "불굴의 투지":
+    "현재 보유 중인 살의 1포인트당 성광의 영역 안에 있는 적에게 주는 대미지 별도 +0.3%, 살의 회복량 +1%",
+  임기응변:
+    "성광의 영역 안에서 막기 시 대미지 별도 +20%, 2초 지속, 최대 별도 +40%",
+  "해면 아래의 발라드":
+    "조수의 범위가 더 이상 스킬 범위의 영향을 받지 않는다.\n스킬 범위 증가 또는 감소의 100%가 조수 효과에도 동일하게 적용된다. 최대 +90%",
+  "바다거품의 야곡":
+    "채널링 최대 또는 최소 중첩수 +1당 거품 비행 속도 +12%, 조수 효과 추가 +16%, 최대 5회 중첩\n채널링 최소 중첩수는 음유의 노래에 2회 적용된다.",
+  "이미테이션 루나: 근원":
+    '기본 특성에 기본 특성 슬롯히어로 기본 특성에 작용하는 추억 슬롯, 히어로 추억의 부활 옵션을 통해 제공된다.">특수 추억 슬롯이 추가되며, 절대자레드 등급">절대자 등급 이하의 근원근원의 추억: 위치 1에 장착할 수 있다.">근원 추억을 장착할 수 있다. 해당 슬롯에 장착한 추억은 기본 속성과 랜덤 옵션의 수치가 20% 감소한다.\n기본 특성이 최고 레벨 달성 시 추가 옵션을 획득한다.',
+  "과격한 진화론: 포악":
+    '마령의 근원마령 소환 스킬 활성화 후 획득하는 버프 효과.">마령의 근원 효과에 대한 최종 보너스의 100%가 포악의 오라 효과 보너스에도 동일하게 적용된다.',
+  "반작용의 무지개":
+    '과잉고정 최대치를 초과한 부분">과잉 원소 이상 상태 회피 확률이 1%당 +0.5% 확률로 원소 대미지를 받는 경우, 최대 원소 저항을 유효고정 최대치를 초과하지 않는 부분">유효 원소 저항으로 간주한다.\n과잉고정 최대치를 초과한 부분">과잉 원소 이상 상태 회피 확률을 1% 보유할 때마다 +0.5% 확률로 원소 대미지를 입힐 경우, 적의 원소 저항 역전환적의 기존 원소 저항 수치를 상응하는 마이너스 수치로 변경한다.">원소 저항이 역전환된다.',
+  "두 번째 의지의 혼란":
+    '대미지를 입히는 경우 제어류 상태빙결, 동결, 마비, 넉백, 약화, 감속, 조롱 및 실명 포함">제어류 상태를 1개 랜덤으로 부여하고(동결, 넉백 제외), 부여되지 않은 상태를 우선 시전한다. 해당 효과의 간격 1 초\n시전하는 마비받는 대미지가 15% 추가된다.">마비와 약화주는 대미지가 10% 별도 감소한다.">약화 효과 +200%',
+  "만병통치약의 부작용":
+    "약병이 선택하지 않은 약재 효과를 추가하며, 선택한 약재 및 해당 약재의 효과는 더 이상 적용되지 않는다.\n히어로 특성 한정: 약사·세이지|리코리스 노트",
+  "기초 약리학 필사본":
+    "기본 약병이 추가하는 약재 효과 추가 +150%\n히어로 특성 한정: 약사·세이지|리코리스 노트",
+  "영웅의 지략":
+    '폭발발동 시, 3 미터 범위 내의 적에게 무기 대미지의 340%만큼 범위 폭발 대미지를 입힌다. 듀얼 상태일 경우, 기본 대미지는 두 무기의 평균값이다.\n스킬이 1레벨 증가할 때마다 폭발 대미지 별도 +10%(곱연산)\n스킬 태그: 공격, 근접전, 물리, 발동, 범위, 힘, 민첩">폭발이 폭발술발동 시 3 미터 범위 내의 적에게 1458-2430 포인트 주술 물리 대미지를 입히고, 해당 스킬의 대미지 효율은 360%다.\n스킬이 1레벨 증가할 때마다 폭발 대미지 별도 +10%(곱연산)\n스킬 태그: 주술, 물리, 발동, 범위, 힘, 민첩">폭발술로 변경되며, 매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 활성화를 허용한다.\n해당 특성 중 공격만으로만 발동되는 모든 조건이 적중 시 발동되는 것으로 변경된다.\n기본 특성에서 근접전 스킬 사용 시 분노를 생성하는 효과가 스킬 사용 시 분노를 생성하는 것으로 변경된다. 공격 적중 시 폭발을 발동하는 효과가 적중 시 폭발술발동 시 3 미터 범위 내의 적에게 1458-2430 포인트 주술 물리 대미지를 입히고, 해당 스킬의 대미지 효율은 360%다.\n스킬이 1레벨 증가할 때마다 폭발 대미지 별도 +10%(곱연산)\n스킬 태그: 주술, 물리, 발동, 범위, 힘, 민첩">폭발술을 발동하는 것으로 변경된다.\n히어로 특성 한정: 버서커·리한|분노의 불꽃',
+  "진노의 포효":
+    '광분광분 상태에서는 최대 분노의 2배만큼 보너스를 획득한다.\n분노 소진 시 광분 상태가 종료된다.">광분 상태에서 공격이 크리티컬 발동 시 폭발발동 시, 3 미터 범위 내의 적에게 무기 대미지의 340%만큼 범위 폭발 대미지를 입힌다. 듀얼 상태일 경우, 기본 대미지는 두 무기의 평균값이다.\n스킬이 1레벨 증가할 때마다 폭발 대미지 별도 +10%(곱연산)\n스킬 태그: 공격, 근접전, 물리, 발동, 범위, 힘, 민첩">폭발이 1회 발동되며, 쿨타임은 0.3 초다.\n히어로 특성 한정: 버서커·리한|분노의 불꽃',
+  "선대의 증오":
+    "对护盾返还间隔的额外加成也会作用于生命返还间隔\n愠怒之灵 2 秒内每使用一次攻击技能，额外 +4% 玩家自身受到的击中伤害，最多 40%\n愠怒之灵使用技能时，消耗 30% 当前生命\n英雄特性限定：狂人·雷恩|怒影",
+  "유성을 목격한 황야":
+    '진노의 영혼고대 선조의 영혼이 나타나면 위치 이동 및 채널링을 제외한 메인 근접 공격 스킬을 사용한다.">진노의 영혼은 이제 원거리 투사체 스킬(채널링 및 발사 스킬 제외)을 사용할 수 있으며, 해당 스킬만 사용한다.\n원거리 스킬 사용 시 분노를 15 포인트 생성한다.\n진노의 영혼이 시전하는 원거리 스킬의 투사체 수량 +2, 수평 사격 투사체 바운스수평 투사체 또는 체인 스킬로 타깃 명중 후, 근처의 다른 타깃에게로 점프한다.">바운스 횟수 +2, 수평 사격 투사체 관통수평 투사체는 타깃 명중 후 관통 최대치에 도달할 때까지 계속 비행한다.">관통 횟수 +2, 투사체 사이즈투사체의 크기가 변경된다.\n일반적으로 투사체 사이즈의 100%가 투사체의 사이즈에 적용된다.\n스킬 범위 보너스를 받는 투사체의 경우, 투사체 사이즈의 증가 또는 감소의 25%가 투사체의 추가 스킬 범위에 적용된다.\n투사체가 후속 범위 효과를 입힐 시, 투사체 사이즈의 증가 또는 감소의 25%가 후속 추가 스킬 범위에 동일하게 적용된다.\n후속: 폭발처럼 투사체가 발사된 후 입히는 효과">투사체 사이즈 +22%\n진노의 영혼이 시전한 원거리 스킬이 최대 비행 거리에 도달하면, 66% 확률로 되돌아온다.\n히어로 특성 한정: 버서커·리한|분노의 불꽃',
+  "성역과 지옥 사이":
+    '특성 스킬 시전 후 성광에 대한 참회성광의 영역 안에 있는 경우 임의의 스킬을 2 회 시전할 때마다 자신을 1회 공격하여 고정적으로 10 포인트 물리 대미지를 입힌다.\n성광의 영역 안에 있는 경우 막기 1 회당 막기 비율과 최대 막기 비율 +1%, 대미지 별도 +2%, 최대 15 회 중첩">성광에 대한 참회를 획득하며, 8 초간 지속한다.\n히어로 특성 한정: 라이트 브링어·로사|홀리 채리엇',
+  "무정의 칼날":
+    "지혜는 더 이상 대미지 보너스를 제공하지 않는다.\n지혜 수치가 힘과 민첩의 합과 동일하다.\n힘과 민첩 +120%\n히어로 특성 한정: 라이트 브링어·로사|언설리드 블레이드",
+  "미스릴이 씻어낸 것":
+    '미스릴의 정토보유한 미봉인 최대 MP 10%당, 공격 속도 추가 +2%, 원소 대미지 별도 +2%\n비 채널링 공격 스킬 사용 시, 미봉인 최대 MP를 15% 회복한다. 해당 효과는 버스트에 적용되지 않는다.">미스릴의 정토가 지속적으로 원소 이상점화, 빙결, 동결, 마취 포함">원소 이상 상태를 제거한다.\n빙결빙결은 냉기 대미지 적중 시 일정 확률로 발생하는 상태 이상이다. 빙결된 적은 공격 속도, 시전 속도, 이동 속도가 10% 감소한다. 기본 빙결은 10 포인트, 빙결 1 포인트마다 받는 냉기 대미지 별도 + 1%, 빙결이 100 포인트를 초과하면 적은 동결된다.">빙결을 시전하거나 제거 시 세례: 냉담받는 냉기 대미지 별도 -30%, 스킬 범위 +60%">세례: 냉담을 획득하며, 8 초간 지속한다.\n점화적중 시 일정 확률로 발생하는 상태 이상으로, 기본 점화 대미지에 따라 1초마다 화염 대미지를 입힌다. 4 초간 지속, 중첩 불가\n기본 점화 대미지가 0인 경우, 점화를 일으킬 수 없다.">점화를 시전하거나 제거 시 세례: 분노받는 화염 대미지 별도 -30%, 크리티컬 발동 시 대미지 별도 +30%">세례: 분노를 획득하며, 8 초간 지속한다.\n마취번개 대미지 적중 시 일정 확률로 발생하는 원소 상태 이상\n마취 상태의 적에게 번개 대미지를 적중시켜 해당 적의 최대 보호막과 HP의 합의 10%에 해당하는 대미지를 입힐 때마다 마취를 1회 부여한다. 해당 한계값은 감소 또는 증가할 수 있으나 최소는 1%이다.\n마취 기본 지속 시간은 2 초이며, 횟수별로 따로 계산된다.\n마취는 최대 10 회 중첩되며, 마취 1회당 받는 번개 대미지 별도 +5%">마취를 시전하거나 제거 시 세례: 태만받는 번개 대미지 별도 -30%, 최대 대미지 별도 +30%">세례: 태만을 획득하며 8 초간 지속한다.\n히어로 특성 한정: 라이트 브링어·로사|언설리드 블레이드',
+  "관념 유도꾼":
+    '시공간의 환상시공간의 환상이 주술 스킬만 사용할 수 있으며, 채널링 스킬과 소환 스킬은 사용하지 않는다.\n최대 1개의 [시공간의 환상]이 존재할 수 있으며, [시공간의 환상]이 상한에 도달하면 특성 슬롯을 클릭해 [시공간의 환상]을 소환할 수 있다.">시공간의 환상이 매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 소모 시, 유가에게도 매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 소모를 시도한다.\n히어로 특성 한정: 시공간의 증인·유가|시공간의 증인',
+  "제5우주 속도":
+    '매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 충전 속도 추가 -99%\n스킬 사용 시 100% 확률로 매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 충전을 2 회 즉시 획득한다. 간격 0.03초\n히어로 특성 한정: 시공간의 증인·유가|시공간의 환상',
+  "또 다른 시공간의 나에게":
+    '对扭曲时空中的敌人造成伤害时，收割 1.5 秒持续伤害，该效果对同一目标有 2 秒回复时间\n비틀어진 시공간비틀어진 시공간이 지속되는 동안 자신이 입힌 지속 대미지를 기록할 수 있다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고 트루 대미지를 입힌다.">扭曲时空的释放间隔降低为 1 秒\n+20% 비틀어진 시공간비틀어진 시공간이 지속되는 동안 자신이 입힌 지속 대미지를 기록할 수 있다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고 트루 대미지를 입힌다.">扭曲时空记录的所有伤害\n英雄特性限定：时空见证者·尤加|时空流逝',
+  "프라이빗 코스모스":
+    '비틀어진 시공간비틀어진 시공간이 지속되는 동안 자신이 입힌 지속 대미지를 기록할 수 있다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고 트루 대미지를 입힌다.">비틀어진 시공간 스킬 범위 추가 +200%\n혼돈의 시공간1초마다 균등하게 분담된 대미지에 해당하는 트루 대미지를 입힌다. 2초 지속">혼돈의 시공간 지속 시간 +80%\n비틀어진 시공간비틀어진 시공간이 지속되는 동안 자신이 입힌 지속 대미지를 기록할 수 있다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고 트루 대미지를 입힌다.">비틀어진 시공간은 플레이어만 동행한다\n히어로 특성 한정: 시공간의 증인·유가|시공 유실',
+  "만물을 기르는 봄비":
+    '양분스킬 사용 시 해당 회차 스킬 대미지 추가 +30%, 15초 지속, 최대 10회 중첩. 양분 효과는 자극 스킬 효과 보너스를 받는다.">润物可以施加给智械召唤物\n存在魔灵时，每 10 点生长值使智械召唤物额外 +9% 伤害，上限 +540%\n存在魔灵时，每 1% 强化技能使用几率，智械召唤物 -2% 几率失去润物\n模组化技能的冷却时间降低至 0.1 秒\n英雄特性限定：遗世魔灵·伊瑞斯|生长的微风',
+  "자연의 파티":
+    '양분스킬 사용 시 해당 회차 스킬 대미지 추가 +30%, 15초 지속, 최대 10회 중첩. 양분 효과는 자극 스킬 효과 보너스를 받는다.">양분에 기본 효과 추가:\n서리의 영혼: 적중 시 유저 자신의 손실된 HP와 보호막을 5% 회복한다. 간격 0.2 초. 양분 중첩 1회당 최대 빙결 +8\n번개의 영혼: 적중 시 마취를 시전한다. 간격 0.2 초. 양분 중첩 1회당 마취 상태의 적에 대한 번개 대미지 별도 +4%\n화염의 영혼: 양분 중첩 1회당 크리티컬 대미지 +16%, 크리티컬 -20%\n반석의 영혼: 받은 대미지의 20%를 소환체에게 전이하며, 양분 중첩 1회당 아머 수치 0.05%의 물리 대미지를 추가한다. 양분 1회당 최대 물리 대미지를 100 포인트 추가한다.\n부패의 영혼: 적중 시 악화를 부여하고 양분 중첩 1회당 악화 대미지 +4%\n히어로 특성 한정: 속세를 떠난 마령·아이리스|성장의 미풍',
+  "유연한 폭풍":
+    '수호마령을 제어하고, 마령 스킬을 사용하여 적에게 공격을 개시할 수 있다.\n자신이 제어하는 마령을 대신해 적에게서 오는 모든 대미지를 받는다.\n두 번째 스킬을 제외한 나머지 스킬은 마령 스킬로 전환되며, 융합된 마령의 궁극 스킬이 잠금 해제된다.\n두 번째 스킬은 공격 또는 시전 동작이 없는 스킬만 사용할 수 있다.\n마령 이동 제어 시, 실제 이동 속도는 아이리스의 이동 속도가 된다.">수호 상태 동안 마령이 강화 스킬마령이 기본 스킬을 사용하는 경우, 일정 확률에 따라 강도가 더 높은 강화 스킬로 전환된다. 확률은 육성할 수 있으며, 100%에 도달하면 마령은 더는 기본 스킬을 사용하지 않고 강화 스킬만을 사용한다.">강화 스킬을 2 회 사용 시마다 궁극 스킬마령이 특정 상태일 시 강도가 매우 높은 궁극 스킬을 사용한다.">궁극 스킬을 발동한다.\n마령은 궁극 스킬마령이 특정 상태일 시 강도가 매우 높은 궁극 스킬을 사용한다.">궁극 스킬을 사용할 수 없으며, 궁극 스킬마령이 특정 상태일 시 강도가 매우 높은 궁극 스킬을 사용한다.">궁극 스킬 대미지 별도 -30%\n히어로 특성 한정: 속세를 떠난 마령·아이리스|수호의 온풍',
+  "바람아 불어라":
+    '수호마령을 제어하고, 마령 스킬을 사용하여 적에게 공격을 개시할 수 있다.\n자신이 제어하는 마령을 대신해 적에게서 오는 모든 대미지를 받는다.\n두 번째 스킬을 제외한 나머지 스킬은 마령 스킬로 전환되며, 융합된 마령의 궁극 스킬이 잠금 해제된다.\n두 번째 스킬은 공격 또는 시전 동작이 없는 스킬만 사용할 수 있다.\n마령 이동 제어 시, 실제 이동 속도는 아이리스의 이동 속도가 된다.">수호 상태 동안 마령이 궁극 스킬마령이 특정 상태일 시 강도가 매우 높은 궁극 스킬을 사용한다.">궁극 스킬을 1 회 사용 시마다 온풍융합된 마령이 입히는 대미지가 16% 추가 증가한다.">온풍 최대 중첩 수 +1, 최대 15 회 중첩, 재결합해당 상태에서, HP추가 회복 효과를 획득하고, 스킬을 사용하거나 표적이 될 수 없다. HP가 전부 회복되면 해당 상태는 사라진다.">재결합 상태에 진입할 때까지 지속된다.\n히어로 특성 한정: 속세를 떠난 마령·아이리스|수호의 온풍',
+  "싱크로 트레이닝":
+    '소환 스킬을 시전한 후 유저 자신도 과부하나의 소환체에게 버프 효과를 제공한다.\n자극 스킬 효과 보너스가 과부하 효과에도 동일하게 적용된다.\n스킬 효과 지속 시간에 대한 보너스가 과부하 지속 시간에도 동일하게 적용된다.">과부하를 획득하며, 4 초간 지속한다.\n스마트 웨폰 소환체가 존재할 때, 유저 자신에게 부여된 과부하나의 소환체에게 버프 효과를 제공한다.\n자극 스킬 효과 보너스가 과부하 효과에도 동일하게 적용된다.\n스킬 효과 지속 시간에 대한 보너스가 과부하 지속 시간에도 동일하게 적용된다.">과부하 효과 +125%\n통솔통솔 1포인트당, 스마트 웨폰 소환체의 대미지 별도 3%, 받는 대미지 별도 -2%, 이동 속도 +2%, 정찰 범위가 증가한다\n통솔 하한 -100, 상한 100. 통솔이 0이 아닌 경우, 0이 될 때까지 1초마다 통솔이 13 포인트 회복(증가/감소)된다. 통솔 10 포인트 초과 시마다 회복값이 7 포인트 증가한다.\n통솔이 음수가 아닌 경우, 스마트 웨폰 소환체의 지속 시간은 카운트다운되지 않는다.">통솔 1 포인트마다 유저 자신의 대미지 별도 +3%\n히어로 특성 한정: 지휘관·모토|소집 명령',
+  "기계의 환희":
+    '적중 시 과부하나의 소환체에게 버프 효과를 제공한다.\n자극 스킬 효과 보너스가 과부하 효과에도 동일하게 적용된다.\n스킬 효과 지속 시간에 대한 보너스가 과부하 지속 시간에도 동일하게 적용된다.">과부하 효과 추가 +4%, 최대 30 회 중첩(곱연산), 특성 스킬 시전 시 중첩 수가 초기화된다.\n히어로 특성 한정: 지휘관·모토|소집 명령',
+  "스마트 웨폰의 위기":
+    "스마트 웨폰 소환체에 유저 최대 HP 18%에 해당하는 기본 HP가 추가된다.\n스마트 웨폰 소환체에 유저 최대 보호막 12%에 해당하는 기본 보호막이 추가된다.\n히어로 특성 한정: 지휘관·모토|돌격 소집",
+  "세 구멍의 심상":
+    '40레벨 고급 원소 충격대미지 스킬을 보조한다.\n보조 대상 스킬이 최근 원소 대미지를 1가지 부여한 경우, 다른 2가지 원소 대미지 별도 +16%">고급 원소 충격이 메인 스킬을 보조한다.\n히어로 특성 한정: 빙염술사·젬마|빙화 융합',
+  "기울어진 첫 결백이 흩날리는 순간":
+    '빙결빙결은 냉기 대미지 적중 시 일정 확률로 발생하는 상태 이상이다. 빙결된 적은 공격 속도, 시전 속도, 이동 속도가 10% 감소한다. 기본 빙결은 10 포인트, 빙결 1 포인트마다 받는 냉기 대미지 별도 + 1%, 빙결이 100 포인트를 초과하면 적은 동결된다.">빙결 효과 추가 -50%\n적에게 부여된 각 제어류 상태빙결, 동결, 마비, 넉백, 약화, 감속, 조롱 및 실명 포함">제어류 상태, 상태 이상과 저주는 전부 50 포인트 빙결을 추가로 보유한 것으로 간주된다. 최대치 500\n히어로 특성 한정: 빙염술사·젬마|프로즌 하트',
+  "스윗트 페인":
+    "화염 대미지의 99%가 부식 대미지로 전환된다.\n20 레벨 정밀 부식 증폭을 보유한다.\n20 레벨 정밀 부식의 주입 버프를 보유한다.\n20 레벨 부패의 영혼의 마령의 근원 효과를 보유한다.\n히어로 특성 한정: 빙염술사·젬마|향락의 불꽃",
+  "황실 무기고":
+    "부귀 보조 1개를 활성화할 때마다 투사체 속도 +100%, 최대 300%\n숭고 보조 1개를 활성화할 때마다 투사체 대미지 별도 +20%, 최대 60%\n히어로 특성 한정: 디바인 샷·카리노|영광의 레인저",
+  "저녁 빛 잠입":
+    '편향편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.">편향 최대치 +2\n피격 시 더 이상 편향편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.">편향이 소모되지 않지만, 편향편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.">편향은 이제 3 초의 지속 시간만 가진다.\n편향편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.">편향 보유 시 투사체 대미지 별도 +50%\n히어로 특성 한정: 디바인 샷·카리노|치명적 찰나',
+  "자박의 굴레":
+    '정지 시 0.5초마다 온도 상승 효과 추가 +20%, 최대 60%\n정지 시, 온도 상승온도 상승 중첩 수에 따라 투사체가 부여하는 대미지가 별도 추가되고, 투사체 최대 편향각이 증가한다.">온도 상승은 추가 효과 획득: 보유한 온도 상승 1회당 스킬 범위 +1%\n이동 중단 후, 공격 및 주술 막기 확률 +20%, 최대 막기 비율최대 막기 비율 기본 60%, 최대 80%">최대 막기 비율 +20%, 8 초간 지속한다.\n이동 시 최대 원소화염, 냉기와 번개 포함">원소 저항 및 부식 저항 -60%\n히어로 특성 한정: 디바인 샷·카리노|전쟁 광인',
+  "야옹이의 밤 사냥":
+    '강적에게 대미지를 입힐 때 유흥 1회를 획득한다. 간격 1 초\n유흥을 5 회 보유 시 사냥 본능연속 공격 초기 카운팅과 연속 공격 최대 카운팅 상한 +2, 30 초간 지속한다. 사냥 본능이 지속되는 동안 유흥을 획득할 수 없다.">사냥 본능을 획득한다.\n히어로 특성 한정: 캣츠아이·에리카|질풍 추격',
+  "야옹이 꼬리 충전 중":
+    '캣츠 실루엣범위 내의 적에게 전광 중첩수와 동일한 마취 중첩수를 부여한다.\n스킬 태그: 주술, 번개">캣츠 실루엣은 이제 크리티컬을 발동할 수 있다.\n캣츠 실루엣범위 내의 적에게 전광 중첩수와 동일한 마취 중첩수를 부여한다.\n스킬 태그: 주술, 번개">캣츠 실루엣이 크리티컬 발동 시 10 초 동안 부여하는 마취 효과가 2배로 증가한다.\n히어로 특성 한정: 캣츠아이·에리카|라이트닝 쉐도우',
+  "리벤지 나이트 악령":
+    '리벤지9 미터 내에 있는 랜덤 적에게 전송된 다음 메인 스킬을 1회 발동하고 발동된 스킬 공격 대미지 별도 +30%, 쿨타임 3 초">리벤지를 3회 시전할 때마다 환영 1개를 생성하여 9 미터 내의 랜덤 대상에게 리벤지9 미터 내에 있는 랜덤 적에게 전송된 다음 메인 스킬을 1회 발동하고 발동된 스킬 공격 대미지 별도 +30%, 쿨타임 3 초">리벤지를 1회 추가 시전하며, 환영은 3배 대미지를 입힌다.\n히어로 특성 한정: 캣츠아이·에리카|리벤지 스파이크',
+  "타오르는 세계":
+    '메인 스킬이 화염의 정수모든 축복을 소모하는 동시에 주술 냉기 대미지를 입힌다.\n축복을 1회 소모할 때마다 233 - 233 포인트 대미지를 입히는 동시에 기본 스킬 범위 +3%\n쿨타임 회복 속도 1%당 스킬 시전 종료 후 축복 최대 중첩수의 2.5%를 획득한다.\n해당 스킬의 냉기 대미지 100%가 화염 대미지로 전환된다.\n해당 스킬은 촉발체 스킬로 보조할 수 없다.">화염의 정수로 교체된다.\n신의 권능집요한 축복을 소모해 신의 권능을 내리고, 짧은 시간 동안 폭발적인 힘을 획득한다.">신의 권능 상태에서 0.6초마다 화염의 정수모든 축복을 소모하는 동시에 주술 냉기 대미지를 입힌다.\n축복을 1회 소모할 때마다 233 - 233 포인트 대미지를 입히는 동시에 기본 스킬 범위 +3%\n쿨타임 회복 속도 1%당 스킬 시전 종료 후 축복 최대 중첩수의 2.5%를 획득한다.\n해당 스킬의 냉기 대미지 100%가 화염 대미지로 전환된다.\n해당 스킬은 촉발체 스킬로 보조할 수 없다.">화염의 정수를 1회 발동하며, 간격은 시전 속도의 영향을 받는다.\n신의 권능 상태에서 화염의 정수모든 축복을 소모하는 동시에 주술 냉기 대미지를 입힌다.\n축복을 1회 소모할 때마다 233 - 233 포인트 대미지를 입히는 동시에 기본 스킬 범위 +3%\n쿨타임 회복 속도 1%당 스킬 시전 종료 후 축복 최대 중첩수의 2.5%를 획득한다.\n해당 스킬의 냉기 대미지 100%가 화염 대미지로 전환된다.\n해당 스킬은 촉발체 스킬로 보조할 수 없다.">화염의 정수를 1회 시전할 때마다 신의 권능집요한 축복을 소모해 신의 권능을 내리고, 짧은 시간 동안 폭발적인 힘을 획득한다.">신의 권능 지속 시간이 0.2초 연장된다.\n히어로 특성 한정: 사제·티아|신들의 위대한 지혜',
+  "신의 뜻이 있는 곳":
+    '신의 권능 상태에서 강건한 축복강건한 축복 중첩 1회당, 받는 대미지가 4% 별도 감소한다(곱연산). 최초에는 최대 4회 중첩">강건한 축복과 황홀한 축복황홀한 축복 1회당 공격 및 시전 속도가 4% 증가하고, 대미지가 2% 별도 증가한다. 초기 최대 4 회 중첩">황홀한 축복은 추가 효과 획득: 대미지 별도 +5%\n히어로 특성 한정: 사제·티아|신들의 위대한 지혜',
+  "신의 영역으로":
+    '신의 영역에서 상태 이상, 제어류 상태빙결, 동결, 마비, 넉백, 약화, 감속, 조롱 및 실명 포함">제어류 상태와 저주 면역\n신의 영역 밖에 있을 시 모든 축복의 최대 중첩 수 +2\n히어로 특성 한정: 사제·티아|신들의 화신',
+  "뒤집힌 감실":
+    '적에게 모독모독 1회당 받는 부식 대미지 별도 +15%(곱연산), 초기 최대 3회, 5초 지속. 1개의 대상에게만 영향을 준다.">모독 시전 시, 동시에 자신에게도 모독모독 1회당 받는 부식 대미지 별도 +15%(곱연산), 초기 최대 3회, 5초 지속. 1개의 대상에게만 영향을 준다.">모독을 시전한다.\n모독모독 1회당 받는 부식 대미지 별도 +15%(곱연산), 초기 최대 3회, 5초 지속. 1개의 대상에게만 영향을 준다.">모독 보유 시, 부식 대미지 별도 +99%\n히어로 특성 한정: 사제·티아|신성 모독',
+  "빈의 선물":
+    "炸弹造成伤害时可额外生成 3 个备用炸弹，生成几率为炸弹暴击率的 33%；额外 -20% 备用炸弹伤害\n英雄特性限定：逃脱者·宾|爆破新星",
+  "아이디어 제조기":
+    "기발 블래스트 투사체 수량 +2, 기발 효과 +100%, 기발 시그널 효과 +50%\n창의 오버로드로 발동된 주술의 최대 매직 버스트 +2, 또한 주술 대미지 별도 +100%\n히어로 특성 한정: 도망자·빈|크리에이티브 지니어스",
+  "잠들지 않는 조수":
+    '음유음유 상태에서 공격 채널링 스킬 및 위치 이동 공격 스킬 사용 불가\n음유 상태에서 주술 채널링 스킬 사용 시 이동 가능\n음유 상태에서 이동 시 메인 스킬을 자동 채널링한다\n음유 상태에서 순간 발동이나 이동 스킬을 제외한 모든 스킬은 음유의 노래를 채널링하는 스킬로 전환된다.">음유 상태 시 열창열창 상태에서 공격 및 시전 속도 별도 20% 감소, 이동 속도 별도 20% 감소, 조수 효과 별도 80% 증가">열창 상태로 간주된다.\n열창열창 상태에서 공격 및 시전 속도 별도 20% 감소, 이동 속도 별도 20% 감소, 조수 효과 별도 80% 증가">열창 상태에서 더 이상 공격, 시전, 이동 속도가 추가로 감소되지 않는다.\n히어로 특성 한정: 파도의 숨결·셀레나|파도와 함께하는 노래',
+  "이미테이션 루나: 자기 수호":
+    '기본 특성에 기본 특성 슬롯히어로 기본 특성에 작용하는 추억 슬롯, 히어로 추억의 부활 옵션을 통해 제공된다.">특수 추억 슬롯이 추가되며, 절대자레드 등급">절대자 등급 이하의 자기 수호자기 수호의 추억: 위치 2에 장착할 수 있다.">자기 수호의 추억을 장착할 수 있다. 해당 슬롯에 장착한 추억은 기본 속성과 랜덤 옵션의 수치가 20% 감소한다.\n기본 특성이 최고 레벨 달성 시 추가 옵션을 획득한다.',
+  "이미테이션 루나: 진격":
+    '기본 특성에 기본 특성 슬롯히어로 기본 특성에 작용하는 추억 슬롯, 히어로 추억의 부활 옵션을 통해 제공된다.">특수 추억 슬롯이 추가되며, 절대자레드 등급">절대자 등급 이하의 진격진격의 추억: 위치 3에 장착할 수 있다.">진격의 추억을 장착할 수 있다. 해당 슬롯에 장착한 추억은 기본 속성과 랜덤 옵션의 수치가 20% 감소한다.\n기본 특성이 최고 레벨 달성 시 추가 옵션을 획득한다.',
+  "과격한 진화론: 주술 증폭":
+    '마령의 근원마령 소환 스킬 활성화 후 획득하는 버프 효과.">마령의 근원 효과에 대한 최종 보너스의 100%가 주술 증폭의 오라 효과 보너스에도 동일하게 적용된다.',
+  "과격한 진화론: 과격한 소집":
+    '마령의 근원마령 소환 스킬 활성화 후 획득하는 버프 효과.">마령의 근원 효과에 대한 최종 보너스의 100%가 과격한 소집의 오라 효과 보너스에도 동일하게 적용된다.',
+  "과격한 진화론: 깊은 고통":
+    '마령의 근원마령 소환 스킬 활성화 후 획득하는 버프 효과.">마령의 근원 효과에 대한 최종 보너스의 100%가 깊은 고통의 오라 효과 보너스에도 동일하게 적용된다.',
+  "성광에 대한 참회":
+    '성광의 영역성광의 영역 이탈 1초 후 성광의 영역은 자동으로 폐쇄된다.\n성광의 영역 반경 5미터 안에서는 스킬 범위 보너스의 영향을 받지 않는다.">성광의 영역 안에 있는 경우 임의의 스킬을 2 회 시전할 때마다 자신을 1회 공격하여 고정적으로 10 포인트 물리 대미지를 입힌다.\n성광의 영역성광의 영역 이탈 1초 후 성광의 영역은 자동으로 폐쇄된다.\n성광의 영역 반경 5미터 안에서는 스킬 범위 보너스의 영향을 받지 않는다.">성광의 영역 안에 있는 경우 막기 1 회당 막기 비율막기 시 기본적으로 30%의 대미지가 상쇄된다. 막기 비율 증가 시 상쇄 비율도 상승한다.">막기 비율과 최대 막기 비율최대 막기 비율 기본 60%, 최대 80%">최대 막기 비율 +1%, 대미지 별도 +2%, 최대 15 회 중첩',
+  "세례: 냉담": "받는 냉기 대미지 별도 -30%, 스킬 범위 +60%",
+  "세례: 분노": "받는 화염 대미지 별도 -30%, 크리티컬 발동 시 대미지 별도 +30%",
+  "세례: 태만": "받는 번개 대미지 별도 -30%, 최대 대미지 별도 +30%",
+  "이미테이션 루나": "기본 특성 최고 레벨 달성 시 부여되는 추가 옵션",
+  "원소 저항 역전환":
+    "적의 기존 원소 저항 수치를 상응하는 마이너스 수치로 변경한다.",
+  "동행-분노의 불꽃":
+    "(다음 효과는 버서커 리한-분노의 불꽃에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n적중 시, 분노 3포인트 획득, 해당 효과의 쿨타임 0.3초\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 쿨타임 회복 속도 +12%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n광분 상태에서 폭발 범위 추가 +60%",
+  "동행-성난 그림자":
+    "(다음 효과는 버서커 리한-성난 그림자에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n분노 10포인트당, 공격 대미지 별도 +1%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 분노 소모 -20%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n광분 상태 돌입 시, 진노의 영혼이 3초간 지속적으로 존재, 간격 10초",
+  "동행-질풍 추격":
+    "(다음 효과는 캣츠아이 에리카-질풍 추격에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n슬래시로 입히는 번개 대미지 별도 +25%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 함성 즉시 시전\n해당 옵션을 최소 6개 이상 보유하는 경우:\n연속 공격 시, 공격할 때마다 30%의 확률로 슬래시 횟수 1회 획득",
+  "동행-라이트닝 쉐도우":
+    "(다음 효과는 캣츠아이 에리카-라이트닝 쉐도우에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n이동 속도 +30%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 환영 정찰 범위 +30%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n10미터 내의 적이 받는 번개 대미지 별도 +20%",
+  "동행-영광의 레인저":
+    "(다음 효과는 디바인 샷 카리노-영광의 레인저에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n특수 탄약 장전 확률 +20%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 특수 탄약 소모 시, 해당 투사체 스킬 크리티컬 추가 +8%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n전의 1포인트당, 크리티컬 대미지 +1%, 마술 사격 상실 시 전의 50포인트 상실",
+  "동행-치명적 찰나":
+    "(다음 효과는 디바인 샷 카리노-치명적 찰나에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n투사체 속도 +3%당, 산탄 효과의 후속 투사체 대미지 +1%, 최대 +30%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 투사체 속도 +50%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n이동 스킬 탄약 장전 시에도 동일한 최대 탄창 용량 제공, 8초 지속, 최대 +30",
+  "동행-빙화 융합":
+    "(다음 효과는 빙염술사 젬마-빙화 융합에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n적중 시 15레벨 원소 파괴 저주 발동, 쿨타임 0.5초\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 얼음불의 폭주 지속 시간 +20%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n화염 및 냉기 대미지 별도 +20%",
+  "동행-프로즌 하트":
+    "(다음 효과는 빙염술사 젬마-프로즌 하트에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n서리 펄스 적중 시, 빙결 16포인트 추가 부여\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 동결 효과 +15%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n동결 부여 시, 각각 30%의 확률로 20레벨 블리자드, 프로스트 속박 또는 프로스트 그라운드 발동, 간격 0.1초",
+  "동행-향락의 불꽃":
+    "(다음 효과는 빙염술사 젬마-향락의 불꽃에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n낙인 기록 대미지 비율 +30%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 지옥 지속 시간 추가 +20%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n화형이 제거하는 낙인 기록 대미지 -15%",
+  "동행-블래스트 노바":
+    "(다음 효과는 도망자 빈-블래스트 노바에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n쿨타임 회복 속도 +12%, 스킬 효과 지속 시간 +12%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 투사체 스킬 범위 추가 +25%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n폭탄 투척 수량 +1",
+  "동행-시공간의 환상":
+    "(다음 효과는 시공간의 증인 유가-시공간의 환상에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n주술 스킬 레벨 +2\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 시공간의 환상 대미지 별도 +20%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n높은 대미지를 입은 후 시공간의 환상이 소멸하며, 시공간의 힘을 빌려 해당 대미지에 면역된다. 주변의 적을 넉백시키고 상실한 HP와 보호막을 30% 회복한다. 간격 10초",
+  "동행-시공 유실":
+    "(다음 효과는 시공간의 증인 유가-시공 유실에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우: 기본 특성으로 제공되는 시공 에너지 회복 +200%\n해당 옵션을 최소 4개 이상 보유하는 경우: 모든 저항 +15%, 심화 효과 추가 +15%\n해당 옵션을 최소 6개 이상 보유하는 경우: 수확 쿨타임 회복 속도 추가 +15%",
+  "동행-신들의 위대한 지혜":
+    "(다음 효과는 사제 티아-신들의 위대한 지혜에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n집요한 축복 1회당 크리티컬 +15, 최대 +150\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 매직 버스트 활성화 시 강건한 축복 및 황홀한 축복 1회 획득\n해당 옵션을 최소 6개 이상 보유하는 경우:\n집요한 축복 중첩 상한 +2",
+  "동행-신들의 화신":
+    "(다음 효과는 사제 티아-신들의 화신에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n슬래시 대미지 별도 +30%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 적군 처치 시 10%의 확률로 폭발, 적에게 최대 HP의 15%만큼 간접 화염 대미지 부여\n해당 옵션을 최소 6개 이상 보유하는 경우:\n강건한 축복 중첩 상한 +2, 황홀한 축복 중첩 상한 +2",
+  "동행-소집 명령":
+    "(다음 효과는 지휘관 모토-소집 명령에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n과부하 지속 시간 +30%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 과부하 효과 +20%\n해당 옵션을 최소 6개 이상 보유하는 경우:\n과부하 부여 시마다 통솔 1포인트 획득",
+  "동행-돌격 소집":
+    "(다음 효과는 지휘관 모토-돌격 소집에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n과부하 쿨타임 회복 속도 +20%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 스마트 웨폰 소환체 자폭 프로세스 발동 시 6%의 확률로 기계 부품 1개 드롭\n해당 옵션을 최소 6개 이상 보유하는 경우:\n부품 줍기 시, 20%의 확률로 통솔 1포인트 획득",
+  "동행-홀리 채리엇":
+    "(다음 효과는 라이트 브링어 로사-홀리 채리엇에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n1초마다 살의 4포인트 회복\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 적 처치 시, 10레벨 분노의 광풍 발동\n해당 옵션을 최소 6개 이상 보유하는 경우:\n10초 간격으로 다음번 특성 스킬 시전 시, 추가 효과 획득: 성스러운 빛 범위 내의 모든 강적 외의 적을 처치하고, 성광의 영역 내에 있는 모든 유닛의 체격 +20%, 대미지 별도 +20%",
+  "동행-성장의 미풍":
+    "(다음 효과는 속세를 떠난 마령 아이리스-성장의 미풍에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n마령이 스킬 시전 시, 양분 1회 상실 확률 -8%\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 마령 스킬 레벨 +1\n해당 옵션을 최소 6개 이상 보유하는 경우:\n8초 간격으로 랜덤 마령 1개가 강화 획득: 성장치 추가 +200, 공격, 시전, 이동 속도 추가 +60%",
+  "동행-전쟁 광인":
+    "(다음 효과는 디바인 샷 카리노-전쟁 광인에만 적용됨)\n해당 옵션을 최소 2개 이상 보유하는 경우:\n투사체 수량 +2\n해당 옵션을 최소 4개 이상 보유하는 경우:\n모든 저항 +15%, 수평 투사체 관통 횟수 +2\n해당 옵션을 최소 6개 이상 보유하는 경우:\n처치 시 과열 5회 상실",
+  침식화: "침식화 장비에는 침식과 제작을 진행할 수 없다.",
+  "높은 레벨의 노멀 장비":
+    "아이템 레벨이 높은 장비로 제작시, 더 높은 레벨의 옵션을 획득할 수 있다. 노멀 장비를 사용할 경우, 마음에 드는 옵션 획득에 필요한 비용을 절감할 수 있다. 아이템 레벨이 높은 노멀 장비는 거래소를 통해 구매하거나, 이계 감시자 처치시 드롭되는 운명 카드로 교환하여 얻을 수 있다.",
+  절대자: "절대자 옵션은 장비 하나당 2개만 보유할 수 있다.",
+  불면: "불면 옵션은 장비 하나당 1개만 보유할 수 있다.",
+  성공률:
+    '맞춤 가공 시 일부 옵션은 가공에 실패할 확률이 있습니다. 가공 실패 시, 장비에 "결점 투성이"가 나타나며, 옵션 슬롯 하나를 차지합니다.',
+  "단기 계승":
+    "본 스테이지 클리어 후, 카드 옵션은 차원 내의 모든 스테이지에 적용됨.\n일정 횟수 적용되거나 본 라운드가 종료되면 승계 효과가 소멸됨.\n-스테이지 오픈 시 1회 적용된 것으로 간주\n-적용 횟수는 콜론 뒤에 표기",
+  기억: "본 카드는 본 스테이지에서 여러 번 적용 가능\n-스테이지 오픈 시 1회 적용된 것으로 간주\n- 남은 적용 횟수는 콜론 뒤에 표기",
+  "완료 후 적용": "본 스테이지 클리어 후에 카드 옵션이 적용됨",
+  거울: "미러링 이미지",
+  "검은 물결의 솟구침":
+    "스테이지 클리어 후, 검은 물결 태그의 혼란 카드 1장을 랜덤으로 뽑는다.\n해당 효과는 계승되지 않는다.",
+  보물: "스테이지 클리어 후 [솔직함] 1장 뽑기\n해당 효과는 계승되지 않는다.",
+  "전쟁의 계시":
+    "스테이지 클리어 후, [전쟁-위선]을 1장 뽑는다.\n해당 효과는 계승되지 않는다.",
+  "힘의 계시":
+    "스테이지 클리어 후, [힘-위선]을 1장 뽑는다.\n해당 효과는 계승되지 않는다.",
+  "사냥의 계시":
+    "스테이지 클리어 후, [사냥-위선]을 1장 뽑는다.\n해당 효과는 계승되지 않는다.",
+  "기계의 계시":
+    "스테이지 클리어 후, [기계-위선]을 1장 뽑는다.\n해당 효과는 계승되지 않는다.",
+  "적용 횟수":
+    "본 스테이지 클리어 후, 적용 횟수가 1 감소한다.\n적용 횟수가 소진되면 새로운 혼란 침습이 오픈되며, 카드를 다시 뽑는 동시에 최신 허공의 성도 배치가 적용된다.\n스테이지 오픈 후 클리어하지 못할 경우, 해당 스테이지를 클리어하기 전까지 카드는 효과를 발휘하지 않는다.",
+  선택: "본 스테이지 완료 후, 페르소나 카드 3장을 랜덤으로 뽑고, 그중 새로운 카드 1장을 선택하여 획득하거나 이미 보유 중인 카드 한 장을 레벨업할 수 있다.",
+  완료: "이 스테이지 완료하면 다음 대항이 오픈됩니다.",
+  획득: "다른 드롭 옵션의 영향을 받지 않습니다.",
+  "경로 이탈":
+    "스테이지의 경로 이탈 1포인트 당, 몬스터의 대미지가 0.3% 증가하고, 몬스터가 받는 대미지가 1% 감소한다.",
+  "전쟁의 신 신도": "추종자는 매직 몬스터이며, 드롭 옵션의 영향을 받는다.",
+  "드워프 로봇":
+    "드워프 로봇은 힘의 신 시련에 출현하는 특수 시련 몬스터이다. 드워프 로봇은 레어 몬스터로 드롭 옵션의 영향을 받는다.",
+  "무인 로봇":
+    "드론은 기계의 신 시련에 출현하는 특수 공격 몬스터이다. 드론은 노멀 몬스터로 드롭 옵션의 영향을 받으며, 더 높은 확률로 현재 구역에서 한정 드롭되는 찬란한 기억을 드롭한다.",
+  "초급 레어 장비": "옵션이 3~5개인 레어 장비",
+  "슈퍼레어 장비": "옵션이 6개인 레어 장비",
+  "레전드 보스 복제": "복제 확률 100%당, 레전드 보스가 1마리 추가 출현한다.",
+  "드롭 수량 보너스":
+    "매직/레어/레전드 보스 버프는 각각 캐릭터에게 55%/60%/65%의 드롭 수량 보너스를 제공합니다.\n보상이 교체되면 기존의 콘텐츠 드롭이 사라집니다.",
+  "광란의 모래에 강화된 사막 도적":
+    "레어 사막 도적, 처치된 후 대량의 아일랜드 골드를 드롭한다.",
+  "사막 도적 보스":
+    "레전드 사막 도적, 처치된 후 대량의 아일랜드 골드를 드롭한다.",
+  "5+ 티어 비콘":
+    "5+ 티어 비콘은 8단계의 딥 스페이스 모드에서 이계 스테이지를 여는데 사용됩니다.(스테이지는 드롭 수량 추가 보너스 옵션을 보유하고 있습니다.)",
+  "전쟁의 신 한정 레전드 장비":
+    "드래곤 브리드 아머, 강한 분노, 귀도, 심홍의 왕 포함",
+  "힘의 신 한정 레전드 장비":
+    "혼돈의 유언, 다각프리즘, 황폐한 결정, 제왕의 위엄, 신의 분신 포함",
+  "사냥의 여신 한정 레전드 장비":
+    "야욕의 껍데기, 인비저블 썬더 스텝, 번개 악골, 영원, 별빛이 비추는 자 포함",
+  "기계의 신 한정 레전드 장비":
+    "제련된 새의 목걸이, 썩어버린 지혜, 잘못된 권위, 용솟음치는 영감 포함",
+  "신성 폭발":
+    "12장 수집 시 시공의 나그네를 통해 진귀한 레전드 장비로 교환할 수 있다.",
+  "초신성 폭발":
+    "12장 수집 시 시공의 나그네를 통해 희귀 레전드 장비로 교환할 수 있다.",
+  "영원의 찢어진 페이지": "미궁 시즌의 영원의 시에서 노드 레벨업에 사용된다.",
+  "미궁의 잔향-순간":
+    "영원한 미궁의 도시의 잔당들이 드롭하는 잔향. 엠버의 숨결의 칸델에게 건네면 영원의 무너진 벽으로 통하는 길을 열 수 있다.\n(스테이지 레벨= 86)",
+  "미궁의 잔향-영원":
+    "영원한 미궁의 도시의 잔당들이 드롭하는 잔향. 엠버의 숨결의 칸델에게 건네면 영원의 무너진 벽으로 통하는 길을 열 수 있다.\n(스테이지 레벨= 89)",
+  "친족 교도관의 집념":
+    "영원의 친족 레어 몬스터. 처치하면 일정 확률로 미궁의 잔향을 드롭한다.",
+  "영원의 예도의 집념":
+    "영원의 친족 보스. 처치하면 미궁의 잔향을 반드시 드롭한다.",
+  날렵함: "진행도(1/2): 이번 스테이지 완료 후, 다음 전투 시작",
+  "운명의 좁은길":
+    "1개 수집 시 시공의 나그네를 통해 최소 1개의 T2 옵션을 보유한 히어로 유물 또는 히어로 추억 1개 교환 가능(거래 불가)",
+  "거역할 수 없는 신의 의지":
+    "1 개 수집 시 시공의 나그네를 통해 랜덤 레전드 중위 재능 포인트를 1 개 보유하지만, 신격 홀이 없는 신격의 석판으로 교환 가능(거래 불가)",
+  "근접 한손 공격 무기":
+    "한손검, 한손 도끼, 한손 해머, 클로, 단검, 한손지팡이 포함",
+  "근접 양손 공격 무기": "양손 검, 양손 도끼, 양손 해머, 스틱 포함",
+  "원거리 공격 무기": "활, 석궁, 포탄, 권총, 머스킷 포함",
+  "시전 무기": "마법 지팡이, 양손 지팡이, 의식용 칼 포함",
+  "원정대 세트":
+    "원정대 세트는 7부위의 원정대 시리즈 레전드 장비로 구성되며, 다음을 포함한다.\n1단계 해제 드롭: 흉갑, 허리띠\n3단계 해제 드롭: 투구, 신발\n5단계 해제 드롭: 장갑, 목걸이, 반지",
+  "여섯 신의 은총":
+    "6 장 수집 시 시공의 나그네를 통해 랜덤 레전드 장비로 교환할 수 있다.",
+  내구도: "100레벨 달성 장비만 일정 확률로 내구도 200 보유",
+  "히어로 유물":
+    "[히어로 특성]에 장착해 히어로 특성과 관련된 특수 옵션을 제공할 수 있다.\n히어로 유물의 레벨이 73 이하인 경우, 옵션이 1 개만 존재한다.\n레벨이 74 - 80인 경우, 50%의 확률로 옵션이 2 개 존재한다.\n레벨이 81 이상인 경우, 옵션이 반드시 2 개 존재한다.",
+  "히어로 추억":
+    "[히어로 특성]에서 히어로 유물 각인에 장착해 히어로 특성과 관련된 특수 옵션을 제공할 수 있다.\n히어로 추억의 레벨이 80 이하인 경우, 옵션이 1 개만 존재한다.\n레벨이 81 - 83인 경우, 50%의 확률로 옵션이 2 개 존재한다.\n레벨이 84 이상인 경우, 옵션이 반드시 2 개 존재한다.",
+  진품: "진품 장비는 아이템 레벨이 100에 도달한 비레전드 장비를 가리킨다. 86 레벨 이상의 스테이지에서만 드롭된다.\n진품 장비는 드롭 시 1 - 2 개의 기본 옵션을 보유한다.\n진품 장비는 제작을 통해 절대자 옵션을 획득할 수 있다.",
+  강복: "강복이 부여된 몬스터는 극도로 위험해 지지만 동시에 더 높은 드롭 수량을 보유하게 된다.",
+  "레전드 장비 획득 난이도":
+    "레전드 장비는 획득 난이도에 따라 오름차순으로 일반 레전드 장비, 진귀 레전드 장비, 희귀 레전드 장비, 절대자 레전드 장비로 나뉜다.",
+  "더럽혀진 별들":
+    "4 개 수집 시 시공의 나그네를 통해 침식된 절대자 레전드 장비 교환 가능",
+  "안개 도시 '주민'":
+    "처치 시 일정 확률로 '주민'의 눈을 드롭한다. 사용 후 일정 수량의 감염 진행도를 획득한다. [안개 도시 상인-월리]에서 감염 진행도를 소모하여 안개 도시를 탐색할 수 있다.",
+  "원정대 기념 망토":
+    "원정대 세트 시리즈 레전드 장비의 흉갑\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 벨트":
+    "원정대 세트 시리즈 레전드 장비의 허리띠\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 고글":
+    "원정대 세트 시리즈 레전드 장비의 투구\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 신발":
+    "원정대 세트 시리즈 레전드 장비의 신발\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 커프스":
+    "원정대 세트 시리즈 레전드 장비의 장갑\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 브로치":
+    "원정대 세트 시리즈 레전드 장비의 목걸이\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "원정대 기념 반지":
+    "원정대 세트 시리즈 레전드 장비의 반지\n원정대 세트 시리즈 레전드 장비 2/4/6개를 동시에 장착 시 세트 보너스를 추가 획득한다.",
+  "삼상 초신성":
+    "12개 수집 시 시공의 나그네를 통해 레전드 자질 3개를 가진 레전드 장비로 교환 가능",
+  "사상 초신성":
+    "12개 수집 시 시공의 나그네를 통해 레전드 자질 4개를 가진 레전드 장비로 교환 가능",
+  "에너지 코어": "[무기 상인]을 통해 장비를 강화할 수 있다.",
+  "폴리시드 쿼츠":
+    "[무기 상인]을 통해 장비를 제작하고, 장비의 옵션을 승급할 수 있다.",
+  "최초의 불꽃 가루":
+    "[무기 상인]을 통해 장비를 제작하고, 장비의 제작 옵션을 랜덤 초기화할 수 있다.",
+  "이계의 메아리":
+    "이계 스테이지에 기본 옵션을 추가하고, [이계 안내자]를 통해 비콘으로 교환할 수 있다.",
+  "진리의 엠버":
+    "[무기 상인]을 통해 장비를 제작하고, 장비의 옵션 수치를 랜덤 초기화할 수 있다.",
+  "절대자 엠버":
+    "[무기 상인]을 통해 장비를 제작하고, T1 레벨의 옵션을 승급할 수 있다.",
+  "최초의 불꽃 결정":
+    "[무기 상인]을 통해 장비를 제작하고, 높은 레벨의 장비를 승급 또는 맞춤 옵션을 추가할 수 있다.",
+  "최초의 불꽃 연료":
+    "최초의 불꽃 가루 및 최초의 불꽃 결정을 포함하고, [무기 상인]을 통해 장비를 제작할 수 있다.",
+  "낙인 재료":
+    "[무기 상인]을 통해 신격의 석판을 낙인하고, 석판에 별도의 재능 포인트를 추가할 수 있다.",
+  "신격의 석판":
+    "[재능-새로운 신의 조각상]에서 장착해 캐릭터에게 별도의 재능 포인트를 제공할 수 있다.",
+  나침반:
+    "맵 재료, 나침반 슬롯을 잠금 해제 후 이계 스테이지 오픈 시, 맵에 별도의 나침반 옵션을 추가할 수 있다.",
+  "금기의 예언": "1 개 수집 시 시공의 나그네에게서 찬란한 기억 랜덤 교환 가능",
+  "신입 추천 빌드에 사용하는 무기": "최초 무기 유형과 일치하지만 옵션은 무작위",
+  "내일의 항로": "5개 수집 시 시공의 나그네를 통해 나침반*10 랜덤 교환 가능",
+  "과격-전쟁": "전쟁의 신 시련 지속 시간 증가",
+  "난폭-전쟁": "전쟁의 신 시련 최고층 증가",
+  "무법-전쟁":
+    "전쟁의 신 시련 동안 새로운 층 도달 시 일정 확률로 전쟁의 신 신도의 습격을 받는다.",
+  "잔혹-전쟁":
+    "전쟁의 신 시련 동안 새로운 층 도달 시 일정 확률로 전쟁의 신 신도의 습격을 받는다. 전쟁의 신 신도는 일정 확률로 딥 스페이스 비콘을 추가 드롭한다.",
+  "과격함-힘": "힘의 신 시련에서 드롭되는 엠버가 일정 확률로 1개 복제된다.",
+  "방자-힘": "힘의 신 시련의 드롭 수량이 추가 증가한다.",
+  "격분-힘": "힘의 신 시련 동안 드워프 로봇의 드롭 희귀도가 증가한다.",
+  "진노-힘":
+    "힘의 신 시련 동안 드워프 로봇이 일정 확률로 레전드 장비를 추가 드롭한다.",
+  "광란-힘":
+    "힘의 신 시련의 드롭 수량이 추가 증가한다. 힘의 신 시련 동안 드워프 로봇의 드롭 수량이 추가 증가한다.",
+  "음험-사냥": "사냥의 여신 시련 보스 버프 옵션이 일정 확률로 모두 적용된다.",
+  "시기-사냥":
+    "사냥의 여신 시련 보스 버프 옵션이 일정 확률로 모두 적용된다. 일정 확률로 사냥의 여신 시련의 영향을 받은 보스가 복제된다.",
+  "간사-사냥": "사냥의 여신 시련에서 일정 확률로 나침반이 추가 드롭된다.",
+  "교활-사냥":
+    "사냥의 여신 시련의 영향을 받은 보스가 처치되는 경우 일정 확률로 차원 감시자 보물상자가 생성된다.",
+  "교묘-사냥":
+    "사냥의 여신 시련의 영향을 받은 보스가 일정 확률로 시공의 여행자의 협조를 받으며, 처치되는 경우 시공의 여행자 보물상자가 생성된다.",
+  "완고-기계":
+    "기계의 신 시련에서 드롭되는 비레전드 장비가 기본 옵션이 붙을 확률이 증가한다.",
+  "아집-기계":
+    "이계 스테이지에서 기계의 신 시련의 공격 라운드 수가 일정 확률로 증가한다.",
+  "보수-기계": "기계의 신 시련의 드롭 수량이 추가 증가한다.",
+  "답습-기계": "기계의 신의 시련에서 1턴마다 부유한 기계 권투 선수가 등장한다.",
+  "과묵-기계": "기계의 신 시련에서 드론의 드롭 수량이 추가 증가한다.",
+  "우둔-기계":
+    "기계의 신 시련에서 공격 몬스터가 일정 확률로 차원 한정 찬란한 기억을 추가 드롭한다; 기계의 신 시련에서 공격 라운드가 별도 추가된다.",
+  "모략-검은 물결":
+    "검은 물결 침식에 침식된 몬스터가 제공하는 침식 에너지가 증가한다.",
+  "치욕-검은 물결":
+    "검은 물결 폭발의 보상 유형이 레전드 장비가 될 확률이 증가한다.",
+  "모독-검은 물결":
+    "검은 물결 폭발 보상 유형이 레전드 장비가 될 가능성이 대단히 높다.",
+  "원망-검은 물결":
+    "검은 물결 폭발 시마다 일정 확률로 돌연변이 몬스터의 핵이 추가 드롭된다.",
+  "수치-검은 물결": "검은 물결 폭발의 보상 유형이 보스가 될 확률이 증가한다.",
+  "이단-검은 물결":
+    "검은 물결 폭발 보상 유형이 보스가 될 가능성이 대단히 높다.",
+  "극욕-큐브": "야욕의 화신이 일정 확률로 야심의 결정을 추가 드롭한다.",
+  "증오-큐브":
+    '스테이지에서 야욕이 자생 중일 때 일정 확률로 야욕 심판자야욕 심판자는 큐브 시즌의 특수 강적이다. 처치 시 진귀한 보상을 획득할 수 있다.">야욕 심판자가 추가 존재한다.',
+  "망령-큐브":
+    "야심의 결정 드롭 시, 일정 확률로 신성의 일각을 동시에 드롭한다.",
+  "탐욕-큐브": "야욕의 화신이 드롭하는 야심의 결정이 일정 확률로 1개 복제된다.",
+  "눈독-큐브":
+    "스테이지에서 야욕이 자생 중일 때 일정 확률로 야욕의 화신을 사용하여 모든 몬스터를 교체한다.",
+  "나른-미궁의 도시":
+    "영원의 친족이 드롭하는 영원의 찢어진 페이지가 일정 확률로 미궁의 잔향으로 변경된다.",
+  "나태-미궁의 도시": "드롭되는 장비가 일정 확률로 미궁의 잔향으로 변경된다.",
+  "방만-미궁의 도시":
+    "스테이지에 일정 확률로 영원의 예도의 집념 1마리가 추가 출현한다.",
+  "태만-미궁의 도시": "보스가 일정 확률로 왕후의 심지를 추가 드롭한다.",
+  "안타까움-나이트메어":
+    "아름다운 꿈의 유민이 일정 확률로 평범한 잠꼬대를 추가 드롭한다.",
+  "후회-나이트메어":
+    "아름다운 꿈의 유민이 일정 확률로 평범한 잠꼬대를 추가 드롭한다. 이계의 원생 몬스터가 일정 확률로 평범한 잠꼬대를 추가 드롭한다.",
+  "실망-나이트메어":
+    "스테이지가 아름다운 꿈에 있을 때 아름다운 꿈안개의 추가 출현 확률이 증가한다.",
+  "절망-나이트메어": "꿈나라 최고층이 아닌 경우 악몽에 진입할 확률이 감소한다.",
+  "환멸-나이트메어":
+    "꿈나라 징조 선택 시 일정 확률로 모든 악몽의 징조가 드롭 수량 추가 증가로 변경된다.",
+  "원한-괴담":
+    "안개 도시 '주민'이 드롭하는 '주민'의 눈이 일정 확률로 1개 복제된다.",
+  "전율-괴담": "보스는 일정 확률로 안개의 본질을 추가 드롭한다.",
+  "공포-괴담": "안개 도시 '주민'이 일정 확률로 '주민'의 눈을 추가 드롭한다.",
+  "방종-기계 인형":
+    "클럽 게임에서 가속 음료가 발동되는 경우 일정 확률로 나침반을 추가 드롭한다.",
+  "허영-기계 인형":
+    "클럽 게임에서 지연 모래시계가 발동되는 경우 일정 확률로 나침반을 추가 드롭한다.",
+  "겉치레-기계 인형":
+    "톱니바퀴 쿠폰을 클럽 시상대에 투입 시 남은 시간이 지정 시간보다 많을 경우 일정 확률로 확률 레인보우 이상의 톱니바퀴 쿠폰을 추가 획득한다.",
+  "무절제-기계 인형":
+    "톱니바퀴 쿠폰을 클럽 시상대에 투입 시 남은 시간이 지정 시간보다 적을 경우 일정 확률로 확률 레인보우 이상의 톱니바퀴 쿠폰을 추가 획득한다.",
+  "사치-기계 인형": "클럽 게임 시작 시 유저가 드롭 수량 증가 버프를 획득한다.",
+  "냉담-설원": "이계 스테이지 완료 시 눈꽃 종이 조각이 추가 드롭된다.",
+  "엄혹-설원": "스테이지에서 염색 스노우맨이 추가 출현한다.",
+  "적막-설원":
+    "이계 스테이지에 추가로 레어 몬스터가 나타난다. 레어 몬스터는 일정 확률로 염색 스노우맨으로 대체된다.",
+  "행패-검은 돛":
+    "스테이지의 차원의 닻이 일정 확률로 추억의 파편을 추가 드롭한다.",
+  "횡포-검은 돛":
+    "스테이지의 차원의 닻이 일정 확률로 공허의 바다 초대장을 추가 드롭된다. 스테이지의 차원의 닻을 일정 확률로 1회 추가 오픈할 수 있다.",
+  "기괴-타로":
+    "타로 시련 완료 시 타로의 비밀통로에 특수 비밀통로가 등장할 확률이 증가한다.",
+  "묘연-타로": "타로 시련 완료 시 타로의 비밀통로에 특수 비밀통로 반드시 등장",
+  "유혹-타로": "타로 시련 완료 시 일정 확률로 더 높은 품질의 점괘가 드롭된다.",
+  "미혹-타로":
+    "타로 시련 완료 시 일정 확률로 '점괘(대길): 상승'이 추가 드롭된다.",
+  "궁핍-군주": "사막 도적은 일정 확률로 아일랜드 골드를 추가 드롭한다.",
+  "궁색-군주":
+    "스테이지에 사막 도적 출현 시, 일정 확률로 광란의 모래에 강화된 사막 도적이 추가로 출현합니다.",
+  "억압-수배": "모든 보안 요원 드롭 수량 추가 증가",
+  "강압-수배": "지원 부대에서 반드시 레어 몬스터가 등장한다.",
+  "무단-수배":
+    "현상수배 주문이 출현할 확률이 증가한다. 현상수배 주문 종료 후 일정 확률로 현상수배 보물상자 하나 추가 출현한다.",
+  "교만-수배":
+    "현상수배 주문이 출현할 확률이 증가한다. 현상수배 주문은 반드시 고가 주문이다.",
+  "응징-감옥": "모든 원죄 몬스터 드롭 수량 추가 증가",
+  "죄책감-감옥":
+    "원죄의 감옥이 봉인된 원죄 몬스터를 방출할 때 몬스터 한 마리를 추가 방출한다.",
+  "억제-이면세계": "이면세계에서 장비 드롭 수량 추가 증가",
+  "강세-이면세계(오렌지)":
+    "이면세계에서 첫 번째로 획득한 병 속 그림자 등급은 반드시 레드 이상이다.",
+  "강세-이면세계(레인보우)":
+    "이면세계에서 첫 번째로 획득한 병 속 그림자 등급은 반드시 레인보우 이상이다.",
+  "폭주-이면세계":
+    "이면세계에서 떠다니는 머리, 안티메메틱 케이지, 도어 헌터가 나타날 확률이 증가한다.",
+  "광폭-힘":
+    "힘의 신 시련에서 드롭되는 엠버가 일정 확률로 절대자 엠버로 변경된다.",
+  "경악-블러드 러스트":
+    "이계 스테이지에서 블러드 러스트 몬스터를 처치하면, 미치광이 의사 세라일의 수술실 중 해독제 상자의 드롭 수량이 추가로 증가한다.",
+  "광기-블러드 러스트":
+    "이계 스테이지에서 도살자가 추가로 출현한다. 이계 스테이지에서 블러드 도살자를 처치하면, 미치광이 의사 세라일의 수술실 중 해독제 상자의 드롭 수량이 추가로 증가한다.",
+  "단순-창조": "창조 장치 드롭 수량 추가 증가",
+  "우매-창조":
+    "창조 장치가 창조 결정체를 활성화할 때마다 일정 확률로 창조 결정체를 추가로 활성화한다.",
+  "한정 찬란한 기억": "차원 한정 찬란한 기억과 콘텐츠 한정 찬란한 기억 포함",
+  "황금 찬란 창조 결정체":
+    "특수한 창조 결정체, 드롭 수량이 대폭 증가한다. 활성화 후 즉시 해당 창조 장치 내의 모든 창조 결정체를 활성화한다.",
+  "촉매 창조 장치":
+    "특수한 창조 장치, 활성화된 창조 결정체의 유형에 따라 해당하는 드롭 수량 보너스를 제공한다.",
+  "번영 창조 장치": "특수한 창조 장치, 더 많은 아이템을 드롭한다.",
+  "기록 창조 장치":
+    "특수한 창조 장치, 이번 스테이지에서 이미 결산된 창조 결정체를 기록하며, 자체 결산 시 기록된 모든 보상을 추가로 결산한다. 기록된 결정체의 수량이 많을수록 경비병이 더 강해진다.\n기록 창조 장치가 존재할 경우, 모든 창조 장치의 드롭 수량이 감소한다.",
+  "창조의 화신": "처치될 때 즉시 창조 결정체 1 개를 활성화한다.",
+  "아이디어 창조 결정체":
+    "특수한 창조 결정체, 일반적인 방식으로 활성화할 수 없다. 동일한 창조 장치에서 같은 유형의 창조 결정체가 2 개 활성화될 때 아이디어 창조 결정체가 자동으로 활성화된다.\n일정 확률로 창조 콘텐츠의 한정 레전드 장비가 드롭된다.",
+  "추가 부여":
+    "추가 부여된 수술 플랜은 드롭 수량과 최종 활성 보너스를 제공하지 않는다.",
+  "경도 블러드 러스트":
+    "공격, 시전, 이동 속도 및 스킬 범위가 증가한다. 자신이 감염될 경우 짧은 시간만 지속되고, 몬스터터가 감염될 경우 영구 지속된다.",
+  "재물 암호":
+    "재물 암호로 공허의 바다 보물이 드롭하는 히어로 추억 강화 재료 수량을 증가시킬 수 있다.",
+  "병기 암호":
+    "병기 암호는 일반적으로 공허의 바다 보물이 드롭하는 히어로 추억 수량을 증가시킬 수 있다.",
+  "기묘한 암호":
+    "기묘한 암호로 공허의 바다 보물이 드롭하는 아이템의 수량과 희귀도를 높일 수 있다.",
+  "허공의 해적":
+    "유저가 검은 돛 시즌 한정 콘텐츠 플레이 시 특정 몬스터를 만날 수 있다.",
+  "봉인 암호":
+    "검은 돛 시즌 한정 콘텐츠 완료 시 봉인 암호을 획득할 수 있다. 봉인 암호를 일정 수량 수집하면 공허의 바다 마지막 항구의 봉인을 해제할 수 있으며, 시즌 보스에게 도전할 자격을 얻는다. 봉인 암호의 조합에 따라 시즌 보스가 생성하는 보상의 보너스가 달라진다.",
+  "보스 암호":
+    "보스 암호는 일반적으로 공허의 바다 보물이 공허의 바다 초대장을 추가로 드롭하게 할 수 있다.",
+  "냉기 강복":
+    "HP 300% 별도 추가, 대미지 80% 별도 추가. 냉기 저항이 50% 증가하고, 최대 HP의 75%만큼 보호막이 추가되며, 이동, 공격, 시전 및 쿨타임 회복 속도가 90% 증가한다. 대미지를 입을 경우 60%의 확률로 서라운드 아이스를 1회 시전한다(쿨타임 1초). 치명 대미지를 입을 경우 5초간 동결(쿨타임 10초)되며, 받는 대미지가 80% 별도 감소하고, 1초마다 최대 HP의 10%만큼 보호막을 회복한다.",
+  "화염 강복":
+    "HP600% 별도 추가, 대미지 80% 별도 추가, 화염 저항 50% 증가, 이동, 공격, 시전 및 쿨타임 회복 속도 90% 증가. 6초마다 타깃 주변으로 6개의 용암 구슬을 발사한다(적중 시 화염 지속 대미지를 입힌다). 적중 시 최대 HP의 15%를 회복하고, 지속 대미지를 입은 타깃 적중 시 3초 동안 최대 HP를 30% 회복한다.",
+  "번개 강복":
+    "HP 400% 별도 추가, 대미지 80% 별도 추가. 번개 저항 50% 증가, 대미지 면역 확률 50% 획득, 이동, 공격, 시전 및 쿨타임 회복 속도 120% 증가. 적중 시 35%의 확률로 10초 동안 받는 적중 대미지가 75% 별도 감소하고, 타깃에게 6중 번개 타격을 1회 발동한다(쿨타임 4초).",
+  "부식 강복":
+    "HP 650% 별도 추가. 부식 저항 60% 증가, 받는 대미지의 75%가 부식 대미지로 전환, 이동, 공격, 시전 및 쿨타임 회복 속도 120% 증가. 적중 시 원소 대미지의 80%만큼 부식 대미지가 추가된다. 대미지를 입힐 경우 타깃의 위치에 부식 마루를 발동한다.(쿨타임 6초, 지속 대미지를 입히며, 5초 동안 점차 확대된다)",
+  "물리 강복":
+    "HP 500% 별도 추가, 대미지 60% 별도 추가, 아머 70% 별도 추가, 이동, 공격, 시전 및 쿨타임 회복 속도 90% 증가. 적중 시 1개의 투사체를 추가 발사한다(쿨타임 0.2초, 물리 대미지를 입힌다). 대미지를 입을 경우 아머, 원소 및 부식 저항이 30% 별도 추가된다, 10초간 지속, 최대 5회 중첩 가능.",
+  "여왕의 신도":
+    "받는 대미지 70% 별도 감소, 주는 대미지 30% 별도 추가, HP 300% 별도 추가. 주변 13미터 범위의 몬스터에게 오라 시전: 오라의 영향을 받은 몬스터의 받는 대미지가 50% 별도 감소하고, 타깃 적중 시 최대 HP의 10%를 회복한다(쿨타임 0.5초). 처치되고 3초 후 물리 대미지를 1회 입힌다.",
+  "질서의 신도":
+    "받는 대미지 35% 별도 감소, 전체 대미지의 20%만큼 부식 대미지 추가, HP 600% 별도 추가. 주변 13미터 범위의 몬스터에게 오라 시전: 오라의 영향을 받은 몬스터가 1초마다 최대 HP의 50%를 회복하며, 처치되고 2초 후 폭발하여 부식 대미지를 입힌다.",
+  "검은 물결의 신도":
+    "대미지 완화 80% 획득, 적중할 때 마다 유저의 원소 저항 10%를 빼앗는다(5초간 지속), HP 300% 별도 추가. 주변 13미터 범위의 몬스터에게 오라 시전: 오라의 영향을 받은 몬스터가 주는 대미지 80% 별도 추가, 처치될 경우 부식 마루를 1개 생성한다, 3초간 지속.",
+  "공허의 바다 신도":
+    "받는 지속 대미지 50% 별도 감소, 적중 시 10초간 산성 안개의 침식 추가(부식 지속 대미지), HP 300% 별도 추가. 주변 13미터 범위의 몬스터에게 오라 시전: 오라 영향을 받은 몬스터의 이동, 공격 및 시전 속도 90% 별도 추가, 처치되고 2초 후 폭발하여 무작위로 화염/번개/냉기/부식 대미지를 입힌다.",
+  연소: "특수 점화 상태이다. 지속 화염 대미지를 입으며, 모든 저항이 감소한다.",
+  한파: "특수 빙결 상태이다. 이동 속도, 공격 속도 및 시전 속도가 추가 감소한다. 빙결은 자동으로 증가하지 않으며 5회 도달 시 동결된다.",
+  저해: "특수 외상 상태이다. 지속 물리 대미지를 입으며, 이동 시 받는 저해 대미지가 추가된다.",
+  부패: "특수 몰락 상태이다. 지속 부식 대미지를 입으며, 부패 대미지가 보호막을 관통한다.",
+  원혼: "받는 대미지 별도 +5%",
+  "진공 영역":
+    "해당 영역에 들어간 유저를 질식시킨다. 질식 100회 도달 시 유저는 즉시 처치된다.",
+  운석비:
+    "운석이 지속적으로 유저 근처에 떨어진다. 운석 1웨이브당 쿨타임 20초(웨이브별로 따로 계산), 운석은 동시에 최대 20웨이브까지 존재할 수 있다.",
+  "연소(여기사2)":
+    "특수 점화 상태, 지속 화염 대미지를 10 포인트 받는다. 모든 저항이 25% 감소하고, 지속 시간이 4 초로 고정된다.",
+  "강력한 인내": "받는 대미지 별도 -65%",
+  유지: "받는 대미지 별도 -12%",
+  부담: "입히는 대미지 별도 -6%",
+  "환영의 지하 궁전": "메인 스토리의 마지막 스테이지. 완료 즉시 이계 오픈.",
+  음유: "음유 상태에서 공격 채널링 스킬 및 위치 이동 공격 스킬 사용 불가\n음유 상태에서 주술 채널링 스킬 사용 시 이동 가능\n음유 상태에서 이동 시 메인 스킬을 자동 채널링한다\n음유 상태에서 순간 발동이나 이동 스킬을 제외한 모든 스킬은 음유의 노래를 채널링하는 스킬로 전환된다.",
+  열창: "열창 상태에서 공격 및 시전 속도 별도 20% 감소, 이동 속도 별도 20% 감소, 조수 효과 별도 80% 증가",
+  "음유의 노래":
+    "기본 채널링 간격 0.8 초\n해당 스킬이 주술 스킬일 경우, 시전 속도 보너스와 추가 보너스의 영향을 받는다.\n해당 스킬이 공격 스킬일경우, 무기 공격 속도, 공격 속도 보너스와 추가 보너스 영향을 받는다.\n채널링 최대 중첩수 4 회, 채널링 중첩수가 최대일 경우 모든 채널링 중첩수를 상실하고, 거품을 1개 시전한다. 거품이 적에게 닿으면 터지며, 터진 위치에서 해당 스킬을 1회 사용한다.",
+  조수: "조수 위에 있을 경우, 적과의 부피 충돌을 무시하고, 대미지가 15% 별도 증가한다.\n조수를 최대 3 개 유지한다.\n스킬 범위의 증가 또는 감소의 50%가 조수 범위에 적용된다.\n스킬 효과 지속 시간 보너스의 100%가 조수 지속 시간의 보너스에도 동일하게 적용된다.",
+  "순간 발동 스킬": "공격 또는 시전 동작이 없는 스킬",
+  수호: "마령을 제어하고, 마령 스킬을 사용하여 적에게 공격을 개시할 수 있다.\n자신이 제어하는 마령을 대신해 적에게서 오는 모든 대미지를 받는다.\n두 번째 스킬을 제외한 나머지 스킬은 마령 스킬로 전환되며, 융합된 마령의 궁극 스킬이 잠금 해제된다.\n두 번째 스킬은 공격 또는 시전 동작이 없는 스킬만 사용할 수 있다.\n마령 이동 제어 시, 실제 이동 속도는 아이리스의 이동 속도가 된다.",
+  온풍: "융합된 마령이 입히는 대미지가 16% 추가 증가한다.",
+  "마령과 융합":
+    "특성 스킬 시전 시, 스킬 슬롯 순서에 따라 마령을 선택한다.\n액티브 스킬 슬롯의 마령 스킬 시전 시, 스킬에 해당하는 마령을 선택한다.\n동일한 스킬이 소환하는 마령 중 비 재결합 상태에서 HP가 가장 높은 마령을 우선 선택한다.\n쿨타임 3초",
+  모독: "모독 1회당 받는 부식 대미지 별도 +15%(곱연산), 초기 최대 3회, 5초 지속. 1개의 대상에게만 영향을 준다.",
+  축복: "집요한 축복, 강건한 축복, 황홀한 축복 포함",
+  "숙명의 제물":
+    "입히는 대미지 별도 -10%, 받는 부식 대미지 별도 +10%, 제어류 상태 1개로 간주된다.",
+  "죄업의 무게": "부식 저항 20% 감소",
+  "미스릴의 자세":
+    "비 채널링 공격 스킬 사용 시, 미봉인 최대 MP를 10% 소모한다. 소모 성공 시 미스릴을 10 포인트 획득한다. MP 부족 시 미봉인 최대 MP를 1% 소모하여 미스릴을 5 포인트 획득한다. 해당 효과는 버스트에 적용되지 않는다.",
+  "미스릴의 정토":
+    "보유한 미봉인 최대 MP 10%당, 공격 속도 추가 +2%, 원소 대미지 별도 +2%\n비 채널링 공격 스킬 사용 시, 미봉인 최대 MP를 15% 회복한다. 해당 효과는 버스트에 적용되지 않는다.",
+  "미스릴의 세례":
+    "미스릴의 정토에 기록된 대미지에 따라 정토 내 모든 적에게 트루 대미지를 1회 부여하며, 기록은 초기화된다.",
+  "기발 블래스트":
+    "투사체 1개를 발사하고 적중한 후 1회 에너지 폭발을 일으키고, 기발 에센스 100 포인트를 소모하는 동시에 창의 에센스 25 포인트를 회복한다.",
+  "기발 시그널": "받는 주술 대미지 별도 +20%, 5초간 지속된다.",
+  "창의 오버로드":
+    "유저의 메인 스킬을 1회 즉시 발동(해당 스킬이 매직 버스트를 활성화할 수 있어야 함), 해당 스킬의 최대 매직 버스트 추가 +200%, 최대 충전으로 간주, 창의 에센스를 100포인트 소모한다.",
+  "비상 크리에이티브 머신":
+    "유저의 메인 스킬을 자동 시전한다. 기본 시전 빈도는 시전 속도의 100%, 이동 불가, 5 초간 지속한다.",
+  기발: "주술 대미지(곱연산) 별도 +5%, 10 초간 지속한다.",
+  리벤지:
+    "9 미터 내에 있는 랜덤 적에게 전송된 다음 메인 스킬을 1회 발동하고 발동된 스킬 공격 대미지 별도 +30%, 쿨타임 3 초",
+  기세: "5 미터 내에 적과의 거리가 가까울수록 입히는 대미지가 증가하며, 최대 2 미터에서 공격 대미지 별도 +20%\n3초간 지속한다.",
+  "엔드리스 리벤지":
+    "반경 15미터 이내의 랜덤 적을 목표로 리벤지를 반복 시전한다. 초기 공격 속도 추가 -30%, 리벤지를 1회 반복 시전할 때마다 공격 속도 추가 +5%, 최대 30 회 반복 시전할 수 있고 쿨타임은 10 초다.",
+  "얼음 응결":
+    "120을 초과할 경우, 초과한 빙결 1포인트당 받는 냉기 대미지 별도 +0.35%, 최대 +28%\n적의 공격과 시전 속도 추가 -10%(얼음 응결 효과 받지 않음)",
+  적세: "0.5초 간격으로, 다음 메인 스킬 공격 대미지가 30% 별도 추가된다. 해당 간격은 처치 시 새로고침된다.",
+  강건: "적 적중 시, 강건한 축복을 1 회 획득할 확률이 100% 증가한다.\n강건한 축복 최대 중첩수가 1 증가한다.",
+  "절대 강자":
+    "공격 속도가 10% 감소한다.\n공격 대미지가 30% 별도 추가된다.\n공격으로 주는 상태이상 대미지가 30% 별도 추가된다.",
+  버닝: "대미지가 적의 화염 저항 무시",
+  "요원한 불꽃":
+    "화염 지속 대미지가 20% 별도 추가된다.\n화염 대미지를 입히면 심화를 10 부여한다. 쿨타임 0.1초",
+  심판: "공격 적중 시, 마비를 입힐 확률이 100% 증가한다.\n마비 상태인 적에게 입히는 크리티컬 대미지가 20% 별도 추가된다.",
+  의연: "강건한 축복 중첩 1 회당, 아머 수치가 4% 별도 증가한다.",
+  협력: "듀얼 시, 서브 무기는 공격하지 않는다.\n서브 무기 대미지의 60%가 메인 무기에 추가된다.",
+  "박빙의 실력":
+    '근거리4미터 이내">근거리에 있는 적에게 주는 공격 대미지가 최대 25% 추가 증가한다. 해당 효과는 적과의 거리가 증가함에 따라 점차 감소한다.\n근거리4미터 이내">근거리의 적으로부터 받는 대미지가 15% 추가 감소한다. 해당 효과는 적과의 거리가 증가함에 따라 점차 감소한다.',
+  "엠버 갑옷": "비물리 대미지에 대한 아머 적용률이 25% 증가한다.",
+  무형: "함성 즉시 시전\n근접 대미지가 25% 추가 증가한다.",
+  청소: "양손 무기를 들고 있을 경우 공격 대미지 별도 +20%\n양손 무기를 들고 있을 경우 공격 스킬 범위 +20%",
+  비법: "MP 소모의 100%가 HP 소모로 전환된다.\n최대 HP가 20% 별도 추가된다.",
+  필사: "강건한 축복의 기본 효과가 대미지 8% 별도 증가로 전환된다.",
+  "유종의 미":
+    "위중 상태인 경우, 공격 대미지가 40% 별도 추가된다.\n자신의 최대 보호막이 0(으)로 고정된다.",
+  "생명의 통로":
+    "HP 반환량이 2배로 증가한다.\nHP 반환은 HP가 50%미만일 때만 유효하다.",
+  "생존 의지":
+    "위중 상태가 아닌 경우 공격 대미지 별도 +30%\n위중 상태인 경우 최대 HP 40% 회복. 해당 효과의 간격 10초",
+  "와일드 파이어":
+    "위중 상태 상태의 적에게 입히는 화염 대미지가 100% 별도 추가된다.\n위중 상태의 적에게 소환체가 입히는 화염 대미지가 100% 별도 추가된다.",
+  소진: "화염 대미지 별도 +15%\n대미지를 입는 경우 화염 대미지 별도 +10%, 8초 지속",
+  반석: "강건한 축복 중첩 1 회당, 화염 관통이 3% 증가한다.",
+  "진실의 불꽃":
+    "적이 점화되면 받는 지속 대미지에 대한 심화의 추가 보너스 60%가 자신이 적중한 화염 대미지에도 적용된다.",
+  "집중의 일격":
+    "범위 스킬이 중앙 적군에게 최대 32%의 추가 대미지를 부여한다.\n소환체의 범위 스킬이 중앙 적군에게 최대 32%의 추가 대미지를 부여한다.",
+  "반격의 불씨": "최대 점화가 1 증가한다.\n점화 지속 시간이 30% 증가한다.",
+  예민: "적 적중 시, 황홀한 축복을 1회 획득할 확률이 100% 증가한다.\n황홀한 축복 최대 중첩수가 1 증가한다.",
+  반짝: "위치 이동 스킬 쿨타임 회복 속도가 50% 별도 추가된다.\n위치 이동 스킬 공격 및 시전 속도가 25% 별도 추가된다.",
+  종종걸음: "최근 5m 이상 이동한 경우, 대미지가 30% 추가 증가한다.",
+  "인생 무상":
+    "최소 대미지가 32% 별도 감소한다.\n최대 대미지가 32% 별도 추가된다.",
+  "번뜩이는 감각":
+    "주술 대미지에 대한 회피 수치가 더 이상 기본적으로 별도 감소하지 않는다.\n회피 수치가 20% 별도 추가된다.",
+  광풍: "투사체 속도 보너스의 60%가 투사체 대미지 별도 보너스에도 동일하게 적용된다.",
+  "마음의 흐름":
+    "0.3초마다 대미지가 5% 별도 추가된다. 해당 효과는 최대 8회 중첩되며, 공격을 받으면 초기화된다.",
+  흥분: "황홀한 축복 1 회당, 회피 수치가 4% 별도 증가한다.",
+  일석삼조:
+    "투사체 수량이 2 증가한다.\n발사 투사체 분열 수량이 2 증가한다.\n투사체 대미지가 10% 별도 증가한다.",
+  "도피 마스터":
+    "최대 편향 중첩 수가 1 증가한다.\n회피 시, 편향을 1 회 획득한다.",
+  "근거리 사격":
+    "근처의 적에 대한 투사체 대미지가 최대 35% 별도 추가된다. 거리에 따라 점차 감소한다.",
+  전도: "마취 기본 효과가 받는 번개 대미지 별도 +11%로 전환된다.",
+  "점프 이동":
+    "스킬 시전 시, 50%의 확률로 해당 회차 스킬의 대미지가 16% 증폭된다.\n스킬 시전 시, 25%의 확률로 해당 회차 스킬의 대미지가 32% 증폭된다.\n스킬 시전 시, 10%의 확률로 해당 회차 스킬의 대미지가 80% 추가 증폭된다.",
+  "기묘한 각도": "마취 상태의 적에게 자신과 소환체가 주는 행운 대미지",
+  파죽지세:
+    "연속 공격 대미지가 55%씩 증가한다.\n소환체의 연속 공격 대미지가 55%씩 증가한다.",
+  "기회 포착":
+    "2 초 간격으로 황홀한 축복을 모두 소모하며, 소모 1 회당 직후 2 초 동안 대미지가 5% 별도 추가된다.",
+  재배: "최근 사용한 스킬 1회당 시전 속도가 6% 증가한다. 최대 10회까지 중첩",
+  안정: "HP 반환 시, HP를 5% 회복한다.\n보호막 반환 시, 보호막을 5% 회복한다.",
+  침착: "위중 상태이며 보호막이 낮을 경우, 받는 대미지가 30% 별도 감소한다.\n건강 상태인 경우, 받는 대미지가 25% 별도 추가된다.",
+  데자뷔: "메인 주술 스킬 사용 시, 추가 1회 발동 확률이 30% 증가한다.",
+  환골탈태:
+    "HP 반환 및 보호막 반환의 50%가 지속 회복으로 전환된다.\n반환 간격이 50% 별도 감소한다.",
+  "독이 든 안심":
+    "대미지 완화가 25% 증가한다.\n위중 상태인 경우, 받는 대미지가 15% 추가 감소한다.",
+  등대: "매직 버스트 최대치 +2",
+  혹한: "적중 시, 집요한 축복을 1 회 획득할 확률이 100% 증가한다.\n집요한 축복 최대 중첩수가 1 증가한다.",
+  엄동설한:
+    "적이 보유한 빙결 2포인트 당, 해당 적에게 주는 대미지가 1% 별도 추가된다.",
+  "고명한 견해":
+    "주술 대미지가 30% 별도 추가된다.\n스킬 소모가 25% 별도 추가된다.",
+  "대단한 권세": "냉기 및 화염 대미지 별도 +20%",
+  "정예 양성":
+    "MP를 6% 소모할 때마다 집요한 축복을 1 회 획득한다. 간격 0.3 초\n집요한 축복의 지속 시간이 50% 추가 감소한다.\n최대 집요한 축복에 도달하는 경우, 시전 속도가 25% 추가 증가한다.",
+  축적: "집요한 축복 중첩 상한이 1 증가한다.\n집요한 축복 중첩 1회당, 주술 대미지가 3% 별도 추가된다.",
+  "내부 에너지": "보호막 반환량이 2배로 증가",
+  갑각: "최대 보호막이 30% 별도 추가된다.\n최대 HP가 100로 고정된다.",
+  "착실한 접근":
+    "시전 속도 보너스와 추가 보너스의 100%가 매직 버스트 충전 속도에도 동일하게 적용된다.\n비매직 버스트 시전 스킬의 대미지는 50% 감폭된다.",
+  "광휘의 결계":
+    "최근 가동한 보호막 충전은 대미지를 받아도 중단되지 않는다.\n보호막 충전 속도가 50% 증가한다.",
+  "영혼의 칼날":
+    "마법 지팡이, 주석 지팡이를 보유하지 않은 경우 주술 대미지가 30% 추가된다.",
+  동상: "동결된 적에게 주는 대미지가 20% 별도 추가된다.\n적에게 냉기 대미지를 최초로 입힐 시 빙결과 100 빙결을 부여한다.",
+  "마법 에너지":
+    "대미지 20%가 MP에서 우선 차감된다.\n최대 MP가 12%별도 추가된다.",
+  풀로드: "최대 MP 도달 시, 다음 스킬의 대미지가 40% 별도 추가된다",
+  "극한의 프리징":
+    "동결 상태의 적에게 계속해서 빙결과 빙결 수치를 부여할 수 있다\n동결 상태가 끝난 후, 더 이상 빙결과 모든 빙결 수치가 제거되지 않으며, 유지된 빙결 수치 +20%\n동결 지속 시간 추가 -25%",
+  "얼음 연꽃":
+    "냉기 대미지가 25% 별도 추가된다.\n현재 MP가 15% 미만인 경우, 스킬 소모가 100% 추가 감소한다.",
+  "정신 몰두":
+    "집요한 축복의 기본 효과가 공격 및 주술에 최대 MP의 0.8%만큼 냉기 대미지가 부여되는 효과로 전환된다.",
+  적응: "받는 물리 대미지의 25%를 랜덤 원소 대미지로 전환한다.\n원소 최대 저항이 4% 증가한다.",
+  투명: "최근 화염 대미지를 부여한 경우, 번개 대미지가 20% 별도 추가된다.\n최근 번개 대미지를 부여한 경우, 냉기 대미지가 20% 별도 추가된다.\n최근 냉기 대미지를 부여한 경우, 화염 대미지가 20% 별도 추가된다.",
+  "빠른 의식":
+    "채널링 중첩 하한이 1 증가한다.\n채널링 스킬 대미지가 20% 별도 증가한다.",
+  "기묘한 신비":
+    "원소 상태 이상을 부여할 확률이 50% 증가한다.\n원소 상태 이상에 걸린 적에게 주는 대미지가 25% 별도 추가된다.",
+  "날카로운 견해": "원소 스킬이 아머 무시\n받는 물리 대미지 30% 별도 추가",
+  응집: "1초 간격으로 다음 번 메인 스킬의 크리티컬 수치가 50% 별도 추가된다.",
+  잔학: "물리 대미지 별도 +25%\n5레벨마다 원소 대미지 별도 -1%",
+  강인: "치명적 일격을 받은 후, 50%의 확률로 HP를 1포인트 보류한다.",
+  "자동 승급":
+    "근접 스킬 사용 시 +20%의 확률로 경화를 획득한다.\n경화 보유 시 근접 대미지 별도 +25%",
+  "정면 공격": "크리티컬로 주는 외상 대미지가 80% 추가 증가한다.",
+  "끝없는 전의": "전의를 보유한다.\n전의 효과가 12% 증가한다.",
+  둔기: "물리 대미지가 24% 증폭된다.\n적의 대미지 완화가 20% 증가한다.",
+  불연속: "공격 크리티컬 발동 시, 주술 크리티컬이 350 증가한다. 4초간 지속",
+  야심: "강적 적중 시, 전의를 10포인트 획득한다.\n주변에 적이 있는 경우, 전의를 획득한다.",
+  "갈라진 상처":
+    "외상 상태의 적에게 다시 외상을 입힐 경우, 외상 지속 시간이 50% 증가한다.\n외상 상태의 적에 대한 크리티컬 대미지가 125% 증가한다.\n외상 상태의 적에 대한 소환체의 크리티컬 대미지가 125% 증가한다.",
+  일촉즉발:
+    "스킬 발동 시, 전의 7 포인트 당 스킬 촉발 시, 해당 스킬의 대미지가 2% 별도 추가된다.",
+  "심신 단련":
+    "최근 시전한 공격 스킬 1회당, 주술 대미지가 9% 추가 증가한다. 최대 3회 중첩\n최근 주술이 적중한 경우, 공격 대미지가 25% 추가 증가한다.",
+  흩뿌리기:
+    "근접 스킬의 범위가 30%의 확률로 30% 증가한다.\n근접 대미지가 18% 별도 추가된다.",
+  "방어 태세": "막기 비율 +25%\n대미지 100 포인트 추가 막기",
+  "중앙 권력":
+    "적중 시, 현재 전의의 25%만큼 전의를 추가 획득한다. 쿨타임 0.3초\n공격을 받으면 현재 전의의 절반을 소모하며, 1포인트를 소모할 때마다 해당 회차의 대미지가 0.8% 별도 감소한다.",
+  "저울의 무게":
+    "민첩이 힘 이상인 경우, 공격 속도가 25% 별도 추가된다.\n힘이 민첩 이상인 경우, 공격 대미지가 25% 별도 추가된다.",
+  "전면 방어":
+    "방패에서 획득한 방어 추가 +25%\n막기 비율 1%당 받는 지속 대미지 별도 -1%",
+  "흩날리는 낙엽":
+    "무기 대미지가 20% 별도 감소한다.\n공격 대미지가 40% 별도 추가된다.",
+  요행: "전의 최소 50포인트 이상 보유 시, 행운 크리티컬이 발동한다.",
+  인력: "근접 대미지가 20% 별도 추가된다.\n근접 스킬이 역방향 넉백을 보유한다.",
+  "빗나간 화살":
+    "투사체 대미지가 20% 별도 추가된다.\n넉백 거리가 50% 증가한다.",
+  분발: "크리티컬 발동 시 직후 4초 동안 버프 획득: 크리티컬 발동 시 대미지 8% 추가 증가, 크리티컬 25% 감소, 해당 효과 간격 0.5초",
+  "가까운 거리":
+    "0.25초 간격으로 10미터 내의 적이 플레이어로부터 받는 대미지가 6% 추가 증가한다. 해당 효과는 최대 5회 중첩된다.",
+  "정교한 장비":
+    "투사체의 대미지가 비행 거리에 따라 점차 증가해, 원거리 적에 대한 대미지가 최대 35% 별도 추가된다.",
+  역병: "지속 대미지가 50%의 확률로 지속 대미지를 받은 주변 타깃에게 확산된다.\n지속 대미지의 지속 시간이 10% 증가한다.",
+  혼입: "악화 확률 +50%",
+  풍운: "지속 피해 가한 후 2 초 간 지속 대미지 추가 25% , 중첩 불가",
+  은연: "방황이 추가 효과 획득: 지속 대미지가 25% 별도 추가된다.",
+  "금기의 힘": "부식 대미지 35% 별도 추가\n원소 저항 10% 감소",
+  "괴력의 신":
+    "최근 8초 안에 대미지를 입은 경우 강건한 축복 최대 중첩 +1\n최근 8초 안에 위치 이동 스킬을 사용한 경우 황홀한 축복 최대 중첩 +1\n최근 8초 안에 크리티컬 또는 수확을 부여한 경우 집요한 축복 최대 중첩수 +1",
+  결계: "봉인된 MP의 13%만큼 보호막이 추가된다.",
+  "스텔스 스탭":
+    "방황 상태인 경우, 받는 대미지가 15% 별도 감소한다.\n방황 상실 후 3초 동안 대미지가 25% 별도 추가된다.",
+  중태: "대미지 부여 시 적이 보유한 몰락 또는 악화 1회당 부식 대미지 별도 +6%, 최대 별도 +30%",
+  "뒤틀린 신앙": "부식 스킬 레벨 +3\n최대 부식 저항 -15%",
+  HP전환: "최대 HP 보너스의 100%가 최대 MP에도 동일하게 적용됩니다",
+  홀리: "받는 저주 효과가 95% 감소한다.\n저주 상태의 적으로부터 받는 대미지가 15% 별도 감소한다.",
+  착란: "방황이 제어 유형 상태 효과 40% 증가, 상태 이상 대미지 20% 별도 추가의 추가 효과를 획득한다.",
+  일석이조:
+    "지속 대미지가 30% 별도 추가된다.\n지속 대미지 지속 시간이 10% 별도 감소한다.",
+  "저속한 언어": "추가 저주를 1개 시전할 수 있다.\n저주 효과가 10% 증가한다.",
+  "정화 절단":
+    "수확 시, 남은 대미지 총량의 25%를 추가 카운트한다. 이후 타깃의 모든 지속 대미지를 제거한다.",
+  전주: "메인 스킬 외의 스킬 사용 시, 다음 메인 스킬의 대미지가 25% 별도 추가된다. 중첩 불가",
+  비열: "크리티컬로 인한 상태 이상 지속 시간이 두 배로 증가한다.\n크리티컬 대미지가 3% 추가될 때마다, 상태 이상 대미지가 1% 별도 추가된다.",
+  "냉담한 눈초리": "모든 스킬 레벨 +1\nMP 봉인 보상 +10%",
+  "개척자의 길": "보조 스킬 레벨 +4\n보조 스킬 MP의 배율 95%로 고정",
+  "더러운 꼼수":
+    "적중 시, 무조건 모든 상태 이상을 부여한다.\n대미지를 입힐 때, 적이 보유한 상태 이상 1가지당, 대미지가 6% 추가 증가한다(곱연산).",
+  "등 뒤로 찌르기":
+    "방황 보유 시, 메인 스킬을 시전하면 방황을 상실하고 해당 스킬의 대미지가 40% 별도 추가된다.",
+  소집: "소환체 대미지가 20% 별도 추가된다.\n소환체 스킬 시전 속도가 50% 별도 추가된다.",
+  보초병:
+    "보초병 최대 수량이 1 증가한다.\n배치한 보초병의 스킬 시전 속도가 100% 별도 추가된다.",
+  "강력한 가드":
+    "소환체 소환 스킬 레벨이 2 증가한다.\n통솔이 초당 4포인트 증가한다.\n마령의 최초 성장치가 40 증가한다.",
+  "과도한 개조":
+    "보초병 대미지가 30% 별도 추가된다. 비보초병 액티브 스킬 대미지가 50% 별도 감소한다.",
+  "동일한 무장":
+    "소환체가 메인 무기의 보너스를 획득한다(무기의 공격 속도 및 기본 크리티컬 적용 불가)\n마법 지팡이 또는 주석 지팡이 휴대 시, 소환체의 주술 대미지가 30% 추가 증가한다.",
+  보스: "스마트 웨폰 소환체의 최대 수량이 1 증가한다.\n소환체 대미지가 10% 추가 증가한다.",
+  예열: "최근 보초병 스킬을 시전한 경우, 보초병 대미지가 30% 별도 추가된다.\n보초병 가동 시작 시간이 30% 별도 감소한다.",
+  "병사 소집":
+    "소환되는 스마트 웨폰 소환체의 수량이 1 추가 증가\n소환체 대미지 20% 별도 추가",
+  "불같은 침략":
+    "10미터 내에 강적이 있는 경우 2초 간격으로 통솔을 30포인트 획득한다.",
+  "동일한 공명":
+    "보초병 대미지 별도 +25%.\n공격 속도의 보너스와 추가 보너스의 100%가 공격 보초병의 시전 빈도에도 동일하게 작용한다.\n시전 속도의 보너스와 추가 보너스의 100%가 주술 보초병의 시전 빈도에도 동일하게 작용한다.",
+  "단결의 힘":
+    '주변 10 미터 내에 스마트 웨폰 소환체 1 개당 받는 대미지 추가 -5%\n소환체 공격성미니언의 공격성이 높을수록, 정찰 범위가 커진다.">공격성 -10%',
+  저항: "원소 저항 +15%\n원소 상태 이상 회피 확률 +20%",
+  장막: "장벽 흡수량 추가 +40%",
+  박학다식: "자극 스킬 레벨이 10 증가한다.\n실드 스킬 레벨이 10 증가한다.",
+  "독 면역":
+    "최대 부식 저항이 5% 증가한다.\n받는 물리 및 원소 대미지의 25%가 부식 대미지로 전환된다.",
+  "운동 에너지 전환":
+    "5 미터 이동할 때마다 장벽 획득 확률이 100% 증가한다.\n장벽을 획득하는 경우 장벽이 초기화된다.\n장벽 흡수량 추가 -40%",
+  원천: "마령 스킬의 MP 봉인 보상이 50% 증가한다.\n마령의 근원 효과가 30% 추가 증가한다.\n마령의 자극 스킬 효과가 30% 추가 증가한다.",
+  응급: "HP를 2% 잃을 때마다 HP 자연 회복 속도가 1.5% 별도 증가한다.\nMP를 2% 잃을 때마다 MP 자연 회복 속도가 1.5% 별도 증가한다.",
+  강화: "마령 최대 수량 1\n마령 대미지 85% 별도 추가",
+  "돌진 나팔":
+    "소환체의 공격 및 시전 속도가 10% 별도 감소한다.\n마령의 강화 스킬 사용 확률이 50% 증가한다.",
+  "신기한 묘약":
+    "회복 스킬의 회복 효과가 100% 증가한다.\n회복 스킬의 회복 효과는 제거되지 않는다.",
+  "심연의 클로":
+    "마령 성장치 20 포인트 당, 대미지가 1% 별도 추가된다.\n마령 성장치 40 포인트 당, 궁극 스킬 공격 및 시전 속도가 1% 추가 증가한다.",
+  "만계의 일상": "3초마다 질서를 1포인트 획득한다.",
+  "만계의 재난":
+    "처치 시, 질서를 1포인트 상실한다.\n적 보스와 처음으로 만나는 경우 현재 보유 질서의 절반을 상실한다.",
+  "만계의 열반":
+    "질서를 50포인트 고정 보유한다.\n질서 효과가 25% 증가한다.\n혼란 효과가 25% 증가한다.",
+  "용의 죽음":
+    "강건한 축복 잠식 후, 이어지는 몇 차례 메인 공격 스킬의 범위가 60% 증가하며, 대미지가 30% 별도 추가된다. 강건한 축복을 1회 잠식할 때마다 해당 횟수가 1 증가한다.\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "별들의 추락":
+    "황홀한 축복 잠식 후, 이어지는 4초 동안 받는 몇 차례의 적중 대미지는 편향을 잃지 않는다. 황홀한 축복을 1 회 잠식할 때마다 해당 횟수 +1. 해당 효과는 채널링과 보초병 스킬에 적용되지 않는다.\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "끝나버린 꿈":
+    "집요한 축복 잠식 후, 이어지는 몇 차례 메인 주술 스킬로 이중 대미지를 부여할 확률이 100% 증가한다. 집요한 축복을 1회 잠식할 때마다 해당 횟수가 1 증가한다.\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "정벌의 끝":
+    "전의 잠식 후, 이어지는 4 초 동안 크리티컬 추가 -25%, 전의를 1 포인트 잠식할 때마다 크리티컬 시 대미지 별도 +1%\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "탄로난 거짓":
+    "방황 잠식 후, 이어지는 4 초 동안 대미지를 회피할 수 없고, 방황 수치를 1 포인트 잠식할 때마다 +1.5% 확률로 상태 이상 회피, +1.5% 확률로 제어류 상태를 회피한다.\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "무너진 도시":
+    "장벽 잠식 후, 이어지는 4 초 동안 장벽 흡수 비율이 0(으)로 고정되고, 장벽 수치를 1 포인트 잠식할 때마다 앞으로 4 초 동안 HP와 보호막 1.5 회복, 회복량은 최대 HP와 최대 보호막의 400%를 초과하지 않는다.\n새로운 신이 여섯 신의 은혜를 잠식하고 있다.",
+  "반짝이는 설화":
+    '얼음 축제 기간 동안 몬스터를 처치하면 확률적으로 드롭되며, 일정 수량을 모으면 "봄맞이 선물" 이벤트에서 풍성한 보상으로 교환할 수 있습니다.',
+  의뢰서:
+    '이벤트 기간 동안 몬스터를 처치하면 확률적으로 드롭되며, 일정 수량을 모으면 "안개 사무소" 이벤트에서 풍성한 보상으로 교환할 수 있다.',
+  "핵심 증거":
+    '이벤트 기간 동안 몬스터를 처치하면 확률적으로 드롭되며, 일정 수량을 모으면 "안개 사무소" 이벤트에서 풍성한 보상으로 교환할 수 있다.',
+  "숨겨진 재능":
+    "회피 불가\n공격 스킬 시전 시 맹공 획득\n맹공 보유 시 공격 속도 +15%, 공격 대미지 별도 +15%",
+  "신중한 행동":
+    '신속 보유\n신속공격, 주술 시전, 이동 속도, 위치 이동 스킬의 쿨타임 회복 속도가 8% 추가 증가한다.">신속 보유 시, 최근 이동한 거리 3미터당 공격과 시전 속도 +7%, 최대 3 회 중첩된다.',
+  적토성산: "적중 대미지 별도 +40%\n스킬 효과 지속 시간 추가 -30%",
+  "기선 제압": "연속 공격 초기 카운팅 +1\n연속 공격 시 공격 속도 -20%",
+  "불의의 천둥":
+    "메인 스킬 시전 시 황홀한 축복 1 회 소모, 이번 스킬 번개 대미지 별도 +35%",
+  "피할 수 없는 재앙":
+    '처음 오멘불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.">오멘을 부여할 때 추가로 1 회의 오멘불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.">오멘을 부여한다.\n오멘불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.">오멘 발동 시 강적레어 몬스터와 보스가 포함된 강적">강적을 제외한 주위6미터 이내">주변 적 1명에게 오멘불길 저주의 영향을 받은 적이 받는 지속 대미지, 수확 대미지, 혼돈의 시공간 대미지와 추가 결산된 대미지가 최대 HP의 일정 비율에 도달할 때마다 대상은 오멘 1회를 획득한다(강적이 아닌 적의 일정 값은 8%, 강적의 일정 값은 5%).\n오멘 최대 중첩 수는 10 회\n최대 중첩 도달 시 강적이 아닌 적을 도태시키며, 강적에게 최대 HP 20%의 트루 대미지를 입힌다.">오멘을 3 회 부여한다.',
+  "맞춤형 처방":
+    "영약 스킬의 회복 효과는 제거되지 않는다.\n장착한 영약 스킬이 1 개 미만 시, 영약 스킬 효과의 지속 시간 추가 -50%\n장착한 영약 스킬이 2 개 미만 시, 영약 스킬 효과 추가 +50%",
+  일심협력:
+    "주변 10미터 이내에 보초병이 없는 경우, 1초 간격으로 보초병의 메인 스킬이 발동된다.\n보초병은 한 번에 최대 수량까지 배치할 수 있다.\n보초병 대미지 별도 +25%.",
+  괴력: "양손 검, 양손 도끼, 양손 해머 장착 시 방패를 장착할 수 있다.\n대미지 별도 -20%\n소환체 대미지 별도 -20%\n공격, 시전 속도, 이동 속도 추가 -20%",
+  "영광의 결속": "화염 저항 50%의 냉기, 번개 저항을 획득한다.",
+  "강철 의지":
+    "10 초 간격으로 아머 수치 1.5%의 실드를 획득하고, 받는 비트루 대미지의 100%를 흡수한다. 재차 획득 시 실드값이 새로고침된다.\n최대 HP는 100(으)로 고정된다.\n회피 수치와 최대 보호막은 0(으)로 고정된다.",
+  승승장구:
+    "콤보 스킬의 피니시 스킬이 연속 공격 상태일 경우, 반드시 최대 연속 공격 카운팅 만큼의 대미지를 입힌다.",
+  속전속결:
+    "정지 상태 종료 후 버프 1회를 획득한다. 버프는 2 초간 지속되고, 최대 5 회 중첩된다.\n버프 중첩 1회당 근거리 적에게 입히는 대미지 별도 +14%, 공격 속도 +8%",
+  템페스트:
+    "메인 스킬 중 원거리 수평 사격 투사체 스킬이 적중 시, 100% 확률로 메인 스킬을 추가 시전하고, 추가로 시전한 스킬의 투사체는 고리 모양으로 발사되며, 대미지 별도 -60%. 해당 효과의 간격은 0.03초이고, 보초병, 수직 및 채널링 스킬에 적용되지 않는다.\n투사체 최대 수량 5\n수평 사격 투사체 관통 횟수 +2",
+  "행운과 재앙":
+    "행운 대미지\n행운 크리티컬\n행운 회피\n비메인 스킬 발동 시 100% 확률로 행운 대미지, 행운 크리티컬, 행운 회피가 상실된다. 4초간 지속한다.",
+  "탁월한 판단":
+    "장착한 각각의 주술 스킬 수량에 따라 다양한 버프 효과를 획득한다: 장착한 자극 스킬 1개당 주술 대미지 별도 +13%(곱연산)\n장착한 저주 스킬 1개당 원소와 부식 저항 관통 +6%, 대미지 감소 수치의 관통 +6%\n장착한 실드 스킬 1개당 최대 MP 추가 +13%(곱연산)\n장착한 위치 이동 스킬 1개당 시전 속도 추가 +13%(곱연산)",
+  오만무례:
+    '메인 무기캐릭터의 오른손 무기가 메인 무기다.">메인 무기 대미지의 100%가 주술에 추가된다.\n메인 무기캐릭터의 오른손 무기가 메인 무기다.">메인 무기 크리티컬의 75%가 주술 스킬 기본 크리티컬에 추가된다.\n상태이상 대미지 별도 -99%',
+  "선동의 물결":
+    "주술 스킬 적중 시 50% 확률로 펄스 1개를 생성하여 적중 대미지 150%의 트루 대미지를 입히고, 해당 효과 간격은 0.03초다.",
+  "무적의 기세":
+    "크리티컬 시 적의 아머 10% 감소, 원소 저항 및 부식 저항 2% 감소, 8 초간 지속되며 최대 10 회 중첩된다.",
+  "강약의 하모니":
+    '최근 적중당하지 않은 경우, 대미지 완화 +40%. 적중당할 경우, 해당 효과는 계속 4 초간 적용된다.\n최근 적중당하면 0.5초마다 편향편향 중첩 1회당 받는 대미지가 8% 별도 감소한다. 최대 3회 중첩. 공격을 받으면 편향 중첩수를 전부 소모한다.">편향 1회를 획득한다.',
+  "격앙된 투지": "전의를 130 포인트 고정 보유한다.",
+  자기기만:
+    "적이 보유한 제어류 상태 1가지당, 적에게 입히는 부식 대미지 별도 +12%\n시전하는 제어류 상태가 자신에게 반사된다.",
+  "갈수록 태산":
+    "심화 1포인트당 효과 변경: 받는 지속 대미지 별도 +0.1% - +3%, 1 초마다 1회 갱신되고, 행운 대미지 보너스를 받는다.\n최대 대미지 보너스와 추가 보너스의 90%가 지속 대미지에도 동일하게 작용한다.",
+  "단호한 결단":
+    "지속 대미지 부여 시, 매직 버스트 충전 중첩 횟수가 최대치에 도달하면 모든 매직 버스트 충전 중첩 횟수를 소모한다. 매직 버스트 충전을 1회 소모할 때마다 대상의 0.9초 지속 대미지만큼의 수확을 1회 부여한다. 간격 0.15 초.\n해당 효과가 부여한 수확은 폭발을 일으켜 반경 6 미터 이내의 적에게 같은 대미지를 입힌다.\n몰락 지속 시간 추가 -60%",
+  의지불굴:
+    "강건한 축복, 황홀한 축복, 집요한 축복 효과 추가 -100%\n임의 축복 획득 시, 주변 10 미터 내에 있는 소환체도 동일 축복을 획득한다.\n소환체의 축복 최대치는 자신의 최대 축복의 2배와 같다.",
+  "생명의 순환":
+    "1 초 간격으로 자신과 가장 가까운 마령의 80%의 성장치를 획득하고, 성장치는 통솔과 동일한 회복 속도를 획득한다.\n보유한 성장치 10 포인트당 마령의 대미지 별도 +1%, 자신의 체형 추가 +0.1%, 스킬 범위 +0.5%",
+  "절묘한 솜씨":
+    '영약 스킬 시전 시, 교묘한 수단랜덤으로 아래 효과를 하나 발동한다. 6초간 지속하고, 해당 효과는 1초 내에 최대 4회 발동한다:\n20레벨의 대체적으로 유용한 자극 스킬 또는 실드 스킬을 하나 발동한다.\n전쟁의 신 축복을 5회 획득한다.\n메인 액티브 스킬을 10회 발동한다. 간격 0.2초.\n최대 중첩의 강건, 황홀, 집요한 축복을 획득한다.\n프로스트 트랜스퍼를 발동하고 받는 대미지 별도 -20%\n">교묘한 수단을 발동한다.\n영약 스킬이 1초마다 충전 진행도를 1 획득한다.',
+  풍전등화:
+    "어둠의 문 시전 시, 지정 방향으로 일정 거리 위치 이동한다.\n어둠의 문 최대 충전 포인트 +3\n어둠의 문 쿨타임 회복 속도 추가 +50%\n최근 어둠의 문 스킬을 시전한 경우, 소환체 대미지 별도 +30%",
+  "전술의 대가": "최대 에너지 수치 +1000",
+  "파멸적인 힘":
+    "공격 또는 주술이 적을 처치 시 25% 확률로 폭발하여 반경 5미터 내의 적에게 처치된 적의 최대 HP 250%만큼 트루 대미지를 입힌다.\n강적에게 입히는 대미지 별도 +30%",
+  유유상종:
+    "받은 물리 대미지와 원소 대미지의 100% 가 부식 대미지로 전환된다.\n부식 저항 추가 -70%",
+  "풍운 호령":
+    "서로 다른 함성을 하나 시전할 때마다 공격 대미지 별도 +35%, 8초간 지속한다.\n자극 스킬과 실드 스킬 효과 추가 -100%",
+  "재앙 자초":
+    '점화적중 시 일정 확률로 발생하는 상태 이상으로, 기본 점화 대미지에 따라 1초마다 화염 대미지를 입힌다. 4 초간 지속, 중첩 불가\n기본 점화 대미지가 0인 경우, 점화를 일으킬 수 없다.">점화 대신 연소(여기사2)특수 점화 상태, 지속 화염 대미지를 10 포인트 받는다. 모든 저항이 25% 감소하고, 지속 시간이 4 초로 고정된다.">연소를 부여한다.\n주변 10 미터 내의 적이 연소(여기사2)특수 점화 상태, 지속 화염 대미지를 10 포인트 받는다. 모든 저항이 25% 감소하고, 지속 시간이 4 초로 고정된다.">연소 1회를 보유할 때마다 해당 적의 화염 저항 -10%',
+  기상천외:
+    '100%를 초과한 점화적중 시 일정 확률로 발생하는 상태 이상으로, 기본 점화 대미지에 따라 1초마다 화염 대미지를 입힌다. 4 초간 지속, 중첩 불가\n기본 점화 대미지가 0인 경우, 점화를 일으킬 수 없다.">점화 확률 +1% 보유 시마다 점화적중 시 일정 확률로 발생하는 상태 이상으로, 기본 점화 대미지에 따라 1초마다 화염 대미지를 입힌다. 4 초간 지속, 중첩 불가\n기본 점화 대미지가 0인 경우, 점화를 일으킬 수 없다.">점화 대미지 별도 +3%, 최대 별도 +150%\n100%를 초과한 몰락적중 시 일정 확률로 발생하는 상태 이상으로, 기본 몰락 대미지에 따라 1초마다 부식 대미지를 입힌다. 1.5 초간 지속, 최대 30 회 중첩한다.\n기본 몰락 대미지가 0인 경우, 몰락을 일으킬 수 없다.">몰락 확률 +1% 보유 시마다 몰락적중 시 일정 확률로 발생하는 상태 이상으로, 기본 몰락 대미지에 따라 1초마다 부식 대미지를 입힌다. 1.5 초간 지속, 최대 30 회 중첩한다.\n기본 몰락 대미지가 0인 경우, 몰락을 일으킬 수 없다.">몰락 대미지 별도 +3%, 최대 별도 +150%\n100%를 초과한 외상적중 시 일정 확률로 발생하는 상태 이상으로, 기본 외상 대미지에 따라 1초마다 물리 대미지를 입힌다. 4초간 지속, 중첩 불가\n기본 외상 대미지가 0인 경우 외상을 일으킬 수 없다.">외상 확률 +1% 보유 시마다 외상적중 시 일정 확률로 발생하는 상태 이상으로, 기본 외상 대미지에 따라 1초마다 물리 대미지를 입힌다. 4초간 지속, 중첩 불가\n기본 외상 대미지가 0인 경우 외상을 일으킬 수 없다.">외상 대미지 별도 +3%, 최대 별도 +150%',
+  "HP 침식":
+    "1초마다 HP를 2% 소모하며, 적중당할 경우 최대 HP를 8% 회복한다. 간격 0.2초",
+  "침식의 방패":
+    "보호막 충전 속도가 20% 감소하며, 적중당할 경우 최대 보호막을 8% 회복한다. 간격 1초",
+  "재앙의 별 보스":
+    "재앙의 별 보스는 사냥 신 순회 게임 플레이의 한정 보스입니다. 프리 시즌이 끝나면 사냥 신 순회는 상주 게임 플레이에 포함되지 않지만, 추후의 프리 시즌에서 복귀할 수도 있습니다.",
+  검투사:
+    "전쟁의 신의 선동으로 움직이는 레어 몬스터. 브론즈 검투사, 실버 검투사, 골드 검투사 3종을 포함한다(불패의 챔피언 시즌에서만 확률적으로 등장. 불패의 챔피언 시즌 종료 후, 불패의 챔피언은 상시 콘텐츠에 포함되지 않으나, 추후 프리 시즌에 다시 돌아올 수 있음).",
+  "골드 검투사":
+    "전쟁의 신의 선동으로 움직이는 레어 몬스터. 강력하며, 많은 재물을 보유하고 있다(불패의 챔피언 시즌에서만 확률적으로 등장. 불패의 챔피언 시즌 종료 후, 불패의 챔피언은 상시 콘텐츠에 포함되지 않으나, 추후 프리 시즌에 다시 돌아올 수 있음).",
+  "왕후의 심지": "위대한 허공에서 영원의 군주에 도전하는 데 사용된다.",
+  "검은 물결의 칙령": "위대한 허공에서 서퍼에 도전하는 데 사용된다.",
+  "공허의 바다 초대장":
+    "위대한 허공에서 공허의 바다의 주인에 도전하는 데 사용된다.",
+  "야심의 원핵": "위대한 허공에서 법의 심판자에 도전하는 데 사용된다.",
+  참회: "참회 1회당 부식 대미지 별도 +4%(곱연산), 최대 4회 중첩, 8초 지속.",
+  "모독된 신성":
+    "집요한 축복 최대 중첩수 +1, 받는 대미지 +12%. 참회 최대 중첩수 미달성 시 제거.",
+  "전쟁 여신의 찬미":
+    "전쟁 여신의 찬미 1회당 공격 스킬에 원소 대미지 별도 +4%(곱연산), 최대 4 회 중첩, 8 초간 지속한다.",
+  아즈라:
+    "아즈라 1회당 주변 적에게 입히는 공격 대미지 별도 +5%(곱연산), 최대 5 회 중첩, 10 초간 지속.\n청초 1회당 시간은 따로 계산된다.",
+  "스퀴드 익스플로젼":
+    '매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트로 시전하는 스킬의 적중 대미지 별도 +16%, 10 초간 지속한다.',
+  "고양이 도핑약":
+    "고양이 도핑약 1회당 공격 대미지 별도 +5%(곱연산), 최대 3 회 중첩, 9 초간 지속한다.",
+  "화이트-일반":
+    "꿈나라 버블 최저 등급\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "블루-고급":
+    "꿈나라 버블 2단계 등급\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "퍼플-진귀":
+    "꿈나라 버블 3단계 등급\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "오렌지-희귀":
+    "꿈나라 버블 4단계 등급\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "레드-절대자":
+    "꿈나라 버블 5단계 등급\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "레인보우-판타지":
+    "꿈나라 버블 최고 등급. 일반적인 등급 향상으로 달성할 수 없으며, 명확한 징조가 있어야만 달성할 수 있다.\n꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지",
+  "아이디어 버블":
+    "신비한 꿈나라 버블 유형. 무수한 가능성을 지닌 보상이 들어있다고 한다. 일반적인 유형 변화로 나타나지 않으며, 명확한 징조가 있어야만 나타난다.\n꿈나라 버블 유형 계산 시, 아이디어는 모든 유형과 같다(중복 계산 불가).",
+  등급: "꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지\n이중 레인보우-판타지는 일반적인 등급 향상으로 달성할 수 없으며, 명확한 징조가 있어야만 달성할 수 있다.\n버블의 등급이 높을수록 보상도 좋아진다.",
+  유형: "꿈나라 버블의 유형:\n장비\n검은 돛\n큐브\n화폐\n이계\n찬란\n아이디어\n유형별로 보상이 다르다.\n꿈나라 버블 유형 계산 시, 아이디어는 모든 유형과 같다(중복 계산 불가).",
+  "장비 버블": "악몽 탈출 후 장비 유형의 보상으로 전환된다.",
+  "검은 돛 버블": "악몽 탈출 후 히어로 유물 및 추억 유형의 보상으로 전환된다.",
+  "큐브 버블": "악몽 탈출 후 신격의 석판 유형의 보상으로 전환된다.",
+  "화폐 버블": "악몽 탈출 후 연료, 엠버 유형의 보상으로 전환된다.",
+  "이계 버블": "악몽 탈출 후 이계 맵 재료 유형의 보상으로 전환된다.",
+  "찬란 버블": "악몽 탈출 후 찬란한 기억 유형의 보상으로 전환된다.",
+  "연료 버블": "악몽 탈출 후 연료 유형의 보상으로 전환된다.",
+  별도: "악몽 입장 시, 꿈의 가방 속 빈 슬롯은 최초 12칸에서 자동으로 확장되며, 각종 효과가 불러온 별도의 버블을 수용할 수 있다.",
+  "꿈 속의 꿈":
+    "이 징조의 현재 시퀀스가 3인 경우, 레인보우 등급의 화폐 버블이 1개 추가된다. 현재 시퀀스가 3보다 낮은 경우, 징조는 다음번 징조 선택 시 다시 나타나며, 시퀀스가 +1 된다.",
+  "초기 빈 슬롯":
+    "버블을 수용하는 빈 슬롯은 최초 12칸이다.\n악몽 입장 시, 꿈의 가방 속 빈 공간은 최초 12칸에서 자동으로 확장되며, 각종 효과가 불러온 별도의 버블을 수용할 수 있다.",
+  "영혼 버블":
+    "꿈나라 버블의 일종이다. 꿈나라 버블은 트윈 나이트메어에서 획득하는 보상의 통칭으로, 악몽 탈출 시 진짜 보상으로 전환된다.",
+  "꿈나라의 징조":
+    "꿈나라 징조는 아름다운 꿈의 징조와 악몽의 징조로 나뉜다. 아름다운 꿈의 징조는 꿈나라 버블에 여러 변화를 일으킨다(버블 등급 변경 및 유형 변경 등). 악몽의 징조는 악몽 속에서 만날 위험을 보여준다.",
+  "등급 상승":
+    "꿈나라 버블 등급(오름차순):\n화이트-일반\n블루-고급\n퍼플-진귀\n오렌지-희귀\n레드-절대자\n레인보우-판타지\n이중 레인보우-판타지는 일반적인 등급 향상으로 달성할 수 없으며, 명확한 징조가 있어야만 달성할 수 있다.",
+  "징조 선택":
+    "꿈나라 수련과 접촉 후 아름다운 꿈에 입장하면 반드시 징조를 선택해야 한다. 악몽에 입장하면 더는 징조를 선택하지 않는다(기타 효과로 별도의 징조 선택 횟수가 추가될 수 있음).",
+  "꿈나라 버블":
+    "꿈나라 버블은 트윈 나이트메어에서 획득하는 보상의 통칭으로, 악몽 탈출 시 실제 보상으로 전환된다.",
+  "아름다운 꿈의 징조":
+    "꿈나라 징조 선택 시, 아름다운 꿈의 징조가 유저의 꿈나라 버블에 등급이나 유형 변경 등 여러 변화를 일으킨다.",
+  "악몽의 징조":
+    "꿈나라 징조 선택 시, 악몽의 징조는 악몽에서 만나게 될 위험을 보여준다.",
+  "랜덤 1개만 남음":
+    "고정된 모든 버블이 보류된다. 이런 상황에서, 해당 징조가 남은 모든 버블 중 랜덤으로 타깃을 선택하고, 최대한 각 버블의 효과를 실행한다.",
+  때마다: "징조를 1번 선택할 때마다, 해당 효과가 1번만 발동",
+  "트윈 나이트메어":
+    "몇 층의 아름다운 꿈과 한 층의 악몽이 1라운드의 트윈 나이트메어 게임플레이로 구성됩니다.",
+  "등급 변동":
+    "등급이 실제로 변경되어야만 유효로 간주합니다.\n예: 버블 등급 변경을 시도하였으나, 등급이 변경되지 않은 경우 등급 변동이 발생한 것으로 간주하지 않습니다.",
+  "추가 또는 제거":
+    "실제로 추가 또는 제거되어야만 유효로 간주합니다.\n예: 버블 추가 또는 제거를 시도하였으나, 버블이 추가 또는 제거되지 않은 경우 버블의 추가 또는 감소가 발생한 것으로 간주하지 않습니다.",
+  "유형 변동":
+    "유형이 실제로 변경되어야만 유효로 간주합니다.\n예: 버블 유형 변경을 시도하였으나, 유형이 변경되지 않은 경우 유형 변동이 발생한 것으로 간주하지 않습니다.",
+  "파이어볼(타깃 추적)":
+    "악몽 속에서 유저를 따라다니며 대미지를 입히는 옵션 스킬",
+  "악몽의 불길":
+    "악몽 속에서 파이어볼을 생성하고 유저에게 화염 대미지를 입히는 위험한 옵션 스킬",
+  "악몽의 차가운 습격":
+    "악몽 속에서 얼음 송곳을 생성하고 유저에게 냉기 대미지를 입히는 위험한 옵션 스킬",
+  "악몽의 천둥":
+    "악몽 속에서 썬더볼을 생성하고 유저에게 번개 대미지를 입히는 위험한 옵션 스킬",
+  "악몽의 색채":
+    "악몽 속에서 부식볼을 생성하고 유저에게 부식 대미지를 입히는 위험한 옵션 스킬",
+  "악몽의 근원": "악몽의 근원을 찾아 처치해야만 악몽을 클리어할 수 있다.",
+  "방향 안내": "미니맵은 유저가 악몽의 근원을 찾을 수 있도록 마크를 제공한다.",
+  "경비병 몬스터":
+    "악몽의 근원 근처에 있는 경우, 악몽의 근원이 주기적으로 나이트메어 몬스터가 아닌 경비병을 소환한다.",
+  "영원 효과": "레전드 장비와 동일: 영원 장비 효과",
+  번개: "아름다운 꿈 번개의 힘, 일정시간 동안 주변의 몬스터에게 지속적으로 대미지를 입힌다.",
+  "아름다운 꿈안개":
+    "아름다운 꿈 기간 동안 안개는 맵에서 랜덤으로 이동하며, 가까이 다가가면 안개가 사라지며 스페셜 이벤트가 발생합니다. 일정 확률로 추가 보상을 획득합니다.",
+  "나이트메어 정예 몬스터":
+    "악몽에서 온 강력한 적, 처치 후 진귀한 보상을 획득할 수 있다.",
+  "여왕의 은총":
+    "이계의 위대한 허공에서 사용하며, 태양의 여왕에게 도전하는 포탈을 오픈할 수 있다.",
+  "마른 촉수": "유물: 촉수와 만나는 경우, 상실하는 이성 -40%",
+  "괴담 전설: 응시":
+    "유물: 안개화 1회 획득(안개화 1회당 괴담의 상자 드롭 수량 +20%, 안개화 최대 6회 보유 가능)\n타일 탐색 시 소모하는 이성 +2",
+  "조미료 병": "유물: 식량을 1회 섭취할 때마다 이성을 3포인트 회복한다.",
+  "괴담 전설: 비밀":
+    "유물: 새로운 날 입장 시, 30%의 확률로 안개화 1회 획득(안개화 1회당 괴담의 상자 드롭 수량 +20%, 안개화 최대 6회 보유 가능)",
+  "탐험가의 안경": "유물: 오픈된 타일 주변 4칸이 아닌 8칸을 탐색할 수 있다.",
+  "은행가의 차용증": "유물: 은행에서 획득하는 골드 수량이 증가하였습니다.",
+  "분홍빛 호두":
+    "식량: 유물 [항아리 속 물건] 획득: 이성이 0까지 하락하지 않는다.\n새로운 날이 되면 해당 유물은 소멸한다.",
+  "안개 도시 상인":
+    "안개 도시의 랜덤 위치에 나타난다. 이곳에서 골드를 사용하여 식량 또는 유물을 구매할 수 있다.",
+  촉수: "안개 도시의 랜덤 위치에 나타난다. 오픈되면 이성을 일정량 빼앗는다.",
+  요양원:
+    "안개 도시의 랜덤 위치에 나타난다. 이곳에서 이성을 일부 회복할 수 있다.",
+  은행: "안개 도시의 랜덤 위치에 나타난다. 이곳에서 골드를 일정량 획득할 수 있다.",
+  폐허: "안개 도시의 랜덤 위치에 나타난다. 주변 4칸의 타일은 탐색할 수 없다.",
+  "연금 공방":
+    "안개 도시의 랜덤 위치에 나타난다. 골드를 사용하여 유물을 레벨업할 수 있다.",
+  시계탑:
+    "안개 도시의 랜덤 위치에 나타난다. 이곳에서 전투하고 새로운 날로 진입할 수 있다.",
+  "빈 비석": "특수효과 없는 흉조의 비석",
+  "흉조의 비석-실명":
+    "다음의 특수 효과를 보유한 흉조의 비석: 이 비석이 전장에 있는 경우, 주변의 오픈되지 않은 타일 8칸을 봉쇄한다.",
+  "흉조의 비석-초조":
+    "다음의 특수 효과를 보유한 흉조의 비석: 해당 비석 제거 시 소모되는 이성이 2배가 된다.",
+  "흉조의 비석-궁핍":
+    "다음의 특수 효과를 보유한 흉조의 비석: 이 비석이 전장에 있는 경우, 타일 1칸 오픈 시마다 보유 중인 골드를 10% 상실한다.",
+  "흉조의 비석-거식":
+    "다음의 특수 효과를 보유한 흉조의 비석: 이 비석이 전장에 있는 경우, 식량을 사용할 수 없다.",
+  "제 1은행의 족쇄": "유물: 골드를 더 이상 획득할 수 없다.",
+  "녹슨 못": "유물: 이성을 더 이상 회복할 수 없다.",
+  "건망증 환자의 열쇠": "유물: 유물을 더 이상 획득할 수 없다.",
+  "항아리 속 물건":
+    "유물: 이성이 0까지 하락하지 않는다. 새로운 날이 되면 해당 유물은 소멸한다.",
+  안개화: "안개화 1회당 괴담의 상자 드롭 수량 +20%(안개화 최대 6회 보유 가능)",
+  "흉조의 비석":
+    "안개 도시의 랜덤 위치에 나타난다. 주변 타일을 봉쇄하며, 이성을 소모하여 제거할 수 있다.",
+  "찢어진 맵":
+    "유물: 새로운 날 입장 시, 랜덤 타일 1개 미리보기\n레벨업 후: 새로운 날 입장 시, 시계탑 위치 미리보기",
+  "화려한 골드 소스": "식량: 다른 식량의 사용 횟수 +3",
+  "변질된 소스":
+    "유물: 식량을 섭취할 때마다 30%의 확률로 섭취 가능 횟수를 소모하지 않는다.",
+  "주민의 낡은 그릇":
+    "유물: 새로운 날 입장 시, 50%의 확률로 식량 1개를 획득한다.",
+  "주민의 나무 상자":
+    "유물: 새로운 날 입장 시, 15%의 확률로 유물 1개를 획득한다.",
+  "'점성술사'":
+    "유물: 당신은 흉조의 비석이 있는 모든 위치를 미리보기할 수 있다.",
+  "'은행가'": "유물: 새로운 날 입장 시, 80 골드를 획득한다.",
+  "'맵 제작자'": "유물: 새로운 날 입장 시, 랜덤 타일 5개를 미리보기한다.",
+  "'탐험가'": "유물: 새로운 날 입장 시, 랜덤 타일 5개가 오픈된다.",
+  "깊은 안개의 알":
+    "유물: 흉조의 비석 제거 시 소모하는 이성 -25\n새로운 날 진입 시, 흉조의 비석 제거 시 소모하는 이성 +5",
+  "얕은 안개의 알":
+    "유물: 타일 탐색 시 소모하는 이성 -5\n새로운 날 진입 시, 타일 탐색 시 소모하는 이성 +1",
+  "흰 까마귀 화분":
+    "유물: 흉조의 비석 제거 시 소모하는 이성 +10\n새로운 날 진입 시, 흉조의 비석 제거 시 소모하는 이성 -4",
+  "검은 까마귀 화분":
+    "유물: 타일 탐색 시 소모하는 이성 +4\n새로운 날 진입 시, 타일 탐색 시 소모하는 이성 -2",
+  "괴담의 상자": "시계탑으로 이동 후 괴담 발생 콘텐츠 완료 시 획득하는 보상",
+  "고급 촉발체 스킬": "촉발체: 스탠바이, 촉발체: 강적, 촉발체: 중상",
+  "진귀 촉발체 스킬":
+    "촉발체: 정지, 촉발체: 스탠바이, 촉발체: 강적, 촉발체: 보스, 촉발체: HP, 촉발체: 보호막, 촉발체: 중상, 촉발체: 연속 공격, 촉발체: 파괴, 촉발체: 매직 버스트, 촉발체: 출발, 촉발체: 이동 중단, 촉발체: 공명 활성화, 촉발체: 공명",
+  "희귀 촉발체 스킬":
+    "촉발체: 율동, 촉발체: 이동 중단 공격, 촉발체: 보초병, 촉발체: 소환체, 촉발체: 크리티컬, 촉발체: 채널링, 촉발체: 지령, 촉발체: 고정, 촉발체: 추적",
+  "절대자 촉발체 스킬":
+    "촉발체: 영구, 촉발체: 질풍 율동, 촉발체: 정지 공격, 촉발체: 버스트 활성화, 촉발체: 부착",
+  톱니바퀴:
+    "클럽 게임 시작 후 스테이지 내에 출현하는 트랩을 활성화하고 그 주변의 몬스터를 처리하면 해당하는 희귀도 및 유형의 톱니바퀴 쿠폰을 획득할 수 있다.",
+  "톱니바퀴 대작전":
+    "톱니바퀴 1개를 활성화하고 그 주변의 몬스터를 처리하면 톱니바퀴 대작전을 1회 완료한 것으로 간주하며, 일반적으로 톱니바퀴 희귀도와 동일한 톱니바퀴 쿠폰을 획득할 수 있다.",
+  "톱니바퀴 쿠폰":
+    "스테이지 내 톱니바퀴 대작전 또는 특정 도전을 완료하면 톱니바퀴 쿠폰을 획득할 수 있다. 클럽 게임 종료 시 톱니바퀴 쿠폰은 해당 유형 및 희귀도에 따른 보상으로 교환된다.",
+  평점: "기계 인형 직원을 계속 처치하거나 톱니바퀴 쿠폰을 획득하면 이번 게임의 도전 평점이 증가한다. 총 F~SSS레벨 9단계 평점이 있으며, 최종적으로 톱니바퀴 쿠폰은 해당 게임의 기본 보상으로 교환된다. 도전 평점은 기본 보상이 몇 배로 늘어날 수 있는지를 결정한다.",
+  "스피드 드링크":
+    "클럽 게임에 출현하는 아이템, 터치 시 일정 시간 동안 자신의 이동 속도가 증가한다.",
+  "지연 모래시계":
+    "클럽 게임에 출현하는 아이템, 터치 시 이번 게임의 시간을 늘릴 수 있다.",
+  "도망치는 무녀":
+    "클럽 기계 인형 직원 중 하나, 실력은 레어 몬스터와 동일하다.",
+  "기계 인형 인턴 직원":
+    "클럽 기계 인형 직원 중 하나, 실력은 노멀 몬스터와 동일하다.",
+  "스칼렛 마리": "클럽 기계 인형 직원 중 하나, 실력은 보스 몬스터와 동일하다.",
+  "기계 인형 카니발":
+    "기계 인형 카니발로 이동해 클럽 게임의 결말 게임 플레이에 도전할 수 있다. 플레이어는 대량의 톱니바퀴가 포함된 맵에 입장해 한정 시간 내에 최대한 많은 톱니바퀴 쿠폰을 수집하여 풍성한 보상으로 교환할 수 있다. 이번 스테이지에는 추가시간이 없으며, 평점은 톱니바퀴 대작전을 완료해야 올릴 수 있다.",
+  "기계 인형 엘리트 직원":
+    "클럽 기계 인형 직원 중 하나, 실력은 레어 몬스터와 동일하다.",
+  "웅대한 철의 장막":
+    "웅대한 철의 장막으로 이동해 기계 인형 시즌의 최고 보스인 클럽 사장·은빛 날개의 무용수에 도전할 수 있다.",
+  "골드 회원 서비스":
+    "클럽 게임 시작 전, 선택 가능한 회원 서비스는 희귀도 유형에 따라 순차적으로 브론즈 회원 서비스, 퍼플 회원 서비스, 골드 회원 서비스, 다이아 회원 서비스로 나눌 수 있다.",
+  "다이아 회원 서비스":
+    "클럽 게임 시작 전, 선택 가능한 회원 서비스는 희귀도 유형에 따라 순차적으로 브론즈 회원 서비스, 퍼플 회원 서비스, 골드 회원 서비스, 다이아 회원 서비스로 나눌 수 있다.",
+  "창고 정리 빅세일":
+    "클럽 게임 시작 전 일정 확률로 기계 인형 카니발로 이동하는 포탈이 출현하며, 시즌 결말 게임 플레이로 이동할 수 있다.",
+  "정각 무도회 입장권":
+    "클럽 게임 시작 전 일정 확률로 웅대한 철의 장막으로 이동하는 포탈이 출현하며, 최고 보스인 클럽 사장·은빛 날개의 무용수에 도전할 수 있다.",
+  "회원 서비스":
+    "클럽 게임 시작 전, 3가지 효과 중 1개를 선택할 수 있으며, 해당 도전 완료 시 상응하는 보상을 획득할 수 있다. 회원 서비스는 희귀도 유형에 따라 순차적으로 브론즈 회원 서비스, 퍼플 회원 서비스, 골드 회원 서비스, 다이아 회원 서비스로 나눌 수 있다.",
+  골든벨:
+    "스테이지에 레인보우 톱니바퀴가 1~2개 출현한다. 모든 톱니바퀴 대작전 미완료 시, 톱니바퀴 쿠폰 보상을 교환할 수 없다.",
+  "날으는 기계 인형":
+    "톱니바퀴 대작전 오픈 시 획득 시간이 2배가 되며, 50%의 확률로 톱니바퀴 쿠폰 1개를 추가 획득한다(높은 희귀의 쿠폰일 가능성 증가). 처치되는 경우, 게임이 즉시 종료된다. 초기 시간은 15초로, 초기 평점은 S로 설정된다.",
+  "한 발의 총알":
+    "톱니바퀴 쿠폰을 획득할 때마다 랜덤 희귀도의 톱니바퀴 쿠폰을 1개 추가 획득하고, 다음 획득 수량이 1 증가한다. 톱니바퀴 오픈 시 +10%의 확률로 게임에서 즉시 패배한다. 스테이지에서 유저가 패배 시 모든 톱니바퀴 쿠폰을 잃으며, 해당 회원 서비스는 즉시 만료된다.",
+  "무인 구역의 장미":
+    "스테이지 내 모든 몬스터가 기계 인형 인턴 직원으로 바뀌고, 스테이지 내 레인보우 톱니바퀴는 7개만 존재한다.",
+  "클럽 강도 사건":
+    "스테이지 내 마지막 톱니바퀴 대작전 완료 시, 도망치는 무녀가 3명 출현한다. 1명을 처치할 때마다 랜덤 희귀도의 톱니바퀴 쿠폰을 1개 획득한다(최고 희귀도: 레드).",
+  "프리 리필 데이":
+    "톱니바퀴 쿠폰을 1개 획득할 때마다 자신의 주변에 톱니바퀴 1개가 새로고침된다. 초기 시간은 75초로 설정되며, 어떤 시간도 획득할 수 없다. 초기 톱니바퀴 수량은 1개이다.",
+  "너트 트릭":
+    "같은 희귀도의 톱니바퀴 쿠폰를 연속 3개 획득 시, 이 3개의 톱니바퀴 쿠폰의 희귀도는 모두 레인보우로 변경된다.",
+  "회원 혜택":
+    "클럽 게임 시작 후 스테이지 내 톱니바퀴는 일정 확률로 보상 효과를 보유한다.",
+  "역방향 회중시계":
+    "이벤트 기간 동안 몬스터를 처치하면 확률적으로 드롭되며, 일정 수량을 모으면 '무대 뒤' 이벤트에서 풍성한 보상으로 교환할 수 있다.",
+  "클럽 시상대":
+    "클럽 게임에서 최종 스테이지에 출현하는 트랩과 상호작용 후 톱니바퀴 쿠폰을 그 속에 투입하면 게임 플레이가 종료되고 보상을 교환할 수 있다.",
+  "톱니바퀴 도둑": "처치된 후 오렌지 이상의 톱니바퀴 쿠폰을 드롭한다.",
+  "기계 인형 가드":
+    "클럽 게임 시작 후, 스테이지 내의 기계 인형 몬스터가 랜덤으로 등장한다. 톱니바퀴 활성화 시, 톱니바퀴로 새로고침되는 기계 인형 직원에는 기계 인형 가드가 포함되지 않는다.",
+  "황폐한 심연 퀘스트": "챕터3 스토리 퀘스트 완료",
+  "중등도 증상":
+    "블러드 러스트 몬스터의 HP와 공격력이 증가한다.\n여러 개의 중등도 증상은 1회만 적용되고, 중등도 증상과 중증 증상이 동시에 존재할 경우, 중증 증상만 적용된다.",
+  "중증 증상":
+    "블러드 러스트 몬스터의 HP와 공격력이 대폭 증가한다.\n여러 개의 중증 증상은 1회만 적용되고, 중등도 증상과 중증 증상이 동시에 존재할 경우, 중증 증상만 적용된다.",
+  "염색된 눈": "그림 속 설원 게임 플레이의 기예에서 노드 레벨업에 사용된다.",
+  "이색의 알":
+    "그림 속 설원에 입장 후 타일 도전 완료 시 획득할 수 있는 보상. 이색의 알 색깔 레벨이 높을수록 드롭되는 보상이 좋아진다.\n이색의 알 드롭은 이색의 알 드롭 수량 보너스와 눈종이 난이도에 해당하는 드롭 수량 보너스의 영향만 받는다.",
+  "최대 가능 레벨":
+    "눈종이 펼치기 및 그리기 과정에서 획득하는 물감의 최대 가능 레벨",
+  "강제 배색":
+    "현재 배색 목표를 자동 완료하지만 디버프 효과를 가져올 수 있다. 한 판에 강제 배색 횟수가 많을수록 디버프 효과는 더욱 가중된다.",
+  확산: "배색 물감을 블록 타일, 허공 타일, 무색 타일에 사용하여 설원 그림을 확장할 수 있다.",
+  "숙명의 대결":
+    "타로의 비밀통로 완료 후 타로 시즌의 결말 게임 플레이로 이동할 수 있다.",
+  "다시 그리기":
+    "타일에 넣은 물감이 모두 제거되어 다시 그림 그리기를 해야 합니다.",
+  "운명의 상자":
+    "타로 게임 플레이에서 획득할 수 있는 보상 보물상자, 운명의 상자 색깔 레벨이 높을수록 좋은 아이템이 드롭된다.",
+  "타로의 비밀통로":
+    "이계 스테이지에서 일정 횟수의 타로 시련을 완료하면 타로의 비밀통로에 입장하여 운명의 상자를 수집할 수 있다.",
+  "타로술사의 점괘":
+    "이계 스테이지에서 타로 시련 완료 시 일정 확률로 타로술사의 점괘가 드롭된다. 점괘는 타로의 비밀통로에서 사용할 수 있다. 점괘의 희귀도는 오름차순으로 점괘(하), 점괘(상), 점괘(특상), 점괘(대길) 순이다.",
+  "운명 슬롯": "운명 장착 자격을 사용하지 않는다.",
+  "모래폭풍 속 고급 보물 창고":
+    "특별한 보물 창고. 보상이 더 많으며 반드시 전투를 치러야 한다.",
+  레벨: "일꾼의 레벨이 높을수록 기본 작업 효율도 높아진다.\n5레벨 이상 일꾼은 랜덤 옵션을 보유한다.",
+  "더 높은 레벨":
+    "일꾼 레벨이 현재까지 잠금 해제된 최대 레벨을 초과할 수 있습니다(최대 레벨 초과 불가).",
+  일꾼: "이계 스테이지에서 사막 도적을 처치하면 일정 확률로 해당 도적을 일꾼으로 모집한다.\n레벨이 높은 일꾼의 작업 효율이 더 높으며 요구하는 급여도 높아진다.",
+  생산라인:
+    "생산라인별로 자원을 1개씩 선택하고 최대 3명의 일꾼을 생산에 투입할 수 있다.\n모든 건물은 최대 4개의 생산라인을 보유할 수 있다.",
+  "아일랜드 명성 레벨":
+    "아일랜드과의 무역으로 해당 아일랜드에서의 명성을 획득할 수 있으며, 명성 누적 시 아일랜드의 명성 레벨이 증가한다.\n명성 레벨이 높을수록 거래 시 더 많은 아이템을 획득할 수 있다. 각 아일랜드의 명성 레벨에 따라 가져올 수 있는 아이템이 다르다.",
+  광부: "광산에서 주괴를 생산할 수 있는 일꾼이다.",
+  "크리스탈 채집공": "광산에서 매직 크리스탈을 생산할 수 있는 일꾼이다.",
+  요리사: "지원부서에서 식량을 생산할 수 있는 일꾼이다.",
+  조종사: "계류장에서 무역을 할 수 있는 일꾼이다.",
+  용병: "계류장에서 약탈을 할 수 있는 일꾼이다.",
+  "헤드 고블린":
+    "헤드 고블린은 특수 보스 몬스터로, 처치 시 대량의 아이템을 드롭한다.",
+  "올백 고블린":
+    "올백 고블린은 특수 보스 몬스터로, 처치 시 대량의 레전드 장비를 드롭한다.",
+  "회색 머리 고블린":
+    "회색 머리 고블린은 특수 보스 몬스터로, 처치 시 절대자 엠버를 드롭한다.",
+  "대머리 고블린":
+    "대머리 고블린은 특수 보스 몬스터로, 처치 시 대량의 찬란한 기억을 드롭한다.",
+  "올림머리 고블린":
+    "올림머리 고블린은 특수 보스 몬스터로, 처치 시 대량의 나침반을 드롭한다.",
+  "뾰족머리 고블린":
+    "뾰족머리 고블린은 특수 보스 몬스터로, 처치 시 대량의 비콘을 드롭한다.",
+  "교활한 고블린":
+    "교활한 고블린은 특수 보스 몬스터로, 처치 시 대량의 장비를 드롭한다.",
+  "탈취 작전":
+    "이계 스테이지에서 수송차 활성화 시 호송 경호원이 재물을 챙겨 철수합니다. 호송 경호원과 도착한 지원 부대를 추격 및 처치하면 보상을 획득합니다.",
+  "타워 중앙 금고":
+    "타워 중앙 금고로 이동해 수배 시즌의 결말 게임 플레이에 도전하세요. 유저는 대량의 작은 금고가 있는 맵에 입장합니다. 작은 금고를 1개 약탈할 때마다 오픈되지 않은 작은 금고가 경계 강도를 높이며, 제한 시간 내에 약탈을 완료하지 못하면 보스의 시험이 시작됩니다. 보스를 처치하면 보상이 풍부한 최종 금고를 오픈하고 약탈한 재화를 가져갈 수 있습니다.",
+  "현상수배 주문":
+    "탈취 작전 시작 전, 일정 확률로 암시장의 현상수배 주문을 받습니다. 타워 코인을 넣고 현상수배 주문을 오픈할 수 있으며, 주문을 모두 이행하면 추가 현상수배 보물상자를 획득합니다. 현상수배 주문에는 기본 현상수배 주문, 풍부 현상수배 주문, 고가 현상수배 주문 3개의 등급이 있습니다.",
+  "차원 감시자 보물상자":
+    "이계의 메아리와 금빛 천로 성반을 포함하며, 드롭 수량 보너스의 영향을 받지 않지만 이계 단계의 영향을 받는다.",
+  "시공의 여행자 보물상자":
+    "이계의 메아리와 금빛 천로 성반을 포함하며, 드롭 수량 보너스의 영향을 받지 않지만 이계 단계의 영향을 받는다.",
+  "신들의 보물상자":
+    "신력 엠블럼, 성반 및 이계의 메아리 등 아이템을 포함하며, 드롭 수량 보너스의 영향을 받지 않지만 이계 단계의 영향을 받는다.",
+  "신을 모시는 축전":
+    "신들 콘텐츠를 완료하면 중첩 수를 획득할 수 있다. 지정 중첩 달성 시 보스 구역에 신들의 보물상자 1개를 추가 생성한다.",
+  "신들의 축복":
+    "신들 콘텐츠를 완료하면 중첩 수를 획득할 수 있으며 최대 3회, 중첩 1회당 신들의 시련에서 추가 드롭 수량을 획득한다.",
+  맹격기갑:
+    "힘의 신 시련을 오픈할 때 맹격기갑은 무적 상태를 획득하고 양쪽으로 회전 레이저를 발사한다. 힘의 신 시련에서 최고 층수에 도달하면 맹격기갑은 무적 상태를 해제하고, 용맹의 로봇을 처치하면 힘의 신 시련의 드롭이 대폭 증가한다.",
+  "2차 기계의 신상":
+    "2차 기계의 신상은 시련 범위 내의 랜덤 위치에 분포되어 있고, 모두 추가 드롭 보상을 보유한다. 몬스터들은 동시에 모든 2차 기계의 신상에 공격을 발동하고, 2차 기계의 신상이 패배하면 보유한 보상을 잃게 된다. 2차 기계의 신상이 감당할 수 있는 대미지량은 이계 재능 별무리의 영향을 받지 않는다.",
+  "신들 콘텐츠":
+    "신들 콘텐츠에는 전쟁의 신의 시련, 힘의 신의 시련, 사냥의 여신의 시련 및 기계의 신의 시련이 포함됩니다.",
+  "미니 큐브":
+    "미니 큐브와 접촉하면 일정 확률로 야심의 결정이 드롭되고, 기연의 야욕 처형관 1마리 또는 악마 머리 고블린 1마리가 나타나며, 이들을 처치하면 대량의 야심의 결정이 드롭됩니다.",
+  "힘 머리 고블린":
+    "힘 머리 고블린은 특수 보스 몬스터로, 처치 시 근처에 힘의 신 시련을 1 개 추가 생성한다.",
+  "기계 머리 고블린":
+    "기계 머리 고블린은 특수 보스 몬스터로, 처치 시 근처에 기계의 신 시련을 1 개 추가 생성한다.",
+  "인형 머리 고블린":
+    "인형 머리 고블린은 특수 보스 몬스터로, 처치 시 톱니바퀴 쿠폰 1 개를 추가 획득할 수 있다.",
+  "수배 머리 고블린":
+    "수배 머리 고블린은 특수 보스 몬스터로, 처치 시 근처에 타워 수송차를 1 대 추가 생성한다.",
+  맹공: "공격 속도가 추가 5% 증가하고, 공격 대미지가 별도 5% 증가하며, 이동 속도가 10% 증가한다.",
+  "주술 과격":
+    "시전 속도와 주술 대미지가 별도로 7% 증가하고, 위치 이동 스킬의 쿨타임 회복 속도가 7% 증가한다.",
+  연약: "받는 주술 대미지가 별도로 15% 증가한다.",
+  "화염 침투":
+    "받는 화염 대미지가 별도로 13% 증가하고, 스킬 범위가 8% 감소한다.",
+  "번개 침투":
+    "받는 번개 대미지가 별도로 13% 증가하고, 공격 속도가 5% 감소한다.",
+  신속: "공격, 주술 시전, 이동 속도, 위치 이동 스킬의 쿨타임 회복 속도가 8% 추가 증가한다.",
+  강직: "강직 중첩 1회당 받는 적중 대미지가 별도 5% 감소하고 10초간 지속된다.\n기본 강직 최대치는 3회이다.",
+  고문: "고문 중첩 1회당 입히는 지속 대미지가 별도 5% 증가하고, 4초간 지속, 최대 3회 중첩된다.",
+  악령: "몰락과 악화 지속 시간이 추가로 7% 증가하고, 부식 대미지가 별도 7% 증가하며, 10초간 지속한다.",
+  "역방향 시계": "접촉 후 해당 층의 남은 시간을 증가합니다.",
+  "잘린 날개":
+    "접촉 후, 일정 시간 동안 이동 속도, 공격과 시전 속도, 위치 이동 스킬 쿨타임 회복 속도가 대폭 증가합니다.",
+  "리빙 건":
+    "접촉 후, 일정 시간 동안 주변의 적들에게 지속적으로 매우 높은 대미지의 투사체를 발사합니다.",
+  "컴백 앵커":
+    "이면세계의 좌표점. 탐색 과정에 헌터는 언제든 이 좌표로 전송할 수 있습니다.",
+  "최대 층 수":
+    '이면세계 시간을 소진하기 전에 격리 진행도를 가득 채우면 일정 확률로 더 깊은 층의 이면세계로 통하는 도어가 오픈됩니다.\n4층 이면세계의 격리 진행도가 가득 차면 시간이 소진된 후 "문지기"를 마주치게 됩니다.(아득 8단계 이상 난이도에서 문지기는 일정 확률로 스페셜 프리즘: 역상을 드롭합니다.)',
+  "이면세계 소동: 추락":
+    "일정 시간마다 이면세계에 촉수 덩어리가 떨어져 목표 구역에 대량의 대미지를 입히고, 추가 드롭 수량 보너스를 보유한 마법 이상체들이 함께 출현합니다.",
+  "이면세계 소동: 소생":
+    "이면세계의 이상체가 처치될 때, 일정 확률로 추가 드롭 수량 보너스를 보유한 노멀 이상체로 부활합니다.",
+  "이면세계 소동: 감금":
+    "일정 시간마다 헌터 근처에 추가 드롭 수량 보너스를 보유한 레어 이상체들이 리스폰됩니다.",
+  "떠다니는 머리":
+    "대량의 드롭과 매우 높은 HP를 보유한 이상 격리물, 처치된 후 레어 보상을 드롭하고, 일정 확률로 부활합니다.",
+  "안티메메틱 케이지":
+    "접촉 후, 헌터 주변에 철장이 나타나고, 동시에 대량의 드롭을 보유한 강력한 레어 이상체가 일정량 리스폰됩니다. 모든 이상체를 처치해야 철장을 열 수 있습니다.",
+  "도어 헌터": "이면세계에 숨은 보스 이상체, 처치 후 대량의 보상을 드롭합니다.",
+  "병 속 그림자":
+    "이면세계의 드롭을 증가하는 보상 옵션을 하나 포함하고 있고, 1회의 이면세계 콘텐츠에서 지속 적용됩니다. 여러 개의 보상 옵션 효과는 중첩되어 더 풍성한 드롭을 생성할 수 있습니다.\n4단계 이상 난이도의 이면세계에서 격리 진행도를 가득 채우면 병 속 그림자 1개를 고정 획득합니다. 이면세계 3층, 4층 진입 시, 추가로 병 속 그림자 1개를 고정 획득합니다.",
+  이면세계:
+    '이계 스테이지에서 "도어"를 통해 진입할 수 있는 공간입니다. 현재 위치한 이계 스테이지에서의 단계 보너스, 이계의 메아리 보너스, 일부 탐침, 나침반 및 이계 재능 보너스를 계승합니다.\n이면세계의 드롭은 이면세계 정령을 제외한 다른 정령의 영향을 받지 않습니다.',
+  "이면세계 소동":
+    "이면세계 소동: 소생, 이면세계 소동: 추락, 이면세계 소동: 감금 포함",
+  "3 × 3 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 두 번째 행, 두 번째 열에 위치했습니다.",
+  "3 × 4 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 두 번째 행, 두 번째 열에 위치했습니다.",
+  "4 × 3 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 두 번째 행, 두 번째 열에 위치했습니다.",
+  "2 × 2 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 첫 번째 행, 첫 번째 열에 위치했습니다.",
+  "7 × 1 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 첫 번째 행, 네 번째 열에 위치했습니다.",
+  "2 × 4 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 두 번째 행, 첫 번째 열에 위치했습니다.",
+  "4 × 2 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 첫 번째 행, 두 번째 열에 위치했습니다.",
+  "1 × 1 직사각형":
+    "영향 범위는 프리즘으로 펼쳐진 하나의 영역이며, 어떤 재능에 영향을 줄 수 있는지 결정합니다.\n프리즘은 영향 범위의 첫 번째 행, 첫 번째 열에 위치했습니다.",
+  문지기: '이면세계 중의 보스 이상체, 처치 후 일정 확률로 "역상"을 드롭한다.',
+  단련: "옵션 수치가 동적으로 랜덤 범위로 결정되며, 최대치가 대폭 상승한다.\n[하위 재능 효과 범위: -100-200]\n[중위 재능 효과 범위: -100-100]\n[레전드 중위 재능 효과 범위: -100-50]",
+  "거울 반사":
+    "재능을 재능 보드 중심 위치를 기준으로 반대편으로 거울 복제하며 해당 위치에 이미 재능이 존재할 경우, 해당 효과를 대체합니다.",
+  각성: "몬스터는 각성 시 희귀도가 변경되며, 각성 후의 희귀도에 따라 활성 보너스를 획득한다(노멀 몬스터 활성 +30, 매직 몬스터 활성 +60, 레어 및 보스 몬스터 활성 +120)",
+  변이: "대상 몬스터를 이름, 종족, 희귀도가 랜덤인 몬스터 1그룹으로 변경시키고, 활성과 수량은 변이 전과 동일하게 유지된다.\n적용 메커니즘: 변이",
+  융합: "여러 그룹의 몬스터를 제거한 후 새 몬스터 1그룹을 첨가한다. 새 몬스터의 활성, 수량은 제거된 몬스터의 활성, 수량의 총합이다.\n적용 메커니즘: 제거, 첨가, 융합",
+  "변이 악마로 변이한다.":
+    "대상 몬스터 종족이 변이 악마일 경우 적용으로 간주된다.",
+  "몬스터 첨가 시":
+    "몬스터 첨가 시 배양 탱크가 가득 차면 적용되지 않는다. 최대 배양 탱크: 6",
+  "해독제 상자":
+    "블러드 러스트 콘텐츠에서 획득할 수 있는 보상 보물상자, 해독제 상자 색깔 등급이 높을수록 좋은 아이템이 드롭된다. 수술 준비 단계에서 획득한 최종 활성이 높을수록 해당 해독제 상자도 좋아진다. 미치광이 의사 세라일의 수술실에서 최종 활성 단계에 해당하는 블러드 러스트 몬스터를 처치하면, 해당 해독제 상자를 오픈하고 보상을 획득한다.",
+  "수술 도구":
+    "수술 도구는 블러드 러스트 콘텐츠에서 획득하는 버프 아이템이다. 수술 준비 단계에서 몬스터의 수량과 활성을 대폭 증가하는 등 강력한 특수 효과를 제공하거나 특정 전략의 핵심 아이템으로서 강력한 블러드 러스트 몬스터 군단을 만드는 데 도움이 된다. 이계에서 블러드 러스트 몬스터를 처치하면 일정 확률로 수술 도구를 드롭한다. 수술 준비 단계에서 최종 활성이 해당 단계에 도달해도 획득할 수 있다.",
+  "부화 영약: 공심 고치":
+    "공심 고치 1 그룹을 획득하고, 다음 라운드에서 특수 포션 2 개를 추가로 지급한다.",
+  "Gen 1: 기생충 알":
+    "1 그룹 몬스터를 선택해 랜덤 독충으로 변이시키고 해당 독충 활성 +10, 다음 라운드에서 특수 포션 2 개를 추가로 지급한다.",
+  "Gen 1: 곤충 군집":
+    "랜덤 독충 1 그룹을 복제하고, 양측 각각 수량 +10, 다음 라운드에서 특수 포션 2 개를 추가로 지급한다.",
+  "Gen 2: 기생충 번데기":
+    "1 그룹 몬스터를 선택해 랜덤 독충으로 변이시키고 해당 독충 활성 +20, 다음 라운드에서 특수 포션 2 개를 추가로 지급한다.",
+  "Gen 2: 번데기 군집":
+    "랜덤 독충 1 그룹을 복제하고, 양측 각각 수량 +20, 다음 라운드에서 특수 포션 2 개를 추가로 지급한다.",
+  "Gen 3: 기생나비":
+    "1 그룹 몬스터를 선택해 랜덤 독충으로 변이시키고 해당 독충 활성 +30, 다음 라운드에서 특수 포션 1 개를 추가로 지급한다.",
+  "Gen 3: 우화 나비떼":
+    "랜덤 독충 1 그룹을 복제하고, 양측 각각 수량 +30, 다음 라운드에서 특수 포션 1 개를 추가로 지급한다.",
+  "부화 영약: 공심 여왕벌레":
+    "모든 몬스터와 공심 고치를 융합한다. 독충 1 그룹 포함 시마다 융합으로 획득한 몬스터 활성 및 수량 추가 +15%(매직 독충 추가 +30%, 레어 및 보스 독충 추가 +75%)",
+  "제1의식 성수: 고해": "다음 라운드에서 의식 성수 1개 획득: 태형",
+  "제2의식 성수: 태형": "다음 라운드에서 의식 성수 1개 획득: 계몽",
+  "제3의식 성수: 계몽": "다음 라운드에서 의식 성수 1개 획득: 성찬",
+  "제4의식 성수: 성찬":
+    "모든 몬스터를 제거하고 각성체 6 그룹을 획득한다. 각 그룹 각성체의 활성과 수량은 제거된 몬스터의 활성과 수량의 총합과 같다.",
+  "해부 침지액: 병든 시체":
+    "보스 해골 경비병을 1 그룹 획득한다. 배양 탱크가 가득 찼을 경우, 총 활성이 가장 높은 몬스터를 해골 경비병으로 변이시킨다. 다음 라운드에서 특수 포션 1 개를 추가로 지급한다.",
+  "해부술I: 살충술":
+    "최소 해골 경비병 1 그룹 보유 시 모든 독충을 제거한다. 다른 몬스터 수량 +199, 다음 라운드에서 특수 포션 1 개를 추가로 지급한다.",
+  "해부술II: 퇴마술":
+    "최소 해골 경비병 1 그룹 보유 시 모든 변이 악마를 제거한다. 다른 몬스터 활성 +199, 다음 라운드에서 특수 포션 1 개를 추가로 지급한다.",
+  "해부술III: 개두술":
+    "최소 해골 경비병 1 그룹 보유 시 모든 각성체를 제거한다. 다른 몬스터 수량 +199, 다음 라운드에서 포션이 특수 포션 1 개로 변한다.",
+  "해부 침지액: 온전한 골격":
+    "해골 경비병을 제외한 모든 몬스터를 제거한다. 1 그룹 보스 해골 경비병을 획득한 다음 비어있는 배양 탱크를 랜덤 해골 경비병으로 가득 채운다. 해골 경비병 1 그룹 보유 시마다 모든 해골 경비병 활성 +199, 수량 +199",
+  "이종 만능약: 골격 강화":
+    "랜덤으로 몬스터 1 그룹을 변이 악마로 변이시키고 해당 몬스터 활성 +333, 변이 악마를 제외한 몬스터가 계속 존재할 경우 다음 라운드에서 포션이 특수 포션 2 개로 변한다.",
+  "이종 만능약: 육성":
+    "랜덤으로 몬스터 1 그룹을 변이 악마로 변이시키고 해당 몬스터 수량 +333, 변이 악마를 제외한 몬스터가 계속 존재할 경우 다음 라운드에서 포션이 특수 포션 2 개로 변한다.",
+  "수술 위험도: 낮음":
+    "유저가 블러드 러스트 몬스터 처치 시 해당 몬스터 활성 +5%, 유저가 1회 처치될 때마다 최종 활성 -1%",
+  "수술 위험도: 보통":
+    "유저가 블러드 러스트 몬스터 처치 시 해당 몬스터 활성 +10%, 유저가 1회 처치될 때마다 최종 활성 -2%",
+  "수술 위험도: 높음":
+    "유저가 블러드 러스트 몬스터 처치 시 해당 몬스터 활성 +20%, 유저가 1회 처치될 때마다 최종 활성 -5%",
+  "누적 적용 횟수":
+    "누적 적용 횟수는 이번 라운드의 블러드 러스트 콘텐츠 중 협진의 블러드 러스트 나침반의 적용 횟수와 동일하다. 여러 옵션은 서로 곱연산으로 계산된다.",
+  "기본 속성 부활":
+    "추억의 기본 속성이 일정 확률로 증가한다. 표시된 수치는 최종 결과이며, 괄호 안의 수치는 증가한 수치다.",
+  "기본 특성 슬롯":
+    "히어로 기본 특성에 작용하는 추억 슬롯, 히어로 추억의 부활 옵션을 통해 제공된다.",
+  "희귀도 등급": "절대자: 레드 등급\n엘리트: 옐로 등급\n레어: 퍼플 등급",
+  "추억 유형":
+    "근원의 추억: 위치 1에 장착할 수 있다.\n자기 수호의 추억: 위치 2에 장착할 수 있다.\n진격의 추억: 위치 3에 장착할 수 있다.",
+  근원: "근원의 추억: 위치 1에 장착할 수 있다.",
+  "자기 수호": "자기 수호의 추억: 위치 2에 장착할 수 있다.",
+  진격: "진격의 추억: 위치 3에 장착할 수 있다.",
+  "루나 에너지":
+    "루나 하프 연주에 필요한 에너지, 루나족 몬스터를 처치하여 획득한다. 최대 루나 에너지에 도달하면, 루나 하프가 연주 횟수 1회를 획득한다.",
+  "루나 링":
+    "루나 하프가 영향을 미치는 원형 범위 구역, 캐릭터의 발밑에 위치하며 캐릭터를 따라 이동한다. 연주 시 루나 링 내의 모든 조각상이 동시에 활성화된다. 루나 링 범위는 루나의 현을 장착하여 증가할 수 있다.",
+  "초생의 루나":
+    "특수한 루나족 몬스터, 드롭은 루나족 레어 몬스터와 동일하지만 합주 보너스는 적용되지 않는다.",
+  광시곡: "특수 콘텐츠 테마, 풍부한 리듬 변화와 푸짐한 드롭 보상을 제공한다.",
+  "대미지 증가 프로그램: 물리":
+    "해당 스킬로 소환한 소환체 물리 대미지 별도 +15%",
+  "대미지 증가 프로그램: 냉기":
+    "해당 스킬로 소환한 소환체 냉기 대미지 별도 +15%",
+  "대미지 증가 프로그램: 화염":
+    "해당 스킬로 소환한 소환체 화염 대미지 별도 +15%",
+  "대미지 증가 프로그램: 번개":
+    "해당 스킬로 소환한 소환체 번개 대미지 별도 +15%",
+  "대미지 증가 프로그램: 부식":
+    "해당 스킬로 소환한 소환체 부식 대미지 별도 +15%",
+  "크리티컬 프로그램":
+    "해당 스킬로 소환한 소환체 크리티컬 +100%, 크리티컬 대미지 +100%",
+  "변동 프로그램":
+    "해당 스킬로 소환한 소환체 최소 대미지 별도 -20%, 최대 대미지 별도 +30%",
+  "분노 프로그램": "해당 스킬로 소환한 소환체가 위중 상태 시 대미지 별도 +25%",
+  "주술 프로그램":
+    '해당 스킬로 소환한 소환체의 최대 매직 버스트주술 스킬을 일정 횟수 자동으로 사용한다.\n매직 버스트가 최대 충전 상태가 되면, 다음 주술 스킬 사용 시 매직 버스트가 활성화된다. 매직 버스트로 충전 횟수가 전부 소모되며, 상응 횟수의 주술 스킬을 자동 사용한다.\n쿨타임이 있는 스킬, 촉발 스킬 또는 보초병, 채널링, 콤보 등 스킬은 매직 버스트를 활성화할 수 없다.">매직 버스트 +1, 주술 대미지 별도 +5%',
+  "맹렬 프로그램":
+    "해당 스킬로 소환한 소환체의 근접전 대미지 별도 +10%, 근접전 스킬 범위 +30%",
+  "냉기 프로토콜":
+    '해당 스킬로 소환한 소환체가 냉기 대미지 부여 시, 냉기 침투받는 냉기 대미지가 별도로 13% 증가하고, 이동 속도가 5% 감소한다.">냉기 침투를 부여한다.',
+  "화염 프로토콜":
+    '해당 스킬로 소환한 소환체가 화염 대미지를 입힐 때, 화염 침투받는 화염 대미지가 별도로 13% 증가하고, 스킬 범위가 8% 감소한다.">화염 침투를 부여한다.',
+  "번개 프로토콜":
+    '해당 스킬로 소환한 소환체가 번개 대미지를 입힐 때, 번개 침투받는 번개 대미지가 별도로 13% 증가하고, 공격 속도가 5% 감소한다.">번개 침투를 부여한다.',
+  "부식 프로토콜":
+    '해당 스킬로 소환한 소환체의 악화1초 지속되며, 지속 시간 종료 시 적중 부식 대미지의 60%에 해당하는 트루 대미지를 입힌다. 중첩 가능, 최대 99회, 중첩 횟수별로 따로 계산">악화 확률 +30%',
+  "방어 관통 프로토콜":
+    "해당 스킬로 소환한 소환체의 대미지 감소 수치의 관통 +12%",
+  "HP 프로토콜":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 최대 HP 추가 +10%",
+  "보호막 프로토콜":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 최대 보호막 추가 +10%",
+  "가속 프로토콜":
+    "해당 스킬로 소환한 소환체 공격, 시전 및 이동 속도 +20%\n해당 스킬로 소환한 소환체는 자신과 아군의 이동 속도 +20%",
+  "투사 프로토콜":
+    "해당 스킬로 소환한 소환체의 투사체 수량 +2, 수평 사격 투사체 관통 횟수 +2\n해당 스킬로 소환한 소환체는 자신과 아군의 투사체 속도 +90%",
+  "범위 프로토콜":
+    "해당 스킬로 소환한 소환체의 범위 대미지 별도 +10%\n해당 스킬로 소환한 소환체는 자신과 아군의 스킬 범위 +60%",
+  "저항 프로토콜":
+    "해당 스킬로 소환한 소환체의 원소 대미지 별도 +12%\n해당 스킬로 소환한 소환체는 자신과 아군의 원소 저항 +10%",
+  "이상 프로토콜":
+    '해당 스킬로 소환한 소환체가 대미지를 입힐 때, 적이 보유한 상태 이상외상, 점화, 빙결, 동결, 마취, 몰락 포함">상태 이상 1개당 대미지 별도 +3% (곱연산)\n해당 스킬로 소환한 소환체가 자신과 아군의 상태이상 대미지 별도 +12%',
+  "막기 프로토콜":
+    "해당 스킬로 소환한 소환체 공격과 주술 막기 확률 +100%, 막기 시 적을 조롱한다.",
+  "넉백 프로토콜":
+    '해당 스킬이 소환하는 소환체의 넉백대상을 밀침">넉백 확률 +100%, 넉백 시 마비받는 대미지가 15% 추가된다.">마비를 부여한다.',
+  "회복 프로토콜":
+    '해당 스킬로 소환한 소환체 HP 반환적중 시, 손실된 HP(봉인된 HP 포함)에 따라 일정 비율로 HP를 회복한다. 0.5초 간격으로 사용된다.">HP 반환 및 보호막 반환적중 시, 손실된 보호막에 따라 일정 비율로 보호막을 회복한다. 0.5초 간격으로 사용된다.">보호막 반환 +10%\n해당 스킬로 소환한 소환체는 자신과 아군에게 1초마다 3% HP 자연 회복 부여',
+  "날렵 프로토콜":
+    "해당 스킬로 소환한 소환체는 자신과 아군의 공격 및 시전 속도 +30%",
+  "원소 프로토콜":
+    '해당 스킬로 소환한 소환체에 물리 대미지 5%에 해당하는 랜덤 원소화염, 냉기와 번개 포함">원소 대미지가 추가되며, 원소 이상점화, 빙결, 동결, 마취 포함">원소 이상 확률 +100%',
+  "오라 커버: 무기 증폭":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 무기 증폭 부여",
+  "오라 커버: 화염 충전":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 화염 에너지 충전 부여",
+  "오라 커버: 전기 에너지 전환":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 전기 에너지 전환 부여",
+  "오라 커버: 부식 증폭":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 부식 증폭 부여",
+  "오라 커버: 혹한지대":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 혹한지대 부여",
+  "오라 커버: 견고":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 견고 부여",
+  "오라 커버: 민첩":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 민첩 부여",
+  "오라 커버: 에너지 장벽":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 에너지 장벽 부여",
+  "오라 커버: 원소 저항":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 원소 저항 부여",
+  "오라 커버: 질주":
+    "해당 스킬로 소환한 소환체는 자신과 아군에게 1 레벨 정밀 질주 부여",
+  "소스 코드: 강건한 펄스":
+    '해당 스킬로 소환한 소환체 적중 시, +50% 확률로 자신과 아군에게 강건한 축복강건한 축복 중첩 1회당, 받는 대미지가 4% 별도 감소한다(곱연산). 최초에는 최대 4회 중첩">강건한 축복 1회 부여',
+  "소스 코드: 황홀한 펄스":
+    '해당 스킬로 소환한 소환체 적중 시, +50% 확률로 자신과 아군에게 황홀한 축복황홀한 축복 1회당 공격 및 시전 속도가 4% 증가하고, 대미지가 2% 별도 증가한다. 초기 최대 4 회 중첩">황홀한 축복 1회 부여',
+  "소스 코드: 집요한 펄스":
+    '해당 스킬로 소환한 소환체 적중 시, +50% 확률로 자신과 아군에게 집요한 축복집요한 축복 1회당 대미지가 5% 별도 증가한다. 초기 최대 4 회 중첩">집요한 축복 1회 부여',
+  "소스 코드: 냉각":
+    '빙결적이 빙결되면 빙결을 보유하게 되고, 빙결은 고정된 수치를 가진다. 최대 빙결을 육성을 통해 증가시킬 수 있으며, 최대 빙결은 120 이다.">빙결 최대치 +1당, 해당 스킬로 소환한 소환체 빙결적이 빙결되면 빙결을 보유하게 되고, 빙결은 고정된 수치를 가진다. 최대 빙결을 육성을 통해 증가시킬 수 있으며, 최대 빙결은 120 이다.">빙결 최대치 +1\n해당 스킬로 소환한 소환체가 소환자에게 빙결 최대치 +30 부여',
+  "소스 코드: 멜트다운":
+    "해당 스킬로 소환한 소환체 공격 또는 주술로 적 처치 시 20% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250%만큼 트루 대미지를 입힌다.",
+  "소스 코드: 서지":
+    "해당 스킬로 소환한 소환체 이동 속도 +500%\n해당 스킬로 소환한 소환체가 최근 10 미터 이상 이동했을 경우, 자신과 아군의 번개 대미지 별도 +20% 부여",
+  "소스 코드: 브레이크포인트":
+    "해당 스킬로 소환한 소환체는 자신과 아군이 대미지를 입힐 때 HP가 18% 미만인 적을 도태시키게 한다.",
+  "소스 코드: 차원 강등":
+    "해당 스킬로 소환한 소환체는 주변 10미터 내에 있는 적의 부식 저항을 10(으)로 고정한다.",
+  "소스 코드: 오버 클로킹 구조":
+    "해당 스킬로 소환한 소환체 쿨타임 회복 속도 추가 +20%\n해당 스킬로 소환한 소환체가 자신과 아군의 쿨타임 회복 속도 +20%, 대미지 완화 +20%",
 };

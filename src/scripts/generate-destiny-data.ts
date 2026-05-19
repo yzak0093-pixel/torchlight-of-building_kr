@@ -5,7 +5,7 @@ import { join } from "node:path";
 import * as cheerio from "cheerio";
 import type { Destiny } from "../data/destiny/types";
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const DESTINY_URL = `${BASE_URL}/Destiny`;
 const CACHE_DIR = join(process.cwd(), ".garbage", "tlidb");
 const CACHE_PATH = join(CACHE_DIR, "destiny.html");
@@ -139,7 +139,7 @@ const main = async (): Promise<void> => {
   console.log(`Extracted ${items.length} destinies`);
 
   if (items.length === 0) {
-    throw new Error("No destinies extracted — check HTML structure");
+    throw new Error("No destinies extracted ??check HTML structure");
   }
 
   const outDir = join(process.cwd(), "src", "data", "destiny");

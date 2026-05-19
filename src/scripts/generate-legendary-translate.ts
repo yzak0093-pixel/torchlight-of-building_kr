@@ -76,7 +76,7 @@ const fetchTranslateName = async (
       "utf-8",
     );
 
-    // Extract Chinese name from h1 label like <h1>å†°å†»ç›®å…‰</h1>
+    // Extract Chinese name from h1 label like <h1>?°å†»??…‰</h1>
     const h1Match = html.match(/<h1[^>]*>([^<]+)<\/h1>/i);
     if (h1Match) {
       return h1Match[1].trim();

@@ -9,7 +9,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% additional damage for Main-Hand Weapons",
+    craftableAffix: "메인 무기 대미지 추가 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -17,7 +17,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+12% Armor DMG Mitigation Penetration",
+    craftableAffix: "아머 대미지 감소 관통 +12%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -25,7 +25,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Fire Penetration",
+    craftableAffix: "화염 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -33,7 +33,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Cold Penetration",
+    craftableAffix: "냉기 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -41,7 +41,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Lightning Penetration",
+    craftableAffix: "번개 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -49,7 +49,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Erosion Resistance Penetration",
+    craftableAffix: "부식 저항 관통 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -57,7 +57,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% gear Attack Speed",
+    craftableAffix: "해당 장비 공격 속도 +8%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -65,7 +65,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+20% Attack Critical Strike Rating for this gear",
+    craftableAffix: "해당 장비 공격 크리티컬 수치 +20%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -73,7 +73,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+20% additional damage on Critical Strike",
+    craftableAffix: "크리티컬 발동 시, 대미지 추가 +20%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -81,7 +81,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% all stats",
+    craftableAffix: "모든 속성 +16%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -90,7 +90,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a 30% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius",
+      "공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -98,7 +98,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds 1 - 7 Lightning Damage to Attacks per 10 Dexterity",
+    craftableAffix: "민첩 10 포인트 당, 공격에 번개 대미지 1 ~ 7 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -106,16 +106,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds 3 - 5 Fire Damage to Attacks per 10 Strength",
-  },
-  {
-    equipmentSlot: "Two-Handed",
-    equipmentType: "Crossbow",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "Main Skill is supported by Lv. 25 Multiple Projectiles\n+25% additional Projectile Damage",
+    craftableAffix: "힘 10 포인트 당, 공격에 화염 대미지 3 ~ 5 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -124,7 +115,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "After reaching their max range, Projectiles will return and travel an additional 0% of that distance, hitting the enemies on their path again\n-30% additional Projectile Damage",
+      "25 레벨 다중 투사체가 메인 스킬을 보조한다.\n투사체 대미지 추가 +25%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -133,7 +124,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+200% Precise Projectiles Aura effect\n-30% additional Precise Projectiles Sealed Mana Compensation",
+      "투사체는 최대 비행 거리에 도달한 뒤 되돌아와서 0% 거리를 더 비행하고, 경로 상의 적을 다시 적중할 수 있다.\n투사체 대미지 추가 -30%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -142,7 +133,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+80% Gear Physical Damage\n-20% Attack Critical Strike Rating for this gear",
+      "조준 투사 오라 효과 +200%\n조준 투사의 MP 봉인 보상 추가 -30%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -151,7 +142,7 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+30% additional Deterioration Damage\n10% chance to inflict 2 additional stack(s) of Deterioration",
+      "해당 장비 물리 대미지 +80%\n해당 장비 공격 크리티컬 수치 -20%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -159,6 +150,15 @@ export const CROSSBOW_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+50% Gear Elemental Damage\n-25% Gear Physical Damage",
+    craftableAffix:
+      "악화 대미지 별도 +30%\n10% 의 확률로 악화를 2 회 추가 부여한다.",
+  },
+  {
+    equipmentSlot: "Two-Handed",
+    equipmentType: "Crossbow",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "해당 장비의 원소 대미지 +50%\n해당 장비 물리 대미지 -25%",
   },
 ];

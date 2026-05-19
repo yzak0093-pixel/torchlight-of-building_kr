@@ -3,7 +3,7 @@ import type { HeroMemoryBaseStats } from "./types";
 export const AllHeroMemoryBaseStats = [
   {
     source: "Origin",
-    affixTemplate: "+# Damage",
+    affixTemplate: "+# 대미지",
     normal: { 1: 12, 10: 36 },
     magic: { 1: 20, 10: 38.9, 20: 60 },
     rare: { 1: 28, 10: 45.4, 20: 64.7, 30: 84 },
@@ -12,7 +12,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Origin",
-    affixTemplate: "+# Minion Damage",
+    affixTemplate: "+# 소환체 대미지",
     normal: { 1: 12, 10: 36 },
     magic: { 1: 20, 10: 38.9, 20: 60 },
     rare: { 1: 28, 10: 45.4, 20: 64.7, 30: 84 },
@@ -21,7 +21,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Origin",
-    affixTemplate: "+# Intelligence",
+    affixTemplate: "+# 지혜",
     normal: { 1: 10, 10: 30 },
     magic: { 1: 17, 10: 33, 20: 50 },
     rare: { 1: 23, 10: 38, 20: 54, 30: 70 },
@@ -30,7 +30,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Origin",
-    affixTemplate: "+# Strength",
+    affixTemplate: "+# 힘",
     normal: { 1: 10, 10: 30 },
     magic: { 1: 17, 10: 33, 20: 50 },
     rare: { 1: 23, 10: 38, 20: 54, 30: 70 },
@@ -39,7 +39,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Origin",
-    affixTemplate: "+# Dexterity",
+    affixTemplate: "+# 민첩",
     normal: { 1: 10, 10: 30 },
     magic: { 1: 17, 10: 33, 20: 50 },
     rare: { 1: 23, 10: 38, 20: 54, 30: 70 },
@@ -48,7 +48,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Discipline",
-    affixTemplate: "+# Max Life",
+    affixTemplate: "+# 최대 HP",
     normal: { 1: 37, 10: 110 },
     magic: { 1: 61, 10: 119, 20: 183 },
     rare: { 1: 86, 10: 139, 20: 198, 30: 257 },
@@ -57,7 +57,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Discipline",
-    affixTemplate: "+# Max Mana",
+    affixTemplate: "+# 최대 MP",
     normal: { 1: 20, 10: 60 },
     magic: { 1: 33, 10: 65, 20: 100 },
     rare: { 1: 47, 10: 76, 20: 108, 30: 140 },
@@ -66,7 +66,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Discipline",
-    affixTemplate: "+# Max Energy Shield",
+    affixTemplate: "+# 최대 보호막",
     normal: { 1: 58, 10: 175 },
     magic: { 1: 97, 10: 189, 20: 292 },
     rare: { 1: 136, 10: 220, 20: 314, 30: 408 },
@@ -75,7 +75,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Discipline",
-    affixTemplate: "+# Armor",
+    affixTemplate: "+# 아머",
     normal: { 1: 480, 10: 1440 },
     magic: { 1: 800, 10: 1558, 20: 2400 },
     rare: { 1: 1120, 10: 1815, 20: 2588, 30: 3360 },
@@ -84,7 +84,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Discipline",
-    affixTemplate: "+# Evasion",
+    affixTemplate: "+# 회피",
     normal: { 1: 480, 10: 1440 },
     magic: { 1: 800, 10: 1558, 20: 2400 },
     rare: { 1: 1120, 10: 1815, 20: 2588, 30: 3360 },
@@ -93,7 +93,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Progress",
-    affixTemplate: "+# Attack Speed",
+    affixTemplate: "+# 공격 속도",
     normal: { 1: 4, 10: 12 },
     magic: { 1: 6.7, 10: 13, 20: 20 },
     rare: { 1: 9.3, 10: 15.1, 20: 21.6, 30: 28 },
@@ -102,7 +102,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Progress",
-    affixTemplate: "+# Cast Speed",
+    affixTemplate: "+# 시전 속도",
     normal: { 1: 4, 10: 12 },
     magic: { 1: 6.7, 10: 13, 20: 20 },
     rare: { 1: 9.3, 10: 15.1, 20: 21.6, 30: 28 },
@@ -111,7 +111,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Progress",
-    affixTemplate: "+# Movement Speed",
+    affixTemplate: "+# 이동 속도",
     normal: { 1: 2.7, 10: 8.2 },
     magic: { 1: 4.6, 10: 8.9, 20: 13.7 },
     rare: { 1: 6.4, 10: 10.4, 20: 14.8, 30: 19.2 },
@@ -120,7 +120,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Progress",
-    affixTemplate: "+# Minion Attack Speed",
+    affixTemplate: "+# 소환체 공격 속도",
     normal: { 1: 4, 10: 12 },
     magic: { 1: 6.7, 10: 13, 20: 20 },
     rare: { 1: 9.3, 10: 15.1, 20: 21.6, 30: 28 },
@@ -129,7 +129,7 @@ export const AllHeroMemoryBaseStats = [
   },
   {
     source: "Progress",
-    affixTemplate: "+# Minion Cast Speed",
+    affixTemplate: "+# 소환체 시전 속도",
     normal: { 1: 4, 10: 12 },
     magic: { 1: 6.7, 10: 13, 20: 20 },
     rare: { 1: 9.3, 10: 15.1, 20: 21.6, 30: 28 },

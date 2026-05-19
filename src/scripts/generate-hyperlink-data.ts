@@ -8,7 +8,7 @@ import { program } from "commander";
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const HYPERLINK_URL = `${BASE_URL}/Hyperlink`;
 const HYPERLINK_DIR = join(process.cwd(), ".garbage", "tlidb", "hyperlink");
 const HYPERLINK_FILE = "hyperlink.html";
@@ -89,7 +89,7 @@ const extractHyperlinks = ($: cheerio.CheerioAPI): Record<string, string> => {
     const name = $(tds[0]).find("a").first().text().trim();
     if (name === "") return;
 
-    // Skip duplicates — keep first occurrence
+    // Skip duplicates ??keep first occurrence
     if (name in hyperlinks) return;
 
     const descriptionHtml = $(tds[1]).html() || "";

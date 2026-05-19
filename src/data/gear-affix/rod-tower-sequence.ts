@@ -9,7 +9,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% additional Minion Damage",
+    craftableAffix: "소환체 대미지 추가 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -17,7 +17,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+6% Armor DMG Mitigation Penetration for Minions",
+    craftableAffix: "소환체의 아머 대미지 감소 관통 +6%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -25,7 +25,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Minion Fire Penetration",
+    craftableAffix: "소환체의 화염 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -33,7 +33,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Cold Penetration for Minions",
+    craftableAffix: "소환체의 냉기 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -41,7 +41,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Lightning Penetration for Minions",
+    craftableAffix: "소환체의 번개 관통 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -49,7 +49,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% Erosion Penetration for Minions",
+    craftableAffix: "소환체 +8% 부식 관통",
   },
   {
     equipmentSlot: "One-Handed",
@@ -57,7 +57,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Minion Attack and Cast Speed",
+    craftableAffix: "소환체 공격 및 시전 속도 +16%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -65,7 +65,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+55 Minion Critical Strike Rating",
+    craftableAffix: "소환체 크리티컬 수치 +55",
   },
   {
     equipmentSlot: "One-Handed",
@@ -73,7 +73,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+40% Minion Critical Strike Damage",
+    craftableAffix: "소환체 크리티컬 대미지 +40%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -81,7 +81,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% all stats",
+    craftableAffix: "모든 속성 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -89,7 +89,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+80 initial Growth for Spirit Magi",
+    craftableAffix: "마령의 최초 성장치 +80 .",
   },
   {
     equipmentSlot: "One-Handed",
@@ -97,24 +97,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+ 10 Command per second",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Rod",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "Triggers Lv. 10 Entangled Pain Curse and Timid Curse when a Minion deals damage. Cooldown: 1 s\nMinions can cast 1 additional Curse(s)",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Rod",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix: "The Main Skill is supported by a Lv. 25 Servant Damage",
+    craftableAffix: "통솔 초당 10 포인트 증가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -123,7 +106,23 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "-80 Minion Critical Strike Rating\n+200% Minion Critical Strike Damage",
+      "소환체가 대미지를 입힐 시, 10 레벨의 고통의 올가미 저주 및 위축 저주를 발동한다. 쿨타임 1 초\n소환체가 추가 저주를 1 개 시전할 수 있다.",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Rod",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "25 레벨 소환체 대미지가 메인 스킬을 보조한다.",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Rod",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "소환체 크리티컬 수치 -80\n소환체 크리티컬 대미지 +200%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -132,7 +131,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+120% Radical Order Aura Effect\n-20% additional Radical Order Sealed Mana Compensation",
+      "과격한 소집 오라 효과 +120%\n과격한 소집의 MP 봉인 보상 추가 -20%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -140,7 +139,7 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Triggers Lv. 20 Dark Gate when moving. Interval: 4 s",
+    craftableAffix: "이동 시, 20 레벨 어둠의 문을 발동한다. 간격 4 초",
   },
   {
     equipmentSlot: "One-Handed",
@@ -149,6 +148,6 @@ export const ROD_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "When Minions deal damage, inflicts Fire Infiltration. Interval for each enemy: 1 s\nWhen Minions deal damage, inflicts Lightning Infiltration. Interval for each enemy: 1 s\nWhen Minions deal damage, inflicts Cold Infiltration. Interval for each enemy: 1 s",
+      "소환체가 대미지를 입힐 때 화염 침투를 시전, 모든 적에게 1 초의 간격을 가진다.\n소환체가 대미지를 입힐 때 번개 침투를 시전, 모든 적에게 1 초의 간격을 가진다.\n소환체가 대미지를 입힐 때 냉기 침투를 시전, 모든 적에게 1 초의 간격을 가진다.",
   },
 ];

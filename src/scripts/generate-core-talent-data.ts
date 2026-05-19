@@ -10,7 +10,7 @@ import { isTree } from "../data/talent";
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const CORE_TALENT_URL = `${BASE_URL}/Talent#CoreTalentNode`;
 const CORE_TALENT_DIR = join(process.cwd(), ".garbage", "tlidb", "core_talent");
 const CORE_TALENT_FILE = "core_talent_node.html";
@@ -77,6 +77,40 @@ const cleanAffixText = (html: string): string => {
   return text.trim();
 };
 
+const KO_TREE_MAP: Record<string, string> = {
+  "힘의 신": "God of Might",
+  "사냥의 여신": "Goddess of Hunting",
+  "지식의 여신": "Goddess of Knowledge",
+  "전쟁의 신": "God of War",
+  "기만의 여신": "Goddess of Deception",
+  "기계의 신": "God of Machines",
+  용자: "The Brave",
+  약탈자: "Onslaughter",
+  장군: "Warlord",
+  투사: "Warrior",
+  명사수: "Marksman",
+  "블레이드 러너": "Bladerunner",
+  드루이드: "Druid",
+  어쌔신: "Assassin",
+  마기스터: "Magister",
+  미스틱: "Arcanist",
+  엘리멘탈리스트: "Elementalist",
+  예언가: "Prophet",
+  "섀도우 댄서": "Shadowdancer",
+  사무라이: "Ronin",
+  레인저: "Ranger",
+  철갑병: "Sentinel",
+  "섀도우 마스터": "Shadowmaster",
+  초능력자: "Psychic",
+  "어둠의 술사": "Warlock",
+  언데드: "Lich",
+  정비공: "Machinist",
+  "철의 개척자": "Steel Vanguard",
+  연금술사: "Alchemist",
+  장인: "Artisan",
+  "새로운 신": "New God",
+};
+
 const extractCoreTalents = ($: cheerio.CheerioAPI): BaseCoreTalent[] => {
   const talents: BaseCoreTalent[] = [];
 
@@ -89,8 +123,9 @@ const extractCoreTalents = ($: cheerio.CheerioAPI): BaseCoreTalent[] => {
     if (!name) return;
 
     // Extract tree from the anchor tag
-    const tree = contentDiv.find("a").first().text().trim();
-    if (!tree) return;
+    const treeRaw = contentDiv.find("a").first().text().trim();
+    if (!treeRaw) return;
+    const tree = KO_TREE_MAP[treeRaw] ?? treeRaw;
     if (!isTree(tree)) return;
 
     // Skip "New God" talents

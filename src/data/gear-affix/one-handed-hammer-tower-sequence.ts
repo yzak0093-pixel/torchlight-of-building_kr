@@ -10,7 +10,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% additional damage for Main-Hand Weapons",
+      craftableAffix: "메인 무기 대미지 추가 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -18,7 +18,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+6% Armor DMG Mitigation Penetration",
+      craftableAffix: "아머 대미지 감소 관통 +6%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -26,7 +26,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% Fire Penetration",
+      craftableAffix: "화염 관통 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -34,7 +34,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% Cold Penetration",
+      craftableAffix: "냉기 관통 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -42,7 +42,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% Lightning Penetration",
+      craftableAffix: "번개 관통 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -50,7 +50,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% Erosion Resistance Penetration",
+      craftableAffix: "부식 저항 관통 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -58,7 +58,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+8% gear Attack Speed",
+      craftableAffix: "해당 장비 공격 속도 +8%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -66,7 +66,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+20% Attack Critical Strike Rating for this gear",
+      craftableAffix: "해당 장비 공격 크리티컬 수치 +20%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -74,7 +74,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+10% additional damage on Critical Strike",
+      craftableAffix: "크리티컬 발동 시, 대미지 추가 +10%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -82,7 +82,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+10% all stats",
+      craftableAffix: "모든 속성 +10%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -91,7 +91,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       craftingPool: "",
       tier: "0",
       craftableAffix:
-        "Enemies have a 15% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius",
+        "공격 또는 주술로 적 처치 시 15% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.",
     },
     {
       equipmentSlot: "One-Handed",
@@ -99,7 +99,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "Adds 1 - 3 Lightning Damage to Attacks per 10 Dexterity",
+      craftableAffix: "민첩 10 포인트 당, 공격에 번개 대미지 1 ~ 3 포인트 추가",
     },
     {
       equipmentSlot: "One-Handed",
@@ -107,7 +107,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "Adds 2 - 2 Fire Damage to Attacks per 10 Strength",
+      craftableAffix: "힘 10 포인트 당, 공격에 화염 대미지 2 ~ 2 포인트 추가",
     },
     {
       equipmentSlot: "One-Handed",
@@ -115,15 +115,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "Main Skill is supported by Lv. 25 Steamroll",
-    },
-    {
-      equipmentSlot: "One-Handed",
-      equipmentType: "One-Handed Hammer",
-      affixType: "Tower Sequence",
-      craftingPool: "",
-      tier: "0",
-      craftableAffix: "Adds 1 - 1 Physical Damage to Attacks per 2260 Armor",
+      craftableAffix: "25 레벨 압살이 메인 스킬을 보조한다.",
     },
     {
       equipmentSlot: "One-Handed",
@@ -132,7 +124,15 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       craftingPool: "",
       tier: "0",
       craftableAffix:
-        "+120% Fearless Aura\n-20% additional Fearless Sealed Mana Compensation",
+        "아머 수치 2260 포인트당 공격에 물리 대미지 1 - 1 포인트를 추가한다.",
+    },
+    {
+      equipmentSlot: "One-Handed",
+      equipmentType: "One-Handed Hammer",
+      affixType: "Tower Sequence",
+      craftingPool: "",
+      tier: "0",
+      craftableAffix: "맹렬한 오라 효과 +120%\n맹렬의 MP 봉인 보상 추가 -20%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -141,7 +141,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       craftingPool: "",
       tier: "0",
       craftableAffix:
-        "+80% Gear Physical Damage\n-20% Attack Critical Strike Rating for this gear",
+        "해당 장비 물리 대미지 +80%\n해당 장비 공격 크리티컬 수치 -20%",
     },
     {
       equipmentSlot: "One-Handed",
@@ -150,7 +150,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       craftingPool: "",
       tier: "0",
       craftableAffix:
-        "+15% additional Deterioration Damage\n10% chance to inflict 1 additional stack(s) of Deterioration",
+        "악화 대미지 별도 +15%\n10% 의 확률로 악화를 1 회 추가 부여한다.",
     },
     {
       equipmentSlot: "One-Handed",
@@ -158,6 +158,7 @@ export const ONE_HANDED_HAMMER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] 
       affixType: "Tower Sequence",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+25% Gear Elemental Damage\n-25% Gear Physical Damage",
+      craftableAffix:
+        "해당 장비의 원소 대미지 +25%\n해당 장비 물리 대미지 -25%",
     },
   ];

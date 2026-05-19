@@ -138,7 +138,9 @@ const MemoryPreview = ({
   return (
     <div className="space-y-2">
       {memoryType !== undefined && (
-        <div className="text-sm font-semibold text-amber-400">{memoryType}</div>
+        <div className="text-sm font-semibold text-amber-400">
+          {MEMORY_TYPE_KO[memoryType] ?? memoryType}
+        </div>
       )}
 
       {baseStat !== undefined && (
@@ -171,6 +173,20 @@ const MemoryPreview = ({
       )}
     </div>
   );
+};
+
+const MEMORY_TYPE_KO: Record<string, string> = {
+  "Memory of Origin": "근원의 추억",
+  "Memory of Discipline": "자기 수호의 추억",
+  "Memory of Progress": "진격의 추억",
+};
+
+const RARITY_KO: Record<string, string> = {
+  normal: "일반",
+  magic: "매직",
+  rare: "레어",
+  epic: "에픽",
+  ultimate: "얼티밋",
 };
 
 export const EditMemoryModal = ({
@@ -428,7 +444,7 @@ export const EditMemoryModal = ({
               }
               options={HERO_MEMORY_TYPES.map((type) => ({
                 value: type,
-                label: type,
+                label: MEMORY_TYPE_KO[type] ?? type,
               }))}
               placeholder="Select memory type..."
               size="lg"
@@ -451,7 +467,8 @@ export const EditMemoryModal = ({
                     }}
                     options={MEMORY_BASE_STAT_RARITIES.map((r) => ({
                       value: r,
-                      label: r.charAt(0).toUpperCase() + r.slice(1),
+                      label:
+                        RARITY_KO[r] ?? r.charAt(0).toUpperCase() + r.slice(1),
                     }))}
                     placeholder="Select rarity..."
                     size="sm"

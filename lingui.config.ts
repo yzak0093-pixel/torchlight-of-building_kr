@@ -1,6 +1,6 @@
 const config = {
   sourceLocale: "en",
-  locales: ["en", "zh"],
+  locales: ["en", "zh", "ko"],
   orderBy: "messageId",
   catalogs: [
     {

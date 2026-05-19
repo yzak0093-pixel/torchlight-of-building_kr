@@ -14,7 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:942
+#: src/components/equipment/EditGearModal.tsx:948
+#: src/components/equipment/VoraxGearModule.tsx:912
 msgid ""
 "+10% Fire Damage\n"
 "+20 to Maximum Life\n"
@@ -24,7 +25,7 @@ msgstr ""
 "+20 to Maximum Life\n"
 "+5% Attack Speed"
 
-#: src/components/equipment/EditGearModal.tsx:735
+#: src/components/equipment/EditGearModal.tsx:752
 msgid "Base Stats (1 max)"
 msgstr "Base Stats (1 max)"
 
@@ -36,11 +37,13 @@ msgstr "Tree"
 msgid "Create your first character build to get started"
 msgstr "Create your first character build to get started"
 
-#: src/components/equipment/EditGearModal.tsx:949
+#: src/components/equipment/EditGearModal.tsx:955
+#: src/components/equipment/VoraxGearModule.tsx:919
 msgid "Enter raw affix text, one per line. Use this for affixes not available in the dropdowns above."
 msgstr "Enter raw affix text, one per line. Use this for affixes not available in the dropdowns above."
 
-#: src/components/equipment/EditGearModal.tsx:937
+#: src/components/equipment/EditGearModal.tsx:943
+#: src/components/equipment/VoraxGearModule.tsx:907
 msgid "Custom Affixes"
 msgstr "Custom Affixes"
 
@@ -48,7 +51,7 @@ msgstr "Custom Affixes"
 msgid "Rename"
 msgstr "Rename"
 
-#: src/components/equipment/VoraxGearModule.tsx:685
+#: src/components/equipment/VoraxGearModule.tsx:832
 msgid "Vorax Limb"
 msgstr "Vorax Limb"
 
@@ -56,27 +59,27 @@ msgstr "Vorax Limb"
 msgid "Create New"
 msgstr "Create New"
 
-#: src/routes/builder/equipment.tsx:142
+#: src/routes/builder/equipment.tsx:146
 msgid "Craft New Item"
 msgstr "Craft New Item"
 
-#: src/routes/builder/equipment.tsx:226
+#: src/routes/builder/equipment.tsx:238
 msgid "No items in inventory. Craft items above to add them here."
 msgstr "No items in inventory. Craft items above to add them here."
 
-#: src/components/equipment/EditGearModal.tsx:976
-#: src/components/equipment/LegendaryGearModule.tsx:400
-#: src/components/equipment/VoraxGearModule.tsx:769
+#: src/components/equipment/EditGearModal.tsx:987
+#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/VoraxGearModule.tsx:953
 msgid "Save to Inventory"
 msgstr "Save to Inventory"
 
 #. js-lingui-explicit-id
-#: src/routes/builder/skills.tsx:81
+#: src/routes/builder/skills.tsx:84
 msgid "Active Skills"
 msgstr "Active Skills"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/LegendaryGearModule.tsx:299
+#: src/components/equipment/LegendaryGearModule.tsx:313
 msgid "Add Legendary"
 msgstr "Add Legendary"
 
@@ -162,14 +165,14 @@ msgid "Core Talent 2"
 msgstr "Core Talent 2"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:698
+#: src/components/equipment/EditGearModal.tsx:713
 msgid "Craft New Item"
 msgstr "Craft New Item"
 
 #. js-lingui-explicit-id
 #: src/components/equipment/VoraxGearModule.tsx:677
-msgid "Craft Vorax Gear"
-msgstr "Craft Vorax Gear"
+#~ msgid "Craft Vorax Gear"
+#~ msgstr "Craft Vorax Gear"
 
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:17
@@ -200,7 +203,7 @@ msgid "Import Build"
 msgstr "Import Build"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:699
+#: src/components/equipment/EditGearModal.tsx:714
 msgid "Edit {equipmentType}"
 msgstr "Edit {equipmentType}"
 
@@ -214,7 +217,7 @@ msgstr "Equipment"
 msgid "Fire Cannon"
 msgstr "Fire Cannon"
 
-#: src/components/equipment/EditGearModal.tsx:829
+#: src/components/equipment/EditGearModal.tsx:843
 msgid "Tower Sequence (1 max)"
 msgstr "Tower Sequence (1 max)"
 
@@ -271,6 +274,10 @@ msgstr "No builds yet"
 msgid "The build code in the URL was invalid or could not be imported."
 msgstr "The build code in the URL was invalid or could not be imported."
 
+#: src/components/equipment/VoraxGearModule.tsx:951
+msgid "Save Changes"
+msgstr "Save Changes"
+
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:29
 msgid "Left Ring"
@@ -316,7 +323,7 @@ msgstr "Neck"
 msgid "Necklace"
 msgstr "Necklace"
 
-#: src/components/equipment/EditGearModal.tsx:785
+#: src/components/equipment/EditGearModal.tsx:799
 msgid "Base Affixes (2 max)"
 msgstr "Base Affixes (2 max)"
 
@@ -371,7 +378,7 @@ msgid "Scepter"
 msgstr "Scepter"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:723
+#: src/components/equipment/EditGearModal.tsx:740
 msgid "Select equipment type..."
 msgstr "Select equipment type..."
 
@@ -429,7 +436,13 @@ msgstr "Two-Handed Sword"
 msgid "My Builds"
 msgstr "My Builds"
 
-#: src/routes/builder/equipment.tsx:120
+#: src/components/equipment/EditGearModal.tsx:971
+#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/VoraxGearModule.tsx:935
+msgid "No affixes"
+msgstr "No affixes"
+
+#: src/routes/builder/equipment.tsx:124
 msgid "Equipment Slots"
 msgstr "Equipment Slots"
 
@@ -443,7 +456,7 @@ msgstr "Wand"
 msgid "Updated: {0}"
 msgstr "Updated: {0}"
 
-#: src/components/equipment/EditGearModal.tsx:717
+#: src/components/equipment/EditGearModal.tsx:734
 msgid "Equipment Type"
 msgstr "Equipment Type"
 
@@ -452,40 +465,41 @@ msgid "Tree Slot"
 msgstr "Tree Slot"
 
 #: src/components/equipment/EditGearModal.tsx:961
-msgid "Select an equipment type to begin crafting"
-msgstr "Select an equipment type to begin crafting"
+#~ msgid "Select an equipment type to begin crafting"
+#~ msgstr "Select an equipment type to begin crafting"
 
 #: src/components/calculations/SkillSelector.tsx:45
 msgid "Active Skill"
 msgstr "Active Skill"
 
-#: src/routes/builder/equipment.tsx:179
+#: src/routes/builder/equipment.tsx:183
 msgid "Inventory"
 msgstr "Inventory"
 
+#: src/components/equipment/VoraxGearModule.tsx:735
 #: src/routes/index.tsx:145
 #: src/routes/index.tsx:179
 msgid "Delete"
 msgstr "Delete"
 
-#: src/components/equipment/EditGearModal.tsx:893
-#: src/components/equipment/VoraxGearModule.tsx:720
+#: src/components/equipment/EditGearModal.tsx:899
+#: src/components/equipment/VoraxGearModule.tsx:871
 msgid "Prefixes (3 max)"
 msgstr "Prefixes (3 max)"
 
-#: src/components/equipment/EditGearModal.tsx:968
-#: src/components/equipment/LegendaryGearModule.tsx:393
-#: src/components/equipment/VoraxGearModule.tsx:762
+#: src/components/equipment/EditGearModal.tsx:979
+#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/VoraxGearModule.tsx:943
 #: src/routes/index.tsx:108
 #: src/routes/index.tsx:151
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/components/equipment/VoraxGearModule.tsx:700
+#: src/components/equipment/VoraxGearModule.tsx:847
 msgid "Base Affix"
 msgstr "Base Affix"
 
-#: src/components/equipment/EditGearModal.tsx:849
+#: src/components/equipment/EditGearModal.tsx:863
 msgid "Blending (1 max)"
 msgstr "Blending (1 max)"
 
@@ -497,22 +511,22 @@ msgstr "Prisms"
 msgid "Copy"
 msgstr "Copy"
 
-#: src/routes/builder/equipment.tsx:180
+#: src/routes/builder/equipment.tsx:184
 msgid "items"
 msgstr "items"
 
-#: src/components/equipment/EditGearModal.tsx:915
-#: src/components/equipment/VoraxGearModule.tsx:738
+#: src/components/equipment/EditGearModal.tsx:921
+#: src/components/equipment/VoraxGearModule.tsx:889
 msgid "Suffixes (3 max)"
 msgstr "Suffixes (3 max)"
 
-#: src/components/equipment/EditGearModal.tsx:809
+#: src/components/equipment/EditGearModal.tsx:823
 msgid "Sweet Dream Affix (1 max)"
 msgstr "Sweet Dream Affix (1 max)"
 
 #: src/components/equipment/VoraxGearModule.tsx:755
-msgid "Select a vorax limb to configure"
-msgstr "Select a vorax limb to configure"
+#~ msgid "Select a vorax limb to configure"
+#~ msgstr "Select a vorax limb to configure"
 
 #: src/components/talents/CoreTalentSelector.tsx:90
 #: src/components/talents/CoreTalentSelector.tsx:102
@@ -524,16 +538,16 @@ msgstr "Core Talents"
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Are you sure you want to delete \"{0}\"?"
 
-#: src/components/equipment/LegendaryGearModule.tsx:307
+#: src/components/equipment/LegendaryGearModule.tsx:323
 msgid "Select Legendary"
 msgstr "Select Legendary"
 
-#: src/components/equipment/EditGearModal.tsx:978
+#: src/components/equipment/EditGearModal.tsx:989
 #: src/routes/index.tsx:102
 msgid "Save"
 msgstr "Save"
 
-#: src/components/equipment/EditGearModal.tsx:772
+#: src/components/equipment/EditGearModal.tsx:786
 msgid "Clear"
 msgstr "Clear"
 

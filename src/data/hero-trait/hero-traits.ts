@@ -4,1206 +4,1205 @@ import type { BaseHeroTrait } from "./types";
 
 export const HeroTraits = [
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Anger",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "타오르는 분노",
     level: 1,
     affix:
-      "Level 1When not in the Berserk state, each Melee Attack Skill generates 10 Rage\nWhen not in the Berserk state, each stack of Melee Attack Skill channeled generates 5 Rage\n0.22% additional damage and 0.1% Movement Speed for every 1 Rage you have\nEnter Berserk automatically at Max Rage\nWhile Berserk is active, 15 Rage is consumed per second\nAttacks trigger Burst once on hit while Berserk is active. Cooldown: 0.3 s\n2.9% additional Burst Damage per 1 levelsLevel 2When not in the Berserk state, each Melee Attack Skill generates 10 Rage\nWhen not in the Berserk state, each stack of Melee Attack Skill channeled generates 5 Rage\n0.22% additional damage and 0.1% Movement Speed for every 1 Rage you have\nEnter Berserk automatically at Max Rage\nWhile Berserk is active, 15 Rage is consumed per second\nAttacks trigger Burst once on hit while Berserk is active. Cooldown: 0.3 s\n3.1% additional Burst Damage per 1 levelsLevel 3When not in the Berserk state, each Melee Attack Skill generates 10 Rage\nWhen not in the Berserk state, each stack of Melee Attack Skill channeled generates 5 Rage\n0.22% additional damage and 0.1% Movement Speed for every 1 Rage you have\nEnter Berserk automatically at Max Rage\nWhile Berserk is active, 15 Rage is consumed per second\nAttacks trigger Burst once on hit while Berserk is active. Cooldown: 0.3 s\n3.3% additional Burst Damage per 1 levelsLevel 4When not in the Berserk state, each Melee Attack Skill generates 10 Rage\nWhen not in the Berserk state, each stack of Melee Attack Skill channeled generates 5 Rage\n0.22% additional damage and 0.1% Movement Speed for every 1 Rage you have\nEnter Berserk automatically at Max Rage\nWhile Berserk is active, 15 Rage is consumed per second\nAttacks trigger Burst once on hit while Berserk is active. Cooldown: 0.3 s\n3.5% additional Burst Damage per 1 levelsLevel 5When not in the Berserk state, each Melee Attack Skill generates 10 Rage\nWhen not in the Berserk state, each stack of Melee Attack Skill channeled generates 5 Rage\n0.22% additional damage and 0.1% Movement Speed for every 1 Rage you have\nEnter Berserk automatically at Max Rage\nWhile Berserk is active, 15 Rage is consumed per second\nAttacks trigger Burst once on hit while Berserk is active. Cooldown: 0.3 s\n3.7% additional Burst Damage per 1 levels\nArtificial Moon:\n1.5% Burst Cooldown Recovery Speed for every 10 Rage",
+      "레벨 1광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n광분 상태가 아닌 경우 근접 공격 스킬을 1회 채널링할 때마다 분노를 5 포인트 생성한다.\n분노 1 포인트당 대미지 추가 0.22% , 이동 속도 0.1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 1초마다 분노를 15 포인트씩 소모한다.\n광분 상태에서 공격이 적중했을 경우, 폭발 1회 발동, 쿨타임 0.3 초\n캐릭터 레벨 1 레벨 당, 폭발대미지 별도 2.9%레벨 2광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n광분 상태가 아닌 경우 근접 공격 스킬을 1회 채널링할 때마다 분노를 5 포인트 생성한다.\n분노 1 포인트당 대미지 추가 0.22% , 이동 속도 0.1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 1초마다 분노를 15 포인트씩 소모한다.\n광분 상태에서 공격이 적중했을 경우, 폭발 1회 발동, 쿨타임 0.3 초\n캐릭터 레벨 1 레벨 당, 폭발대미지 별도 3.1%레벨 3광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n광분 상태가 아닌 경우 근접 공격 스킬을 1회 채널링할 때마다 분노를 5 포인트 생성한다.\n분노 1 포인트당 대미지 추가 0.22% , 이동 속도 0.1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 1초마다 분노를 15 포인트씩 소모한다.\n광분 상태에서 공격이 적중했을 경우, 폭발 1회 발동, 쿨타임 0.3 초\n캐릭터 레벨 1 레벨 당, 폭발대미지 별도 3.3%레벨 4광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n광분 상태가 아닌 경우 근접 공격 스킬을 1회 채널링할 때마다 분노를 5 포인트 생성한다.\n분노 1 포인트당 대미지 추가 0.22% , 이동 속도 0.1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 1초마다 분노를 15 포인트씩 소모한다.\n광분 상태에서 공격이 적중했을 경우, 폭발 1회 발동, 쿨타임 0.3 초\n캐릭터 레벨 1 레벨 당, 폭발대미지 별도 3.5%레벨 5광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n광분 상태가 아닌 경우 근접 공격 스킬을 1회 채널링할 때마다 분노를 5 포인트 생성한다.\n분노 1 포인트당 대미지 추가 0.22% , 이동 속도 0.1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 1초마다 분노를 15 포인트씩 소모한다.\n광분 상태에서 공격이 적중했을 경우, 폭발 1회 발동, 쿨타임 0.3 초\n캐릭터 레벨 1 레벨 당, 폭발대미지 별도 3.7%\n이미테이션 루나:\n분노를 10 포인트 보유 시마다 폭발 쿨타임 회복 속도 1.5%",
   },
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Righteous Fury",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "뜨거운 분노",
     level: 45,
     affix:
-      "Generates (18/23/28/33/40) Rage per second instead of consuming Rage while Berserk is active\nWhen triggering Burst, consumes (8/7/6/5/4) Rage",
+      "광분 상태일 경우, 더 이상 분노를 자연 소모하지 않고 초당 분노를 (18/23/28/33/40) 포인트 생성한다.\n폭발 발동 시, 분노 (8/7/6/5/4) 포인트 소모",
   },
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Frenzy Furious",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "참을 수 없는 분노",
     level: 45,
     affix:
-      "(0.3/0.5/0.7/0.9/1.1)% Critical Strike Rating for every 1 Rage\nWhen Burst lands a Critical Strike, generates 3 Rage. Interval: 0.03 s",
+      "분노 1 포인트 보유 시, 크리티컬 수치 (0.3/0.5/0.7/0.9/1.1)%\n크리티컬 폭발 시 분노를 3 포인트 생성한다. 간격 0.03 초",
   },
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Tunnel Vision",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "치우치는 마음",
     level: 60,
     affix:
-      "-80% additional damage for non-Burst skills\n(+66/+77/+88/+99/+110)% additional Burst Damage",
+      "비폭발 스킬 대미지 별도 -80%\n폭발 대미지 별도 (+66/+77/+88/+99/+110)%",
   },
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Rampaging",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "흩날리는 마음",
     level: 75,
     affix:
-      "(70/80/90/100/110)% of the bonus and additional bonus to Attack Speed is also applied to Burst's Cooldown Recovery Speed",
+      "공격 속도에 대한 보너스와 추가 보너스의 (70/80/90/100/110)% 가 폭발 쿨타임 회복 속도에도 동일하게 적용된다.",
   },
   {
-    hero: "Berserker Rehan: Anger (#1)",
-    name: "Uncontrolled Anger",
+    hero: "버서커 리한: 분노의 불꽃 (#1)",
+    name: "분노의 죄악",
     level: 75,
     affix:
-      "+200% additional Burst Area\nFor every +2% Skill Area, +1% additional Burst Damage, up to (+40/+51/+63/+76/+90)%",
+      "폭발 범위 별도 +200%\n스킬 범위 +2% 당, 폭발 대미지 추가 +1% , 최대 (+40/+51/+63/+76/+90)%",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Seething Silhouette",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "성난 그림자",
     level: 1,
     affix:
-      "Level 1When not in the Berserk state, each Melee Attack Skill generates 10 Rage\n+1% Attack Speed for every 5 Rage\nEnter Berserk automatically at Max Rage\n+20% Movement Speed while Berserk is active\nGains bonuses twice the Max Rage while Berserk is active\nWhile Berserk is active, 10 Rage is consumed per second\nCasting Melee Attack Skills no longer generates Rage and consumes 10 points of Rage instead while Berserk is active. The mode ends when Rage runs out\n+45% Skill Area while Berserk is active\n+20% additional damage while Berserk is activeLevel 2When not in the Berserk state, each Melee Attack Skill generates 10 Rage\n+1% Attack Speed for every 5 Rage\nEnter Berserk automatically at Max Rage\n+20% Movement Speed while Berserk is active\nGains bonuses twice the Max Rage while Berserk is active\nWhile Berserk is active, 10 Rage is consumed per second\nCasting Melee Attack Skills no longer generates Rage and consumes 10 points of Rage instead while Berserk is active. The mode ends when Rage runs out\n+45% Skill Area while Berserk is active\n+26% additional damage while Berserk is activeLevel 3When not in the Berserk state, each Melee Attack Skill generates 10 Rage\n+1% Attack Speed for every 5 Rage\nEnter Berserk automatically at Max Rage\n+20% Movement Speed while Berserk is active\nGains bonuses twice the Max Rage while Berserk is active\nWhile Berserk is active, 10 Rage is consumed per second\nCasting Melee Attack Skills no longer generates Rage and consumes 10 points of Rage instead while Berserk is active. The mode ends when Rage runs out\n+45% Skill Area while Berserk is active\n+32% additional damage while Berserk is activeLevel 4When not in the Berserk state, each Melee Attack Skill generates 10 Rage\n+1% Attack Speed for every 5 Rage\nEnter Berserk automatically at Max Rage\n+20% Movement Speed while Berserk is active\nGains bonuses twice the Max Rage while Berserk is active\nWhile Berserk is active, 10 Rage is consumed per second\nCasting Melee Attack Skills no longer generates Rage and consumes 10 points of Rage instead while Berserk is active. The mode ends when Rage runs out\n+45% Skill Area while Berserk is active\n+38% additional damage while Berserk is activeLevel 5When not in the Berserk state, each Melee Attack Skill generates 10 Rage\n+1% Attack Speed for every 5 Rage\nEnter Berserk automatically at Max Rage\n+20% Movement Speed while Berserk is active\nGains bonuses twice the Max Rage while Berserk is active\nWhile Berserk is active, 10 Rage is consumed per second\nCasting Melee Attack Skills no longer generates Rage and consumes 10 points of Rage instead while Berserk is active. The mode ends when Rage runs out\n+45% Skill Area while Berserk is active\n+44% additional damage while Berserk is active\nArtificial Moon:\n+1% chance to deal Double Damage every 5 points of Rage you have",
+      "레벨 1광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n분노 5 포인트 당 공격 속도 +1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 이동 속도 +20%\n광분 상태 시, 분노 효과는 2배가 된다.\n광분 상태에서 1초마다 분노를 10 포인트씩 소모한다.\n광분 상태에서는 근접 공격 스킬로 더이상 분노가 생성되지 않고, 분노가 10포인트 소모된다. 분노가 소진되면 광분 상태가 종료된다.\n광분 상태에서 스킬 범위 +45%\n광분 상태에서, 대미지 별도 +20%레벨 2광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n분노 5 포인트 당 공격 속도 +1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 이동 속도 +20%\n광분 상태 시, 분노 효과는 2배가 된다.\n광분 상태에서 1초마다 분노를 10 포인트씩 소모한다.\n광분 상태에서는 근접 공격 스킬로 더이상 분노가 생성되지 않고, 분노가 10포인트 소모된다. 분노가 소진되면 광분 상태가 종료된다.\n광분 상태에서 스킬 범위 +45%\n광분 상태에서, 대미지 별도 +26%레벨 3광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n분노 5 포인트 당 공격 속도 +1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 이동 속도 +20%\n광분 상태 시, 분노 효과는 2배가 된다.\n광분 상태에서 1초마다 분노를 10 포인트씩 소모한다.\n광분 상태에서는 근접 공격 스킬로 더이상 분노가 생성되지 않고, 분노가 10포인트 소모된다. 분노가 소진되면 광분 상태가 종료된다.\n광분 상태에서 스킬 범위 +45%\n광분 상태에서, 대미지 별도 +32%레벨 4광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n분노 5 포인트 당 공격 속도 +1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 이동 속도 +20%\n광분 상태 시, 분노 효과는 2배가 된다.\n광분 상태에서 1초마다 분노를 10 포인트씩 소모한다.\n광분 상태에서는 근접 공격 스킬로 더이상 분노가 생성되지 않고, 분노가 10포인트 소모된다. 분노가 소진되면 광분 상태가 종료된다.\n광분 상태에서 스킬 범위 +45%\n광분 상태에서, 대미지 별도 +38%레벨 5광분 상태가 아닌 경우 근접 공격 스킬을 사용하여 분노를 10 포인트 생성한다.\n분노 5 포인트 당 공격 속도 +1%\n분노가 최대치 상태가 되면, 자동으로 광분 상태에 들어감\n광분 상태에서 이동 속도 +20%\n광분 상태 시, 분노 효과는 2배가 된다.\n광분 상태에서 1초마다 분노를 10 포인트씩 소모한다.\n광분 상태에서는 근접 공격 스킬로 더이상 분노가 생성되지 않고, 분노가 10포인트 소모된다. 분노가 소진되면 광분 상태가 종료된다.\n광분 상태에서 스킬 범위 +45%\n광분 상태에서, 대미지 별도 +44%\n이미테이션 루나:\n보유한 분노 5 포인트 당, 이중 대미지 부여 확률 +1%",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Ritual of Offering",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "헌신의 의식",
     level: 45,
     affix:
-      "Own Seething Spirit\nSeething Spirit will always exist and attack automatically while Berserk is active\nYou are Disarmed while Berserk is active\n(+20/+25/+30/+35/+40)% additional Seething Spirit Damage\nWhile Berserk is active, takes Secondary Physical Damage equal to 1% of current Life every 0.2 s. This damage is not affected by bonuses\n-30% Movement Speed",
+      "진노의 영혼 보유\n광분 상태에서는 진노의 영혼이 계속 함께하며, 자동으로 공격한다.\n광분 상태에서 자신이 무장 해제 상태가 된다.\n진노의 영혼 대미지가 (+20/+25/+30/+35/+40)% 추가된다.\n광분 상태에서 0.2 초마다 현재 HP의 1% 에 해당하는 간접 물리 대미지를 받는다. 해당 대미지는 보너스의 영향을 받지 않는다.\n이동 속도 -30%",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Fury's Onslaught",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "잔혹의 분노",
     level: 45,
     affix:
-      "Own Seething Spirit\nWhen a Melee Main Skill is used while Berserk is active, Seething Spirit appears and automatically attacks for (1/1.5/2/2/2) s. Using the Melee Main Skill again will refresh the Seething Spirit's duration\nRage will no longer be naturally consumed while Berserk is active. The Rage consumed by Melee Attack Skills will be halved. (+20/+27/+34/+41/+48)% additional damage dealt by the player",
+      "진노의 영혼 보유\n광분 상태에서 근접전 메인 스킬 사용 시 진노의 영혼이 출현해 자동으로 공격하며 (1/1.5/2/2/2) 초 지속된다. 근접전 메인 스킬 재사용 시 진노의 영혼의 지속 시간이 갱신된다.\n광분 상태에서 분노를 더 이상 자동 소모하지 않으며, 근접 공격 스킬 사용 시 소모하는 분노가 절반으로 감소한다. 유저 자신의 대미지 별도 (+20/+27/+34/+41/+48)%",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Hysteria",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "히스테리",
     level: 60,
     affix:
-      "Generates 1 points of Rage when taking damage equal to 3% of the sum of Max Life and Max Energy Shield\nGenerate 1 Rage for every 3% Max Life consumed\n(0.3/0.4/0.5/0.6/0.7)% additional Attack Damage for every 1% Missing Life",
+      "최대 HP+최대 보호막의 3% 에 해당하는 대미지를 입을 때마다 분노가 1 포인트 생성된다.\n최대 HP의 3% 를 소모할 때마다, 분노 1 포인트 생성\n손실된 HP 1% 당, 공격 대미지가 (0.3/0.4/0.5/0.6/0.7)% 추가된다.",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Growing Anger",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "잠재된 폭발",
     level: 60,
     affix:
-      "Gains (9/10/11/12/13) additional Rage when Seething Spirit uses a skill. The Rage gained is doubled when Seething Spirit deals Double Damage. Interval: 0.03s",
+      "진노의 영혼이 스킬 사용 시, 분노를 (9/10/11/12/13) 포인트 추가 획득할 수 있다. 진노의 영혼이 이중 대미지를 입힐 경우 획득하는 분노는 2배가 된다. 해당 효과의 간격은 0.03초이다.",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Split Form",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "분열 지형",
     level: 75,
     affix:
-      "Life Regain no longer requires a hit to activate\n(-15/-10/-5/0/+5)% additional Max Life\n(+1/+1/+2/+2/+2)% Rage gained for every 40 Max Life",
+      "HP 반환은 적중이 필요하지 않다.\n최대 HP 추가 (-15/-10/-5/0/+5)% .\n최대 HP 40 당, 분노를 (+1/+1/+2/+2/+2)% 획득한다.",
   },
   {
-    hero: "Berserker Rehan: Seething Silhouette (#2)",
-    name: "Rage Infusion",
+    hero: "버서커 리한: 성난 그림자 (#2)",
+    name: "배틀 지형",
     level: 75,
     affix:
-      "+5% additional damage per 25 points of Rage gained recently. Stacks up to (4/5/6/7/8) times\nYou will no longer be Disarmed after Berserk has been active for 5s. +40% Rage gained",
+      "최근 획득한 분노 25 포인트 당 대미지가 +5% 추가된다. 최대 (4/5/6/7/8) 회 중첩\n광분 상태를 5초 유지 후 더 이상 무장 해제되지 않는다. 획득하는 분노 +40%",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Ranger of Glory",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "영광의 레인저",
     level: 1,
     affix:
-      "Level 1Projectile Skills consume ammo\n+35% additional Projectile Damage when consuming ammo\n+6 initial magazine capacity\nClick the Trait Skill to reload the magazine. Base reloading time is 0.6 s\nProjectile Skills are unavailable while reloading\n150% of the max bonus to Attack Speed or Cast Speed is also applied to Reload Speed\nWhile reloading, +45% Movement Speed\nAlways auto-reloading ammo; Reloading can be interrupted.Level 2Projectile Skills consume ammo\n+42% additional Projectile Damage when consuming ammo\n+6 initial magazine capacity\nClick the Trait Skill to reload the magazine. Base reloading time is 0.6 s\nProjectile Skills are unavailable while reloading\n150% of the max bonus to Attack Speed or Cast Speed is also applied to Reload Speed\nWhile reloading, +45% Movement Speed\nAlways auto-reloading ammo; Reloading can be interrupted.Level 3Projectile Skills consume ammo\n+49% additional Projectile Damage when consuming ammo\n+6 initial magazine capacity\nClick the Trait Skill to reload the magazine. Base reloading time is 0.6 s\nProjectile Skills are unavailable while reloading\n150% of the max bonus to Attack Speed or Cast Speed is also applied to Reload Speed\nWhile reloading, +45% Movement Speed\nAlways auto-reloading ammo; Reloading can be interrupted.Level 4Projectile Skills consume ammo\n+56% additional Projectile Damage when consuming ammo\n+6 initial magazine capacity\nClick the Trait Skill to reload the magazine. Base reloading time is 0.6 s\nProjectile Skills are unavailable while reloading\n150% of the max bonus to Attack Speed or Cast Speed is also applied to Reload Speed\nWhile reloading, +45% Movement Speed\nAlways auto-reloading ammo; Reloading can be interrupted.Level 5Projectile Skills consume ammo\n+63% additional Projectile Damage when consuming ammo\n+6 initial magazine capacity\nClick the Trait Skill to reload the magazine. Base reloading time is 0.6 s\nProjectile Skills are unavailable while reloading\n150% of the max bonus to Attack Speed or Cast Speed is also applied to Reload Speed\nWhile reloading, +45% Movement Speed\nAlways auto-reloading ammo; Reloading can be interrupted.\nArtificial Moon:\n+20% chance to Reload Special Ammo and +20% Magic Shot Duration",
+      "레벨 1투사체 스킬이 탄약을 소모한다.\n탄약 소모 시, 투사체 대미지 추가 +35%\n초기 탄창 용량 +6\n특성 스킬을 터치하여 탄약을 장전할 수 있다. 기본 장전 시간 0.6 초\n장전 중에는 투사체 스킬을 사용할 수 없다.\n공격 속도 또는 시전 속도 보너스 최대값의 150% 가 장전 속도에도 동일하게 적용된다.\n장전 중 이동 속도 +45%\n항상 자동 장전을 시도하며, 장전은 중단될 수 있음레벨 2투사체 스킬이 탄약을 소모한다.\n탄약 소모 시, 투사체 대미지 추가 +42%\n초기 탄창 용량 +6\n특성 스킬을 터치하여 탄약을 장전할 수 있다. 기본 장전 시간 0.6 초\n장전 중에는 투사체 스킬을 사용할 수 없다.\n공격 속도 또는 시전 속도 보너스 최대값의 150% 가 장전 속도에도 동일하게 적용된다.\n장전 중 이동 속도 +45%\n항상 자동 장전을 시도하며, 장전은 중단될 수 있음레벨 3투사체 스킬이 탄약을 소모한다.\n탄약 소모 시, 투사체 대미지 추가 +49%\n초기 탄창 용량 +6\n특성 스킬을 터치하여 탄약을 장전할 수 있다. 기본 장전 시간 0.6 초\n장전 중에는 투사체 스킬을 사용할 수 없다.\n공격 속도 또는 시전 속도 보너스 최대값의 150% 가 장전 속도에도 동일하게 적용된다.\n장전 중 이동 속도 +45%\n항상 자동 장전을 시도하며, 장전은 중단될 수 있음레벨 4투사체 스킬이 탄약을 소모한다.\n탄약 소모 시, 투사체 대미지 추가 +56%\n초기 탄창 용량 +6\n특성 스킬을 터치하여 탄약을 장전할 수 있다. 기본 장전 시간 0.6 초\n장전 중에는 투사체 스킬을 사용할 수 없다.\n공격 속도 또는 시전 속도 보너스 최대값의 150% 가 장전 속도에도 동일하게 적용된다.\n장전 중 이동 속도 +45%\n항상 자동 장전을 시도하며, 장전은 중단될 수 있음레벨 5투사체 스킬이 탄약을 소모한다.\n탄약 소모 시, 투사체 대미지 추가 +63%\n초기 탄창 용량 +6\n특성 스킬을 터치하여 탄약을 장전할 수 있다. 기본 장전 시간 0.6 초\n장전 중에는 투사체 스킬을 사용할 수 없다.\n공격 속도 또는 시전 속도 보너스 최대값의 150% 가 장전 속도에도 동일하게 적용된다.\n장전 중 이동 속도 +45%\n항상 자동 장전을 시도하며, 장전은 중단될 수 있음\n이미테이션 루나:\n+20% 확률로 특수 탄약을 장전하고, 마술 사격 지속 시간 +20%",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Ammo Expert",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "탄약 전문가",
     level: 45,
     affix:
-      "+2 Special Ammo slot(s)\n+30% chance to reload special ammo\n(+15/+23/+31/+39/+47)% additional damage dealt by this Projectile Skill if a Special Ammo is consumed\n50% chance to gain Magic Shot for 4 s when consuming a Special Ammo. Interval: 8 s.",
+      "특수 탄약 슬롯 +2\n특수 탄약장전 확률 +30%\n특수 탄약 소모 시, 해당 회차의 투사체 스킬 대미지가 (+15/+23/+31/+39/+47)% 추가된다.\n특수 탄약 소모 시, 50% 의 확률로 마술 사격을 획득한다. 4 초간 지속, 간격 8 초.",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Landslide",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "퍼붓는 빗줄기",
     level: 60,
     affix:
-      "While Magic Shot is active, using or triggering Projectile Skills consume all ammo in the magazine\n(+5/+8/+11/+14/+17)% additional damage for every Special Ammo consumed",
+      "마술 사격을 사용하거나 발동할 때마다 탄창의 모든 탄약을 소모함\n특수 탄약을 1개 소모할 때마다 대미지 추가 (+5/+8/+11/+14/+17)%",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Crushing Gale Trigger",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "바람의 방아쇠",
     level: 60,
     affix:
-      "(15/19/23/27/31)% of the increase/decrease on Attack and Cast Speed is also applied to reload chance of special ammo\nReload Special Ammo slots in order",
+      "공격 및 시전 속도 증가 및 감소의 (15/19/23/27/31)% 가 특수 탄약의 장전 확률에도 동일하게 작용함\n특수 탄약은 슬롯 순서에 따라 장전",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Never Stopping",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "영원한 동력",
     level: 75,
     affix:
-      "While Magic Shot is active, for every Special Ammo consumed, extends Magic Shot's Duration by (0.04/0.05/0.06/0.08/0.1) s",
+      "마술 사격 중 특수 탄약을 1개 소모할 때마다 마술 사격 지속 시간이 (0.04/0.05/0.06/0.08/0.1) 초 연장된다.",
   },
   {
-    hero: "Divineshot Carino: Ranger of Glory (#1)",
-    name: "Well Prepared",
+    hero: "디바인 샷 카리노: 영광의 레인저 (#1)",
+    name: "유비무환",
     level: 75,
     affix:
-      "+1 Special Ammo slot(s). These slots can be installed with Projectile-exclusive Magnificent and Noble Support Skills\n(+15/+20/+25/+30/+35)% additional damage dealt by this Projectile Skill if a Special Ammo is consumed",
+      "특수 탄약 슬롯 +1 , 해당 슬롯에 투사체 전용 부귀 및 숭고 보조 스킬을 장착할 수 있다.\n특수 탄약 소모 시, 해당 회차의 투사체 스킬 대미지가 (+15/+20/+25/+30/+35)% 추가된다.",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Lethal Flash",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "치명적 찰나",
     level: 1,
     affix:
-      "Level 1Projectile Skills consume ammo\n+12 initial magazine capacity\nAlways auto-reload ammo, reloading 2 ammo each time. Reload Time: 0.6 s\nProjectile Skills can be cast while reloading, but will interrupt the reloading process\n+50% additional damage when consuming ammo\nProjectile Quantity +2Level 2Projectile Skills consume ammo\n+12 initial magazine capacity\nAlways auto-reload ammo, reloading 2 ammo each time. Reload Time: 0.6 s\nProjectile Skills can be cast while reloading, but will interrupt the reloading process\n+50% additional damage when consuming ammo\nProjectile Quantity +2Level 3Projectile Skills consume ammo\n+12 initial magazine capacity\nAlways auto-reload ammo, reloading 2 ammo each time. Reload Time: 0.6 s\nProjectile Skills can be cast while reloading, but will interrupt the reloading process\n+50% additional damage when consuming ammo\nProjectile Quantity +2Level 4Projectile Skills consume ammo\n+12 initial magazine capacity\nAlways auto-reload ammo, reloading 2 ammo each time. Reload Time: 0.6 s\nProjectile Skills can be cast while reloading, but will interrupt the reloading process\n+50% additional damage when consuming ammo\nProjectile Quantity +2Level 5Projectile Skills consume ammo\n+12 initial magazine capacity\nAlways auto-reload ammo, reloading 2 ammo each time. Reload Time: 0.6 s\nProjectile Skills can be cast while reloading, but will interrupt the reloading process\n+50% additional damage when consuming ammo\nProjectile Quantity +2\nArtificial Moon:\nMain Skill is supported by Lv. 1 Multiple Projectiles",
+      "레벨 1투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +12\n항상 자동 장전을 시도하며 장전 시간 0.6 초, 장전할 때마다 탄약 2개 장전\n장전 중에도 투사체 스킬을 시전할 수 있지만, 장전이 중단된다.\n탄약 소모 시, 대미지 별도 +50%\n투사체 수량 +2레벨 2투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +12\n항상 자동 장전을 시도하며 장전 시간 0.6 초, 장전할 때마다 탄약 2개 장전\n장전 중에도 투사체 스킬을 시전할 수 있지만, 장전이 중단된다.\n탄약 소모 시, 대미지 별도 +57%\n투사체 수량 +2레벨 3투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +12\n항상 자동 장전을 시도하며 장전 시간 0.6 초, 장전할 때마다 탄약 2개 장전\n장전 중에도 투사체 스킬을 시전할 수 있지만, 장전이 중단된다.\n탄약 소모 시, 대미지 별도 +65%\n투사체 수량 +2레벨 4투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +12\n항상 자동 장전을 시도하며 장전 시간 0.6 초, 장전할 때마다 탄약 2개 장전\n장전 중에도 투사체 스킬을 시전할 수 있지만, 장전이 중단된다.\n탄약 소모 시, 대미지 별도 +73%\n투사체 수량 +2레벨 5투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +12\n항상 자동 장전을 시도하며 장전 시간 0.6 초, 장전할 때마다 탄약 2개 장전\n장전 중에도 투사체 스킬을 시전할 수 있지만, 장전이 중단된다.\n탄약 소모 시, 대미지 별도 +82%\n투사체 수량 +2\n이미테이션 루나:\n1 레벨 다중 투사체가 메인 스킬을 보조한다.",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Evil Ouroboros",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "우로보로스",
     level: 45,
     affix:
-      "After reaching their max range, Projectiles will return and travel an additional 75% of that distance, hitting the enemies on their path again\n(-40/-37.5/-35/-32.5/-30)% additional damage dealt by Projectile Skills",
+      "투사체는 최대 비행 거리에 도달한 뒤 되돌아와서 75% 거리를 더 비행하고, 경로 상의 적을 다시 적중할 수 있다.\n투사체 스킬로 입히는 대미지 추가 (-40/-37.5/-35/-32.5/-30)%",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Impending Doom",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "데드라인",
     level: 45,
     affix:
-      "-80% Projectile Range\n(+46/+53/+60/+69/+77)% additional Ranged Attack Horizontal Projectile Damage\nGains a stack of Fortitude when casting a Projectile Skill",
+      "투사체 사거리 -80%\n원거리 공격 수평 투사체 대미지 별도 (+46/+53/+60/+69/+77)%\n투사체 스킬 시전 시 강직을 1회 획득한다.",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Shadow Magazine",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "잔상의 탄창",
     level: 60,
     affix:
-      "+2% Reload Speed for every 1% Projectile Speed\n+1 to Reload Quantity for every 70% Projectile Speed\n(+30/+36/+42/+49/+56)% additional damage when consuming ammo",
+      "투사체 속도 1%당 장전 속도 (+2/2.5/+3/3.5/+4)%\n투사체 속도 70% 당 장전 수량 +1\n탄약 소모 시, 대미지 별도 (+30/+36/+42/+49/+56)%",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Weightless Step",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "고요한 종말",
     level: 75,
     affix:
-      "Projectiles can Jump off the ground\n(+20/+25/+31/+36/+41)% additional damage dealt by Projectile Skills\nThe max range of Projectiles after Jumping is fixed at 9 m",
+      "투사체는 지면으로 바운스될 수 있다.\n투사체 스킬로 입히는 대미지 추가 (+20/+25/+31/+36/+41)%\n투사체 바운스 후 비행 거리가 9 미터로 고정된다.\n바운스 횟수 +2",
   },
   {
-    hero: "Divineshot Carino: Lethal Flash (#2)",
-    name: "Born in the Breeze",
+    hero: "디바인 샷 카리노: 치명적 찰나 (#2)",
+    name: "그림자의 숨결",
     level: 75,
     affix:
-      "(+32/+38/+44/+50/+56)% additional Projectile Damage while having Deflection\n(-24/-28/-31/-34/-37)% additional damage taken when without Deflection",
+      "편향 보유 시, 투사체 대미지 별도 (+32/+38/+44/+50/+56)%\n편향이 없을 때 받는 대미지 별도 (-24/-28/-31/-34/-37)%",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Zealot of War",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "전쟁 광인",
     level: 1,
     affix:
-      "Level 1Projectile Skills consume ammo\n+6 initial Magazine Capacity\nBase reloading time is 0.8 s\nProjectile Quantity +2\nFor every +1 Projectile Quantity or +1 Split Quantity, +3 Magazine Capacity (excludes the Projectile Quantity and Split Quantity provided by the skill itself and linked Support Skills)\n+20% additional damageLevel 2Projectile Skills consume ammo\n+6 initial Magazine Capacity\nBase reloading time is 0.8 s\nProjectile Quantity +2\nFor every +1 Projectile Quantity or +1 Split Quantity, +3 Magazine Capacity (excludes the Projectile Quantity and Split Quantity provided by the skill itself and linked Support Skills)\n+26% additional damageLevel 3Projectile Skills consume ammo\n+6 initial Magazine Capacity\nBase reloading time is 0.8 s\nProjectile Quantity +2\nFor every +1 Projectile Quantity or +1 Split Quantity, +3 Magazine Capacity (excludes the Projectile Quantity and Split Quantity provided by the skill itself and linked Support Skills)\n+32% additional damageLevel 4Projectile Skills consume ammo\n+6 initial Magazine Capacity\nBase reloading time is 0.8 s\nProjectile Quantity +2\nFor every +1 Projectile Quantity or +1 Split Quantity, +3 Magazine Capacity (excludes the Projectile Quantity and Split Quantity provided by the skill itself and linked Support Skills)\n+38% additional damageLevel 5Projectile Skills consume ammo\n+6 initial Magazine Capacity\nBase reloading time is 0.8 s\nProjectile Quantity +2\nFor every +1 Projectile Quantity or +1 Split Quantity, +3 Magazine Capacity (excludes the Projectile Quantity and Split Quantity provided by the skill itself and linked Support Skills)\n+38% additional damage\nArtificial Moon:\n+50% Heat Up Effect",
+      "레벨 1투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +6\n기본 장전 시간은 0.8 초이다.\n투사체 수량 +2\n투사체 수량 +1 당 또는 분열 수량 +1 당 탄창 용량 +3 (스킬 자체 및 스킬과 연결된 보조 스킬이 제공하는 투사체 수량 및 분열 횟수는 포함되지 않음)\n대미지 추가 +20%레벨 2투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +6\n기본 장전 시간은 0.8 초이다.\n투사체 수량 +2\n투사체 수량 +1 당 또는 분열 수량 +1 당 탄창 용량 +3 (스킬 자체 및 스킬과 연결된 보조 스킬이 제공하는 투사체 수량 및 분열 횟수는 포함되지 않음)\n대미지 추가 +26%레벨 3투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +6\n기본 장전 시간은 0.8 초이다.\n투사체 수량 +2\n투사체 수량 +1 당 또는 분열 수량 +1 당 탄창 용량 +3 (스킬 자체 및 스킬과 연결된 보조 스킬이 제공하는 투사체 수량 및 분열 횟수는 포함되지 않음)\n대미지 추가 +32%레벨 4투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +6\n기본 장전 시간은 0.8 초이다.\n투사체 수량 +2\n투사체 수량 +1 당 또는 분열 수량 +1 당 탄창 용량 +3 (스킬 자체 및 스킬과 연결된 보조 스킬이 제공하는 투사체 수량 및 분열 횟수는 포함되지 않음)\n대미지 추가 +38%레벨 5투사체 스킬이 탄약을 소모한다.\n초기 탄창 용량 +6\n기본 장전 시간은 0.8 초이다.\n투사체 수량 +2\n투사체 수량 +1 당 또는 분열 수량 +1 당 탄창 용량 +3 (스킬 자체 및 스킬과 연결된 보조 스킬이 제공하는 투사체 수량 및 분열 횟수는 포함되지 않음)\n대미지 추가 +38%\n이미테이션 루나:\n온도 상승 효과 +50%",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Incinerated Glory",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "타버린 영광",
     level: 45,
     affix:
-      "Allows Blank Firing\nWhile having ammo, for every ammo consumed, gains 1 stack of Heat Up\nDuring Blank Firing, gains Overheated when casting a Projectile Skill\nHeat Up: For every stack of Heat Up, (1.6/+2/2.3/2.6/+3)% additional Projectile Skill Damage and 0.1 Projectile Max Deviation Angle\nForced to reload once Overheated has been active for 10 s\nAfter reloading, loses all stacks of Heat Up and Overheated",
+      "공탄 사격 가능\n탄약을 보유하는 동안 탄약을 1개 소모할 때마다 온도 상승을 1회 획득한다.\n공탄 사격 기간 동안 투사체 스킬 시전 시 과열을 획득한다.\n온도 상승: 온도 상승 중첩 1회당 투사체 스킬이 입히는 대미지 별도 (1.6/+2/2.3/2.6/+3)% , 투사체 최대 편향각 0.1\n과열 상태가 10 초 지속되는 경우, 강제 장전된다.\n장전 종료 시 모든 온도 상승 중첩 수와 과열을 상실한다.",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Ceasefire",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "종전의 숨결",
     level: 60,
     affix:
-      "Level 1Starts with max stacks of Heat Up but does not reload ammo at the beginning\nWhile active, Overheated can last without forcing reloadLevel 2Starts with max stacks of Heat Up but does not reload ammo at the beginning\nWhile active, Overheated can last without forcing reload\n+5% additional damageLevel 3Starts with max stacks of Heat Up but does not reload ammo at the beginning\nWhile active, Overheated can last without forcing reload\n+10% additional damageLevel 4Starts with max stacks of Heat Up but does not reload ammo at the beginning\nWhile active, Overheated can last without forcing reload\n+16% additional damageLevel 5Starts with max stacks of Heat Up but does not reload ammo at the beginning\nWhile active, Overheated can last without forcing reload\n+21% additional damage",
+      "레벨 1초기에는 탄약을 직접 장전하지 않고, 즉시 온도 상승이 최대 중첩 상태가 된다.\n과열 상태 진입 후, 계속 지속할 수 있으며, 더 이상 강제 장전되지 않는다.레벨 2초기에는 탄약을 직접 장전하지 않고, 즉시 온도 상승이 최대 중첩 상태가 된다.\n과열 상태 진입 후, 계속 지속할 수 있으며, 더 이상 강제 장전되지 않는다.\n대미지 추가 +5%레벨 3초기에는 탄약을 직접 장전하지 않고, 즉시 온도 상승이 최대 중첩 상태가 된다.\n과열 상태 진입 후, 계속 지속할 수 있으며, 더 이상 강제 장전되지 않는다.\n대미지 추가 +10%레벨 4초기에는 탄약을 직접 장전하지 않고, 즉시 온도 상승이 최대 중첩 상태가 된다.\n과열 상태 진입 후, 계속 지속할 수 있으며, 더 이상 강제 장전되지 않는다.\n대미지 추가 +16%레벨 5초기에는 탄약을 직접 장전하지 않고, 즉시 온도 상승이 최대 중첩 상태가 된다.\n과열 상태 진입 후, 계속 지속할 수 있으며, 더 이상 강제 장전되지 않는다.\n대미지 추가 +21%",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Extreme Heat",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "극단적 온도차",
     level: 60,
     affix:
-      "Level 1At Max Heat Up Stacks, enter Burning Red instead of Overheated\nReload immediately when Burning Red ends\nExtends the duration of Burning Red by 3 s and restores 3% Max Life and Energy Shield when defeating an EliteLevel 2At Max Heat Up Stacks, enter Burning Red instead of Overheated\nReload immediately when Burning Red ends\nExtends the duration of Burning Red by 4 s and restores 3% Max Life and Energy Shield when defeating an Elite\n+5% additional damageLevel 3At Max Heat Up Stacks, enter Burning Red instead of Overheated\nReload immediately when Burning Red ends\nExtends the duration of Burning Red by 5 s and restores 3% Max Life and Energy Shield when defeating an Elite\n+5% additional damageLevel 4At Max Heat Up Stacks, enter Burning Red instead of Overheated\nReload immediately when Burning Red ends\nExtends the duration of Burning Red by 5 s and restores 3% Max Life and Energy Shield when defeating an Elite\n+10% additional damageLevel 5At Max Heat Up Stacks, enter Burning Red instead of Overheated\nReload immediately when Burning Red ends\nExtends the duration of Burning Red by 5 s and restores 3% Max Life and Energy Shield when defeating an Elite\n+16% additional damage",
+      "레벨 1온도 상승이 최대 중첩 상태일 경우 더 이상 과열하지 않고 적온에 진입한다.\n적온 종료 시 즉시 장전한다.\n강적 처치 시, 적온 지속 시간이 3 초 연장되고, 최대 HP 및 보호막을 3% 회복한다.레벨 2온도 상승이 최대 중첩 상태일 경우 더 이상 과열하지 않고 적온에 진입한다.\n적온 종료 시 즉시 장전한다.\n강적 처치 시, 적온 지속 시간이 4 초 연장되고, 최대 HP 및 보호막을 3% 회복한다.\n대미지 추가 +5%레벨 3온도 상승이 최대 중첩 상태일 경우 더 이상 과열하지 않고 적온에 진입한다.\n적온 종료 시 즉시 장전한다.\n강적 처치 시, 적온 지속 시간이 5 초 연장되고, 최대 HP 및 보호막을 3% 회복한다.\n대미지 추가 +5%레벨 4온도 상승이 최대 중첩 상태일 경우 더 이상 과열하지 않고 적온에 진입한다.\n적온 종료 시 즉시 장전한다.\n강적 처치 시, 적온 지속 시간이 5 초 연장되고, 최대 HP 및 보호막을 3% 회복한다.\n대미지 추가 +10%레벨 5온도 상승이 최대 중첩 상태일 경우 더 이상 과열하지 않고 적온에 진입한다.\n적온 종료 시 즉시 장전한다.\n강적 처치 시, 적온 지속 시간이 5 초 연장되고, 최대 HP 및 보호막을 3% 회복한다.\n대미지 추가 +16%",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Endless Frenzy",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "광전사의 극",
     level: 75,
     affix:
-      "For every +1% Knockback distance, (0.2/0.3/0.4/0.5/0.6)% additional damage and -0.1 Projectile Max Deviation Angle. Stacks up to 100 time(s)",
+      "넉백 거리 +1% 당 대미지 추가 (0.2/0.3/0.4/0.5/0.6)% , 투사체 최대 편향각 -0.1 , 최대 100 회 중첩",
   },
   {
-    hero: "Divineshot Carino: Zealot of War (#3)",
-    name: "Eternal Flames",
+    hero: "디바인 샷 카리노: 전쟁 광인 (#3)",
+    name: "불타오르는 전쟁",
     level: 75,
     affix:
-      "Level 1Heat Up gains an additional effect: For every stack of Heat Up, 0.6% additional Attack and Cast SpeedLevel 2Heat Up gains an additional effect: For every stack of Heat Up, 0.6% additional Attack and Cast Speed\n+5% additional damageLevel 3Heat Up gains an additional effect: For every stack of Heat Up, 0.6% additional Attack and Cast Speed\n+10% additional damageLevel 4Heat Up gains an additional effect: For every stack of Heat Up, 0.6% additional Attack and Cast Speed\n+16% additional damageLevel 5Heat Up gains an additional effect: For every stack of Heat Up, 0.6% additional Attack and Cast Speed\n+21% additional damage",
+      "레벨 1온도 상승이 추가 효과 획득: 온도 상승 1회당 공격 및 시전 속도 추가 0.4%레벨 2온도 상승이 추가 효과 획득: 온도 상승 1회당 공격 및 시전 속도 추가 0.4%\n대미지 추가 +5%레벨 3온도 상승이 추가 효과 획득: 온도 상승 1회당 공격 및 시전 속도 추가 0.4%\n대미지 추가 +10%레벨 4온도 상승이 추가 효과 획득: 온도 상승 1회당 공격 및 시전 속도 추가 0.4%\n대미지 추가 +16%레벨 5온도 상승이 추가 효과 획득: 온도 상승 1회당 공격 및 시전 속도 추가 0.4%\n대미지 추가 +21%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Wind Stalker",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "질풍 추격",
     level: 1,
     affix:
-      "Level 1+26% Movement Speed\nGains 1 stack of Stalker for every 1 m of movement\nYour Multistrike Count will not be interrupted during StalkerLevel 2+26% Movement Speed\nGains 1 stack of Stalker for every 1 m of movement\nYour Multistrike Count will not be interrupted during Stalker\n+5% additional Attack DamageLevel 3+26% Movement Speed\nGains 1 stack of Stalker for every 1 m of movement\nYour Multistrike Count will not be interrupted during Stalker\n+10% additional Attack DamageLevel 4+26% Movement Speed\nGains 1 stack of Stalker for every 1 m of movement\nYour Multistrike Count will not be interrupted during Stalker\n+15% additional Attack DamageLevel 5+26% Movement Speed\nGains 1 stack of Stalker for every 1 m of movement\nYour Multistrike Count will not be interrupted during Stalker\n+20% additional Attack Damage\nArtificial Moon:\nWhile Stalker is active, marks all enemies within +8 m and +30% Mark Effect",
+      "레벨 1이동 속도 +26%\n1 미터 이동할 때마다 추격 1회 획득\n추격이 지속되는 동안 연속 공격 카운팅이 중단되지 않는다.레벨 2이동 속도 +26%\n1 미터 이동할 때마다 추격 1회 획득\n추격이 지속되는 동안 연속 공격 카운팅이 중단되지 않는다.\n공격 대미지 추가 +5%레벨 3이동 속도 +26%\n1 미터 이동할 때마다 추격 1회 획득\n추격이 지속되는 동안 연속 공격 카운팅이 중단되지 않는다.\n공격 대미지 추가 +10%레벨 4이동 속도 +26%\n1 미터 이동할 때마다 추격 1회 획득\n추격이 지속되는 동안 연속 공격 카운팅이 중단되지 않는다.\n공격 대미지 추가 +15%레벨 5이동 속도 +26%\n1 미터 이동할 때마다 추격 1회 획득\n추격이 지속되는 동안 연속 공격 카운팅이 중단되지 않는다.\n공격 대미지 추가 +20%\n이미테이션 루나:\n추격이 지속되는 동안 +8 미터 안의 모든 적을 표식한다. 표식 효과 +30%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Interest",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "유흥",
     level: 45,
     affix:
-      "(20/24/28/32/36)% of the increase/decrease on Movement Speed is also applied to additional Attack Damage, up to (+30/+36/+42/+48/+54)% additional Attack Damage",
+      "이동 속도의 증가 또는 감소의 (20/24/28/32/36)% 만큼 공격 대미지에 동일하게 적용되며, 공격 대미지가 최대 추가 (+30/+36/+42/+48/+54)%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Have Fun",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "놀이",
     level: 45,
     affix:
-      "The Main Skill is supported by Lv. 10 Multistrike\n(+2/+6/+12/+18/+24)% additional Attack Speed",
+      "메인 스킬이 10 레벨 연속 공격의 보조를 받는다.\n공격 속도 추가 (+2/+6/+12/+18/+24)%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Cat's Vision",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "고양이 시야",
     level: 60,
     affix:
-      "At Max Multistrike Count, +1 to Max Stalker Stacks, up to +3 , until Stalker ends\n(-4/+2/+8/+14/+20)% additional damage",
+      "최대 연속 공격 카운팅 도달 시, 추격을 상실할 때까지 추격 최대 중첩수 +1 , 최대 +3\n대미지 추가 (-4/+2/+8/+14/+20)%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Cat's Scratch",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "고양이 발톱",
     level: 60,
     affix:
-      "(+27/+34/+41/+48/+55)% additional Multistrike damage increment for 4 s when the Max Multistrike Count is reached",
+      "최대 연속 공격 카운팅 도달 시 4 초 동안 연속 공격 대미지 별도 체증 (+27/+34/+41/+48/+55)%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Cat's Punches",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "고양이의 연주",
     level: 75,
     affix:
-      "Level 1At Max Multistrike Count, gains 1 stack of Stalker\n+1 to the initial Multistrike Count for every 3 stack(s) of Stalker\n-18% additional damageLevel 2At Max Multistrike Count, gains 1 stack of Stalker\n+1 to the initial Multistrike Count for every 3 stack(s) of Stalker\n-12% additional damageLevel 3At Max Multistrike Count, gains 1 stack of Stalker\n+1 to the initial Multistrike Count for every 3 stack(s) of Stalker\n-6% additional damageLevel 4At Max Multistrike Count, gains 1 stack of Stalker\n+1 to the initial Multistrike Count for every 3 stack(s) of StalkerLevel 5At Max Multistrike Count, gains 1 stack of Stalker\n+1 to the initial Multistrike Count for every 3 stack(s) of Stalker\n+6% additional damage",
+      "레벨 1최대 연속 공격 카운팅 도달 시, 추격을 1회 획득한다.\n추격 중첩 3 회당 초기 연속 공격 카운팅 +1\n대미지 추가 -18%레벨 2최대 연속 공격 카운팅 도달 시, 추격을 1회 획득한다.\n추격 중첩 3 회당 초기 연속 공격 카운팅 +1\n대미지 추가 -12%레벨 3최대 연속 공격 카운팅 도달 시, 추격을 1회 획득한다.\n추격 중첩 3 회당 초기 연속 공격 카운팅 +1\n대미지 추가 -6%레벨 4최대 연속 공격 카운팅 도달 시, 추격을 1회 획득한다.\n추격 중첩 3 회당 초기 연속 공격 카운팅 +1레벨 5최대 연속 공격 카운팅 도달 시, 추격을 1회 획득한다.\n추격 중첩 3 회당 초기 연속 공격 카운팅 +1\n대미지 추가 +6%",
   },
   {
-    hero: "Cateye Erika: Wind Stalker (#1)",
-    name: "Cat Dive",
+    hero: "캣츠아이 에리카: 질풍 추격 (#1)",
+    name: "캣츠 다이브",
     level: 75,
     affix:
-      "During Multistrike, there is a (0.24/0.27/0.3/0.33/0.36)% chance for this attack to deal damage equal to the Max Multistrike Count for every +1% Movement Speed you have",
+      "연속 공격 시, 이동 속도 +1% 마다 (0.24/0.27/0.3/0.33/0.36)% 의 확률로 해당 회차 공격이 최대 연속 공격 카운팅에 해당하는 대미지를 입힌다.",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Lightning Shadow",
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "라이트닝 쉐도우",
     level: 1,
     affix:
-      "Level 1Start moving or click a Trait Skill to gain 1 Electrify stack for every 3 m of movement made within the next 1 s, up to 3 stack(s). Lasts for 10 s. Electrify is affected by Skill Effect Duration\nClick the Trait Skill again to reset the effect\nWhen Electrify is owned, triggers Feline Figure on up to 3 enemy(ies) within 10 m. Cooldown: 0.4 s. Can only be triggered once on each enemy\nFor every 1 stack(s) of Electrify, Feline Figure inflicts 1 stack(s) of Numbed on enemies within the area\n+18% additional Numbed EffectLevel 2Start moving or click a Trait Skill to gain 1 Electrify stack for every 3 m of movement made within the next 1 s, up to 3 stack(s). Lasts for 10 s. Electrify is affected by Skill Effect Duration\nClick the Trait Skill again to reset the effect\nWhen Electrify is owned, triggers Feline Figure on up to 3 enemy(ies) within 10 m. Cooldown: 0.4 s. Can only be triggered once on each enemy\nFor every 1 stack(s) of Electrify, Feline Figure inflicts 1 stack(s) of Numbed on enemies within the area\n+30% additional Numbed EffectLevel 3Start moving or click a Trait Skill to gain 1 Electrify stack for every 3 m of movement made within the next 1 s, up to 3 stack(s). Lasts for 10 s. Electrify is affected by Skill Effect Duration\nClick the Trait Skill again to reset the effect\nWhen Electrify is owned, triggers Feline Figure on up to 3 enemy(ies) within 10 m. Cooldown: 0.4 s. Can only be triggered once on each enemy\nFor every 1 stack(s) of Electrify, Feline Figure inflicts 1 stack(s) of Numbed on enemies within the area\n+43% additional Numbed EffectLevel 4Start moving or click a Trait Skill to gain 1 Electrify stack for every 3 m of movement made within the next 1 s, up to 3 stack(s). Lasts for 10 s. Electrify is affected by Skill Effect Duration\nClick the Trait Skill again to reset the effect\nWhen Electrify is owned, triggers Feline Figure on up to 3 enemy(ies) within 10 m. Cooldown: 0.4 s. Can only be triggered once on each enemy\nFor every 1 stack(s) of Electrify, Feline Figure inflicts 1 stack(s) of Numbed on enemies within the area\n+55% additional Numbed EffectLevel 5Start moving or click a Trait Skill to gain 1 Electrify stack for every 3 m of movement made within the next 1 s, up to 3 stack(s). Lasts for 10 s. Electrify is affected by Skill Effect Duration\nClick the Trait Skill again to reset the effect\nWhen Electrify is owned, triggers Feline Figure on up to 3 enemy(ies) within 10 m. Cooldown: 0.4 s. Can only be triggered once on each enemy\nFor every 1 stack(s) of Electrify, Feline Figure inflicts 1 stack(s) of Numbed on enemies within the area\n+68% additional Numbed Effect\nArtificial Moon:\n+15% Movement Speed if you have inflicted Numbed recently",
+      "레벨 1이동을 시작하거나 특성 스킬을 누르면 이어지는 1 초 동안 3 미터 이동할 때마다 전광을 1회 획득한다. 최대 3 회, 10 초간 지속, 전광은 스킬 효과 지속 시간의 영향을 받는다.\n다시 특성 스킬을 터치 시 해당 효과를 초기화할 수 있다.\n전광을 보유하는 경우, 10 미터 범위 내 최대 3 명의 적에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초, 모든 적에게 1회만 발동된다.\n전광 1 회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1 회 부여한다.\n마취 효과 추가 +18%레벨 2이동을 시작하거나 특성 스킬을 누르면 이어지는 1 초 동안 3 미터 이동할 때마다 전광을 1회 획득한다. 최대 3 회, 10 초간 지속, 전광은 스킬 효과 지속 시간의 영향을 받는다.\n다시 특성 스킬을 터치 시 해당 효과를 초기화할 수 있다.\n전광을 보유하는 경우, 10 미터 범위 내 최대 3 명의 적에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초, 모든 적에게 1회만 발동된다.\n전광 1 회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1 회 부여한다.\n마취 효과 추가 +30%레벨 3이동을 시작하거나 특성 스킬을 누르면 이어지는 1 초 동안 3 미터 이동할 때마다 전광을 1회 획득한다. 최대 3 회, 10 초간 지속, 전광은 스킬 효과 지속 시간의 영향을 받는다.\n다시 특성 스킬을 터치 시 해당 효과를 초기화할 수 있다.\n전광을 보유하는 경우, 10 미터 범위 내 최대 3 명의 적에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초, 모든 적에게 1회만 발동된다.\n전광 1 회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1 회 부여한다.\n마취 효과 추가 +43%레벨 4이동을 시작하거나 특성 스킬을 누르면 이어지는 1 초 동안 3 미터 이동할 때마다 전광을 1회 획득한다. 최대 3 회, 10 초간 지속, 전광은 스킬 효과 지속 시간의 영향을 받는다.\n다시 특성 스킬을 터치 시 해당 효과를 초기화할 수 있다.\n전광을 보유하는 경우, 10 미터 범위 내 최대 3 명의 적에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초, 모든 적에게 1회만 발동된다.\n전광 1 회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1 회 부여한다.\n마취 효과 추가 +55%레벨 5이동을 시작하거나 특성 스킬을 누르면 이어지는 1 초 동안 3 미터 이동할 때마다 전광을 1회 획득한다. 최대 3 회, 10 초간 지속, 전광은 스킬 효과 지속 시간의 영향을 받는다.\n다시 특성 스킬을 터치 시 해당 효과를 초기화할 수 있다.\n전광을 보유하는 경우, 10 미터 범위 내 최대 3 명의 적에게 캣츠 실루엣을 발동한다. 쿨타임 0.4 초, 모든 적에게 1회만 발동된다.\n전광 1 회당, 캣츠 실루엣이 범위 내의 적에게 마취를 1 회 부여한다.\n마취 효과 추가 +68%\n이미테이션 루나:\n최근에 마취를 부여한 경우, 이동 속도 +15%",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Dazzling Lightning",
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "번쩍 전광",
     level: 45,
     affix:
-      "(+2/+2/+3/+3/+4) to Max Electrify Stacks\n(+3/+5/+5/+7/+7)% Movement Speed for every stack of Electrify",
+      "전광 최대 중첩수 (+2/+2/+3/+3/+4)\n전광 1회당 이동 속도 (+3/+5/+5/+7/+7)%",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Electroplated Motif",
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "금빛 무늬",
     level: 45,
     affix:
-      "The Duration of the Numbed inflicted by Feline Figure is doubled\n(+20/+25/+30/+35/+40)% additional Numbed Effect",
+      "캣츠 실루엣이 부여하는 마취 지속 시간이 2배가 된다.\n마취 효과 추가 (+20/+25/+30/+35/+40)%",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Wild Lightning",
-    level: 600,
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "야성의 전광",
+    level: 60,
     affix:
-      "0.4% additional Numbed Effect for every +1% Movement Speed, up to (+80/+90/+100/+110/+120)%",
+      "이동 속도 +1% 당, 마취 효과 추가 0.4% , 최대 (+80/+90/+100/+110/+120)%",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Swift as Lightning",
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "스피드캣",
     level: 75,
     affix:
-      "For every 4 stack(s) of Numbed inflicted on the enemy, +2% Movement Speed, (+1/1.5/+2/2.5/+3)% additional damage, and (+3/+4/+5/+6/+7)% Feline Figure Area. Stacks up to 10 time(s). Lasts for 10 s",
+      "모든 적에게 마취를 4 회 시전할 때마다, 이동 속도 +2% , 대미지 별도 (+1/1.5/+2/2.5/+3)% , 캣츠 실루엣 범위 (+3/+4/+5/+6/+7)% , 최대 10 회 중첩, 10 초간 지속",
   },
   {
-    hero: "Cateye Erika: Lightning Shadow (#2)",
-    name: "Charging Equation",
+    hero: "캣츠아이 에리카: 라이트닝 쉐도우 (#2)",
+    name: "전기 방정식",
     level: 75,
     affix:
-      "Feline Figure is triggered when inflicting Numbed on enemies. Cooldown for each enemy: 1 s\nWhen Feline Figure inflicts Numbed, for every stack of Numbed enemies have, (+3/3.5/+4/4.5/+5)% additional Numbed Effect for Erika. Stacks up to 10 time(s). This is refreshed when Feline Figure is cast again",
+      "캣츠 실루엣이 적에게 마취 시전 시 발동되며, 모든 적에게 1 초의 쿨타임을 가진다.\n캣츠 실루엣이 마취 부여 시, 적이 보유한 마취 1회당, 에리카의 마취 효과가 추가 (+3/3.5/+4/4.5/+5)% , 최대 10 회 중첩된다. 다시 캣츠 실루엣 시전 시 갱신된다.",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Vendetta's Sting",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "리벤지 스파이크",
     level: 1,
     affix:
-      "Level 1Gains Incisive after casting Vendetta\n100% of the bonuses to Skill Area is also applied to Vendetta, up to 200%\n+5% additional Attack Damage for skills triggered by VendettaReplace the skill in the third slot with VendettaLevel 2Gains Incisive after casting Vendetta\n100% of the bonuses to Skill Area is also applied to Vendetta, up to 200%\n+10% additional Attack Damage for skills triggered by VendettaReplace the skill in the third slot with VendettaLevel 3Gains Incisive after casting Vendetta\n100% of the bonuses to Skill Area is also applied to Vendetta, up to 200%\n+15% additional Attack Damage for skills triggered by VendettaReplace the skill in the third slot with VendettaLevel 4Gains Incisive after casting Vendetta\n100% of the bonuses to Skill Area is also applied to Vendetta, up to 200%\n+20% additional Attack Damage for skills triggered by VendettaReplace the skill in the third slot with VendettaLevel 5Gains Incisive after casting Vendetta\n100% of the bonuses to Skill Area is also applied to Vendetta, up to 200%\n+25% additional Attack Damage for skills triggered by Vendetta\nArtificial Moon:\n+20% Vendetta Skill Area. +10% additional Attack Damage for skills triggered by VendettaReplace the skill in the third slot with Vendetta",
+      "레벨 1리벤지 시전 후 기세를 획득한다.\n스킬에 대한 범위 보너스의 100% 가 리벤지에도 동일하게 적용된다. 최대 200%\n리벤지로 발동된 스킬의 공격 대미지 별도 +5%3번째 스킬 슬롯의 스킬을 리벤지로 교체합니다.레벨 2리벤지 시전 후 기세를 획득한다.\n스킬에 대한 범위 보너스의 100% 가 리벤지에도 동일하게 적용된다. 최대 200%\n리벤지로 발동된 스킬의 공격 대미지 별도 +10%3번째 스킬 슬롯의 스킬을 리벤지로 교체합니다.레벨 3리벤지 시전 후 기세를 획득한다.\n스킬에 대한 범위 보너스의 100% 가 리벤지에도 동일하게 적용된다. 최대 200%\n리벤지로 발동된 스킬의 공격 대미지 별도 +15%3번째 스킬 슬롯의 스킬을 리벤지로 교체합니다.레벨 4리벤지 시전 후 기세를 획득한다.\n스킬에 대한 범위 보너스의 100% 가 리벤지에도 동일하게 적용된다. 최대 200%\n리벤지로 발동된 스킬의 공격 대미지 별도 +20%3번째 스킬 슬롯의 스킬을 리벤지로 교체합니다.레벨 5리벤지 시전 후 기세를 획득한다.\n스킬에 대한 범위 보너스의 100% 가 리벤지에도 동일하게 적용된다. 최대 200%\n리벤지로 발동된 스킬의 공격 대미지 별도 +25%\n이미테이션 루나:\n리벤지 스킬 범위 +20% , 리벤지로 발동된 스킬의 공격 대미지 별도 +10%3번째 스킬 슬롯의 스킬을 리벤지로 교체합니다.",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Twinblade Onslaught",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "트윈 슬래시",
     level: 45,
     affix:
-      "No additional Attack Speed bonus is granted while Dual Wielding. Instead, (+15/+20/+25/+30/+35)% additional Attack Damage\nNo Attack Block Chance bonus is granted while Dual Wielding. Instead, converts 50% of Life Regain and Shield Regain to Restoration Over Time",
+      "듀얼 시 더는 공격 속도 추가 보너스를 제공하지 않고, 공격 대미지 별도 (+15/+20/+25/+30/+35)%\n듀얼 시 더는 공격 막기 확률 보너스를 제공하지 않고, 50% HP 반환 및 보호막 반환을 지속 회복으로 전환한다.",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Leisurely Stroll",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "유유자적",
     level: 60,
     affix:
-      "Level 1Vendetta has no Cooldown when you have Hasten\n-80% additional damage for manually used Main Skills while Incisive is activeMain Skills cannot be supported by Activation MediumLevel 2When having Hasten, Vendetta has no Cooldown and Vendetta gains +5% additional Attack Speed\n-80% additional damage for manually used Main Skills while Incisive is activeMain Skills cannot be supported by Activation MediumLevel 3When having Hasten, Vendetta has no Cooldown and Vendetta gains +10% additional Attack Speed\n-80% additional damage for manually used Main Skills while Incisive is activeMain Skills cannot be supported by Activation MediumLevel 4When having Hasten, Vendetta has no Cooldown and Vendetta gains +15% additional Attack Speed\n-80% additional damage for manually used Main Skills while Incisive is activeMain Skills cannot be supported by Activation MediumLevel 5When having Hasten, Vendetta has no Cooldown and Vendetta gains +20% additional Attack Speed\n-80% additional damage for manually used Main Skills while Incisive is activeMain Skills cannot be supported by Activation Medium",
+      "레벨 1신속 보유 시 리벤지는 쿨타임이 존재하지 않는다.\n기세 지속되는 동안 수동 사용하는 메인 스킬의 대미지 별도 -80%메인 스킬은 촉발체로 보조할 수 없다.레벨 2신속 보유 시 리벤지는 쿨타임이 존재하지 않는다. 리벤지 공격 속도 별도 +5%\n기세 지속되는 동안 수동 사용하는 메인 스킬의 대미지 별도 -80%메인 스킬은 촉발체로 보조할 수 없다.레벨 3신속 보유 시 리벤지는 쿨타임이 존재하지 않는다. 리벤지 공격 속도 별도 +10%\n기세 지속되는 동안 수동 사용하는 메인 스킬의 대미지 별도 -80%메인 스킬은 촉발체로 보조할 수 없다.레벨 4신속 보유 시 리벤지는 쿨타임이 존재하지 않는다. 리벤지 공격 속도 별도 +15%\n기세 지속되는 동안 수동 사용하는 메인 스킬의 대미지 별도 -80%메인 스킬은 촉발체로 보조할 수 없다.레벨 5신속 보유 시 리벤지는 쿨타임이 존재하지 않는다. 리벤지 공격 속도 별도 +20%\n기세 지속되는 동안 수동 사용하는 메인 스킬의 대미지 별도 -80%메인 스킬은 촉발체로 보조할 수 없다.",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Swift Stalk",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "기민한 추적",
     level: 60,
     affix:
-      "Skills triggered by Vendetta deal (+30/+45/+60/+75/+90)% additional damage to Elites while Endless Vendetta is active\n+333% additional Incisive Duration. +99% Incisive EffectReplace Vendetta with Endless Vendetta",
+      "엔드리스 리벤지 지속되는 동안 강적에게 리벤지가 발동하는 스킬 대미지 별도 (+30/+45/+60/+75/+90)%\n기세 지속 시간 추가 +333% , 기세 효과 추가 +99%리벤지를 엔드리스 리벤지로 교체합니다.",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Feline Fury",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "더는 못 참는다옹",
     level: 75,
     affix:
-      "+150 Attack Critical Strike Rating when Dual Wielding the same type of weapons\n+20% additional attack damage for Critical Strikes when Dual Wielding different types of weapons\nVendetta has a 1% chance to trigger Main Melee Attack Skill 1 additional time for every (5/4/3/2.5/2)% Effective Critical Strike Chance\nFor every 0.5% Excess Critical Strike Chance, 1% chance to +100% additional Attack Damage for skills triggered by Vendetta",
+      "같은 유형의 무기를 듀얼 시 공격 크리티컬 +150\n각기 다른 유형의 무기 듀얼 시 크리티컬 공격 대미지 별도 +20%\n유효 크리티컬 확률 (5/4/3/2.5/2)% 당 리벤지는 1% 확률로 메인 근접 공격 스킬을 1회 추가 발동한다.\n과잉 크리티컬 확률 0.5% 당, 리벤지로 발동하는 스킬이 1% 확률로 공격 대미지 별도 +100% .",
   },
   {
-    hero: "Cateye Erika: Vendetta's Sting (#3)",
-    name: "Mortal Gambit",
+    hero: "캣츠아이 에리카: 리벤지 스파이크 (#3)",
+    name: "죽음의 문턱",
     level: 75,
     affix:
-      "Incisive gains an additional base effect: Within 5 m, damage taken increases the closer you are to the enemy, up to +5% additional damage taken at 2 m\n+40% Incisive Effect for each stack of Agility Blessing, stacking up to (6/7/8/9/10) time(s)",
+      "기세가 획득하는 추가 기본 효과: 5 미터 내에 적과의 거리가 가까울수록 입히는 대미지가 증가하며, 최대 2 미터에서 받는 대미지 별도 +5%\n황홀한 축복 중첩 1회당, 기세 효과 +40% , 최대 (6/7/8/9/10) 회 중첩",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Blast Nova",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "블래스트 노바",
     level: 1,
     affix:
-      "Level 1When using a Non-channeling Projectile Skill, throw 1 bomb instead\nThe bomb automatically detonates 1 s after landing, firing Projectiles in all directions\nThere can be up to 10 undetonated bombs at the same time. Exceeding the limit will detonate the bomb that landed first\nBomb throwing speed is 1.5 time(s) per second\nFor every +100% Attack Speed, +1 bombs thrown upon using an Attack Projectile Skill.\nFor every +100% Cast Speed, +1 bombs thrown upon using a Spell Projectile Skill.\nThe amount less than +100% has a chance to grant +1 bombs thrown upon using an Attack or Spell Projectile Skill.\n+1% additional Attack Bomb Damage for every +1% additional Attack Speed\n+1% additional Spell Bomb Damage for every +1% additional Cast Speed\n+30% additional Bomb Damage\nProjectile Quantity +2\nReduces Max Spell Burst Stacks to 1/2\n-40% additional Sentry DamageLevel 2When using a Non-channeling Projectile Skill, throw 1 bomb instead\nThe bomb automatically detonates 1 s after landing, firing Projectiles in all directions\nThere can be up to 10 undetonated bombs at the same time. Exceeding the limit will detonate the bomb that landed first\nBomb throwing speed is 1.5 time(s) per second\nFor every +100% Attack Speed, +1 bombs thrown upon using an Attack Projectile Skill.\nFor every +100% Cast Speed, +1 bombs thrown upon using a Spell Projectile Skill.\nThe amount less than +100% has a chance to grant +1 bombs thrown upon using an Attack or Spell Projectile Skill.\n+1% additional Attack Bomb Damage for every +1% additional Attack Speed\n+1% additional Spell Bomb Damage for every +1% additional Cast Speed\n+37% additional Bomb Damage\nProjectile Quantity +2\nReduces Max Spell Burst Stacks to 1/2\n-40% additional Sentry DamageLevel 3When using a Non-channeling Projectile Skill, throw 1 bomb instead\nThe bomb automatically detonates 1 s after landing, firing Projectiles in all directions\nThere can be up to 10 undetonated bombs at the same time. Exceeding the limit will detonate the bomb that landed first\nBomb throwing speed is 1.5 time(s) per second\nFor every +100% Attack Speed, +1 bombs thrown upon using an Attack Projectile Skill.\nFor every +100% Cast Speed, +1 bombs thrown upon using a Spell Projectile Skill.\nThe amount less than +100% has a chance to grant +1 bombs thrown upon using an Attack or Spell Projectile Skill.\n+1% additional Attack Bomb Damage for every +1% additional Attack Speed\n+1% additional Spell Bomb Damage for every +1% additional Cast Speed\n+44% additional Bomb Damage\nProjectile Quantity +2\nReduces Max Spell Burst Stacks to 1/2\n-40% additional Sentry DamageLevel 4When using a Non-channeling Projectile Skill, throw 1 bomb instead\nThe bomb automatically detonates 1 s after landing, firing Projectiles in all directions\nThere can be up to 10 undetonated bombs at the same time. Exceeding the limit will detonate the bomb that landed first\nBomb throwing speed is 1.5 time(s) per second\nFor every +100% Attack Speed, +1 bombs thrown upon using an Attack Projectile Skill.\nFor every +100% Cast Speed, +1 bombs thrown upon using a Spell Projectile Skill.\nThe amount less than +100% has a chance to grant +1 bombs thrown upon using an Attack or Spell Projectile Skill.\n+1% additional Attack Bomb Damage for every +1% additional Attack Speed\n+1% additional Spell Bomb Damage for every +1% additional Cast Speed\n+51% additional Bomb Damage\nProjectile Quantity +2\nReduces Max Spell Burst Stacks to 1/2\n-40% additional Sentry DamageLevel 5When using a Non-channeling Projectile Skill, throw 1 bomb instead\nThe bomb automatically detonates 1 s after landing, firing Projectiles in all directions\nThere can be up to 10 undetonated bombs at the same time. Exceeding the limit will detonate the bomb that landed first\nBomb throwing speed is 1.5 time(s) per second\nFor every +100% Attack Speed, +1 bombs thrown upon using an Attack Projectile Skill.\nFor every +100% Cast Speed, +1 bombs thrown upon using a Spell Projectile Skill.\nThe amount less than +100% has a chance to grant +1 bombs thrown upon using an Attack or Spell Projectile Skill.\n+1% additional Attack Bomb Damage for every +1% additional Attack Speed\n+1% additional Spell Bomb Damage for every +1% additional Cast Speed\n+58% additional Bomb Damage\nProjectile Quantity +2\nReduces Max Spell Burst Stacks to 1/2\n-40% additional Sentry Damage\nArtificial Moon:\nInflicts enemies within 6 m of the bomb with Paralysis and Slow",
+      "레벨 1비채널링 투사체 스킬 사용 시, 대신 폭탄을 1개 투척한다.\n폭탄은 땅에 떨어진 뒤 1 초 후 자동으로 폭발하며, 폭발 시 투사체가 사방으로 발사된다.\n폭탄은 동시에 10개까지 존재할 수 있으며, 초과 시 가장 먼저 땅에 떨어진 폭탄이 폭발한다.\n폭탄 투척 속도가 초당 1.5 회가 된다.\n공격 속도 +100% 당, 공격 투사체 스킬 사용 시 폭탄 투척 수량 +1\n캐스팅 속도 +100% 당 주술 투사체 스킬 사용 시 폭탄 투척 수량 +1\n+100% 에 못 미치는 부분은, 공격 또는 주술 투사체 스킬 사용 시 해당 확률로 폭탄 투사체 수량 +1\n공격 속도가 추가 +1% 당, 공격 폭탄 대미지가 추가 +1% .\n시전 속도가 추가 +1% , 주술 폭탄 대미지가 추가 +1% .\n폭탄 대미지 추가 +30%\n투사체 수량 +2\n매직 버스트 최대 중첩수가 1/2로 감소한다.\n보초병 대미지 추가 -40%레벨 2비채널링 투사체 스킬 사용 시, 대신 폭탄을 1개 투척한다.\n폭탄은 땅에 떨어진 뒤 1 초 후 자동으로 폭발하며, 폭발 시 투사체가 사방으로 발사된다.\n폭탄은 동시에 10개까지 존재할 수 있으며, 초과 시 가장 먼저 땅에 떨어진 폭탄이 폭발한다.\n폭탄 투척 속도가 초당 1.5 회가 된다.\n공격 속도 +100% 당, 공격 투사체 스킬 사용 시 폭탄 투척 수량 +1\n캐스팅 속도 +100% 당 주술 투사체 스킬 사용 시 폭탄 투척 수량 +1\n+100% 에 못 미치는 부분은, 공격 또는 주술 투사체 스킬 사용 시 해당 확률로 폭탄 투사체 수량 +1\n공격 속도가 추가 +1% 당, 공격 폭탄 대미지가 추가 +1% .\n시전 속도가 추가 +1% , 주술 폭탄 대미지가 추가 +1% .\n폭탄 대미지 추가 +37%\n투사체 수량 +2\n매직 버스트 최대 중첩수가 1/2로 감소한다.\n보초병 대미지 추가 -40%레벨 3비채널링 투사체 스킬 사용 시, 대신 폭탄을 1개 투척한다.\n폭탄은 땅에 떨어진 뒤 1 초 후 자동으로 폭발하며, 폭발 시 투사체가 사방으로 발사된다.\n폭탄은 동시에 10개까지 존재할 수 있으며, 초과 시 가장 먼저 땅에 떨어진 폭탄이 폭발한다.\n폭탄 투척 속도가 초당 1.5 회가 된다.\n공격 속도 +100% 당, 공격 투사체 스킬 사용 시 폭탄 투척 수량 +1\n캐스팅 속도 +100% 당 주술 투사체 스킬 사용 시 폭탄 투척 수량 +1\n+100% 에 못 미치는 부분은, 공격 또는 주술 투사체 스킬 사용 시 해당 확률로 폭탄 투사체 수량 +1\n공격 속도가 추가 +1% 당, 공격 폭탄 대미지가 추가 +1% .\n시전 속도가 추가 +1% , 주술 폭탄 대미지가 추가 +1% .\n폭탄 대미지 추가 +44%\n투사체 수량 +2\n매직 버스트 최대 중첩수가 1/2로 감소한다.\n보초병 대미지 추가 -40%레벨 4비채널링 투사체 스킬 사용 시, 대신 폭탄을 1개 투척한다.\n폭탄은 땅에 떨어진 뒤 1 초 후 자동으로 폭발하며, 폭발 시 투사체가 사방으로 발사된다.\n폭탄은 동시에 10개까지 존재할 수 있으며, 초과 시 가장 먼저 땅에 떨어진 폭탄이 폭발한다.\n폭탄 투척 속도가 초당 1.5 회가 된다.\n공격 속도 +100% 당, 공격 투사체 스킬 사용 시 폭탄 투척 수량 +1\n캐스팅 속도 +100% 당 주술 투사체 스킬 사용 시 폭탄 투척 수량 +1\n+100% 에 못 미치는 부분은, 공격 또는 주술 투사체 스킬 사용 시 해당 확률로 폭탄 투사체 수량 +1\n공격 속도가 추가 +1% 당, 공격 폭탄 대미지가 추가 +1% .\n시전 속도가 추가 +1% , 주술 폭탄 대미지가 추가 +1% .\n폭탄 대미지 추가 +51%\n투사체 수량 +2\n매직 버스트 최대 중첩수가 1/2로 감소한다.\n보초병 대미지 추가 -40%레벨 5비채널링 투사체 스킬 사용 시, 대신 폭탄을 1개 투척한다.\n폭탄은 땅에 떨어진 뒤 1 초 후 자동으로 폭발하며, 폭발 시 투사체가 사방으로 발사된다.\n폭탄은 동시에 10개까지 존재할 수 있으며, 초과 시 가장 먼저 땅에 떨어진 폭탄이 폭발한다.\n폭탄 투척 속도가 초당 1.5 회가 된다.\n공격 속도 +100% 당, 공격 투사체 스킬 사용 시 폭탄 투척 수량 +1\n캐스팅 속도 +100% 당 주술 투사체 스킬 사용 시 폭탄 투척 수량 +1\n+100% 에 못 미치는 부분은, 공격 또는 주술 투사체 스킬 사용 시 해당 확률로 폭탄 투사체 수량 +1\n공격 속도가 추가 +1% 당, 공격 폭탄 대미지가 추가 +1% .\n시전 속도가 추가 +1% , 주술 폭탄 대미지가 추가 +1% .\n폭탄 대미지 추가 +58%\n투사체 수량 +2\n매직 버스트 최대 중첩수가 1/2로 감소한다.\n보초병 대미지 추가 -40%\n이미테이션 루나:\n폭탄 주변 6 미터 내의 적은 지속적으로 마비와 감속 효과를 받는다.",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Firepower Coverage",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "화력 아크",
     level: 45,
     affix:
-      "Projectile Quantity (+2/+2/+3/+3/+4)\n+50% Projectile Size\n(+10/+14/+18/+22/+26)% additional Bomb Damage",
+      "투사체 수량 (+2/+2/+3/+3/+4)\n투사체 사이즈 +50%\n폭탄 대미지 추가 (+10/+14/+18/+22/+26)%",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Dangerous Runaway",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "위험한 도망",
     level: 45,
     affix:
-      "+1 Bomb Quantity when throwing bombs next time after moving at least (20/17/14/11/8) m\n+1% Movement Speed for every 4 m of movement made recently, up to +15%",
+      "최소 (20/17/14/11/8) 미터 이동 후 다음번 폭탄 투척 시 폭탄 수량 +1\n최근 이동한 거리 4 미터 당 이동 속도 +1% , 최대 +15%",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Blast Barrage",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "폭풍의 탄격",
     level: 60,
     affix:
-      "Bombs explode immediately after landing\n+20% additional Projectile Speed\n(+22/+28/+34/+41/+48)% additional Bomb Damage when there are no enemies nearby",
+      "폭탄이 떨어진 후 즉시 폭발한다.\n투사체 속도 추가 +20%\n주변에 적이 없는 경우 폭탄 대미지 별도 (+22/+28/+34/+41/+48)%",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Phantom Delivery",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "허실 투척",
     level: 60,
     affix:
-      "Doubles the bombs thrown.\nBombs have a (40/37/34/31/28)% chance to become duds that deal (-95/-95/-95/-95/-90)% additional damage",
+      "투척 폭탄 수량 2배\n폭탄이 (40/37/34/31/28)% 의 확률로 불발탄이 되어, 입히는 대미지 별도 (-95/-95/-95/-95/-90)%",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Radiation Effect",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "방사능 효과",
     level: 75,
     affix:
-      "When the bombs detonate, for every +1% Projectile Speed, deals (0.35/0.42/0.48/0.53/0.6)% additional damage to enemies in proximity to them, up to an additional (+35/+42/+48/+53/+60)%",
+      "폭탄이 터질 때 투사체 속도 +1% 당 근거리에 있는 적에게 주는 대미지 별도 (0.35/0.42/0.48/0.53/0.6)% , 최대 별도 (+35/+42/+48/+53/+60)%",
   },
   {
-    hero: "Escapist Bing: Blast Nova (#1)",
-    name: "Frenzy Hound",
+    hero: "도망자 빈: 블래스트 노바 (#1)",
+    name: "미친 사냥개",
     level: 75,
     affix:
-      "Bombs do not automatically explode when the upper limit is not reached\nClick the Trait Skill to manually detonate all bombs on the ground\n(+4/4.8/5.5/6.3/+7)% additional damage for every bomb on the battlefield when the bombs detonate, up to (+48/57.6/+66/75.6/+84)% additional damage.",
+      "폭탄이 최대치가 아닐 경우 자동으로 폭발하지 않는다.\n특성 스킬을 눌러 수동으로 땅에 떨어진 모든 폭탄을 폭파시킬 수 있다.\n폭탄이 터질 때, 현재 존재하는 폭탄 1개당 대미지 (+4/4.8/5.5/6.3/+7)% 추가, 최대 (+48/57.6/+66/75.6/+84)% 추가.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Creative Genius",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "크리에이티브 지니어스",
     level: 1,
     affix:
-      "Level 1+1 Max Spell Burst\nGains 2 Inspiration Machines that can be powered by Whimsy Essence and Ingenuity Essence respectively. Starts with 0 Whimsy Essence and Ingenuity Essence with an upper limit of 100. Restores 20 Whimsy Essence per second\nWhen Whimsy Essence reaches 100, dealing Spell Damage to an enemy causes Inspiration Machines to use a Whimsy Explosion, inflicting Whimsy Signal on affected enemies\nWhen Ingenuity Essence reaches 100, clicking the Trait Skill causes Inspiration Machines to use Ingenuity Overload\nBing's ingenious ideas allow him to possess more Traits. In addition to Base Traits, an additional Trait can be selected at each level threshold.Level 2+1 Max Spell Burst\nGains 2 Inspiration Machines that can be powered by Whimsy Essence and Ingenuity Essence respectively. Starts with 0 Whimsy Essence and Ingenuity Essence with an upper limit of 100. Restores 20 Whimsy Essence per second\nWhen Whimsy Essence reaches 100, dealing Spell Damage to an enemy causes Inspiration Machines to use a Whimsy Explosion, inflicting Whimsy Signal on affected enemies\nWhen Ingenuity Essence reaches 100, clicking the Trait Skill causes Inspiration Machines to use Ingenuity Overload\nBing's ingenious ideas allow him to possess more Traits. In addition to Base Traits, an additional Trait can be selected at each level threshold.\n+5% additional Spell DamageLevel 3+1 Max Spell Burst\nGains 2 Inspiration Machines that can be powered by Whimsy Essence and Ingenuity Essence respectively. Starts with 0 Whimsy Essence and Ingenuity Essence with an upper limit of 100. Restores 20 Whimsy Essence per second\nWhen Whimsy Essence reaches 100, dealing Spell Damage to an enemy causes Inspiration Machines to use a Whimsy Explosion, inflicting Whimsy Signal on affected enemies\nWhen Ingenuity Essence reaches 100, clicking the Trait Skill causes Inspiration Machines to use Ingenuity Overload\nBing's ingenious ideas allow him to possess more Traits. In addition to Base Traits, an additional Trait can be selected at each level threshold.\n+10% additional Spell DamageLevel 4+1 Max Spell Burst\nGains 2 Inspiration Machines that can be powered by Whimsy Essence and Ingenuity Essence respectively. Starts with 0 Whimsy Essence and Ingenuity Essence with an upper limit of 100. Restores 20 Whimsy Essence per second\nWhen Whimsy Essence reaches 100, dealing Spell Damage to an enemy causes Inspiration Machines to use a Whimsy Explosion, inflicting Whimsy Signal on affected enemies\nWhen Ingenuity Essence reaches 100, clicking the Trait Skill causes Inspiration Machines to use Ingenuity Overload\nBing's ingenious ideas allow him to possess more Traits. In addition to Base Traits, an additional Trait can be selected at each level threshold.\n+15% additional Spell DamageLevel 5+1 Max Spell Burst\nGains 2 Inspiration Machines that can be powered by Whimsy Essence and Ingenuity Essence respectively. Starts with 0 Whimsy Essence and Ingenuity Essence with an upper limit of 100. Restores 20 Whimsy Essence per second\nWhen Whimsy Essence reaches 100, dealing Spell Damage to an enemy causes Inspiration Machines to use a Whimsy Explosion, inflicting Whimsy Signal on affected enemies\nWhen Ingenuity Essence reaches 100, clicking the Trait Skill causes Inspiration Machines to use Ingenuity Overload\nBing's ingenious ideas allow him to possess more Traits. In addition to Base Traits, an additional Trait can be selected at each level threshold.\n+20% additional Spell Damage\nArtificial Moon:+1 to Non-Base Hero Trait Level",
+      "레벨 1매직 버스트 상한 +1\n크리에이티브 머신을 2개 획득하며, 각자 기발 에센스와 창의 에센스로 에너지를 공급한다. 기발 에센스와 창의 에센스는 최초 0, 최대 100이다. 기발 에센스는 초당 20포인트씩 회복된다.\n기발 에센스가 100 도달 시, 적에게 주술 대미지를 입힌 후, 크리에이티브 머신이 기발 블래스트를 사용하고, 영향을 받는 적에게 기발 시그널을 시전한다.\n창의 에센스가 100 도달 시, 특성 스킬을 터치하면 크리에이티브 머신이 창의 오버로드를 사용한다.\n빈의 기상천외는 그가 더 많은 특성 포인트를 보유할 수 있게 한다. 기본 특성 외에, 레벨 단계마다 특성 포인트를 하나 추가 선택할 수 있다.레벨 2매직 버스트 상한 +1\n크리에이티브 머신을 2개 획득하며, 각자 기발 에센스와 창의 에센스로 에너지를 공급한다. 기발 에센스와 창의 에센스는 최초 0, 최대 100이다. 기발 에센스는 초당 20포인트씩 회복된다.\n기발 에센스가 100 도달 시, 적에게 주술 대미지를 입힌 후, 크리에이티브 머신이 기발 블래스트를 사용하고, 영향을 받는 적에게 기발 시그널을 시전한다.\n창의 에센스가 100 도달 시, 특성 스킬을 터치하면 크리에이티브 머신이 창의 오버로드를 사용한다.\n빈의 기상천외는 그가 더 많은 특성 포인트를 보유할 수 있게 한다. 기본 특성 외에, 레벨 단계마다 특성 포인트를 하나 추가 선택할 수 있다.\n주술 대미지 별도 +5%레벨 3매직 버스트 상한 +1\n크리에이티브 머신을 2개 획득하며, 각자 기발 에센스와 창의 에센스로 에너지를 공급한다. 기발 에센스와 창의 에센스는 최초 0, 최대 100이다. 기발 에센스는 초당 20포인트씩 회복된다.\n기발 에센스가 100 도달 시, 적에게 주술 대미지를 입힌 후, 크리에이티브 머신이 기발 블래스트를 사용하고, 영향을 받는 적에게 기발 시그널을 시전한다.\n창의 에센스가 100 도달 시, 특성 스킬을 터치하면 크리에이티브 머신이 창의 오버로드를 사용한다.\n빈의 기상천외는 그가 더 많은 특성 포인트를 보유할 수 있게 한다. 기본 특성 외에, 레벨 단계마다 특성 포인트를 하나 추가 선택할 수 있다.\n주술 대미지 별도 +10%레벨 4매직 버스트 상한 +1\n크리에이티브 머신을 2개 획득하며, 각자 기발 에센스와 창의 에센스로 에너지를 공급한다. 기발 에센스와 창의 에센스는 최초 0, 최대 100이다. 기발 에센스는 초당 20포인트씩 회복된다.\n기발 에센스가 100 도달 시, 적에게 주술 대미지를 입힌 후, 크리에이티브 머신이 기발 블래스트를 사용하고, 영향을 받는 적에게 기발 시그널을 시전한다.\n창의 에센스가 100 도달 시, 특성 스킬을 터치하면 크리에이티브 머신이 창의 오버로드를 사용한다.\n빈의 기상천외는 그가 더 많은 특성 포인트를 보유할 수 있게 한다. 기본 특성 외에, 레벨 단계마다 특성 포인트를 하나 추가 선택할 수 있다.\n주술 대미지 별도 +15%레벨 5매직 버스트 상한 +1\n크리에이티브 머신을 2개 획득하며, 각자 기발 에센스와 창의 에센스로 에너지를 공급한다. 기발 에센스와 창의 에센스는 최초 0, 최대 100이다. 기발 에센스는 초당 20포인트씩 회복된다.\n기발 에센스가 100 도달 시, 적에게 주술 대미지를 입힌 후, 크리에이티브 머신이 기발 블래스트를 사용하고, 영향을 받는 적에게 기발 시그널을 시전한다.\n창의 에센스가 100 도달 시, 특성 스킬을 터치하면 크리에이티브 머신이 창의 오버로드를 사용한다.\n빈의 기상천외는 그가 더 많은 특성 포인트를 보유할 수 있게 한다. 기본 특성 외에, 레벨 단계마다 특성 포인트를 하나 추가 선택할 수 있다.\n주술 대미지 별도 +20%\n이미테이션 루나:기본 외 히어로 특성 레벨 +1",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Inspiration Overflow",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "크리에이티브 대폭발",
     level: 45,
     affix:
-      "Instantly restores 5 Whimsy Essence when consuming Spell Burst Charge, and restores 6 additional Whimsy Essence for every 3 stacks of Spell Burst Charge consumed. Interval: 1s\n(+10/+15/+20/+25/+30/+35)% additional Hit Damage for skills cast by Spell Burst\nInstantly restores 80 Ingenuity Essence after entering a stage or reviving",
+      "매직 버스트 충전 소모 시, 기발 에센스 5 포인트를 즉시 회복한다. 소모한 매직 버스트 충전 3회당, 6 포인트 추가 회복한다. 간격 1초.\n매직 버스트로 시전하는 스킬의 적중 대미지 별도 (+10/+15/+20/+25/+30/+35)%\n스테이지 진입 또는 부활 후 즉시 창의 에센스를 80 포인트 회복한다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Mind Domain",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "마인드 도메인",
     level: 60,
     affix:
-      "Whimsy Explosion spawns an energy field. Gains 1 stack of Whimsy for every 0.5s staying in the energy field. Stacks up to (3/4/5/6/7/8) time(s)",
+      "기발 블래스트는 에너지 필드를 생성한다. 에너지 필드에서 0.5초간 머무를 시 기발을 1회 획득하고, 최대 (3/4/5/6/7/8) 회 중첩된다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Trouble Maker",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "트러블메이커",
     level: 60,
     affix:
-      "Loses (20/15/15/10/10/10)% Max Life and Energy Shield when Whimsy Explosion hits yourself\nEffect of Whimsy Signal enhanced to: (+50/+50/+65/+65/+80/+85)% additional Spell Damage taken",
+      "기발 블래스트가 자신 적중 시, 최대 HP와 보호막을 (20/15/15/10/10/10)% 상실한다.\n기발 시그널 효과 증가: 받는 주술 대미지 별도 (+50/+50/+65/+65/+80/+85)%",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Brainstorm",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "브레인 스톰",
     level: 75,
     affix:
-      "After a 1s delay, Whimsy Explosion creates an additional Energy Explosion that eliminates enemies with less than (15/15/18/18/21/23)% Life within 12m\nRestores (5/6/6/7/7/8) additional Whimsy Essence for each enemy affected by Whimsy Signal defeated",
+      "기발 블래스트는 1초 지연 후 추가 에너지 폭발을 1회 입히고, 12 미터 내에 있고 HP가 (15/15/18/18/21/23)% 미만인 적을 도태시킨다.\n기발 시그널 영향을 받은 적 1명을 처치할 때마다 기발 에센스 (5/6/6/7/7/8) 포인트를 추가 회복한다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Flash of Brilliance",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "유레카",
     level: 75,
     affix:
-      "Casting a Main Skill has a (20/25/25/30/30/40)% chance to trigger Whimsy Explosion without consuming Whimsy Essence. Interval: (3.5/3.5/3/3/2.5/2.5) s",
+      "메인 스킬 시전 시 (20/25/25/30/30/40)% 확률로 기발 블래스트가 발동되고 기발 에센스를 소모하지 않으며, 간격은 (3.5/3.5/3/3/2.5/2.5) 초다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Super Sonic Protocol",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "슈퍼 소닉 프로토콜",
     level: 45,
     affix:
-      "(+60/+65/+70/+75/+80/+85)% Movement Speed when casting Ingenuity Overload. The bonus falls off to 0 within 4s",
+      "창의 오버로드 시전 시 이동 속도 (+60/+65/+70/+75/+80/+85)% , 해당 보너스는 4초 안에 0으로 감소한다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Over-Shield Module",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "슈퍼 실드 모듈",
     level: 45,
     affix:
-      "- (50/52.5/55/57.5/60/62.5)% additional damage taken when casting Ingenuity Overload for 1s",
+      "창의 오버로드 시전 시 받는 대미지 별도 - (50/52.5/55/57.5/60/62.5)% , 1초간 지속한다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Law of Ingenuity",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "독창성의 법칙",
     level: 60,
     affix:
-      "Ingenuity Overload has a (20/25/30/35/40/45)% chance to not consume Ingenuity Essence",
+      "창의 오버로드는 (20/25/30/35/40/45)% 확률로 창의 에센스를 소모하지 않는다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Ingenious Chaos Principle",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "창의 엔트로피 증가 법칙",
+    level: 60,
+    affix: "최대 매직 버스트 1회당 창의 에센스 회복량 (+4/+6/+8/+10/+12/+14)%",
+  },
+  {
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "지능형 창의 프로그램",
     level: 60,
     affix:
-      "(+4/+6/+8/+10/+12/+14)% Ingenuity Essence restoration per Max Spell Burst",
+      "레벨 1창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.\n기발 에센스 회복 속도 -10%레벨 2창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.\n기발 에센스 회복 속도 -5%레벨 3창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.레벨 4창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.\n기발 에센스 회복 속도 +5%레벨 5창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.\n기발 에센스 회복 속도 +10%레벨 6창의 에센스가 100 도달 시, 창의 오버로드를 발동한다.\n기발 에센스 회복 속도 +15%",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Auto-Ingenuity Program",
-    level: 60,
-    affix:
-      "Level 1When Ingenuity Essence reaches 100, triggers Ingenuity Overload\n-10% Whimsy Essence Recovery SpeedLevel 2When Ingenuity Essence reaches 100, triggers Ingenuity Overload\n-5% Whimsy Essence Recovery SpeedLevel 3When Ingenuity Essence reaches 100, triggers Ingenuity OverloadLevel 4When Ingenuity Essence reaches 100, triggers Ingenuity Overload\n+5% Whimsy Essence Recovery SpeedLevel 5When Ingenuity Essence reaches 100, triggers Ingenuity Overload\n+10% Whimsy Essence Recovery SpeedLevel 6When Ingenuity Essence reaches 100, triggers Ingenuity Overload\n+15% Whimsy Essence Recovery Speed",
-  },
-  {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Multi-Coupling Equation",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "다중 결합 방정식",
     level: 75,
     affix:
-      "Level 1For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 1 time(s)Level 2For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 1 time(s)\n+15% Empower and Defensive Skill Effect DurationLevel 3For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 2 time(s)\n+15% Empower and Defensive Skill Effect DurationLevel 4For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 2 time(s)\n+30% Empower and Defensive Skill Effect DurationLevel 5For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 3 time(s)\n+30% Empower and Defensive Skill Effect DurationLevel 6For every 2 Empower or Defensive Skill(s) affecting you, +1 Max Spell Burst. Stacks up to 3 time(s)\n+40% Empower and Defensive Skill Effect Duration",
+      "레벨 1자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 1 회 중첩레벨 2자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 1 회 중첩\n자극과 실드 스킬 효과 지속 시간 +15%레벨 3자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 2 회 중첩\n자극과 실드 스킬 효과 지속 시간 +15%레벨 4자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 2 회 중첩\n자극과 실드 스킬 효과 지속 시간 +30%레벨 5자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 3 회 중첩\n자극과 실드 스킬 효과 지속 시간 +30%레벨 6자극 또는 실드 스킬의 영향을 2 개 받을 때마다 최대 매직 버스트 +1 , 최대 3 회 중첩\n자극과 실드 스킬 효과 지속 시간 +40%",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Hyper-Resonance Hypothesis",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "초공명 가설",
     level: 75,
     affix:
-      "When casting Ingenuity Overload, gains Buff Effect: (+15/+19/+23/+27/+31/+35)% additional Spell Burst Charge Speed for 10s",
+      "창의 오버로드 시전 시, 버프 효과 획득: 매직 버스트 충전 속도 추가 (+15/+19/+23/+27/+31/+35)% , 10초간 지속한다.",
   },
   {
-    hero: "Escapist Bing: Creative Genius (#2)",
-    name: "Contingency Inspiration Delivery",
+    hero: "도망자- 도망자-빈: 크리에이티브 지니어스 (#2)",
+    name: "비상 크리에이티브 지원",
     level: 75,
     affix:
-      "Summons 3 Contingency Inspiration Machines when casting Ingenuity Overload. Their Skill Interval: (0.9/0.8/0.7/0.6/0.5/0.4) s",
+      "창의 오버로드 시전 시, 비상 크리에이티브 머신을 3개 소환한다. 해당 스킬 시전 간격은 (0.9/0.8/0.7/0.6/0.5/0.4) 초이다.",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Flame of Pleasure",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "향락의 불꽃",
     level: 1,
     affix:
-      "Level 1Click the Trait Skill to unleash Purgatory.\nPurgatory has an initial radius of 8 m, lasts for 5 s, and has a cooldown of 8 s\nPurgatory's upper limit becomes 1 . Purgatory follows the player while it is active\nAttempts to auto-cast Purgatory when you are not in Purgatory and enemies are present within 15m. Interval: 1s\n+45% additional damage taken by enemies within the range of PurgatoryLevel 2Click the Trait Skill to unleash Purgatory.\nPurgatory has an initial radius of 8 m, lasts for 5 s, and has a cooldown of 8 s\nPurgatory's upper limit becomes 1 . Purgatory follows the player while it is active\nAttempts to auto-cast Purgatory when you are not in Purgatory and enemies are present within 15m. Interval: 1s\n+52% additional damage taken by enemies within the range of PurgatoryLevel 3Click the Trait Skill to unleash Purgatory.\nPurgatory has an initial radius of 8 m, lasts for 5 s, and has a cooldown of 8 s\nPurgatory's upper limit becomes 1 . Purgatory follows the player while it is active\nAttempts to auto-cast Purgatory when you are not in Purgatory and enemies are present within 15m. Interval: 1s\n+60% additional damage taken by enemies within the range of PurgatoryLevel 4Click the Trait Skill to unleash Purgatory.\nPurgatory has an initial radius of 8 m, lasts for 5 s, and has a cooldown of 8 s\nPurgatory's upper limit becomes 1 . Purgatory follows the player while it is active\nAttempts to auto-cast Purgatory when you are not in Purgatory and enemies are present within 15m. Interval: 1s\n+68% additional damage taken by enemies within the range of PurgatoryLevel 5Click the Trait Skill to unleash Purgatory.\nPurgatory has an initial radius of 8 m, lasts for 5 s, and has a cooldown of 8 s\nPurgatory's upper limit becomes 1 . Purgatory follows the player while it is active\nAttempts to auto-cast Purgatory when you are not in Purgatory and enemies are present within 15m. Interval: 1s\n+76% additional damage taken by enemies within the range of Purgatory\nArtificial Moon:\nConverts 30% of Cold and Lightning Damage to Fire Damage",
+      "레벨 1특성 스킬을 눌러 지옥을 시전한다.\n지옥 최초 반경 8 미터, 5 초 지속, 쿨타임 8 초\n최대 지옥 1 , 지옥은 지속되는 동안 유저와 동행한다.\n지옥 안에 있지 않고, 15미터 내에 적이 있는 경우 지옥을 자동으로 사용한다. 간격 1초\n지옥 범위 내의 적이 받는 대미지 추가 +45%레벨 2특성 스킬을 눌러 지옥을 시전한다.\n지옥 최초 반경 8 미터, 5 초 지속, 쿨타임 8 초\n최대 지옥 1 , 지옥은 지속되는 동안 유저와 동행한다.\n지옥 안에 있지 않고, 15미터 내에 적이 있는 경우 지옥을 자동으로 사용한다. 간격 1초\n지옥 범위 내의 적이 받는 대미지 추가 +52%레벨 3특성 스킬을 눌러 지옥을 시전한다.\n지옥 최초 반경 8 미터, 5 초 지속, 쿨타임 8 초\n최대 지옥 1 , 지옥은 지속되는 동안 유저와 동행한다.\n지옥 안에 있지 않고, 15미터 내에 적이 있는 경우 지옥을 자동으로 사용한다. 간격 1초\n지옥 범위 내의 적이 받는 대미지 추가 +60%레벨 4특성 스킬을 눌러 지옥을 시전한다.\n지옥 최초 반경 8 미터, 5 초 지속, 쿨타임 8 초\n최대 지옥 1 , 지옥은 지속되는 동안 유저와 동행한다.\n지옥 안에 있지 않고, 15미터 내에 적이 있는 경우 지옥을 자동으로 사용한다. 간격 1초\n지옥 범위 내의 적이 받는 대미지 추가 +68%레벨 5특성 스킬을 눌러 지옥을 시전한다.\n지옥 최초 반경 8 미터, 5 초 지속, 쿨타임 8 초\n최대 지옥 1 , 지옥은 지속되는 동안 유저와 동행한다.\n지옥 안에 있지 않고, 15미터 내에 적이 있는 경우 지옥을 자동으로 사용한다. 간격 1초\n지옥 범위 내의 적이 받는 대미지 추가 +76%\n이미테이션 루나:\n받는 서리, 번개 대미지의 30% 를 화염 대미지로 전환한다.",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Groaning Echo",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "절망의 메아리",
     level: 45,
     affix:
-      "+1 Max Purgatory Charges\n(+1/1.25/1.5/1.75/+2) s Purgatory Duration\n(+40/+55/+70/+85/+100)% Purgatory Skill Area",
+      "지옥 충전 포인트 상한 +1\n지옥 지속 시간 (+1/1.25/1.5/1.75/+2) 초\n지옥 스킬 범위 (+40/+55/+70/+85/+100)%",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Flames of Desire",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "끝없는 극형",
     level: 60,
     affix:
-      "Eliminates enemies with less than (6/7/8/9/10)% Life within the range of Purgatory\nRestores (1/1.25/1.5/1.75/2)% of Max Life and Energy Shield when defeating enemies within the range of Purgatory",
+      "지옥 범위 안에 있는 HP (6/7/8/9/10)% 미만의 적 도태\n지옥 범위 내의 적 처치 시 최대 HP와 보호막 (1/1.25/1.5/1.75/2)% 회복",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Infernal Damnation",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "업화의 타락",
     level: 60,
     affix:
-      "For every second Purgatory is active, (+6/+7/+8/+9/+10)% additional damage and Minion Damage until Purgatory is lost or a new Purgatory is cast",
+      "지옥 1초 지속 시마다 대미지와 소환체 대미지 별도 (+6/+7/+8/+9/+10)% , 지옥 상실 또는 신규 지옥 시전 시까지 적용",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Banquet of Bliss",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "광란의 연회",
     level: 75,
     affix:
-      "-30% additional damage taken by enemies within (4/3/2/1/1) m\nEnemies within range of Purgatory are cursed by Lv. (10/15/20/30/40) Scorch\nYou can cast 1 additional Curses",
+      "주변 (4/3/2/1/1) 미터 내의 적이 받는 대미지 추가 -30%\n지옥 범위 안에 있는 적이 (10/15/20/30/40) 레벨 작열 저주의 영향을 받는다.\n추가 저주를 1 개 시전할 수 있다.",
   },
   {
-    hero: "Frostfire Gemma: Flame of Pleasure (#1)",
-    name: "Dress Licker",
+    hero: "빙염술사 젬마: 향락의 불꽃 (#1)",
+    name: "치맛속 신하",
     level: 75,
     affix:
-      "Converts 20% of Physical Damage taken to Fire Damage\nConverts 100% of Physical Damage taken by enemies within the range of Purgatory to Fire Damage\n(+30/+35/+40/+45/+50)% additional Fire Damage taken by enemies within the range of Purgatory\n+30% additional Fire Damage against enemies within the range of Purgatory",
+      "받은 물리 대미지의 20% 를 화염 대미지로 전환\n지옥 범위 내의 적이 받는 물리 대미지의 100% 가 화염 대미지로 전환\n지옥 범위 내의 적이 받는 대미지 추가 (+30/+35/+40/+45/+50)%\n지옥 범위 내의 적에게 주는 화염 대미지 추가 +30%",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Frostbitten Heart",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "프로즌 하트",
     level: 1,
     affix:
-      "Level 1When dealing Cold Damage, triggers Cold Pulse at the enemy's location. Interval: 4 s\nInflicts Frostbite when Cold Pulse hits an enemy\n+20% additional Cold Damage for you and your Minions for 6 s when Cold Pulse hits an enemyLevel 2When dealing Cold Damage, triggers Cold Pulse at the enemy's location. Interval: 4 s\nInflicts Frostbite when Cold Pulse hits an enemy\n+26% additional Cold Damage for you and your Minions for 6 s when Cold Pulse hits an enemyLevel 3When dealing Cold Damage, triggers Cold Pulse at the enemy's location. Interval: 4 s\nInflicts Frostbite when Cold Pulse hits an enemy\n+32% additional Cold Damage for you and your Minions for 6 s when Cold Pulse hits an enemyLevel 4When dealing Cold Damage, triggers Cold Pulse at the enemy's location. Interval: 4 s\nInflicts Frostbite when Cold Pulse hits an enemy\n+38% additional Cold Damage for you and your Minions for 6 s when Cold Pulse hits an enemyLevel 5When dealing Cold Damage, triggers Cold Pulse at the enemy's location. Interval: 4 s\nInflicts Frostbite when Cold Pulse hits an enemy\n+44% additional Cold Damage for you and your Minions for 6 s when Cold Pulse hits an enemy\nArtificial Moon:\n+10 Max Frostbite Rating and +50% additional Cold Pulse Skill Area",
+      "레벨 1냉기 대미지 부여 시, 적의 위치에 서리 펄스를 발동한다. 간격 4 초\n서리 펄스가 적 적중 시 빙결을 부여한다.\n서리 펄스로 적 적중 시 자신과 소환체 냉기 대미지 별도 +20% , 6 초간 지속한다.레벨 2냉기 대미지 부여 시, 적의 위치에 서리 펄스를 발동한다. 간격 4 초\n서리 펄스가 적 적중 시 빙결을 부여한다.\n서리 펄스로 적 적중 시 자신과 소환체 냉기 대미지 별도 +26% , 6 초간 지속한다.레벨 3냉기 대미지 부여 시, 적의 위치에 서리 펄스를 발동한다. 간격 4 초\n서리 펄스가 적 적중 시 빙결을 부여한다.\n서리 펄스로 적 적중 시 자신과 소환체 냉기 대미지 별도 +32% , 6 초간 지속한다.레벨 4냉기 대미지 부여 시, 적의 위치에 서리 펄스를 발동한다. 간격 4 초\n서리 펄스가 적 적중 시 빙결을 부여한다.\n서리 펄스로 적 적중 시 자신과 소환체 냉기 대미지 별도 +38% , 6 초간 지속한다.레벨 5냉기 대미지 부여 시, 적의 위치에 서리 펄스를 발동한다. 간격 4 초\n서리 펄스가 적 적중 시 빙결을 부여한다.\n서리 펄스로 적 적중 시 자신과 소환체 냉기 대미지 별도 +44% , 6 초간 지속한다.\n이미테이션 루나:\n최대 빙결 +10 , 서리 펄스 스킬 범위 추가 +50%",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Deepfreeze",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "설상가상",
     level: 45,
     affix:
-      "Frostbite Rating can exceed its upper limit, up to (150/150/200/200/200)\n(+25/+40/+55/+65/+80)% Frostbite Effect\n+10% additional Cold Damage for you and your Minions",
+      "빙결은 최대치 돌파 가능, 최대 (150/150/200/200/200) 포인트\n빙결 효과 (+25/+40/+55/+65/+80)%\n자신과 소환체의 냉기 대미지 별도 +10%",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Glacial Night",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "겨울밤의 결빙",
     level: 60,
     affix:
-      "Level 1Enemies are inflicted with Condensed FrostLevel 2Enemies are inflicted with Condensed Frost\n+25% Condensed Frost EffectLevel 3Enemies are inflicted with Condensed Frost\n+50% Condensed Frost EffectLevel 4Enemies are inflicted with Condensed Frost\n+75% Condensed Frost EffectLevel 5Enemies are inflicted with Condensed Frost\n+100% Condensed Frost Effect",
+      "레벨 1적이 얼음 응결을 획득한다.레벨 2적이 얼음 응결을 획득한다.\n얼음 응결 효과 +25%레벨 3적이 얼음 응결을 획득한다.\n얼음 응결 효과 +50%레벨 4적이 얼음 응결을 획득한다.\n얼음 응결 효과 +75%레벨 5적이 얼음 응결을 획득한다.\n얼음 응결 효과 +100%",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Dance of Frost",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "서리 춤사위",
     level: 60,
     affix:
-      "-2 s Cold Pulse Interval\n(+8/+10/+12/+15/+18)% additional Cold Damage taken by the enemy for each time it has been hit with Cold Pulse recently. Lasts for 8 seconds and stacks up to 4 times",
+      "서리 펄스 시전 간격 -2 초\n최근 적이 적중당한 서리 펄스 1회당, 받는 냉기 대미지 별도 (+8/+10/+12/+15/+18)% , 8 초 지속, 최대 4 회 중첩",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Frigid Infusion",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "혹한 전염",
     level: 75,
     affix:
-      "(-20/-25/-35/-40/-45)% Cold Resistance for 6 s when Cold Pulse hits an enemy\n+100% additional Cold Pulse Skill Area",
+      "적이 서리 펄스에 적중 시 냉기 저항 (-20/-25/-35/-40/-45)% , 6 초간 지속한다.\n서리 펄스 스킬 범위 추가 +100%",
   },
   {
-    hero: "Frostfire Gemma: Frostbitten Heart (#2)",
-    name: "Blooming Frost Flower",
+    hero: "빙염술사 젬마: 프로즌 하트 (#2)",
+    name: "얼음꽃의 만개",
     level: 75,
     affix:
-      "Upon inflicting Frostbite, additionally casts Cold Pulse at the Frostbitten target once. Interval: 2s for the same target\n(+35/+45/+55/+65/+75) to Max Frostbite Rating",
+      "빙결 부여 시, 빙결된 지점에 서리 펄스를 1회 추가 시전한다. 해당 효과는 동일 대상에게 2초간의 간격을 지닌다.\n최대 빙결 (+35/+45/+55/+65/+75)",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Ice-Fire Fusion",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "빙화 융합",
     level: 1,
     affix:
-      "Level 1Enters Frostfire Rampage after casting Fire or Cold Skills 5 time(s)\n+20% additional Fire Damage and Cold Damage during Frostfire Rampage\nFrostfire Rampage lasts for 5 s and has a cooldown of 10 sLevel 2Enters Frostfire Rampage after casting Fire or Cold Skills 5 time(s)\n+23% additional Fire Damage and Cold Damage during Frostfire Rampage\nFrostfire Rampage lasts for 5 s and has a cooldown of 10 sLevel 3Enters Frostfire Rampage after casting Fire or Cold Skills 5 time(s)\n+26% additional Fire Damage and Cold Damage during Frostfire Rampage\nFrostfire Rampage lasts for 5 s and has a cooldown of 10 sLevel 4Enters Frostfire Rampage after casting Fire or Cold Skills 5 time(s)\n+30% additional Fire Damage and Cold Damage during Frostfire Rampage\nFrostfire Rampage lasts for 5 s and has a cooldown of 10 sLevel 5Enters Frostfire Rampage after casting Fire or Cold Skills 5 time(s)\n+33% additional Fire Damage and Cold Damage during Frostfire Rampage\nFrostfire Rampage lasts for 5 s and has a cooldown of 10 s\nArtificial Moon:\n+100% additional Cooldown Recovery Speed for Frostfire Rampage",
+      "레벨 1화염 또는 냉기 스킬 누적 5 회 시전 시 얼음불의 폭주 상태 진입\n얼음불의 폭주 시, 화염 및 냉기 대미지 추가 +20%\n얼음불의 폭주 상태 5 초간 지속, 쿨타임 10 초레벨 2화염 또는 냉기 스킬 누적 5 회 시전 시 얼음불의 폭주 상태 진입\n얼음불의 폭주 시, 화염 및 냉기 대미지 추가 +23%\n얼음불의 폭주 상태 5 초간 지속, 쿨타임 10 초레벨 3화염 또는 냉기 스킬 누적 5 회 시전 시 얼음불의 폭주 상태 진입\n얼음불의 폭주 시, 화염 및 냉기 대미지 추가 +26%\n얼음불의 폭주 상태 5 초간 지속, 쿨타임 10 초레벨 4화염 또는 냉기 스킬 누적 5 회 시전 시 얼음불의 폭주 상태 진입\n얼음불의 폭주 시, 화염 및 냉기 대미지 추가 +30%\n얼음불의 폭주 상태 5 초간 지속, 쿨타임 10 초레벨 5화염 또는 냉기 스킬 누적 5 회 시전 시 얼음불의 폭주 상태 진입\n얼음불의 폭주 시, 화염 및 냉기 대미지 추가 +33%\n얼음불의 폭주 상태 5 초간 지속, 쿨타임 10 초\n이미테이션 루나:\n얼음불의 폭주 쿨타임 회복 속도 추가 +100%",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Ice-Fire Embrace",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "얼음불 포옹",
     level: 45,
     affix:
-      "(+10/+13/+16/+19/+22)% additional Cold Damage if you have dealt Fire Damage recently\n(+10/+13/+16/+19/+22)% additional Fire Damage if you have dealt Cold Damage recently\n+10% Fire and Cold Resistance",
+      "최근 화염 대미지를 부여한 경우, 냉기 대미지 추가 (+10/+13/+16/+19/+22)%\n최근 냉기 대미지를 부여한 경우, 화염 대미지 추가 (+10/+13/+16/+19/+22)%\n화염 및 냉기 저항 +10%",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Restless Ice-Fire",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "움직이는 얼음불",
     level: 60,
     affix:
-      "(+12/+15/+18/+21/+24)% Elemental Penetration and +20% Movement Speed during Frostfire Rampage\n(+20/+30/+40/+50/+60)% Frostfire Rampage Cooldown Recovery Speed",
+      "얼음불의 폭주 시, 원소 관통 (+12/+15/+18/+21/+24)% , 이동 속도 +20%\n얼음불의 폭주 쿨타임 회복 속도 (+20/+30/+40/+50/+60)%",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Ice-Fire Radiance",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "얼음불 광채",
     level: 60,
     affix:
-      "-50% Frostfire Rampage Duration\nRegenerates 10% Life and Mana per second when entering Frostfire Rampage. The effect gradually falls off to 0 within 3 s.\n(+60/+70/+80/+90/+100)% additional Fire Damage and Cold Damage when Frostfire Rampage ends. The effect gradually falls off to 0 within 3 s",
+      "얼음불의 폭주 지속 시간 -50%\n얼음불의 폭주 진입 시, 매초 10% 의 HP와 MP를 자연 회복하며, 이 효과는 3 초 동안 점차 0으로 감소합니다.\n얼음불의 폭주 상실 시, 화염 및 냉기 대미지 추가 (+60/+70/+80/+90/+100)% , 해당 효과는 3 초 동안 점차 0으로 감소합니다.",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Bone-piercing Heat",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "극한의 불길",
     level: 75,
-    affix: "Adds (30/36/42/48/54)% of Cold Damage as Fire Damage",
+    affix: "냉기 대미지를 (30/36/42/48/54)% 추가한 화염 대미지",
   },
   {
-    hero: "Frostfire Gemma: Ice-Fire Fusion (#3)",
-    name: "Ice to Blaze",
+    hero: "빙염술사 젬마: 빙화 융합 (#3)",
+    name: "빙화전환",
     level: 75,
     affix:
-      "Converts 99% of Cold Damage to Fire Damage\nThe Fire Resistance of Frostbitten enemies is fixed at (15/10/5/0/-5)%",
+      "냉기 대미지의 99% 를 화염 대미지로 전환\n빙결된 적의 화염 저항이 (15/10/5/0/-5)% 로 고정된다.",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Wisdom of The Gods",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "신들의 위대한 지혜",
     level: 1,
     affix:
-      "Level 1Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to cast God's Boon\nGod's Boon: Consumes all Focus Blessings to grant self God's Boon. Cooldown: 15 s\n+6% additional damage for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 8 time(s)Level 2Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to cast God's Boon\nGod's Boon: Consumes all Focus Blessings to grant self God's Boon. Cooldown: 15 s\n+7% additional damage for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 8 time(s)Level 3Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to cast God's Boon\nGod's Boon: Consumes all Focus Blessings to grant self God's Boon. Cooldown: 15 s\n+8% additional damage for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 8 time(s)Level 4Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to cast God's Boon\nGod's Boon: Consumes all Focus Blessings to grant self God's Boon. Cooldown: 15 s\n+9% additional damage for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 8 time(s)Level 5Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to cast God's Boon\nGod's Boon: Consumes all Focus Blessings to grant self God's Boon. Cooldown: 15 s\n+10% additional damage for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 8 time(s)\nArtificial Moon:\n+6% Skill Area for each stack of Focus Blessing consumed by God's Boon. Lasts for +10 s. Stacks up to 8 time(s)",
+      "레벨 12초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 신의 은총을 사용한다.\n신의 은총: 집요한 축복을 모두 소모하고, 자신에게 신의 은총을 내린다. 쿨타임 15 초\n신의 은총이 집요한 축복을 1회 소모할 때마다 대미지 별도 +6% , 10 초간 지속, 최대 8 회 중첩레벨 22초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 신의 은총을 사용한다.\n신의 은총: 집요한 축복을 모두 소모하고, 자신에게 신의 은총을 내린다. 쿨타임 15 초\n신의 은총이 집요한 축복을 1회 소모할 때마다 대미지 별도 +7% , 10 초간 지속, 최대 8 회 중첩레벨 32초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 신의 은총을 사용한다.\n신의 은총: 집요한 축복을 모두 소모하고, 자신에게 신의 은총을 내린다. 쿨타임 15 초\n신의 은총이 집요한 축복을 1회 소모할 때마다 대미지 별도 +8% , 10 초간 지속, 최대 8 회 중첩레벨 42초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 신의 은총을 사용한다.\n신의 은총: 집요한 축복을 모두 소모하고, 자신에게 신의 은총을 내린다. 쿨타임 15 초\n신의 은총이 집요한 축복을 1회 소모할 때마다 대미지 별도 +9% , 10 초간 지속, 최대 8 회 중첩레벨 52초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 신의 은총을 사용한다.\n신의 은총: 집요한 축복을 모두 소모하고, 자신에게 신의 은총을 내린다. 쿨타임 15 초\n신의 은총이 집요한 축복을 1회 소모할 때마다 대미지 별도 +10% , 10 초간 지속, 최대 8 회 중첩\n이미테이션 루나:\n신의 권능이 집요한 축복을 1회 소모할 때마다 스킬 범위 +6% , +10 초간 지속, 최대 8 회 중첩",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Divine Prophecy",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "신을 받드는 예언",
     level: 45,
     affix:
-      "When at max stacks of all Blessings and God's Boon is not active, automatically uses God's Boon when dealing damage\nWhen gaining a type of Blessing, (+50/+50/+100/+100/+100)% chance to gain (1/2/2/3/4) additional stack(s) of the corresponding Blessing\n(+6/+8/+10/+12/+14)% additional damage for every Blessing at max stacks (multiplies)",
+      "모든 축복이 최대 중첩이고 신의 권능 상태가 아닐 때, 대미지를 입히면 자동으로 신의 권능을 사용한다.\n1가지 축복 획득 시, (+50/+50/+100/+100/+100)% 확률로 해당 종류의 축복을 추가로 (1/2/2/3/4) 회 획득한다.\n최대 중첩 상태인 축복을 1개 보유 시마다 대미지 별도 (+6/+8/+10/+12/+14)% (곱연산)",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Predicted Reincarnation",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "윤회의 예언",
     level: 60,
     affix:
-      "+7% additional God's Boon Cooldown Recovery Speed for every stack of Focus Blessing consumed by God's Boon. Stacks up to 8 time(s)\n(+20/+26/+32/+38/+45)% additional damage if God's Boon consumes max stacks of Focus Blessing. Lasts for 10 s",
+      "신의 권능이 집요한 축복을 1회 소모할 때마다 신의 권능 쿨타임 회복 속도 추가 +7% , 최대 8 회 중첩\n신의 은총이 최대 중첩 상태의 집요한 축복을 소모한 경우 대미지 별도 (+20/+26/+32/+38/+45)% , 10 초 지속",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Predicted Hope",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "희망의 예언",
     level: 60,
     affix:
-      "+1 to Max Tenacity Blessing Stacks\n+1 to Max Agility Blessing Stacks\n(-3/+2/+7/+12/+17)% additional damage",
+      "강건한 축복 최대 중첩 수 +1\n황홀한 축복 최대 중첩 수 +1\n대미지 추가 (-3/+2/+7/+12/+17)%",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Farewell Prophecy",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "작별의 예언",
     level: 75,
     affix:
-      "(+4/4.5/+5/5.5/+6)% Double Damage Chance for each stack of Focus Blessing that God's Boon consumes. Lasts for 10 s. Stacks up to 10 time(s)\nFor every 1% overflown Double Damage Chance, there is a 1% chance to deal Quadruple Damage instead",
+      "신의 은총이 집요한 축복을 1회 소모할 때마다 이중 대미지 확률 (+4/4.5/+5/5.5/+6)% , 10 초 지속, 최대 10 회 중첩\n초과된 이중 대미지 확률 1% 당 1% 의 확률로 4배 대미지로 전환된다.",
   },
   {
-    hero: "Oracle Thea: Wisdom of The Gods (#1)",
-    name: "Predicted Justice",
+    hero: "사제 티아: 신들의 위대한 지혜 (#1)",
+    name: "공정한 예언",
     level: 75,
     affix:
-      "The biggest max stack bonus of Agility Blessing or Tenacity Blessing is also applied to the max stack bonus of Focus Blessing\n(-25/-22.5/-20/-17.5/-15)% additional Cooldown Recovery Speed for God's Boon",
+      "황홀한 축복 또는 강건한 축복 최대 중첩수 보너스의 최대가 집요한 축복 최대 중첩수의 보너스에 동일하게 적용된다.\n신의 은총 쿨타임 회복 속도 추가 (-25/-22.5/-20/-17.5/-15)%",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Incarnation of the Gods",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "신들의 화신",
     level: 1,
     affix:
-      "Level 1Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to use Divine Realm on the closest enemy for 8 s. Cooldown: 8 s\n+3% additional damage for every stack of Blessing when the Divine Realm is active. Stacks up to 8 time(s)\nConverts all Tenacity Blessing to Agility Blessing when outside the Divine Realm\nConverts all Agility Blessing to Tenacity Blessing when within the Divine Realm\nThe increase/decrease of max Tenacity Blessing stacks is also applied to Agility Blessing when you're outside of the Divine Realm.\nThe increase/decrease of max Agility Blessing stacks is also applied to Tenacity Blessing when you're within the Divine Realm.Level 2Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to use Divine Realm on the closest enemy for 8 s. Cooldown: 8 s\n3.8% additional damage for every stack of Blessing when the Divine Realm is active. Stacks up to 8 time(s)\nConverts all Tenacity Blessing to Agility Blessing when outside the Divine Realm\nConverts all Agility Blessing to Tenacity Blessing when within the Divine Realm\nThe increase/decrease of max Tenacity Blessing stacks is also applied to Agility Blessing when you're outside of the Divine Realm.\nThe increase/decrease of max Agility Blessing stacks is also applied to Tenacity Blessing when you're within the Divine Realm.Level 3Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to use Divine Realm on the closest enemy for 8 s. Cooldown: 8 s\n4.5% additional damage for every stack of Blessing when the Divine Realm is active. Stacks up to 8 time(s)\nConverts all Tenacity Blessing to Agility Blessing when outside the Divine Realm\nConverts all Agility Blessing to Tenacity Blessing when within the Divine Realm\nThe increase/decrease of max Tenacity Blessing stacks is also applied to Agility Blessing when you're outside of the Divine Realm.\nThe increase/decrease of max Agility Blessing stacks is also applied to Tenacity Blessing when you're within the Divine Realm.Level 4Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to use Divine Realm on the closest enemy for 8 s. Cooldown: 8 s\n5.3% additional damage for every stack of Blessing when the Divine Realm is active. Stacks up to 8 time(s)\nConverts all Tenacity Blessing to Agility Blessing when outside the Divine Realm\nConverts all Agility Blessing to Tenacity Blessing when within the Divine Realm\nThe increase/decrease of max Tenacity Blessing stacks is also applied to Agility Blessing when you're outside of the Divine Realm.\nThe increase/decrease of max Agility Blessing stacks is also applied to Tenacity Blessing when you're within the Divine Realm.Level 5Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to use Divine Realm on the closest enemy for 8 s. Cooldown: 8 s\n+6% additional damage for every stack of Blessing when the Divine Realm is active. Stacks up to 8 time(s)\nConverts all Tenacity Blessing to Agility Blessing when outside the Divine Realm\nConverts all Agility Blessing to Tenacity Blessing when within the Divine Realm\nThe increase/decrease of max Tenacity Blessing stacks is also applied to Agility Blessing when you're outside of the Divine Realm.\nThe increase/decrease of max Agility Blessing stacks is also applied to Tenacity Blessing when you're within the Divine Realm.\nArtificial Moon:\n+1% additional damage for every stack of Tenacity Blessing or Agility Blessing. Stacks up to 15% time(s)",
+      "레벨 12초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 가장 가까이에 있는 적에게 신의 영역을 사용한다. 8 초간 지속, 쿨타임 8 초\n신의 영역이 지속되는 동안 축복 중첩 1회당 대미지 별도 +3% , 최대 8 회 중첩\n신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환된다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환된다.\n신의 영역 안에 있지 않을 경우, 강건한 축복 최대 중첩의 증가 또는 감소가 황홀한 축복에도 동일하게 적용된다.\n신의 영역 안에 있는 경우, 황홀한 축복 최대 중첩의 증가 또는 감소가 강건한 축복에도 동일하게 적용된다.레벨 22초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 가장 가까이에 있는 적에게 신의 영역을 사용한다. 8 초간 지속, 쿨타임 8 초\n신의 영역이 지속되는 동안 축복 중첩 1회당 대미지 별도 3.8% , 최대 8 회 중첩\n신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환된다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환된다.\n신의 영역 안에 있지 않을 경우, 강건한 축복 최대 중첩의 증가 또는 감소가 황홀한 축복에도 동일하게 적용된다.\n신의 영역 안에 있는 경우, 황홀한 축복 최대 중첩의 증가 또는 감소가 강건한 축복에도 동일하게 적용된다.레벨 32초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 가장 가까이에 있는 적에게 신의 영역을 사용한다. 8 초간 지속, 쿨타임 8 초\n신의 영역이 지속되는 동안 축복 중첩 1회당 대미지 별도 4.5% , 최대 8 회 중첩\n신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환된다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환된다.\n신의 영역 안에 있지 않을 경우, 강건한 축복 최대 중첩의 증가 또는 감소가 황홀한 축복에도 동일하게 적용된다.\n신의 영역 안에 있는 경우, 황홀한 축복 최대 중첩의 증가 또는 감소가 강건한 축복에도 동일하게 적용된다.레벨 42초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 가장 가까이에 있는 적에게 신의 영역을 사용한다. 8 초간 지속, 쿨타임 8 초\n신의 영역이 지속되는 동안 축복 중첩 1회당 대미지 별도 5.3% , 최대 8 회 중첩\n신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환된다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환된다.\n신의 영역 안에 있지 않을 경우, 강건한 축복 최대 중첩의 증가 또는 감소가 황홀한 축복에도 동일하게 적용된다.\n신의 영역 안에 있는 경우, 황홀한 축복 최대 중첩의 증가 또는 감소가 강건한 축복에도 동일하게 적용된다.레벨 52초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 가장 가까이에 있는 적에게 신의 영역을 사용한다. 8 초간 지속, 쿨타임 8 초\n신의 영역이 지속되는 동안 축복 중첩 1회당 대미지 별도 +6% , 최대 8 회 중첩\n신의 영역 안에 있지 않을 경우, 모든 강건한 축복이 황홀한 축복으로 전환된다.\n신의 영역 안에 있을 경우, 모든 황홀한 축복이 강건한 축복으로 전환된다.\n신의 영역 안에 있지 않을 경우, 강건한 축복 최대 중첩의 증가 또는 감소가 황홀한 축복에도 동일하게 적용된다.\n신의 영역 안에 있는 경우, 황홀한 축복 최대 중첩의 증가 또는 감소가 강건한 축복에도 동일하게 적용된다.\n이미테이션 루나:\n강건한 축복 또는 황홀한 축복 1회 보유 시마다 대미지 별도 +1% , 최대치 15%",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Tenacious Divinity",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "강건한 신권",
     level: 45,
     affix:
-      "+12% additional Divine Realm Skill Area for every stack of Tenacity Blessing. Stacks up to 8 time(s)\nGains a Skill Slot, in which a Support Skill or Activation Medium Support Skill can be installed to support Trait Skill Divine Realm\nWhen Tenacity Blessing is at least at 6 stack(s), (+20/+26/+32/+35/+38)% additional damage. When Tenacity Blessing is at least at 10 stack(s), this effect becomes: Deals (+7/7.5/+8/8.5/+9)% additional damage to enemies at Low Life for every stack of Tenacity Blessing. Stacks up to 17 time(s)",
+      "강건한 축복 1회 보유 시마다 신의 영역 스킬 범위 추가 +12% , 최대 8 회 중첩\n스킬 슬롯 하나를 획득하며, 보조 스킬과 촉발체 보조 스킬을 장착하여 특성 스킬 신의 영역을 보조할 수 있다.\n강건한 축복 최소 6 회 보유 시 대미지 별도 (+20/+26/+32/+35/+38)% , 강건한 축복을 최소 10 회 보유 시 해당 효과는 다음과 같이 전환된다. 강건한 축복을 1회 보유 시마다, 위중 상태의 적에게 대미지 별도 (+7/7.5/+8/8.5/+9)% , 최대 17 회 중첩",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Agile Godhood",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "황홀한 신성",
     level: 45,
     affix:
-      "-12% additional Divine Realm Skill Area for every stack of Agility Blessing. Stacks up to 8 time(s)\nGains a Skill Slot, in which a Support Skill or Activation Medium Support Skill can be installed to support Trait Skill Divine Realm\nWhen Agility Blessing is at least at 6 stack(s), (+18/+24/+28/+31/+34)% additional Attack and Cast Speed. When Agility Blessing is at least at 10 stack(s), this effect becomes: When at Low Life, (1.8/2.3/2.8/3.4/+4)% additional damage for every stack of Agility Blessing. Stacks up to 17 time(s)",
+      "황홀한 축복 1회 보유 시마다 신의 영역 스킬 범위 추가 -12% , 최대 8 회 중첩\n스킬 슬롯 하나를 획득하며, 보조 스킬과 촉발체 보조 스킬을 장착하여 특성 스킬 신의 영역을 보조할 수 있다.\n황홀한 축복을 최소 6 회 보유 시, 공격과 시전 속도 추가 (+18/+24/+28/+31/+34)% , 황홀한 축복을 최소 10 회 보유 시 해당 효과는 다음과 같이 전환된다. 위중 상태일 때 황홀한 축복을 1회 보유 시마다 대미지 별도 (1.8/2.3/2.8/3.4/+4)% , 최대 17 회 중첩",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Might Flow",
-    level: 600,
-    affix:
-      "0.75% additional Attack and Cast Speed for every stack of any Blessing owned when outside the Divine Realm, up to an additional +15%\n(0.5/0.8/1.1/1.4/1.7)% additional damage for every stack of any Blessing owned when outside the Divine Realm, up to an additional (+10/+16/+22/+28/+34)%\n(-1/-1.2/-1.4/-1.6/-1.8)% additional damage taken for every stack of any blessing owned while within area of Divine Realm, up to (-20/-24/-28/-32/-38)%",
-  },
-  {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Divine Realm Power",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "신력의 흐름",
     level: 60,
     affix:
-      "When in the Divine Realm, (+20/+26/+32/+38/+45)% additional damage to enemies in the Divine Realm\n(+29/+40/+52/+58/+65)% Attack and Cast Speed for every stack of any blessing when outside the Divine Realm while the Divine Realm is active\nWhen defeating an enemy outside the Divine Realm while the Divine Realm is active, +1% Movement Speed for 30 s. Stacks up to 20 time(s)\nWhen there are no enemies in the Divine Realm, refreshes the cooldown of Divine Realm",
+      "신의 영역 범위 내에 있지 않을 경우 축복 중첩 1회당 공격 및 시전 속도 추가 0.75% , 최대 추가 +15%\n신의 영역 범위 내에 있지 않을 경우 축복 중첩 1회당 대미지 별도 (0.5/0.8/1.1/1.4/1.7)% , 최대 별도 (+10/+16/+22/+28/+34)%\n신의 영역 범위 내에 있는 경우, 축복 충첩 1회당 받는 대미지 별도 (-1/-1.2/-1.4/-1.6/-1.8)% , 최대 (-20/-24/-28/-32/-38)%",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Incarnation",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "신의 영역의 위엄",
+    level: 60,
+    affix:
+      "신의 영역 안에 있을 경우, 신의 영역 안의 적에게 입히는 대미지 별도 (+20/+26/+32/+38/+45)%\n신의 영역 범위에 있지 않을 경우, 신의 영역 지속 시간 동안 공격과 시전 속도 (+29/+40/+52/+58/+65)%\n신의 영역 범위에 있지 않을 경우, 신의 영역 지속 시간 동안 적을 처치하면 이동 속도 +1% , 30 초간 지속한다. 최대 20 회 중첩\n신의 영역에 적이 없는 경우 신의 영역 쿨타임이 갱신된다.",
+  },
+  {
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "신의 강림",
     level: 75,
     affix:
-      "Level 1Upon inflicting damage, deem this enemy to be at Low Life for 4.5 s. This effect's Interval for the same enemy: 10 sLevel 2Upon inflicting damage, deem this enemy to be at Low Life for 5 s. This effect's Interval for the same enemy: 10 s\n+5% additional damage to enemies in the Divine RealmLevel 3Upon inflicting damage, deem this enemy to be at Low Life for 5.5 s. This effect's Interval for the same enemy: 10 s\n+10% additional damage to enemies in the Divine RealmLevel 4Upon inflicting damage, deem this enemy to be at Low Life for 6 s. This effect's Interval for the same enemy: 10 s\n+15% additional damage to enemies in the Divine RealmLevel 5Upon inflicting damage, deem this enemy to be at Low Life for 6.5 s. This effect's Interval for the same enemy: 10 s\n+20% additional damage to enemies in the Divine Realm",
+      "레벨 1대미지를 입힐 때 4.5 초 동안 해당 적이 위중 상태인 것으로 간주한다. 해당 효과는 동일한 적에게 10 초의 간격을 가진다.레벨 2대미지를 입힐 때 5 초 동안 해당 적이 위중 상태인 것으로 간주한다. 해당 효과는 동일한 적에게 10 초의 간격을 가진다.\n신의 영역 안의 적에게 주는 대미지 별도 +5%레벨 3대미지를 입힐 때 5.5 초 동안 해당 적이 위중 상태인 것으로 간주한다. 해당 효과는 동일한 적에게 10 초의 간격을 가진다.\n신의 영역 안의 적에게 주는 대미지 별도 +10%레벨 4대미지를 입힐 때 6 초 동안 해당 적이 위중 상태인 것으로 간주한다. 해당 효과는 동일한 적에게 10 초의 간격을 가진다.\n신의 영역 안의 적에게 주는 대미지 별도 +15%레벨 5대미지를 입힐 때 6.5 초 동안 해당 적이 위중 상태인 것으로 간주한다. 해당 효과는 동일한 적에게 10 초의 간격을 가진다.\n신의 영역 안의 적에게 주는 대미지 별도 +20%",
   },
   {
-    hero: "Oracle Thea: Incarnation of The Gods (#2)",
-    name: "Divine Spirit",
+    hero: "사제 티아: 신들의 화신 (#2)",
+    name: "성자의 걸음",
     level: 75,
     affix:
-      "(1.8/1.9/+2/2.15/2.3)% damage for every 3% Missing Life when outside the Divine Realm\n(+1/0.9/0.8/0.7/0.6)% additional damage taken for every 3% of Missing Life when outside the Divine Realm",
+      "신의 영역 안에 있지 않은 경우, 손실된 HP 3% 당 대미지 별도 (1.8/1.9/+2/2.15/2.3)%\n신의 영역 안에 있지 않은 경우, 손실된 HP 3% 당 받는 대미지 별도 (+1/0.9/0.8/0.7/0.6)%",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Blasphemer",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "모독된 신성",
     level: 1,
     affix:
-      "Level 1Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to inflict Desecration on the enemy with the highest rarity within 15m. Cooldown: 5s. Inflicts one-third of the max stacks each time (rounded up)\nConverts the effects of affixes that increase Max Blessings Stacks into effects that reduce Max Blessings Stacks and increase Max Desecration Stacks. Increases Max Desecration Stacks by up to 4 for each type of Blessings\nTriggers the Trait Skill and ignores its cooldown when gaining any Blessing. Interval: 0.3sLevel 2Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to inflict Desecration on the enemy with the highest rarity within 15m. Cooldown: 5s. Inflicts one-third of the max stacks each time (rounded up)\nConverts the effects of affixes that increase Max Blessings Stacks into effects that reduce Max Blessings Stacks and increase Max Desecration Stacks. Increases Max Desecration Stacks by up to 4 for each type of Blessings\nTriggers the Trait Skill and ignores its cooldown when gaining any Blessing. Interval: 0.3s\n+5% additional Erosion DamageLevel 3Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to inflict Desecration on the enemy with the highest rarity within 15m. Cooldown: 5s. Inflicts one-third of the max stacks each time (rounded up)\nConverts the effects of affixes that increase Max Blessings Stacks into effects that reduce Max Blessings Stacks and increase Max Desecration Stacks. Increases Max Desecration Stacks by up to 4 for each type of Blessings\nTriggers the Trait Skill and ignores its cooldown when gaining any Blessing. Interval: 0.3s\n+10% additional Erosion DamageLevel 4Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to inflict Desecration on the enemy with the highest rarity within 15m. Cooldown: 5s. Inflicts one-third of the max stacks each time (rounded up)\nConverts the effects of affixes that increase Max Blessings Stacks into effects that reduce Max Blessings Stacks and increase Max Desecration Stacks. Increases Max Desecration Stacks by up to 4 for each type of Blessings\nTriggers the Trait Skill and ignores its cooldown when gaining any Blessing. Interval: 0.3s\n+15% additional Erosion DamageLevel 5Gain a Divine Blessing every 2s in the following order: Focus Blessing - Agility Blessing - Tenacity Blessing\nClick the Trait Skill to inflict Desecration on the enemy with the highest rarity within 15m. Cooldown: 5s. Inflicts one-third of the max stacks each time (rounded up)\nConverts the effects of affixes that increase Max Blessings Stacks into effects that reduce Max Blessings Stacks and increase Max Desecration Stacks. Increases Max Desecration Stacks by up to 4 for each type of Blessings\nTriggers the Trait Skill and ignores its cooldown when gaining any Blessing. Interval: 0.3s\n+20% additional Erosion Damage\nArtificial Moon:\nConverts 30% of Physical Damage taken to Erosion Damage",
+      "레벨 12초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 15미터 내에서 희귀도가 가장 높은 적에게 모독을 부여한다. 쿨타임 5초. 부여 시마다 최대 모독의 1/3에 해당하는 횟수만큼 부여한다(올림 처리).\n최대 축복 증가 옵션 효과가 최대 축복 감소로 전환되며, 동시에 최대 모독을 증가시킨다. 모든 축복은 최대 모독을 최대 4회까지 제공할 수 있다.\n임의의 축복 획득 시 특성 스킬을 발동하고 쿨타임을 무시한다. 간격 0.3초레벨 22초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 15미터 내에서 희귀도가 가장 높은 적에게 모독을 부여한다. 쿨타임 5초. 부여 시마다 최대 모독의 1/3에 해당하는 횟수만큼 부여한다(올림 처리).\n최대 축복 증가 옵션 효과가 최대 축복 감소로 전환되며, 동시에 최대 모독을 증가시킨다. 모든 축복은 최대 모독을 최대 4회까지 제공할 수 있다.\n임의의 축복 획득 시 특성 스킬을 발동하고 쿨타임을 무시한다. 간격 0.3초\n부식 대미지 추가 +5%레벨 32초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 15미터 내에서 희귀도가 가장 높은 적에게 모독을 부여한다. 쿨타임 5초. 부여 시마다 최대 모독의 1/3에 해당하는 횟수만큼 부여한다(올림 처리).\n최대 축복 증가 옵션 효과가 최대 축복 감소로 전환되며, 동시에 최대 모독을 증가시킨다. 모든 축복은 최대 모독을 최대 4회까지 제공할 수 있다.\n임의의 축복 획득 시 특성 스킬을 발동하고 쿨타임을 무시한다. 간격 0.3초\n부식 대미지 추가 +10%레벨 42초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 15미터 내에서 희귀도가 가장 높은 적에게 모독을 부여한다. 쿨타임 5초. 부여 시마다 최대 모독의 1/3에 해당하는 횟수만큼 부여한다(올림 처리).\n최대 축복 증가 옵션 효과가 최대 축복 감소로 전환되며, 동시에 최대 모독을 증가시킨다. 모든 축복은 최대 모독을 최대 4회까지 제공할 수 있다.\n임의의 축복 획득 시 특성 스킬을 발동하고 쿨타임을 무시한다. 간격 0.3초\n부식 대미지 추가 +15%레벨 52초마다 신의 축복을 1개 획득한다. 획득 순서: 집요한 축복-황홀한 축복-강건한 축복\n특성 스킬을 눌러 15미터 내에서 희귀도가 가장 높은 적에게 모독을 부여한다. 쿨타임 5초. 부여 시마다 최대 모독의 1/3에 해당하는 횟수만큼 부여한다(올림 처리).\n최대 축복 증가 옵션 효과가 최대 축복 감소로 전환되며, 동시에 최대 모독을 증가시킨다. 모든 축복은 최대 모독을 최대 4회까지 제공할 수 있다.\n임의의 축복 획득 시 특성 스킬을 발동하고 쿨타임을 무시한다. 간격 0.3초\n부식 대미지 추가 +20%\n이미테이션 루나:\n받은 물리 대미지의 30% 가 부식 대미지로 전환",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Unholy Baptism",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "더러운 세례",
     level: 45,
     affix:
-      "(+5/+10/+15/+20/+25)% additional Erosion Damage\nEnemies within 6m of a Desecrated target have a (10/20/20/30/30)% chance to explode when defeated, dealing True Damage equal to 125% of their Max Life to enemies within a (3/4/4/5/5) m radius",
+      "부식 대미지 추가 (+5/+10/+15/+20/+25)%\n모독 대상 6미터 이내의 적이 처치되는 경우 (10/20/20/30/30)% 확률로 폭발하여 반경 (3/4/4/5/5) 미터 내의 적에게 처치된 적의 최대 HP 125% 만큼 트루 대미지를 입힌다.",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Disgraced Minister",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "고독한 신하",
     level: 60,
     affix:
-      "Desecration only affects Elites\nWhen there are no other enemies within 6m of the Desecrated target, the target gains Sacrificial Pawn\n(+10/+15/+20/+25/+30)% Erosion Resistance\n(+3/+4/+4/+5/+5)% Max Erosion Resistance",
+      "모독은 강적에게만 영향을 준다.\n모독 타깃 6미터 내에 다른 적이 없는 경우 타깃이 숙명의 제물을 획득한다.\n부식 저항 (+10/+15/+20/+25/+30)%\n부식 최대 저항 (+3/+4/+4/+5/+5)%",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Tarnished Sage",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "현자의 오명",
     level: 60,
     affix:
-      "Up to 2 Elites within 6m of a Desecrated target will also be inflicted with Desecration\nInstantly restores (5/6/7/8/9)% of Max Life, Energy Shield, and Mana when defeating a Desecrated target.\n+ (20/30/40/50/60)% Attack and Cast Speed when dealing damage to a Desecrated target. Lasts 5s. This effect cannot stack",
+      "모독 대상 6미터 내의 강적도 모독을 받는다. 최대 2개\n모독 타깃 처치 시 최대 HP, 보호막 및 MP를 즉시 (5/6/7/8/9)% 회복한다.\n모독 타깃에게 대미지를 입히는 경우 공격 및 시전 속도 + (20/30/40/50/60)% , 5초 지속, 중첩 불가",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Onset of Depravity",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "타락의 시작",
     level: 75,
     affix:
-      "When inflicting Desecration on an Elite for the first time, deals True Damage equal to (6/8/10/12/15)% of their Max Life. $P2$% of the max Desecration stacks is also applied to this value to deal True Damage equal to up to 25% of their Max Life\nWhen a Desecrated target is under a crowd control effect, the target gains Mountain of Sins",
+      "강적에게 모독을 최초 부여하는 경우, 최대 HP의 (6/8/10/12/15)% 에 해당하는 트루 대미지를 입힌다.\n모독 타깃이 제어류 상태를 보유 중인 경우 타깃이 죄업의 무게를 획득한다.",
   },
   {
-    hero: "Oracle Thea: Blasphemer (#3)",
-    name: "Extreme Desecration",
+    hero: "사제 티아: 모독된 신성 (#3)",
+    name: "모독의 끝",
     level: 75,
     affix:
-      "If the Max Blessings Stacks are further increased when the max stacks of all Blessings are 0, converts the effects of their affixes into effects that increase Max Desecration Stacks. Desecration stacks up to 25 times\nDesecration gains an additional base effect: (0.2/0.25/0.3/0.35/0.4)% additional Erosion Damage taken for every 5% of Life the target loses",
+      "모든 축복의 최대 중첩이 0일 때, 축복의 최대 중첩이 추가로 증가하는 경우 해당 옵션 효과가 최대 모독 증가로 전환되며, 모독 중첩수는 최대 25회이다.\n모독이 기본 효과 추가 획득: 타깃이 HP를 5% 상실할 때마다 받는 부식 대미지 별도 (0.2/0.25/0.3/0.35/0.4)%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "Spacetime Illusion",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "시공간의 환상",
     level: 1,
     affix:
-      "Level 1Own Spacetime Illusion\nThe Spacetime Illusion uses your Main Skill once every 1.5 s. The Spacetime Illusion's castings are considered your castings\nWhile having Spacetime Illusion, click the Trait Skill to recall Spacetime IllusionLevel 2Own Spacetime Illusion\nThe Spacetime Illusion uses your Main Skill once every 1.5 s. The Spacetime Illusion's castings are considered your castings\nWhile having Spacetime Illusion, click the Trait Skill to recall Spacetime Illusion\n+5% additional Spell DamageLevel 3Own Spacetime Illusion\nThe Spacetime Illusion uses your Main Skill once every 1.5 s. The Spacetime Illusion's castings are considered your castings\nWhile having Spacetime Illusion, click the Trait Skill to recall Spacetime Illusion\n+10% additional Spell DamageLevel 4Own Spacetime Illusion\nThe Spacetime Illusion uses your Main Skill once every 1.5 s. The Spacetime Illusion's castings are considered your castings\nWhile having Spacetime Illusion, click the Trait Skill to recall Spacetime Illusion\n+15% additional Spell DamageLevel 5Own Spacetime Illusion\nThe Spacetime Illusion uses your Main Skill once every 1.5 s. The Spacetime Illusion's castings are considered your castings\nWhile having Spacetime Illusion, click the Trait Skill to recall Spacetime Illusion\n+20% additional Spell Damage\nArtificial Moon:\n1.5% Cooldown Recovery Speed every time you or the Spacetime Illusion casts a skill. Lasts for 8 s. Stacks up to 10 time(s)",
+      "레벨 1시공간의 환상을 보유한다.\n시공간의 환상은 1.5 초마다 자신의 메인 스킬을 1회씩 사용하며, 시공간의 환상 시전은 유저 자신의 시전으로 간주된다.\n시공간의 환상이 존재하는 경우 특성 스킬을 눌러 시공간의 환상을 회수한다.레벨 2시공간의 환상을 보유한다.\n시공간의 환상은 1.5 초마다 자신의 메인 스킬을 1회씩 사용하며, 시공간의 환상 시전은 유저 자신의 시전으로 간주된다.\n시공간의 환상이 존재하는 경우 특성 스킬을 눌러 시공간의 환상을 회수한다.\n주술 대미지 별도 +5%레벨 3시공간의 환상을 보유한다.\n시공간의 환상은 1.5 초마다 자신의 메인 스킬을 1회씩 사용하며, 시공간의 환상 시전은 유저 자신의 시전으로 간주된다.\n시공간의 환상이 존재하는 경우 특성 스킬을 눌러 시공간의 환상을 회수한다.\n주술 대미지 별도 +10%레벨 4시공간의 환상을 보유한다.\n시공간의 환상은 1.5 초마다 자신의 메인 스킬을 1회씩 사용하며, 시공간의 환상 시전은 유저 자신의 시전으로 간주된다.\n시공간의 환상이 존재하는 경우 특성 스킬을 눌러 시공간의 환상을 회수한다.\n주술 대미지 별도 +15%레벨 5시공간의 환상을 보유한다.\n시공간의 환상은 1.5 초마다 자신의 메인 스킬을 1회씩 사용하며, 시공간의 환상 시전은 유저 자신의 시전으로 간주된다.\n시공간의 환상이 존재하는 경우 특성 스킬을 눌러 시공간의 환상을 회수한다.\n주술 대미지 별도 +20%\n이미테이션 루나:\n자신과 시공간의 환상이 시전할 때마다 쿨타임 회복 속도 1.5% , 8 초간 지속한다. 최대 10 회 중첩",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "Me and Myself",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "우린 최고야",
     level: 45,
     affix:
-      "+60% Spacetime Illusion Cast Frequency\nFor every +5% Cooldown Recovery Speed or 2.5% additional Cooldown Recovery Speed, (+5/+7/+9/+11/+13)% Spacetime Illusion Cast Frequency",
+      "시공간의 환상 시전 빈도 +60%\n쿨타임 회복 속도 +5% 또는 쿨타임 회복 속도 추가 2.5% 당 시공간의 환상 시전 빈도 (+5/+7/+9/+11/+13)%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "Make it Quick",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "더 빨리 더 빨리",
     level: 60,
     affix:
-      "Spacetime Illusion no longer has casting actions and is only limited by cast frequency.\n(50/55/60/65/70)% of the bonuses for Cast Speed is also applied to additional Spacetime Illusion Damage, up to 300%.",
+      "시공간의 환상은 더 이상 시전 동작이 없으며, 시전 빈도 제한만 받는다.\n시전 속도 보너스의 (50/55/60/65/70)% 가 시공간의 환상 별도 대미지에도 동일하게 적용되며, 최대 300% 적용된다.",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "Eeeendless Mana",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "MP 좀 채울게",
     level: 60,
     affix:
-      "Seals 25% Max Mana. Spacetime Illusion no longer has Cast Frequency limitations\n(+1/1.15/1.3/1.45/1.6)% additional Spacetime Illusion Damage for every +4% Spacetime Illusion Cast Frequency",
+      "최대 MP의 25% 을 봉인하고, 시공간의 환상이 더는 시전 빈도의 제한을 받지 않는다.\n시공간의 환상 시전 빈도 +4% 당 시공간의 환상 대미지 추가 (+1/1.15/1.3/1.45/1.6)%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "I'm an Illusion",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "내가 환상이다",
     level: 75,
     affix:
-      "Unable to cast the Main Skill\n+1 Spacetime Illusion upper limit\n(-5/-1/+3/+7/+11)% additional Spacetime Illusion Damage\n-30% Movement Speed",
+      "메인 스킬 시전 불가\n최대 시공간의 환상 +1\n시공간의 환상 대미지가 (-5/-1/+3/+7/+11)% 추가된다.\n이동 속도 -30%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Illusion (#1)",
-    name: "I'm Out of Mana",
+    hero: "시공간의 증인 유가: 시공간의 환상 (#1)",
+    name: "MP 없어",
     level: 75,
     affix:
-      "Casting of Spacetime Illusion will consume your Mana, equal to the Mana Cost of your Main Skill\n(+5/6.3/7.5/8.8/+10)% additional damage for you and Spacetime Illusion for each time Spacetime Illusion consumed Mana recently. Stacks up to 10 time(s)",
+      "시공간의 환상은 시전할 때 자신의 MP를 메인 스킬의 MP 소모량만큼 소모한다.\n최근 시공간의 환상이 MP를 소모할 때마다 자신과 시공간의 환상 대미지 별도 (+5/6.3/7.5/8.8/+10)% , 최대 10 회 중첩",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Elapse",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공 유실",
     level: 1,
     affix:
-      "Level 1Clicking the Trait Skill or dealing Damage Over Time to an enemy casts Twisted Spacetime. Interval: 2 s. Lasts for 6 s\nWhile Twisted Spacetime is active, cast Twisted Spacetime again to move it and extend its Duration by 2\n扭曲时空持续期间，记录 30% 对敌人造成的持续和收割伤害\nAfter moving, Twisted Spacetime inflicts Turbulence on enemies within, having them share the damage it records equally and clearing the recordsLevel 2Clicking the Trait Skill or dealing Damage Over Time to an enemy casts Twisted Spacetime. Interval: 2 s. Lasts for 6 s\nWhile Twisted Spacetime is active, cast Twisted Spacetime again to move it and extend its Duration by 2\n扭曲时空持续期间，记录 35% 对敌人造成的持续和收割伤害\nAfter moving, Twisted Spacetime inflicts Turbulence on enemies within, having them share the damage it records equally and clearing the recordsLevel 3Clicking the Trait Skill or dealing Damage Over Time to an enemy casts Twisted Spacetime. Interval: 2 s. Lasts for 6 s\nWhile Twisted Spacetime is active, cast Twisted Spacetime again to move it and extend its Duration by 2\n扭曲时空持续期间，记录 40% 对敌人造成的持续和收割伤害\nAfter moving, Twisted Spacetime inflicts Turbulence on enemies within, having them share the damage it records equally and clearing the recordsLevel 4Clicking the Trait Skill or dealing Damage Over Time to an enemy casts Twisted Spacetime. Interval: 2 s. Lasts for 6 s\nWhile Twisted Spacetime is active, cast Twisted Spacetime again to move it and extend its Duration by 2\n扭曲时空持续期间，记录 45% 对敌人造成的持续和收割伤害\nAfter moving, Twisted Spacetime inflicts Turbulence on enemies within, having them share the damage it records equally and clearing the recordsLevel 5Clicking the Trait Skill or dealing Damage Over Time to an enemy casts Twisted Spacetime. Interval: 2 s. Lasts for 6 s\nWhile Twisted Spacetime is active, cast Twisted Spacetime again to move it and extend its Duration by 2\n扭曲时空持续期间，记录 50% 对敌人造成的持续和收割伤害\nAfter moving, Twisted Spacetime inflicts Turbulence on enemies within, having them share the damage it records equally and clearing the records\nArtificial Moon:\n+25% additional Spacetime Turbulence Duration",
+      "레벨 1특성 스킬을 터치하거나 적에게 지속 대미지 부여 시, 비틀어진 시공간 시전, 2 초 간격, 6 초간 지속\n비틀어진 시공간 지속 기간 동안, 다시 시전 시 비틀어진 시공간이 이동, 스킬 지속 시간 2 초 연장\n비틀어진 시공간이 지속되는 동안 적에게 부여하는 지속, 수확 대미지의 30% 를 기록한다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고, 비틀어진 시공간의 모든 대미지 기록을 균등하게 할당 후 기록이 초기화됨레벨 2특성 스킬을 터치하거나 적에게 지속 대미지 부여 시, 비틀어진 시공간 시전, 2 초 간격, 6 초간 지속\n비틀어진 시공간 지속 기간 동안, 다시 시전 시 비틀어진 시공간이 이동, 스킬 지속 시간 2 초 연장\n비틀어진 시공간이 지속되는 동안 적에게 부여하는 지속, 수확 대미지의 35% 를 기록한다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고, 비틀어진 시공간의 모든 대미지 기록을 균등하게 할당 후 기록이 초기화됨레벨 3특성 스킬을 터치하거나 적에게 지속 대미지 부여 시, 비틀어진 시공간 시전, 2 초 간격, 6 초간 지속\n비틀어진 시공간 지속 기간 동안, 다시 시전 시 비틀어진 시공간이 이동, 스킬 지속 시간 2 초 연장\n비틀어진 시공간이 지속되는 동안 적에게 부여하는 지속, 수확 대미지의 40% 를 기록한다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고, 비틀어진 시공간의 모든 대미지 기록을 균등하게 할당 후 기록이 초기화됨레벨 4특성 스킬을 터치하거나 적에게 지속 대미지 부여 시, 비틀어진 시공간 시전, 2 초 간격, 6 초간 지속\n비틀어진 시공간 지속 기간 동안, 다시 시전 시 비틀어진 시공간이 이동, 스킬 지속 시간 2 초 연장\n비틀어진 시공간이 지속되는 동안 적에게 부여하는 지속, 수확 대미지의 45% 를 기록한다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고, 비틀어진 시공간의 모든 대미지 기록을 균등하게 할당 후 기록이 초기화됨레벨 5특성 스킬을 터치하거나 적에게 지속 대미지 부여 시, 비틀어진 시공간 시전, 2 초 간격, 6 초간 지속\n비틀어진 시공간 지속 기간 동안, 다시 시전 시 비틀어진 시공간이 이동, 스킬 지속 시간 2 초 연장\n비틀어진 시공간이 지속되는 동안 적에게 부여하는 지속, 수확 대미지의 50% 를 기록한다.\n비틀어진 시공간 이동 후, 비틀어진 시공간에 있는 적에게 혼돈의 시공간을 부여하고, 비틀어진 시공간의 모든 대미지 기록을 균등하게 할당 후 기록이 초기화됨\n이미테이션 루나:\n혼돈의 시공간의 지속 시간 별도 +25%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Speed-up",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공간 가속",
     level: 45,
     affix:
-      "Reduces the casting interval of Twisted Spacetime by 1 s on defeat\nFor every 1 s Twisted Spacetime lasts, (+5/6.5/+8/9.5/+11)% to all recorded damage for Twisted Spacetime. Stacks up to 5 time(s)",
+      "처치 시, 비틀어진 시공간 시전 간격 1 초 감소\n비틀어진 시공간이 1 초 존재할 때마다 비틀어진 시공간이 기록한 모든 대미지 (+5/6.5/+8/9.5/+11)% , 최대 5 회 중첩",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Upheaval",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공 격변",
     level: 45,
     affix:
-      "(+30/+37/+44/+51/+58)% additional Damage Over Time while Twisted Spacetime lasts\nTwisted Spacetime only inflicts Spacetime Turbulence on Elites within its area. Records are not cleared when there are no Elites within its area",
+      "비틀어진 시공간 지속 시간, 지속 대미지 추가 (+30/+37/+44/+51/+58)%\n비틀어진 시공간은 범위 내의 강적에게만 혼돈의 시공간을 부여하며, 범위 내에 강적이 없을 경우 기록이 초기화되지 않는다.",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Cutting",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공간 가르기",
     level: 60,
     affix:
-      "Gains a stack of Torment when dealing Damage Over Time\n(-10/-14/-18/-21/-24)% additional damage taken while Twisted Spacetime lasts",
+      "지속 대미지를 입힐 시 고문을 1회 획득한다.\n비틀어진 시공간 지속되는 동안 받는 대미지 별도 (-10/-14/-18/-21/-24)%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Pause",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공간 정체",
     level: 75,
     affix:
-      "(-40/-43/-46/-49/-50)% additional Spacetime Turbulence Duration\n(+60/+70/+80/+90/+100)% to all recorded damage for Twisted Spacetime",
+      "혼돈의 시공간의 지속 시간 별도 (-40/-43/-46/-49/-50)%\n비틀어진 시공간이 기록한 모든 대미지 (+60/+70/+80/+90/+100)%",
   },
   {
-    hero: "Spacetime Witness Youga: Spacetime Elapse (#2)",
-    name: "Spacetime Expansion",
+    hero: "시공간의 증인 유가: 시공 유실 (#2)",
+    name: "시공 팽창",
     level: 75,
     affix:
-      "(+50/+62/+74/+86/+98)% additional Duration for Twisted Spacetime and Spacetime Turbulence\nEnemies with Spacetime Turbulence are deemed as being within Twisted Spacetime",
+      "비틀어진 시공간 및 혼돈의 시공간의 지속 시간 별도 (+50/+62/+74/+86/+98)%\n혼돈의 시공간을 보유한 적도 비틀어진 시공간에 있는 것으로 간주됨",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "Order Calling",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "소집 명령",
     level: 1,
     affix:
-      "Level 1Within 4 s after a Summon Skill is cast, all your Minions will gain Overload. Cooldown: 12 s\nOverload grants +60% additional damage\nThe Effect and Duration of Overload are refreshed when a Minion that already has Overload gains Overload againLevel 2Within 4 s after a Summon Skill is cast, all your Minions will gain Overload. Cooldown: 12 s\nOverload grants +60% additional damage\nThe Effect and Duration of Overload are refreshed when a Minion that already has Overload gains Overload again\n+5% additional damage when Minions have OverloadLevel 3Within 4 s after a Summon Skill is cast, all your Minions will gain Overload. Cooldown: 12 s\nOverload grants +60% additional damage\nThe Effect and Duration of Overload are refreshed when a Minion that already has Overload gains Overload again\n+10% additional damage when Minions have OverloadLevel 4Within 4 s after a Summon Skill is cast, all your Minions will gain Overload. Cooldown: 12 s\nOverload grants +60% additional damage\nThe Effect and Duration of Overload are refreshed when a Minion that already has Overload gains Overload again\n+16% additional damage when Minions have OverloadLevel 5Within 4 s after a Summon Skill is cast, all your Minions will gain Overload. Cooldown: 12 s\nOverload grants +60% additional damage\nThe Effect and Duration of Overload are refreshed when a Minion that already has Overload gains Overload again\n+22% additional damage when Minions have Overload\nArtificial Moon:\n+30% Overload Duration",
+      "레벨 1소환 스킬 시전 후 4 초 동안 자신의 모든 소환체가 과부하를 획득한다. 쿨타임 12 초\n과부하가 +60% 의 추가 대미지를 제공한다.\n이미 과부하를 보유한 소환체가 과부하를 획득하는 경우, 과부하의 효과 및 지속 시간이 갱신된다.\n模组化技能的冷却时间降低至 0.1 秒레벨 2소환 스킬 시전 후 4 초 동안 자신의 모든 소환체가 과부하를 획득한다. 쿨타임 12 초\n과부하가 +60% 의 추가 대미지를 제공한다.\n이미 과부하를 보유한 소환체가 과부하를 획득하는 경우, 과부하의 효과 및 지속 시간이 갱신된다.\n소환체가 과부하 보유 시 대미지 별도 +5%\n模组化技能的冷却时间降低至 0.1 秒레벨 3소환 스킬 시전 후 4 초 동안 자신의 모든 소환체가 과부하를 획득한다. 쿨타임 12 초\n과부하가 +60% 의 추가 대미지를 제공한다.\n이미 과부하를 보유한 소환체가 과부하를 획득하는 경우, 과부하의 효과 및 지속 시간이 갱신된다.\n소환체가 과부하 보유 시 대미지 별도 +10%\n模组化技能的冷却时间降低至 0.1 秒레벨 4소환 스킬 시전 후 4 초 동안 자신의 모든 소환체가 과부하를 획득한다. 쿨타임 12 초\n과부하가 +60% 의 추가 대미지를 제공한다.\n이미 과부하를 보유한 소환체가 과부하를 획득하는 경우, 과부하의 효과 및 지속 시간이 갱신된다.\n소환체가 과부하 보유 시 대미지 별도 +16%\n模组化技能的冷却时间降低至 0.1 秒레벨 5소환 스킬 시전 후 4 초 동안 자신의 모든 소환체가 과부하를 획득한다. 쿨타임 12 초\n과부하가 +60% 의 추가 대미지를 제공한다.\n이미 과부하를 보유한 소환체가 과부하를 획득하는 경우, 과부하의 효과 및 지속 시간이 갱신된다.\n소환체가 과부하 보유 시 대미지 별도 +22%\n이미테이션 루나:\n과부하 지속 시간 +30%\n模组化技能的冷却时间降低至 0.1 秒",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "Veteran",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "백전노장",
     level: 45,
     affix:
-      "(+80/+105/+130/+155/+180)% additional Overload Duration\nMinions +20% Attack and Cast Speed when they have Overload",
+      "과부하 지속 시간 추가 (+80/+105/+130/+155/+180)%\n소환체가 과부하 보유 시, 공격 및 시전 속도 추가 +20%",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "All In",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "베르세르크",
     level: 45,
     affix:
-      "(+80/+90/+100/+120/+140)% additional Overload Effect when a Minion gains Overload for the first time",
+      "소환체가 처음 획득한 과부하의 과부하 효과 추가 (+80/+90/+100/+120/+140)%",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "自主重构",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "자율 재구성",
     level: 60,
     affix:
-      "Minions with Overload regenerate 1% Max Life per second for every 5 Command owned\n(+25/+32/+40/+50/+60)% additional damage when Minions have Overload and are not at Low Life",
+      "통솔 5 포인트 당, 과부하를 보유한 소환체가 초당 최대 HP를 1% 자연 회복한다.\n소환체가 과부하를 보유하고 위중 상태가 아닐 시 대미지 별도 (+25/+32/+40/+50/+60)%",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "过载程式",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "과부하 프로그램",
     level: 60,
     affix:
-      "Gains Overload for 6 s after a Synthetic Troop Minion is spawned\nSynthetic Troop Minions will be defeated 6 s after spawning\n(+10/+15/+20/+25/+30)% additional Overload Effect",
+      "스마트 웨폰 출생 시 6 초 동안 지속되는 과부하를 획득한다.\n스마트 웨폰 소환체가 출생한 6 초 후 처치된다.\n과부하 효과 추가 (+10/+15/+20/+25/+30)%",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "Charge Forward",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "돌진",
     level: 75,
     affix:
-      "(+9/+11/+13/+15/+18)% Overload Effect for every 5 Command owned, up to (+90/+110/+130/+150/+180)%",
+      "통솔을 5 포인트 보유할 때마다 과부하 효과 (+9/+11/+13/+15/+18)% , 최대 (+90/+110/+130/+150/+180)%",
   },
   {
-    hero: "Commander Moto: Order Calling (#1)",
-    name: "广域辐射",
+    hero: "지휘관 모토: 소집 명령 (#1)",
+    name: "광역 방사",
     level: 75,
     affix:
-      "+100% Aura Area\n+10% additional Attack and Cast Speed when you or your Minions are affected by an Aura\n(+3/+4/+6/+7/+8)% additional damage for every Aura affecting you and your Minions",
+      "오라 범위 +100%\n자신과 소환체가 오라 영향을 받을 시 공격 및 시전 속도 추가 +10%\n자신과 소환체가 1개의 오라 영향을 받을 때마다 대미지 별도 (+3/+4/+6/+7/+8)%",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Charge Calling",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "돌격 소집",
     level: 1,
     affix:
-      "Level 1Allows you to click the Trait Skill to gain Charge Calling for 6 s. Cooldown: 6 s\nDuring Charge Calling, Synthetic Troop Minions summoned at a time +1 . All Synthetic Troop Minions will activate Self-Destruct Protocol and Charge at the enemy in the next 1 s, self-destructing upon colliding with an enemy or being defeated to deal Physical Attack Damage to enemies within the area\n+20% additional Self-Destruct Damage triggered by Self-Destruct ProtocolLevel 2Allows you to click the Trait Skill to gain Charge Calling for 6 s. Cooldown: 6 s\nDuring Charge Calling, Synthetic Troop Minions summoned at a time +1 . All Synthetic Troop Minions will activate Self-Destruct Protocol and Charge at the enemy in the next 1 s, self-destructing upon colliding with an enemy or being defeated to deal Physical Attack Damage to enemies within the area\n+26% additional Self-Destruct Damage triggered by Self-Destruct ProtocolLevel 3Allows you to click the Trait Skill to gain Charge Calling for 6 s. Cooldown: 6 s\nDuring Charge Calling, Synthetic Troop Minions summoned at a time +1 . All Synthetic Troop Minions will activate Self-Destruct Protocol and Charge at the enemy in the next 1 s, self-destructing upon colliding with an enemy or being defeated to deal Physical Attack Damage to enemies within the area\n+32% additional Self-Destruct Damage triggered by Self-Destruct ProtocolLevel 4Allows you to click the Trait Skill to gain Charge Calling for 6 s. Cooldown: 6 s\nDuring Charge Calling, Synthetic Troop Minions summoned at a time +1 . All Synthetic Troop Minions will activate Self-Destruct Protocol and Charge at the enemy in the next 1 s, self-destructing upon colliding with an enemy or being defeated to deal Physical Attack Damage to enemies within the area\n+38% additional Self-Destruct Damage triggered by Self-Destruct ProtocolLevel 5Allows you to click the Trait Skill to gain Charge Calling for 6 s. Cooldown: 6 s\nDuring Charge Calling, Synthetic Troop Minions summoned at a time +1 . All Synthetic Troop Minions will activate Self-Destruct Protocol and Charge at the enemy in the next 1 s, self-destructing upon colliding with an enemy or being defeated to deal Physical Attack Damage to enemies within the area\n+44% additional Self-Destruct Damage triggered by Self-Destruct Protocol\nArtificial Moon:\n如果最近拾取过机械零件，额外 +12% 召唤物伤害；自毁程序 +40% 技能范围",
+      "레벨 1특성 스킬을 눌러 돌격 소집 상태를 획득할 수 있다. 6 초 지속, 쿨타임 6 초\n돌격 소집이 지속되는 동안 1회 소환 가능 스마트 웨폰 소환체 수량 +1 , 모든 스마트 웨폰 소환체가 자폭 프로세스를 가동하고 이어지는 1 초 안에 적을 향해 돌격하며, 적에게 부딪히거나 처치당한 후 자폭하여 범위 내의 적에게 공격 물리 대미지를 입힌다.\n자폭 프로세스로 발생하는 자폭 대미지가 +20% 추가된다.레벨 2특성 스킬을 눌러 돌격 소집 상태를 획득할 수 있다. 6 초 지속, 쿨타임 6 초\n돌격 소집이 지속되는 동안 1회 소환 가능 스마트 웨폰 소환체 수량 +1 , 모든 스마트 웨폰 소환체가 자폭 프로세스를 가동하고 이어지는 1 초 안에 적을 향해 돌격하며, 적에게 부딪히거나 처치당한 후 자폭하여 범위 내의 적에게 공격 물리 대미지를 입힌다.\n자폭 프로세스로 발생하는 자폭 대미지가 +26% 추가된다.레벨 3특성 스킬을 눌러 돌격 소집 상태를 획득할 수 있다. 6 초 지속, 쿨타임 6 초\n돌격 소집이 지속되는 동안 1회 소환 가능 스마트 웨폰 소환체 수량 +1 , 모든 스마트 웨폰 소환체가 자폭 프로세스를 가동하고 이어지는 1 초 안에 적을 향해 돌격하며, 적에게 부딪히거나 처치당한 후 자폭하여 범위 내의 적에게 공격 물리 대미지를 입힌다.\n자폭 프로세스로 발생하는 자폭 대미지가 +32% 추가된다.레벨 4특성 스킬을 눌러 돌격 소집 상태를 획득할 수 있다. 6 초 지속, 쿨타임 6 초\n돌격 소집이 지속되는 동안 1회 소환 가능 스마트 웨폰 소환체 수량 +1 , 모든 스마트 웨폰 소환체가 자폭 프로세스를 가동하고 이어지는 1 초 안에 적을 향해 돌격하며, 적에게 부딪히거나 처치당한 후 자폭하여 범위 내의 적에게 공격 물리 대미지를 입힌다.\n자폭 프로세스로 발생하는 자폭 대미지가 +38% 추가된다.레벨 5특성 스킬을 눌러 돌격 소집 상태를 획득할 수 있다. 6 초 지속, 쿨타임 6 초\n돌격 소집이 지속되는 동안 1회 소환 가능 스마트 웨폰 소환체 수량 +1 , 모든 스마트 웨폰 소환체가 자폭 프로세스를 가동하고 이어지는 1 초 안에 적을 향해 돌격하며, 적에게 부딪히거나 처치당한 후 자폭하여 범위 내의 적에게 공격 물리 대미지를 입힌다.\n자폭 프로세스로 발생하는 자폭 대미지가 +44% 추가된다.\n이미테이션 루나:\n최근 기계 부품을 주웠을 경우, 소환체 대미지 별도 +12% , 자폭 프로세스 스킬 범위 +40%",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Unstoppable Wave",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "용감한 전진",
     level: 45,
     affix:
-      "+30% chance for a Synthetic Troop Minion to drop 1 Mechanical Part When it initiates Self-Destruct Protocol. Mechanical Parts last 1 s\nPlayer will automatically pick up nearby Mechanical Parts\n(+3/3.5/+4/4.5/+5)% additional Minion Damage for each Mechanical Part picked up recently. Stacks up to 10 time(s)\nGains a Skill Slot, in which a Support Skill or Activation Medium Support Skill can be installed to support Trait Skill Charge Calling",
+      "스마트 웨폰 소환체가 자폭 프로세스를 가동할 경우, +30% 의 확률로 기계 부품 1개가 드롭된다. 기계 부품은 1 초간 지속된다.\n주변의 기계 부품 자동 줍기\n최근 주운 기계 부품 1개당 소환체 대미지 추가 (+3/3.5/+4/4.5/+5)% , 최대 10 회 중첩 가능\n스킬 슬롯 하나를 획득하며, 보조 스킬과 촉발체 보조 스킬을 장착하여 특성 스킬 돌격 소집을 보조할 수 있다.",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Heroic Sacrifice",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "구국의 헌신",
     level: 60,
     affix:
-      "For every (70/60/50/45/40) Max Life or Energy Shield a Synthetic Troop Minion has, Self-Destruct triggered by Self-Destruct Protocol deals +1% additional damage",
+      "스마트 웨폰 소환체가 최대 HP 또는 보호막을 (70/60/50/45/40) 보유할 때마다 자폭 프로세스로 발생하는 자폭 대미지 별도 +1%",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Guerilla Tactics",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "유격 전술",
     level: 60,
     affix:
-      "+50% Mechanical Part Pick-Up Radius\n+2% additional Self-Destruct Protocol Charge Speed and +3% additional Self-Destruct Protocol Damage for each Mechanical Part collected recently. Stacks up to (10/12/15/18/20) time(s)",
+      "기계 부품 줍기 반경 +50%\n최근 주운 기계 부품 1개당 자폭 프로세스 돌격 속도 추가 +2% , 자폭 프로세스 대미지 추가 +3% , 최대 (10/12/15/18/20) 회 중첩",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Fuel War with War",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "전쟁 조달",
     level: 75,
     affix:
-      "Triggers the Main Summon Skill on the closest enemy within 20m every (0.2/0.18/0.15/0.12/0.1) s\n-30% Movement Speed",
+      "每隔 (0.2/0.18/0.15/0.12/0.1) 秒，对 20 米内最近的敌人触发核心召唤技能\n通过该方式触发的技能无视模组化技能的冷却时间\n이동 속도 -30%",
   },
   {
-    hero: "Commander Moto: Charge Calling (#2)",
-    name: "Essential Speed",
+    hero: "지휘관 모토: 돌격 소집 (#2)",
+    name: "속도가 재산",
     level: 75,
     affix:
-      "(25/30/35/40/45)% of the bonus and additional bonus to Minion Attack Speed is also applied to the bonus and additional bonus of Self-Destruct Protocol Damage",
+      "소환체의 공격 속도 보너스와 추가 보너스의 (25/30/35/40/45)% 가 자폭 프로세스의 대미지 보너스와 추가 보너스에도 동일하게 적용된다.",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "High Court Chariot",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "홀리 채리엇",
     level: 1,
     affix:
-      "Level 1+30% Attack and Spell Block Chance\nRestores 4 Murderous Intent per second\nRestores 10 Murderous Intent when Blocking\nWhen having at least 15 Murderous Intent, you can cast the Trait Skill and consume 15 Murderous Intent to create a Holy Domain centered around you and pull enemies within 8 m inside\nWhile inside the Holy Domain, +20% additional damageLevel 2+30% Attack and Spell Block Chance\nRestores 4 Murderous Intent per second\nRestores 10 Murderous Intent when Blocking\nWhen having at least 15 Murderous Intent, you can cast the Trait Skill and consume 15 Murderous Intent to create a Holy Domain centered around you and pull enemies within 8 m inside\nWhile inside the Holy Domain, +26% additional damageLevel 3+30% Attack and Spell Block Chance\nRestores 4 Murderous Intent per second\nRestores 10 Murderous Intent when Blocking\nWhen having at least 15 Murderous Intent, you can cast the Trait Skill and consume 15 Murderous Intent to create a Holy Domain centered around you and pull enemies within 8 m inside\nWhile inside the Holy Domain, +32% additional damageLevel 4+30% Attack and Spell Block Chance\nRestores 4 Murderous Intent per second\nRestores 10 Murderous Intent when Blocking\nWhen having at least 15 Murderous Intent, you can cast the Trait Skill and consume 15 Murderous Intent to create a Holy Domain centered around you and pull enemies within 8 m inside\nWhile inside the Holy Domain, +38% additional damageLevel 5+30% Attack and Spell Block Chance\nRestores 4 Murderous Intent per second\nRestores 10 Murderous Intent when Blocking\nWhen having at least 15 Murderous Intent, you can cast the Trait Skill and consume 15 Murderous Intent to create a Holy Domain centered around you and pull enemies within 8 m inside\nWhile inside the Holy Domain, +44% additional damage\nArtificial Moon:\nFor every 10 Murderous Intent you currently have, +2% Holy Domain radius and +1% Attack and Spell Block Chance",
+      "레벨 1공격 및 주술 막기 확률 +30%\n1초마다 살의를 4 포인트씩 회복한다.\n막기 시 살의를 10 포인트 회복한다.\n살의를 최소 15 포인트 이상 보유하는 경우 특성 스킬을 시전할 수 있다. 살의를 15 포인트 소모해 자신을 중심으로 성광의 영역을 생성하고 8 미터 안의 적을 끌어들인다.\n성광의 영역 안에 있는 경우 대미지 추가 +20%레벨 2공격 및 주술 막기 확률 +30%\n1초마다 살의를 4 포인트씩 회복한다.\n막기 시 살의를 10 포인트 회복한다.\n살의를 최소 15 포인트 이상 보유하는 경우 특성 스킬을 시전할 수 있다. 살의를 15 포인트 소모해 자신을 중심으로 성광의 영역을 생성하고 8 미터 안의 적을 끌어들인다.\n성광의 영역 안에 있는 경우 대미지 추가 +26%레벨 3공격 및 주술 막기 확률 +30%\n1초마다 살의를 4 포인트씩 회복한다.\n막기 시 살의를 10 포인트 회복한다.\n살의를 최소 15 포인트 이상 보유하는 경우 특성 스킬을 시전할 수 있다. 살의를 15 포인트 소모해 자신을 중심으로 성광의 영역을 생성하고 8 미터 안의 적을 끌어들인다.\n성광의 영역 안에 있는 경우 대미지 추가 +32%레벨 4공격 및 주술 막기 확률 +30%\n1초마다 살의를 4 포인트씩 회복한다.\n막기 시 살의를 10 포인트 회복한다.\n살의를 최소 15 포인트 이상 보유하는 경우 특성 스킬을 시전할 수 있다. 살의를 15 포인트 소모해 자신을 중심으로 성광의 영역을 생성하고 8 미터 안의 적을 끌어들인다.\n성광의 영역 안에 있는 경우 대미지 추가 +38%레벨 5공격 및 주술 막기 확률 +30%\n1초마다 살의를 4 포인트씩 회복한다.\n막기 시 살의를 10 포인트 회복한다.\n살의를 최소 15 포인트 이상 보유하는 경우 특성 스킬을 시전할 수 있다. 살의를 15 포인트 소모해 자신을 중심으로 성광의 영역을 생성하고 8 미터 안의 적을 끌어들인다.\n성광의 영역 안에 있는 경우 대미지 추가 +44%\n이미테이션 루나:\n현재 살의 10 포인트 보유 시마다 성광의 영역 반경 +2% , 공격과 주술 막기 확률 +1%",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Unbreakable Stand",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "일당백",
     level: 45,
     affix:
-      "(+7/+8/+9/9.5/+10)% additional damage for each enemy in the Holy Domain, up to +100%",
+      "성광의 영역 안에 있는 1명의 적당 대미지 별도 (+7/+8/+9/9.5/+10)% , 대미지 최대 별도 +100%",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Whirlwind Advance",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "폭풍 돌진",
     level: 45,
     affix:
-      "(+20/+30/+40/+40/+50)% Movement Speed for (4/5/6/8/8) s after entering or leaving the Holy Domain\nRestores (4/5/6/7/8) Murderous Intent upon defeating an enemy in the Holy Domain",
+      "성광의 영역 안에 있거나 이탈 후 (4/5/6/8/8) 초 동안 이동 속도 (+20/+30/+40/+40/+50)%\n성광의 영역 안에 있는 적을 처치하는 경우 살의를 (4/5/6/7/8) 포인트 회복한다.",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Invulnerability",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "금강불괴",
     level: 60,
     affix:
-      "While inside the Holy Domain, (+7/+9/+11/+13/+15)% Block Ratio and Block Ratio Upper Limit\n(+1/+1/+2/+2/+2)% Murderous Intent restoration for every 1% Block Ratio\nGains a Skill Slot, in which a Support Skill or Activation Medium Support Skill can be installed to support Trait Skill Holy Domain",
+      "성광의 영역 안에 있는 경우 막기 비율과 최대 막기 비율 (+7/+9/+11/+13/+15)%\n막기 비율 1% 당, 살의 회복량 (+1/+1/+2/+2/+2)%\n스킬 슬롯 하나를 획득하며, 보조 스킬과 촉발체 보조 스킬을 장착하여 특성 스킬 성광의 영역을 보조할 수 있다.",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Divine Intervention",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "불굴의 투지",
     level: 60,
     affix:
-      "For every 1 Murderous Intent you currently have, (0.3/0.37/0.44/0.51/0.58)% additional damage dealt to enemies in the Holy Domain and +1% Murderous Intent restoration\nGains a Skill Slot, in which a Support Skill or Activation Medium Support Skill can be installed to support Trait Skill Holy Domain",
+      "현재 보유 중인 살의 1 포인트당, 성광의 영역 안에 있는 적에게 주는 대미지 별도 (0.3/0.37/0.44/0.51/0.58)% , 살의 회복량 +1%\n스킬 슬롯 하나를 획득하며, 보조 스킬과 촉발체 보조 스킬을 장착하여 특성 스킬 성광의 영역을 보조할 수 있다.",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Desperation",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "위험 감수",
     level: 75,
     affix:
-      "Trait Skills can be continuously channeled. During this time, the Holy Domain moves with the player, and no Murderous Intent is consumed while channeling. Max channeled stacks: 2\nAt max channeled stacks, loses all channeled stacks and casts Holy Domain again. Inflicts No Guard on all units in the Holy Domain. No Guard lasts for 8s\nFor every 1% Block Ratio, (2.4/2.5/2.6/2.8/2.8)% additional No Guard Effect for enemies and (-0.67/-0.8/-1/-1/-1.2)% additional No Guard Effect on you\n-30% Holy Domain radius",
+      "특성 스킬 지속 채널링 가능. 이때 성광의 영역이 자신을 따라 이동하며, 채널링이 지속되는 동안에는 살의가 소모되지 않는다. 채널링 최대 중첩 2회\n채널링 최대 중첩 시, 중첩된 채널링을 모두 상실하고 성광의 영역을 1회 새로 시전한다. 성광의 영역 안에 있는 모든 유닛에게 장비 해제를 부여하고, 장비 해제는 8초간 지속한다.\n막기 비율 1%당 적이 받는 장비 해제 효과 추가 (2.4/2.5/2.6/2.8/2.8)% , 자신이 받는 장비 해제 효과 추가 (-0.67/-0.8/-1/-1/-1.2)%\n성광의 영역 반경 -30%",
   },
   {
-    hero: "Lightbringer Rosa: High Court Chariot (#1)",
-    name: "Improvision",
+    hero: "라이트 브링어 로사: 홀리 채리엇 (#1)",
+    name: "임기응변",
     level: 75,
     affix:
-      "When Blocking in the Holy Domain, +20% additional damage for 10s, up to (+40/+50/+60/+70/+80)%",
+      "성광의 영역 안에서 막기 시, 대미지 별도 +20% , 10초간 지속, 최대 별도 (+40/+50/+60/+70/+80)%",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Unsullied Blade",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "언설리드 블레이드",
     level: 1,
     affix:
-      "Level 1Gains Mystic Mercury\nWhile Mystic Mercury is active, using non-Channeled Attack Skills grants Mercury Pts\nUpon reaching max Mercury Pts, Mystic Mercury becomes Realm of Mercury. Realm of Mercury consumes 30 Mercury Pts every second. When Mercury Pt is 0, Realm of Mercury becomes Mystic Mercury again\nMana can only be consumed by Mystic Mercury. At the same time, Mana can only be restored by Realm of Mercury\nBonus and additional bonus to Spell Damage and also apply to Attack DamageLevel 2Gains Mystic Mercury\nWhile Mystic Mercury is active, using non-Channeled Attack Skills grants Mercury Pts\nUpon reaching max Mercury Pts, Mystic Mercury becomes Realm of Mercury. Realm of Mercury consumes 30 Mercury Pts every second. When Mercury Pt is 0, Realm of Mercury becomes Mystic Mercury again\nMana can only be consumed by Mystic Mercury. At the same time, Mana can only be restored by Realm of Mercury\nBonus and additional bonus to Spell Damage and also apply to Attack Damage\n+5% additional Spell DamageLevel 3Gains Mystic Mercury\nWhile Mystic Mercury is active, using non-Channeled Attack Skills grants Mercury Pts\nUpon reaching max Mercury Pts, Mystic Mercury becomes Realm of Mercury. Realm of Mercury consumes 30 Mercury Pts every second. When Mercury Pt is 0, Realm of Mercury becomes Mystic Mercury again\nMana can only be consumed by Mystic Mercury. At the same time, Mana can only be restored by Realm of Mercury\nBonus and additional bonus to Spell Damage and also apply to Attack Damage\n+10% additional Spell DamageLevel 4Gains Mystic Mercury\nWhile Mystic Mercury is active, using non-Channeled Attack Skills grants Mercury Pts\nUpon reaching max Mercury Pts, Mystic Mercury becomes Realm of Mercury. Realm of Mercury consumes 30 Mercury Pts every second. When Mercury Pt is 0, Realm of Mercury becomes Mystic Mercury again\nMana can only be consumed by Mystic Mercury. At the same time, Mana can only be restored by Realm of Mercury\nBonus and additional bonus to Spell Damage and also apply to Attack Damage\n+15% additional Spell DamageLevel 5Gains Mystic Mercury\nWhile Mystic Mercury is active, using non-Channeled Attack Skills grants Mercury Pts\nUpon reaching max Mercury Pts, Mystic Mercury becomes Realm of Mercury. Realm of Mercury consumes 30 Mercury Pts every second. When Mercury Pt is 0, Realm of Mercury becomes Mystic Mercury again\nMana can only be consumed by Mystic Mercury. At the same time, Mana can only be restored by Realm of Mercury\nBonus and additional bonus to Spell Damage and also apply to Attack Damage\n+20% additional Spell Damage\nArtificial Moon:\nWhile Realm of Mercury is in effect, +2% additional Attack Speed every time Mercury Baptism is cast. Lasts for 8 s. Stacks up to 4 time(s)",
+      "레벨 1미스릴의 자세 획득\n미스릴의 자세가 존재하는 동안 비 채널링 공격 스킬 사용 시 미스릴을 획득한다.\n미스릴이 최대치에 도달 시 미스릴의 자세가 미스릴의 정토로 전환되고, 미스릴의 정토가 초당 미스릴을 30 포인트 소모한다. 미스릴이 0이 되면 미스릴의 정토가 미스릴의 자세로 복원된다.\n미스릴의 자세를 통해서만 MP를 소모할 수 있으며, 미스릴의 정토를 통해서만 MP를 회복할 수 있다.\n주술 대미지 보너스와 별도 대미지 보너스는 공격 대미지에도 동일하게 작용한다.레벨 2미스릴의 자세 획득\n미스릴의 자세가 존재하는 동안 비 채널링 공격 스킬 사용 시 미스릴을 획득한다.\n미스릴이 최대치에 도달 시 미스릴의 자세가 미스릴의 정토로 전환되고, 미스릴의 정토가 초당 미스릴을 30 포인트 소모한다. 미스릴이 0이 되면 미스릴의 정토가 미스릴의 자세로 복원된다.\n미스릴의 자세를 통해서만 MP를 소모할 수 있으며, 미스릴의 정토를 통해서만 MP를 회복할 수 있다.\n주술 대미지 보너스와 별도 대미지 보너스는 공격 대미지에도 동일하게 작용한다.\n주술 대미지 별도 +5%레벨 3미스릴의 자세 획득\n미스릴의 자세가 존재하는 동안 비 채널링 공격 스킬 사용 시 미스릴을 획득한다.\n미스릴이 최대치에 도달 시 미스릴의 자세가 미스릴의 정토로 전환되고, 미스릴의 정토가 초당 미스릴을 30 포인트 소모한다. 미스릴이 0이 되면 미스릴의 정토가 미스릴의 자세로 복원된다.\n미스릴의 자세를 통해서만 MP를 소모할 수 있으며, 미스릴의 정토를 통해서만 MP를 회복할 수 있다.\n주술 대미지 보너스와 별도 대미지 보너스는 공격 대미지에도 동일하게 작용한다.\n주술 대미지 별도 +10%레벨 4미스릴의 자세 획득\n미스릴의 자세가 존재하는 동안 비 채널링 공격 스킬 사용 시 미스릴을 획득한다.\n미스릴이 최대치에 도달 시 미스릴의 자세가 미스릴의 정토로 전환되고, 미스릴의 정토가 초당 미스릴을 30 포인트 소모한다. 미스릴이 0이 되면 미스릴의 정토가 미스릴의 자세로 복원된다.\n미스릴의 자세를 통해서만 MP를 소모할 수 있으며, 미스릴의 정토를 통해서만 MP를 회복할 수 있다.\n주술 대미지 보너스와 별도 대미지 보너스는 공격 대미지에도 동일하게 작용한다.\n주술 대미지 별도 +15%레벨 5미스릴의 자세 획득\n미스릴의 자세가 존재하는 동안 비 채널링 공격 스킬 사용 시 미스릴을 획득한다.\n미스릴이 최대치에 도달 시 미스릴의 자세가 미스릴의 정토로 전환되고, 미스릴의 정토가 초당 미스릴을 30 포인트 소모한다. 미스릴이 0이 되면 미스릴의 정토가 미스릴의 자세로 복원된다.\n미스릴의 자세를 통해서만 MP를 소모할 수 있으며, 미스릴의 정토를 통해서만 MP를 회복할 수 있다.\n주술 대미지 보너스와 별도 대미지 보너스는 공격 대미지에도 동일하게 작용한다.\n주술 대미지 별도 +20%\n이미테이션 루나:\n秘银净土存在期间，每进行一次秘银洗礼，+2% 额外攻击速度，持续 8 秒，上限 4 层（叠乘）",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Baptism of Purity",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "순수한 세례",
     level: 45,
     affix:
-      "+20% additional Max Mana\nInside Realm of Mercury, selects the enemy with the highest rarity that took damage from you recently and records (12/20/28/36/44)% of the non-Channeled Attack Elemental Hit Damage dealt to this enemy. Every 0.5 s, it casts Mercury Baptism on all enemies within it and gains (5/5/6/6/7) Mercury Pts\nMercury Baptism inflicts an Infiltration Effect of the same type as the highest recorded damage. If the highest recorded damage type is Fire, it inflicts Fire Infiltration. If the highest recorded damage type is Lightning, it inflicts Lightning Infiltration. If the highest recorded damage type is Cold, it inflicts Cold Infiltration",
+      "최대 MP 추가 +20% .\n미스릴의 정토에서 유저가 대미지를 입힌 적이 있는 적 중 희귀도가 가장 높은 적을 선택하여 유저가 최근 적에게 입힌 비 채널링 공격 원소 적중 대미지를 (12/20/28/36/44)% 기록한다. 0.5 초 간격으로 정토 내 모든 적에게 미스릴의 세례를 1회 진행하고, 미스릴을 (5/5/6/6/7) 포인트 획득한다.\n미스릴의 세례가 기록된 최고 대미지 유형과 동일한 침투 효과를 부여한다. 기록된 최고 대미지 유형이 화염일 경우 화염 침투를 부여한다. 번개인 경우 번개 침투를 부여한다. 냉기인 경우 냉기 침투를 부여한다.",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Cleanse Filth",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "신성한 심판",
     level: 60,
     affix:
-      "While Realm of Mercury is in effect, 25% of damage is taken from Mana before Life\nFor every 1000 Max Mana you have, (+2/2.5/+3/3.5/+4)% additional Elemental Damage, up to (+40/+50/+60/+70/+80)%",
+      "미스릴의 정토가 존재하는 동안 25% 의 대미지가 MP에서 우선 차감된다.\n최대 MP 1000 보유할 때마다, 원소 대미지 별도 (+2/2.5/+3/3.5/+4)% , 최대 (+40/+50/+60/+70/+80)%",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Boundless Sanctuary",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "무한의 정토",
     level: 60,
     affix:
-      "For every (150/130/110/100/90) Max Mana you have, +10% Area for Realm of Mercury, up to (+60/+70/+80/+90/+100)%\nFor every enemy inside Realm of Mercury, (+6/+7/+8/+9/+10)% additional Elemental Damage, up to (+60/+70/+80/+90/+100)% additional damage\nGains (3/3/4/4/4) Mercury Pts upon defeating an enemy within Realm of Mercury",
+      "보유한 최대 MP (150/130/110/100/90) 당, 미스릴의 정토의 범위 +10% , 최대 (+60/+70/+80/+90/+100)%\n미스릴의 정토 안에 있는 1명의 적당 원소 대미지 별도 (+6/+7/+8/+9/+10)% , 최대 별도 (+60/+70/+80/+90/+100)%\n미스릴의 정토에 있는 적을 처치 시 미스릴 (3/3/4/4/4) 포인트 획득",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Utmost Devotion",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "극진한 경배",
     level: 75,
     affix:
-      "Mana can be consumed via methods other than Mystic Mercury. Gains 10% Mercury Pts for every (3000/2900/2800/2700/2600) Mana consumed\nThe cost is fixed at 0 when Mana is lower than 10%\nFor every 1000 Max Mana you have, +10% Max Mercury Pts, up to (+200/+250/+300/+350/+400)%\n(0.08/0.08/0.1/0.1/0.1)% additional Elemental Damage for every Mercury Pt you have",
+      "미스릴의 자세 이외의 방식으로 MP를 소모할 수 있다. MP (3000/2900/2800/2700/2600) 포인트 소모할 때마다 미스릴을 10% 고정 획득한다.\n현재 MP가 10% 미만인 경우, 소모량 0 (으)로 고정\n최대 MP 1000 보유할 때마다, 최대 미스릴 +10% , 최대 (+200/+250/+300/+350/+400)%\n미스릴 1포인트 당 원소 대미지 별도 (0.08/0.08/0.1/0.1/0.1)%",
   },
   {
-    hero: "Lightbringer Rosa: Unsullied Blade (#2)",
-    name: "Born to Cleanse",
+    hero: "라이트 브링어 로사: 언설리드 블레이드 (#2)",
+    name: "무아의 결계",
     level: 75,
     affix:
-      "- 30% additional Mana restoration for Realm of Mercury\nMystic Mercury gains an additional effect: +25% additional Elemental Damage\nMystic Mercury still exists when it becomes Realm of Mercury and retains 40% effect\nWhile Mystic Mercury is active, (+20/+27/+34/+41/+48)% additional damage for Main-Hand Weapon",
+      "미스릴의 정토 MP 회복 추가 - 30%\n미스릴의 자세가 추가 효과 획득: 원소 대미지 별도 +25%\n미스릴의 자세가 미스릴의 정토로 전환된 후 여전히 존재하고, 40% 효과를 유지한다.\n미스릴의 자세가 유지되는 동안 메인 무기 대미지 별도 (+20/+27/+34/+41/+48)%",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "Growing Breeze",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "성장의 미풍",
     level: 1,
     affix:
-      "Level 1When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nGrants 4 stack(s) of Nourishment to all Spirit Magi when using Trait Skills. Cooldown: 5 s\nWithin 1 s of Spirit Magi gaining Nourishment, if there are no enemies within 5 m, +70% Movement Speed\nWhen a Spirit Magus casts a skill, +30% chance for it to lose 1 stack of Nourishment\nFor every stack of Nourishment a Spirit Magus has, when it uses a skill, +8% chance for it to lose a stack of Nourishment\nNourishment: When using a skill, +30% additional damage dealt by this skill. Lasts 15 s and stacks up to 10 time(s).\n100% of your Empower Skill Effect bonus is also applied to Spirit Magi's NourishmentSpirit Magus Skills can be equipped to Active Skill slotsLevel 2When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nGrants 4 stack(s) of Nourishment to all Spirit Magi when using Trait Skills. Cooldown: 5 s\nWithin 1 s of Spirit Magi gaining Nourishment, if there are no enemies within 5 m, +70% Movement Speed\nWhen a Spirit Magus casts a skill, +30% chance for it to lose 1 stack of Nourishment\nFor every stack of Nourishment a Spirit Magus has, when it uses a skill, +8% chance for it to lose a stack of Nourishment\nNourishment: When using a skill, +30% additional damage dealt by this skill. Lasts 15 s and stacks up to 10 time(s).\n100% of your Empower Skill Effect bonus is also applied to Spirit Magi's Nourishment\n+5% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 3When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nGrants 4 stack(s) of Nourishment to all Spirit Magi when using Trait Skills. Cooldown: 5 s\nWithin 1 s of Spirit Magi gaining Nourishment, if there are no enemies within 5 m, +70% Movement Speed\nWhen a Spirit Magus casts a skill, +30% chance for it to lose 1 stack of Nourishment\nFor every stack of Nourishment a Spirit Magus has, when it uses a skill, +8% chance for it to lose a stack of Nourishment\nNourishment: When using a skill, +30% additional damage dealt by this skill. Lasts 15 s and stacks up to 10 time(s).\n100% of your Empower Skill Effect bonus is also applied to Spirit Magi's Nourishment\n+10% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 4When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nGrants 4 stack(s) of Nourishment to all Spirit Magi when using Trait Skills. Cooldown: 5 s\nWithin 1 s of Spirit Magi gaining Nourishment, if there are no enemies within 5 m, +70% Movement Speed\nWhen a Spirit Magus casts a skill, +30% chance for it to lose 1 stack of Nourishment\nFor every stack of Nourishment a Spirit Magus has, when it uses a skill, +8% chance for it to lose a stack of Nourishment\nNourishment: When using a skill, +30% additional damage dealt by this skill. Lasts 15 s and stacks up to 10 time(s).\n100% of your Empower Skill Effect bonus is also applied to Spirit Magi's Nourishment\n+15% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 5When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nGrants 4 stack(s) of Nourishment to all Spirit Magi when using Trait Skills. Cooldown: 5 s\nWithin 1 s of Spirit Magi gaining Nourishment, if there are no enemies within 5 m, +70% Movement Speed\nWhen a Spirit Magus casts a skill, +30% chance for it to lose 1 stack of Nourishment\nFor every stack of Nourishment a Spirit Magus has, when it uses a skill, +8% chance for it to lose a stack of Nourishment\nNourishment: When using a skill, +30% additional damage dealt by this skill. Lasts 15 s and stacks up to 10 time(s).\n100% of your Empower Skill Effect bonus is also applied to Spirit Magi's Nourishment\n+20% additional Minion Damage\nArtificial Moon:\nGrant 1 additional stack of Nourishment to all Spirit Magi when casting a Trait SkillSpirit Magus Skills can be equipped to Active Skill slots",
+      "레벨 1액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 사용 시 모든 마령에게 양분을 4 회 부여한다. 쿨타임 5 초\n마령이 양분을 획득하는 1 초 동안 주변 5 미터 내에 적이 존재하지 않는 경우, 이동 속도 +70%\n마령이 특성 스킬 시전 시, +30% 의 확률로 양분을 1회 상실한다.\n마령이 보유한 양분 1회당, 스킬 사용 시 +8% 의 확률로 양분을 1회 상실한다.\n양분: 스킬 사용 시, 스킬 대미지 추가 +30% , 15 초간 지속, 최대 10 회 중첩.\n자극 스킬 효과 보너스의 100% 가 마령의 양분에도 동일하게 적용된다.액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 2액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 사용 시 모든 마령에게 양분을 4 회 부여한다. 쿨타임 5 초\n마령이 양분을 획득하는 1 초 동안 주변 5 미터 내에 적이 존재하지 않는 경우, 이동 속도 +70%\n마령이 특성 스킬 시전 시, +30% 의 확률로 양분을 1회 상실한다.\n마령이 보유한 양분 1회당, 스킬 사용 시 +8% 의 확률로 양분을 1회 상실한다.\n양분: 스킬 사용 시, 스킬 대미지 추가 +30% , 15 초간 지속, 최대 10 회 중첩.\n자극 스킬 효과 보너스의 100% 가 마령의 양분에도 동일하게 적용된다.\n소환체 대미지 추가 +5%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 3액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 사용 시 모든 마령에게 양분을 4 회 부여한다. 쿨타임 5 초\n마령이 양분을 획득하는 1 초 동안 주변 5 미터 내에 적이 존재하지 않는 경우, 이동 속도 +70%\n마령이 특성 스킬 시전 시, +30% 의 확률로 양분을 1회 상실한다.\n마령이 보유한 양분 1회당, 스킬 사용 시 +8% 의 확률로 양분을 1회 상실한다.\n양분: 스킬 사용 시, 스킬 대미지 추가 +30% , 15 초간 지속, 최대 10 회 중첩.\n자극 스킬 효과 보너스의 100% 가 마령의 양분에도 동일하게 적용된다.\n소환체 대미지 추가 +10%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 4액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 사용 시 모든 마령에게 양분을 4 회 부여한다. 쿨타임 5 초\n마령이 양분을 획득하는 1 초 동안 주변 5 미터 내에 적이 존재하지 않는 경우, 이동 속도 +70%\n마령이 특성 스킬 시전 시, +30% 의 확률로 양분을 1회 상실한다.\n마령이 보유한 양분 1회당, 스킬 사용 시 +8% 의 확률로 양분을 1회 상실한다.\n양분: 스킬 사용 시, 스킬 대미지 추가 +30% , 15 초간 지속, 최대 10 회 중첩.\n자극 스킬 효과 보너스의 100% 가 마령의 양분에도 동일하게 적용된다.\n소환체 대미지 추가 +15%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 5액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 사용 시 모든 마령에게 양분을 4 회 부여한다. 쿨타임 5 초\n마령이 양분을 획득하는 1 초 동안 주변 5 미터 내에 적이 존재하지 않는 경우, 이동 속도 +70%\n마령이 특성 스킬 시전 시, +30% 의 확률로 양분을 1회 상실한다.\n마령이 보유한 양분 1회당, 스킬 사용 시 +8% 의 확률로 양분을 1회 상실한다.\n양분: 스킬 사용 시, 스킬 대미지 추가 +30% , 15 초간 지속, 최대 10 회 중첩.\n자극 스킬 효과 보너스의 100% 가 마령의 양분에도 동일하게 적용된다.\n소환체 대미지 추가 +20%\n이미테이션 루나:\n특성 스킬 시전 시, 모든 마령에게 추가로 양분 1회를 부여한다.액티브 스킬 슬롯에 마령 스킬 장착 가능",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "Socialite",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "많은 친구",
     level: 45,
     affix:
-      "+1 to Max Spirit Magi In Map\nMax Summonable Spirit Magi of Spirit Magus Skills +1\nWhen a Spirit Magus casts a skill, (+15/+12/+8/+4/+2)% chance for it to lose 1 stack of Nourishment",
+      "마령 최대 수량 +1 .\n마령 스킬 소환 최대 횟수 +1 .\n마령이 스킬 시전 시, (+15/+12/+8/+4/+2)% 의 확률로 양분을 1회 상실한다.",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "怀中世界",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "품속 세계",
     level: 60,
     affix:
-      "For every 1% Fire, Cold, Lightning Resistance, or Erosion Resistance, or every 500 Armor, +1% chance for the corresponding Spirit Magi to use an Enhanced Skill, up to (+28/+36/+44/+52/+60)%",
+      "화염, 냉기, 번개, 부식 저항 1% 또는 아머 수치 500 포인트 보유 시마다 해당하는 마령의 강화 스킬 사용 확률 +1% , 최대 (+28/+36/+44/+52/+60)%",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "化雨微风",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "비가 된 미풍",
     level: 60,
     affix:
-      "The chance for Spirit Magi to use an Enhanced Skill is fixed at 0%\nSpirit Magi do not lose Nourishment when casting non-Ultimates but do not gain Nourishment bonuses\nAfter gaining a total of 10 stacks of Nourishment, Spirit Magi enter Full Bloom for 12 s\nWhen a Spirit Magus casts the Ultimate while having Full Bloom, (+10/+11/+12/+13/+14)% additional Ultimate Cooldown Recovery Speed for every stack of Nourishment",
+      "마령의 강화 스킬 사용 확률이 0% 로 고정된다.\n마령이 궁극 스킬이 아닌 스킬 시전 시 양분을 상실하지 않으며, 양분의 보너스도 획득하지 않는다.\n마령이 양분 10 회 누적 후, 만개 획득, 12 초간 지속\n만개가 지속되는 동안, 마령이 궁극 스킬을 시전할 경우 양분 1회당 궁극 스킬 쿨타임 회복 속도 추가 (+10/+11/+12/+13/+14)%",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "Run With the Wind",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "바람과 함께 달리다",
     level: 75,
     affix:
-      "Changes the Base Trait to Holding a Trait Skill or Spirit Magus Skill to use Windrider\nAllows movement while channeling Windrider\n(+30/+20/+15/+10/+5)% additional damage taken while channeling Windrider",
+      "기본 특성을 롱탭 특성 스킬로 전환 또는 마령 스킬로 전환하여 윈드라이드를 사용한다.\n윈드라이드 채널링 기간 동안 이동할 수 있다.\n윈드라이드 채널링 기간 동안 받는 대미지가 (+30/+20/+15/+10/+5)% 추가 증가한다.",
   },
   {
-    hero: "The Forsaken Iris: Growing Breeze (#1)",
-    name: "它们一起长大",
+    hero: "속세를 떠난 마령 아이리스: 성장의 미풍 (#1)",
+    name: "함께 자란 그들",
     level: 75,
     affix:
-      "Always attempts to auto-trigger the Trait Skill, Growing Breeze\n(20/30/40/50/60)% of the bonus applied to Origin of Spirit Magus is also applied to Spirit Magi's Nourishment",
+      "특성 스킬 성장의 미풍을 자동으로 발동한다.\n마령의 근원 효과 보너스의 (20/30/40/50/60)% 가 마령의 양분에도 적용된다.",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Vigilant Breeze",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "수호의 온풍",
     level: 1,
     affix:
-      "Level 1When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nMerges with Spirit Magi after casting the Trait Skill, entering the Vigilant state. Merged Spirit Magi gain 5 stack(s) of Breeze. Casting the Trait Skill again will remove the Vigilant state\nDuring Vigilant, Merged Spirit Magi consume 20% of Max Life per second when not Reconjuring\nWhile in the Vigilant state, Merged Spirit Magi gain 1 stack of Breeze every 1 s when not Reconjuring, up to 10 stack(s)\nWhen Reconjuring or not Merged, Spirit Magi lose 2 stack(s) of Breeze every 1 sSpirit Magus Skills can be equipped to Active Skill slotsLevel 2When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nMerges with Spirit Magi after casting the Trait Skill, entering the Vigilant state. Merged Spirit Magi gain 5 stack(s) of Breeze. Casting the Trait Skill again will remove the Vigilant state\nDuring Vigilant, Merged Spirit Magi consume 20% of Max Life per second when not Reconjuring\nWhile in the Vigilant state, Merged Spirit Magi gain 1 stack of Breeze every 1 s when not Reconjuring, up to 10 stack(s)\nWhen Reconjuring or not Merged, Spirit Magi lose 2 stack(s) of Breeze every 1 s\n+5% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 3When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nMerges with Spirit Magi after casting the Trait Skill, entering the Vigilant state. Merged Spirit Magi gain 5 stack(s) of Breeze. Casting the Trait Skill again will remove the Vigilant state\nDuring Vigilant, Merged Spirit Magi consume 20% of Max Life per second when not Reconjuring\nWhile in the Vigilant state, Merged Spirit Magi gain 1 stack of Breeze every 1 s when not Reconjuring, up to 10 stack(s)\nWhen Reconjuring or not Merged, Spirit Magi lose 2 stack(s) of Breeze every 1 s\n+10% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 4When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nMerges with Spirit Magi after casting the Trait Skill, entering the Vigilant state. Merged Spirit Magi gain 5 stack(s) of Breeze. Casting the Trait Skill again will remove the Vigilant state\nDuring Vigilant, Merged Spirit Magi consume 20% of Max Life per second when not Reconjuring\nWhile in the Vigilant state, Merged Spirit Magi gain 1 stack of Breeze every 1 s when not Reconjuring, up to 10 stack(s)\nWhen Reconjuring or not Merged, Spirit Magi lose 2 stack(s) of Breeze every 1 s\n+15% additional Minion DamageSpirit Magus Skills can be equipped to Active Skill slotsLevel 5When a Spirit Magus Skill is set as an Active Skill, casting the Active Skill is considered as casting the Trait Skill as well\nMerges with Spirit Magi after casting the Trait Skill, entering the Vigilant state. Merged Spirit Magi gain 5 stack(s) of Breeze. Casting the Trait Skill again will remove the Vigilant state\nDuring Vigilant, Merged Spirit Magi consume 20% of Max Life per second when not Reconjuring\nWhile in the Vigilant state, Merged Spirit Magi gain 1 stack of Breeze every 1 s when not Reconjuring, up to 10 stack(s)\nWhen Reconjuring or not Merged, Spirit Magi lose 2 stack(s) of Breeze every 1 s\n+20% additional Minion Damage\nArtificial Moon:\n+6 Growth for every stack of BreezeSpirit Magus Skills can be equipped to Active Skill slots",
+      "레벨 1액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 시전 후 마령과 융합하고, 수호 상태에 진입한다. 융합된 마령이 온풍을 5 회 획득하고, 다시 특성 스킬 시전 시, 수호 상태를 제거한다.\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 초당 소모되는 최대 HP 20%\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 1 초 간격으로 온풍 1회 획득, 최대 10 회\n마령이 재결합 기간 또는 비 융합 상태일 경우, 1 초 마다 온풍을 2 회 상실한다.액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 2액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 시전 후 마령과 융합하고, 수호 상태에 진입한다. 융합된 마령이 온풍을 5 회 획득하고, 다시 특성 스킬 시전 시, 수호 상태를 제거한다.\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 초당 소모되는 최대 HP 20%\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 1 초 간격으로 온풍 1회 획득, 최대 10 회\n마령이 재결합 기간 또는 비 융합 상태일 경우, 1 초 마다 온풍을 2 회 상실한다.\n소환체 대미지 추가 +5%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 3액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 시전 후 마령과 융합하고, 수호 상태에 진입한다. 융합된 마령이 온풍을 5 회 획득하고, 다시 특성 스킬 시전 시, 수호 상태를 제거한다.\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 초당 소모되는 최대 HP 20%\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 1 초 간격으로 온풍 1회 획득, 최대 10 회\n마령이 재결합 기간 또는 비 융합 상태일 경우, 1 초 마다 온풍을 2 회 상실한다.\n소환체 대미지 추가 +10%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 4액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 시전 후 마령과 융합하고, 수호 상태에 진입한다. 융합된 마령이 온풍을 5 회 획득하고, 다시 특성 스킬 시전 시, 수호 상태를 제거한다.\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 초당 소모되는 최대 HP 20%\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 1 초 간격으로 온풍 1회 획득, 최대 10 회\n마령이 재결합 기간 또는 비 융합 상태일 경우, 1 초 마다 온풍을 2 회 상실한다.\n소환체 대미지 추가 +15%액티브 스킬 슬롯에 마령 스킬 장착 가능레벨 5액티브 스킬이 마령 스킬인 경우, 액티브 스킬을 시전해도 특성 스킬을 시전하는 것으로 간주된다.\n특성 스킬 시전 후 마령과 융합하고, 수호 상태에 진입한다. 융합된 마령이 온풍을 5 회 획득하고, 다시 특성 스킬 시전 시, 수호 상태를 제거한다.\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 초당 소모되는 최대 HP 20%\n수호 기간 동안 융합된 마령이 재결합 상태가 아닐 경우 1 초 간격으로 온풍 1회 획득, 최대 10 회\n마령이 재결합 기간 또는 비 융합 상태일 경우, 1 초 마다 온풍을 2 회 상실한다.\n소환체 대미지 추가 +20%\n이미테이션 루나:\n온풍 1회 보유 시마다 성장치 +6액티브 스킬 슬롯에 마령 스킬 장착 가능",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Whirlwind Tango",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "폭풍의 발레",
     level: 45,
     affix:
-      "The Ultimate of Merged Spirit Magi has no cooldown\nEvery time a Merged Spirit Magus casts its Ultimate, it consumes (15/14/13/12/11)% of Max Life and gains (2/3/3/4/4) stack(s) of Breeze\n-40% additional Spirit Magus Skill Damage",
+      "융합된 마령의 궁극 스킬은 쿨타임이 없다.\n융합된 마령이 궁극 스킬을 시전할 때마다, 최대 HP를 (15/14/13/12/11)% 소모하고, 온풍을 (2/3/3/4/4) 회 획득한다.\n마령 스킬 대미지 추가 -40%",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Breeze's Whisper",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "산들바람의 속삭임",
     level: 45,
     affix:
-      "+30% chance for Spirit Magi to use an Enhanced Skill\nWhenever a Merged Spirit Magus casts an Enhanced Skill, restores (2.5/3/3.5/4/5)% of Max Life and +1 to Max Breeze Stacks. Interval: (0.9/0.5/0.2/0.1/0.03) s\nUp to (+4/+5/+6/+7/+8) to Max Breeze Stacks, lasting until Reconjuring",
+      "마령의 강화 스킬 사용 확률 +30% .\n융합된 마령이 강화 스킬을 시전할 때마다 최대 HP (2.5/3/3.5/4/5)% 회복, 온풍 최대 중첩수 +1 , 간격 (0.9/0.5/0.2/0.1/0.03) 초\n온풍 최대 중첩수 (+4/+5/+6/+7/+8) , 재결합 상태에 진입할 때까지 지속",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Happiest Reunion",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "최고의 재회",
     level: 60,
     affix:
-      "+1 to Max Spirit Magi In Map\nWhile in the Vigilant state, all Spirit Magi are considered Merged Spirit Magi\nWhile in the Vigilant state, for every Spirit Magus there is, (+1/+2/+3/+4/+5)% additional damage (multiplies) for Merged Spirit Magi. (+8/+7/+7/+6/+6)% to the amount of Max Life they consume per second when not Reconjuring",
+      "마령 최대 수량 +1 .\n수호 기간 동안 모든 마령이 융합된 마령으로 간주된다.\n수호 기간 동안 마령 1개당 융합된 마령의 대미지가 추가 (+1/+2/+3/+4/+5)% (곱연산), 재결합 상태가 아닐 경우 초당 소모되는 최대 HP (+8/+7/+7/+6/+6)%",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Warmest Vigilance",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "따뜻한 수호",
     level: 60,
     affix:
-      "+1 to the Max Breeze Stacks for every (5/4.5/4.1/3.8/3.5)% Max Life consumed by Merged Spirit Magi, up to (+15/+17/+19/+21/+23)\nMerged Spirit Magi gain 1 stack of Breeze when defeating an enemy",
+      "융합된 마령이 최대 HP의 (5/4.5/4.1/3.8/3.5)% 를 소모할 때마다, +1 온풍 최대 중첩 수, 최대 (+15/+17/+19/+21/+23)\n융합된 마령이 적을 처치 시, 온풍을 1회 획득한다.",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Merging Stream",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "원초의 물줄기",
     level: 75,
     affix:
-      "Iris is not affected by Origin of Spirit Magus Effects, and all basic Origin of Spirit Magus Effects will be applied to all Spirit Magi\nFor every 2 Growth a Spirit Magus has, it (0.1/0.15/0.2/0.25/0.3)% additional Origin of Spirit Magus Effect received",
+      "아이리스는 마령의 근원 효과의 영향을 받지 않으며, 모든 마령의 근원 기본 효과는 마령에 전환 적용\n마령 성장치 2 포인트당, 마령이 받는 마령의 근원 효과 추가 (0.1/0.15/0.2/0.25/0.3)%",
   },
   {
-    hero: "The Forsaken Iris: Vigilant Breeze (#2)",
-    name: "Nurturing Breeze",
+    hero: "속세를 떠난 마령 아이리스: 수호의 온풍 (#2)",
+    name: "만물의 온기",
     level: 75,
     affix:
-      "While in Vigilant, Iris (-20/-24/-28/-32/-36)% additional damage taken\n(50/60/70/80/100)% of the bonus and additional bonus to Life Regeneration Speed and Life Regeneration Per Second is also applied to Merged Spirit Magi\n(100/120/140/160/200)% of the bonus and additional bonus to Life Regain, Shield Regain, Life Regain Interval, and Shield Regain Interval is also applied to Merged Spirit Magi",
+      "수호 상태인 동안 아이리스가 받는 대미지 별도 (-20/-24/-28/-32/-36)%\nHP 자연 회복 속도 및 초당 HP 자연 회복에 대한 보너스 또는 추가 보너스의 (50/60/70/80/100)% 가 융합된 마령에도 동일하게 적용된다.\nHP 반환과 보호막 반환, HP 반환 간격과 보호막 반환 간격에 대한 보너스 또는 추가 보너스의 (100/120/140/160/200)% 가 융합된 마령에도 동일하게 적용된다.",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Sing with the Tide",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "파도와 함께하는 노래",
     level: 1,
     affix:
-      "Level 1Click the Trait Slot to switch between Bard and Loud Song\nIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills, and -20% additional Channeled Skill Damage\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead. Bard Song loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy or reaching the maximum distance, using the corresponding skill once at the location.\nThe bubble leaves a Tide where it bursts and at the feet of enemies it collides with, lasting for 6 s\nIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect\nWhen contacting a Tide, gains the following Tide Effect: Ignore physical collisions with enemies and +15% additional damage for 4 sLevel 2Click the Trait Slot to switch between Bard and Loud Song\nIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills, and -20% additional Channeled Skill Damage\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead. Bard Song loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy or reaching the maximum distance, using the corresponding skill once at the location.\nThe bubble leaves a Tide where it bursts and at the feet of enemies it collides with, lasting for 6 s\nIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect\nWhen contacting a Tide, gains the following Tide Effect: Ignore physical collisions with enemies and +15% additional damage for 4 s\n+5% additional damage taken by enemies on the TideLevel 3Click the Trait Slot to switch between Bard and Loud Song\nIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills, and -20% additional Channeled Skill Damage\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead. Bard Song loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy or reaching the maximum distance, using the corresponding skill once at the location.\nThe bubble leaves a Tide where it bursts and at the feet of enemies it collides with, lasting for 6 s\nIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect\nWhen contacting a Tide, gains the following Tide Effect: Ignore physical collisions with enemies and +15% additional damage for 4 s\n+10% additional damage taken by enemies on the TideLevel 4Click the Trait Slot to switch between Bard and Loud Song\nIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills, and -20% additional Channeled Skill Damage\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead. Bard Song loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy or reaching the maximum distance, using the corresponding skill once at the location.\nThe bubble leaves a Tide where it bursts and at the feet of enemies it collides with, lasting for 6 s\nIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect\nWhen contacting a Tide, gains the following Tide Effect: Ignore physical collisions with enemies and +15% additional damage for 4 s\n+15% additional damage taken by enemies on the TideLevel 5Click the Trait Slot to switch between Bard and Loud Song\nIn the Bard state, Attack Channeled Skills and Attack Mobility Skills cannot be used\nIn the Bard state, it is possible to move while casting Spell Channeled Skills, and -20% additional Channeled Skill Damage\nIn the Bard state, the Main Skill is auto channeled while moving\nIn the Bard state, all non-instant and non-Mobility Skills will channel Bard Song instead. Bard Song loses all channeled stacks after reaching max stacks and casts a bubble. This bubble bursts upon making contact with an enemy or reaching the maximum distance, using the corresponding skill once at the location.\nThe bubble leaves a Tide where it bursts and at the feet of enemies it collides with, lasting for 6 s\nIn the Loud Song state, -20% additional Attack and Cast Speed, -20% additional Movement Speed, and +80% additional Tide Effect\nWhen contacting a Tide, gains the following Tide Effect: Ignore physical collisions with enemies and +15% additional damage for 4 s\n+20% additional damage taken by enemies on the Tide\nArtificial Moon:\n+10% Skill Area and +15% Skill Effect Duration when on the Tide",
+      "레벨 1특성 슬롯을 눌러 음유와 열창 상태를 전환한다.\n음유 상태에서는 공격 채널링과 위치 이동 공격 스킬을 사용할 수 없다.\n음유 상태에서는 주술 채널링 스킬 사용 시 이동할 수 있으며, 채널링 스킬 대미지가 -20% 추가된다.\n음유 상태에서는 이동 시 메인 스킬을 자동 채널링한다.\n음유 상태에서는 순간 발동 및 위치 이동 외의 스킬이 모두 채널링 스킬 음유의 노래로 전환된다. 음유의 노래 최대 채널링 중첩 상태가 되면 모든 채널링 중첩수를 잃고, 거품 1개를 시전한다. 거품은 적에게 부딪히면 깨지며, 깨진 위치에 해당하는 스킬을 1회 사용한다.\n거품은 부딪히는 적의 발아래에 조수를 남긴다. 6 초 지속\n열창 상태에서는 공격 및 시전 속도 추가 -20% , 이동 속도 추가 -20% , 조수 효과 추가 +80%\n조수 접촉 시, 조수 효과 획득: 적과의 부피 충돌을 무시한다. 대미지 추가 +15% , 4 초 지속레벨 2특성 슬롯을 눌러 음유와 열창 상태를 전환한다.\n음유 상태에서는 공격 채널링과 위치 이동 공격 스킬을 사용할 수 없다.\n음유 상태에서는 주술 채널링 스킬 사용 시 이동할 수 있으며, 채널링 스킬 대미지가 -20% 추가된다.\n음유 상태에서는 이동 시 메인 스킬을 자동 채널링한다.\n음유 상태에서는 순간 발동 및 위치 이동 외의 스킬이 모두 채널링 스킬 음유의 노래로 전환된다. 음유의 노래 최대 채널링 중첩 상태가 되면 모든 채널링 중첩수를 잃고, 거품 1개를 시전한다. 거품은 적에게 부딪히면 깨지며, 깨진 위치에 해당하는 스킬을 1회 사용한다.\n거품은 부딪히는 적의 발아래에 조수를 남긴다. 6 초 지속\n열창 상태에서는 공격 및 시전 속도 추가 -20% , 이동 속도 추가 -20% , 조수 효과 추가 +80%\n조수 접촉 시, 조수 효과 획득: 적과의 부피 충돌을 무시한다. 대미지 추가 +15% , 4 초 지속\n조수 위에 있는 적이 받는 대미지 별도 +5%레벨 3특성 슬롯을 눌러 음유와 열창 상태를 전환한다.\n음유 상태에서는 공격 채널링과 위치 이동 공격 스킬을 사용할 수 없다.\n음유 상태에서는 주술 채널링 스킬 사용 시 이동할 수 있으며, 채널링 스킬 대미지가 -20% 추가된다.\n음유 상태에서는 이동 시 메인 스킬을 자동 채널링한다.\n음유 상태에서는 순간 발동 및 위치 이동 외의 스킬이 모두 채널링 스킬 음유의 노래로 전환된다. 음유의 노래 최대 채널링 중첩 상태가 되면 모든 채널링 중첩수를 잃고, 거품 1개를 시전한다. 거품은 적에게 부딪히면 깨지며, 깨진 위치에 해당하는 스킬을 1회 사용한다.\n거품은 부딪히는 적의 발아래에 조수를 남긴다. 6 초 지속\n열창 상태에서는 공격 및 시전 속도 추가 -20% , 이동 속도 추가 -20% , 조수 효과 추가 +80%\n조수 접촉 시, 조수 효과 획득: 적과의 부피 충돌을 무시한다. 대미지 추가 +15% , 4 초 지속\n조수 위에 있는 적이 받는 대미지 별도 +10%레벨 4특성 슬롯을 눌러 음유와 열창 상태를 전환한다.\n음유 상태에서는 공격 채널링과 위치 이동 공격 스킬을 사용할 수 없다.\n음유 상태에서는 주술 채널링 스킬 사용 시 이동할 수 있으며, 채널링 스킬 대미지가 -20% 추가된다.\n음유 상태에서는 이동 시 메인 스킬을 자동 채널링한다.\n음유 상태에서는 순간 발동 및 위치 이동 외의 스킬이 모두 채널링 스킬 음유의 노래로 전환된다. 음유의 노래 최대 채널링 중첩 상태가 되면 모든 채널링 중첩수를 잃고, 거품 1개를 시전한다. 거품은 적에게 부딪히면 깨지며, 깨진 위치에 해당하는 스킬을 1회 사용한다.\n거품은 부딪히는 적의 발아래에 조수를 남긴다. 6 초 지속\n열창 상태에서는 공격 및 시전 속도 추가 -20% , 이동 속도 추가 -20% , 조수 효과 추가 +80%\n조수 접촉 시, 조수 효과 획득: 적과의 부피 충돌을 무시한다. 대미지 추가 +15% , 4 초 지속\n조수 위에 있는 적이 받는 대미지 별도 +15%레벨 5특성 슬롯을 눌러 음유와 열창 상태를 전환한다.\n음유 상태에서는 공격 채널링과 위치 이동 공격 스킬을 사용할 수 없다.\n음유 상태에서는 주술 채널링 스킬 사용 시 이동할 수 있으며, 채널링 스킬 대미지가 -20% 추가된다.\n음유 상태에서는 이동 시 메인 스킬을 자동 채널링한다.\n음유 상태에서는 순간 발동 및 위치 이동 외의 스킬이 모두 채널링 스킬 음유의 노래로 전환된다. 음유의 노래 최대 채널링 중첩 상태가 되면 모든 채널링 중첩수를 잃고, 거품 1개를 시전한다. 거품은 적에게 부딪히면 깨지며, 깨진 위치에 해당하는 스킬을 1회 사용한다.\n거품은 부딪히는 적의 발아래에 조수를 남긴다. 6 초 지속\n열창 상태에서는 공격 및 시전 속도 추가 -20% , 이동 속도 추가 -20% , 조수 효과 추가 +80%\n조수 접촉 시, 조수 효과 획득: 적과의 부피 충돌을 무시한다. 대미지 추가 +15% , 4 초 지속\n조수 위에 있는 적이 받는 대미지 별도 +20%\n이미테이션 루나:\n조수 위에 있을 경우 스킬 범위 +10% , 스킬 효과 지속 시간 +15%",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Undersea Ballad",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "해면 아래의 발라드",
     level: 45,
     affix:
-      "Tide's area is no longer affected by Skill Area\n100% of the increase/decrease on Skill Area is also applied to Tide Effect, up to (+90/+100/+110/+120/+130)%",
+      "조수의 범위는 더 이상 스킬 범위의 영향을 받지 않는다.\n스킬 범위 증가 또는 감소분의 100% 가 조수 효과에 적용된다. 최대 (+90/+100/+110/+120/+130)%",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Wave Aria",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "물결 위의 아리아",
     level: 45,
     affix:
-      "Tide grants an additional effect: (+10/+13/+16/+19/+22)% additional damage against enemies on the Tide\nIn the Bard state, the bubble no longer leaves a Tide; instead, you will leave a Tide along your path and at the feet of enemies you collide with. Lasts for 4 s",
+      "조수가 추가 효과 제공: 조수 위에 있는 적에게 주는 대미지 추가 (+10/+13/+16/+19/+22)%\n음유 상태에서는 거품이 더는 조수를 남기지 않는다. 자신이 지나가는 경로와 부딪힌 적의 발아래에 조수를 남긴다. 4 초 지속",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Sea Foam Nocturne",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "바다거품의 야곡",
     level: 60,
     affix:
-      "For every +1 max or min Channeled Stacks, (+12/+14/+16/+18/+20)% bubble flying speed and (+16/+18/+20/+22/+24)% additional Tide Effect. Stacks up to 5 time(s)\nMin Channeled Stacks takes effect twice on Bard Song",
+      "최대 또는 최소 채널링 중첩수 +1 당 거품 비행 속도 (+12/+14/+16/+18/+20)% , 조수 효과 추가 (+16/+18/+20/+22/+24)% , 최대 5 회 중첩\n최저 채널링 중첩수는 음유의 노래에 2회 적용된다.",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Idyll of the Tide",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "해조의 목가",
     level: 60,
     affix:
-      "Tide grants the following additional effects: For every 1 m moved in the Tide, (+1/1.3/1.6/1.9/2.2)% additional damage while in the Tide. Stacks up to 15 time(s) and lasts until Tide is completely lost\nAfter losing all Tides, automatically switch to Bard",
+      "조수가 추가 효과 제공: 조수 위에 있는 경우, 조수 위에서 1 미터 이동할 때마다 대미지 추가 (+1/1.3/1.6/1.9/2.2)% , 최대 15 회 중첩, 모든 조수 상실 시까지 지속된다.\n모든 조수를 상실하는 경우 자동으로 음유로 전환된다.",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Chantey of Sinking",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "침몰의 뱃노래",
     level: 75,
     affix:
-      "For every 1 s in the Loud Song state, (+35/+45/+55/+65/+75)% Tide Area and (+35/+45/+55/+65/+75)% Tide Effect. Stacks up to 2 time(s) and lasts until you exit the Loud Song state",
+      "열창 상태가 1 초 지속될 때마다 조수 범위 (+35/+45/+55/+65/+75)% , 조수 효과 (+35/+45/+55/+65/+75)% , 최대 2 회 중첩. 열창 상태가 해제될 때까지 지속된다.",
   },
   {
-    hero: "Tide Whisper Selena: Sing with the Tide (#1)",
-    name: "Murmurs of the Distant Tide",
+    hero: "파도의 숨결 셀레나: 파도와 함께하는 노래 (#1)",
+    name: "흐르는 파도의 숨결",
     level: 75,
     affix:
-      "In the Bard state, (-50/-50/-50/-50/-40)% Tide Duration and (+60/+70/+80/+90/+100)% additional Tide Effect",
+      "음유 상태인 경우 조수 지속 시간 (-50/-50/-50/-50/-40)% , 조수 효과 별도 (+60/+70/+80/+90/+100)%",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Licorice Note",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "리코리스 노트",
     level: 1,
     affix:
-      "Level 1The Restoration Effect from Elixir Skills cannot be removed\nObtain a Basic Scent Bottle, which can be used to concoct Elixir Skills. The second Active Skill slot is treated as the Basic Scent Bottle\nElixir Skills from Basic Scent Bottles can be equipped with 2 Ingredients to gain their corresponding additional Base EffectsDamage IngredientRazor Leaf: This skill gains an additional base effect: +12% additional damage when you or your Minions land a Critical StrikeTwinspine Flower: This skill gains an additional base effect: When Reaping, +12% chance to Reap 2 timesScattered Spore: This skill gains an additional base effect: +7% additional damage taken by enemies within 15m when casting this skill. Stacks up to 2 times. Lasts for 8sDefense IngredientResilient Moss: This skill gains an additional base effect: +8% Injury BufferSpectral Stamen: This skill gains an additional base effect: 8% of damage is taken from Mana before lifePrismatic Vine: This skill gains an additional base effect: Converts 8% of Physical Damage taken to random Elemental DamageLevel 2The Restoration Effect from Elixir Skills cannot be removed\nObtain a Basic Scent Bottle, which can be used to concoct Elixir Skills. The second Active Skill slot is treated as the Basic Scent Bottle\nElixir Skills from Basic Scent Bottles can be equipped with 2 Ingredients to gain their corresponding additional Base EffectsDamage IngredientRazor Leaf: This skill gains an additional base effect: +13% additional damage when you or your Minions land a Critical StrikeTwinspine Flower: This skill gains an additional base effect: When Reaping, +13% chance to Reap 2 timesScattered Spore: This skill gains an additional base effect: +8% additional damage taken by enemies within 15m when casting this skill. Stacks up to 2 times. Lasts for 8sDefense IngredientResilient Moss: This skill gains an additional base effect: +9% Injury BufferSpectral Stamen: This skill gains an additional base effect: 9% of damage is taken from Mana before lifePrismatic Vine: This skill gains an additional base effect: Converts 9% of Physical Damage taken to random Elemental DamageLevel 3The Restoration Effect from Elixir Skills cannot be removed\nObtain a Basic Scent Bottle, which can be used to concoct Elixir Skills. The second Active Skill slot is treated as the Basic Scent Bottle\nElixir Skills from Basic Scent Bottles can be equipped with 2 Ingredients to gain their corresponding additional Base EffectsDamage IngredientRazor Leaf: This skill gains an additional base effect: +14% additional damage when you or your Minions land a Critical StrikeTwinspine Flower: This skill gains an additional base effect: When Reaping, +14% chance to Reap 2 timesScattered Spore: This skill gains an additional base effect: +9% additional damage taken by enemies within 15m when casting this skill. Stacks up to 2 times. Lasts for 8sDefense IngredientResilient Moss: This skill gains an additional base effect: +10% Injury BufferSpectral Stamen: This skill gains an additional base effect: 10% of damage is taken from Mana before lifePrismatic Vine: This skill gains an additional base effect: Converts 10% of Physical Damage taken to random Elemental DamageLevel 4The Restoration Effect from Elixir Skills cannot be removed\nObtain a Basic Scent Bottle, which can be used to concoct Elixir Skills. The second Active Skill slot is treated as the Basic Scent Bottle\nElixir Skills from Basic Scent Bottles can be equipped with 2 Ingredients to gain their corresponding additional Base EffectsDamage IngredientRazor Leaf: This skill gains an additional base effect: +15% additional damage when you or your Minions land a Critical StrikeTwinspine Flower: This skill gains an additional base effect: When Reaping, +15% chance to Reap 2 timesScattered Spore: This skill gains an additional base effect: +10% additional damage taken by enemies within 15m when casting this skill. Stacks up to 2 times. Lasts for 8sDefense IngredientResilient Moss: This skill gains an additional base effect: +11% Injury BufferSpectral Stamen: This skill gains an additional base effect: 11% of damage is taken from Mana before lifePrismatic Vine: This skill gains an additional base effect: Converts 11% of Physical Damage taken to random Elemental DamageLevel 5The Restoration Effect from Elixir Skills cannot be removed\nObtain a Basic Scent Bottle, which can be used to concoct Elixir Skills. The second Active Skill slot is treated as the Basic Scent Bottle\nElixir Skills from Basic Scent Bottles can be equipped with 2 Ingredients to gain their corresponding additional Base Effects\nArtificial Moon:\n+12% additional Elixir Skill Effect for the Elixir Skills from any Scent BottleDamage IngredientRazor Leaf: This skill gains an additional base effect: +16% additional damage when you or your Minions land a Critical StrikeTwinspine Flower: This skill gains an additional base effect: When Reaping, +16% chance to Reap 2 timesScattered Spore: This skill gains an additional base effect: +11% additional damage taken by enemies within 15m when casting this skill. Stacks up to 2 times. Lasts for 8sDefense IngredientResilient Moss: This skill gains an additional base effect: +12% Injury BufferSpectral Stamen: This skill gains an additional base effect: 12% of damage is taken from Mana before lifePrismatic Vine: This skill gains an additional base effect: Converts 12% of Physical Damage taken to random Elemental Damage",
+      "레벨 1영약 스킬의 회복 효과는 제거되지 않는다.\n기본 약병 획득, 영약 스킬을 배합할 수 있다. 두 번째 액티브 스킬 슬롯이 기본 약병으로 간주된다.\n기본 약병의 영약 스킬, 두 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.대미지 약재샤프 리프 그래스: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체가 크리티컬 발동 시 대미지 별도 +12%트윈 스파이크 블룸: 해당 스킬이 추가 기본 효과 획득: 수확 시 +12% 확률로 2회 수확한다.디퓨징 포자: 해당 스킬이 추가 기본 효과 획득: 해당 스킬 시전 시 15미터 안에 있는 적이 받는 대미지 별도 +7% , 최대 2회 중첩, 8초간 지속한다.방어 약재터프 이끼: 해당 스킬이 추가 기본 효과 획득: 대미지 완화 +8%유령 꽃술: 해당 스킬이 추가 기본 효과 획득: 대미지의 8% 를 MP로 우선 차감한다.카멜레온 넝쿨: 해당 스킬이 추가 기본 효과 획득: 받은 물리 대미지의 8% 를 랜덤 원소 대미지로 전환한다.레벨 2영약 스킬의 회복 효과는 제거되지 않는다.\n기본 약병 획득, 영약 스킬을 배합할 수 있다. 두 번째 액티브 스킬 슬롯이 기본 약병으로 간주된다.\n기본 약병의 영약 스킬, 두 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.대미지 약재샤프 리프 그래스: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체가 크리티컬 발동 시 대미지 별도 +13%트윈 스파이크 블룸: 해당 스킬이 추가 기본 효과 획득: 수확 시 +13% 확률로 2회 수확한다.디퓨징 포자: 해당 스킬이 추가 기본 효과 획득: 해당 스킬 시전 시 15미터 안에 있는 적이 받는 대미지 별도 +8% , 최대 2회 중첩, 8초간 지속한다.방어 약재터프 이끼: 해당 스킬이 추가 기본 효과 획득: 대미지 완화 +9%유령 꽃술: 해당 스킬이 추가 기본 효과 획득: 대미지의 9% 를 MP로 우선 차감한다.카멜레온 넝쿨: 해당 스킬이 추가 기본 효과 획득: 받은 물리 대미지의 9% 를 랜덤 원소 대미지로 전환한다.레벨 3영약 스킬의 회복 효과는 제거되지 않는다.\n기본 약병 획득, 영약 스킬을 배합할 수 있다. 두 번째 액티브 스킬 슬롯이 기본 약병으로 간주된다.\n기본 약병의 영약 스킬, 두 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.대미지 약재샤프 리프 그래스: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체가 크리티컬 발동 시 대미지 별도 +14%트윈 스파이크 블룸: 해당 스킬이 추가 기본 효과 획득: 수확 시 +14% 확률로 2회 수확한다.디퓨징 포자: 해당 스킬이 추가 기본 효과 획득: 해당 스킬 시전 시 15미터 안에 있는 적이 받는 대미지 별도 +9% , 최대 2회 중첩, 8초간 지속한다.방어 약재터프 이끼: 해당 스킬이 추가 기본 효과 획득: 대미지 완화 +10%유령 꽃술: 해당 스킬이 추가 기본 효과 획득: 대미지의 10% 를 MP로 우선 차감한다.카멜레온 넝쿨: 해당 스킬이 추가 기본 효과 획득: 받은 물리 대미지의 10% 를 랜덤 원소 대미지로 전환한다.레벨 4영약 스킬의 회복 효과는 제거되지 않는다.\n기본 약병 획득, 영약 스킬을 배합할 수 있다. 두 번째 액티브 스킬 슬롯이 기본 약병으로 간주된다.\n기본 약병의 영약 스킬, 두 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.대미지 약재샤프 리프 그래스: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체가 크리티컬 발동 시 대미지 별도 +15%트윈 스파이크 블룸: 해당 스킬이 추가 기본 효과 획득: 수확 시 +15% 확률로 2회 수확한다.디퓨징 포자: 해당 스킬이 추가 기본 효과 획득: 해당 스킬 시전 시 15미터 안에 있는 적이 받는 대미지 별도 +10% , 최대 2회 중첩, 8초간 지속한다.방어 약재터프 이끼: 해당 스킬이 추가 기본 효과 획득: 대미지 완화 +11%유령 꽃술: 해당 스킬이 추가 기본 효과 획득: 대미지의 11% 를 MP로 우선 차감한다.카멜레온 넝쿨: 해당 스킬이 추가 기본 효과 획득: 받은 물리 대미지의 11% 를 랜덤 원소 대미지로 전환한다.레벨 5영약 스킬의 회복 효과는 제거되지 않는다.\n기본 약병 획득, 영약 스킬을 배합할 수 있다. 두 번째 액티브 스킬 슬롯이 기본 약병으로 간주된다.\n기본 약병의 영약 스킬, 두 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.\n이미테이션 루나:\n임의의 약병에 있는 영약 스킬, 영약 스킬 효과 추가 +12%대미지 약재샤프 리프 그래스: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체가 크리티컬 발동 시 대미지 별도 +16%트윈 스파이크 블룸: 해당 스킬이 추가 기본 효과 획득: 수확 시 +16% 확률로 2회 수확한다.디퓨징 포자: 해당 스킬이 추가 기본 효과 획득: 해당 스킬 시전 시 15미터 안에 있는 적이 받는 대미지 별도 +11% , 최대 2회 중첩, 8초간 지속한다.방어 약재터프 이끼: 해당 스킬이 추가 기본 효과 획득: 대미지 완화 +12%유령 꽃술: 해당 스킬이 추가 기본 효과 획득: 대미지의 12% 를 MP로 우선 차감한다.카멜레온 넝쿨: 해당 스킬이 추가 기본 효과 획득: 받은 물리 대미지의 12% 를 랜덤 원소 대미지로 전환한다.",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Pungent Stimulant Salt",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "스멜링 솔트",
     level: 45,
     affix:
-      "Elixir Skills from any Scent Bottle can be equipped with 1 additional Ingredient to gain the corresponding Charge restoration\n基础药香瓶中的灵药技能持续期间，每隔 (8/7/6/5/4) 秒随机预备一个已安装的激发或者诅咒技能\n(200/230/260/290/320)% of the Skill Effect Bonus applied to Elixir Skills of the Basic Scent Bottle is also applied to its prepared Empower Skills, up to (+70/+100/+130/+160/+190)%\n基础药香瓶中的灵药技能，对其技能效果加成的 (200/230/260/290/320)% 同样作用于被其预备的诅咒技能，上限 (+50/+70/+90/+110/+130)%Functional IngredientHusk: This skill gains (3/4/5/5/6) Charging Progress on Critical Strike. Interval: 0.5 s (not affected by the effects of Elixir Skills)Sword Lily Leaf: When Reaping, this skill gains (3/4/5/5/6) Charging Progress. Interval: 0.5 s (not affected by the effects of Elixir Skills)Tumbleweed Seed: For every 6 m moved, this skill gains (2/3/4/4/5) Charging Progress. Interval: 0.5 s (not affected by the effects of Elixir Skills)",
+      "임의의 약병의 영약 스킬, 한 가지 약재를 더 추가하여 그에 해당하는 충전 회복 방법을 획득할 수 있다.\n기본 약병의 영약 스킬이 지속되는 동안 (8/7/6/5/4) 초마다 장착된 자극 또는 저주 스킬 1개를 랜덤으로 스탠바이한다.\n기본 약병의 영약 스킬, 해당 스킬 효과 보너스 (200/230/260/290/320)% 가 해당 스킬로 스탠바이된 자극 스킬에도 적용된다. 최대치 (+70/+100/+130/+160/+190)%\n기본 약병의 영약 스킬, 해당 스킬 효과 보너스 (200/230/260/290/320)% 가 해당 스킬로 스탠바이된 저주 스킬에도 적용된다. 최대치 (+50/+70/+90/+110/+130)%기능 약재협과 껍질: 크리티컬 시 해당 스킬은 충전 진행도를 (3/4/5/5/6) 획득한다. 0.5 초 간격(영약 스킬 효과의 영향을 받지 않음)글라디올러스 잎: 수확 부여 시 해당 스킬은 충전 진행도를 (3/4/5/5/6) 획득한다. 0.5 초 간격(영약 스킬 효과의 영향을 받지 않음)텀블위드 씨앗: 6 미터 이동할 때마다 해당 스킬은 충전 진행도를 (2/3/4/4/5) 획득한다. 0.5 초 간격(영약 스킬 효과의 영향을 받지 않음)",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Elixir of Immortality",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "불로장생약",
     level: 60,
     affix:
-      "Every 3 recent excess Life Restoration is converted to 2 Temporary Life, up to (20/25/30/40/50)% of Base Max Life\nEvery 3 recent excess Mana restoration is converted to 2 Temporary Mana, up to (20/25/30/40/50)% of Base Max Mana\nFor every Temporary Life equal to 5% of Base Max Life or Temporary Mana equal to Base Max Mana, (+1/1.5/+2/2.5/+3)% additional damage, up to (+10/+15/+20/+25/+30)%",
+      "최근 과잉된 HP 회복 3 포인트당 임시 HP 2 포인트로 전환된다. 최대치는 기본 최대 HP의 (20/25/30/40/50)% 에 해당한다.\n최근 과잉된 MP 회복 3 포인트당 임시 MP 2 포인트로 전환된다. 최대치는 기본 최대 MP의 (20/25/30/40/50)% 에 해당한다.\n기본 최대 HP의 5%에 해당하는 임시 HP 또는 기본 최대 MP의 5%에 해당하는 임시 MP를 보유할 때마다 대미지 별도 (+1/1.5/+2/2.5/+3)% , 최대치 (+10/+15/+20/+25/+30)%",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Scent of Ambition",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "야심가의 아로마",
     level: 60,
     affix:
-      "释放 (6/6/5/4/3) 次灵药技能后，额外 (+24/+27/+30/+33/+36)% 灵药技能效果，持续 4 秒\n-30% additional Elixir Skill Effect Duration",
+      "영약 스킬 (6/6/5/4/3) 회 시전 후, 영약 스킬 효과 추가 (+24/+27/+30/+33/+36)% , 4 초간 지속한다.\n영약 스킬 효과 지속 시간 추가 -30%",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Everlasting Nectar",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "아마란스 감로",
     level: 75,
     affix:
-      "(100/120/140/160/180)% of the bonus applied to Max Life or Max Mana is also applied to Elixir Skill Effect, up to (+60/+70/+80/+90/+100)%",
+      "최대 HP 또는 최대 MP 보너스의 (100/120/140/160/180)% 가 영약 스킬 효과에도 적용된다. 최대치 (+60/+70/+80/+90/+100)%",
   },
   {
-    hero: "Scent Weaver Sage: Licorice Note (#1)",
-    name: "Licorice Tincture Blend",
+    hero: "약사·세이 약사·세이지: 리코리스 노트 (#1)",
+    name: "복합 리코리스 팅크",
     level: 75,
     affix:
-      "Level 1Obtain a Special Scent Bottle, which can be used to concoct Elixir Skills. The third Active Skill slot is treated as the Special Scent Bottle\nElixir Skills from Special Scent Bottles can be equipped with 1 Ingredient to gain its corresponding additional Base EffectsSpecial IngredientPixie Tear: This skill gains an additional base effect: 80% of excess Life restoration is also applied to Energy Shield restoration, but unable to Charge or Regain Energy Shield. For every 400 Max Energy Shield, +1% additional damage for you and your Minions, up to +40% (not affected by the effects of Elixir Skills)Thunder Dragon Scale: This skill gains an additional base effect: When defeated by your or your Minions' Attacks or Spells, enemies have a 30% chance to explode, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius (not affected by the effects of Elixir Skills)Gargoyle Horn: This skill gains an additional base effect: Increases Block Chance by an additional 70% , but you take True Damage equal to 6% of the mitigated damage every second after each successful block. Lasts for 4s (not affected by the effects of Elixir Skills)Level 2Obtain a Special Scent Bottle, which can be used to concoct Elixir Skills. The third Active Skill slot is treated as the Special Scent Bottle\nElixir Skills from Special Scent Bottles can be equipped with 1 Ingredient to gain its corresponding additional Base EffectsSpecial IngredientPixie Tear: This skill gains an additional base effect: 90% of excess Life restoration is also applied to Energy Shield restoration, but unable to Charge or Regain Energy Shield. For every 400 Max Energy Shield, 1.2% additional damage for you and your Minions, up to +48% (not affected by the effects of Elixir Skills)Thunder Dragon Scale: 该技能获得额外基础效果：你和召唤物的攻击或者法术击败敌人时 30% 几率爆炸，对半径 6 米内的敌人造成被击败的敌人最大生命 250% 的真实伤害；你和召唤物额外 +5% 伤害（不受灵药技能效果影响）Gargoyle Horn: This skill gains an additional base effect: Increases Block Chance by an additional 90% , but you take True Damage equal to 4.5% of the mitigated damage every second after each successful block. Lasts for 4s (not affected by the effects of Elixir Skills)Level 3Obtain a Special Scent Bottle, which can be used to concoct Elixir Skills. The third Active Skill slot is treated as the Special Scent Bottle\nElixir Skills from Special Scent Bottles can be equipped with 1 Ingredient to gain its corresponding additional Base EffectsSpecial IngredientPixie Tear: This skill gains an additional base effect: 100% of excess Life restoration is also applied to Energy Shield restoration, but unable to Charge or Regain Energy Shield. For every 400 Max Energy Shield, 1.4% additional damage for you and your Minions, up to +56% (not affected by the effects of Elixir Skills)Thunder Dragon Scale: 该技能获得额外基础效果：你和召唤物的攻击或者法术击败敌人时 30% 几率爆炸，对半径 6 米内的敌人造成被击败的敌人最大生命 250% 的真实伤害；你和召唤物额外 +10% 伤害（不受灵药技能效果影响）Gargoyle Horn: This skill gains an additional base effect: Increases Block Chance by an additional 110% , but you take True Damage equal to 3% of the mitigated damage every second after each successful block. Lasts for 4s (not affected by the effects of Elixir Skills)Level 4Obtain a Special Scent Bottle, which can be used to concoct Elixir Skills. The third Active Skill slot is treated as the Special Scent Bottle\nElixir Skills from Special Scent Bottles can be equipped with 1 Ingredient to gain its corresponding additional Base EffectsSpecial IngredientPixie Tear: This skill gains an additional base effect: 110% of excess Life restoration is also applied to Energy Shield restoration, but unable to Charge or Regain Energy Shield. For every 400 Max Energy Shield, 1.6% additional damage for you and your Minions, up to +62% (not affected by the effects of Elixir Skills)Thunder Dragon Scale: 该技能获得额外基础效果：你和召唤物的攻击或者法术击败敌人时 30% 几率爆炸，对半径 6 米内的敌人造成被击败的敌人最大生命 250% 的真实伤害；你和召唤物额外 +15% 伤害（不受灵药技能效果影响）Gargoyle Horn: This skill gains an additional base effect: Increases Block Chance by an additional 130% , but you take True Damage equal to 1.5% of the mitigated damage every second after each successful block. Lasts for 4s (not affected by the effects of Elixir Skills)Level 5Obtain a Special Scent Bottle, which can be used to concoct Elixir Skills. The third Active Skill slot is treated as the Special Scent Bottle\nElixir Skills from Special Scent Bottles can be equipped with 1 Ingredient to gain its corresponding additional Base EffectsSpecial IngredientPixie Tear: This skill gains an additional base effect: 120% of excess Life restoration is also applied to Energy Shield restoration, but unable to Charge or Regain Energy Shield. For every 400 Max Energy Shield, 1.8% additional damage for you and your Minions, up to +70% (not affected by the effects of Elixir Skills)Thunder Dragon Scale: 该技能获得额外基础效果：你和召唤物的攻击或者法术击败敌人时 30% 几率爆炸，对半径 6 米内的敌人造成被击败的敌人最大生命 250% 的真实伤害；你和召唤物额外 +20% 伤害（不受灵药技能效果影响）Gargoyle Horn: This skill gains an additional base effect: Increases Block Chance by an additional 150% , but you take True Damage equal to 0% of the mitigated damage every second after each successful block. Lasts for 4s (not affected by the effects of Elixir Skills)",
+      "레벨 1특수 약병 획득, 영약 스킬을 배합할 수 있다. 세 번째 액티브 스킬 슬롯이 특수 약병으로 간주된다.\n특수 약병의 영약 스킬, 한 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.특수 약재요정의 눈물: 해당 스킬이 추가 기본 효과 획득: 과잉 HP 회복의 80% 가 보호막 회복에 적용되지만 보호막 충전 및 반환이 불가하다. 현재 보유한 최대 보호막 400 포인트당 자신과 소환체 대미지 별도 +1% , 최대치 +40% (영약 스킬 효과의 영향을 받지 않음)뇌룡의 비늘: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체의 공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.(영약 스킬 효과의 영향을 받지 않음)가고일의 뿔: 해당 스킬이 추가 기본 효과 획득: 막기 확률이 70% 추가로 증가하지만, 막기 성공 후 초당 감면된 대미지의 6% 에 해당하는 트루 대미지를 받으며, 4초간 지속한다. (영약 스킬 효과의 영향을 받지 않음)레벨 2특수 약병 획득, 영약 스킬을 배합할 수 있다. 세 번째 액티브 스킬 슬롯이 특수 약병으로 간주된다.\n특수 약병의 영약 스킬, 한 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.특수 약재요정의 눈물: 해당 스킬이 추가 기본 효과 획득: 과잉 HP 회복의 90% 가 보호막 회복에 적용되지만 보호막 충전 및 반환이 불가하다. 현재 보유한 최대 보호막 400 포인트당 자신과 소환체 대미지 별도 1.2% , 최대치 +48% (영약 스킬 효과의 영향을 받지 않음)뇌룡의 비늘: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체의 공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다. 자신과 소환체의 대미지 별도 + 5% (영약 스킬 효과의 영향을 받지 않음)가고일의 뿔: 해당 스킬이 추가 기본 효과 획득: 막기 확률이 90% 추가로 증가하지만, 막기 성공 후 초당 감면된 대미지의 4.5% 에 해당하는 트루 대미지를 받으며, 4초간 지속한다. (영약 스킬 효과의 영향을 받지 않음)레벨 3특수 약병 획득, 영약 스킬을 배합할 수 있다. 세 번째 액티브 스킬 슬롯이 특수 약병으로 간주된다.\n특수 약병의 영약 스킬, 한 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.특수 약재요정의 눈물: 해당 스킬이 추가 기본 효과 획득: 과잉 HP 회복의 100% 가 보호막 회복에 적용되지만 보호막 충전 및 반환이 불가하다. 현재 보유한 최대 보호막 400 포인트당 자신과 소환체 대미지 별도 1.4% , 최대치 +56% (영약 스킬 효과의 영향을 받지 않음)뇌룡의 비늘: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체의 공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다. 자신과 소환체의 대미지 별도 + 10% (영약 스킬 효과의 영향을 받지 않음)가고일의 뿔: 해당 스킬이 추가 기본 효과 획득: 막기 확률이 110% 추가로 증가하지만, 막기 성공 후 초당 감면된 대미지의 3% 에 해당하는 트루 대미지를 받으며, 4초간 지속한다. (영약 스킬 효과의 영향을 받지 않음)레벨 4특수 약병 획득, 영약 스킬을 배합할 수 있다. 세 번째 액티브 스킬 슬롯이 특수 약병으로 간주된다.\n특수 약병의 영약 스킬, 한 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.특수 약재요정의 눈물: 해당 스킬이 추가 기본 효과 획득: 과잉 HP 회복의 110% 가 보호막 회복에 적용되지만 보호막 충전 및 반환이 불가하다. 현재 보유한 최대 보호막 400 포인트당 자신과 소환체 대미지 별도 1.6% , 최대치 +62% (영약 스킬 효과의 영향을 받지 않음)뇌룡의 비늘: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체의 공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다. 자신과 소환체의 대미지 별도 + 15% (영약 스킬 효과의 영향을 받지 않음)가고일의 뿔: 해당 스킬이 추가 기본 효과 획득: 막기 확률이 130% 추가로 증가하지만, 막기 성공 후 초당 감면된 대미지의 1.5% 에 해당하는 트루 대미지를 받으며, 4초간 지속한다. (영약 스킬 효과의 영향을 받지 않음)레벨 5특수 약병 획득, 영약 스킬을 배합할 수 있다. 세 번째 액티브 스킬 슬롯이 특수 약병으로 간주된다.\n특수 약병의 영약 스킬, 한 가지 약재를 추가하여 그에 해당하는 추가 기본 효과를 획득할 수 있다.특수 약재요정의 눈물: 해당 스킬이 추가 기본 효과 획득: 과잉 HP 회복의 120% 가 보호막 회복에 적용되지만 보호막 충전 및 반환이 불가하다. 현재 보유한 최대 보호막 400 포인트당 자신과 소환체 대미지 별도 1.8% , 최대치 +70% (영약 스킬 효과의 영향을 받지 않음)뇌룡의 비늘: 해당 스킬이 추가 기본 효과 획득: 자신과 소환체의 공격 또는 주술로 적 처치 시 30% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다. 자신과 소환체의 대미지 별도 + 20% (영약 스킬 효과의 영향을 받지 않음)가고일의 뿔: 해당 스킬이 추가 기본 효과 획득: 막기 확률이 150% 추가로 증가하지만, 막기 성공 후 초당 감면된 대미지의 0% 에 해당하는 트루 대미지를 받으며, 4초간 지속한다. (영약 스킬 효과의 영향을 받지 않음)",
   },
 ] as const satisfies readonly BaseHeroTrait[];

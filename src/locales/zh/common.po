@@ -14,14 +14,15 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:942
+#: src/components/equipment/EditGearModal.tsx:948
+#: src/components/equipment/VoraxGearModule.tsx:912
 msgid ""
 "+10% Fire Damage\n"
 "+20 to Maximum Life\n"
 "+5% Attack Speed"
 msgstr ""
 
-#: src/components/equipment/EditGearModal.tsx:735
+#: src/components/equipment/EditGearModal.tsx:752
 msgid "Base Stats (1 max)"
 msgstr "基底词缀 (1 max)"
 
@@ -33,11 +34,13 @@ msgstr ""
 msgid "Create your first character build to get started"
 msgstr "创建您的第一个角色流派以开始使用"
 
-#: src/components/equipment/EditGearModal.tsx:949
+#: src/components/equipment/EditGearModal.tsx:955
+#: src/components/equipment/VoraxGearModule.tsx:919
 msgid "Enter raw affix text, one per line. Use this for affixes not available in the dropdowns above."
 msgstr ""
 
-#: src/components/equipment/EditGearModal.tsx:937
+#: src/components/equipment/EditGearModal.tsx:943
+#: src/components/equipment/VoraxGearModule.tsx:907
 msgid "Custom Affixes"
 msgstr ""
 
@@ -45,7 +48,7 @@ msgstr ""
 msgid "Rename"
 msgstr "重命名"
 
-#: src/components/equipment/VoraxGearModule.tsx:685
+#: src/components/equipment/VoraxGearModule.tsx:832
 msgid "Vorax Limb"
 msgstr ""
 
@@ -53,27 +56,27 @@ msgstr ""
 msgid "Create New"
 msgstr "新建"
 
-#: src/routes/builder/equipment.tsx:142
+#: src/routes/builder/equipment.tsx:146
 msgid "Craft New Item"
 msgstr "制作新物品"
 
-#: src/routes/builder/equipment.tsx:226
+#: src/routes/builder/equipment.tsx:238
 msgid "No items in inventory. Craft items above to add them here."
 msgstr "库存中没有物品。在上方制作物品以添加到此处。"
 
-#: src/components/equipment/EditGearModal.tsx:976
-#: src/components/equipment/LegendaryGearModule.tsx:400
-#: src/components/equipment/VoraxGearModule.tsx:769
+#: src/components/equipment/EditGearModal.tsx:987
+#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/VoraxGearModule.tsx:953
 msgid "Save to Inventory"
 msgstr "保存到库存"
 
 #. js-lingui-explicit-id
-#: src/routes/builder/skills.tsx:81
+#: src/routes/builder/skills.tsx:84
 msgid "Active Skills"
 msgstr "主动技能"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/LegendaryGearModule.tsx:299
+#: src/components/equipment/LegendaryGearModule.tsx:313
 msgid "Add Legendary"
 msgstr ""
 
@@ -159,14 +162,14 @@ msgid "Core Talent 2"
 msgstr ""
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:698
+#: src/components/equipment/EditGearModal.tsx:713
 msgid "Craft New Item"
 msgstr ""
 
 #. js-lingui-explicit-id
 #: src/components/equipment/VoraxGearModule.tsx:677
-msgid "Craft Vorax Gear"
-msgstr ""
+#~ msgid "Craft Vorax Gear"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:17
@@ -197,7 +200,7 @@ msgid "Import Build"
 msgstr "导入流派"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:699
+#: src/components/equipment/EditGearModal.tsx:714
 msgid "Edit {equipmentType}"
 msgstr ""
 
@@ -211,7 +214,7 @@ msgstr "装备"
 msgid "Fire Cannon"
 msgstr "火炮"
 
-#: src/components/equipment/EditGearModal.tsx:829
+#: src/components/equipment/EditGearModal.tsx:843
 msgid "Tower Sequence (1 max)"
 msgstr "高塔词缀 (1 max)"
 
@@ -268,6 +271,10 @@ msgstr "暂无流派"
 msgid "The build code in the URL was invalid or could not be imported."
 msgstr ""
 
+#: src/components/equipment/VoraxGearModule.tsx:951
+msgid "Save Changes"
+msgstr ""
+
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:29
 msgid "Left Ring"
@@ -313,7 +320,7 @@ msgstr "项链"
 msgid "Necklace"
 msgstr "项链"
 
-#: src/components/equipment/EditGearModal.tsx:785
+#: src/components/equipment/EditGearModal.tsx:799
 msgid "Base Affixes (2 max)"
 msgstr "基础词缀 (2 max)"
 
@@ -368,7 +375,7 @@ msgid "Scepter"
 msgstr "魔杖"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/EditGearModal.tsx:723
+#: src/components/equipment/EditGearModal.tsx:740
 msgid "Select equipment type..."
 msgstr "选择装备类型..."
 
@@ -426,7 +433,13 @@ msgstr "双手剑"
 msgid "My Builds"
 msgstr "我的配装"
 
-#: src/routes/builder/equipment.tsx:120
+#: src/components/equipment/EditGearModal.tsx:971
+#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/VoraxGearModule.tsx:935
+msgid "No affixes"
+msgstr ""
+
+#: src/routes/builder/equipment.tsx:124
 msgid "Equipment Slots"
 msgstr "装备槽位"
 
@@ -440,7 +453,7 @@ msgstr "法杖"
 msgid "Updated: {0}"
 msgstr "更新时间: {0}"
 
-#: src/components/equipment/EditGearModal.tsx:717
+#: src/components/equipment/EditGearModal.tsx:734
 msgid "Equipment Type"
 msgstr "装备类型"
 
@@ -449,40 +462,41 @@ msgid "Tree Slot"
 msgstr ""
 
 #: src/components/equipment/EditGearModal.tsx:961
-msgid "Select an equipment type to begin crafting"
-msgstr "选择一个装备类型以开始制作"
+#~ msgid "Select an equipment type to begin crafting"
+#~ msgstr "选择一个装备类型以开始制作"
 
 #: src/components/calculations/SkillSelector.tsx:45
 msgid "Active Skill"
 msgstr ""
 
-#: src/routes/builder/equipment.tsx:179
+#: src/routes/builder/equipment.tsx:183
 msgid "Inventory"
 msgstr "库存"
 
+#: src/components/equipment/VoraxGearModule.tsx:735
 #: src/routes/index.tsx:145
 #: src/routes/index.tsx:179
 msgid "Delete"
 msgstr "删除"
 
-#: src/components/equipment/EditGearModal.tsx:893
-#: src/components/equipment/VoraxGearModule.tsx:720
+#: src/components/equipment/EditGearModal.tsx:899
+#: src/components/equipment/VoraxGearModule.tsx:871
 msgid "Prefixes (3 max)"
 msgstr "前缀 (3 max)"
 
-#: src/components/equipment/EditGearModal.tsx:968
-#: src/components/equipment/LegendaryGearModule.tsx:393
-#: src/components/equipment/VoraxGearModule.tsx:762
+#: src/components/equipment/EditGearModal.tsx:979
+#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/VoraxGearModule.tsx:943
 #: src/routes/index.tsx:108
 #: src/routes/index.tsx:151
 msgid "Cancel"
 msgstr "取消"
 
-#: src/components/equipment/VoraxGearModule.tsx:700
+#: src/components/equipment/VoraxGearModule.tsx:847
 msgid "Base Affix"
 msgstr ""
 
-#: src/components/equipment/EditGearModal.tsx:849
+#: src/components/equipment/EditGearModal.tsx:863
 msgid "Blending (1 max)"
 msgstr "调香词缀 (1 max)"
 
@@ -494,22 +508,22 @@ msgstr "棱镜"
 msgid "Copy"
 msgstr "复制"
 
-#: src/routes/builder/equipment.tsx:180
+#: src/routes/builder/equipment.tsx:184
 msgid "items"
 msgstr "物品"
 
-#: src/components/equipment/EditGearModal.tsx:915
-#: src/components/equipment/VoraxGearModule.tsx:738
+#: src/components/equipment/EditGearModal.tsx:921
+#: src/components/equipment/VoraxGearModule.tsx:889
 msgid "Suffixes (3 max)"
 msgstr "后缀 (3 max)"
 
-#: src/components/equipment/EditGearModal.tsx:809
+#: src/components/equipment/EditGearModal.tsx:823
 msgid "Sweet Dream Affix (1 max)"
 msgstr "美梦词缀 (1 max)"
 
 #: src/components/equipment/VoraxGearModule.tsx:755
-msgid "Select a vorax limb to configure"
-msgstr ""
+#~ msgid "Select a vorax limb to configure"
+#~ msgstr ""
 
 #: src/components/talents/CoreTalentSelector.tsx:90
 #: src/components/talents/CoreTalentSelector.tsx:102
@@ -521,16 +535,16 @@ msgstr "核心天赋"
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "您确定要删除“{0}”吗？"
 
-#: src/components/equipment/LegendaryGearModule.tsx:307
+#: src/components/equipment/LegendaryGearModule.tsx:323
 msgid "Select Legendary"
 msgstr "选择一个传奇物品"
 
-#: src/components/equipment/EditGearModal.tsx:978
+#: src/components/equipment/EditGearModal.tsx:989
 #: src/routes/index.tsx:102
 msgid "Save"
 msgstr "保存"
 
-#: src/components/equipment/EditGearModal.tsx:772
+#: src/components/equipment/EditGearModal.tsx:786
 msgid "Clear"
 msgstr ""
 

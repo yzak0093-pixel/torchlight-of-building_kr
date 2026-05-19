@@ -90,7 +90,7 @@ const generateTranslateNames = async (
     try {
       const html = await readFile(filepath, "utf-8");
 
-      // Extract Chinese name from og:title meta tag like <meta property="og:title" content="烈火神盾" />
+      // Extract Chinese name from og:title meta tag like <meta property="og:title" content="?�火神盾" />
       const ogTitleMatch = html.match(
         /<meta\s+property="og:title"\s+content="([^"]+)"\s*\/?>/i,
       );
@@ -98,7 +98,7 @@ const generateTranslateNames = async (
       if (ogTitleMatch) {
         results.push({ en: name, trans: ogTitleMatch[1].trim() });
       } else {
-        // Fallback: extract from card-header like <div class="card-header">公牛之怒</div>
+        // Fallback: extract from card-header like <div class="card-header">?�牛之�?/div>
         // Skip card-headers inside cards with ui_item class (which has "Alts")
         const cardHeaderMatch = html.match(
           /<div\s+class="card(?!\s+ui_item)"[^>]*>[\s\S]*?<div\s+class="card-header"[^>]*>([^<]+)<\/div>/i,

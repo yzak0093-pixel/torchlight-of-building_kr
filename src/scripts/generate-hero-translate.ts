@@ -74,9 +74,9 @@ const fetchHeroTrait = async (
     "utf-8",
   );
 
-  // Extract <div class="fw-bold">Name</div>Require lv XX or 需求等级 XX pattern
+  // Extract <div class="fw-bold">Name</div>Require lv XX or ?�求等�?XX pattern
   const traitPattern =
-    /<div class="fw-bold">([^<]+)<\/div>\s*(?:Require lv|需求等级) (\d+)/g;
+    /<div class="fw-bold">([^<]+)<\/div>\s*(?:Require lv|?�求等�? (\d+)/g;
 
   const cnTraits: { name: string; level: number }[] = [];
   for (
@@ -113,7 +113,7 @@ const fetchHeroTrait = async (
 
   // Extract trait name translation: <div class="card-header">TraitName - Hero Trait /8 </div>
   const cnFeaturePattern =
-    /<div class="card-header">([^<]+?)\s*-\s*英雄特性\s*\/(\d+)\s*<\/div>/g;
+    /<div class="card-header">([^<]+?)\s*-\s*?�雄?��?s*\/(\d+)\s*<\/div>/g;
 
   const cnFeatureMatches: { name: string; count: number }[] = [];
   for (

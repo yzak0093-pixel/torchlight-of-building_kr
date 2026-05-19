@@ -9,7 +9,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(40-60) Max Mana",
+    craftableAffix: "최대 MP +(40-60)",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(87-117) Max Energy Shield",
+    craftableAffix: "최대 보호막 +(87-117)",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,7 +57,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -65,7 +65,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(8-10)% Movement Speed",
+    craftableAffix: "이동 속도 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -73,7 +73,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-25)% Cooldown Recovery Speed",
+    craftableAffix: "쿨타임 회복 속도 +(20-25)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -81,7 +81,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-25)% Skill Effect Duration",
+    craftableAffix: "스킬 효과 지속 시간 +(20-25)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -89,7 +89,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% Sealed Mana Compensation",
+    craftableAffix: "MP 봉인 보상 +(6-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -97,7 +97,7 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(7-8)% Aura Effect",
+    craftableAffix: "오라 효과 +(7-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -105,6 +105,6 @@ export const BELT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Has Hasten",
+    craftableAffix: "신속을 보유한다.",
   },
 ];

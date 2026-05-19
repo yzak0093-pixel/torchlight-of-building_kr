@@ -9,7 +9,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Elemental Resistance",
+    craftableAffix: "원소 저항 최대치 +(3-5)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Restoration Skills: +(30-40)% Restoration Effect",
+    craftableAffix: "회복 스킬 회복 효과 +(30-40)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Restoration Skills: (-20--15)% Restoration Duration",
+    craftableAffix: "회복 스킬의 회복 시간 (-20--15)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Life",
+    craftableAffix: "최대 HP +(3-5)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(4-6)% Max Energy Shield",
+    craftableAffix: "최대 보호막 +(4-6)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-10)% Skill Area",
+    craftableAffix: "스킬 범위 +(5-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,7 +57,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Charged Flames Aura",
+    craftableAffix: "작열 에너지 충전 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -65,7 +65,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Frigid Domain Aura Effect",
+    craftableAffix: "혹한지대 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -73,7 +73,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Electric Conversion Aura",
+    craftableAffix: "전기 에너지 +(20-30)% 를 오라 효과로 전환",
   },
   {
     equipmentSlot: "Trinket",
@@ -81,7 +81,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Weapon Amplification Aura",
+    craftableAffix: "무기 증폭 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -89,7 +89,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Deep Pain Aura",
+    craftableAffix: "깊은 고통 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -97,7 +97,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Spell Amplification Aura",
+    craftableAffix: "주술 증폭 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -105,7 +105,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Precise Projectiles Aura effect",
+    craftableAffix: "조준 투사 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -113,7 +113,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Fearless Aura",
+    craftableAffix: "맹렬한 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -121,7 +121,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to crowd control effects",
+    craftableAffix: "제어류 상태 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -129,7 +129,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Cruelty Aura Effect",
+    craftableAffix: "포악 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -137,7 +137,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Radical Order Aura Effect",
+    craftableAffix: "과격한 소집 오라 효과 +(20-30)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -145,8 +145,7 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "(-50--40)% additional Damage Over Time taken when an Elixir Skill is active",
+    craftableAffix: "영약 스킬 적용 기간 동안 받는 지속 대미지 별도 (-50--40)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -154,6 +153,6 @@ export const BELT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Owns 1 additional stack(s) of Fortitude",
+    craftableAffix: "강직 1 회 추가 보유",
   },
 ];

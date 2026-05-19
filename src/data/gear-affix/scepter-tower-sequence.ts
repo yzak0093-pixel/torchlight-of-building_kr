@@ -9,7 +9,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% additional Damage Over Time",
+    craftableAffix: "지속 대미지 추가 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -17,8 +17,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix:
-      "+16 Affliction inflicted per second\n+24% Affliction Effect",
+    craftableAffix: "초당 시전 심화 수치 +16\n심화 효과 +24%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -26,7 +25,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+25% Reaping Recovery Speed",
+    craftableAffix: "수확 회복 속도 +25%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -34,7 +33,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+30% Reaping Duration",
+    craftableAffix: "수확 시간 +30%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -42,7 +41,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+10% Movement Speed",
+    craftableAffix: "이동 속도 +10%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -50,7 +49,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+12% Ailment Duration",
+    craftableAffix: "상태 이상지속 시간 +12%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -58,7 +57,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Max Terra Charge Stacks -1\nMax Terra Quantity +1",
+    craftableAffix: "지면 에너지 최대 중첩 수 -1\n지면 최대 수량 +1",
   },
   {
     equipmentSlot: "One-Handed",
@@ -66,7 +65,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+16% Blur Effect",
+    craftableAffix: "방황 효과 +16%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -74,7 +73,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "-10% All Resistance when the enemy has max Affliction",
+    craftableAffix: "적의 심화 수치가 최대치에 도달하면 전체 저항 -10%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -82,7 +81,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+8% all stats",
+    craftableAffix: "모든 속성 +8%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -91,7 +90,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a 15% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to 250% of their Max Life to enemies within a 6 m radius",
+      "공격 또는 주술로 적 처치 시 15% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP 250% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -99,7 +98,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Triggers Lv. 30 Black Hole when moving. Interval: 1.5 s",
+    craftableAffix: "이동 시, 30 레벨 블랙홀을 발동한다. 간격 1.5 초",
   },
   {
     equipmentSlot: "One-Handed",
@@ -107,16 +106,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Tower Sequence",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Main Skill is supported by Lv. 25 Cataclysm",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Scepter",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix:
-      "Upon inflicting damage, +8% additional Ailment Damage (multiplies) for every type of Ailment the enemy has",
+    craftableAffix: "25 레벨 심화 보조가 메인 스킬을 보조한다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -125,7 +115,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+120% Deep Pain Aura\n-20% additional Deep Pain Sealed Mana Compensation",
+      "대미지를 입힐 때, 적이 지닌 상태 이상 1개당 상태이상 대미지 별도 +8% (곱연산)",
   },
   {
     equipmentSlot: "One-Handed",
@@ -134,15 +124,7 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+20% Movement Speed when standing on a Terra Skill. The effect lasts 2s.\n+100% Skill Area when standing on a Terra Skill. Lasts for 2 s",
-  },
-  {
-    equipmentSlot: "One-Handed",
-    equipmentType: "Scepter",
-    affixType: "Tower Sequence",
-    craftingPool: "",
-    tier: "0",
-    craftableAffix: "+160 Affliction inflicted per second",
+      "깊은 고통 오라 효과 +120%\n깊은 고통의 MP 봉인 보상 추가 -20%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -151,6 +133,23 @@ export const SCEPTER_TOWER_SEQUENCE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "+1 to Max Tenacity Blessing Stacks\n-1 to Max Focus Blessing Stacks\n+1 to Max Agility Blessing Stacks",
+      "지면 스킬 위에 있는 경우, 이동 속도 +20%, 2초 지속\n지면 스킬 위에 있는 경우, 스킬 범위 +100% , 2 초간 지속",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Scepter",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix: "초당 시전 심화 수치 +160",
+  },
+  {
+    equipmentSlot: "One-Handed",
+    equipmentType: "Scepter",
+    affixType: "Tower Sequence",
+    craftingPool: "",
+    tier: "0",
+    craftableAffix:
+      "강건한 축복 최대 중첩 수 +1\n집요한 축복 최대 중첩 수 -1\n황홀한 축복 최대 중첩 수 +1",
   },
 ];

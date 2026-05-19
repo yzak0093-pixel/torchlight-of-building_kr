@@ -105,7 +105,7 @@ export const toSnakeCase = (name: string): string => {
     .replace(/^_+|_+$/g, "");
 };
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 
 export const GEAR_TYPE_DIR = join(process.cwd(), ".garbage", "tlidb", "gear");
 

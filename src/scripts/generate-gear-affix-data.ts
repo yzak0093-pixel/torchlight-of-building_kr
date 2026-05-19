@@ -75,7 +75,7 @@ const getSectionPrefix = (filename: string): string => {
 
 /**
  * Parses modifier text from an element, handling:
- * - <span class="text-mod"> tags (remove, keep inner text with ndash → hyphen)
+ * - <span class="text-mod"> tags (remove, keep inner text with ndash ??hyphen)
  * - <e> hyperlink tags (remove, keep inner text)
  * - <br> tags (convert to newlines)
  * - Various dash characters to regular hyphens
@@ -139,7 +139,9 @@ const parseSequences = (
   slot: EquipmentSlot,
 ): BaseGearAffix[] => {
   const affixes: BaseGearAffix[] = [];
-  const table = $("#Affix table.DataTable");
+  // 한국어 페이지는 #옵션, 영어 페이지는 #Affix
+  let table = $("#옵션 table.DataTable");
+  if (!table.length) table = $("#Affix table.DataTable");
   if (!table.length) return affixes;
 
   table.find("tbody tr").each((_, row) => {
@@ -148,7 +150,8 @@ const parseSequences = (
     if (tds.length < 3) return;
 
     const typeText = $(tds[2]).text().trim();
-    if (!typeText.includes("Sequence")) return;
+    // 영어: "Tower Sequence" / 한국어: "타워 시퀀스" 또는 "타워시퀀스"
+    if (!typeText.includes("Sequence") && !typeText.includes("시퀀스")) return;
 
     const modifier = parseModifierText($(tds[0]), $);
     const tier = extractTierFromTooltip($row);
@@ -239,13 +242,65 @@ const parseBaseGear = (
  */
 const parseSimpleAffixTable = (
   $: cheerio.CheerioAPI,
-  sectionId: string,
+  rawSectionId: string,
   equipmentType: EquipmentType,
   slot: EquipmentSlot,
   affixType: AffixType,
 ): BaseGearAffix[] => {
   const affixes: BaseGearAffix[] = [];
-  const section = $(sectionId);
+
+  // ── 한국어 페이지 탭 ID 동적 매핑 fallback ──
+  let sectionId = rawSectionId;
+  let section = $(sectionId);
+
+  if (!section.length) {
+    const enKoMap: Record<string, string> = {
+      Belt: "벨트",
+      Ring: "반지",
+      Necklace: "목걸이",
+      Helmet: "투구",
+      Armor: "갑옷",
+      STRChestArmor: "힘갑옷",
+      DEXChestArmor: "민첩갑옷",
+      INTChestArmor: "지능갑옷",
+      Gloves: "장갑",
+      Boots: "장화",
+      Shield: "방패",
+      "One-HandedAxe": "한손도끼",
+      "Two-HandedAxe": "양손도끼",
+      "One-HandedSword": "한손검",
+      "Two-HandedSword": "양손검",
+      "One-HandedHammer": "한손둔기",
+      "Two-HandedHammer": "양손둔기",
+      Dagger: "단검",
+      Wand: "스태프",
+      Staff: "지팡이",
+      Bow: "활",
+    };
+
+    let koSectionId = rawSectionId;
+    // 영어 패턴 추출 (예: #BeltBaseAffix -> prefix: "Belt", suffix: "BaseAffix")
+    const match = rawSectionId.match(
+      /^#([A-Za-z0-9-]+?)(BaseAffix|CorrosionBase|SweetDreamAffix|Craft)$/,
+    );
+    if (match) {
+      const [_, enPrefix, suffix] = match;
+      const koPrefix = enKoMap[enPrefix] || enPrefix;
+
+      let koSuffix = "";
+      if (suffix === "BaseAffix") koSuffix = "기본옵션";
+      else if (suffix === "CorrosionBase") koSuffix = "침식기본";
+      else if (suffix === "SweetDreamAffix") koSuffix = "아름다운꿈옵션";
+      else if (suffix === "Craft") koSuffix = "제작";
+
+      koSectionId = "#" + koPrefix + koSuffix;
+      section = $(koSectionId);
+      if (section.length) {
+        sectionId = koSectionId;
+      }
+    }
+  }
+  // ─────────────────────────────────────────────
   if (!section.length) return affixes;
 
   const table = section.find("table");
@@ -297,18 +352,121 @@ const parseCraftAffixes = (
   slot: EquipmentSlot,
 ): BaseGearAffix[] => {
   const affixes: BaseGearAffix[] = [];
-  const section = $(sectionId);
+  // 한국어 페이지 fallback: #BeltCraft -> #벨트제작 등
+  let section = $(sectionId);
+  if (!section.length) {
+    const koMap: Record<string, string> = {
+      Belt: "벨트",
+      Ring: "반지",
+      Necklace: "목걸이",
+      Helmet: "투구",
+      Gloves: "장갑",
+      Boots: "장화",
+      STRChestArmor: "힘갑옷",
+      DEXChestArmor: "민첩갑옷",
+      INTChestArmor: "지능갑옷",
+      STRHelmet: "힘투구",
+      DEXHelmet: "민첩투구",
+      INTHelmet: "지능투구",
+      STRGloves: "힘장갑",
+      DEXGloves: "민첩장갑",
+      INTGloves: "지능장갑",
+      STRBoots: "힘장화",
+      DEXBoots: "민첩장화",
+      INTBoots: "지능장화",
+      STRShield: "힘방패",
+      DEXShield: "민첩방패",
+      INTShield: "지능방패",
+      Scepter: "홀",
+      Wand: "완드",
+      Cane: "지팡이",
+      Rod: "로드",
+      Cudgel: "철퇴",
+      Dagger: "단검",
+      Claw: "클로",
+      "One-HandedAxe": "한손도끼",
+      "Two-HandedAxe": "양손도끼",
+      "One-HandedSword": "한손검",
+      "Two-HandedSword": "양손검",
+      "One-HandedHammer": "한손둔기",
+      "Two-HandedHammer": "양손둔기",
+      Bow: "활",
+      Crossbow: "석궁",
+      Musket: "머스킷",
+      FireCannon: "화염포",
+      TinStaff: "주석지팡이",
+      Pistol: "권총",
+      SpiritRing: "정령반지",
+    };
+    const m = sectionId.match(/^#([A-Za-z0-9-]+?)Craft$/);
+    if (m) {
+      const ko = koMap[m[1]] || m[1];
+      section = $("#" + ko + "제작");
+    }
+  }
+  // ── 비표준 닫기 태그 대응: cheerio가 </div id="벨트제작"> 같은 태그를
+  //    올바르게 파싱하지 못해 section 내부가 비는 경우, tab-pane 전체를 대상으로
+  //    caption으로 테이블을 직접 탐색한다.
+  const isSectionEmpty = !section.length || section.find("table").length === 0;
+
+  if (isSectionEmpty) {
+    // tab-pane div 전체에서 caption이 "메인 옵션" / "서브 옵션"인 테이블 수집
+    $("table").each((_, table) => {
+      const $table = $(table);
+      const caption = $table.find("caption").text().trim();
+      const isMain =
+        caption.toLowerCase().includes("pre-fix") ||
+        caption.includes("메인 옵션");
+      const isSub =
+        caption.toLowerCase().includes("suffix") ||
+        caption.includes("서브 옵션");
+      if (!isMain && !isSub) return;
+
+      const affixType: AffixType = isMain ? "Prefix" : "Suffix";
+
+      $table
+        .find(
+          'tbody tr[data-tier="0"], tbody tr[data-tier="1"], tbody tr[data-tier="2"], tbody tr[data-tier="3"], tbody tr[data-tier="4"]',
+        )
+        .each((_, row) => {
+          const $row = $(row);
+          const tds = $row.find("td");
+          if (tds.length < 5) return;
+
+          const tier = $(tds[0]).text().trim();
+          const modifier = parseModifierText($(tds[1]), $);
+          const library = $(tds[4]).text().trim();
+
+          affixes.push({
+            equipmentSlot: slot,
+            equipmentType,
+            affixType,
+            craftingPool: mapLibraryToPool(library),
+            tier,
+            craftableAffix: modifier,
+          });
+        });
+    });
+    return affixes;
+  }
+
   if (!section.length) return affixes;
 
-  // Find both tables (Pre-fix and Suffix)
+  // Find both tables (Pre-fix / Suffix / 메인 옵션 / 서브 옵션)
   section.find("table").each((_, table) => {
     const $table = $(table);
     const caption = $table.find("caption").text().trim();
 
     let affixType: AffixType;
-    if (caption.toLowerCase().includes("pre-fix")) {
+    if (
+      caption.toLowerCase().includes("pre-fix") ||
+      caption.includes("메인 옵션")
+    ) {
       affixType = "Prefix";
-    } else if (caption.toLowerCase().includes("suffix")) {
+    } else if (
+      caption.toLowerCase().includes("suffix") ||
+      caption.includes("서브 옵션")
+    ) {
       affixType = "Suffix";
     } else {
       return; // Skip unknown tables

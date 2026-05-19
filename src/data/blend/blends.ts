@@ -3,379 +3,344 @@
 import type { Blend } from "./types";
 
 export const Blends: readonly Blend[] = [
-  { type: "Medium", affix: "+40% Defense gained from Chest Armor" },
-  { type: "Medium", affix: "Restores 3% of Life on defeat" },
-  {
-    type: "Medium",
-    affix: "+10% additional Base Damage for Two-Handed Weapons",
-  },
-  { type: "Medium", affix: "+1 to Attack Skill Level" },
-  {
-    type: "Medium",
-    affix: "Immune to Ignite\nMinions are immune to Fire Damage",
-  },
-  { type: "Medium", affix: "+1 to Max Tenacity Blessing Stacks" },
-  { type: "Medium", affix: "Multistrikes deal 16% increasing damage" },
+  { type: "Medium", affix: "흉갑에서 획득한 방어 +40% ." },
+  { type: "Medium", affix: "처치 시, HP 3% 회복" },
+  { type: "Medium", affix: "양손 무기 기본 대미지 추가 +10%" },
+  { type: "Medium", affix: "공격 스킬 레벨 +1" },
+  { type: "Medium", affix: "점화 면역\n소환체가 화염 대미지에 면역" },
+  { type: "Medium", affix: "강건한 축복 최대 중첩 수 +1" },
+  { type: "Medium", affix: "연속 공격 대미지 16% 씩 증가" },
   {
     type: "Medium",
     affix:
-      "-4% to the Max Life and Energy Shield thresholds for inflicting Numbed\nInflicts 1 additional stack(s) of Numbed",
+      "마취를 시전하는 최대 HP와 보호막 한계값 -4%\n1 회의 마취를 추가 부여한다.",
   },
   {
     type: "Medium",
-    affix: "+12% additional Max Damage\n+12% additional Max Damage for Minions",
+    affix: "최대 대미지 추가 +12%\n소환체의 최대 대미지 별도 +12%",
   },
-  { type: "Medium", affix: "+1% Attack Speed per 40 Dexterity" },
-  { type: "Medium", affix: "+1 Jumps" },
-  { type: "Medium", affix: "+1 to Max Agility Blessing Stacks" },
-  { type: "Medium", affix: "+10% additional damage against Frozen enemies" },
-  { type: "Medium", affix: "+1 to Max Channeled Stacks" },
+  { type: "Medium", affix: "민첩 40 포인트 당, 공격 속도 +1%" },
+  { type: "Medium", affix: "바운스 횟수 +1" },
+  { type: "Medium", affix: "황홀한 축복 최대 중첩 수 +1" },
+  { type: "Medium", affix: "동결상태의 적에게 주는 대미지 +10% 추가" },
+  { type: "Medium", affix: "채널링 중첩 상한 +1" },
   {
     type: "Medium",
-    affix:
-      "Immediately starts Energy Shield Charge upon entering Low Energy Shield status",
+    affix: "보호막 부족 상태 진입 시, 보호막 충전이 즉시 발동된다.",
   },
-  { type: "Medium", affix: "8% of damage is taken from Mana before life" },
-  { type: "Medium", affix: "+1 Max Spell Burst" },
-  { type: "Medium", affix: "+1 to Max Focus Blessing Stacks" },
-  { type: "Medium", affix: "+12% Steep Strike chance." },
-  { type: "Medium", affix: "+1% Movement Speed per 10 Fervor Rating" },
+  { type: "Medium", affix: "대미지 8% 가 MP를 먼저 차감" },
+  { type: "Medium", affix: "매직 버스트 상한 +1" },
+  { type: "Medium", affix: "집요한 축복 최대 중첩 수 +1" },
+  { type: "Medium", affix: "슬래시 확률 +12%" },
+  { type: "Medium", affix: "전의 10 포인트 당, 이동 속도 +1%" },
   {
     type: "Medium",
-    affix:
-      "+5% Block Ratio\nRestores 1% Missing Life and Energy Shield when Blocking",
+    affix: "막기 비율 +5%\n막기 시, 손실된 HP 및 보호막을 1% 회복한다.",
   },
   {
     type: "Medium",
-    affix:
-      "+8% Armor DMG Mitigation Penetration\n+8% Armor DMG Mitigation Penetration for Minions",
+    affix: "아머 대미지 감소 관통 +8%\n소환체의 아머 대미지 감소 관통 +8%",
   },
   {
     type: "Medium",
-    affix:
-      "120% of the increase/decrease on Knockback distance is also applied to damage bonus",
+    affix: "넉백 거리 증가 및 감소의 120% 가 대미지 보너스에도 동일하게 작용함",
   },
-  { type: "Medium", affix: "Critical Strikes eliminate enemies under 8% Life" },
   {
     type: "Medium",
-    affix:
-      "+20% chance to Blind the target on hit\n+25% Critical Strike Damage Mitigation against Blinded enemies",
-  },
-  { type: "Medium", affix: "+100% chance to gain Blur on defeat" },
-  { type: "Medium", affix: "Gains 1 stack(s) of Focus Blessing when Reaping" },
-  {
-    type: "Medium",
-    affix:
-      "+8% additional Deterioration Damage\n+5% additional Deterioration Duration",
+    affix: "크리티컬 공격으로 HP가 8% 미만인 적을 처치할 수 있음",
   },
   {
     type: "Medium",
     affix:
-      "Upon inflicting damage, +15% damage for every type of Ailment the enemy has\nWhen Minions deal damage, +15% damage for every type of Ailment the enemy has",
+      "적중 시, +20% 의 확률로 실명을 부여한다.\n실명 상태의 적에 대한 크리티컬 대미지 감면 +25%",
   },
-  { type: "Medium", affix: "+1 to All Skills' Levels" },
+  { type: "Medium", affix: "오멘 누적 효율 +18%" },
+  { type: "Medium", affix: "수확 시 집요한 축복을 1 회 획득한다." },
+  { type: "Medium", affix: "악화 대미지 별도 +8%\n악화 지속 시간 +5%" },
   {
     type: "Medium",
     affix:
-      "+15% Life Regeneration Speed\n-15% additional Energy Shield Charge Interval",
+      "초당 시전 심화 수치 +18\n적의 심화 수치가 최대치에 도달하면 전체 저항 -8%",
   },
+  { type: "Medium", affix: "모든 스킬 레벨 +1" },
   {
     type: "Medium",
-    affix: "Converts 6% of Physical Damage taken to random Elemental Damage",
+    affix: "HP 자연 회복 속도 +15%\n보호막 에너지 충전 간격 추가 -15%",
   },
-  {
-    type: "Medium",
-    affix:
-      "+12% additional Sentry Damage if Sentry Skill is not used in the last 1 s",
-  },
+  { type: "Medium", affix: "받은 물리 대미지의 6% 를 랜덤 원소대미지로 전환" },
   {
     type: "Medium",
     affix:
-      "8% of damage taken is transferred to a random Minion\n-80% additional damage taken by Spirit Magi",
+      "최근 1 초 동안 보초병 스킬을 사용하지 않았다면, 보초병 대미지 추가 +10%",
   },
-  { type: "Medium", affix: "+8% Barrier Absorption Rate" },
-  { type: "Medium", affix: "+1 Minion Skill Level" },
+  {
+    type: "Medium",
+    affix:
+      "받는 대미지의 8% 가 랜덤 소환체에게 전이된다.\n마령이 받는 대미지 추가 -80%",
+  },
+  { type: "Medium", affix: "장벽 대미지 흡수 비율 +8%" },
+  { type: "Medium", affix: "소환체 소환 스킬 레벨 +1" },
+  { type: "Core", affix: "[도태] 공격 적중 시, HP가 18% 미만인 적 처치" },
   {
     type: "Core",
-    affix: "[Elimination] Attacks eliminate enemies under 18% Life on hit",
+    affix:
+      "[협력] 듀얼 시, 서브 무기는 공격에 참여하지 않음\n서브 무기의 대미지 60% 가 메인 무기의 최종 대미지에 추가된다.",
+  },
+  {
+    type: "Core",
+    affix: "[필사] 강건한 축복의 기본 효과가 대미지 별도 8% 증가로 전환된다.",
+  },
+  {
+    type: "Core",
+    affix: "[전도] 마취 기본 효과가 받는 번개 대미지 별도 +11% 로 전환된다.",
   },
   {
     type: "Core",
     affix:
-      "[Joined Force] Off-Hand Weapons do not participate in Attacks while Dual Wielding\nAdds 60% of the damage of the Off-Hand Weapon to the final damage of the Main-Hand Weapon",
+      "[광풍] 투사체 속도 보너스의 60% 가 투사체 대미지 별도 보너스에도 동일하게 적용된다.",
   },
   {
     type: "Core",
     affix:
-      "[Sacrifice] Changes the base effect of Tenacity Blessing to: +8% additional damage",
+      "[점프 이동] 스킬 시전 시, 50% 의 확률로 해당 스킬의 대미지 +16% .\n스킬 시전 시, 25% 의 확률로 해당 스킬의 대미지 +32% .\n스킬 시전 시, 10% 의 확률로 해당 스킬의 대미지 +80% .",
+  },
+  { type: "Core", affix: "[데자뷔] 부착 동기화 보유\n부착 최대 수량 +1" },
+  {
+    type: "Core",
+    affix: "[동상] 냉기 적중 대미지를 입힐 시 빙결을 부여한다.\n빙결 효과 +40%",
   },
   {
     type: "Core",
     affix:
-      "[Perception] +100% chance to gain 1 stacks of Agility Blessing on hit\n+1 to Max Agility Blessing Stacks",
+      "[축적] 집요한 축복 최대 중첩 수 +1\n집요한 축복 중첩 1회당, 주술 대미지 추가 +3%",
   },
   {
     type: "Core",
     affix:
-      "[Gale] 60% of the Projectile Speed bonus is also applied to the additional bonus for Projectile Damage",
+      "[야심] 적중 시, +100% 확률로 전의 10 포인트 획득\n주변에 적이 있을 경우, 전의를 획득한다.",
+  },
+  {
+    type: "Core",
+    affix: "[응집] 1 초 간격으로, 다음 메인 스킬 크리티컬 수치 추가 +50%",
+  },
+  {
+    type: "Core",
+    affix: "[둔기] 물리 대미지 추가 +30%\n적의 대미지 완화 +20%",
   },
   {
     type: "Core",
     affix:
-      "[Transition] 50% chance for this skill to deal +16% additional damage when casting a skill\n25% chance for this skill to deal +32% additional damage when casting a skill\n10% chance for this skill to deal +80% additional damage when casting a skill",
+      "[냉담한 눈초리] 잔여 에너지 5 포인트당, 대미지 별도 +1% , 소환체 대미지 별도 +1% , 대미지 최대 별도 +50%",
   },
   {
     type: "Core",
     affix:
-      "[Quick Wits] +25% additional Spell Damage when the Energy Shield is not low\n-20% additional damage taken at Low Energy Shield",
+      "[역병] 최근 몰락 상태의 적 처치 시 이동 속도 +20%\n몰락 대미지 추가 +15%",
+  },
+  {
+    type: "Core",
+    affix: "[심화] 초당 시전 심화 수치 +30\n심화 효과 추가 +30%",
   },
   {
     type: "Core",
     affix:
-      "[Frostbitten] Inflicts Frostbite when dealing Hit Cold Damage\n+50% Frostbite Effect",
+      "[보초병] 보초병 최대 수량 +1\n배치한 보초병의 스킬 시전 속도 추가 +100%",
   },
   {
     type: "Core",
     affix:
-      "[Bunch] +1 to Max Focus Blessing Stacks\n+3% additional Spell Damage per stack of Focus Blessing owned",
+      "[반사] 한 종류의 오라 영향을 받을 때마다, 대미지가 +6% 별도 추가된다.\n소환체가 한 종류의 오라 영향을 받을 때마다, 대미지 추가 +6%",
   },
   {
     type: "Core",
     affix:
-      "[Ambition] +100% chance to gain 10 Fervor rating on hit\nGains Fervor when there are enemies Nearby",
+      "[병사 소집] 1회에 소환되는 스마트 웨폰 소환체 수량 +1\n소환체 대미지 추가 +25%",
+  },
+  {
+    type: "Core",
+    affix: "[무형] 함성 스킬의 최대 영향 2배로 전환\n함성 스킬 범위 +66%",
   },
   {
     type: "Core",
     affix:
-      "[Cohesion] +50% additional Critical Strike Rating for the next Main Skill used every 1 s",
+      "[진실의 불꽃] 적에게 점화될 경우, 받는 지속 대미지에 대한 심화의 추가 보너스 65% 가 자신이 적중한 화염 대미지에도 적용된다.",
   },
   {
     type: "Core",
     affix:
-      "[Blunt] +30% additional Physical Damage\nEnemies +20% Injury Buffer",
+      "[유종의 미] 위중 상태 시, 공격 대미지가 +40% 추가된다.\n나의 최대 보호막 0 로 고정",
+  },
+  {
+    type: "Core",
+    affix: "[기묘한 각도] 마취 상태의 적에게 자신과 소환체가 주는 행운 대미지",
   },
   {
     type: "Core",
     affix:
-      "[Indifference] +1% additional damage and +1% additional Minion Damage for every 5 remaining Energy, up to +50% additional damage",
+      "[인생 무상] 물리 최소 대미지 별도 -90% , 물리 최대 대미지 별도 +80%\n최소 대미지 추가 -32%\n최대 대미지 추가 +32%",
+  },
+  {
+    type: "Core",
+    affix: "[적토성산] 적중 대미지 추가 +40%\n스킬 효과 지속 시간 추가 -30%",
+  },
+  {
+    type: "Core",
+    affix: "[극한의 프리징] 최대 빙결 +50\n냉기 대미지만 입힐 수 있다.",
   },
   {
     type: "Core",
     affix:
-      "[Plague] +20% Movement Speed when defeating Wilted enemies recently\n+15% additional Wilt Damage",
+      "[임기응변] 보호막 부족 상태가 아닌 경우, 주술 대미지 별도 +25%\n보호막 부족 상태인 경우, 받는 대미지 별도 -20%",
   },
   {
     type: "Core",
     affix:
-      "[Affliction] +30 Affliction inflicted per second\n+30% additional Affliction effect",
+      "[착실한 접근] 시전 속도 보너스와 추가 보너스의 100% 가 매직 버스트 충전 속도에도 동일하게 적용된다.\n매직 버스트 충전 속도 추가 -33%\n매직 버스트로 시전하는 스킬의 적중 대미지 별도 +40%",
   },
   {
     type: "Core",
     affix:
-      "[Sentry] Max Sentry Quantity +1\n+100% additional Cast Speed for Sentry Skills",
+      "[가까운 거리] 0.25 초 간격으로 10 미터 내의 적이 플레이어로부터 받는 대미지가 6% 추가 증가한다. 해당 효과는 최대 5회 중첩된다.",
   },
   {
     type: "Core",
     affix:
-      "[Reflection] +6% additional damage for each type of Aura you are affected by\nMinions +6% additional damage for each type of Aura they are affected by",
+      "[갈라진 상처] 최대 외상 +2 .\n외상 대미지 추가 -99%\n적이 외상을 1회 보유 시마다 받는 적중 물리 대미지 +12% , 최대 별도 +60%",
   },
   {
     type: "Core",
     affix:
-      "[Rally] Synthetic Troop Minions summoned at a time +1\n+25% additional Minion Damage",
+      "[배수진 전투] 막기 비율이 0% 로 고정된다.\n공격 또는 주술 막기 확률 +3% 당, 대미지 별도 +2% , 최대 +90%",
   },
   {
     type: "Core",
     affix:
-      "[Well Matched] Deals up to +25% additional Attack Damage to enemies in proximity, and this damage reduces as the distance from the enemy grows\n-15% additional damage taken from enemies in proximity, and this damage reduces as the distance from the enemy grows",
+      "[중태] 적의 HP가 높을수록 해당 적에게 주는 몰락 대미지가 높아지며, 최대로 몰락 대미지 별도 +60%",
   },
   {
     type: "Core",
     affix:
-      "[Starfire] +1 Ignite limit\nWhen Ignite is inflicted, it spreads to enemies within 10m. Interval: 0.3s",
+      "[더러운 꼼수] 대미지를 입힐 때, 적이 보유한 상태 이상 1개당 적중 대미지 별도 +12% (곱연산)\n소환체가 대미지를 입힐 때, 적이 보유한 상태 이상 1개당 적중 대미지 별도 +12% (곱연산)",
+  },
+  { type: "Core", affix: "[은연] 방황 보유 시, 지속 대미지 별도 +30%" },
+  {
+    type: "Core",
+    affix:
+      "[강력한 가드] 소환체 소환 스킬 레벨 +2\n통솔 초당 4 포인트 증가\n마령의 최초 성장치 +40 .",
   },
   {
     type: "Core",
     affix:
-      "[No Loose Ends] +50% additional Attack Damage at Low Life\nYour Max Energy Shield is fixed at 0",
+      "[원천] 마령 스킬의 MP 봉인 보상 +50%\n마령의 근원 효과 추가 +30%\n마령 자극 스킬 효과 추가 +30%",
   },
   {
     type: "Core",
     affix:
-      "[Queer Angle] You and Minions deal Lucky Damage against Numbed enemies",
+      "[동일한 공명] 보초병 대미지 추가 +25%\n공격 속도의 보너스와 추가 보너스의 100% 가 공격 보초병의 시전 빈도에도 동일하게 적용된다.\n시전 속도의 보너스와 추가 보너스의 100% 가 주술 보초병의 시전 빈도에도 동일하게 적용된다.",
+  },
+  { type: "Core", affix: "[의연] 강건한 축복 중첩 1회당, 아머 추가 +4%" },
+  {
+    type: "Core",
+    affix:
+      "[반석] 강건한 축복 중첩 1회당 받는 물리 대미지의 5% 를 화염 대미지로 전환",
+  },
+  {
+    type: "Core",
+    affix: "[비법] 소모 MP의 100% 를 HP 소모로 전환\n최대 HP 추가 +25% .",
   },
   {
     type: "Core",
     affix:
-      "[Impermanence] -90% additional Min Physical Damage, and +80% additional Max Physical Damage\n-32% additional min damage\n+32% additional Max Damage",
+      "[도피 마스터] 편향 최대 중첩 +1 .\n5 미터 이동할 때마다 편향 1 회 획득",
   },
   {
     type: "Core",
     affix:
-      "[Steady Accumulation] +40% additional Hit Damage\nAdditional -30% Skill Effect Duration",
+      "[환골탈태] HP 반환과 보호막 반환의 50% 를 지속 회복으로 전환\n반환 간격 추가 -50%",
   },
   {
     type: "Core",
     affix:
-      "[Peculiar Vibe] You can apply 1 additional Tangle(s) to enemies\n-30% additional Tangle Skill Area",
+      "[독이 든 안심] 대미지 완화 +25%\n위중 상태일때, 받는 대미지 추가 -15%",
   },
   {
     type: "Core",
     affix:
-      "[Frozen Lotus] +25% additional Cold Damage\n+25% additional Minion Cold Damage\nSkills no longer cost Mana",
+      "[광휘의 결계] 최근 가동된 보호막 에너지 충전은 공격을 받아도 중단되지 않음\n보호막 에너지 충전 속도 +50%",
+  },
+  {
+    type: "Core",
+    affix: "[갑각] 최대 보호막 추가 +35%\n최대 HP를 100 로 설정",
+  },
+  {
+    type: "Core",
+    affix: "[마법 에너지] 대미지 20% 가 MP를 먼저 차감\n최대 MP 추가 +12% .",
+  },
+  {
+    type: "Core",
+    affix: "[강인] 치명적 일격을 받은 후, 50% 의 확률로 HP를 1 포인트 남긴다.",
   },
   {
     type: "Core",
     affix:
-      "[Quick Ritual] Min Channeled Stacks +1\n+20% additional Channeled Skill damage",
+      "[중앙 권력] 적중 시, 현재 전의의 25% 만큼 전의 수치 추가 획득, 쿨타임 0.3 초\n공격을 받을 때 현재 전의의 절반을 소모하며, 1 포인트 소모할 때마다 해당 대미지 추가 -0.8%",
+  },
+  {
+    type: "Core",
+    affix: "[전면 방어] 막기 비율 1% 당 받는 지속 대미지 별도 -1%",
+  },
+  {
+    type: "Core",
+    affix: "[홀리] 받는 저주 효과 -95%\n저주받은 적에게 받는 대미지 추가 -15%",
+  },
+  {
+    type: "Core",
+    affix: "[위축] 1초 간격으로 장벽을 획득한다.\n장벽방어막 비율 +50%",
   },
   {
     type: "Core",
     affix:
-      "[Impending] Every 0.25 s, +6% additional damage taken for enemies within 10 m. Stacks up to 5 times",
+      "[맞춤형 처방] 영약 스킬의 회복 효과는 제거되지 않는다.\n장착한 영약 스킬이 1개 미만 시, 영약 스킬 효과의 지속 시간 추가 -40%\n장착한 영약 스킬이 2개 미만 시, 영약 스킬 효과 추가 +60%",
   },
   {
     type: "Core",
     affix:
-      "[Hair-trigger] +2% additional damage of a skill for every 7 points of Fervor Rating when the skill is triggered",
+      "[운동 에너지 전환] 5 m 이동할 때마다 100% 의 확률로 장벽을 획득한다.\n장벽을 획득하는 경우 장벽이 초기화된다.\n장벽방어막 비율 별도 -40%",
   },
+  { type: "Core", affix: "엠버 갑옷" },
+  { type: "Core", affix: "[방어 태세] 막기 비율 +25%" },
   {
     type: "Core",
     affix:
-      "[Last Stand] Block Ratio is set to 0%\nFor every +3% Attack or Spell Block Chance, +2% additional damage, up to +90%",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Beyond Cure] Deals more Wilt Damage to enemies with more Life, up to +60% additional Wilt Damage",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Dirty Tricks] Upon inflicting damage, +12% additional Hit Damage (multiplies) for every type of Ailment the enemy has\nWhen Minions deal damage, +12% additional Hit Damage (multiplies) for every type of Ailment the enemy has",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Subtle Impact] Blur gains an additional effect: +25% additional Damage Over Time",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Mighty Guard] +2 Minion Skill Level\n+ 4 Command per second\n+40 initial Growth for Spirit Magi",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Source] +50% Sealed Mana Compensation for Spirit Magus Skills\n+30% additional Origin of Spirit Magus Effect\nSpirit Magi +30% additional Empower Skill Effect",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Co-resonance] +25% additional Sentry Damage\nAttack Speed bonus and 100% of additional bonus are also applied to Attack Sentries' Cast Frequency\nCast Speed bonus and 100% of additional bonus are also applied to Spell Sentries' Cast Frequency",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Resolve] +4% additional Armor per stack of Tenacity Blessing owned",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Rock] Converts 5% of Physical Damage taken to Fire Damage for every stack of Tenacity Blessing you have",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Arcane] Converts 100% of Mana Cost to Life Cost\n+25% additional Max Life",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Master Escapist] +1 Max Deflection stacks\nGains 1 stacks of Deflection on Evasion",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Rebirth] Converts 50% of Life Regain and Energy Shield Regain to Restoration Over Time\n-50% additional Regain Interval",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Poisoned Relief] +25% Injury Buffer\n-15% additional damage taken at Low Life",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Barrier of Radiance] Energy Shield Charge started recently cannot be interrupted by damage\n+50% Energy Shield Charge Speed",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Shell] +35% additional Max Energy Shield\nYour Max Life is set to 100",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Mana] 20% of damage is taken from Mana before life\n+12% additional Max Mana",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Determined] Upon taking fatal damage, you have a 50% chance to keep at least 1 Life",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Centralize] Gains additional Fervor Rating equal to 25% of the current Fervor Rating on hit. Cooldown: 0.3 s\nConsumes half of current Fervor Rating when hit. -0.8% additional damage per 1 point consumed",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Full Defense] +25% additional Defense gained from Shield\n-1% additional Damage Over Time taken for every 1% Block Ratio",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Holiness] -95% Curse effect against you\n-15% additional damage taken from Cursed enemies",
-  },
-  {
-    type: "Core",
-    affix: "[Shrink Back] Gains Barrier every 1s\n+50% Barrier Shield",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Panacea] Restoration Skills: +100% Restoration Effect\nRestoration Effect from Restoration Skills cannot be removed",
-  },
-  {
-    type: "Core",
-    affix:
-      "[Kinetic Conversion] 100% chance to gain a Barrier for every 5 m you move\nRefreshes Barrier when gaining Barrier\n-40% additional Barrier Shield",
+      "[저항] 유효부식 저항 1% 당 +1% 의 확률로 원소 상태 이상을 회피한다.",
   },
   {
     type: "Aromatic",
     affix:
-      "[Divine Grace] Gains 1 stack(s) of a random Blessing every second. Interval: 1s\n+1% additional damage per stack of Blessing, up to 10%\n-1% additional damage taken per stack of Blessing, up to 10%",
+      "[신의 향유] 모든 축복의 기본 효과 전환: 대미지 별도 +4%, 받는 대미지 별도 -4%\n각 축복의 최대 중첩 수는 4",
   },
   {
     type: "Aromatic",
     affix:
-      "[Caged Fury] -6% additional Attack Speed (multiplies) for every 1 time(s) you cast an Attack Mobility Skill in the last 2s\n+15% additional Attack Speed and +35% additional Attack Damage after using a Mobility Skill. The effect falls off to 0 within 2s",
+      "[철장 속의 맹수] 최근 1 초 동안 이동 거리가 12 미터 이상일 경우, 공격 속도 추가 +15%, 이동 속도 +15%\n최근 1 초 동안 이동 거리가 12 미터를 초과하지 않을 경우, 대미지 별도 +35%, 체형 +35%",
   },
   {
     type: "Aromatic",
     affix:
-      "[Rotted Taboo] Takes 100 Secondary Erosion Damage when casting an Erosion Skill. Interval: 0.1s\n+6 to Erosion Skill Level\nErosion Skills are guaranteed to inflict all types of Ailment on hit",
+      "[부패의 과실] 스킬 시전 시, 부식 간접 대미지를 100 포인트 받는다. 간격 0.1초\n모든 스킬 레벨 +3",
+  },
+  {
+    type: "Aromatic",
+    affix: "[전우의 우애] 소환체가 허리띠의 보너스를 획득한다.",
   },
   {
     type: "Aromatic",
     affix:
-      "[Comradeship] Minions gain the Belt's bonuses\n-10% additional Minion Damage",
+      "[축성 고행] 정밀 마법의 근원 1 레벨을 보유한다.\n정밀 마법의 근원이 추가 기본 효과 획득: 대미지의 20%를 MP로 우선 차감",
   },
   {
     type: "Aromatic",
     affix:
-      "[Hallowed Journey] Triggers Lv. 40 Blurry Steps, Secret Origin Unleash, and Arcane Circle after consuming a total of 5000 Mana. Interval: 2s",
+      "[삼생의 가호] 행운 대미지 효과 전환: 3회의 랜덤 대미지 수치를 판정하여 가장 높은 값을 취한다.\n행운 대미지",
   },
 ];

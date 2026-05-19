@@ -5,7 +5,7 @@ import { join } from "node:path";
 import * as cheerio from "cheerio";
 import type { Blend } from "../data/blend/types";
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const BLEND_URL = `${BASE_URL}/Blending_Rituals`;
 const CACHE_DIR = join(process.cwd(), ".garbage", "tlidb");
 const CACHE_PATH = join(CACHE_DIR, "blending_rituals.html");
@@ -75,9 +75,15 @@ const cleanAffixHtml = (html: string): string => {
 };
 
 const parseBlendType = (typeText: string): string | undefined => {
-  if (typeText.startsWith("Medium Talent")) return "Medium";
-  if (typeText.startsWith("Core Talent")) return "Core";
-  if (typeText.startsWith("Aromatic Talent")) return "Aromatic";
+  if (typeText.startsWith("Medium Talent") || typeText.startsWith("중위 재능"))
+    return "Medium";
+  if (typeText.startsWith("Core Talent") || typeText.startsWith("핵심 재능"))
+    return "Core";
+  if (
+    typeText.startsWith("Aromatic Talent") ||
+    typeText.startsWith("향기 재능")
+  )
+    return "Aromatic";
   return undefined;
 };
 
@@ -103,7 +109,9 @@ const extractBlendData = (html: string): Blend[] => {
   const items: Blend[] = [];
 
   // Each blend is in a <div class="col"> inside the BlendingRituals tab
-  const tab = $("#BlendingRituals");
+  let tab = $("#조향의식");
+  if (!tab.length) tab = $("#BlendingRituals");
+  if (!tab.length) tab = $("body");
   const cols = tab.find("div.col");
   console.log(`Found ${cols.length} blend entries`);
 
@@ -163,7 +171,7 @@ const main = async (): Promise<void> => {
   console.log(`Extracted ${items.length} blends`);
 
   if (items.length === 0) {
-    throw new Error("No blends extracted — check HTML structure");
+    throw new Error("No blends extracted ??check HTML structure");
   }
 
   const outDir = join(process.cwd(), "src", "data", "blend");

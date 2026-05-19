@@ -9,7 +9,7 @@ import type { HeroMemory } from "../data/hero-memory/types";
 // Fetching
 // ============================================================================
 
-const HERO_MEMORIES_URL = "https://tlidb.com/en/Hero_Memories";
+const HERO_MEMORIES_URL = "https://tlidb.com/ko/Hero_Memories";
 const HERO_MEMORIES_DIR = join(
   process.cwd(),
   ".garbage",
@@ -58,29 +58,14 @@ const TLIDB_HTML_PATH = join(
 const cleanAffixText = (html: string): string => {
   let text = html;
 
-  // Remove data-bs-title attributes (they contain tooltip HTML that breaks parsing)
   text = text.replace(/\s*data-bs-title="[^"]*"/g, "");
-
-  // Convert <br> tags to newlines before removing other HTML tags
   text = text.replace(/<br\s*\/?>/gi, "\n");
-
-  // Remove <span class="text-mod"> tags but keep content
   text = text.replace(/<span[^>]*class="text-mod"[^>]*>([^<]*)<\/span>/g, "$1");
-
-  // Remove <e> hyperlink tags but keep content
   text = text.replace(/<e[^>]*>([^<]*)<\/e>/g, "$1");
-
-  // Remove <i> info icon elements entirely
   text = text.replace(/<i[^>]*><\/i>/g, "");
   text = text.replace(/<i[^>]*\/>/g, "");
-
-  // Remove any remaining HTML tags
   text = text.replace(/<[^>]+>/g, "");
-
-  // Convert HTML en-dash entity to hyphen
   text = text.replace(/&ndash;/g, "-");
-
-  // Decode common HTML entities
   text = text
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
@@ -88,11 +73,7 @@ const cleanAffixText = (html: string): string => {
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&nbsp;/g, " ");
-
-  // Normalize horizontal whitespace (preserve newlines)
   text = text.replace(/[^\S\n]+/g, " ");
-
-  // Trim whitespace from each line and normalize multiple newlines
   text = text
     .split("\n")
     .map((line) => line.trim())
@@ -103,14 +84,25 @@ const cleanAffixText = (html: string): string => {
 };
 
 const extractTypeFromHeader = (headerText: string): string | undefined => {
-  // Header format: "Base Stats /15" or "Fixed Affix /219" or "Random Affix /..."
-  if (headerText.includes("Base Stats")) {
+  if (
+    headerText.includes("Base Stats") ||
+    headerText.includes("Implicit") ||
+    headerText.includes("기본 속성")
+  ) {
     return "Base Stats";
   }
-  if (headerText.includes("Fixed Affix")) {
+  if (
+    headerText.includes("Fixed Affix") ||
+    headerText.includes("고유 옵션") ||
+    headerText.includes("고정")
+  ) {
     return "Fixed Affix";
   }
-  if (headerText.includes("Random Affix")) {
+  if (
+    headerText.includes("Random Affix") ||
+    headerText.includes("랜덤 옵션") ||
+    headerText.includes("랜덤")
+  ) {
     return "Random Affix";
   }
   return undefined;
@@ -120,25 +112,35 @@ const extractHeroMemoryData = (html: string): HeroMemory[] => {
   const $ = cheerio.load(html);
   const items: HeroMemory[] = [];
 
-  // Find all card elements that contain tables
   $(".card").each((_, card) => {
     const $card = $(card);
-    const headerText = $card.find(".card-header").first().text().trim();
-    const memoryType = extractTypeFromHeader(headerText);
+    let headerText = $card.find(".card-header").first().text().trim();
 
-    if (memoryType === undefined) {
-      return; // Skip cards without recognized type
+    if (headerText.includes("기본 속성")) {
+      headerText = "Base Stats";
+    } else if (headerText.includes("고유 옵션")) {
+      headerText = "Fixed Affix";
+    } else if (headerText.includes("랜덤 옵션")) {
+      headerText = "Random Affix";
     }
 
-    // Find 5-column tables within this card (Tier, Modifier, Level, Weight, Source)
+    const memoryType = extractTypeFromHeader(headerText);
+    console.log("🔍 [Debug] Header:", headerText, "| Type:", memoryType);
+
+    if (memoryType === undefined) {
+      return;
+    }
+
     $card.find("table.DataTable").each((_, table) => {
       const $table = $(table);
       const headers = $table.find("thead th");
       if (headers.length !== 5) {
         return;
       }
+      console.log("🔍 [Debug] Columns:", headers.length);
       const firstHeader = $(headers[0]).text().trim();
-      if (firstHeader !== "Tier") {
+      console.log("🔍 [Debug] First Header:", firstHeader);
+      if (firstHeader !== "Tier" && firstHeader !== "티어") {
         return;
       }
 
@@ -151,7 +153,12 @@ const extractHeroMemoryData = (html: string): HeroMemory[] => {
         const tier = parseInt($(tds[0]).text().trim(), 10);
         const affixHtml = $(tds[1]).html() || "";
         const affix = cleanAffixText(affixHtml);
-        const item = $(tds[4]).find("a").text().trim();
+
+        // Extract English item name from href
+        // e.g. "/ko/Memory_of_Origin" -> "Memory of Origin"
+        const itemHref = $(tds[4]).find("a").attr("href") ?? "";
+        const itemSlug = itemHref.split("/").pop() ?? "";
+        const item = itemSlug.replace(/_/g, " ");
 
         if (affix.length > 0 && item.length > 0) {
           items.push({ type: memoryType, item, affix, tier });
@@ -190,7 +197,6 @@ const main = async (options: Options): Promise<void> => {
   const items = extractHeroMemoryData(html);
   console.log(`Extracted ${items.length} hero memories`);
 
-  // Log breakdown by type
   const byType = items.reduce(
     (acc, item) => {
       acc[item.type] = (acc[item.type] || 0) + 1;

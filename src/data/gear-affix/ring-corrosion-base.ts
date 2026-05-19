@@ -9,7 +9,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+5% XP earned",
+    craftableAffix: "경험치 획득 +5%",
   },
   {
     equipmentSlot: "Trinket",
@@ -17,7 +17,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+5% Movement Speed",
+    craftableAffix: "이동 속도 +5%",
   },
   {
     equipmentSlot: "Trinket",
@@ -25,7 +25,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to curse",
+    craftableAffix: "저주 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -33,7 +33,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to Trauma\nImmune to Wilt",
+    craftableAffix: "외상 면역\n몰락 면역",
   },
   {
     equipmentSlot: "Trinket",
@@ -41,7 +41,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-6)% Elemental Resistance",
+    craftableAffix: "원소저항 +(5-6)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -49,7 +49,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-10)% Strength",
+    craftableAffix: "힘 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -57,7 +57,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-10)% Dexterity",
+    craftableAffix: "민첩 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -65,7 +65,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-10)% Intelligence",
+    craftableAffix: "지혜 +(8-10)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -73,7 +73,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(6-8)% Attack Speed",
+    craftableAffix: "공격 속도 +(6-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -81,7 +81,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(6-8)% Cast Speed",
+    craftableAffix: "시전 속도 +(6-8)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -89,7 +89,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-70)% damage",
+    craftableAffix: "대미지 +(50-70)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -97,7 +97,7 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Max Life",
+    craftableAffix: "최대 HP +(15-25)%",
   },
   {
     equipmentSlot: "Trinket",
@@ -105,6 +105,6 @@ export const RING_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Max Energy Shield",
+    craftableAffix: "최대 보호막 +(15-25)%",
   },
 ];

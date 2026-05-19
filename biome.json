@@ -1,7 +1,17 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
-  "files": { "ignoreUnknown": false, "includes": ["**", "!.claude"] },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!.claude",
+      "!src/scripts/generate-hero-translate.ts",
+      "!src/scripts/generate-legendary-translate.ts",
+      "!src/scripts/generate-skill-translate.ts",
+      "!src/scripts/generate-talent-translate.ts"
+    ]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",

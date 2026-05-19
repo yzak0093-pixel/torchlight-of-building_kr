@@ -25,12 +25,12 @@ const CURRENT_SEASON = "SS12Season";
 // Fetching
 // ============================================================================
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const LEGENDARY_GEAR_DIR = join(
   process.cwd(),
   ".garbage",
   "tlidb",
-  "en",
+  "ko",
   "legendary_gear",
 );
 
@@ -172,7 +172,11 @@ const extractAffixChoiceCards = (
     const headerText = $header.text().trim();
 
     // Check if the header text starts and ends with angle brackets (possibly with "Corroded" suffix)
-    const corrodedSuffix = "Corroded";
+    const corrodedSuffix = headerText.endsWith("침식")
+      ? "침식"
+      : headerText.endsWith("침식됨")
+        ? "침식됨"
+        : "Corroded";
     const isCorroded = headerText.endsWith(corrodedSuffix);
 
     // Extract the descriptor without angle brackets and optional Corroded suffix
@@ -281,7 +285,10 @@ const extractLegendary = (
   $(".card.ui_item").each((_, card) => {
     const $card = $(card);
     const itemVer = $card.find(".item_ver").text().trim();
-    if (itemVer === CURRENT_SEASON && !$card.hasClass("previousItem")) {
+    if (
+      (itemVer === CURRENT_SEASON || itemVer.includes("SS12")) &&
+      !$card.hasClass("previousItem")
+    ) {
       seasonCard = $card;
     }
   });
@@ -329,7 +336,7 @@ const extractLegendary = (
   $(".card.ui_item").each((_, card) => {
     const $card = $(card);
     const header = $card.find(".card-header").text().trim();
-    if (header === "Corroded") {
+    if (header === "Corroded" || header === "침식" || header === "침식됨") {
       corrodedCard = $card;
       return false; // break loop
     }
@@ -351,12 +358,17 @@ const extractLegendary = (
   $(".card.ui_item").each((_, card) => {
     const $card = $(card);
     const header = $card.find(".card-header").text().trim();
-    if (header === "Info") {
+    if (header === "Info" || header === "정보") {
       // Find the Base: line and get the <a> text
       $card.find(".card-body li").each((_, li) => {
         const $li = $(li);
         const text = $li.text();
-        if (text.startsWith("Base:")) {
+        if (
+          text.startsWith("Base:") ||
+          text.startsWith("기본:") ||
+          text.startsWith("베이스:") ||
+          text.includes("기본")
+        ) {
           baseItem = $li.find("a").text().trim();
           return false; // break inner loop
         }
@@ -379,7 +391,7 @@ const extractLegendary = (
 // ============================================================================
 
 /**
- * Builds a map from legendary name → equipment info by reading gear type pages
+ * Builds a map from legendary name ??equipment info by reading gear type pages
  * and extracting legendary links from each one.
  */
 const buildEquipmentMap = async (): Promise<
@@ -399,7 +411,9 @@ const buildEquipmentMap = async (): Promise<
       const links = extractLegendaryLinksFromGearPage(html);
 
       for (const link of links) {
-        equipmentMap.set(link.name, {
+        // href에서 영어 이름 추출 (예: "Windbreath_Dispersion" -> "windbreath dispersion")
+        const koName = link.name.toLowerCase();
+        equipmentMap.set(koName, {
           equipmentSlot: info.slot,
           equipmentType: info.type,
         });
@@ -458,6 +472,7 @@ interface Options {
 }
 
 const main = async (options: Options): Promise<void> => {
+  options.refetch = true; // 무조건 강제 다운로드 패치
   if (options.refetch) {
     console.log("Refetching pages from tlidb...\n");
     await fetchLegendaryPages();
@@ -494,7 +509,7 @@ const main = async (options: Options): Promise<void> => {
     }
 
     // Step 3: Merge with equipment data from gear type pages
-    const equipmentInfo = equipmentMap.get(tlidbData.name);
+    const equipmentInfo = equipmentMap.get(tlidbData.name.toLowerCase());
     if (equipmentInfo === undefined) {
       console.warn(`No equipment data found for: ${tlidbData.name} - skipping`);
       skippedCount++;

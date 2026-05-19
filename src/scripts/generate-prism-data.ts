@@ -5,7 +5,7 @@ import * as cheerio from "cheerio";
 import { program } from "commander";
 import type { Prism } from "../data/prism/types";
 
-const BASE_URL = "https://tlidb.com/en";
+const BASE_URL = "https://tlidb.com/ko";
 const PRISM_PAGE_PATH = "Ethereal_Prism";
 const OUTPUT_PATH = join(process.cwd(), ".garbage", "tlidb", "prism.html");
 
