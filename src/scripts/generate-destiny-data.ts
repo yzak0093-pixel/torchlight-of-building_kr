@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -78,6 +78,8 @@ const parseDestinyEntry = (
   fullName: string,
 ): { type: string; name: string } | undefined => {
   const colonIdx = fullName.indexOf(":");
+  if (colonIdx === -1 && fullName.includes("미정 숙명"))
+    return { type: "미정 숙명", name: fullName };
   if (colonIdx === -1) {
     // "Undetermined Fate" has no colon
     return { type: fullName, name: fullName };
@@ -129,7 +131,7 @@ export const Destinies: readonly Destiny[] = ${JSON.stringify(items)};
 };
 
 const main = async (): Promise<void> => {
-  const useCache = !process.argv.includes("--refetch");
+  const useCache = false;
 
   console.log("Loading destiny HTML...");
   const html = await fetchDestinyHtml(useCache);

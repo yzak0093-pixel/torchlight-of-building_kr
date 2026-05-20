@@ -613,3 +613,5 @@ function TalentsSlotPage(): React.ReactNode {
     </>
   );
 }
+
+

@@ -88,7 +88,7 @@ export const InverseImageSection: React.FC<InverseImageSectionProps> = ({
       <Modal
         isOpen={isModalOpen}
         onClose={handleClose}
-        title={editingInverseImage !== undefined ? "역상 편집" : "역상 제작"}
+        title={editingInverseImage !== undefined ? "역상 Edit" : "역상 제작"}
         dismissible={false}
       >
         <InverseImageCrafter
@@ -100,3 +100,5 @@ export const InverseImageSection: React.FC<InverseImageSectionProps> = ({
     </div>
   );
 };
+
+

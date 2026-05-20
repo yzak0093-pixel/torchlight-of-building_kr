@@ -1,4 +1,4 @@
-import type { DivinitySlate } from "@/src/tli/core";
+﻿import type { DivinitySlate } from "@/src/tli/core";
 import { SlateInventoryItem } from "./SlateInventoryItem";
 
 interface SlateInventoryProps {
@@ -43,3 +43,5 @@ export const SlateInventory: React.FC<SlateInventoryProps> = ({
     </div>
   );
 };
+
+

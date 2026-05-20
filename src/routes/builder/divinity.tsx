@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import type {
   DivinitySlate,
   PlacedSlate,
@@ -52,3 +52,5 @@ function DivinityPage(): React.ReactNode {
     />
   );
 }
+
+

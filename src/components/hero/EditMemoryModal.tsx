@@ -102,7 +102,7 @@ const ExistingAffix = ({
           onClick={onDelete}
           className="ml-2 text-xs font-medium text-red-500 hover:text-red-400"
         >
-          삭제
+          Delete
         </button>
       </div>
     </div>
@@ -465,7 +465,7 @@ export const EditMemoryModal = ({
     closeModal();
   };
 
-  const title = mode === "create" ? "추억 제작" : "추억 편집";
+  const title = mode === "create" ? "추억 제작" : "추억 Edit";
 
   return (
     <Modal
@@ -725,3 +725,5 @@ export const EditMemoryModal = ({
     </Modal>
   );
 };
+
+

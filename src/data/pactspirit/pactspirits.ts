@@ -1,3943 +1,2626 @@
-// This file is machine-generated. Do not modify manually.
-// To regenerate, run: pnpm exec tsx src/scripts/generate-pactspirit-data.ts
+// Machine-generated
 import type { Pactspirit } from "./types";
 
 export const Pactspirits = [
   {
     type: "Persistent",
-    rarity: "Legendary",
-    name: "Abyssal King Soul",
-    innerRing1: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing2: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing3: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing4: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: {
-      name: "Reaping Cooldown II",
-      affix: "+10% Reaping Recovery Speed",
-    },
-    midRing2: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1:
-      "35% chance for Damage Over Time to spread to targets in Proximity\n+25% additional Reaping Recovery Speed",
-    affix2:
-      "35% chance for Damage Over Time to spread to targets in Proximity\n+25% additional Reaping Recovery Speed\n+2% additional damage",
+    rarity: "Magic",
+    name: "계곡의 꽃 정령",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "마령의 최초 성장치 +60 .",
+    affix2: "마령의 최초 성장치 +60 .\n주변에 마령이 있을 경우, 이동 속도 +6%",
     affix3:
-      "35% chance for Damage Over Time to spread to targets in Proximity\n+25% additional Reaping Recovery Speed\n+10% Movement Speed if you have caused Reaping recently\n+2% additional damage",
+      "마령의 최초 성장치 +60 .\n주변에 마령이 있을 경우, 이동 속도 +6%\n마령 성장치 20 포인트당, 대미지 추가 +1% , 최대 추가 +5%",
     affix4:
-      "35% chance for Damage Over Time to spread to targets in Proximity\n+25% additional Reaping Recovery Speed\n+10% Movement Speed if you have caused Reaping recently\n+4% additional damage",
+      "마령의 최초 성장치 +60 .\n주변에 마령이 있을 경우, 이동 속도 +12%\n마령 성장치 20 포인트당, 대미지 추가 +1% , 최대 추가 +5%",
     affix5:
-      "35% chance for Damage Over Time to spread to targets in Proximity\n+25% additional Reaping Recovery Speed\n+20% Movement Speed if you have caused Reaping recently\n+4% additional damage",
+      "마령의 최초 성장치 +60 .\n주변에 마령이 있을 경우, 이동 속도 +12%\n마령 성장치 20 포인트당, 대미지 추가 +1% , 최대 추가 +10%",
     affix6:
-      "50% chance for Damage Over Time to spread to targets in Proximity\n+35% additional Reaping Recovery Speed\n+20% Movement Speed if you have caused Reaping recently\n+4% additional damage",
-  },
-  {
-    type: "Survival",
-    rarity: "Legendary",
-    name: "Anthem",
-    innerRing1: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing2: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    innerRing6: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    midRing1: { name: "Max Life II", affix: "+8% Max Life" },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: {
-      name: "XP Balance II",
-      affix:
-        "-20% XP falloff caused by the level difference between the player and the map",
-    },
-    affix1: "+10% additional Life\nRegenerates 0.6% Life per second",
-    affix2:
-      "+10% additional Life\nRegenerates 0.6% Life per second\n-2% additional damage taken",
-    affix3:
-      "+10% additional Life\nRegenerates 0.6% Life per second\nRegenerates 1% Life per second\n-2% additional damage taken",
-    affix4:
-      "+10% additional Life\nRegenerates 0.6% Life per second\nRegenerates 1% Life per second\n-4% additional damage taken",
-    affix5:
-      "+10% additional Life\nRegenerates 0.6% Life per second\nRegenerates 2% Life per second\n-4% additional damage taken",
-    affix6:
-      "+14% additional Life\nRegenerates 0.9% Life per second\nRegenerates 2% Life per second\n-4% additional damage taken",
+      "마령의 최초 성장치 +75 .\n주변에 마령이 있을 경우, 이동 속도 +12%\n마령 성장치 20 포인트당, 대미지 추가 +1% , 최대 추가 +10%",
   },
   {
     type: "Persistent",
     rarity: "Magic",
-    name: "Awooawoo - Amber",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing4: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "고양이 나방",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.8% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +1%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n1.8% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +1%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n3.6% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +2%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n3.6% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Awooawoo - Blue Sky",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing4: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing5: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    innerRing6: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.4% additional damage to them\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.4% additional damage to them\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.8% additional damage to them\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.8% additional damage to them\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Awooawoo - Drizzle",
-    innerRing1: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing2: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing5: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing6: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n17.5 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n17.5 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+35 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+35 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Awooawoo - Violet",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Attack Damage dealt to Nearby enemies\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-  },
-  {
-    type: "Cold",
-    rarity: "Magic",
-    name: "Awooawoo - White Mist",
-    innerRing1: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing2: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing3: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing4: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing5: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    innerRing6: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Cold Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Cold Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Cold Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Cold Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% additional Cold Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Azure Gunslinger",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "Gains 1 stack of Pure Heart when using an Attack Mobility Skill",
-    affix2:
-      "Gains 1 stack of Pure Heart when using an Attack Mobility Skill\nWhen gaining Pure Heart, there is a 50% chance to gain 1 additional stack of Pure Heart",
-    affix3:
-      "Gains 1 stack of Pure Heart when using an Attack Mobility Skill\nWhen gaining Pure Heart, there is a 50% chance to gain 1 additional stack of Pure Heart\n-4% additional damage taken when Pure Heart is active",
-    affix4:
-      "Gains 1 stack of Pure Heart when using an Attack Mobility Skill\nWhen gaining Pure Heart, there is a 100% chance to gain 1 additional stack of Pure Heart\n-4% additional damage taken when Pure Heart is active",
-    affix5:
-      "Gains 1 stack of Pure Heart when using an Attack Mobility Skill\nWhen gaining Pure Heart, there is a 100% chance to gain 1 additional stack of Pure Heart\n-8% additional damage taken when Pure Heart is active",
-    affix6:
-      "Gains 1 stack of Pure Heart when using an Attack Mobility Skill\nWhen gaining Pure Heart, there is a 100% chance to gain 1 additional stack of Pure Heart\n-8% additional damage taken when Pure Heart is active\n+1 Max Pure Heart Stacks\n+100% Pure Heart Duration",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Backup Power",
-    innerRing1: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing2: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing3: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing4: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    midRing1: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    midRing2: { name: "Lightning Damage II", affix: "+24% Lightning Damage" },
-    midRing3: { name: "Movement Speed II", affix: "+6% Movement Speed" },
-    affix1: "+35% Numbed Effect",
-    affix2:
-      "+35% Numbed Effect\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.2 s",
-    affix3:
-      "+35% Numbed Effect\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.2 s\n+15% Movement Speed if you have inflicted Numbed recently",
-    affix4:
-      "+35% Numbed Effect\nWhen inflicting Numbed, restores 3% Missing Life and Energy Shield. Interval: 0.2 s\n+15% Movement Speed if you have inflicted Numbed recently",
-    affix5:
-      "+35% Numbed Effect\nWhen inflicting Numbed, restores 3% Missing Life and Energy Shield. Interval: 0.2 s\n+30% Movement Speed if you have inflicted Numbed recently",
-    affix6:
-      "+45% Numbed Effect\nWhen inflicting Numbed, restores 3% Missing Life and Energy Shield. Interval: 0.2 s\n+30% Movement Speed if you have inflicted Numbed recently",
-  },
-  {
-    type: "Erosion",
-    rarity: "Rare",
-    name: "Benign Bug - Ghost Light Yellow",
-    innerRing1: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing2: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing3: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing4: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing5: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    innerRing6: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    midRing1: { name: "Erosion Damage II", affix: "+28% Erosion Damage" },
-    midRing2: { name: "Erosion Damage II", affix: "+28% Erosion Damage" },
-    midRing3: {
-      name: "Erosion Penetration II",
-      affix: "+5% Erosion Resistance Penetration",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Erosion Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Erosion Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Erosion Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Erosion Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Benign Bug - Tolerant Green",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Attack Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Attack Damage\n+4% additional damage",
-  },
-  {
-    type: "Lightning",
-    rarity: "Legendary",
-    name: "Bitter Thunder",
-    innerRing1: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing2: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing3: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing4: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: { name: "Lightning Damage II", affix: "+28% Lightning Damage" },
-    midRing2: {
-      name: "Lightning Penetration II",
-      affix: "+5% Lightning Penetration",
-    },
-    midRing3: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    affix1:
-      "Bestows the surging power of lightning to the pact holder, granting + 14% additional Lightning Damage and + 15% additional Max Damage for 5s.\nCooldown: 10s.",
-    affix2:
-      "Bestows the surging power of lightning to the pact holder, granting + 14% additional Lightning Damage and + 15% additional Max Damage for 5s.\nCooldown: 10s.\n+6% additional Lightning Damage",
-    affix3:
-      "Bestows the surging power of lightning to the pact holder, granting + 14% additional Lightning Damage and + 15% additional Max Damage for 5s.\nCooldown: 10s.\n+6% additional Lightning Damage\n+2% additional damage",
-    affix4:
-      "Bestows the surging power of lightning to the pact holder, granting + 14% additional Lightning Damage and + 15% additional Max Damage for 5s.\nCooldown: 10s.\n+12% additional Lightning Damage\n+2% additional damage",
-    affix5:
-      "Bestows the surging power of lightning to the pact holder, granting + 14% additional Lightning Damage and + 15% additional Max Damage for 5s.\nCooldown: 10s.\n+12% additional Lightning Damage\n+4% additional damage",
-    affix6:
-      "Bestows the surging power of lightning to the pact holder, granting + 19% additional Lightning Damage and + 20% additional Max Damage for 5s.\nCooldown: 10s.\n+12% additional Lightning Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Captain Kitty of the Furious Sea",
-    innerRing1: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing2: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing3: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing4: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing5: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    innerRing6: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    midRing1: {
-      name: "Warcry Duration II",
-      affix: "+15% Warcry Skill Effect Duration",
-    },
-    midRing2: {
-      name: "Warcry Cooldown II",
-      affix: "+11% Warcry Cooldown Recovery Speed",
-    },
-    midRing3: { name: "Warcry Effect II", affix: "+6% Warcry Effect" },
-    affix1: "Immediately casts Warcry. +20% additional Warcry Skill Effect",
-    affix2:
-      "Immediately casts Warcry. +20% additional Warcry Skill Effect\n+11% Warcry Cooldown Recovery Speed",
-    affix3:
-      "Immediately casts Warcry. +20% additional Warcry Skill Effect\n+11% Warcry Cooldown Recovery Speed\n+1 Max Warcry Skill Charges",
-    affix4:
-      "Immediately casts Warcry. +20% additional Warcry Skill Effect\n+22% Warcry Cooldown Recovery Speed\n+1 Max Warcry Skill Charges",
-    affix5:
-      "Immediately casts Warcry. +20% additional Warcry Skill Effect\n+22% Warcry Cooldown Recovery Speed\n+2 Max Warcry Skill Charges",
-    affix6:
-      "Immediately casts Warcry. +25% additional Warcry Skill Effect\n+22% Warcry Cooldown Recovery Speed\n+2 Max Warcry Skill Charges",
-  },
-  {
-    type: "Summon",
-    rarity: "Rare",
-    name: "Cloudgatherer - Sparkle",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Servant Damage II", affix: "+30% Minion Damage" },
-    midRing2: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+40 Critical Strike Rating for recently summoned Minions\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+40 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+80 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+80 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Rare",
-    name: "Cloudgatherer - Violet",
-    innerRing1: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing2: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing3: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing4: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Elemental Damage II", affix: "+24% Elemental Damage" },
-    midRing2: {
-      name: "Elemental Penetration II",
-      affix: "Damage Penetrates 4% Elemental Resistance",
-    },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n0.8% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n0.8% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n1.6% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n1.6% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-  },
-  {
-    type: "Persistent",
-    rarity: "Legendary",
-    name: "Crossroad Walker",
-    innerRing1: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing2: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing3: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing4: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing5: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    innerRing6: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    midRing1: {
-      name: "Ailment Chance II",
-      affix: "+7% chance to inflict Damaging Ailments",
-    },
-    midRing2: { name: "Ailment Damage II", affix: "+24% Ailment Damage" },
-    midRing3: { name: "Ailment Duration II", affix: "+12% Ailment Duration" },
-    affix1:
-      "+13% additional Ailment Damage against Cursed enemies\n11.5% Curse effect",
-    affix2:
-      "+13% additional Ailment Damage against Cursed enemies\n11.5% Curse effect\n+2% additional damage",
-    affix3:
-      "+13% additional Ailment Damage against Cursed enemies\n11.5% Curse effect\n+10% Curse Effect\n+2% additional damage",
-    affix4:
-      "+13% additional Ailment Damage against Cursed enemies\n11.5% Curse effect\n+10% Curse Effect\n+4% additional damage",
-    affix5:
-      "+13% additional Ailment Damage against Cursed enemies\n11.5% Curse effect\n+20% Curse Effect\n+4% additional damage",
-    affix6:
-      "+18% additional Ailment Damage against Cursed enemies\n+15% Curse effect\n+20% Curse Effect\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Dragon Plant - Kale",
-    innerRing1: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing2: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing3: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing4: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: {
-      name: "Movement Speed II",
-      affix: "+8% Movement Speed while channeling",
-    },
-    midRing2: {
-      name: "Channeled Damage II",
-      affix: "+28% damage for Channeled Skills",
-    },
-    midRing3: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +2% additional damage for Channeled Skills for 4 s\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +2% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +4% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nAt max channeled stacks, +4% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Rare",
-    name: "Dragon Plant - Onion",
-    innerRing1: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing3: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing4: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing5: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    midRing1: { name: "Servant Damage II", affix: "+28% Minion Damage" },
-    midRing2: { name: "Servant Damage II", affix: "+28% Minion Damage" },
-    midRing3: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+3% Movement Speed when a Spirit Magus is nearby\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+3% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+6% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+6% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Dragon Plant - Truffle",
-    innerRing1: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing2: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing5: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    innerRing6: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    midRing1: {
-      name: "Knockback Distance II",
-      affix: "+24% Knockback distance",
-    },
-    midRing2: { name: "Projectile Speed II", affix: "+14% Projectile Speed" },
-    midRing3: { name: "Projectile Damage II", affix: "+20% Projectile Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Attack and Cast Speed when no enemies are in proximity\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Legendary",
-    name: "Drapion Lady",
-    innerRing1: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing2: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing3: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing4: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: {
-      name: "Servant Buff II",
-      affix: "+14% Origin of Spirit Magus effect",
-    },
-    midRing2: {
-      name: "Servant Cooldown II",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +10%",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1:
-      "+40% Origin of Spirit Magus effect\n+5% additional Spirit Magus Skill Damage",
-    affix2:
-      "+40% Origin of Spirit Magus effect\n+5% additional Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix3:
-      "+40% Origin of Spirit Magus effect\n+5% additional Spirit Magus Skill Damage\n+4% additional Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix4:
-      "+40% Origin of Spirit Magus effect\n+5% additional Spirit Magus Skill Damage\n+4% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix5:
-      "+40% Origin of Spirit Magus effect\n+5% additional Spirit Magus Skill Damage\n+8% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix6:
-      "+55% Origin of Spirit Magus effect\n+7% additional Spirit Magus Skill Damage\n+8% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Legendary",
-    name: "Dreamweaver",
-    innerRing1: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing2: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing3: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing4: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Elemental Damage II", affix: "+24% Elemental Damage" },
-    midRing2: {
-      name: "Elemental Penetration II",
-      affix: "Damage Penetrates 4% Elemental Resistance",
-    },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
-    affix1:
-      "+14% additional Elemental Damage dealt by Spell Skills\n+1% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times",
-    affix2:
-      "+14% additional Elemental Damage dealt by Spell Skills\n+1% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times\n+2% additional damage",
-    affix3:
-      "+14% additional Elemental Damage dealt by Spell Skills\n+1% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times\n1.5% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+2% additional damage",
-    affix4:
-      "+14% additional Elemental Damage dealt by Spell Skills\n+1% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times\n1.5% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix5:
-      "+14% additional Elemental Damage dealt by Spell Skills\n+1% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times\n+3% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix6:
-      "+19% additional Elemental Damage dealt by Spell Skills\n1.2% Elemental Resistance Penetration when hitting an enemy with Elemental Damage, stacking up to 4 times\n+3% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-  },
-  {
-    type: "Elixir",
-    rarity: "Legendary",
-    name: "Elixir Fairies",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Movement Speed II", affix: "+4% Movement Speed" },
-    affix1: "+35% Elixir Skill Effect",
-    affix2:
-      "+35% Elixir Skill Effect\n+4% additional damage and Minion Damage while an Elixir Skill is active",
-    affix3:
-      "+35% Elixir Skill Effect\n+4% additional damage and Minion Damage while an Elixir Skill is active\n+5% Movement Speed while an Elixir Skill is active",
-    affix4:
-      "+35% Elixir Skill Effect\n+8% additional damage and Minion Damage while an Elixir Skill is active\n+5% Movement Speed while an Elixir Skill is active",
-    affix5:
-      "+35% Elixir Skill Effect\n+8% additional damage and Minion Damage while an Elixir Skill is active\n+10% Movement Speed while an Elixir Skill is active",
-    affix6:
-      "+35% Elixir Skill Effect\n+8% additional damage and Minion Damage while an Elixir Skill is active\n+10% Movement Speed while an Elixir Skill is active\n1.5% Elixir Skill Effect for every Elixir Skill cast recently. Stacks up to 12 time(s)",
-  },
-  {
-    type: "Survival",
-    rarity: "Magic",
-    name: "Explorer Otter - Mudstone",
-    innerRing1: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing2: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    innerRing6: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    midRing1: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing3: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\nRegenerates 0.3% Life per second\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\nRegenerates 0.3% Life per second\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\nRegenerates 0.6% Life per second\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\nRegenerates 0.6% Life per second\n-4% additional damage taken",
-  },
-  {
-    type: "Summon",
-    rarity: "Magic",
-    name: "Explorer Otter - Olive",
-    innerRing1: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing2: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing3: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing4: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+2% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-  },
-  {
-    type: "Survival",
-    rarity: "Magic",
-    name: "Explorer Otter - Quicksand",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing4: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing5: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    innerRing6: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    midRing1: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing3: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\n2.5% Movement Speed\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\n2.5% Movement Speed\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\n+5% Movement Speed\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\n+5% Movement Speed\n-4% additional damage taken",
-  },
-  {
-    type: "Survival",
-    rarity: "Magic",
-    name: "Explorer Otter - Rock",
-    innerRing1: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing2: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing3: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\n+2% Energy Shield Charge Speed\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\n+2% Energy Shield Charge Speed\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\n+4% Energy Shield Charge Speed\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\n+4% Energy Shield Charge Speed\n-4% additional damage taken",
-  },
-  {
-    type: "Summon",
-    rarity: "Magic",
-    name: "Feasting Samurai - Garlic",
-    innerRing1: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing3: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing4: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing5: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Movement Speed when a Spirit Magus is nearby\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% Movement Speed when a Spirit Magus is nearby\n+4% additional Minion Damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Feasting Samurai - Honey",
-    innerRing1: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing2: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing5: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    innerRing6: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional Attack and Cast Speed when no enemies are in proximity\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+2% additional Attack and Cast Speed when no enemies are in proximity\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Feasting Samurai - Orange",
-    innerRing1: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing2: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing3: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing4: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +1% additional damage for Channeled Skills for 4 s\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +1% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nAt max channeled stacks, +2% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nAt max channeled stacks, +2% additional damage for Channeled Skills for 4 s\n+4% additional damage",
-  },
-  {
-    type: "Persistent",
-    rarity: "Legendary",
-    name: "Fire Swordsman",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing4: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing2: {
-      name: "Ailment Chance II",
-      affix: "+7% chance to inflict Damaging Ailments",
-    },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1:
-      "Reaps 0.8 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+4% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)",
-    affix2:
-      "Reaps 0.8 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+4% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)\n+2% additional damage",
-    affix3:
-      "Reaps 0.8 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+4% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)\n+7% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+2% additional damage",
-    affix4:
-      "Reaps 0.8 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+4% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)\n+7% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
-    affix5:
-      "Reaps 0.8 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+4% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)\n+14% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
-    affix6:
-      "Reaps 1 s of Damage Over Time when inflicting an Ailment. The effect has a 6 s Recovery Time against the same target\n+6% Reaping Duration for each recent Reaping. Stacks up to 4 time(s)\n+14% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
-  },
-  {
-    type: "Persistent",
-    rarity: "Legendary",
-    name: "Firewing",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing4: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing2: {
-      name: "Skill Duration II",
-      affix: "+10% Skill Effect Duration",
-    },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1:
-      "+80% Affliction effect at Full Life.\n10.5 Affliction inflicted per second on Full Life.",
-    affix2:
-      "+80% Affliction effect at Full Life.\n10.5 Affliction inflicted per second on Full Life.\n+2% additional damage",
-    affix3:
-      "+80% Affliction effect at Full Life.\n10.5 Affliction inflicted per second on Full Life.\n+15 Affliction inflicted per second at Full Life.\n+2% additional damage",
-    affix4:
-      "+80% Affliction effect at Full Life.\n10.5 Affliction inflicted per second on Full Life.\n+15 Affliction inflicted per second at Full Life.\n+4% additional damage",
-    affix5:
-      "+80% Affliction effect at Full Life.\n10.5 Affliction inflicted per second on Full Life.\n+30 Affliction inflicted per second at Full Life.\n+4% additional damage",
-    affix6:
-      "+105% Affliction effect at Full Life.\n+14 Affliction inflicted per second on Full Life.\n+30 Affliction inflicted per second at Full Life.\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "First Mate of the Furious Sea - Rock",
-    innerRing1: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing2: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing3: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing4: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    midRing1: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    midRing2: { name: "Lightning Damage II", affix: "+24% Lightning Damage" },
-    midRing3: { name: "Movement Speed II", affix: "+6% Movement Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.4 s\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.4 s\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.4 s\n7.5% Movement Speed if you have inflicted Numbed recently\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.4 s\n7.5% Movement Speed if you have inflicted Numbed recently\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "First Mate of the Furious Sea - Sky",
-    innerRing1: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing2: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing3: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing4: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing5: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    innerRing6: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    midRing1: {
-      name: "Warcry Duration II",
-      affix: "+15% Warcry Skill Effect Duration",
-    },
-    midRing2: {
-      name: "Warcry Cooldown II",
-      affix: "+11% Warcry Cooldown Recovery Speed",
-    },
-    midRing3: { name: "Warcry Effect II", affix: "+6% Warcry Effect" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n5.5% Warcry Cooldown Recovery Speed\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n5.5% Warcry Cooldown Recovery Speed\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+11% Warcry Cooldown Recovery Speed\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+11% Warcry Cooldown Recovery Speed\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Flower Whisperer",
-    innerRing1: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing2: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing5: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing6: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    midRing1: { name: "Projectile Damage II", affix: "+30% Projectile Damage" },
-    midRing2: { name: "Projectile Speed II", affix: "+12% Projectile Speed" },
-    midRing3: {
-      name: "Multistrike II",
-      affix: "+45% Attack Critical Strike Rating",
-    },
-    affix1:
-      "+16% additional Projectile Skill Critical Strike Damage against Distant enemies\n+40 Attack Projectile Skill Critical Strike Rating against Distant enemies",
-    affix2:
-      "+16% additional Projectile Skill Critical Strike Damage against Distant enemies\n+40 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+2% additional damage",
-    affix3:
-      "+16% additional Projectile Skill Critical Strike Damage against Distant enemies\n+40 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+70 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+2% additional damage",
-    affix4:
-      "+16% additional Projectile Skill Critical Strike Damage against Distant enemies\n+40 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+70 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-    affix5:
-      "+16% additional Projectile Skill Critical Strike Damage against Distant enemies\n+40 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+140 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-    affix6:
-      "+21% additional Projectile Skill Critical Strike Damage against Distant enemies\n+55 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+140 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Fog Scorpion",
-    innerRing1: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing3: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing4: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing5: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    innerRing6: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    midRing1: {
-      name: "Double Damage II",
-      affix: "Attack Skills: a +4% chance to deal Double Damage",
-    },
-    midRing2: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing3: { name: "Multistrike II", affix: "+16% chance to Multistrike" },
-    affix1:
-      "+20% additional Attack Speed when only 1 enemies are Nearby\n+9% Movement Speed when at least 2 enemies are Nearby",
-    affix2:
-      "+20% additional Attack Speed when only 1 enemies are Nearby\n+9% Movement Speed when at least 2 enemies are Nearby\n+2% additional damage",
-    affix3:
-      "+20% additional Attack Speed when only 1 enemies are Nearby\n+9% Movement Speed when at least 2 enemies are Nearby\n+15% Movement Speed when at least 2 enemies are Nearby\n+2% additional damage",
-    affix4:
-      "+20% additional Attack Speed when only 1 enemies are Nearby\n+9% Movement Speed when at least 2 enemies are Nearby\n+15% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix5:
-      "+20% additional Attack Speed when only 1 enemies are Nearby\n+9% Movement Speed when at least 2 enemies are Nearby\n+30% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix6:
-      "+27% additional Attack Speed when only 1 enemies are Nearby\n+12% Movement Speed when at least 2 enemies are Nearby\n+30% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +4%\n대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Rare",
-    name: "Greedy Chestnut - Emerald",
-    innerRing1: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing2: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing3: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing4: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing5: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    innerRing6: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    midRing1: {
-      name: "Ailment Chance II",
-      affix: "+7% chance to inflict Damaging Ailments",
-    },
-    midRing2: { name: "Ailment Damage II", affix: "+24% Ailment Damage" },
-    midRing3: { name: "Ailment Duration II", affix: "+12% Ailment Duration" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "구름 채집꾼-롤랜드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Curse Effect\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.8% , 최대 4회 중첩 가능\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Curse Effect\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.8% , 최대 4회 중첩 가능\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+10% Curse Effect\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 1.6% , 최대 4회 중첩 가능\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+10% Curse Effect\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 1.6% , 최대 4회 중첩 가능\n대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Rare",
-    name: "Greedy Chestnut - Lotus Leaf",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing4: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing2: {
-      name: "Ailment Chance II",
-      affix: "+7% chance to inflict Damaging Ailments",
-    },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "구름 채집꾼-불꽃",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n3.5% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +40\n소환체 대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n3.5% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +40\n소환체 대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +80\n소환체 대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+7% Reaping Duration for each Reap dealt, stacking up to 4 times.\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Rare",
-    name: "Greedy Chestnut - Lotus Root",
-    innerRing1: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing2: {
-      name: "Servant Buff I",
-      affix: "+7% Origin of Spirit Magus effect",
-    },
-    innerRing3: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing4: {
-      name: "Servant Cooldown I",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +5%",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: {
-      name: "Servant Buff II",
-      affix: "+14% Origin of Spirit Magus effect",
-    },
-    midRing2: {
-      name: "Servant Cooldown II",
-      affix: "Spirit Magi's Skill Cooldown Recovery Speed +10%",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% additional Spirit Magus Skill Damage\n+4% additional Minion Damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 소환된 소환체의 크리티컬 +80\n소환체 대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Rare",
-    name: "Greedy Chestnut - Radiance",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing4: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing2: {
-      name: "Skill Duration II",
-      affix: "+10% Skill Effect Duration",
-    },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "그림자 아가씨",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+8 Affliction inflicted per second at Full Life.\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +2%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+8 Affliction inflicted per second at Full Life.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +2%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+16 Affliction inflicted per second at Full Life.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +4%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+16 Affliction inflicted per second at Full Life.\n+4% additional damage",
-  },
-  {
-    type: "Lightning",
-    rarity: "Magic",
-    name: "Happy Chonky - Electrify",
-    innerRing1: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing2: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing3: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing4: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Lightning Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Lightning Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Lightning Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Lightning Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% additional Lightning Damage\n+4% additional damage",
-  },
-  {
-    type: "Fire",
-    rarity: "Magic",
-    name: "Happy Chonky - Ember",
-    innerRing1: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing2: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing3: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing4: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing5: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    innerRing6: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Fire Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% additional Fire Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Fire Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Fire Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% additional Fire Damage\n+4% additional damage",
-  },
-  {
-    type: "Survival",
-    rarity: "Rare",
-    name: "Hell Cavalry",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing4: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-3% additional damage taken",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\n-2% additional damage taken\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\n-2% additional damage taken\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\n-4% additional damage taken\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\n-4% additional damage taken\n-4% additional damage taken",
-  },
-  {
-    type: "Cold",
-    rarity: "Rare",
-    name: "Hell Cavalry - Crushed Ice",
-    innerRing1: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing2: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing3: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing4: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing5: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    innerRing6: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    midRing1: { name: "Cold Damage II", affix: "+28% Cold Damage" },
-    midRing2: { name: "Cold Penetration II", affix: "+5% Cold Penetration" },
-    midRing3: {
-      name: "Max Frostbite Rating II",
-      affix: "+6 to Max Frostbite Rating",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Cold Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Cold Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Cold Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Cold Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+6% additional Cold Damage\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Rare",
-    name: "Hell Cavalry - Glow",
-    innerRing1: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing2: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    innerRing6: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    midRing1: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing2: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing3: {
-      name: "Critical Strike Damage II",
-      affix: "+20% Critical Strike Damage",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n4.5% Critical Strike Damage per Ailment on enemies, up to +9%\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n4.5% Critical Strike Damage per Ailment on enemies, up to +9%\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+9% Critical Strike Damage per Ailment on enemies, up to +18%\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+9% Critical Strike Damage per Ailment on enemies, up to +18%\n+4% additional damage",
-  },
-  {
-    type: "Lightning",
-    rarity: "Rare",
-    name: "Hell Cavalry - Muffled Thunder",
-    innerRing1: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing2: { name: "Lightning Damage I", affix: "+14% Lightning Damage" },
-    innerRing3: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing4: {
-      name: "Lightning Penetration I",
-      affix: "+2.5% Lightning Penetration",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: { name: "Lightning Damage II", affix: "+28% Lightning Damage" },
-    midRing2: {
-      name: "Lightning Penetration II",
-      affix: "+5% Lightning Penetration",
-    },
-    midRing3: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Lightning Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Lightning Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Lightning Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Lightning Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+6% additional Lightning Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Hell Cavalry - Twilight",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing4: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing5: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    innerRing6: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: {
-      name: "Erosion Resistance II",
-      affix: "+12% Erosion Resistance",
-    },
-    midRing3: {
-      name: "Crowd Control Effects II",
-      affix: "+10% Crowd Control Effects",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.8% additional damage to them\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 0.8% additional damage to them\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 1.6% additional damage to them\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nFor every type of crowd control effect the enemy has, you and your Minions deal 1.6% additional damage to them\n+4% additional damage",
-  },
-  {
-    type: "Cold",
-    rarity: "Legendary",
-    name: "Ice Puppet",
-    innerRing1: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing2: { name: "Cold Damage I", affix: "+14% Cold Damage" },
-    innerRing3: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing4: { name: "Cold Penetration I", affix: "+2.5% Cold Penetration" },
-    innerRing5: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    innerRing6: {
-      name: "Max Frostbite Rating I",
-      affix: "+3 to Max Frostbite Rating",
-    },
-    midRing1: { name: "Cold Damage II", affix: "+28% Cold Damage" },
-    midRing2: { name: "Cold Penetration II", affix: "+5% Cold Penetration" },
-    midRing3: {
-      name: "Max Frostbite Rating II",
-      affix: "+6 to Max Frostbite Rating",
-    },
-    affix1:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +10% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s",
-    affix2:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +10% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s\n+6% additional Cold Damage",
-    affix3:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +10% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s\n+6% additional Cold Damage\n+2% additional damage",
-    affix4:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +10% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s\n+12% additional Cold Damage\n+2% additional damage",
-    affix5:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +10% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s\n+12% additional Cold Damage\n+4% additional damage",
-    affix6:
-      "Focus energy to create an ice prison Near yourself and the Pact Holder, which debuffs Frostbitten enemies inside every second and makes them take +13% additional Cold Damage, up to 4 stacks, for 6s.\nCooldown: 10s\n+12% additional Cold Damage\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +4%\n대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Magic",
-    name: "Idling Weasel - Abyss",
-    innerRing1: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing2: {
-      name: "Ailment Chance I",
-      affix: "+3.5% chance to inflict Damaging Ailments",
-    },
-    innerRing3: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing4: { name: "Ailment Damage I", affix: "+12% Ailment Damage" },
-    innerRing5: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    innerRing6: { name: "Ailment Duration I", affix: "+6% Ailment Duration" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Curse Effect\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Curse Effect\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Curse Effect\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+5% Curse Effect\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Idling Weasel - Sandstone",
-    innerRing1: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing2: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing3: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing4: { name: "Lightning Damage I", affix: "+12% Lightning Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+3% Movement Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.8 s\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.8 s\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.8 s\n3.75% Movement Speed if you have inflicted Numbed recently\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\nWhen inflicting Numbed, restores 1.5% Missing Life and Energy Shield. Interval: 0.8 s\n3.75% Movement Speed if you have inflicted Numbed recently\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Idling Weasel - Shallow sea",
-    innerRing1: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing3: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing4: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing5: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    innerRing6: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+4% Movement Speed when at least 2 enemies are Nearby\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+4% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+8% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+8% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Magic",
-    name: "Idling Weasel - Sprouts",
-    innerRing1: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing2: { name: "Elemental Damage I", affix: "+12% Elemental Damage" },
-    innerRing3: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing4: {
-      name: "Elemental Penetration I",
-      affix: "Damage Penetrates 2% Elemental Resistance",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n0.4% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n0.4% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n0.8% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n0.8% Elemental Resistance Penetration every time you hit an enemy with Elemental Damage recently. Stacks up to 4 times\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Iron Lion",
-    innerRing1: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing2: {
-      name: "Knockback Distance I",
-      affix: "+12% Knockback distance",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+7% Projectile Speed" },
-    innerRing5: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    innerRing6: {
-      name: "Projectile Damage I",
-      affix: "+10% Projectile Damage",
-    },
-    midRing1: {
-      name: "Knockback Distance II",
-      affix: "+24% Knockback distance",
-    },
-    midRing2: { name: "Projectile Speed II", affix: "+14% Projectile Speed" },
-    midRing3: { name: "Projectile Damage II", affix: "+20% Projectile Damage" },
-    affix1: "Projectile Quantity +2",
-    affix2:
-      "Projectile Quantity +2\n+4% additional Attack and Cast Speed when no enemies are in proximity",
-    affix3:
-      "Projectile Quantity +2\n+4% additional Attack and Cast Speed when no enemies are in proximity\n+24% Knockback distance",
-    affix4:
-      "Projectile Quantity +2\n+8% additional Attack and Cast Speed when no enemies are in proximity\n+24% Knockback distance",
-    affix5:
-      "Projectile Quantity +2\n+8% additional Attack and Cast Speed when no enemies are in proximity\n+48% Knockback distance",
-    affix6:
-      "Projectile Quantity +2\n+8% additional Attack and Cast Speed when no enemies are in proximity\n+48% Knockback distance\n+14% Projectile Speed",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Kitty Express",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "Gains 1 stack of Feline Stimulant when triggering a Main Skill",
-    affix2:
-      "Gains 1 stack of Feline Stimulant when triggering a Main Skill\n+1 to Max Feline Stimulant stacks",
-    affix3:
-      "Gains 1 stack of Feline Stimulant when triggering a Main Skill\n+1 to Max Feline Stimulant stacks\n+4% additional Attack Damage when having Feline Stimulant",
-    affix4:
-      "Gains 1 stack of Feline Stimulant when triggering a Main Skill\n+2 to Max Feline Stimulant stacks\n+4% additional Attack Damage when having Feline Stimulant",
-    affix5:
-      "Gains 1 stack of Feline Stimulant when triggering a Main Skill\n+2 to Max Feline Stimulant stacks\n+8% additional Attack Damage when having Feline Stimulant",
-    affix6:
-      "Gains 1 stack of Feline Stimulant when triggering a Main Skill\n+2 to Max Feline Stimulant stacks\n+8% additional Attack Damage when having Feline Stimulant\nHas Attack Aggression when reaching Max Feline Stimulant stacks",
-  },
-  {
-    type: "Survival",
-    rarity: "Legendary",
-    name: "Knight of Pale Blue",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing4: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-3% additional damage taken",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
+    name: "그윽한 왕의 혼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
     affix1:
-      "-40% additional Physical Damage taken when there are only 1 enemies Nearby\n-3% additional damage taken",
+      "지속 대미지가 35% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +25%",
     affix2:
-      "-40% additional Physical Damage taken when there are only 1 enemies Nearby\n-3% additional damage taken\n-2% additional damage taken",
+      "지속 대미지가 35% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +25%\n대미지 추가 +2%",
     affix3:
-      "-40% additional Physical Damage taken when there are only 1 enemies Nearby\n-3% additional damage taken\n-4% additional damage taken\n-2% additional damage taken",
+      "지속 대미지가 35% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +25%\n최근 수확을 부여한 경우, 이동 속도 +10% .\n대미지 추가 +2%",
     affix4:
-      "-40% additional Physical Damage taken when there are only 1 enemies Nearby\n-3% additional damage taken\n-4% additional damage taken\n-4% additional damage taken",
+      "지속 대미지가 35% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +25%\n최근 수확을 부여한 경우, 이동 속도 +10% .\n대미지 추가 +4%",
     affix5:
-      "-40% additional Physical Damage taken when there are only 1 enemies Nearby\n-3% additional damage taken\n-8% additional damage taken\n-4% additional damage taken",
+      "지속 대미지가 35% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +25%\n최근 수확을 부여한 경우, 이동 속도 +20% .\n대미지 추가 +4%",
     affix6:
-      "-55% additional Physical Damage taken when there are only 1 enemies Nearby\n-4% additional damage taken\n-8% additional damage taken\n-4% additional damage taken",
-  },
-  {
-    type: "Summon",
-    rarity: "Rare",
-    name: "Letice - Amethyst",
-    innerRing1: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing2: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing3: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing5: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing6: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    midRing1: {
-      name: "Spirit Magus Seal Removed II",
-      affix: "+20% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    midRing2: { name: "Damage II", affix: "+20% damage\n+20% Minion Damage" },
-    midRing3: {
-      name: "Skill Duration II",
-      affix: "+10% Skill Effect Duration",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+56% Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+56% Spirit Magus Skill Damage\n+4% additional Minion Damage",
-  },
-  {
-    type: "Persistent",
-    rarity: "Rare",
-    name: "Letice - Flame",
-    innerRing1: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing2: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing3: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing4: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: {
-      name: "Reaping Cooldown II",
-      affix: "+10% Reaping Recovery Speed",
-    },
-    midRing2: { name: "Damage Over Time II", affix: "+24% Damage Over Time" },
-    midRing3: { name: "Damage Affliction II", affix: "+20% Affliction Effect" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Movement Speed if you have caused Reaping recently\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Movement Speed if you have caused Reaping recently\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+10% Movement Speed if you have caused Reaping recently\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+10% Movement Speed if you have caused Reaping recently\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Letice - Withered Leaf",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing4: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing5: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    innerRing6: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    midRing1: { name: "Damage II", affix: "+20% damage" },
-    midRing2: { name: "Attack Block II", affix: "+12% Attack Block Chance" },
-    midRing3: { name: "Spell Block II", affix: "+12% Spell Block Chance" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Block Ratio when there is a Boss Nearby\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Magic",
-    name: "Luluri - Amethyst",
-    innerRing1: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing2: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    innerRing6: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+2% Critical Strike Damage per Ailment on enemies, up to +4%\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+2% Critical Strike Damage per Ailment on enemies, up to +4%\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+4% Critical Strike Damage per Ailment on enemies, up to +8%\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% Critical Strike Damage per Ailment on enemies, up to +8%\n+4% additional damage",
+      "지속 대미지가 50% 확률로 근거리 타깃에게 확산됩니다\n수확 회복 속도 추가 +35%\n최근 수확을 부여한 경우, 이동 속도 +20% .\n대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Magic",
-    name: "Luluri - Golden Leaf",
-    innerRing1: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing2: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing3: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing4: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "까칠한 달팽이-꽃무리",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+4 Affliction inflicted per second at Full Life.\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 2.5% , 4 초간 지속\n소환체 대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+4 Affliction inflicted per second at Full Life.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 2.5% , 4 초간 지속\n소환체 대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+8 Affliction inflicted per second at Full Life.\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +5% , 4 초간 지속\n소환체 대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+8 Affliction inflicted per second at Full Life.\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Magic",
-    name: "Luluri - Maple",
-    innerRing1: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n1.5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+3% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+3% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Luluri - Shallow Sea",
-    innerRing1: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing2: {
-      name: "Warcry Duration I",
-      affix: "+7.5% Warcry Skill Effect Duration",
-    },
-    innerRing3: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing4: {
-      name: "Warcry Cooldown I",
-      affix: "+5.5% Warcry Cooldown Recovery Speed",
-    },
-    innerRing5: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    innerRing6: { name: "Warcry Effect I", affix: "+3% Warcry Effect" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n2.75% Warcry Cooldown Recovery Speed\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n2.75% Warcry Cooldown Recovery Speed\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n5.5% Warcry Cooldown Recovery Speed\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n5.5% Warcry Cooldown Recovery Speed\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Magic",
-    name: "Lumidrake - Aurora",
-    innerRing1: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing2: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing3: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Spell Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Spell Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Spell Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+14% Spell Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Lumidrake - Candlelight",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Attack Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Attack Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Lumidrake - Fluorescence",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Attack Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Attack Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Legendary",
-    name: "Mechanical Throne",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Servant Damage II", affix: "+30% Minion Damage" },
-    midRing2: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1:
-      "+14% chance for Synthetic Troop Minions to deal Double Damage\n+6% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage",
-    affix2:
-      "+14% chance for Synthetic Troop Minions to deal Double Damage\n+6% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage\n+2% additional Minion Damage",
-    affix3:
-      "+14% chance for Synthetic Troop Minions to deal Double Damage\n+6% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage\n+10% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+2% additional Minion Damage",
-    affix4:
-      "+14% chance for Synthetic Troop Minions to deal Double Damage\n+6% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage\n+10% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix5:
-      "+14% chance for Synthetic Troop Minions to deal Double Damage\n+6% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage\n+20% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix6:
-      "+19% chance for Synthetic Troop Minions to deal Double Damage\n+8% Minion Attack and Cast Speed for 4 s when your Synthetic Troop Minions deal Double Damage\n+20% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-  },
-  {
-    type: "Fire",
-    rarity: "Legendary",
-    name: "Melting Flames",
-    innerRing1: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing2: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing3: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing4: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing5: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    innerRing6: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    midRing1: { name: "Fire Damage II", affix: "+28% Fire Damage" },
-    midRing2: { name: "Fire Penetration II", affix: "+5% Fire Penetration" },
-    midRing3: { name: "Fire Area II", affix: "+28% Fire Skill Area" },
-    affix1:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 26% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.",
-    affix2:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 26% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.\n+6% additional Fire Damage",
-    affix3:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 26% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.\n+6% additional Fire Damage\n+2% additional damage",
-    affix4:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 26% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.\n+12% additional Fire Damage\n+2% additional damage",
-    affix5:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 26% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.\n+12% additional Fire Damage\n+4% additional damage",
-    affix6:
-      "Covers targets within a 5m radius with flames and debuffs enemies within the area.\nDebuff: + 35% additional Fire Damage taken by the enemy for 3s.\nCooldown: 5 s.\n+12% additional Fire Damage\n+4% additional damage",
-  },
-  {
-    type: "Elixir",
-    rarity: "Magic",
-    name: "Meowth",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional damage and Minion Damage while an Elixir Skill is active\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+1% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-  },
-  {
-    type: "Elixir",
-    rarity: "Rare",
-    name: "Miss Melancholy",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing5: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    innerRing6: { name: "Movement Speed I", affix: "+2% Movement Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Movement Speed II", affix: "+4% Movement Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage and Minion Damage while an Elixir Skill is active\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% additional damage and Minion Damage while an Elixir Skill is active\n+4% additional damage",
-  },
-  {
-    type: "Survival",
-    rarity: "Rare",
-    name: "Plaintive Ball of Thread",
-    innerRing1: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing2: { name: "Max Life I", affix: "+4% Max Life" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    innerRing6: {
-      name: "XP Balance I",
-      affix:
-        "-10% XP falloff caused by the level difference between the player and the map",
-    },
-    midRing1: { name: "Max Life II", affix: "+8% Max Life" },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: {
-      name: "XP Balance II",
-      affix:
-        "-20% XP falloff caused by the level difference between the player and the map",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\nRegenerates 0.6% Life per second\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\nRegenerates 0.6% Life per second\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\nRegenerates 1.2% Life per second\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\nRegenerates 1.2% Life per second\n-4% additional damage taken",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Plaintive Ball of Thread - Violet",
-    innerRing1: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Damage I",
-      affix: "Attack Skills: a +2% chance to deal Double Damage",
-    },
-    innerRing3: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing4: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing5: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    innerRing6: { name: "Multistrike I", affix: "+8% chance to Multistrike" },
-    midRing1: {
-      name: "Double Damage II",
-      affix: "Attack Skills: a +4% chance to deal Double Damage",
-    },
-    midRing2: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing3: { name: "Multistrike II", affix: "+16% chance to Multistrike" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n7.5% Movement Speed when at least 2 enemies are Nearby\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n7.5% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+15% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+15% Movement Speed when at least 2 enemies are Nearby\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Poisoned Omen",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing4: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing5: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    innerRing6: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    midRing1: { name: "Damage II", affix: "+20% damage" },
-    midRing2: {
-      name: "Cursed Enemy Weakening II",
-      affix: "-4% additional damage taken from Cursed enemies",
-    },
-    midRing3: { name: "Curse Effect II", affix: "+3% Curse Effect" },
-    affix1:
-      "You can cast 1 additional Curses\n+4% Movement Speed if you have cast a Curse Skill recently",
-    affix2:
-      "You can cast 1 additional Curses\n+4% Movement Speed if you have cast a Curse Skill recently\n+2% additional damage",
-    affix3:
-      "You can cast 1 additional Curses\n+4% Movement Speed if you have cast a Curse Skill recently\n+8% additional damage against Cursed enemies\n+2% additional damage",
-    affix4:
-      "You can cast 1 additional Curses\n+4% Movement Speed if you have cast a Curse Skill recently\n+8% additional damage against Cursed enemies\n+4% additional damage",
-    affix5:
-      "You can cast 1 additional Curses\n+4% Movement Speed if you have cast a Curse Skill recently\n+16% additional damage against Cursed enemies\n+4% additional damage",
-    affix6:
-      "You can cast 1 additional Curses\n6.5% Movement Speed if you have cast a Curse Skill recently\n+16% additional damage against Cursed enemies\n+4% additional damage",
-  },
-  {
-    type: "Erosion",
-    rarity: "Legendary",
-    name: "Portrait of a Fallen Saintess",
-    innerRing1: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing2: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing3: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing4: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing5: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    innerRing6: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    midRing1: { name: "Erosion Damage II", affix: "+28% Erosion Damage" },
-    midRing2: { name: "Erosion Damage II", affix: "+28% Erosion Damage" },
-    midRing3: {
-      name: "Erosion Penetration II",
-      affix: "+5% Erosion Resistance Penetration",
-    },
-    affix1: "Gains 1 stack of Repentance when gaining any Blessing",
-    affix2:
-      "Gains 1 stack of Repentance when gaining any Blessing\n+1 Max Repentance Stacks",
-    affix3:
-      "Gains 1 stack of Repentance when gaining any Blessing\n+1 Max Repentance Stacks\n+1% Erosion Resistance per stack of Repentance",
-    affix4:
-      "Gains 1 stack of Repentance when gaining any Blessing\n+2 Max Repentance Stacks\n+1% Erosion Resistance per stack of Repentance",
-    affix5:
-      "Gains 1 stack of Repentance when gaining any Blessing\n+2 Max Repentance Stacks\n+3% Erosion Resistance per stack of Repentance",
-    affix6:
-      "Gains 1 stack of Repentance when gaining any Blessing\n+3 Max Repentance Stacks\n+3% Erosion Resistance per stack of Repentance",
-  },
-  {
-    type: "Survival",
-    rarity: "Legendary",
-    name: "Preserver of Eternity",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing4: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing5: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    innerRing6: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Damage Avoidance II",
-      affix: "+3% chance to avoid damage",
-    },
-    midRing3: { name: "XP Protection II", affix: "-20% XP lost upon death" },
-    affix1:
-      "+30% Movement Speed if you haven't been hit recently\n+6% Movement Speed",
-    affix2:
-      "+30% Movement Speed if you haven't been hit recently\n+6% Movement Speed\n-2% additional damage taken",
-    affix3:
-      "+30% Movement Speed if you haven't been hit recently\n+6% Movement Speed\n+10% Movement Speed\n-2% additional damage taken",
-    affix4:
-      "+30% Movement Speed if you haven't been hit recently\n+6% Movement Speed\n+10% Movement Speed\n-4% additional damage taken",
-    affix5:
-      "+30% Movement Speed if you haven't been hit recently\n+6% Movement Speed\n+20% Movement Speed\n-4% additional damage taken",
-    affix6:
-      "+40% Movement Speed if you haven't been hit recently\n+8% Movement Speed\n+20% Movement Speed\n-4% additional damage taken",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Raging Sands of Eternal Night",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing4: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing5: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    innerRing6: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    midRing1: { name: "Damage II", affix: "+20% damage" },
-    midRing2: { name: "Attack Block II", affix: "+12% Attack Block Chance" },
-    midRing3: { name: "Spell Block II", affix: "+12% Spell Block Chance" },
-    affix1:
-      "Attacks eliminate enemies under 15% Life on hit if you have Blocked recently",
-    affix2:
-      "Attacks eliminate enemies under 15% Life on hit if you have Blocked recently\n+2% additional damage",
-    affix3:
-      "Attacks eliminate enemies under 15% Life on hit if you have Blocked recently\n+3% Block Ratio when there is a Boss Nearby\n+2% additional damage",
-    affix4:
-      "Attacks eliminate enemies under 15% Life on hit if you have Blocked recently\n+3% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix5:
-      "Attacks eliminate enemies under 15% Life on hit if you have Blocked recently\n+6% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix6:
-      "Attacks eliminate enemies under 20% Life on hit if you have Blocked recently\n+6% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Red Umbrella",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+45% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1:
-      "+19% chance for Attacks to inflict Paralysis on hit\n+10% additional Attack Damage dealt to Nearby enemies",
-    affix2:
-      "+19% chance for Attacks to inflict Paralysis on hit\n+10% additional Attack Damage dealt to Nearby enemies\n+2% additional damage",
-    affix3:
-      "+19% chance for Attacks to inflict Paralysis on hit\n+10% additional Attack Damage dealt to Nearby enemies\n+6% additional Attack Damage dealt to Nearby enemies\n+2% additional damage",
-    affix4:
-      "+19% chance for Attacks to inflict Paralysis on hit\n+10% additional Attack Damage dealt to Nearby enemies\n+6% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-    affix5:
-      "+19% chance for Attacks to inflict Paralysis on hit\n+10% additional Attack Damage dealt to Nearby enemies\n+12% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-    affix6:
-      "+26% chance for Attacks to inflict Paralysis on hit\n+14% additional Attack Damage dealt to Nearby enemies\n+12% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Legendary",
-    name: "Scale of Original Sin",
-    innerRing1: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing2: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing3: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing5: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing6: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    midRing1: {
-      name: "Spirit Magus Seal Removed II",
-      affix: "+20% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    midRing2: { name: "Damage II", affix: "+20% damage\n+20% Minion Damage" },
-    midRing3: {
-      name: "Skill Duration II",
-      affix: "+10% Skill Effect Duration",
-    },
-    affix1:
-      "+40% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal",
-    affix2:
-      "+40% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal\n+2% additional Minion Damage",
-    affix3:
-      "+40% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal\n+1 Spirit Magus Skill Level\n+2% additional Minion Damage",
-    affix4:
-      "+40% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal\n+1 Spirit Magus Skill Level\n+4% additional Minion Damage",
-    affix5:
-      "+40% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal\n+2 Spirit Magus Skill Level\n+4% additional Minion Damage",
-    affix6:
-      "+53% additional Spirit Magus Ultimate Damage and Ailment Damage dealt by Ultimate when any two of Strength, Dexterity, and Intelligence are equal\n+2 Spirit Magus Skill Level\n+4% additional Minion Damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Shocket - Green Leaf",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing4: { name: "Attack Block I", affix: "+6% Attack Block Chance" },
-    innerRing5: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    innerRing6: { name: "Spell Block I", affix: "+6% Spell Block Chance" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n0.8% Block Ratio when there is a Boss Nearby\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n0.8% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n1.6% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n1.6% Block Ratio when there is a Boss Nearby\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Magic",
-    name: "Shocket - Pale",
-    innerRing1: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing2: {
-      name: "Spirit Magus Seal Removed I",
-      affix: "+10% Sealed Mana Compensation for Spirit Magus Skills",
-    },
-    innerRing3: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing4: { name: "Damage I", affix: "+10% damage\n+10% Minion Damage" },
-    innerRing5: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    innerRing6: {
-      name: "Skill Duration I",
-      affix: "+5% Skill Effect Duration",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Spirit Magus Skill Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Spirit Magus Skill Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Spirit Magus Skill Damage\n+4% additional Minion Damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +5% , 4 초간 지속\n소환체 대미지 추가 +4%",
   },
   {
     type: "Persistent",
     rarity: "Magic",
-    name: "Shocket - Violet",
-    innerRing1: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing2: {
-      name: "Reaping Cooldown I",
-      affix: "+5% Reaping Recovery Speed",
-    },
-    innerRing3: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing4: { name: "Damage Over Time I", affix: "+12% Damage Over Time" },
-    innerRing5: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    innerRing6: {
-      name: "Damage Affliction I",
-      affix: "+10% Affliction Effect",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "까칠한 달팽이-아이리스",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Movement Speed if you have caused Reaping recently\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +20\n소환체 대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Movement Speed if you have caused Reaping recently\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +20\n소환체 대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Movement Speed if you have caused Reaping recently\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 소환된 소환체의 크리티컬 +40\n소환체 대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+5% Movement Speed if you have caused Reaping recently\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 소환된 소환체의 크리티컬 +40\n소환체 대미지 추가 +4%",
   },
   {
     type: "Attack",
-    rarity: "Rare",
-    name: "Shro-Shroom - Boletus",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    rarity: "Magic",
+    name: "까칠한 달팽이-연심",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Elemental Damage\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +2%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Elemental Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +2%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Elemental Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +4%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Elemental Damage\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Rare",
-    name: "Shro-Shroom - Gloom Shroom",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Attack Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Attack Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Attack Damage\n+4% additional damage",
-  },
-  {
-    type: "Spell",
-    rarity: "Rare",
-    name: "Shro-Shroom - Oyster Mushroom",
-    innerRing1: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing2: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing3: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing2: {
-      name: "Spell Critical Strike II",
-      affix: "+45% Spell Critical Strike Rating",
-    },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Spell Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Spell Damage\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+28% Spell Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+28% Spell Damage\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n저주받은 적에게 주는 대미지 추가 +4%\n대미지 추가 +4%",
   },
   {
     type: "Survival",
     rarity: "Magic",
-    name: "Spiny Snail - Cloudless Sky",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing4: {
-      name: "Damage Mitigation I",
-      affix: "-1.5% additional damage taken",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing3: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\n-1% additional damage taken\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\n-1% additional damage taken\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\n-2% additional damage taken\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\n-2% additional damage taken\n-4% additional damage taken",
-  },
-  {
-    type: "Attack",
-    rarity: "Magic",
-    name: "Spiny Snail - Flame",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing4: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing5: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    innerRing6: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage against Cursed enemies\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage against Cursed enemies\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional damage against Cursed enemies\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+4% additional damage against Cursed enemies\n+4% additional damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Magic",
-    name: "Spiny Snail - Flower",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
+    name: "까칠한 달팽이-푸른 하늘",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n받는 대미지 추가 -1%\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n받는 대미지 추가 -1%\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n받는 대미지 추가 -2%\n받는 대미지 추가 -4%",
   },
   {
     type: "Survival",
     rarity: "Magic",
-    name: "Spiny Snail - Green",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing2: {
-      name: "Damage Mitigation II",
-      affix: "-4% additional Physical Damage taken",
-    },
-    midRing3: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
+    name: "까칠한 달팽이-푸름",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
     affix3:
-      "-5% additional damage taken\nConverts 1% of Physical Damage taken to random Elemental Damage\n-2% additional damage taken",
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 1% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -2%",
     affix4:
-      "-5% additional damage taken\nConverts 1% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 1% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
     affix5:
-      "-5% additional damage taken\nConverts 2% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
     affix6:
-      "-6% additional damage taken\nConverts 2% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
+      "받는 대미지 추가 -6%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
   },
   {
-    type: "Summon",
+    type: "Attack",
+    rarity: "Rare",
+    name: "꼬꼬송이-그물버섯",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +14%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +14%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +28%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n원소 대미지 +28%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "꼬꼬송이-새송이버섯",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +14%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +14%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +28%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주술 대미지 +28%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "꼬꼬송이-푸른홀쭉이버섯",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +28%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n공격 대미지 +28%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
     rarity: "Magic",
-    name: "Spiny Snail - Iris",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
+    name: "냥냥이 익스프레스",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.",
     affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
+      "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.\n고양이 도핑약 최대 중첩 수 +1",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+20 Critical Strike Rating for recently summoned Minions\n+2% additional Minion Damage",
+      "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.\n고양이 도핑약 최대 중첩 수 +1\n고양이 도핑약 보유 시 공격 대미지 별도 +4%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+20 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
+      "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.\n고양이 도핑약 최대 중첩 수 +2\n고양이 도핑약 보유 시 공격 대미지 별도 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+40 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
+      "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.\n고양이 도핑약 최대 중첩 수 +2\n고양이 도핑약 보유 시 공격 대미지 별도 +8%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+40 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
+      "메인 스킬 발동 시 고양이 도핑약을 1회 획득한다.\n고양이 도핑약 최대 중첩 수 +2\n고양이 도핑약 보유 시 공격 대미지 별도 +8%\n고양이 도핑약이 최대 중첩 수 도달 시 맹공을 보유한다.",
   },
   {
-    type: "Survival",
-    rarity: "Legendary",
-    name: "Spirit Bless",
-    innerRing1: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing2: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: { name: "Max Energy Shield II", affix: "+8% Max Energy Shield" },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
-    affix1: "+10% additional Max Energy Shield\n+6% Energy Shield Charge Speed",
+    type: "Persistent",
+    rarity: "Magic",
+    name: "라이언 메카",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "투사체 수량 +2",
     affix2:
-      "+10% additional Max Energy Shield\n+6% Energy Shield Charge Speed\n-2% additional damage taken",
+      "투사체 수량 +2\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +4%",
     affix3:
-      "+10% additional Max Energy Shield\n+6% Energy Shield Charge Speed\n+8% Energy Shield Charge Speed\n-2% additional damage taken",
+      "투사체 수량 +2\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +4%\n넉백 거리 +24%",
     affix4:
-      "+10% additional Max Energy Shield\n+6% Energy Shield Charge Speed\n+8% Energy Shield Charge Speed\n-4% additional damage taken",
+      "투사체 수량 +2\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +8%\n넉백 거리 +24%",
     affix5:
-      "+10% additional Max Energy Shield\n+6% Energy Shield Charge Speed\n+16% Energy Shield Charge Speed\n-4% additional damage taken",
+      "투사체 수량 +2\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +8%\n넉백 거리 +48%",
     affix6:
-      "+14% additional Max Energy Shield\n+8% Energy Shield Charge Speed\n+16% Energy Shield Charge Speed\n-4% additional damage taken",
+      "투사체 수량 +2\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +8%\n넉백 거리 +48%\n투사체 속도 +14%",
   },
   {
-    type: "Summon",
-    rarity: "Legendary",
-    name: "Sprite of Silent Vale",
-    innerRing1: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing3: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing4: { name: "Servant Damage I", affix: "+14% Minion Damage" },
-    innerRing5: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    midRing1: { name: "Servant Damage II", affix: "+28% Minion Damage" },
-    midRing2: { name: "Servant Damage II", affix: "+28% Minion Damage" },
-    midRing3: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    affix1: "+60 initial Growth for Spirit Magi",
-    affix2:
-      "+60 initial Growth for Spirit Magi\n+6% Movement Speed when a Spirit Magus is nearby",
+    type: "Persistent",
+    rarity: "Magic",
+    name: "램프 드래곤-극광",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+60 initial Growth for Spirit Magi\n+6% Movement Speed when a Spirit Magus is nearby\nFor every 20 Growth a Spirit Magus has, it deals +1% additional damage, up to +5% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +7%\n대미지 추가 +2%",
     affix4:
-      "+60 initial Growth for Spirit Magi\n+12% Movement Speed when a Spirit Magus is nearby\nFor every 20 Growth a Spirit Magus has, it deals +1% additional damage, up to +5% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +7%\n대미지 추가 +4%",
     affix5:
-      "+60 initial Growth for Spirit Magi\n+12% Movement Speed when a Spirit Magus is nearby\nFor every 20 Growth a Spirit Magus has, it deals +1% additional damage, up to +10% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주술 대미지 +14%\n대미지 추가 +4%",
     affix6:
-      "+75 initial Growth for Spirit Magi\n+12% Movement Speed when a Spirit Magus is nearby\nFor every 20 Growth a Spirit Magus has, it deals +1% additional damage, up to +10% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주술 대미지 +14%\n대미지 추가 +4%",
   },
   {
     type: "Attack",
     rarity: "Magic",
-    name: "Sprouting Grass - Black Porcelain",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "램프 드래곤-촛불",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Elemental Damage\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +7%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Elemental Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +7%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Elemental Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+14% Elemental Damage\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n공격 대미지 +14%\n대미지 추가 +4%",
   },
   {
-    type: "Erosion",
+    type: "Attack",
     rarity: "Magic",
-    name: "Sprouting Grass - Green Porcelain",
-    innerRing1: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing2: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing3: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing4: { name: "Erosion Damage I", affix: "+14% Erosion Damage" },
-    innerRing5: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    innerRing6: {
-      name: "Erosion Penetration I",
-      affix: "+2.5% Erosion Resistance Penetration",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing3: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "램프 드래곤-형광",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Erosion Damage\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +7%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+7% Erosion Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +7%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+14% Erosion Damage\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+14% Erosion Damage\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n공격 대미지 +14%\n대미지 추가 +4%",
   },
   {
-    type: "Spell",
-    rarity: "Legendary",
-    name: "Squiddle",
-    innerRing1: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing2: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing3: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Spell Critical Strike I",
-      affix: "+22% Spell Critical Strike Rating",
-    },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing2: {
-      name: "Spell Critical Strike II",
-      affix: "+45% Spell Critical Strike Rating",
-    },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
+    type: "Persistent",
+    rarity: "Magic",
+    name: "룰루리아--황금 잎",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +4\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +4\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +8\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n건강 상태일 경우, 초당 시전하는 심화 +8\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "룰루리아-단풍나무",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 1.5% , 최대 +3 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 1.5% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +3 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "룰루리아-연해",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 2.75%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 2.75%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 5.5%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n함성 스킬 쿨타임 회복 속도 5.5%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "룰루리아-플로라이트",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +2% , 최고 +4%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +2% , 최고 +4%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +4% , 최고 +8%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +4% , 최고 +8%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "매정한 덜렁이",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +5% , 4 초간 지속\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +5% , 4 초간 지속\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +10% , 4 초간 지속\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +10% , 4 초간 지속\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "매정한 덜렁이-딥 스페이스",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +4%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +4%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주받은 적에게 주는 대미지 추가 +8%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n저주받은 적에게 주는 대미지 추가 +8%\n대미지 추가 +4%",
+  },
+  {
+    type: "Survival",
+    rarity: "Rare",
+    name: "매정한 덜렁이-반석",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3:
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -2%",
+    affix4:
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+    affix5:
+      "받는 대미지 추가 -5%\n받은 물리 대미지의 4% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+    affix6:
+      "받는 대미지 추가 -6%\n받은 물리 대미지의 4% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "매정한 덜렁이-연해",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 2.5% , 최대 +3 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 2.5% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +5% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +5% , 최대 +3 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "매정한 덜렁이-용암",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +3%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +3%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +6%\n대미지 추가 +2%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +6%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n화염 대미지 추가 +6%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "매화 꾀꼬리",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "원소저항 +10%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환",
+    affix2:
+      "원소저항 +10%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -2%",
+    affix3:
+      "원소저항 +10%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받은 물리 대미지의 4% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -2%",
+    affix4:
+      "원소저항 +10%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받은 물리 대미지의 4% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+    affix5:
+      "원소저항 +10%\n받은 물리 대미지의 2% 를 랜덤 원소대미지로 전환\n받은 물리 대미지의 8% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+    affix6:
+      "원소저항 +14%\n받은 물리 대미지의 3% 를 랜덤 원소대미지로 전환\n받은 물리 대미지의 8% 를 랜덤 원소대미지로 전환\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "몽술사",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
     affix1:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova",
+      "주술 스킬로 부여한 원소 대미지 +14% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 +1% , 최대 4회 중첩",
     affix2:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova\n+25% Squidnova Effect",
+      "주술 스킬로 부여한 원소 대미지 +14% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 +1% , 최대 4회 중첩\n대미지 추가 +2%",
     affix3:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova\n+25% Squidnova Effect\n+4% additional Spell Damage when having Squidnova",
+      "주술 스킬로 부여한 원소 대미지 +14% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 +1% , 최대 4회 중첩\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 1.5% , 최대 4회 중첩 가능\n대미지 추가 +2%",
     affix4:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova\n+50% Squidnova Effect\n+4% additional Spell Damage when having Squidnova",
+      "주술 스킬로 부여한 원소 대미지 +14% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 +1% , 최대 4회 중첩\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 1.5% , 최대 4회 중첩 가능\n대미지 추가 +4%",
     affix5:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova\n+50% Squidnova Effect\n+8% additional Spell Damage when having Squidnova",
+      "주술 스킬로 부여한 원소 대미지 +14% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 +1% , 최대 4회 중첩\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 +3% , 최대 4회 중첩 가능\n대미지 추가 +4%",
     affix6:
-      "Activating Spell Burst with at least 6 stack(s) of Max Spell Burst grants 1 stack of Squidnova\n+50% Squidnova Effect\n+8% additional Spell Damage when having Squidnova\n+1 to Max Spell Burst when having Squidnova",
+      "주술 스킬로 부여한 원소 대미지 +19% 추가\n최근 원소 사용 대미지가 적에게 1회 적중할 때마다 원소 저항 관통 1.2% , 최대 4회 중첩\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 +3% , 최대 4회 중첩 가능\n대미지 추가 +4%",
   },
   {
-    type: "Spell",
-    rarity: "Legendary",
-    name: "Starcatcher",
-    innerRing1: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: {
-      name: "Double Spell II",
-      affix: "+4% chance for Spells to deal Double Damage",
-    },
-    midRing2: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
-    affix1:
-      "+6% additional Cast Speed per second when an Elite is Nearby, up to +18%\n+3% Movement Speed when an Elite is Nearby, up to +9%",
-    affix2:
-      "+6% additional Cast Speed per second when an Elite is Nearby, up to +18%\n+3% Movement Speed when an Elite is Nearby, up to +9%\n+2% additional damage",
+    type: "Persistent",
+    rarity: "Magic",
+    name: "무빙일렉-롤랜드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+6% additional Cast Speed per second when an Elite is Nearby, up to +18%\n+3% Movement Speed when an Elite is Nearby, up to +9%\n+5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 2.5% .\n대미지 추가 +2%",
     affix4:
-      "+6% additional Cast Speed per second when an Elite is Nearby, up to +18%\n+3% Movement Speed when an Elite is Nearby, up to +9%\n+5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 2.5% .\n대미지 추가 +4%",
     affix5:
-      "+6% additional Cast Speed per second when an Elite is Nearby, up to +18%\n+3% Movement Speed when an Elite is Nearby, up to +9%\n+10% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 +5% .\n대미지 추가 +4%",
     affix6:
-      "+8% additional Cast Speed per second when an Elite is Nearby, up to +24%\n+4% Movement Speed when an Elite is Nearby, up to +12%\n+10% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 수확을 부여한 경우, 이동 속도 +5% .\n대미지 추가 +4%",
   },
   {
     type: "Attack",
-    rarity: "Legendary",
-    name: "Swaying Bonnie",
-    innerRing1: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing2: {
-      name: "Movement Speed I",
-      affix: "+4% Movement Speed while channeling",
-    },
-    innerRing3: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing4: {
-      name: "Channeled Damage I",
-      affix: "+14% damage for Channeled Skills",
-    },
-    innerRing5: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    innerRing6: {
-      name: "Attack and Cast Speed I",
-      affix: "+4% Attack and Cast Speed",
-    },
-    midRing1: {
-      name: "Movement Speed II",
-      affix: "+8% Movement Speed while channeling",
-    },
-    midRing2: {
-      name: "Channeled Damage II",
-      affix: "+28% damage for Channeled Skills",
-    },
-    midRing3: {
-      name: "Attack and Cast Speed II",
-      affix: "+8% Attack and Cast Speed",
-    },
-    affix1: "+2 to Max Channeled Stacks",
-    affix2:
-      "+2 to Max Channeled Stacks\nAt max channeled stacks, +4% additional damage for Channeled Skills for 4 s",
+    rarity: "Magic",
+    name: "무빙일렉-푸른 잎",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+2 to Max Channeled Stacks\nAt max channeled stacks, +4% additional damage for Channeled Skills for 4 s\nFor every 4 channeled stacks, inflicts Weaken on enemies within 10 m",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 0.8%\n대미지 추가 +2%",
     affix4:
-      "+2 to Max Channeled Stacks\nAt max channeled stacks, +8% additional damage for Channeled Skills for 4 s\nFor every 4 channeled stacks, inflicts Weaken on enemies within 10 m",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 0.8%\n대미지 추가 +4%",
     affix5:
-      "+2 to Max Channeled Stacks\nAt max channeled stacks, +8% additional damage for Channeled Skills for 4 s\nFor every 4 channeled stacks, inflicts Weaken on enemies within 20 m",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 1.6%\n대미지 추가 +4%",
     affix6:
-      "+2 to Max Channeled Stacks\nAt max channeled stacks, +12% additional damage for Channeled Skills for 4 s\nFor every 4 channeled stacks, inflicts Weaken on enemies within 20 m",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 적 보스가 있는 경우, 막기 비율 1.6%\n대미지 추가 +4%",
   },
   {
-    type: "Spell",
-    rarity: "Legendary",
-    name: "The Bone worm's Daughter",
-    innerRing1: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing2: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    innerRing6: {
-      name: "Critical Strike Damage I",
-      affix: "+10% Critical Strike Damage",
-    },
-    midRing1: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing2: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing3: {
-      name: "Critical Strike Damage II",
-      affix: "+20% Critical Strike Damage",
-    },
-    affix1:
-      "+50 Spell Critical Strike Rating per Ailment on enemies, up to +100\n+6% Critical Strike Damage per Ailment on enemies, up to +12%",
-    affix2:
-      "+50 Spell Critical Strike Rating per Ailment on enemies, up to +100\n+6% Critical Strike Damage per Ailment on enemies, up to +12%\n+2% additional damage",
+    type: "Persistent",
+    rarity: "Magic",
+    name: "무빙일렉-화이트",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
     affix3:
-      "+50 Spell Critical Strike Rating per Ailment on enemies, up to +100\n+6% Critical Strike Damage per Ailment on enemies, up to +12%\n+9% Critical Strike Damage per Ailment on enemies, up to +18%\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +14% .\n소환체 대미지 추가 +2%",
     affix4:
-      "+50 Spell Critical Strike Rating per Ailment on enemies, up to +100\n+6% Critical Strike Damage per Ailment on enemies, up to +12%\n+9% Critical Strike Damage per Ailment on enemies, up to +18%\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +14% .\n소환체 대미지 추가 +4%",
     affix5:
-      "+50 Spell Critical Strike Rating per Ailment on enemies, up to +100\n+6% Critical Strike Damage per Ailment on enemies, up to +12%\n+18% Critical Strike Damage per Ailment on enemies, up to +36%\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +28% .\n소환체 대미지 추가 +4%",
     affix6:
-      "+70 Spell Critical Strike Rating per Ailment on enemies, up to +140\n+7% Critical Strike Damage per Ailment on enemies, up to +14%\n+18% Critical Strike Damage per Ailment on enemies, up to +36%\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마령 스킬 대미지 +28% .\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "미욕의 사슴",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 5 초",
+    affix2:
+      "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 5 초\n대미지 추가 +2%",
+    affix3:
+      "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 5 초\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 1.5%\n대미지 추가 +2%",
+    affix4:
+      "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 5 초\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 1.5%\n대미지 추가 +4%",
+    affix5:
+      "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 5 초\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 +3%\n대미지 추가 +4%",
+    affix6:
+      "10미터 내의 적에게 마비 또는 약화를 교대로 부여한다. 쿨타임 4 초\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 +3%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "바다의 냥왕",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "함성을 즉시 시전한다. 함성 스킬 효과 추가 +20%",
+    affix2:
+      "함성을 즉시 시전한다. 함성 스킬 효과 추가 +20%\n함성 스킬 쿨타임 회복 속도 +11%",
+    affix3:
+      "함성을 즉시 시전한다. 함성 스킬 효과 추가 +20%\n함성 스킬 쿨타임 회복 속도 +11%\n함성 스킬의 최대 에너지 충전 포인트 +1",
+    affix4:
+      "함성을 즉시 시전한다. 함성 스킬 효과 추가 +20%\n함성 스킬 쿨타임 회복 속도 +22%\n함성 스킬의 최대 에너지 충전 포인트 +1",
+    affix5:
+      "함성을 즉시 시전한다. 함성 스킬 효과 추가 +20%\n함성 스킬 쿨타임 회복 속도 +22%\n함성 스킬의 최대 에너지 충전 포인트 +2",
+    affix6:
+      "함성을 즉시 시전한다. 함성 스킬 효과 추가 +25%\n함성 스킬 쿨타임 회복 속도 +22%\n함성 스킬의 최대 에너지 충전 포인트 +2",
   },
   {
     type: "Survival",
     rarity: "Rare",
-    name: "Traveling Lizard - Flower",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing4: {
-      name: "Damage Avoidance I",
-      affix: "+1.5% chance to avoid damage",
-    },
-    innerRing5: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    innerRing6: { name: "XP Protection I", affix: "-10% XP lost upon death" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Damage Avoidance II",
-      affix: "+3% chance to avoid damage",
-    },
-    midRing3: { name: "XP Protection II", affix: "-20% XP lost upon death" },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
+    name: "발 묶인 스쿠터",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n받는 대미지 추가 -4%\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n받는 대미지 추가 -4%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "발 묶인 스쿠터-눈꽃",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +3% 추가된다.",
     affix3:
-      "-5% additional damage taken\n+5% Movement Speed\n-2% additional damage taken",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +3% 추가된다.\n대미지 추가 +2%",
     affix4:
-      "-5% additional damage taken\n+5% Movement Speed\n-4% additional damage taken",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +6% 추가된다.\n대미지 추가 +2%",
     affix5:
-      "-5% additional damage taken\n+10% Movement Speed\n-4% additional damage taken",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +6% 추가된다.\n대미지 추가 +4%",
     affix6:
-      "-6% additional damage taken\n+10% Movement Speed\n-4% additional damage taken",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n냉기 대미지가 +6% 추가된다.\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "발 묶인 스쿠터-딤라이트",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 4.5% , 최고 +9%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 4.5% , 최고 +9%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +9% , 최고 +18%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +9% , 최고 +18%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "발 묶인 스쿠터-천둥",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +3%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +3%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +6%\n대미지 추가 +2%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +6%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n번개 대미지 별도 +6%\n대미지 추가 +4%",
   },
   {
     type: "Attack",
     rarity: "Rare",
-    name: "Traveling Lizard - Green Leaf",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+45% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "발 묶인 스쿠터-황혼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Attack Damage dealt to Nearby enemies\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.8%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.8%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 1.6%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+6% additional Attack Damage dealt to Nearby enemies\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 1.6%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "밥 먹는 무사-갈릭",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 1.5%\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 1.5%\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 +3%\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 마령이 있을 경우, 이동 속도 +3%\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "밥 먹는 무사-벌꿀",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +1%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +1%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +2%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +2%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "밥 먹는 무사-스위트 오렌지",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +1% , 4 초 지속\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +1% , 4 초 지속\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +2% , 4 초 지속\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +2% , 4 초 지속\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "별 사냥꾼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +6% 추가된다. 최대 +18%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +9%",
+    affix2:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +6% 추가된다. 최대 +18%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +9%\n대미지 추가 +2%",
+    affix3:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +6% 추가된다. 최대 +18%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +9%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +5% , 최대 +3 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +6% 추가된다. 최대 +18%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +9%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +5% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +6% 추가된다. 최대 +18%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +3% , 최대 +9%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +10% , 최대 +3 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "주변에 강적이 있는 경우, 1초마다 시전 속도가 +8% 추가된다. 최대 +24%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +4% , 최대 +12%\n주변에 강적이 있는 경우, 1초마다 이동 속도 +10% , 최대 +3 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "보살피는 영혼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "최대 보호막 +10% 추가\n보호막충전 속도 추가 +6%",
+    affix2:
+      "최대 보호막 +10% 추가\n보호막충전 속도 추가 +6%\n받는 대미지 추가 -2%",
+    affix3:
+      "최대 보호막 +10% 추가\n보호막충전 속도 추가 +6%\n보호막 에너지 충전 속도 +8%\n받는 대미지 추가 -2%",
+    affix4:
+      "최대 보호막 +10% 추가\n보호막충전 속도 추가 +6%\n보호막 에너지 충전 속도 +8%\n받는 대미지 추가 -4%",
+    affix5:
+      "최대 보호막 +10% 추가\n보호막충전 속도 추가 +6%\n보호막 에너지 충전 속도 +16%\n받는 대미지 추가 -4%",
+    affix6:
+      "최대 보호막 +14% 추가\n보호막충전 속도 추가 +8%\n보호막 에너지 충전 속도 +16%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "본 버그 레이디",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +50 , 최대 +100\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +6% , 최대 +12%",
+    affix2:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +50 , 최대 +100\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +6% , 최대 +12%\n대미지 추가 +2%",
+    affix3:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +50 , 최대 +100\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +6% , 최대 +12%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +9% , 최고 +18%\n대미지 추가 +2%",
+    affix4:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +50 , 최대 +100\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +6% , 최대 +12%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +9% , 최고 +18%\n대미지 추가 +4%",
+    affix5:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +50 , 최대 +100\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +6% , 최대 +12%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +18% , 최고 +36%\n대미지 추가 +4%",
+    affix6:
+      "적이 받는 상태 이상 1가지당, 주술 크리티컬 +70 , 최대 +140\n적이 받는 상태 이상 1가지당, 크리티컬 대미지 +7% , 최대 +14%\n적이 받는 상태 이상 1개당, 크리티컬 대미지 +18% , 최고 +36%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "분노한 바다의 항해사-반석",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.4 초\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.4 초\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.4 초\n최근에 마취를 부여한 경우, 이동 속도 7.5%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.4 초\n최근에 마취를 부여한 경우, 이동 속도 7.5%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "분노한 바다의 항해사-푸른 하늘",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 5.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 5.5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n함성 스킬 쿨타임 회복 속도 +11%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n함성 스킬 쿨타임 회복 속도 +11%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "붉은 우산",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "공격 적중 시, +19% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +10% 추가",
+    affix2:
+      "공격 적중 시, +19% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +10% 추가\n대미지 추가 +2%",
+    affix3:
+      "공격 적중 시, +19% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +10% 추가\n주변 적에게 주는 추가 공격 대미지 +6%\n대미지 추가 +2%",
+    affix4:
+      "공격 적중 시, +19% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +10% 추가\n주변 적에게 주는 추가 공격 대미지 +6%\n대미지 추가 +4%",
+    affix5:
+      "공격 적중 시, +19% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +10% 추가\n주변 적에게 주는 추가 공격 대미지 +12%\n대미지 추가 +4%",
+    affix6:
+      "공격 적중 시, +26% 의 확률로 마비 부여\n주변의 적에 대한 공격 대미지 +14% 추가\n주변 적에게 주는 추가 공격 대미지 +12%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "성녀를 모독한 초상화",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "임의의 축복 획득 시 참회 1회 획득",
+    affix2: "임의의 축복 획득 시 참회 1회 획득\n참회 최대 중첩수 +1",
+    affix3:
+      "임의의 축복 획득 시 참회 1회 획득\n참회 최대 중첩수 +1\n참회 1회 보유 시마다 부식 저항 +1%",
+    affix4:
+      "임의의 축복 획득 시 참회 1회 획득\n참회 최대 중첩수 +2\n참회 1회 보유 시마다 부식 저항 +1%",
+    affix5:
+      "임의의 축복 획득 시 참회 1회 획득\n참회 최대 중첩수 +2\n참회 1회 보유 시마다 부식 저항 +3%",
+    affix6:
+      "임의의 축복 획득 시 참회 1회 획득\n참회 최대 중첩수 +3\n참회 1회 보유 시마다 부식 저항 +3%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "스윙 보니",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "채널링 중첩 상한 +2",
+    affix2:
+      "채널링 중첩 상한 +2\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +4% , 4 초 지속",
+    affix3:
+      "채널링 중첩 상한 +2\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +4% , 4 초 지속\n채널링 중첩수 4 회 획득 시마다 10 미터 내의 적에게 약화를 부여한다.",
+    affix4:
+      "채널링 중첩 상한 +2\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +8% , 4 초 지속\n채널링 중첩수 4 회 획득 시마다 10 미터 내의 적에게 약화를 부여한다.",
+    affix5:
+      "채널링 중첩 상한 +2\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +8% , 4 초 지속\n채널링 중첩수 4 회 획득 시마다 20 미터 내의 적에게 약화를 부여한다.",
+    affix6:
+      "채널링 중첩 상한 +2\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +12% , 4 초 지속\n채널링 중첩수 4 회 획득 시마다 20 미터 내의 적에게 약화를 부여한다.",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "신나는 통통이-엠버 휘장",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 1.5%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 1.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +3%\n대미지 추가 +2%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n화염 대미지 추가 +3%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n화염 대미지 추가 +3%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "신나는 통통이-전광",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 1.5%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 1.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +3%\n대미지 추가 +2%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n번개 대미지 별도 +3%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n번개 대미지 별도 +3%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "아우아우-롤랜드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 1.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 1.5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 +3%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변 적에게 주는 추가 공격 대미지 +3%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "아우아우-포그 화이트",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 1.5% 추가된다.",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 1.5% 추가된다.\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +3% 추가된다.\n대미지 추가 +2%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n냉기 대미지가 +3% 추가된다.\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n냉기 대미지가 +3% 추가된다.\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "아우아우-푸른 비",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 17.5\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 17.5\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +35\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +35\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "아우아우-푸른 하늘",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.4%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.4%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.8%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n적이 보유한 제어류 상태 1가지당, 자신과 자신의 소환체가 적에게 입히는 대미지 추가 0.8%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "아우아우-호박",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 1.8% , 최대 4 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 1.8% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 3.6% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 부여한 수확 1회당, 수확 시간 3.6% , 최대 4 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "아즈라 캐논",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.",
+    affix2:
+      "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.\n아즈라 획득 시 50% 확률로 청초를 1회 추가 획득한다.",
+    affix3:
+      "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.\n아즈라 획득 시 50% 확률로 청초를 1회 추가 획득한다.\n아즈라 보유 시 받은 대미지 별도 -4%",
+    affix4:
+      "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.\n아즈라 획득 시 100% 확률로 청초를 1회 추가 획득한다.\n아즈라 보유 시 받은 대미지 별도 -4%",
+    affix5:
+      "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.\n아즈라 획득 시 100% 확률로 청초를 1회 추가 획득한다.\n아즈라 보유 시 받은 대미지 별도 -8%",
+    affix6:
+      "위치 이동 공격 스킬 사용 시 아즈라를 1회 획득한다.\n아즈라 획득 시 100% 확률로 청초를 1회 추가 획득한다.\n아즈라 보유 시 받은 대미지 별도 -8%\n아즈라 최대 중첩 +1\n아즈라 지속 시간 +100%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "얼음 번개",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 14% , 최대 대미지가 15% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.",
+    affix2:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 14% , 최대 대미지가 15% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.\n번개 대미지 별도 +6%",
+    affix3:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 14% , 최대 대미지가 15% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.\n번개 대미지 별도 +6%\n대미지 추가 +2%",
+    affix4:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 14% , 최대 대미지가 15% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.\n번개 대미지 별도 +12%\n대미지 추가 +2%",
+    affix5:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 14% , 최대 대미지가 15% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.\n번개 대미지 별도 +12%\n대미지 추가 +4%",
+    affix6:
+      "거센 번개의 힘을 계약자에게 부여하여 계약자의 번개 대미지가 19% , 최대 대미지가 20% 별도 추가된다. 5초간 지속\n스킬 쿨타임 10초.\n번개 대미지 별도 +12%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "얼음 유령",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +10% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.",
+    affix2:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +10% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.\n냉기 대미지가 +6% 추가된다.",
+    affix3:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +10% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.\n냉기 대미지가 +6% 추가된다.\n대미지 추가 +2%",
+    affix4:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +10% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.\n냉기 대미지가 +12% 추가된다.\n대미지 추가 +2%",
+    affix5:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +10% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.\n냉기 대미지가 +12% 추가된다.\n대미지 추가 +4%",
+    affix6:
+      "몰두, 자신과 계약자 주변에 얼음 지옥을 각자 1개씩 형성하여 얼음 지옥에서 빙결 상태인 적에게 1초마다 디버프를 시전하고, 해당 적이 받는 냉기 대미지가 +13% 추가된다. 최대 4회 중첩 가능, 6초간 지속.\n스킬 쿨타임 10초.\n냉기 대미지가 +12% 추가된다.\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "여유로운 족제비-모래자갈",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.8 초\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.8 초\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.8 초\n최근에 마취를 부여한 경우, 이동 속도 3.75%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.8 초\n최근에 마취를 부여한 경우, 이동 속도 3.75%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "여유로운 족제비-새싹",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.4% , 최대 4회 중첩 가능\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.4% , 최대 4회 중첩 가능\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.8% , 최대 4회 중첩 가능\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 원소 대미지를 사용하여 적을 1회 적중할 때마다 원소 저항 관통 0.8% , 최대 4회 중첩 가능\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "여유로운 족제비-심연",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 2.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 2.5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 +5%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n저주 효과 +5%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "여유로운 족제비-연해",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +4%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +4%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +8%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +8%\n대미지 추가 +4%",
   },
   {
     type: "Survival",
     rarity: "Rare",
-    name: "Traveling Lizard - Ocean",
-    innerRing1: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing2: { name: "Max Energy Shield I", affix: "+4% Max Energy Shield" },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: { name: "Max Energy Shield II", affix: "+8% Max Energy Shield" },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
-    affix3:
-      "-5% additional damage taken\n+4% Energy Shield Charge Speed\n-2% additional damage taken",
-    affix4:
-      "-5% additional damage taken\n+4% Energy Shield Charge Speed\n-4% additional damage taken",
-    affix5:
-      "-5% additional damage taken\n+8% Energy Shield Charge Speed\n-4% additional damage taken",
-    affix6:
-      "-6% additional damage taken\n+8% Energy Shield Charge Speed\n-4% additional damage taken",
+    name: "여행 도마뱀-꽃무리",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n이동 속도 +5%\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n이동 속도 +5%\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n이동 속도 +10%\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n이동 속도 +10%\n받는 대미지 추가 -4%",
   },
   {
     type: "Attack",
     rarity: "Rare",
-    name: "Traveling Lizard - Violet",
-    innerRing1: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing2: {
-      name: "Projectile Damage I",
-      affix: "+14% Projectile Damage",
-    },
-    innerRing3: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing4: { name: "Projectile Speed I", affix: "+6% Projectile Speed" },
-    innerRing5: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing6: {
-      name: "Multistrike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    midRing1: { name: "Projectile Damage II", affix: "+30% Projectile Damage" },
-    midRing2: { name: "Projectile Speed II", affix: "+12% Projectile Speed" },
-    midRing3: {
-      name: "Multistrike II",
-      affix: "+45% Attack Critical Strike Rating",
-    },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "여행 도마뱀-롤랜드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+35 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +35\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+35 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +35\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+70 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +70\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+70 Attack Projectile Skill Critical Strike Rating against Distant enemies\n+4% additional damage",
-  },
-  {
-    type: "Attack",
-    rarity: "Legendary",
-    name: "Valkyrie's Night Patrol",
-    innerRing1: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing2: { name: "Attack Damage I", affix: "+12% Attack Damage" },
-    innerRing3: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing4: {
-      name: "Attack Critical Strike I",
-      affix: "+22% Attack Critical Strike Rating",
-    },
-    innerRing5: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    innerRing6: { name: "Attack Speed I", affix: "+4% Attack Speed" },
-    midRing1: { name: "Attack Damage II", affix: "+24% Attack Damage" },
-    midRing2: {
-      name: "Attack Critical Strike II",
-      affix: "+44% Attack Critical Strike Rating",
-    },
-    midRing3: { name: "Attack Speed II", affix: "+8% Attack Speed" },
-    affix1: "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed",
-    affix2:
-      "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed\n+1 Max Valkyrie's Hymn Stacks",
-    affix3:
-      "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed\n+1 Max Valkyrie's Hymn Stacks\n+4% Elemental Damage for every stack of Valkyrie's Hymn",
-    affix4:
-      "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed\n+2 Max Valkyrie's Hymn Stacks\n+4% Elemental Damage for every stack of Valkyrie's Hymn",
-    affix5:
-      "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed\n+2 Max Valkyrie's Hymn Stacks\n+8% Elemental Damage for every stack of Valkyrie's Hymn",
-    affix6:
-      "Gains 1 stack of Valkyrie's Hymn for every 2% Max Mana consumed\n+2 Max Valkyrie's Hymn Stacks\n+8% Elemental Damage for every stack of Valkyrie's Hymn\nUpon reaching Max Valkyrie's Hymn Stacks, +10% Elemental Resistance Penetration",
-  },
-  {
-    type: "Survival",
-    rarity: "Legendary",
-    name: "Warbler of Plum Blossoms",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
-    affix1:
-      "+10% Elemental Resistance\nConverts 2% of Physical Damage taken to random Elemental Damage",
-    affix2:
-      "+10% Elemental Resistance\nConverts 2% of Physical Damage taken to random Elemental Damage\n-2% additional damage taken",
-    affix3:
-      "+10% Elemental Resistance\nConverts 2% of Physical Damage taken to random Elemental Damage\nConverts 4% of Physical Damage taken to random Elemental Damage\n-2% additional damage taken",
-    affix4:
-      "+10% Elemental Resistance\nConverts 2% of Physical Damage taken to random Elemental Damage\nConverts 4% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
-    affix5:
-      "+10% Elemental Resistance\nConverts 2% of Physical Damage taken to random Elemental Damage\nConverts 8% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
-    affix6:
-      "+14% Elemental Resistance\nConverts 3% of Physical Damage taken to random Elemental Damage\nConverts 8% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
-  },
-  {
-    type: "Summon",
-    rarity: "Legendary",
-    name: "Whisperwind Leaves",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Servant Damage II", affix: "+30% Minion Damage" },
-    midRing2: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1:
-      "+22% additional damage for recently summoned Minions\n+50 Critical Strike Rating for recently summoned Minions",
-    affix2:
-      "+22% additional damage for recently summoned Minions\n+50 Critical Strike Rating for recently summoned Minions\n+2% additional Minion Damage",
-    affix3:
-      "+22% additional damage for recently summoned Minions\n+50 Critical Strike Rating for recently summoned Minions\n+80 Critical Strike Rating for recently summoned Minions\n+2% additional Minion Damage",
-    affix4:
-      "+22% additional damage for recently summoned Minions\n+50 Critical Strike Rating for recently summoned Minions\n+80 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-    affix5:
-      "+22% additional damage for recently summoned Minions\n+50 Critical Strike Rating for recently summoned Minions\n+160 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-    affix6:
-      "+30% additional damage for recently summoned Minions\n+60 Critical Strike Rating for recently summoned Minions\n+160 Critical Strike Rating for recently summoned Minions\n+4% additional Minion Damage",
-  },
-  {
-    type: "Summon",
-    rarity: "Rare",
-    name: "Winter Darer",
-    innerRing1: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing2: { name: "Servant Damage I", affix: "+15% Minion Damage" },
-    innerRing3: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing4: {
-      name: "Servant Speed I",
-      affix: "+4% Minion Attack and Cast Speed",
-    },
-    innerRing5: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    innerRing6: { name: "Servant Life I", affix: "+4% Minion Max Life" },
-    midRing1: { name: "Servant Damage II", affix: "+30% Minion Damage" },
-    midRing2: {
-      name: "Servant Speed II",
-      affix: "+8% Minion Attack and Cast Speed",
-    },
-    midRing3: { name: "Servant Life II", affix: "+8% Minion Max Life" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional Minion Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+2% additional Minion Damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+10% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+10% Minion Attack and Cast Speed for 4 s when your Synthetic Troops deal Double Damage\n+4% additional Minion Damage",
-  },
-  {
-    type: "Fire",
-    rarity: "Rare",
-    name: "Winter Darer - Lava",
-    innerRing1: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing2: { name: "Fire Damage I", affix: "+14% Fire Damage" },
-    innerRing3: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing4: { name: "Fire Penetration I", affix: "+2.5% Fire Penetration" },
-    innerRing5: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    innerRing6: { name: "Fire Area I", affix: "+14% Fire Skill Area" },
-    midRing1: { name: "Fire Damage II", affix: "+28% Fire Damage" },
-    midRing2: { name: "Fire Penetration II", affix: "+5% Fire Penetration" },
-    midRing3: { name: "Fire Area II", affix: "+28% Fire Skill Area" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Fire Damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+3% additional Fire Damage\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Fire Damage\n+2% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+6% additional Fire Damage\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+6% additional Fire Damage\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +70\n대미지 추가 +4%",
   },
   {
     type: "Survival",
     rarity: "Rare",
-    name: "Winter Darer - Rock",
-    innerRing1: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing2: {
-      name: "Elemental Resistance I",
-      affix: "+2.5% Elemental Resistance",
-    },
-    innerRing3: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing4: {
-      name: "Mana Restoration I",
-      affix: "+15% Mana Regeneration Speed",
-    },
-    innerRing5: { name: "XP Bonus I", affix: "+3% XP earned" },
-    innerRing6: { name: "XP Bonus I", affix: "+3% XP earned" },
-    midRing1: {
-      name: "Elemental Resistance II",
-      affix: "+5% Elemental Resistance",
-    },
-    midRing2: {
-      name: "Mana Restoration II",
-      affix: "+30% Mana Regeneration Speed",
-    },
-    midRing3: { name: "XP Bonus II", affix: "+6% XP earned" },
-    affix1: "-5% additional damage taken",
-    affix2: "-5% additional damage taken\n-2% additional damage taken",
+    name: "여행 도마뱀-심해",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
     affix3:
-      "-5% additional damage taken\nConverts 2% of Physical Damage taken to random Elemental Damage\n-2% additional damage taken",
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +4%\n받는 대미지 추가 -2%",
     affix4:
-      "-5% additional damage taken\nConverts 2% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +4%\n받는 대미지 추가 -4%",
     affix5:
-      "-5% additional damage taken\nConverts 4% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +8%\n받는 대미지 추가 -4%",
     affix6:
-      "-6% additional damage taken\nConverts 4% of Physical Damage taken to random Elemental Damage\n-4% additional damage taken",
-  },
-  {
-    type: "Spell",
-    rarity: "Rare",
-    name: "Winter Darer - Shallow Sea",
-    innerRing1: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing2: {
-      name: "Double Spell I",
-      affix: "+2% chance for Spells to deal Double Damage",
-    },
-    innerRing3: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing4: { name: "Spell Damage I", affix: "+12% Spell Damage" },
-    innerRing5: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    innerRing6: { name: "Cast Speed I", affix: "+4% Cast Speed" },
-    midRing1: {
-      name: "Double Spell II",
-      affix: "+4% chance for Spells to deal Double Damage",
-    },
-    midRing2: { name: "Spell Damage II", affix: "+24% Spell Damage" },
-    midRing3: { name: "Cast Speed II", affix: "+8% Cast Speed" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
-    affix3:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+2% additional damage",
-    affix4:
-      "+5% additional damage; +5% additional Minion Damage\n2.5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
-    affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
-    affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+5% Movement Speed per second when an Elite is nearby, up to +3 stack(s)\n+4% additional damage",
+      "받는 대미지 추가 -6%\n보호막 에너지 충전 속도 +8%\n받는 대미지 추가 -4%",
   },
   {
     type: "Attack",
     rarity: "Rare",
-    name: "Winter Darer - Sky",
-    innerRing1: { name: "Damage I", affix: "+10% damage" },
-    innerRing2: { name: "Damage I", affix: "+10% damage" },
-    innerRing3: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing4: {
-      name: "Cursed Enemy Weakening I",
-      affix: "-2% additional damage taken from Cursed enemies",
-    },
-    innerRing5: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    innerRing6: { name: "Curse Effect I", affix: "+1.5% Curse Effect" },
-    midRing1: { name: "Damage II", affix: "+20% damage" },
-    midRing2: {
-      name: "Cursed Enemy Weakening II",
-      affix: "-4% additional damage taken from Cursed enemies",
-    },
-    midRing3: { name: "Curse Effect II", affix: "+3% Curse Effect" },
-    affix1: "+5% additional damage; +5% additional Minion Damage",
-    affix2:
-      "+5% additional damage; +5% additional Minion Damage\n+2% additional damage",
+    name: "여행 도마뱀-푸른 잎",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
     affix3:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional damage against Cursed enemies\n+2% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 +3%\n대미지 추가 +2%",
     affix4:
-      "+5% additional damage; +5% additional Minion Damage\n+4% additional damage against Cursed enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 +3%\n대미지 추가 +4%",
     affix5:
-      "+5% additional damage; +5% additional Minion Damage\n+8% additional damage against Cursed enemies\n+4% additional damage",
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변 적에게 주는 추가 공격 대미지 +6%\n대미지 추가 +4%",
     affix6:
-      "+7% additional damage; +7% additional Minion Damage\n+8% additional damage against Cursed enemies\n+4% additional damage",
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변 적에게 주는 추가 공격 대미지 +6%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "열정의 드래곤 스콜피온",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "마령의 근원 효과 +40%\n마령 스킬 대미지 추가 +5%",
+    affix2:
+      "마령의 근원 효과 +40%\n마령 스킬 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "마령의 근원 효과 +40%\n마령 스킬 대미지 추가 +5%\n마령 스킬 대미지 추가 +4%\n소환체 대미지 추가 +2%",
+    affix4:
+      "마령의 근원 효과 +40%\n마령 스킬 대미지 추가 +5%\n마령 스킬 대미지 추가 +4%\n소환체 대미지 추가 +4%",
+    affix5:
+      "마령의 근원 효과 +40%\n마령 스킬 대미지 추가 +5%\n마령 스킬 대미지 추가 +8%\n소환체 대미지 추가 +4%",
+    affix6:
+      "마령의 근원 효과 +55%\n마령 스킬 대미지 추가 +7%\n마령 스킬 대미지 추가 +8%\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "영약 요정",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "영약 스킬 효과 +35%",
+    affix2:
+      "영약 스킬 효과 +35%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +4%",
+    affix3:
+      "영약 스킬 효과 +35%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +4%\n영약 스킬이 지속되는 동안 이동 속도 +5%",
+    affix4:
+      "영약 스킬 효과 +35%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +8%\n영약 스킬이 지속되는 동안 이동 속도 +5%",
+    affix5:
+      "영약 스킬 효과 +35%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +8%\n영약 스킬이 지속되는 동안 이동 속도 +10%",
+    affix6:
+      "영약 스킬 효과 +35%\n영약 스킬이 지속되는 동안 대미지와 소환체 대미지 별도 +8%\n영약 스킬이 지속되는 동안 이동 속도 +10%\n최근 영약 스킬을 1회 시전할 때마다, 영약 스킬 효과 1.5% , 최대 12 회 중첩",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "영원한 밤의 모래",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "최근 막기한 경우, 적중 시 HP가 15% 미만인 적을 처치한다.",
+    affix2:
+      "최근 막기한 경우, 적중 시 HP가 15% 미만인 적을 처치한다.\n대미지 추가 +2%",
+    affix3:
+      "최근 막기한 경우, 적중 시 HP가 15% 미만인 적을 처치한다.\n주변에 적 보스가 있는 경우, 막기 비율 +3%\n대미지 추가 +2%",
+    affix4:
+      "최근 막기한 경우, 적중 시 HP가 15% 미만인 적을 처치한다.\n주변에 적 보스가 있는 경우, 막기 비율 +3%\n대미지 추가 +4%",
+    affix5:
+      "최근 막기한 경우, 적중 시 HP가 15% 미만인 적을 처치한다.\n주변에 적 보스가 있는 경우, 막기 비율 +6%\n대미지 추가 +4%",
+    affix6:
+      "최근 막기한 경우, 적중 시 HP가 20% 미만인 적을 처치한다.\n주변에 적 보스가 있는 경우, 막기 비율 +6%\n대미지 추가 +4%",
+  },
+  {
+    type: "Survival",
+    rarity: "Rare",
+    name: "울먹이는 실타래",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n1초당 HP 0.6% 회복\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n1초당 HP 0.6% 회복\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n1초당 HP 1.2% 회복\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n1초당 HP 1.2% 회복\n받는 대미지 추가 -4%",
   },
   {
     type: "Attack",
-    rarity: "Legendary",
-    name: "Witch Antelope of Lust",
-    innerRing1: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing2: { name: "Damage I", affix: "+12% damage\n+12% Minion Damage" },
-    innerRing3: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing4: {
-      name: "Erosion Resistance I",
-      affix: "+6% Erosion Resistance",
-    },
-    innerRing5: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    innerRing6: {
-      name: "Crowd Control Effects II",
-      affix: "+5% Crowd Control Effects",
-    },
-    midRing1: { name: "Damage II", affix: "+24% damage\n+24% Minion Damage" },
-    midRing2: {
-      name: "Erosion Resistance II",
-      affix: "+12% Erosion Resistance",
-    },
-    midRing3: {
-      name: "Crowd Control Effects II",
-      affix: "+10% Crowd Control Effects",
-    },
+    rarity: "Rare",
+    name: "울먹이는 실타래-롤랜드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 7.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 7.5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +15%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +15%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "원죄의 천칭",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
     affix1:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 5 s",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +40%",
     affix2:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 5 s\n+2% additional damage",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +40%\n소환체 대미지 추가 +2%",
     affix3:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 5 s\nFor every type of crowd control effect the enemy has, you and your Minions deal 1.5% additional damage to them\n+2% additional damage",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +40%\n마령 스킬 레벨 +1\n소환체 대미지 추가 +2%",
     affix4:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 5 s\nFor every type of crowd control effect the enemy has, you and your Minions deal 1.5% additional damage to them\n+4% additional damage",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +40%\n마령 스킬 레벨 +1\n소환체 대미지 추가 +4%",
     affix5:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 5 s\nFor every type of crowd control effect the enemy has, you and your Minions deal +3% additional damage to them\n+4% additional damage",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +40%\n마령 스킬 레벨 +2\n소환체 대미지 추가 +4%",
     affix6:
-      "Inflicts Paralysis or Weaken on enemies within 10m in turn. Cooldown: 4 s\nFor every type of crowd control effect the enemy has, you and your Minions deal +3% additional damage to them\n+4% additional damage",
+      "힘, 민첩, 지혜 중 2개가 같을 경우 마령의 궁극 스킬 대미지 및 궁극 스킬로 부여하는 상태이상 대미지 별도 +53%\n마령 스킬 레벨 +2\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "위스퍼링 리프",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "최근 소환된 소환체의 대미지 별도 +22%\n최근 소환된 소환체의 크리티컬 +50",
+    affix2:
+      "최근 소환된 소환체의 대미지 별도 +22%\n최근 소환된 소환체의 크리티컬 +50\n소환체 대미지 추가 +2%",
+    affix3:
+      "최근 소환된 소환체의 대미지 별도 +22%\n최근 소환된 소환체의 크리티컬 +50\n최근 소환된 소환체의 크리티컬 +80\n소환체 대미지 추가 +2%",
+    affix4:
+      "최근 소환된 소환체의 대미지 별도 +22%\n최근 소환된 소환체의 크리티컬 +50\n최근 소환된 소환체의 크리티컬 +80\n소환체 대미지 추가 +4%",
+    affix5:
+      "최근 소환된 소환체의 대미지 별도 +22%\n최근 소환된 소환체의 크리티컬 +50\n최근 소환된 소환체의 크리티컬 +160\n소환체 대미지 추가 +4%",
+    affix6:
+      "최근 소환된 소환체의 대미지 별도 +30%\n최근 소환된 소환체의 크리티컬 +60\n최근 소환된 소환체의 크리티컬 +160\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "이터널 키퍼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "최근에 적중되지 않은 경우, 이동 속도 +30%\n이동 속도 +6%",
+    affix2:
+      "최근에 적중되지 않은 경우, 이동 속도 +30%\n이동 속도 +6%\n받는 대미지 추가 -2%",
+    affix3:
+      "최근에 적중되지 않은 경우, 이동 속도 +30%\n이동 속도 +6%\n이동 속도 +10%\n받는 대미지 추가 -2%",
+    affix4:
+      "최근에 적중되지 않은 경우, 이동 속도 +30%\n이동 속도 +6%\n이동 속도 +10%\n받는 대미지 추가 -4%",
+    affix5:
+      "최근에 적중되지 않은 경우, 이동 속도 +30%\n이동 속도 +6%\n이동 속도 +20%\n받는 대미지 추가 -4%",
+    affix6:
+      "최근에 적중되지 않은 경우, 이동 속도 +40%\n이동 속도 +8%\n이동 속도 +20%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "작은 새싹-청자",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +7%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +7%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +14%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n부식 대미지 +14%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Magic",
+    name: "작은 새싹-흑도자기",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +7%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +7%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n원소 대미지 +14%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n원소 대미지 +14%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "전기 에너지 비축 식량",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "마취 효과 +35%",
+    affix2:
+      "마취 효과 +35%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.2 초",
+    affix3:
+      "마취 효과 +35%\n마취 부여 시, 손실된 HP와 보호막을 1.5% 회복, 간격 0.2 초\n최근에 마취를 부여한 경우, 이동 속도 +15%",
+    affix4:
+      "마취 효과 +35%\n마취 부여 시, 손실된 HP와 보호막을 3% 회복, 간격 0.2 초\n최근에 마취를 부여한 경우, 이동 속도 +15%",
+    affix5:
+      "마취 효과 +35%\n마취 부여 시, 손실된 HP와 보호막을 3% 회복, 간격 0.2 초\n최근에 마취를 부여한 경우, 이동 속도 +30%",
+    affix6:
+      "마취 효과 +45%\n마취 부여 시, 손실된 HP와 보호막을 3% 회복, 간격 0.2 초\n최근에 마취를 부여한 경우, 이동 속도 +30%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "전쟁 여신의 야행",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.",
+    affix2:
+      "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.\n전쟁 여신의 찬미 최대 중첩 +1",
+    affix3:
+      "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.\n전쟁 여신의 찬미 최대 중첩 +1\n전쟁 여신의 찬미 중첩 1회 보유할 때마다 원소 대미지 +4%",
+    affix4:
+      "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.\n전쟁 여신의 찬미 최대 중첩 +2\n전쟁 여신의 찬미 중첩 1회 보유할 때마다 원소 대미지 +4%",
+    affix5:
+      "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.\n전쟁 여신의 찬미 최대 중첩 +2\n전쟁 여신의 찬미 중첩 1회 보유할 때마다 원소 대미지 +8%",
+    affix6:
+      "최대 MP를 2% 소모할 때마다 전쟁 여신의 찬미를 1회 획득한다.\n전쟁 여신의 찬미 최대 중첩 +2\n전쟁 여신의 찬미 중첩 1회 보유할 때마다 원소 대미지 +8%\n전쟁 여신의 찬미 중첩 수가 최대일 경우, 원소 저항 관통 +10%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "춘곤초-가랑잎",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 1.5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 1.5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 적 보스가 있는 경우, 막기 비율 +3%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 적 보스가 있는 경우, 막기 비율 +3%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "춘곤초-보라 수정",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +28% .\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +28% .\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 +56% .\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마령 스킬 대미지 +56% .\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "춘곤초-불꽃",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 +5% .\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 +5% .\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 수확을 부여한 경우, 이동 속도 +10% .\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 수확을 부여한 경우, 이동 속도 +10% .\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "컬러 송이",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.",
+    affix2:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.\n스퀴드 익스플로젼 효과 +25%",
+    affix3:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.\n스퀴드 익스플로젼 효과 +25%\n스퀴드 익스플로젼 보유 시, 주술 대미지 별도 +4%",
+    affix4:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.\n스퀴드 익스플로젼 효과 +50%\n스퀴드 익스플로젼 보유 시, 주술 대미지 별도 +4%",
+    affix5:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.\n스퀴드 익스플로젼 효과 +50%\n스퀴드 익스플로젼 보유 시, 주술 대미지 별도 +8%",
+    affix6:
+      "매직 버스트 활성화 시, 최소 6 회의 최대 매직 버스트를 보유할 경우 스퀴드 익스플로젼을 1회 획득한다.\n스퀴드 익스플로젼 효과 +50%\n스퀴드 익스플로젼 보유 시, 주술 대미지 별도 +8%\n스퀴드 익스플로젼 보유 시, 최대 매직 버스트 +1",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "크로스 로더",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "저주 상태의 적에 대한 상태이상 대미지 +13% 추가\n저주 효과 11.5%",
+    affix2:
+      "저주 상태의 적에 대한 상태이상 대미지 +13% 추가\n저주 효과 11.5%\n대미지 추가 +2%",
+    affix3:
+      "저주 상태의 적에 대한 상태이상 대미지 +13% 추가\n저주 효과 11.5%\n저주 효과 +10%\n대미지 추가 +2%",
+    affix4:
+      "저주 상태의 적에 대한 상태이상 대미지 +13% 추가\n저주 효과 11.5%\n저주 효과 +10%\n대미지 추가 +4%",
+    affix5:
+      "저주 상태의 적에 대한 상태이상 대미지 +13% 추가\n저주 효과 11.5%\n저주 효과 +20%\n대미지 추가 +4%",
+    affix6:
+      "저주 상태의 적에 대한 상태이상 대미지 +18% 추가\n저주 효과 +15%\n저주 효과 +20%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "타오르는 날개",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "건강 상태일 경우, 심화 효과 +80%\n건강 상태일 경우, 1초마다 심화 10.5 부여",
+    affix2:
+      "건강 상태일 경우, 심화 효과 +80%\n건강 상태일 경우, 1초마다 심화 10.5 부여\n대미지 추가 +2%",
+    affix3:
+      "건강 상태일 경우, 심화 효과 +80%\n건강 상태일 경우, 1초마다 심화 10.5 부여\n건강 상태일 경우, 초당 시전하는 심화 +15\n대미지 추가 +2%",
+    affix4:
+      "건강 상태일 경우, 심화 효과 +80%\n건강 상태일 경우, 1초마다 심화 10.5 부여\n건강 상태일 경우, 초당 시전하는 심화 +15\n대미지 추가 +4%",
+    affix5:
+      "건강 상태일 경우, 심화 효과 +80%\n건강 상태일 경우, 1초마다 심화 10.5 부여\n건강 상태일 경우, 초당 시전하는 심화 +30\n대미지 추가 +4%",
+    affix6:
+      "건강 상태일 경우, 심화 효과 +105%\n건강 상태일 경우, 1초마다 심화 +14 부여\n건강 상태일 경우, 초당 시전하는 심화 +30\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "탐욕의 밤-비취",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 +5%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 +5%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n저주 효과 +10%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n저주 효과 +10%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "탐욕의 밤-연근",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +2%\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +2%\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +4%\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마령 스킬 대미지 추가 +4%\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "탐욕의 밤-연잎",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 3.5% , 최대 4 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 3.5% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n최근 부여한 수확 1회당, 수확 시간 +7% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n최근 부여한 수확 1회당, 수확 시간 +7% , 최대 4 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "탐욕의 밤-찬란한 빛",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +8\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +8\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n건강 상태일 경우, 초당 시전하는 심화 +16\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n건강 상태일 경우, 초당 시전하는 심화 +16\n대미지 추가 +4%",
+  },
+  {
+    type: "Survival",
+    rarity: "Magic",
+    name: "탐험가 수달-머드 스톤",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n1초당 HP 0.3% 회복\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n1초당 HP 0.3% 회복\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n1초당 HP 0.6% 회복\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n1초당 HP 0.6% 회복\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Survival",
+    rarity: "Magic",
+    name: "탐험가 수달-바위",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3:
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +2%\n받는 대미지 추가 -2%",
+    affix4:
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +2%\n받는 대미지 추가 -4%",
+    affix5:
+      "받는 대미지 추가 -5%\n보호막 에너지 충전 속도 +4%\n받는 대미지 추가 -4%",
+    affix6:
+      "받는 대미지 추가 -6%\n보호막 에너지 충전 속도 +4%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "탐험가 수달-올리브",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +1%\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +1%\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n마령 스킬 대미지 추가 +2%\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n마령 스킬 대미지 추가 +2%\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Survival",
+    rarity: "Magic",
+    name: "탐험가 수달-퀵 샌드",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "받는 대미지 추가 -5%",
+    affix2: "받는 대미지 추가 -5%\n받는 대미지 추가 -2%",
+    affix3: "받는 대미지 추가 -5%\n이동 속도 2.5%\n받는 대미지 추가 -2%",
+    affix4: "받는 대미지 추가 -5%\n이동 속도 2.5%\n받는 대미지 추가 -4%",
+    affix5: "받는 대미지 추가 -5%\n이동 속도 +5%\n받는 대미지 추가 -4%",
+    affix6: "받는 대미지 추가 -6%\n이동 속도 +5%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "트랩 권력",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "스마트 웨폰 소환체가 +14% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +6% , 4 초간 지속",
+    affix2:
+      "스마트 웨폰 소환체가 +14% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +6% , 4 초간 지속\n소환체 대미지 추가 +2%",
+    affix3:
+      "스마트 웨폰 소환체가 +14% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +6% , 4 초간 지속\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +10% , 4 초간 지속\n소환체 대미지 추가 +2%",
+    affix4:
+      "스마트 웨폰 소환체가 +14% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +6% , 4 초간 지속\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +10% , 4 초간 지속\n소환체 대미지 추가 +4%",
+    affix5:
+      "스마트 웨폰 소환체가 +14% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +6% , 4 초간 지속\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +20% , 4 초간 지속\n소환체 대미지 추가 +4%",
+    affix6:
+      "스마트 웨폰 소환체가 +19% 의 확률로 이중 대미지를 부여한다.\n자신이 보유한 스마트 웨폰 소환체가 이중 대미지 부여 시, 소환체의 공격 및 시전 속도 +8% , 4 초간 지속\n보유한 스마트 웨폰이 이중 대미지를 부여하는 경우, 소환체 공격 및 시전 속도 +20% , 4 초간 지속\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "포그 스콜피온",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +20% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +9%",
+    affix2:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +20% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +9%\n대미지 추가 +2%",
+    affix3:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +20% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +9%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +15%\n대미지 추가 +2%",
+    affix4:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +20% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +9%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +15%\n대미지 추가 +4%",
+    affix5:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +20% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +9%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +30%\n대미지 추가 +4%",
+    affix6:
+      "주변에 적이 1 명 뿐일 시, 공격 속도 +27% 추가\n주변에 적이 최소 2 명 이상일 시, 이동 속도 +12%\n주변에 적이 최소 2 명 있을 경우, 이동 속도 +30%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "푸른 기사",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -40% 추가\n받는 대미지 -3% 추가",
+    affix2:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -40% 추가\n받는 대미지 -3% 추가\n받는 대미지 추가 -2%",
+    affix3:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -40% 추가\n받는 대미지 -3% 추가\n받는 대미지 추가 -4%\n받는 대미지 추가 -2%",
+    affix4:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -40% 추가\n받는 대미지 -3% 추가\n받는 대미지 추가 -4%\n받는 대미지 추가 -4%",
+    affix5:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -40% 추가\n받는 대미지 -3% 추가\n받는 대미지 추가 -8%\n받는 대미지 추가 -4%",
+    affix6:
+      "주변에 적이 1 명 뿐일 경우, 받는 물리 대미지 -55% 추가\n받는 대미지 -4% 추가\n받는 대미지 추가 -8%\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "푸른 풀-송로버섯",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +2%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +2%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +4%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n근거리에 적이 없을 경우 공격 및 시전 속도 추가 +4%\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "푸른 풀-양배추",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +2% , 4 초 지속\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +2% , 4 초 지속\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +4% , 4 초 지속\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n채널링 최대 중첩수 도달 시 채널링 스킬의 대미지 추가 +4% , 4 초 지속\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "푸른 풀-양파",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n소환체 대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 +3%\n소환체 대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 +3%\n소환체 대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n주변에 마령이 있을 경우, 이동 속도 +6%\n소환체 대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n주변에 마령이 있을 경우, 이동 속도 +6%\n소환체 대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "플랜트 위스퍼",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +16%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +40",
+    affix2:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +16%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +40\n대미지 추가 +2%",
+    affix3:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +16%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +40\n원거리의 적에게 투사체 스킬 공격 크리티컬 +70\n대미지 추가 +2%",
+    affix4:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +16%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +40\n원거리의 적에게 투사체 스킬 공격 크리티컬 +70\n대미지 추가 +4%",
+    affix5:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +16%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +40\n원거리의 적에게 투사체 스킬 공격 크리티컬 +140\n대미지 추가 +4%",
+    affix6:
+      "원거리의 적에게 투사체 스킬 크리티컬로 부여하는 대미지 별도 +21%\n원거리의 적에게 투사체 스킬 공격 크리티컬 +55\n원거리의 적에게 투사체 스킬 공격 크리티컬 +140\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "홀리 뮤직",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "HP 추가 +10%\n1초당 HP 0.6% 회복",
+    affix2: "HP 추가 +10%\n1초당 HP 0.6% 회복\n받는 대미지 추가 -2%",
+    affix3:
+      "HP 추가 +10%\n1초당 HP 0.6% 회복\n1초당 HP 1% 회복\n받는 대미지 추가 -2%",
+    affix4:
+      "HP 추가 +10%\n1초당 HP 0.6% 회복\n1초당 HP 1% 회복\n받는 대미지 추가 -4%",
+    affix5:
+      "HP 추가 +10%\n1초당 HP 0.6% 회복\n1초당 HP 2% 회복\n받는 대미지 추가 -4%",
+    affix6:
+      "HP 추가 +14%\n1초당 HP 0.9% 회복\n1초당 HP 2% 회복\n받는 대미지 추가 -4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "화마",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 26% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.",
+    affix2:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 26% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.\n화염 대미지 추가 +6%",
+    affix3:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 26% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.\n화염 대미지 추가 +6%\n대미지 추가 +2%",
+    affix4:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 26% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.\n화염 대미지 추가 +12%\n대미지 추가 +2%",
+    affix5:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 26% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.\n화염 대미지 추가 +12%\n대미지 추가 +4%",
+    affix6:
+      "타겟의 반경 5미터 안이 불길로 덮이며, 해당 범위 내의 적에게 디버프를 시전한다.\n디버프 효과: 해당 적이 받는 화염 대미지가 35% 별도 추가된다. 3초간 지속\n스킬 쿨타임 5 초.\n화염 대미지 추가 +12%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "화염 검객",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "상태 이상을 부여했을 경우, 0.8 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +4% , 최대 4 회 중첩",
+    affix2:
+      "상태 이상을 부여했을 경우, 0.8 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +4% , 최대 4 회 중첩\n대미지 추가 +2%",
+    affix3:
+      "상태 이상을 부여했을 경우, 0.8 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +4% , 최대 4 회 중첩\n최근 부여한 수확 1회당, 수확 시간 +7% , 최대 4 회 중첩\n대미지 추가 +2%",
+    affix4:
+      "상태 이상을 부여했을 경우, 0.8 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +4% , 최대 4 회 중첩\n최근 부여한 수확 1회당, 수확 시간 +7% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix5:
+      "상태 이상을 부여했을 경우, 0.8 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +4% , 최대 4 회 중첩\n최근 부여한 수확 1회당, 수확 시간 +14% , 최대 4 회 중첩\n대미지 추가 +4%",
+    affix6:
+      "상태 이상을 부여했을 경우, 1 초 동안 지속 대미지를 수확한다. 해당 효과는 동일한 대상에게 6 초간 회복 시간을 가진다.\n최근 부여한 수확 1회당, 수확 시간 +6% , 최대 4 회 중첩\n최근 부여한 수확 1회당, 수확 시간 +14% , 최대 4 회 중첩\n대미지 추가 +4%",
+  },
+  {
+    type: "Attack",
+    rarity: "Rare",
+    name: "활달한 애벌레-관용 초록",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +14%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n공격 대미지 +28%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n공격 대미지 +28%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Rare",
+    name: "활달한 애벌레-도깨비불",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1: "대미지 추가 +5% , 소환체 대미지 추가 +5%",
+    affix2: "대미지 추가 +5% , 소환체 대미지 추가 +5%\n대미지 추가 +2%",
+    affix3:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +14%\n대미지 추가 +2%",
+    affix4:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +14%\n대미지 추가 +4%",
+    affix5:
+      "대미지 추가 +5% , 소환체 대미지 추가 +5%\n부식 대미지 +28%\n대미지 추가 +4%",
+    affix6:
+      "대미지 추가 +7% , 소환체 대미지 추가 +7%\n부식 대미지 +28%\n대미지 추가 +4%",
+  },
+  {
+    type: "Persistent",
+    rarity: "Magic",
+    name: "흉조",
+    innerRing1: { name: "", affix: "" },
+    innerRing2: { name: "", affix: "" },
+    innerRing3: { name: "", affix: "" },
+    innerRing4: { name: "", affix: "" },
+    innerRing5: { name: "", affix: "" },
+    innerRing6: { name: "", affix: "" },
+    midRing1: { name: "", affix: "" },
+    midRing2: { name: "", affix: "" },
+    midRing3: { name: "", affix: "" },
+    affix1:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 +4%",
+    affix2:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 +4%\n대미지 추가 +2%",
+    affix3:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 +4%\n저주받은 적에게 주는 대미지 추가 +8%\n대미지 추가 +2%",
+    affix4:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 +4%\n저주받은 적에게 주는 대미지 추가 +8%\n대미지 추가 +4%",
+    affix5:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 +4%\n저주받은 적에게 주는 대미지 추가 +16%\n대미지 추가 +4%",
+    affix6:
+      "추가 저주를 1 개 시전할 수 있다.\n최근 저주 스킬을 시전한 경우, 이동 속도 6.5%\n저주받은 적에게 주는 대미지 추가 +16%\n대미지 추가 +4%",
   },
 ] as const satisfies readonly Pactspirit[];

@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+﻿import { useCallback, useMemo, useState } from "react";
 import { useHeroUIStore } from "@/src/stores/heroUIStore";
 import type { HeroMemory, HeroPage } from "@/src/tli/core";
 import { HeroMemoryItem } from "./HeroMemoryItem";
@@ -101,7 +101,7 @@ export const MemoryInventory = ({
       </div>
       {heroMemoryList.length === 0 ? (
         <p className="text-zinc-500 italic text-center py-4">
-          No memories in inventory. Click "Craft Memory" to add one.
+          인벤토리에 기억이 없습니다. "Craft Memory"을 클릭하여 추가하세요.
         </p>
       ) : (
         <div className="space-y-1 max-h-96 overflow-y-auto">
@@ -119,3 +119,5 @@ export const MemoryInventory = ({
     </div>
   );
 };
+
+

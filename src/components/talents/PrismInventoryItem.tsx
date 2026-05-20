@@ -1,4 +1,4 @@
-import { Tooltip, TooltipTitle } from "@/src/components/ui/Tooltip";
+﻿import { Tooltip, TooltipTitle } from "@/src/components/ui/Tooltip";
 import { useTooltip } from "@/src/hooks/useTooltip";
 import {
   getBaseAffixLabel,
@@ -160,3 +160,5 @@ export const PrismInventoryItem: React.FC<PrismInventoryItemProps> = ({
     </>
   );
 };
+
+

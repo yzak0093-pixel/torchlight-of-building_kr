@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { getSlateShape } from "@/src/lib/divinity-utils";
 import type { DivinitySlate } from "@/src/tli/core";
@@ -147,3 +147,5 @@ export const SlateEditToolbar: React.FC<SlateEditToolbarProps> = ({
     document.body,
   );
 };
+
+

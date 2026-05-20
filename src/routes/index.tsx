@@ -1,4 +1,4 @@
-import { useLingui } from "@lingui/react";
+﻿import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
@@ -458,3 +458,5 @@ function SavesPage(): React.ReactNode {
     </div>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { SearchableSelect } from "@/src/components/ui/SearchableSelect";
 import { Pactspirits } from "@/src/data/pactspirit/pactspirits";
 import type { PactspiritSlot } from "@/src/tli/core";
@@ -181,3 +181,5 @@ export const PactspiritColumn: React.FC<PactspiritColumnProps> = ({
     </div>
   );
 };
+
+

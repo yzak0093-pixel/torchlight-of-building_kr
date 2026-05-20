@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { SearchableSelect } from "@/src/components/ui/SearchableSelect";
 import type { Destiny } from "@/src/data/destiny/types";
 import {
@@ -19,14 +19,14 @@ interface DestinySelectionModalProps {
   isOpen: boolean;
   ringSlot: RingSlotKey;
   onClose: () => void;
-  onConfirm: (destiny: InstalledDestinyResult) => void;
+  on확인: (destiny: InstalledDestinyResult) => void;
 }
 
 export const DestinySelectionModal = ({
   isOpen,
   ringSlot,
   onClose,
-  onConfirm,
+  on확인,
 }: DestinySelectionModalProps) => {
   const [selectedDestiny, setSelectedDestiny] = useState<Destiny | undefined>();
   const [percentage, setPercentage] = useState(50);
@@ -52,9 +52,9 @@ export const DestinySelectionModal = ({
     setPercentage(50);
   };
 
-  const handleConfirm = () => {
+  const handle확인 = () => {
     if (!selectedDestiny) return;
-    onConfirm({
+    on확인({
       destinyName: selectedDestiny.name,
       destinyType: selectedDestiny.type,
       resolvedAffix: previewAffix,
@@ -63,19 +63,14 @@ export const DestinySelectionModal = ({
   };
 
   return (
-    <Modal
-      isOpen={isOpen}
-      onClose={onClose}
-      title="Install Destiny"
-      maxWidth="md"
-    >
+    <Modal isOpen={isOpen} onClose={onClose} title="숙명 장착" maxWidth="md">
       <ModalDescription>
         Select a destiny to install in this{" "}
         {ringSlot.startsWith("innerRing") ? "inner" : "mid"} ring slot.
       </ModalDescription>
 
       <div className="mb-4">
-        <label className="block text-sm text-zinc-400 mb-1">Destiny</label>
+        <label className="block text-sm text-zinc-400 mb-1">숙명</label>
         <SearchableSelect
           value={selectedDestiny?.name}
           onChange={(name) => name && handleDestinySelect(name)}
@@ -83,7 +78,7 @@ export const DestinySelectionModal = ({
             value: destiny.name,
             label: formatDestinyOption(destiny),
           }))}
-          placeholder="<Select Destiny>"
+          placeholder="<숙명 선택>"
           autoFocus={isOpen}
         />
       </div>
@@ -91,7 +86,7 @@ export const DestinySelectionModal = ({
       {selectedDestiny && affixHasRanges && (
         <div className="mb-4">
           <div className="flex justify-between items-center mb-1">
-            <label className="text-sm text-zinc-400">Roll Quality</label>
+            <label className="text-sm text-zinc-400">옵션 수치 조정</label>
             <span className="text-sm font-medium text-zinc-50">
               {percentage}%
             </span>
@@ -119,15 +114,11 @@ export const DestinySelectionModal = ({
       )}
 
       <ModalActions>
-        <ModalButton
-          onClick={handleConfirm}
-          disabled={!selectedDestiny}
-          fullWidth
-        >
-          Confirm
+        <ModalButton onClick={handle확인} disabled={!selectedDestiny} fullWidth>
+          확인
         </ModalButton>
         <ModalButton onClick={onClose} variant="secondary">
-          Cancel
+          취소
         </ModalButton>
       </ModalActions>
     </Modal>

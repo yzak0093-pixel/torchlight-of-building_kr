@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+﻿import { useMemo, useState } from "react";
 import {
   SearchableSelect,
   type SearchableSelectOption,
@@ -408,3 +408,5 @@ export const LegendarySlateCrafter: React.FC<LegendarySlateCrafterProps> = ({
     </div>
   );
 };
+
+

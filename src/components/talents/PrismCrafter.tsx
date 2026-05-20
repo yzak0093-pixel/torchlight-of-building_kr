@@ -276,4 +276,3 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
     </div>
   );
 };
-

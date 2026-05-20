@@ -1,4 +1,4 @@
-interface ExistingAffixDisplayProps {
+﻿interface ExistingAffixDisplayProps {
   value: string;
   onDelete: () => void;
 }
@@ -24,3 +24,5 @@ export const ExistingAffixDisplay = ({
     </div>
   );
 };
+
+

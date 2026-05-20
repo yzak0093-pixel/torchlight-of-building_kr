@@ -1,4 +1,4 @@
-import { i18n } from "@lingui/core";
+﻿import { i18n } from "@lingui/core";
 import { Trans } from "@lingui/react/macro";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Legendaries } from "@/src/data/legendary/legendaries";
@@ -957,3 +957,5 @@ export const VoraxGearModule: React.FC<VoraxGearModuleProps> = ({
     </Modal>
   );
 };
+
+

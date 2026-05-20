@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -9,14 +9,10 @@ import type {
   PactspiritRingDetails,
 } from "../data/pactspirit/types";
 
-// ============================================================================
-// Fetching
-// ============================================================================
-
 const BASE_URL = "https://tlidb.com/ko";
 const PACTSPIRIT_LIST_URL = `${BASE_URL}/Pactspirit`;
-const OUTPUT_DIR = ".garbage/tlidb";
-const PACTSPIRITS_DIR = `${OUTPUT_DIR}/pactspirits`;
+const OUTPUT_DIR = join(process.cwd(), ".garbage", "tlidb");
+const PACTSPIRITS_DIR = join(OUTPUT_DIR, "pactspirits");
 
 const delay = (ms: number): Promise<void> =>
   new Promise((resolve) => setTimeout(resolve, ms));
@@ -24,38 +20,30 @@ const delay = (ms: number): Promise<void> =>
 const fetchPage = async (url: string): Promise<string> => {
   console.log(`Fetching: ${url}`);
   const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.status}`);
-  }
+  if (!response.ok) throw new Error(`Failed to fetch ${url}`);
   return response.text();
 };
 
 const extractNonDropPactspiritLinks = (html: string): string[] => {
-  // Each pactspirit is in a <div class="col"> block
-  // We need to find each block and check if it contains "Increases Drop Quantity"
   const colBlockRegex =
     /<div class="col"><div class="d-flex[^>]*>[\s\S]*?<\/div><\/div><\/div>/g;
   const hrefRegex = /href="([^"]+)"/;
   const links: string[] = [];
-
   const blocks = html.match(colBlockRegex) || [];
 
   for (const block of blocks) {
-    // Skip drop pactspirits
-    if (block.includes("Increases Drop Quantity")) {
-      const hrefMatch = block.match(hrefRegex);
-      if (hrefMatch) {
-        console.log(
-          `Filtering out (drop pactspirit): ${decodeURIComponent(hrefMatch[1])}`,
-        );
-      }
+    // 한국어 및 영어 "드롭(Drop)" 정령 필터링
+    if (
+      block.includes("Increases Drop Quantity") ||
+      block.includes("드롭 수량") ||
+      block.includes("드롭 희귀도") ||
+      block.includes("드랍")
+    ) {
       continue;
     }
-
     const hrefMatch = block.match(hrefRegex);
     if (hrefMatch) {
       const href = hrefMatch[1];
-      // Filter for pactspirit-like links
       if (
         href &&
         !href.startsWith("http") &&
@@ -68,132 +56,73 @@ const extractNonDropPactspiritLinks = (html: string): string[] => {
       }
     }
   }
-
-  // Deduplicate
   return [...new Set(links)];
 };
 
 const fetchPactspiritPages = async (): Promise<void> => {
-  // Create directories
   await mkdir(OUTPUT_DIR, { recursive: true });
   await mkdir(PACTSPIRITS_DIR, { recursive: true });
 
-  // Fetch main pactspirit list page
-  const listPagePath = join(OUTPUT_DIR, "pactspirit.html");
-  let listHtml: string;
-
-  if (existsSync(listPagePath)) {
-    console.log("Using cached pactspirit list page");
-    listHtml = await readFile(listPagePath, "utf-8");
-  } else {
-    listHtml = await fetchPage(PACTSPIRIT_LIST_URL);
-    await writeFile(listPagePath, listHtml);
-    console.log(`Saved: ${listPagePath}`);
-  }
-
-  // Extract non-drop pactspirit links (filtering happens here)
+  const listHtml = await fetchPage(PACTSPIRIT_LIST_URL);
   const pactspiritLinks = extractNonDropPactspiritLinks(listHtml);
   console.log(`Found ${pactspiritLinks.length} non-drop pactspirit links`);
 
-  // Fetch each pactspirit page
   for (const link of pactspiritLinks) {
-    // Decode first to handle already-encoded characters (e.g., %27 for apostrophe)
     const decodedLink = decodeURIComponent(link);
     const filename = `${decodedLink}.html`;
     const filepath = join(PACTSPIRITS_DIR, filename);
-
-    if (existsSync(filepath)) {
-      console.log(`Skipping (already exists): ${filename}`);
-      continue;
-    }
 
     try {
       const url = `${BASE_URL}/${encodeURIComponent(decodedLink)}`;
       const html = await fetchPage(url);
       await writeFile(filepath, html);
       console.log(`Saved: ${filepath}`);
-
-      // Be polite to the server
       await delay(200);
     } catch (error) {
       console.error(`Error fetching ${link}:`, error);
     }
   }
-
-  console.log("Fetching complete!");
 };
 
-// ============================================================================
-// Data Generation
-// ============================================================================
-
-const RARITIES = ["Magic", "Rare", "Legendary"] as const;
-
-const cleanEffectText = (html: string): string => {
-  // Use cheerio to properly extract text content from HTML
-  // This handles tooltips with > characters in attribute values correctly
+const cleanText = (html: string): string => {
   const $ = cheerio.load(`<root>${html}</root>`, { xml: false });
-
-  // Replace br tags with newline markers before text extraction
   $("root br").replaceWith("\n");
-
-  // Extract text from each modifier div separately, then join with newlines
   const modifiers = $("root div.modifier");
-  let text: string;
-
+  let text = "";
   if (modifiers.length > 0) {
-    // Multiple modifier divs - extract each and join with newlines
     const lines: string[] = [];
     modifiers.each((_, el) => {
-      // Use [ \t]+ to normalize only spaces/tabs, preserving newlines from <br> tags
       const modText = $(el)
         .text()
         .replace(/[ \t]+/g, " ")
         .trim();
-      if (modText.length > 0) {
-        lines.push(modText);
-      }
+      if (modText.length > 0) lines.push(modText);
     });
     text = lines.join("\n");
   } else {
-    // No modifier divs - extract from root directly
-    text = $("root").text();
-    // Normalize whitespace to single spaces
-    text = text.replace(/[ \t]+/g, " ");
+    text = $("root")
+      .text()
+      .replace(/[ \t]+/g, " ");
   }
-
-  // Clean up: trim each line and remove empty lines
-  text = text
+  return text
     .split("\n")
     .map((line) => line.trim())
     .filter((line) => line.length > 0)
-    .join("\n");
-
-  return text.trim();
+    .join("\n")
+    .trim();
 };
 
 const cleanAffixText = (html: string): string => {
-  // Use cheerio to properly extract text content from HTML
-  // This handles tooltips with > characters in attribute values correctly
   const $ = cheerio.load(`<root>${html}</root>`, { xml: false });
-
-  // Replace br tags with newlines before text extraction
   $("root br").replaceWith("\n");
-
-  // Get text content (cheerio properly extracts only text, ignoring tooltip attributes)
-  let text = $("root").text();
-
-  // Normalize only spaces/tabs, preserving newlines from <br> tags
-  text = text.replace(/[ \t]+/g, " ");
-
-  // Clean up: trim each line and remove empty lines
-  text = text
+  return $("root")
+    .text()
+    .replace(/[ \t]+/g, " ")
     .split("\n")
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0)
-    .join("\n");
-
-  return text.trim();
+    .map((l) => l.trim())
+    .filter((l) => l.length > 0)
+    .join("\n")
+    .trim();
 };
 
 const emptyRingDetails = (): PactspiritRingDetails => ({ name: "", affix: "" });
@@ -202,24 +131,28 @@ const extractPactspirit = (
   $: cheerio.CheerioAPI,
   filename: string,
 ): Pactspirit => {
-  // Name from filename: Red_Umbrella.html -> "Red Umbrella"
-  const name = filename.replace(/\.html$/, "").replace(/_/g, " ");
+  // 웹페이지의 실제 한국어 h1 타이틀을 추출 (없으면 파일명 사용)
+  let name = $("h1").first().text().trim();
+  if (!name) name = filename.replace(/\.html$/, "").replace(/_/g, " ");
 
-  // Type and Rarity from spans
   const spans = $("span.btn.btn-sm.btn-secondary.mb-1");
-  let type = "";
-  let rarity = "";
+  let type = "Persistent"; // 기본값
+  let rarity = "Magic";
 
   spans.each((_, span) => {
     const text = $(span).text().trim();
-    if (RARITIES.includes(text as (typeof RARITIES)[number])) {
-      rarity = text;
-    } else if (!type) {
-      type = text;
+    if (text === "Legendary" || text === "전설") rarity = "Legendary";
+    else if (text === "Rare" || text === "레어") rarity = "Rare";
+    else if (text === "Magic" || text === "매직") rarity = "Magic";
+    else {
+      // 시스템 카테고리에 맞게 영문으로 매핑 보존 (UI 동작 보호)
+      if (text === "공격" || text === "Attack") type = "Attack";
+      else if (text === "생존" || text === "Survival") type = "Survival";
+      else if (text === "지속" || text === "Persistent") type = "Persistent";
+      else type = "Persistent";
     }
   });
 
-  // Ring effects from flex-grow-1 ms-2 divs
   const innerRings: PactspiritRingDetails[] = [];
   const midRings: PactspiritRingDetails[] = [];
 
@@ -227,28 +160,24 @@ const extractPactspirit = (
     const divs = $(ringDiv).children("div");
     if (divs.length >= 3) {
       const ringName = $(divs[0]).text().trim();
-      const affixHtml = $(divs[1]).html() || "";
-      const affix = cleanAffixText(affixHtml);
+      const affix = cleanAffixText($(divs[1]).html() || "");
       const ringType = $(divs[2]).text().trim();
 
-      if (ringType === "Inner ring effect") {
+      // 한국어 고리 이름 인식
+      if (ringType.includes("Inner") || ringType.includes("안쪽")) {
         innerRings.push({ name: ringName, affix });
-      } else if (ringType === "Mid ring effect") {
+      } else if (ringType.includes("Mid") || ringType.includes("중간")) {
         midRings.push({ name: ringName, affix });
       }
     }
   });
 
-  // Effects from Upgrade Reward table
   const effects: Record<string, string> = {};
-  const tableRows = $("table.table tbody tr");
-
-  tableRows.each((_, row) => {
+  $("table.table tbody tr").each((_, row) => {
     const tds = $(row).find("td");
     if (tds.length >= 2) {
       const level = $(tds[0]).text().trim();
-      const effectHtml = $(tds[1]).html() || "";
-      effects[`effect${level}`] = cleanEffectText(effectHtml);
+      effects[`effect${level}`] = cleanText($(tds[1]).html() || "");
     }
   });
 
@@ -274,18 +203,8 @@ const extractPactspirit = (
   };
 };
 
-const generateDataFile = (items: Pactspirit[]): string => {
-  return `// This file is machine-generated. Do not modify manually.
-// To regenerate, run: pnpm exec tsx src/scripts/generate-pactspirit-data.ts
-import type { Pactspirit } from "./types";
-
-export const Pactspirits = ${JSON.stringify(items)} as const satisfies readonly Pactspirit[];
-`;
-};
-
-// ============================================================================
-// Main
-// ============================================================================
+const generateDataFile = (items: Pactspirit[]): string =>
+  `// Machine-generated\nimport type { Pactspirit } from "./types";\n\nexport const Pactspirits = ${JSON.stringify(items, null, 2)} as const satisfies readonly Pactspirit[];\n`;
 
 interface Options {
   refetch: boolean;
@@ -301,46 +220,33 @@ const main = async (options: Options): Promise<void> => {
   const inputDir = join(process.cwd(), ".garbage", "tlidb", "pactspirits");
   const outDir = join(process.cwd(), "src", "data", "pactspirit");
 
-  console.log("Reading HTML files from:", inputDir);
   const files = await readdir(inputDir);
   const htmlFiles = files.filter((f) => f.endsWith(".html"));
-  console.log(`Found ${htmlFiles.length} HTML files`);
-
   const pactspirits: Pactspirit[] = [];
 
   for (const filename of htmlFiles) {
-    const filepath = join(inputDir, filename);
-    const html = await readFile(filepath, "utf-8");
-    const $ = cheerio.load(html);
-
-    const pactspirit = extractPactspirit($, filename);
-    pactspirits.push(pactspirit);
+    const html = await readFile(join(inputDir, filename), "utf-8");
+    pactspirits.push(extractPactspirit(cheerio.load(html), filename));
   }
 
-  // Sort by name for consistent output
   pactspirits.sort((a, b) => a.name.localeCompare(b.name));
+  await mkdir(outDir, { recursive: true });
+  await writeFile(
+    join(outDir, "pactspirits.ts"),
+    generateDataFile(pactspirits),
+    "utf-8",
+  );
 
   console.log(`Extracted ${pactspirits.length} pactspirits`);
-
-  await mkdir(outDir, { recursive: true });
-
-  const dataPath = join(outDir, "pactspirits.ts");
-  await writeFile(dataPath, generateDataFile(pactspirits), "utf-8");
-  console.log(`Generated pactspirits.ts`);
-
-  console.log("\nCode generation complete!");
   execSync("pnpm format", { stdio: "inherit" });
 };
 
 program
-  .description("Generate pactspirit data from cached HTML pages")
-  .option("--refetch", "Refetch HTML pages from tlidb before generating")
+  .option("--refetch")
   .action((options: Options) => {
     main(options)
       .then(() => process.exit(0))
-      .catch((error) => {
-        console.error("Script failed:", error);
-        process.exit(1);
-      });
+      .catch(() => process.exit(1));
   })
   .parse();
+export { main as generatePactspiritData };

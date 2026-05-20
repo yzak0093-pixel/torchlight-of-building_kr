@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import type {
   HeroMemorySlot,
   HeroMemory as SaveDataHeroMemory,
@@ -99,3 +99,5 @@ export const HeroTab = ({
     </div>
   );
 };
+
+

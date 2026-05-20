@@ -1,4 +1,4 @@
-import { i18n } from "@lingui/core";
+﻿import { i18n } from "@lingui/core";
 import { Trans } from "@lingui/react/macro";
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useMemo, useState } from "react";
@@ -288,3 +288,5 @@ function EquipmentPage(): React.ReactNode {
     </div>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { useCallback } from "react";
 import { useOffenseResults } from "../../components/builder/OffenseResultsContext";
 import { HeroTab } from "../../components/hero/HeroTab";
@@ -61,3 +61,5 @@ function HeroPage(): React.ReactNode {
     />
   );
 }
+
+

@@ -1,4 +1,4 @@
-import { i18n } from "@lingui/core";
+﻿import { i18n } from "@lingui/core";
 import { SearchableSelect } from "@/src/components/ui/SearchableSelect";
 import {
   Tooltip,
@@ -406,3 +406,5 @@ export const TraitSelector = ({
     </div>
   );
 };
+
+

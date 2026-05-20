@@ -87,7 +87,7 @@ export const PrismSection: React.FC<PrismSectionProps> = ({
         isOpen={isModalOpen}
         onClose={handleClose}
         title={
-          editingPrism !== undefined ? "제노프리즘 편집" : "제노프리즘 제작"
+          editingPrism !== undefined ? "제노프리즘 Edit" : "제노프리즘 제작"
         }
         dismissible={false}
       >
@@ -100,3 +100,5 @@ export const PrismSection: React.FC<PrismSectionProps> = ({
     </div>
   );
 };
+
+
