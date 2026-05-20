@@ -26,7 +26,7 @@ msgstr "Affliction"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:102
 msgid "Alchemist"
-msgstr "Alchemist"
+msgstr "연금술사"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:150
@@ -41,17 +41,17 @@ msgstr "Arcane"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:75
 msgid "Arcanist"
-msgstr "Arcanist"
+msgstr "미스틱"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:107
 msgid "Artisan"
-msgstr "Artisan"
+msgstr "장인"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:48
 msgid "Assassin"
-msgstr "Assassin"
+msgstr "어쌔신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:167
@@ -81,7 +81,7 @@ msgstr "Beyond Cure"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:53
 msgid "Bladerunner"
-msgstr "Bladerunner"
+msgstr "블레이드 러너"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:151
@@ -186,7 +186,7 @@ msgstr "Dirty Tricks"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:58
 msgid "Druid"
-msgstr "Druid"
+msgstr "드루이드"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:36
@@ -196,7 +196,7 @@ msgstr "Dying Dragon"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:80
 msgid "Elementalist"
-msgstr "Elementalist"
+msgstr "엘리멘탈리스트"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:123
@@ -301,32 +301,32 @@ msgstr "Gale"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:95
 msgid "God of Machines"
-msgstr "God of Machines"
+msgstr "기계의 신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:122
 msgid "God of Might"
-msgstr "God of Might"
+msgstr "힘의 신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:149
 msgid "God of War"
-msgstr "God of War"
+msgstr "전쟁의 신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:6
 msgid "Goddess of Deception"
-msgstr "Goddess of Deception"
+msgstr "기만의 여신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:41
 msgid "Goddess of Hunting"
-msgstr "Goddess of Hunting"
+msgstr "사냥의 여신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:68
 msgid "Goddess of Knowledge"
-msgstr "Goddess of Knowledge"
+msgstr "지식의 여신"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:154
@@ -421,7 +421,7 @@ msgstr "Last Stand"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:14
 msgid "Lich"
-msgstr "Lich"
+msgstr "언데드"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:146
@@ -431,12 +431,12 @@ msgstr "Life Path"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:112
 msgid "Machinist"
-msgstr "Machinist"
+msgstr "정비공"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:85
 msgid "Magister"
-msgstr "Magister"
+msgstr "마기스터"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:77
@@ -446,7 +446,7 @@ msgstr "Mana"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:63
 msgid "Marksman"
-msgstr "Marksman"
+msgstr "명사수"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:67
@@ -501,7 +501,7 @@ msgstr "Off The Beaten Track"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:129
 msgid "Onslaughter"
-msgstr "Onslaughter"
+msgstr "약탈자"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:175
@@ -566,12 +566,12 @@ msgstr "Preparation"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:90
 msgid "Prophet"
-msgstr "Prophet"
+msgstr "예언가"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:19
 msgid "Psychic"
-msgstr "Psychic"
+msgstr "초능력자"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:50
@@ -601,7 +601,7 @@ msgstr "Rally"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:156
 msgid "Ranger"
-msgstr "Ranger"
+msgstr "레인저"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:160
@@ -646,7 +646,7 @@ msgstr "Rock"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:161
 msgid "Ronin"
-msgstr "Ronin"
+msgstr "사무라이"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:40
@@ -666,7 +666,7 @@ msgstr "Sacrifice"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:166
 msgid "Sentinel"
-msgstr "Sentinel"
+msgstr "철갑병"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:100
@@ -676,12 +676,12 @@ msgstr "Sentry"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:171
 msgid "Shadowdancer"
-msgstr "Shadowdancer"
+msgstr "섀도우 댄서"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:24
 msgid "Shadowmaster"
-msgstr "Shadowmaster"
+msgstr "섀도우 마스터"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:111
@@ -736,7 +736,7 @@ msgstr "Stealth Stab"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:117
 msgid "Steel Vanguard"
-msgstr "Steel Vanguard"
+msgstr "철의 개척자"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:12
@@ -766,7 +766,7 @@ msgstr "Tenacity"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:134
 msgid "The Brave"
-msgstr "The Brave"
+msgstr "용자"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:46
@@ -836,17 +836,17 @@ msgstr "Ward"
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:29
 msgid "Warlock"
-msgstr "Warlock"
+msgstr "어둠의 술사"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:139
 msgid "Warlord"
-msgstr "Warlord"
+msgstr "장군"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:144
 msgid "Warrior"
-msgstr "Warrior"
+msgstr "투사"
 
 #. js-lingui-explicit-id
 #: src/data/translate/talents.ts:133
@@ -857,3 +857,94 @@ msgstr "Well Matched"
 #: src/data/translate/talents.ts:23
 msgid "Windwalk"
 msgstr "Windwalk"
+
+
+msgid "연금술사"
+msgstr "연금술사"
+
+msgid "미스틱"
+msgstr "미스틱"
+
+msgid "장인"
+msgstr "장인"
+
+msgid "어쌔신"
+msgstr "어쌔신"
+
+msgid "블레이드 러너"
+msgstr "블레이드 러너"
+
+msgid "드루이드"
+msgstr "드루이드"
+
+msgid "엘리멘탈리스트"
+msgstr "엘리멘탈리스트"
+
+msgid "기계의 신"
+msgstr "기계의 신"
+
+msgid "힘의 신"
+msgstr "힘의 신"
+
+msgid "전쟁의 신"
+msgstr "전쟁의 신"
+
+msgid "기만의 여신"
+msgstr "기만의 여신"
+
+msgid "사냥의 여신"
+msgstr "사냥의 여신"
+
+msgid "지식의 여신"
+msgstr "지식의 여신"
+
+msgid "언데드"
+msgstr "언데드"
+
+msgid "정비공"
+msgstr "정비공"
+
+msgid "마기스터"
+msgstr "마기스터"
+
+msgid "명사수"
+msgstr "명사수"
+
+msgid "약탈자"
+msgstr "약탈자"
+
+msgid "예언가"
+msgstr "예언가"
+
+msgid "초능력자"
+msgstr "초능력자"
+
+msgid "레인저"
+msgstr "레인저"
+
+msgid "사무라이"
+msgstr "사무라이"
+
+msgid "철갑병"
+msgstr "철갑병"
+
+msgid "섀도우 댄서"
+msgstr "섀도우 댄서"
+
+msgid "섀도우 마스터"
+msgstr "섀도우 마스터"
+
+msgid "철의 개척자"
+msgstr "철의 개척자"
+
+msgid "용자"
+msgstr "용자"
+
+msgid "어둠의 술사"
+msgstr "어둠의 술사"
+
+msgid "장군"
+msgstr "장군"
+
+msgid "투사"
+msgstr "투사"

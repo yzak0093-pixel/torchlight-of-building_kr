@@ -1,4 +1,4 @@
-import type { CraftedPrism } from "@/src/tli/core";
+﻿import type { CraftedPrism } from "@/src/tli/core";
 import { PrismInventoryItem } from "./PrismInventoryItem";
 
 interface PrismInventoryProps {
@@ -37,7 +37,7 @@ export const PrismInventory: React.FC<PrismInventoryProps> = ({
   return (
     <div className="rounded-lg border border-zinc-700 bg-zinc-800 p-4">
       <h3 className="mb-4 text-lg font-medium text-zinc-200">
-        Prism Inventory ({prisms.length})
+        제노프리즘 인벤토리 ({prisms.length})
       </h3>
 
       {selectionMode && (
@@ -49,14 +49,14 @@ export const PrismInventory: React.FC<PrismInventoryProps> = ({
                 ? isOnGodGoddessTree
                   ? "Switch to a Profession Tree (Slots 2-4) to place the prism."
                   : "Click on an empty talent node to place the prism, or click the prism again to deselect."
-                : "Click a prism to select it for placement."}
+                : "배치할 제노프리즘을 클릭하세요."}
           </p>
         </div>
       )}
 
       {prisms.length === 0 ? (
         <p className="text-sm text-zinc-500">
-          No prisms crafted yet. Create one using the crafter!
+          제작된 제노프리즘이 없습니다. 제작기를 사용하여 만들어보세요!
         </p>
       ) : (
         <div className="flex flex-col gap-2 max-h-96 overflow-y-auto">

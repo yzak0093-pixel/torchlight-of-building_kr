@@ -1,4 +1,4 @@
-import { Tooltip, TooltipTitle } from "@/src/components/ui/Tooltip";
+﻿import { Tooltip, TooltipTitle } from "@/src/components/ui/Tooltip";
 import { useTooltip } from "@/src/hooks/useTooltip";
 import { formatEffectModifier } from "@/src/lib/inverse-image-utils";
 import type { CraftedInverseImage } from "@/src/tli/core";
@@ -102,7 +102,7 @@ export const InverseImageInventoryItem: React.FC<
         width="lg"
       >
         <TooltipTitle>
-          <span className="text-cyan-400">Inverse Image</span>
+          <span className="text-cyan-400">역상</span>
         </TooltipTitle>
         <div className="mb-2 text-xs text-zinc-300">
           Reflects all Talents within the range to the mirrored area. All

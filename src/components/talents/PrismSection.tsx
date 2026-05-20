@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+﻿import { Trans } from "@lingui/react/macro";
 import { useState } from "react";
 import type { CraftedPrism as SaveDataCraftedPrism } from "@/src/lib/save-data";
 import type { CraftedPrism } from "@/src/tli/core";
@@ -63,7 +63,7 @@ export const PrismSection: React.FC<PrismSectionProps> = ({
     <div>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-bold text-zinc-50">
-          <Trans>Prisms</Trans>
+          <Trans>제노프리즘</Trans>
         </h2>
         <button
           type="button"
@@ -86,7 +86,9 @@ export const PrismSection: React.FC<PrismSectionProps> = ({
       <Modal
         isOpen={isModalOpen}
         onClose={handleClose}
-        title={editingPrism !== undefined ? "Edit Prism" : "Craft Prism"}
+        title={
+          editingPrism !== undefined ? "제노프리즘 편집" : "제노프리즘 제작"
+        }
         dismissible={false}
       >
         <PrismCrafter

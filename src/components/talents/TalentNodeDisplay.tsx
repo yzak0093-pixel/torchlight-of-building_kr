@@ -1,4 +1,4 @@
-import { i18n } from "@lingui/core";
+﻿import { i18n } from "@lingui/core";
 import {
   Tooltip,
   TooltipContent,
@@ -280,14 +280,14 @@ export const TalentNodeDisplay: React.FC<TalentNodeDisplayProps> = ({
           variant="default"
         >
           <TooltipTitle>
-            <span className="text-cyan-400">Inverse Image</span>
+            <span className="text-cyan-400">역상</span>
           </TooltipTitle>
           <TooltipContent>
             Reflects all Talents within the range to the mirrored area. All
             Talents within the reflected area have no prerequisites.
           </TooltipContent>
           <div className="mt-2 pt-2 border-t border-zinc-700">
-            <div className="text-xs text-zinc-500 mb-1">Effect Modifiers:</div>
+            <div className="text-xs text-zinc-500 mb-1">효과 모디파이어:</div>
             <div className="text-xs text-blue-400">
               {formatEffectModifier(inverseImage.microTalentEffect)} all
               reflected Micro Talent Effects

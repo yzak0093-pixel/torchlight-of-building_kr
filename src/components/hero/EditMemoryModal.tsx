@@ -201,25 +201,33 @@ export const EditMemoryModal = ({
   const craftingLevel = useHeroUIStore((s) => s.craftingLevel);
   const existingBaseStat = useHeroUIStore((s) => s.existingBaseStat);
   const craftingBaseStatIndex = useHeroUIStore((s) => s.craftingBaseStatIndex);
-  
+
   const existingFixedAffixes = useHeroUIStore((s) => s.existingFixedAffixes);
   const existingRandomAffixes = useHeroUIStore((s) => s.existingRandomAffixes);
-  const existingRevivedAffixes = useHeroUIStore((s) => s.existingRevivedAffixes);
-  
+  const existingRevivedAffixes = useHeroUIStore(
+    (s) => s.existingRevivedAffixes,
+  );
+
   const fixedAffixSlots = useHeroUIStore((s) => s.fixedAffixSlots);
   const randomAffixSlots = useHeroUIStore((s) => s.randomAffixSlots);
   const revivedAffixSlots = useHeroUIStore((s) => s.revivedAffixSlots);
-  
+
   const setCraftingMemoryType = useHeroUIStore((s) => s.setCraftingMemoryType);
   const setCraftingRarity = useHeroUIStore((s) => s.setCraftingRarity);
   const setCraftingLevel = useHeroUIStore((s) => s.setCraftingLevel);
   const setExistingBaseStat = useHeroUIStore((s) => s.setExistingBaseStat);
-  const setCraftingBaseStatIndex = useHeroUIStore((s) => s.setCraftingBaseStatIndex);
-  
+  const setCraftingBaseStatIndex = useHeroUIStore(
+    (s) => s.setCraftingBaseStatIndex,
+  );
+
   const setExistingFixedAffix = useHeroUIStore((s) => s.setExistingFixedAffix);
-  const setExistingRandomAffix = useHeroUIStore((s) => s.setExistingRandomAffix);
-  const setExistingRevivedAffix = useHeroUIStore((s) => s.setExistingRevivedAffix);
-  
+  const setExistingRandomAffix = useHeroUIStore(
+    (s) => s.setExistingRandomAffix,
+  );
+  const setExistingRevivedAffix = useHeroUIStore(
+    (s) => s.setExistingRevivedAffix,
+  );
+
   const setFixedAffixSlot = useHeroUIStore((s) => s.setFixedAffixSlot);
   const setRandomAffixSlot = useHeroUIStore((s) => s.setRandomAffixSlot);
   const setRevivedAffixSlot = useHeroUIStore((s) => s.setRevivedAffixSlot);
@@ -308,9 +316,15 @@ export const EditMemoryModal = ({
 
   const revivalAffixes = useMemo(() => getRevivalAffixes(), []);
 
-  const activeExistingFixedCount = existingFixedAffixes.filter((a) => a !== "").length;
-  const activeExistingRandomCount = existingRandomAffixes.filter((a) => a !== "").length;
-  const activeExistingRevivedCount = existingRevivedAffixes.filter((a) => a !== "").length;
+  const activeExistingFixedCount = existingFixedAffixes.filter(
+    (a) => a !== "",
+  ).length;
+  const activeExistingRandomCount = existingRandomAffixes.filter(
+    (a) => a !== "",
+  ).length;
+  const activeExistingRevivedCount = existingRevivedAffixes.filter(
+    (a) => a !== "",
+  ).length;
 
   const newFixedSlotCount = Math.max(0, 2 - activeExistingFixedCount);
   const newRandomSlotCount = Math.max(0, 2 - activeExistingRandomCount);
@@ -332,7 +346,10 @@ export const EditMemoryModal = ({
         affixNum++;
         lines.push({
           label: `고정 옵션 ${affixNum}`,
-          text: craftHeroMemoryAffix(fixedAffixes[slot.effectIndex], slot.quality),
+          text: craftHeroMemoryAffix(
+            fixedAffixes[slot.effectIndex],
+            slot.quality,
+          ),
         });
       }
     }
@@ -350,7 +367,10 @@ export const EditMemoryModal = ({
         affixNum++;
         lines.push({
           label: `랜덤 옵션 ${affixNum}`,
-          text: craftHeroMemoryAffix(randomAffixes[slot.effectIndex], slot.quality),
+          text: craftHeroMemoryAffix(
+            randomAffixes[slot.effectIndex],
+            slot.quality,
+          ),
         });
       }
     }
@@ -368,7 +388,10 @@ export const EditMemoryModal = ({
         affixNum++;
         lines.push({
           label: `재구성 옵션 ${affixNum}`,
-          text: craftHeroMemoryAffix(revivalAffixes[slot.effectIndex], slot.quality),
+          text: craftHeroMemoryAffix(
+            revivalAffixes[slot.effectIndex],
+            slot.quality,
+          ),
         });
       }
     }
@@ -390,27 +413,40 @@ export const EditMemoryModal = ({
   ]);
 
   const handleSave = (): void => {
-    if (craftingMemoryType === undefined || effectiveBaseStat === undefined) return;
+    if (craftingMemoryType === undefined || effectiveBaseStat === undefined)
+      return;
 
-    const finalFixedAffixes: string[] = existingFixedAffixes.filter((a) => a !== "");
-    const finalRandomAffixes: string[] = existingRandomAffixes.filter((a) => a !== "");
-    const finalRevivedAffixes: string[] = existingRevivedAffixes.filter((a) => a !== "");
+    const finalFixedAffixes: string[] = existingFixedAffixes.filter(
+      (a) => a !== "",
+    );
+    const finalRandomAffixes: string[] = existingRandomAffixes.filter(
+      (a) => a !== "",
+    );
+    const finalRevivedAffixes: string[] = existingRevivedAffixes.filter(
+      (a) => a !== "",
+    );
 
     for (const slot of fixedAffixSlots.slice(0, newFixedSlotCount)) {
       if (slot.effectIndex !== undefined) {
-        finalFixedAffixes.push(craftHeroMemoryAffix(fixedAffixes[slot.effectIndex], slot.quality));
+        finalFixedAffixes.push(
+          craftHeroMemoryAffix(fixedAffixes[slot.effectIndex], slot.quality),
+        );
       }
     }
 
     for (const slot of randomAffixSlots.slice(0, newRandomSlotCount)) {
       if (slot.effectIndex !== undefined) {
-        finalRandomAffixes.push(craftHeroMemoryAffix(randomAffixes[slot.effectIndex], slot.quality));
+        finalRandomAffixes.push(
+          craftHeroMemoryAffix(randomAffixes[slot.effectIndex], slot.quality),
+        );
       }
     }
 
     for (const slot of revivedAffixSlots.slice(0, newRevivedSlotCount)) {
       if (slot.effectIndex !== undefined) {
-        finalRevivedAffixes.push(craftHeroMemoryAffix(revivalAffixes[slot.effectIndex], slot.quality));
+        finalRevivedAffixes.push(
+          craftHeroMemoryAffix(revivalAffixes[slot.effectIndex], slot.quality),
+        );
       }
     }
 
@@ -432,15 +468,25 @@ export const EditMemoryModal = ({
   const title = mode === "create" ? "추억 제작" : "추억 편집";
 
   return (
-    <Modal isOpen={isOpen} onClose={closeModal} title={title} maxWidth="3xl" dismissible={false}>
+    <Modal
+      isOpen={isOpen}
+      onClose={closeModal}
+      title={title}
+      maxWidth="3xl"
+      dismissible={false}
+    >
       <div className="flex h-[70vh] gap-4">
         {/* Left panel */}
         <div className="min-w-0 flex-1 space-y-3 overflow-y-auto pr-2">
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-50">추억 종류</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-50">
+              추억 종류
+            </label>
             <SearchableSelect
               value={craftingMemoryType}
-              onChange={(value) => setCraftingMemoryType(value as HeroMemoryType | undefined)}
+              onChange={(value) =>
+                setCraftingMemoryType(value as HeroMemoryType | undefined)
+              }
               options={HERO_MEMORY_TYPES.map((type) => ({
                 value: type,
                 label: MEMORY_TYPE_KO[type] ?? type,
@@ -454,22 +500,28 @@ export const EditMemoryModal = ({
             <>
               <div className="flex gap-3">
                 <div className="flex-1">
-                  <label className="block text-xs font-medium mb-1 text-zinc-400">등급</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-400">
+                    등급
+                  </label>
                   <SearchableSelect
                     value={craftingRarity}
                     onChange={(value) => {
-                      if (value !== undefined) setCraftingRarity(value as MemoryBaseStatRarity);
+                      if (value !== undefined)
+                        setCraftingRarity(value as MemoryBaseStatRarity);
                     }}
                     options={MEMORY_BASE_STAT_RARITIES.map((r) => ({
                       value: r,
-                      label: RARITY_KO[r] ?? r.charAt(0).toUpperCase() + r.slice(1),
+                      label:
+                        RARITY_KO[r] ?? r.charAt(0).toUpperCase() + r.slice(1),
                     }))}
                     placeholder="등급 선택..."
                     size="sm"
                   />
                 </div>
                 <div className="flex-1">
-                  <label className="block text-xs font-medium mb-1 text-zinc-400">레벨</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-400">
+                    레벨
+                  </label>
                   <SearchableSelect
                     value={craftingLevel}
                     onChange={(value) => {
@@ -486,10 +538,15 @@ export const EditMemoryModal = ({
               </div>
 
               <div>
-                <h3 className="text-sm font-medium mb-2 text-zinc-50">기본 옵션</h3>
+                <h3 className="text-sm font-medium mb-2 text-zinc-50">
+                  기본 옵션
+                </h3>
                 <div className="space-y-3">
                   {hasExistingBaseStat ? (
-                    <ExistingAffix value={existingBaseStat} onDelete={() => setExistingBaseStat(undefined)} />
+                    <ExistingAffix
+                      value={existingBaseStat}
+                      onDelete={() => setExistingBaseStat(undefined)}
+                    />
                   ) : (
                     <div className="bg-zinc-800 p-3 rounded-lg">
                       <SearchableSelect
@@ -509,7 +566,9 @@ export const EditMemoryModal = ({
 
               {/* 신규: 재구성 옵션 (기본 옵션과 고정 옵션 사이) */}
               <div>
-                <h3 className="text-sm font-medium mb-2 text-zinc-50">재구성 옵션 (최대 1개)</h3>
+                <h3 className="text-sm font-medium mb-2 text-zinc-50">
+                  재구성 옵션 (최대 1개)
+                </h3>
                 <div className="space-y-3">
                   {existingRevivedAffixes.map(
                     (text, idx) =>
@@ -517,32 +576,43 @@ export const EditMemoryModal = ({
                         <ExistingAffix
                           key={`existing-revival-${idx}`}
                           value={text}
-                          onDelete={() => setExistingRevivedAffix(idx, undefined)}
+                          onDelete={() =>
+                            setExistingRevivedAffix(idx, undefined)
+                          }
                         />
                       ),
                   )}
-                  {revivedAffixSlots.slice(0, newRevivedSlotCount).map((slot, idx) => (
-                    <AffixSlot
-                      key={`revival-${idx}`}
-                      slotIndex={idx}
-                      type="revival"
-                      affixes={revivalAffixes}
-                      effectIndex={slot.effectIndex}
-                      quality={slot.quality}
-                      onSelect={(effectIndex) =>
-                        setRevivedAffixSlot(idx, {
-                          effectIndex,
-                          quality: effectIndex === undefined ? DEFAULT_QUALITY : slot.quality,
-                        })
-                      }
-                      onQuality={(quality) => setRevivedAffixSlot(idx, { quality })}
-                    />
-                  ))}
+                  {revivedAffixSlots
+                    .slice(0, newRevivedSlotCount)
+                    .map((slot, idx) => (
+                      <AffixSlot
+                        key={`revival-${idx}`}
+                        slotIndex={idx}
+                        type="revival"
+                        affixes={revivalAffixes}
+                        effectIndex={slot.effectIndex}
+                        quality={slot.quality}
+                        onSelect={(effectIndex) =>
+                          setRevivedAffixSlot(idx, {
+                            effectIndex,
+                            quality:
+                              effectIndex === undefined
+                                ? DEFAULT_QUALITY
+                                : slot.quality,
+                          })
+                        }
+                        onQuality={(quality) =>
+                          setRevivedAffixSlot(idx, { quality })
+                        }
+                      />
+                    ))}
                 </div>
               </div>
 
               <div>
-                <h3 className="text-sm font-medium mb-2 text-zinc-50">고정 옵션 (최대 2개)</h3>
+                <h3 className="text-sm font-medium mb-2 text-zinc-50">
+                  고정 옵션 (최대 2개)
+                </h3>
                 <div className="space-y-3">
                   {existingFixedAffixes.map(
                     (text, idx) =>
@@ -554,28 +624,37 @@ export const EditMemoryModal = ({
                         />
                       ),
                   )}
-                  {fixedAffixSlots.slice(0, newFixedSlotCount).map((slot, idx) => (
-                    <AffixSlot
-                      key={`fixed-${idx}`}
-                      slotIndex={idx}
-                      type="fixed"
-                      affixes={fixedAffixes}
-                      effectIndex={slot.effectIndex}
-                      quality={slot.quality}
-                      onSelect={(effectIndex) =>
-                        setFixedAffixSlot(idx, {
-                          effectIndex,
-                          quality: effectIndex === undefined ? DEFAULT_QUALITY : slot.quality,
-                        })
-                      }
-                      onQuality={(quality) => setFixedAffixSlot(idx, { quality })}
-                    />
-                  ))}
+                  {fixedAffixSlots
+                    .slice(0, newFixedSlotCount)
+                    .map((slot, idx) => (
+                      <AffixSlot
+                        key={`fixed-${idx}`}
+                        slotIndex={idx}
+                        type="fixed"
+                        affixes={fixedAffixes}
+                        effectIndex={slot.effectIndex}
+                        quality={slot.quality}
+                        onSelect={(effectIndex) =>
+                          setFixedAffixSlot(idx, {
+                            effectIndex,
+                            quality:
+                              effectIndex === undefined
+                                ? DEFAULT_QUALITY
+                                : slot.quality,
+                          })
+                        }
+                        onQuality={(quality) =>
+                          setFixedAffixSlot(idx, { quality })
+                        }
+                      />
+                    ))}
                 </div>
               </div>
 
               <div>
-                <h3 className="text-sm font-medium mb-2 text-zinc-50">랜덤 옵션 (최대 2개)</h3>
+                <h3 className="text-sm font-medium mb-2 text-zinc-50">
+                  랜덤 옵션 (최대 2개)
+                </h3>
                 <div className="space-y-3">
                   {existingRandomAffixes.map(
                     (text, idx) =>
@@ -583,27 +662,36 @@ export const EditMemoryModal = ({
                         <ExistingAffix
                           key={`existing-random-${idx}`}
                           value={text}
-                          onDelete={() => setExistingRandomAffix(idx, undefined)}
+                          onDelete={() =>
+                            setExistingRandomAffix(idx, undefined)
+                          }
                         />
                       ),
                   )}
-                  {randomAffixSlots.slice(0, newRandomSlotCount).map((slot, idx) => (
-                    <AffixSlot
-                      key={`random-${idx}`}
-                      slotIndex={idx}
-                      type="random"
-                      affixes={randomAffixes}
-                      effectIndex={slot.effectIndex}
-                      quality={slot.quality}
-                      onSelect={(effectIndex) =>
-                        setRandomAffixSlot(idx, {
-                          effectIndex,
-                          quality: effectIndex === undefined ? DEFAULT_QUALITY : slot.quality,
-                        })
-                      }
-                      onQuality={(quality) => setRandomAffixSlot(idx, { quality })}
-                    />
-                  ))}
+                  {randomAffixSlots
+                    .slice(0, newRandomSlotCount)
+                    .map((slot, idx) => (
+                      <AffixSlot
+                        key={`random-${idx}`}
+                        slotIndex={idx}
+                        type="random"
+                        affixes={randomAffixes}
+                        effectIndex={slot.effectIndex}
+                        quality={slot.quality}
+                        onSelect={(effectIndex) =>
+                          setRandomAffixSlot(idx, {
+                            effectIndex,
+                            quality:
+                              effectIndex === undefined
+                                ? DEFAULT_QUALITY
+                                : slot.quality,
+                          })
+                        }
+                        onQuality={(quality) =>
+                          setRandomAffixSlot(idx, { quality })
+                        }
+                      />
+                    ))}
                 </div>
               </div>
             </>
@@ -612,16 +700,24 @@ export const EditMemoryModal = ({
 
         {/* Right panel */}
         <div className="w-64 shrink-0 overflow-y-auto rounded-lg border border-zinc-700 bg-zinc-800 p-3">
-          <MemoryPreview memoryType={craftingMemoryType} baseStat={effectiveBaseStat} previewLines={previewLines} />
+          <MemoryPreview
+            memoryType={craftingMemoryType}
+            baseStat={effectiveBaseStat}
+            previewLines={previewLines}
+          />
         </div>
       </div>
 
       <ModalActions>
-        <ModalButton variant="secondary" onClick={closeModal} fullWidth>취소</ModalButton>
+        <ModalButton variant="secondary" onClick={closeModal} fullWidth>
+          취소
+        </ModalButton>
         <ModalButton
           onClick={handleSave}
           fullWidth
-          disabled={craftingMemoryType === undefined || effectiveBaseStat === undefined}
+          disabled={
+            craftingMemoryType === undefined || effectiveBaseStat === undefined
+          }
         >
           {mode === "create" ? "인벤토리에 저장" : "저장"}
         </ModalButton>

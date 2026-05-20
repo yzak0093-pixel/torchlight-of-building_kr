@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+﻿import { Trans } from "@lingui/react/macro";
 import {
   createFileRoute,
   redirect,
@@ -42,6 +42,38 @@ import {
   useTalentTree,
 } from "../../../stores/builderStore";
 import { useTalentsUIStore } from "../../../stores/talentsUIStore";
+
+const TREE_KO: Record<string, string> = {
+  "Goddess of Deception": "기만의 여신",
+  "God of War": "전신",
+  "Goddess of Hunting": "사냥의 여신",
+  "Goddess of Knowledge": "지식의 여신",
+  "God of Machines": "기계의 신",
+  "God of Might": "거력의 신",
+  Bladerunner: "블레이드 러너",
+  Druid: "드루이드",
+  Marksman: "명사수",
+  Assassin: "어쌔신",
+  Lich: "리치",
+  Warlock: "워락",
+  Arcanist: "아카니스트",
+  Elementalist: "엘리멘탈리스트",
+  Magister: "매지스터",
+  Prophet: "사이킥",
+  Alchemist: "알케미스트",
+  Artisan: "아티잔",
+  Machinist: "머시니스트",
+  "Steel Vanguard": "스틸 뱅가드",
+  Onslaughter: "슬로터",
+  "The Brave": "용자",
+  Warlord: "워로드",
+  Warrior: "워리어",
+  Ranger: "레인저",
+  Ronin: "로닌",
+  Sentinel: "센티넬",
+  Shadowdancer: "섀도우 댄서",
+};
+const tKo = (name: string) => TREE_KO[name] || name;
 
 export const Route = createFileRoute("/builder/talents/$slot")({
   component: TalentsSlotPage,
@@ -142,7 +174,11 @@ function TalentsSlotPage(): React.ReactNode {
     (treeSlot: TreeSlot) => {
       const tree = loadout.talentPage.talentTrees[treeSlot];
       if (!tree || !tree.nodes.some((n) => n.points > 0)) return;
-      if (confirm("Reset all points in this tree? This cannot be undone.")) {
+      if (
+        confirm(
+          "이 트리에 투자한 모든 포인트를 초기화하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+        )
+      ) {
         resetTree(treeSlot);
       }
     },
@@ -360,7 +396,7 @@ function TalentsSlotPage(): React.ReactNode {
           {/* Tree slot selector */}
           <div className="flex flex-col gap-1">
             <label className="text-xs font-medium text-zinc-400">
-              <Trans>Tree Slot</Trans>{" "}
+              트리 슬롯{" "}
               <span
                 className={isOverAllocated ? "text-red-500" : "text-zinc-500"}
               >
@@ -390,8 +426,8 @@ function TalentsSlotPage(): React.ReactNode {
                     : "None";
                   const slotLabel =
                     treeSlot === "tree1"
-                      ? "Slot 1"
-                      : `Slot ${treeSlot.slice(-1)}`;
+                      ? "슬롯 1"
+                      : `슬롯 ${treeSlot.slice(-1)}`;
                   return (
                     <option key={treeSlot} value={treeSlotToParam(treeSlot)}>
                       {slotLabel}: {treeName} ({totalPoints} pts)
@@ -404,9 +440,7 @@ function TalentsSlotPage(): React.ReactNode {
 
           {/* Tree selector */}
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-medium text-zinc-400">
-              <Trans>Tree</Trans>
-            </label>
+            <label className="text-xs font-medium text-zinc-400">트리</label>
             <div className="flex gap-2">
               <select
                 value={currentTalentTree?.name ?? ""}
@@ -418,9 +452,9 @@ function TalentsSlotPage(): React.ReactNode {
                 }
                 className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-50 disabled:cursor-not-allowed disabled:opacity-50"
               >
-                <option value="">None</option>
+                <option value="">선택 안 함</option>
                 {activeTreeSlot === "tree1" ? (
-                  <optgroup label="God/Goddess Trees">
+                  <optgroup label="신/여신 트리">
                     {GOD_GODDESS_TREES.map((tree) => (
                       <option key={tree} value={tree}>
                         {i18n._(tree.replace(/_/g, " "))}
@@ -428,7 +462,7 @@ function TalentsSlotPage(): React.ReactNode {
                     ))}
                   </optgroup>
                 ) : (
-                  <optgroup label="Profession Trees">
+                  <optgroup label="직업 트리">
                     {PROFESSION_TREES.map((tree) => (
                       <option key={tree} value={tree}>
                         {i18n._(tree.replace(/_/g, " "))}
@@ -465,7 +499,7 @@ function TalentsSlotPage(): React.ReactNode {
                 }
                 className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-50"
               >
-                <option value="">None</option>
+                <option value="">선택 안 함</option>
                 {slot.available.map((ct) => (
                   <option key={ct.name} value={ct.name}>
                     {i18n._(ct.name)}
@@ -478,7 +512,7 @@ function TalentsSlotPage(): React.ReactNode {
           {/* Prism replaced indicator */}
           {currentTalentTree?.replacementPrismCoreTalent !== undefined && (
             <div className="flex items-center gap-1 rounded-lg border border-purple-500/50 bg-purple-500/10 px-3 py-2 text-xs text-purple-400">
-              Core talents replaced by Prism
+              제노프리즘(에테르 재능)으로 인해 코어 재능이 비활성화되었습니다
             </div>
           )}
         </div>
@@ -539,7 +573,9 @@ function TalentsSlotPage(): React.ReactNode {
             />
           </div>
         ) : (
-          <div className="py-12 text-center text-zinc-500">Loading tree...</div>
+          <div className="py-12 text-center text-zinc-500">
+            트리 데이터를 불러오는 중입니다...
+          </div>
         )}
       </div>
 

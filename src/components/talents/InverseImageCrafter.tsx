@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { NumberInput } from "@/src/components/ui/NumberInput";
 import { validateInverseImageValues } from "@/src/lib/inverse-image-utils";
 import { generateItemId } from "@/src/lib/storage";
@@ -59,7 +59,7 @@ const InverseImageCrafterInner: React.FC<InverseImageCrafterInnerProps> = ({
       <div className="space-y-4">
         <div>
           <label className="mb-2 block text-sm text-zinc-400">
-            All Reflected Micro Talent Effects ({formatModifier(microEffect)})
+            반사된 모든 소형 재능 효과 ({formatModifier(microEffect)})
           </label>
           <div className="flex items-center gap-3">
             <span className="text-xs text-zinc-500">-100%</span>
@@ -86,7 +86,7 @@ const InverseImageCrafterInner: React.FC<InverseImageCrafterInnerProps> = ({
 
         <div>
           <label className="mb-2 block text-sm text-zinc-400">
-            All Reflected Medium Talent Effects ({formatModifier(mediumEffect)})
+            반사된 모든 중형 재능 효과 ({formatModifier(mediumEffect)})
           </label>
           <div className="flex items-center gap-3">
             <span className="text-xs text-zinc-500">-100%</span>
@@ -113,8 +113,7 @@ const InverseImageCrafterInner: React.FC<InverseImageCrafterInnerProps> = ({
 
         <div>
           <label className="mb-2 block text-sm text-zinc-400">
-            All Reflected Legendary Medium Talent Effects (
-            {formatModifier(legendaryEffect)})
+            반사된 모든 전설 중형 재능 효과 ({formatModifier(legendaryEffect)})
           </label>
           <div className="flex items-center gap-3">
             <span className="text-xs text-zinc-500">-100%</span>
@@ -157,7 +156,7 @@ const InverseImageCrafterInner: React.FC<InverseImageCrafterInnerProps> = ({
           disabled={!validation.valid}
           className="flex-1 rounded bg-cyan-600 px-4 py-2 text-white transition-colors hover:bg-cyan-500 disabled:cursor-not-allowed disabled:bg-zinc-600"
         >
-          {editingInverseImage ? "Update Inverse Image" : "Save to Inventory"}
+          {editingInverseImage ? "역상 업데이트" : "인벤토리에 저장"}
         </button>
         {onCancel && (
           <button

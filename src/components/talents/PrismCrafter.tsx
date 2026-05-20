@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+﻿import { useEffect, useMemo, useState } from "react";
 import {
   SearchableSelect,
   type SearchableSelectOption,
@@ -136,7 +136,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
   return (
     <div>
       <div className="mb-4">
-        <label className="mb-2 block text-sm text-zinc-400">Rarity</label>
+        <label className="mb-2 block text-sm text-zinc-400">등급</label>
         <div className="flex gap-2">
           {PRISM_RARITIES.map((r) => (
             <button
@@ -158,12 +158,12 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
       </div>
 
       <div className="mb-4">
-        <label className="mb-2 block text-sm text-zinc-400">Base Affix</label>
+        <label className="mb-2 block text-sm text-zinc-400">기본 옵션</label>
         <SearchableSelect
           value={baseAffix}
           onChange={setBaseAffix}
           options={baseAffixOptions}
-          placeholder="Select base affix..."
+          placeholder="기본 옵션을 선택하세요..."
         />
         {baseAffix !== undefined && (
           <div className="mt-2 rounded bg-zinc-900 p-2 text-xs text-zinc-300 whitespace-pre-line">
@@ -180,7 +180,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
           value={areaAffix}
           onChange={setAreaAffix}
           options={areaAffixOptions}
-          placeholder="Select area expansion..."
+          placeholder="범위 확장 옵션을 선택하세요..."
         />
         {areaAffix !== undefined && (
           <div className="mt-1 flex items-center gap-2">
@@ -204,7 +204,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
           value={rareAffix}
           onChange={setRareAffix}
           options={rareGaugeOptions}
-          placeholder="Search rare gauge affixes..."
+          placeholder="레어 게이지 옵션 검색..."
         />
         {rareAffix !== undefined && (
           <div className="mt-1 flex items-center gap-2">
@@ -232,7 +232,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
             value={legendaryAffix}
             onChange={setLegendaryAffix}
             options={legendaryGaugeOptions}
-            placeholder="Search legendary / mutation affixes..."
+            placeholder="전설 / 돌연변이 옵션 검색..."
           />
           {legendaryAffix !== undefined && (
             <div className="mt-1 flex items-center gap-2">
@@ -259,7 +259,9 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
           disabled={!canSave}
           className="flex-1 rounded bg-amber-600 px-4 py-2 text-white transition-colors hover:bg-amber-500 disabled:cursor-not-allowed disabled:bg-zinc-600"
         >
-          {editingPrism !== undefined ? "Update Prism" : "Save to Inventory"}
+          {editingPrism !== undefined
+            ? "제노프리즘 업데이트"
+            : "인벤토리에 저장"}
         </button>
         {onCancel !== undefined && (
           <button

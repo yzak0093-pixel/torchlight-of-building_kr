@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react/macro";
+﻿import { Trans } from "@lingui/react/macro";
 import React from "react";
 import { Tooltip, TooltipTitle } from "@/src/components/ui/Tooltip";
 import type { BaseCoreTalent } from "@/src/data/core-talent";
@@ -57,14 +57,14 @@ export const CoreTalentSelector: React.FC<CoreTalentSelectorProps> = ({
 
     slots.push({
       index: 0,
-      label: i18n._("Core Talent 1"),
+      label: "코어 재능 1",
       available: firstSlot,
       selected: selectedCoreTalents[0],
     });
 
     slots.push({
       index: 1,
-      label: i18n._("Core Talent 2"),
+      label: "코어 재능 2",
       available: secondSlot,
       selected: selectedCoreTalents[1],
     });
@@ -76,7 +76,7 @@ export const CoreTalentSelector: React.FC<CoreTalentSelectorProps> = ({
 
     slots.push({
       index: 0,
-      label: "Core Talent",
+      label: "코어 재능",
       available,
       selected: selectedCoreTalents[0],
     });
@@ -86,11 +86,9 @@ export const CoreTalentSelector: React.FC<CoreTalentSelectorProps> = ({
   if (replacedByPrism !== undefined) {
     return (
       <div className="bg-zinc-900 rounded-lg p-4 border border-purple-500/50 mb-4 opacity-60">
-        <h3 className="text-lg font-semibold mb-3 text-zinc-400">
-          <Trans>Core Talents</Trans>
-        </h3>
+        <h3 className="text-lg font-semibold mb-3 text-zinc-400">코어 재능</h3>
         <div className="text-sm text-purple-400">
-          Replaced by Prism Ethereal Talent
+          제노프리즘(에테르 재능)으로 대체됨
         </div>
       </div>
     );
@@ -98,9 +96,7 @@ export const CoreTalentSelector: React.FC<CoreTalentSelectorProps> = ({
 
   return (
     <div className="bg-zinc-900 rounded-lg p-4 border border-zinc-700 mb-4">
-      <h3 className="text-lg font-semibold mb-3 text-zinc-50">
-        <Trans>Core Talents</Trans>
-      </h3>
+      <h3 className="text-lg font-semibold mb-3 text-zinc-50">코어 재능</h3>
       <div
         className="grid gap-3"
         style={{ gridTemplateColumns: `repeat(${maxSlots}, 1fr)` }}
@@ -153,7 +149,7 @@ const CoreTalentSlot: React.FC<CoreTalentSlotProps> = ({
       }`}
       ref={triggerRef}
     >
-      <div className="text-xs text-zinc-400 mb-2">{i18n._(label)}</div>
+      <div className="text-xs text-zinc-400 mb-2">{label}</div>
 
       <div className="space-y-1">
         {available.map((ct) => {
@@ -200,7 +196,7 @@ const CoreTalentSlot: React.FC<CoreTalentSlotProps> = ({
                       <div className="text-xs text-zinc-300">{text}</div>
                       {mods === undefined && (
                         <div className="text-xs text-red-500">
-                          (Mod not supported in TOB yet)
+                          (이 옵션은 TOB에서 아직 지원하지 않습니다)
                         </div>
                       )}
                     </div>

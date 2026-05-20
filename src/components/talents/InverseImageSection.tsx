@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import type { CraftedInverseImage } from "@/src/tli/core";
 import { Modal } from "../ui/Modal";
 import { InverseImageCrafter } from "./InverseImageCrafter";
@@ -64,7 +64,7 @@ export const InverseImageSection: React.FC<InverseImageSectionProps> = ({
   return (
     <div>
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-bold text-zinc-50">Inverse Images</h2>
+        <h2 className="text-xl font-bold text-zinc-50">역상</h2>
         <button
           type="button"
           onClick={handleOpenCraft}
@@ -88,11 +88,7 @@ export const InverseImageSection: React.FC<InverseImageSectionProps> = ({
       <Modal
         isOpen={isModalOpen}
         onClose={handleClose}
-        title={
-          editingInverseImage !== undefined
-            ? "Edit Inverse Image"
-            : "Craft Inverse Image"
-        }
+        title={editingInverseImage !== undefined ? "역상 편집" : "역상 제작"}
         dismissible={false}
       >
         <InverseImageCrafter

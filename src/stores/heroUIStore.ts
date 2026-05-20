@@ -43,9 +43,18 @@ interface HeroUIState {
   setExistingFixedAffix: (index: number, value: string | undefined) => void;
   setExistingRandomAffix: (index: number, value: string | undefined) => void;
   setExistingRevivedAffix: (index: number, value: string | undefined) => void;
-  setFixedAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
-  setRandomAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
-  setRevivedAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
+  setFixedAffixSlot: (
+    index: number,
+    update: Partial<MemoryAffixSlotState>,
+  ) => void;
+  setRandomAffixSlot: (
+    index: number,
+    update: Partial<MemoryAffixSlotState>,
+  ) => void;
+  setRevivedAffixSlot: (
+    index: number,
+    update: Partial<MemoryAffixSlotState>,
+  ) => void;
   resetMemoryCrafting: () => void;
 }
 

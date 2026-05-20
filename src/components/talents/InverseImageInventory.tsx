@@ -1,4 +1,4 @@
-import type { CraftedInverseImage } from "@/src/tli/core";
+﻿import type { CraftedInverseImage } from "@/src/tli/core";
 import { InverseImageInventoryItem } from "./InverseImageInventoryItem";
 
 interface InverseImageInventoryProps {
@@ -53,7 +53,7 @@ export const InverseImageInventory: React.FC<InverseImageInventoryProps> = ({
       }
       return "Click on an empty talent node (not in center column) to place the inverse image, or click it again to deselect.";
     }
-    return "Click an inverse image to select it for placement.";
+    return "배치할 역상을 클릭하세요.";
   };
 
   // Only block selection if an inverse image is already placed (only one allowed anywhere)
@@ -63,7 +63,7 @@ export const InverseImageInventory: React.FC<InverseImageInventoryProps> = ({
   return (
     <div className="rounded-lg border border-zinc-700 bg-zinc-800 p-4">
       <h3 className="mb-4 text-lg font-medium text-zinc-200">
-        Inverse Image Inventory ({inverseImages.length})
+        역상 인벤토리 ({inverseImages.length})
       </h3>
 
       {selectionMode && (
@@ -74,7 +74,7 @@ export const InverseImageInventory: React.FC<InverseImageInventoryProps> = ({
 
       {inverseImages.length === 0 ? (
         <p className="text-sm text-zinc-500">
-          No inverse images crafted yet. Create one using the crafter!
+          제작된 역상이 없습니다. 제작기를 사용하여 만들어보세요!
         </p>
       ) : (
         <div className="flex flex-col gap-2 max-h-96 overflow-y-auto">
