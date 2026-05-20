@@ -174,7 +174,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
 
       <div className="mb-4">
         <label className="mb-2 block text-sm text-zinc-400">
-          Area Expansion (optional)
+          범위 확장 (선택)
         </label>
         <SearchableSelect
           value={areaAffix}
@@ -198,7 +198,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
 
       <div className="mb-4">
         <label className="mb-2 block text-sm text-zinc-400">
-          Rare Gauge Affix (optional)
+          레어 게이지 옵션 (선택)
         </label>
         <SearchableSelect
           value={rareAffix}
@@ -226,7 +226,7 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
       {rarity === "legendary" && (
         <div className="mb-4">
           <label className="mb-2 block text-sm text-zinc-400">
-            Legendary / Mutation Affix (optional)
+            전설 / 돌연변이 옵션 (선택)
           </label>
           <SearchableSelect
             value={legendaryAffix}
@@ -276,3 +276,4 @@ export const PrismCrafter: React.FC<PrismCrafterProps> = ({
     </div>
   );
 };
+
