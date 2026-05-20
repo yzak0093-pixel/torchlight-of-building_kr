@@ -1,4 +1,4 @@
-import { Destinies } from "@/src/data/destiny/destinies";
+﻿import { Destinies } from "@/src/data/destiny/destinies";
 import type { Destiny } from "@/src/data/destiny/types";
 import { Pactspirits } from "@/src/data/pactspirit/pactspirits";
 import type {
@@ -92,3 +92,4 @@ export const getPactspiritMainAffixModsByLevel = (
 
   return levelAffixLines;
 };
+

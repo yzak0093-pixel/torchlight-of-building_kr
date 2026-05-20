@@ -75,8 +75,7 @@ export const DestinySelectionModal = ({
           value={selectedDestiny?.name}
           onChange={(name) => name && handleDestinySelect(name)}
           options={availableDestinies.map((destiny) => ({
-            value: destiny.name,
-            label: formatDestinyOption(destiny),
+            value: destiny.name, label: "[" + destiny.type + "] " + destiny.name + " - " + destiny.affix,
           }))}
           placeholder="<숙명 선택>"
           autoFocus={isOpen}
@@ -124,3 +123,4 @@ export const DestinySelectionModal = ({
     </Modal>
   );
 };
+
