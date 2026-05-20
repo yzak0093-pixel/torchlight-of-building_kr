@@ -52,5 +52,3 @@ function DivinityPage(): React.ReactNode {
     />
   );
 }
-
-

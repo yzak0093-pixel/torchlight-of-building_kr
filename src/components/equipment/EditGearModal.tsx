@@ -993,5 +993,3 @@ export const EditGearModal = ({
     </Modal>
   );
 };
-
-

@@ -97,5 +97,3 @@ export const InverseImageInventory: React.FC<InverseImageInventoryProps> = ({
     </div>
   );
 };
-
-

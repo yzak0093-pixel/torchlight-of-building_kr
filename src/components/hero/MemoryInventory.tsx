@@ -119,5 +119,3 @@ export const MemoryInventory = ({
     </div>
   );
 };
-
-

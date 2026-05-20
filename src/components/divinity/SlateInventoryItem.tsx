@@ -104,5 +104,3 @@ export const SlateInventoryItem: React.FC<SlateInventoryItemProps> = ({
     </>
   );
 };
-
-

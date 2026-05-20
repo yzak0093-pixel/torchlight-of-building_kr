@@ -612,5 +612,3 @@ export const DivinityGrid: React.FC<DivinityGridProps> = ({
     </div>
   );
 };
-
-

@@ -61,5 +61,3 @@ function HeroPage(): React.ReactNode {
     />
   );
 }
-
-

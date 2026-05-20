@@ -103,5 +103,3 @@ export const DivinityTab: React.FC<DivinityTabProps> = ({
     </div>
   );
 };
-
-

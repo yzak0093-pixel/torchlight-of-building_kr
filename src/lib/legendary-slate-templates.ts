@@ -1,4 +1,4 @@
-import type { AnySlateShape, DivinityAffixType } from "@/src/tli/core";
+﻿import type { AnySlateShape, DivinityAffixType } from "@/src/tli/core";
 
 export interface AffixSlotConstraint {
   allowedTypes: DivinityAffixType[];
@@ -27,7 +27,7 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
   {
     "sparks-of-moth-fire": {
       key: "sparks-of-moth-fire",
-      displayName: "Sparks of Moth Fire",
+      displayName: "빛이 된 나방",
       shape: "Single",
       canRotate: false,
       canFlip: false,
@@ -54,7 +54,7 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
     },
     "sparks-set-prairie": {
       key: "sparks-set-prairie",
-      displayName: "When Sparks Set the Prairie Ablaze",
+      displayName: "들불 번지는 순간",
       shape: "Single",
       canRotate: false,
       canFlip: false,
@@ -68,7 +68,7 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
     },
     "corner-of-divinity": {
       key: "corner-of-divinity",
-      displayName: "A Corner of Divinity",
+      displayName: "신성의 일각",
       shape: "CornerL",
       canRotate: true,
       canFlip: true,
@@ -80,7 +80,7 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
     },
     "fallen-starlight": {
       key: "fallen-starlight",
-      displayName: "Fallen Starlight",
+      displayName: "추락하는 별빛",
       shape: "Vertical2",
       canRotate: true,
       canFlip: true,
@@ -100,7 +100,7 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
     },
     "pedigree-of-gods": {
       key: "pedigree-of-gods",
-      displayName: "Pedigree of Gods",
+      displayName: "신의 계보",
       shape: "Pedigree",
       canRotate: true,
       canFlip: true,
@@ -120,6 +120,39 @@ export const LEGENDARY_SLATE_TEMPLATES: Record<string, LegendarySlateTemplate> =
         { allowedTypes: ["Core"], label: "Core" },
       ],
       description: "7-cell shape with 4 affixes including core talents",
+    },
+    "space-rift": {
+      key: "space-rift",
+      displayName: "우주의 균열",
+      shape: "Vertical6",
+      canRotate: true,
+      canFlip: false,
+      affixSlots: [],
+      fixedAffixes: [
+        {
+          text: "왼쪽 석판의 중위 재능을 해당 석판으로 복제한다.",
+          direction: "left",
+        },
+        {
+          text: "오른쪽 석판의 중위 재능을 해당 석판으로 복제한다.",
+          direction: "right",
+        },
+      ],
+      description: "왼쪽/오른쪽 석판의 중위 재능을 복제하는 석판",
+    },
+    "residence-of-stars": {
+      key: "residence-of-stars",
+      displayName: "별들의 고향",
+      shape: "Pinwheel",
+      canRotate: true,
+      canFlip: true,
+      affixSlots: [],
+      fixedAffixes: [
+        {
+          text: "인접 석판의 중위 재능을 해당 석판으로 복제한다. 레전드 중위 재능은 복제할 수 없다.",
+        },
+      ],
+      description: "인접 석판의 중위 재능을 복제하는 석판",
     },
   };
 

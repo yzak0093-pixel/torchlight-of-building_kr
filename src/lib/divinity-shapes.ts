@@ -1,4 +1,4 @@
-import type {
+﻿import type {
   AnySlateShape,
   DivinitySlate,
   PlacedSlate,
@@ -61,6 +61,20 @@ export const SHAPE_CELLS: Record<AnySlateShape, [number, number][]> = {
     [2, 1],
     [2, 2],
   ],
+  Vertical6: [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [5, 0],
+  ],
+  Pinwheel: [
+    [0, 0],
+    [1, 0],
+    [1, 1],
+    [2, 1],
+  ]
 };
 
 export const SHAPE_BOUNDS: Record<

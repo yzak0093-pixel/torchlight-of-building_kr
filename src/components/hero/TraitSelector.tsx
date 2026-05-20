@@ -406,5 +406,3 @@ export const TraitSelector = ({
     </div>
   );
 };
-
-

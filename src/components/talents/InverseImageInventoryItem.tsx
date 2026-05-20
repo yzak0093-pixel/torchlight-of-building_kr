@@ -126,5 +126,3 @@ export const InverseImageInventoryItem: React.FC<
     </>
   );
 };
-
-

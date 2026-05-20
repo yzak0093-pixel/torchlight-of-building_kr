@@ -288,5 +288,3 @@ function EquipmentPage(): React.ReactNode {
     </div>
   );
 }
-
-

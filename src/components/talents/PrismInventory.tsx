@@ -80,5 +80,3 @@ export const PrismInventory: React.FC<PrismInventoryProps> = ({
     </div>
   );
 };
-
-

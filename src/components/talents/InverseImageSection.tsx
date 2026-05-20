@@ -100,5 +100,3 @@ export const InverseImageSection: React.FC<InverseImageSectionProps> = ({
     </div>
   );
 };
-
-

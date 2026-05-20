@@ -481,6 +481,8 @@ export const LEGENDARY_SLATE_SHAPES = [
   "CornerL",
   "Vertical2",
   "Pedigree",
+  "Vertical6",
+  "Pinwheel",
 ] as const;
 export type LegendarySlateShape = (typeof LEGENDARY_SLATE_SHAPES)[number];
 

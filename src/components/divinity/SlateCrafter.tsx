@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState, useMemo } from "react";
 import {
   SearchableSelect,
   type SearchableSelectOption,
@@ -23,8 +23,19 @@ import {
 
 import { SlatePreview } from "./SlatePreview";
 
-// Regular shapes only - excludes legendary shapes (Single, CornerL, Vertical2, Pedigree)
 const CRAFTABLE_SHAPES: SlateShape[] = ["O", "L", "Z", "T"];
+
+// 1. 신의 이름을 한글로 매핑
+const GOD_NAME_KO: Record<DivinityGod, string> = {
+  Might: "전신의 신",
+  Hunting: "사냥의 여신",
+  Knowledge: "지식의 여신",
+  Machines: "기계의 신",
+  Deception: "기만의 신",
+  War: "전쟁의 신",
+};
+
+type AffixFilter = "All" | "Medium" | "Legendary";
 
 const createMinimalAffix = (text: string): Affix => ({
   affixLines: text.split(/\n/).map((line) => ({ text: line })),
@@ -46,12 +57,26 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
   const [affixSlots, setAffixSlots] =
     useState<(DivinityAffix | undefined)[]>(createEmptySlots);
 
-  const availableAffixes = getDivinityAffixes(god);
+  // 2. 현재 선택된 필터 상태 관리
+  const [currentFilter, setCurrentFilter] = useState<AffixFilter>("All");
+
+  const allAvailableAffixes = getDivinityAffixes(god);
+
+  // 3. 필터에 따라 드롭다운에 표시할 옵션 필터링
+  const filteredAffixes = useMemo(() => {
+    return allAvailableAffixes.filter((affix) => {
+      if (currentFilter === "All") return true;
+      if (currentFilter === "Medium") return affix.type !== "Legendary Medium";
+      if (currentFilter === "Legendary")
+        return affix.type === "Legendary Medium";
+      return true;
+    });
+  }, [allAvailableAffixes, currentFilter]);
 
   const getOptionsForSlot = (
     _slotIndex: number,
   ): SearchableSelectOption<string>[] => {
-    return availableAffixes
+    return filteredAffixes
       .map((affix) => ({
         value: affix.effect,
         label: affix.effect.split("\n").join(" / "),
@@ -78,7 +103,7 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
     const newSlots = [...affixSlots];
     newSlots[slotIndex] =
       effectValue !== undefined
-        ? availableAffixes.find((a) => a.effect === effectValue)
+        ? allAvailableAffixes.find((a) => a.effect === effectValue)
         : undefined;
     setAffixSlots(newSlots);
   };
@@ -113,10 +138,12 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
 
   return (
     <div className="rounded-lg border border-zinc-700 bg-zinc-800 p-4">
-      <h3 className="mb-4 text-lg font-medium text-zinc-200">Craft Slate</h3>
+      <h3 className="mb-4 text-lg font-medium text-zinc-200">
+        석판 제작 (Craft Slate)
+      </h3>
 
       <div className="mb-4">
-        <label className="mb-2 block text-sm text-zinc-400">God</label>
+        <label className="mb-2 block text-sm text-zinc-400">신 (God)</label>
         <div className="flex flex-wrap gap-2">
           {DIVINITY_GODS.map((g) => (
             <button
@@ -129,7 +156,7 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
                   : "bg-zinc-700 text-zinc-300 hover:bg-zinc-600"
               }`}
             >
-              {g}
+              {GOD_NAME_KO[g] || g}
             </button>
           ))}
         </div>
@@ -137,7 +164,7 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
 
       <div className="mb-4">
         <label className="mb-2 block text-sm text-zinc-400">
-          Shape & Orientation
+          모양 및 방향 (Shape & Orientation)
         </label>
         <div className="flex gap-4 items-start">
           <div className="flex flex-col gap-2">
@@ -207,9 +234,33 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
       </div>
 
       <div className="mb-4">
-        <label className="mb-2 block text-sm text-zinc-400">
-          Affixes ({selectedAffixes.length}/{MAX_SLATE_AFFIXES})
-        </label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="block text-sm text-zinc-400">
+            옵션 (Affixes) ({selectedAffixes.length}/{MAX_SLATE_AFFIXES})
+          </label>
+          {/* 4. 옵션 티어 필터링 버튼 추가 */}
+          <div className="flex gap-1 bg-zinc-900 p-1 rounded">
+            {(["All", "Medium", "Legendary"] as AffixFilter[]).map((filter) => (
+              <button
+                key={filter}
+                type="button"
+                onClick={() => setCurrentFilter(filter)}
+                className={`px-3 py-1 text-xs rounded transition-colors ${
+                  currentFilter === filter
+                    ? "bg-amber-600 text-white"
+                    : "text-zinc-400 hover:bg-zinc-700 hover:text-zinc-200"
+                }`}
+              >
+                {filter === "All"
+                  ? "전체"
+                  : filter === "Medium"
+                    ? "일반(Medium)"
+                    : "레전더리(Legendary)"}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="flex flex-col gap-2">
           {affixSlots.map((affix, slotIndex) => (
             <div key={slotIndex} className="flex flex-col gap-1">
@@ -222,7 +273,7 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
                     value={affix?.effect}
                     onChange={(value) => handleSlotChange(slotIndex, value)}
                     options={getOptionsForSlot(slotIndex)}
-                    placeholder="Select affix..."
+                    placeholder="옵션을 선택하세요 (Select affix...)"
                   />
                 </div>
                 {affix !== undefined && (
@@ -260,7 +311,7 @@ export const SlateCrafter: React.FC<SlateCrafterProps> = ({ onSave }) => {
         disabled={selectedAffixes.length === 0}
         className="w-full rounded bg-amber-600 px-4 py-2 text-white transition-colors hover:bg-amber-500 disabled:bg-zinc-600 disabled:cursor-not-allowed"
       >
-        Save to Inventory
+        인벤토리에 저장 (Save to Inventory)
       </button>
     </div>
   );

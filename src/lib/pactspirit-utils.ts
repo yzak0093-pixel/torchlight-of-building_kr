@@ -17,8 +17,8 @@ export const getDestiniesForRingSlot = (ringSlot: RingSlotKey): Destiny[] => {
   const isInner = ringSlot.startsWith("innerRing");
   return Destinies.filter((d) =>
     isInner
-      ? d.type === "Micro Fate"
-      : ["Medium Fate", "Kismet", "Dual Kismet"].includes(d.type),
+      ? d.type === "하위 숙명"
+      : ["중위 숙명", "천명", "이중 천명"].includes(d.type),
   );
 };
 
@@ -27,8 +27,8 @@ export const getDestiniesForUndeterminedSlot = (
 ): Destiny[] => {
   return Destinies.filter((d) =>
     slotType === "micro"
-      ? d.type === "Micro Fate"
-      : ["Medium Fate", "Kismet", "Dual Kismet"].includes(d.type),
+      ? d.type === "하위 숙명"
+      : ["중위 숙명", "천명", "이중 천명"].includes(d.type),
   );
 };
 
@@ -92,4 +92,3 @@ export const getPactspiritMainAffixModsByLevel = (
 
   return levelAffixLines;
 };
-

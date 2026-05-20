@@ -344,5 +344,3 @@ export const ActivationMediumEditModal = ({
     </Modal>
   );
 };
-
-

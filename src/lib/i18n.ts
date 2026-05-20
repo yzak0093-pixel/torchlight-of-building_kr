@@ -24,7 +24,11 @@ async function loadMessages(locale: Locale): Promise<Messages> {
 }
 
 // 'ko' 캐시 공간 추가
-const messageCache: Record<Locale, Messages | null> = { en: null, zh: null, ko: null };
+const messageCache: Record<Locale, Messages | null> = {
+  en: null,
+  zh: null,
+  ko: null,
+};
 
 // 2. 기본 언어를 무조건 한국어로 강제 설정
 export const defaultLocale: Locale = "ko";
@@ -46,7 +50,7 @@ export const loadLocale = async (locale: Locale): Promise<void> => {
 
 // 4. 로컬 스토리지나 브라우저 환경을 무시하고 무조건 한국어만 반환하도록 차단
 export const getStoredLocale = (): Locale => {
-  return defaultLocale; 
+  return defaultLocale;
 };
 
 export const detectBrowserLocale = (): Locale => {

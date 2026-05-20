@@ -19,14 +19,14 @@ interface DestinySelectionModalProps {
   isOpen: boolean;
   ringSlot: RingSlotKey;
   onClose: () => void;
-  on확인: (destiny: InstalledDestinyResult) => void;
+  onConfirm: (destiny: InstalledDestinyResult) => void;
 }
 
 export const DestinySelectionModal = ({
   isOpen,
   ringSlot,
   onClose,
-  on확인,
+  onConfirm,
 }: DestinySelectionModalProps) => {
   const [selectedDestiny, setSelectedDestiny] = useState<Destiny | undefined>();
   const [percentage, setPercentage] = useState(50);
@@ -52,9 +52,9 @@ export const DestinySelectionModal = ({
     setPercentage(50);
   };
 
-  const handle확인 = () => {
+  const handleConfirm = () => {
     if (!selectedDestiny) return;
-    on확인({
+    onConfirm({
       destinyName: selectedDestiny.name,
       destinyType: selectedDestiny.type,
       resolvedAffix: previewAffix,
@@ -75,7 +75,9 @@ export const DestinySelectionModal = ({
           value={selectedDestiny?.name}
           onChange={(name) => name && handleDestinySelect(name)}
           options={availableDestinies.map((destiny) => ({
-            value: destiny.name, label: "[" + destiny.type + "] " + destiny.name + " - " + destiny.affix,
+            value: destiny.name,
+            label:
+              "[" + destiny.type + "] " + destiny.name + " - " + destiny.affix,
           }))}
           placeholder="<숙명 선택>"
           autoFocus={isOpen}
@@ -113,7 +115,11 @@ export const DestinySelectionModal = ({
       )}
 
       <ModalActions>
-        <ModalButton onClick={handle확인} disabled={!selectedDestiny} fullWidth>
+        <ModalButton
+          onClick={handleConfirm}
+          disabled={!selectedDestiny}
+          fullWidth
+        >
           확인
         </ModalButton>
         <ModalButton onClick={onClose} variant="secondary">
@@ -123,4 +129,3 @@ export const DestinySelectionModal = ({
     </Modal>
   );
 };
-

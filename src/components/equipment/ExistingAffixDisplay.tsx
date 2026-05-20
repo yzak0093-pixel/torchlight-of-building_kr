@@ -24,5 +24,3 @@ export const ExistingAffixDisplay = ({
     </div>
   );
 };
-
-

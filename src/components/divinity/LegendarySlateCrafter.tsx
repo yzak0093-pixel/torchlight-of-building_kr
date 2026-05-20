@@ -381,7 +381,9 @@ export const LegendarySlateCrafter: React.FC<LegendarySlateCrafterProps> = ({
                       {affix !== undefined && (
                         <div className="ml-26 flex items-center gap-2 text-xs text-zinc-400">
                           <span
-                            className={`h-2 w-2 rounded-sm ${getAffixTypeColor(affix.type)}`}
+                            className={`h-2 w-2 rounded-sm ${getAffixTypeColor(
+                              affix.type,
+                            )}`}
                           />
                           <span className="truncate">
                             {getAffixDisplayText(affix)}
@@ -408,5 +410,3 @@ export const LegendarySlateCrafter: React.FC<LegendarySlateCrafterProps> = ({
     </div>
   );
 };
-
-

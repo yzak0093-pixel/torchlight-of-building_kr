@@ -957,5 +957,3 @@ export const VoraxGearModule: React.FC<VoraxGearModuleProps> = ({
     </Modal>
   );
 };
-
-

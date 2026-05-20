@@ -697,5 +697,3 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
     </div>
   );
 };
-
-

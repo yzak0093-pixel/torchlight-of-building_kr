@@ -160,5 +160,3 @@ export const PrismInventoryItem: React.FC<PrismInventoryItemProps> = ({
     </>
   );
 };
-
-

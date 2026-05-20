@@ -181,5 +181,3 @@ export const PactspiritColumn: React.FC<PactspiritColumnProps> = ({
     </div>
   );
 };
-
-

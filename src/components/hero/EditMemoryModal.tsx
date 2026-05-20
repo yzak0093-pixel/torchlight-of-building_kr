@@ -725,5 +725,3 @@ export const EditMemoryModal = ({
     </Modal>
   );
 };
-
-

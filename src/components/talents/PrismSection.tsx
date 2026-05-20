@@ -100,5 +100,3 @@ export const PrismSection: React.FC<PrismSectionProps> = ({
     </div>
   );
 };
-
-

@@ -147,5 +147,3 @@ export const SlateEditToolbar: React.FC<SlateEditToolbarProps> = ({
     document.body,
   );
 };
-
-
