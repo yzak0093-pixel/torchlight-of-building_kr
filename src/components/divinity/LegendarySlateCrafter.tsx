@@ -245,7 +245,7 @@ export const LegendarySlateCrafter: React.FC<LegendarySlateCrafterProps> = ({
             </label>
             <div className="flex gap-4 items-start">
               <div
-                className={`flex h-20 w-20 items-center justify-center rounded border ${LEGENDARY_SLATE_BORDER} bg-zinc-900`}
+                className={`flex min-h-[140px] min-w-[140px] p-2 items-center justify-center rounded border ${LEGENDARY_SLATE_BORDER} bg-zinc-900`}
               >
                 <SlatePreview
                   shape={template.shape}

@@ -31,27 +31,16 @@ export const SHAPE_CELLS: Record<AnySlateShape, [number, number][]> = {
     [0, 2],
     [1, 1],
   ],
-  // Legendary slate shapes
   Single: [[0, 0]],
-  // "A Corner of Divinity" - L shape:
-  // OO
-  // O
   CornerL: [
     [0, 0],
     [0, 1],
     [1, 0],
   ],
-  // "Fallen Starlight" - vertical 2x1:
-  // O
-  // O
   Vertical2: [
     [0, 0],
     [1, 0],
   ],
-  // "Pedigree of Gods" - custom 7-cell:
-  // OO
-  // OOO
-  //  OO
   Pedigree: [
     [0, 0],
     [0, 1],
@@ -70,11 +59,15 @@ export const SHAPE_CELLS: Record<AnySlateShape, [number, number][]> = {
     [5, 0],
   ],
   Pinwheel: [
-    [0, 0],
+    [0, 2],
     [1, 0],
     [1, 1],
+    [1, 2],
     [2, 1],
-  ]
+    [2, 2],
+    [2, 3],
+    [3, 1],
+  ],
 };
 
 export const SHAPE_BOUNDS: Record<
@@ -85,11 +78,12 @@ export const SHAPE_BOUNDS: Record<
   L: { rows: 3, cols: 2 },
   Z: { rows: 2, cols: 3 },
   T: { rows: 2, cols: 3 },
-  // Legendary slate shapes
   Single: { rows: 1, cols: 1 },
   CornerL: { rows: 2, cols: 2 },
   Vertical2: { rows: 2, cols: 1 },
   Pedigree: { rows: 3, cols: 3 },
+  Vertical6: { rows: 6, cols: 1 },
+  Pinwheel: { rows: 4, cols: 4 },
 };
 
 const normalizeCoordinates = (
