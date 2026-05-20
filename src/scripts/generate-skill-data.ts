@@ -53,14 +53,14 @@ const SKILL_TYPES = [
     listPath: "Active_Skill",
     outputDir: "active",
     tabId: "액티브스킬Tag",
-    expectedCount: 151,
+    expectedCount: 198,
   },
   {
     name: "Support",
     listPath: "Support_Skill",
     outputDir: "support",
     tabId: "보조스킬Tag",
-    expectedCount: 121,
+    expectedCount: 124,
   },
   {
     name: "Passive",
@@ -81,14 +81,14 @@ const SKILL_TYPES = [
     listPath: "Noble_Support_Skill",
     outputDir: "noble_support",
     tabId: "전용보조스킬Tag",
-    expectedCount: 141,
+    expectedCount: 146,
   },
   {
     name: "Magnificent Support",
     listPath: "Magnificent_Support_Skill",
     outputDir: "magnificent_support",
     tabId: "전용보조스킬Tag",
-    expectedCount: 131,
+    expectedCount: 135,
   },
 ] as const;
 

@@ -1,4 +1,4 @@
-import { z } from "zod";
+﻿import { z } from "zod";
 
 import { HeroMemoryTypeSchema } from "./common.schema";
 
@@ -19,6 +19,7 @@ const BaseHeroMemorySchema = z.object({
   level: z.number().catch(40),
   fixedAffixes: z.array(z.string()).catch([]),
   randomAffixes: z.array(z.string()).catch([]),
+  revivedAffixes: z.array(z.string()).optional().catch([]),
 });
 
 export type HeroMemory = z.infer<typeof BaseHeroMemorySchema>;

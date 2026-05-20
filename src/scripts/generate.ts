@@ -1,4 +1,4 @@
-import { execSync } from "node:child_process";
+﻿import { execSync } from "node:child_process";
 import { program } from "commander";
 
 const GENERATORS = {
@@ -16,6 +16,7 @@ const GENERATORS = {
   destinies: "generate-destiny-data.ts",
   vorax: "generate-vorax-data.ts",
   hyperlinks: "generate-hyperlink-data.ts",
+  "memory-revival": "generate-memory-revival-data.ts",
 } as const;
 
 type GeneratorName = keyof typeof GENERATORS;

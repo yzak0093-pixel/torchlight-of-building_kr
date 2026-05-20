@@ -1,4 +1,5 @@
-import { HeroMemories } from "@/src/data/hero-memory/hero-memories";
+﻿import { HeroMemories } from "@/src/data/hero-memory/hero-memories";
+import { HERO_MEMORY_REVIVAL_AFFIXES } from "@/src/data/hero-memory/revival-data";
 import { HeroTraits } from "@/src/data/hero-trait/hero-traits";
 import type { BaseHeroTrait } from "@/src/data/hero-trait/types";
 import { AllHeroMemoryBaseStats } from "@/src/data/manual-entry/hero-memory/hero-memory-data";
@@ -124,6 +125,10 @@ export const getFixedAffixesForMemoryType = (
   ).map((m) => m.affix);
 };
 
+export const getRevivalAffixes = (): readonly string[] => {
+  return HERO_MEMORY_REVIVAL_AFFIXES;
+};
+
 export const getRandomAffixesForMemoryType = (
   memoryType: HeroMemoryType,
 ): string[] => {
@@ -148,7 +153,12 @@ export const craftHeroMemoryAffix = (
 };
 
 export const formatCraftedMemoryAffixes = (memory: HeroMemory): string[] => {
-  return [memory.baseStat, ...memory.fixedAffixes, ...memory.randomAffixes];
+  return [
+    memory.baseStat,
+    ...memory.fixedAffixes,
+    ...memory.randomAffixes,
+    ...(memory.revivedAffixes || []),
+  ];
 };
 
 export const canEquipMemoryInSlot = (

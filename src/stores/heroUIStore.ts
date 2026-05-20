@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
@@ -17,18 +17,20 @@ const DEFAULT_BASE_STAT_LEVEL = 40;
 interface HeroUIState {
   // Memory modal state
   isMemoryModalOpen: boolean;
-  editingMemoryId: string | undefined; // undefined = create mode, string = edit mode
+  editingMemoryId: string | undefined;
 
   // Memory crafting state
   craftingMemoryType: HeroMemoryType | undefined;
   craftingRarity: MemoryBaseStatRarity;
   craftingLevel: number;
-  existingBaseStat: string | undefined; // Existing base stat text from edit mode
-  craftingBaseStatIndex: number | undefined; // Index into filtered AllHeroMemoryBaseStats
-  existingFixedAffixes: string[]; // Existing affix text from edit mode
-  existingRandomAffixes: string[]; // Existing affix text from edit mode
+  existingBaseStat: string | undefined;
+  craftingBaseStatIndex: number | undefined;
+  existingFixedAffixes: string[];
+  existingRandomAffixes: string[];
+  existingRevivedAffixes: string[]; // <-- 재구성 옵션 (신규)
   fixedAffixSlots: MemoryAffixSlotState[];
   randomAffixSlots: MemoryAffixSlotState[];
+  revivedAffixSlots: MemoryAffixSlotState[]; // <-- 재구성 옵션 슬롯 (신규)
 
   // Actions
   openMemoryModal: (memoryId?: string) => void;
@@ -40,14 +42,10 @@ interface HeroUIState {
   setCraftingBaseStatIndex: (index: number | undefined) => void;
   setExistingFixedAffix: (index: number, value: string | undefined) => void;
   setExistingRandomAffix: (index: number, value: string | undefined) => void;
-  setFixedAffixSlot: (
-    index: number,
-    update: Partial<MemoryAffixSlotState>,
-  ) => void;
-  setRandomAffixSlot: (
-    index: number,
-    update: Partial<MemoryAffixSlotState>,
-  ) => void;
+  setExistingRevivedAffix: (index: number, value: string | undefined) => void;
+  setFixedAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
+  setRandomAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
+  setRevivedAffixSlot: (index: number, update: Partial<MemoryAffixSlotState>) => void;
   resetMemoryCrafting: () => void;
 }
 
@@ -64,8 +62,10 @@ const INITIAL_CRAFTING_STATE = {
   craftingBaseStatIndex: undefined as number | undefined,
   existingFixedAffixes: [] as string[],
   existingRandomAffixes: [] as string[],
+  existingRevivedAffixes: [] as string[],
   fixedAffixSlots: createEmptyAffixSlots(2),
   randomAffixSlots: createEmptyAffixSlots(4),
+  revivedAffixSlots: createEmptyAffixSlots(1), // 재구성 옵션은 보통 1개
 };
 
 export const useHeroUIStore = create<HeroUIState>()(
@@ -90,6 +90,7 @@ export const useHeroUIStore = create<HeroUIState>()(
           ...INITIAL_CRAFTING_STATE,
           fixedAffixSlots: createEmptyAffixSlots(2),
           randomAffixSlots: createEmptyAffixSlots(4),
+          revivedAffixSlots: createEmptyAffixSlots(1),
         });
       }),
 
@@ -100,8 +101,10 @@ export const useHeroUIStore = create<HeroUIState>()(
         state.craftingBaseStatIndex = undefined;
         state.existingFixedAffixes = [];
         state.existingRandomAffixes = [];
+        state.existingRevivedAffixes = [];
         state.fixedAffixSlots = createEmptyAffixSlots(2);
         state.randomAffixSlots = createEmptyAffixSlots(4);
+        state.revivedAffixSlots = createEmptyAffixSlots(1);
       }),
 
     setCraftingRarity: (rarity) =>
@@ -134,6 +137,11 @@ export const useHeroUIStore = create<HeroUIState>()(
         state.existingRandomAffixes[index] = value ?? "";
       }),
 
+    setExistingRevivedAffix: (index, value) =>
+      set((state) => {
+        state.existingRevivedAffixes[index] = value ?? "";
+      }),
+
     setFixedAffixSlot: (index, update) =>
       set((state) => {
         Object.assign(state.fixedAffixSlots[index], update);
@@ -144,12 +152,18 @@ export const useHeroUIStore = create<HeroUIState>()(
         Object.assign(state.randomAffixSlots[index], update);
       }),
 
+    setRevivedAffixSlot: (index, update) =>
+      set((state) => {
+        Object.assign(state.revivedAffixSlots[index], update);
+      }),
+
     resetMemoryCrafting: () =>
       set((state) => {
         Object.assign(state, {
           ...INITIAL_CRAFTING_STATE,
           fixedAffixSlots: createEmptyAffixSlots(2),
           randomAffixSlots: createEmptyAffixSlots(4),
+          revivedAffixSlots: createEmptyAffixSlots(1),
         });
       }),
   })),
