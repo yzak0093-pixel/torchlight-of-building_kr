@@ -9,7 +9,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (25-30) - (33-38) Physical Damage to Attacks",
+    craftableAffix: "공격에 물리 대미지 (25-30) ~ (33-38) 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -17,7 +17,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (24-29) - (34-39) Fire Damage to Attacks",
+    craftableAffix: "공격에 화염 대미지 (24-29) ~ (34-39) 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -25,7 +25,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (24-29) - (34-39) Cold Damage to Attacks",
+    craftableAffix: "공격에 냉기 대미지 (24-29) ~ (34-39) 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -33,7 +33,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (1-3) - (60-65) Lightning Damage to Attacks",
+    craftableAffix: "공격에 번개 대미지 (1-3) ~ (60-65) 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -41,7 +41,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (26-31) - (32-37) Erosion Damage to Attacks",
+    craftableAffix: "공격에 부식 대미지 (26-31) ~ (32-37) 포인트 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -49,7 +49,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(40-48)% Physical Damage",
+    craftableAffix: "물리 대미지 +(40-48)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -57,7 +57,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(40-48)% Elemental Damage",
+    craftableAffix: "원소 대미지 +(40-48)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -65,7 +65,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(40-48)% Erosion Damage",
+    craftableAffix: "부식 대미지 +(40-48)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -73,7 +73,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(40-48)% Ranged Damage",
+    craftableAffix: "원거리 대미지 +(40-48)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -81,7 +81,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(12-16)% Attack Speed",
+    craftableAffix: "공격 속도 +(12-16)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -89,7 +89,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Projectile Quantity +2",
+    craftableAffix: "투사체 수량 +2",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -97,7 +97,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+2 Parabolic Projectile Split Quantity",
+    craftableAffix: "포물선 투사체 분열 수량 +2",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -105,7 +105,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(12-16)% Elemental and Erosion Resistance Penetration",
+    craftableAffix: "원소와 부식 저항 관통 +(12-16)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -113,7 +113,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(10-14)% Armor DMG Mitigation Penetration",
+    craftableAffix: "아머 대미지 감소 관통 +(10-14)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -121,7 +121,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+2 to Max Tenacity Blessing Stacks",
+    craftableAffix: "강건한 축복 최대 중첩 수 +2",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -129,7 +129,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+2 to Max Agility Blessing Stacks",
+    craftableAffix: "황홀한 축복 최대 중첩 수 +2",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -137,7 +137,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+2 to Max Focus Blessing Stacks",
+    craftableAffix: "집요한 축복 최대 중첩 수 +2",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -145,7 +145,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(48-64)% Gear Physical Damage",
+    craftableAffix: "해당 장비 물리 대미지 +(48-64)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -153,7 +153,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Adds (64-68) - (80-84) Physical Damage to the gear",
+    craftableAffix: "해당 장비 물리 대미지 (64-68) ~ (80-84) 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -161,7 +161,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Lucky Critical Strike\n(-50--40)% Critical Strike Rating",
+    craftableAffix: "행운크리티컬\n크리티컬 수치 (-50--40)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -170,7 +170,7 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a (20-25)% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to (250-300)% of their Max Life to enemies within a 6 m radius",
+      "공격 또는 주술로 적 처치 시 (20-25)% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP (250-300)% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -178,6 +178,6 @@ export const FIRE_CANNON_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+16% Life Regain and Energy Shield Regain",
+    craftableAffix: "HP 반환 및 보호막 반환 +16%",
   },
 ];

@@ -9,7 +9,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(87-117) Max Energy Shield",
+    craftableAffix: "최대 보호막 +(87-117)",
   },
   {
     equipmentSlot: "Gloves",
@@ -17,7 +17,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20)% Energy Shield Charge Speed",
+    craftableAffix: "보호막 에너지 충전 속도 +(15-20)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -25,7 +25,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -33,7 +33,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -41,7 +41,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -49,7 +49,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -57,7 +57,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "Gloves",
@@ -65,7 +65,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "Gloves",
@@ -73,7 +73,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "Gloves",
@@ -81,7 +81,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Skill Area",
+    craftableAffix: "스킬 범위 +(20-24)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -89,16 +89,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+100% chance to Paralyze the target on hit",
-  },
-  {
-    equipmentSlot: "Gloves",
-    equipmentType: "Gloves (INT)",
-    affixType: "Base Affix",
-    craftingPool: "",
-    tier: "1",
-    craftableAffix:
-      "+(6-8)% Elemental and Erosion Resistance Penetration\n+(6-8)% Elemental and Erosion Resistance Penetration for Minions",
+    craftableAffix: "대미지를 줄 때, +100% 확률로 타깃에게 마비 부여",
   },
   {
     equipmentSlot: "Gloves",
@@ -107,7 +98,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(5-7)% Armor DMG Mitigation Penetration\n+(5-7)% Armor DMG Mitigation Penetration for Minions",
+      "원소와 부식 저항 관통 +(6-8)%\n소환체의 원소 및 부식 저항 관통 +(6-8)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -115,7 +106,8 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% Sealed Mana Compensation",
+    craftableAffix:
+      "아머 대미지 감소 관통 +(5-7)%\n소환체의 아머 대미지 감소 관통 +(5-7)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -123,7 +115,15 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(7-8)% Aura Effect",
+    craftableAffix: "MP 봉인 보상 +(6-8)%",
+  },
+  {
+    equipmentSlot: "Gloves",
+    equipmentType: "Gloves (INT)",
+    affixType: "Base Affix",
+    craftingPool: "",
+    tier: "1",
+    craftableAffix: "오라 효과 +(7-8)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -131,7 +131,7 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Elemental Resistance",
+    craftableAffix: "원소 저항 최대치 +(3-5)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -139,6 +139,6 @@ export const GLOVES_INT_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(12-20)% Critical Strike Damage Mitigation",
+    craftableAffix: "크리티컬 대미지 감면 +(12-20)%",
   },
 ];

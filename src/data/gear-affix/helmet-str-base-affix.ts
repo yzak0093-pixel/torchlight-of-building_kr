@@ -9,7 +9,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Helmet",
@@ -17,7 +17,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(760-960) Armor",
+    craftableAffix: "아머 수치 +(760-960)",
   },
   {
     equipmentSlot: "Helmet",
@@ -25,7 +25,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -33,7 +33,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -41,7 +41,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -49,7 +49,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -57,7 +57,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "Helmet",
@@ -65,7 +65,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "Helmet",
@@ -73,7 +73,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "Helmet",
@@ -81,7 +81,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Skill Area",
+    craftableAffix: "스킬 범위 +(20-24)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -90,7 +90,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(6-8)% Elemental and Erosion Resistance Penetration\n+(6-8)% Elemental and Erosion Resistance Penetration for Minions",
+      "원소와 부식 저항 관통 +(6-8)%\n소환체의 원소 및 부식 저항 관통 +(6-8)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -99,7 +99,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(5-7)% Armor DMG Mitigation Penetration\n+(5-7)% Armor DMG Mitigation Penetration for Minions",
+      "아머 대미지 감소 관통 +(5-7)%\n소환체의 아머 대미지 감소 관통 +(5-7)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -107,7 +107,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% Sealed Mana Compensation",
+    craftableAffix: "MP 봉인 보상 +(6-8)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -115,7 +115,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(7-8)% Aura Effect",
+    craftableAffix: "오라 효과 +(7-8)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -123,7 +123,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Elemental Resistance",
+    craftableAffix: "원소 저항 최대치 +(3-5)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -131,7 +131,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts (16-20)% of Physical Damage taken to Fire Damage",
+    craftableAffix: "받은 물리 대미지의 (16-20)% 를 화염 대미지로 전환",
   },
   {
     equipmentSlot: "Helmet",
@@ -139,7 +139,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts (36-45)% of Erosion Damage taken to Fire Damage",
+    craftableAffix: "받은 부식 대미지의 (36-45)% 를 화염 대미지로 전환",
   },
   {
     equipmentSlot: "Helmet",
@@ -147,7 +147,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(13-14)% Armor Effective Rate for Non-Physical Damage",
+    craftableAffix: "비물리 대미지에 대한 아머 적용률 +(13-14)% .",
   },
   {
     equipmentSlot: "Helmet",
@@ -156,7 +156,7 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "When dealing damage, inflicts Fire Infiltration. Interval for each enemy: 1 s\nWhen Minions deal damage, inflicts Fire Infiltration. Interval for each enemy: 1 s",
+      "대미지를 입힐 때 화염 침투를 시전, 모든 적에게 1 초의 간격을 가진다.\n소환체가 대미지를 입힐 때 화염 침투를 시전, 모든 적에게 1 초의 간격을 가진다.",
   },
   {
     equipmentSlot: "Helmet",
@@ -164,6 +164,6 @@ export const HELMET_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Has Profane. Minions have Profane",
+    craftableAffix: "악령을 보유한다. 소환체가 악령을 보유한다.",
   },
 ];

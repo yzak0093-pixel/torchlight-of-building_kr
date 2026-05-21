@@ -9,8 +9,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(4-8)% chance to gain 1 stack of Agility Blessing on defeat",
+    craftableAffix: "처치 시, +(4-8)% 의 확률로 황홀한 축복 1회 획득",
   },
   {
     equipmentSlot: "One-Handed",
@@ -18,7 +17,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Damage Penetrates (5-8)% Elemental Resistance",
+    craftableAffix: "대미지가 (5-8)% 원소 저항 관통",
   },
   {
     equipmentSlot: "One-Handed",
@@ -26,7 +25,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (2-4) - (8-10) Physical Damage to the gear",
+    craftableAffix: "해당 장비 물리 대미지 (2-4) ~ (8-10) 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -34,7 +33,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Gear Physical Damage",
+    craftableAffix: "해당 장비 물리 대미지 +(15-25)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -42,7 +41,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-8)% gear Attack Speed",
+    craftableAffix: "해당 장비 공격 속도 +(5-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -50,7 +49,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-6)% Attack Critical Strike Rating for this gear",
+    craftableAffix: "해당 장비 공격 크리티컬 수치 +(3-6)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -58,7 +57,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(25-30)% Elemental Damage",
+    craftableAffix: "원소대미지 +(25-30)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -66,7 +65,7 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2) Projectile Skill Level",
+    craftableAffix: "투사체 스킬 레벨 +(1-2)",
   },
   {
     equipmentSlot: "One-Handed",
@@ -74,6 +73,6 @@ export const PISTOL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(25-30)% Projectile Speed",
+    craftableAffix: "투사체 속도 +(25-30)%",
   },
 ];

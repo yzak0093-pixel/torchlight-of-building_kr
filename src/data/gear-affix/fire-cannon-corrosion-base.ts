@@ -9,7 +9,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2) to Parabolic Projectile Splits quantity",
+    craftableAffix: "포물선 투사체 분열 수량 +(1-2)",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -17,8 +17,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(6-12)% chance to gain 1 stack of Tenacity Blessing on defeat",
+    craftableAffix: "처치 시 +(6-12)% 의 확률로 강건한 축복 1회 획득",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -26,7 +25,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (7-10) - (14-17) Physical Damage to the gear",
+    craftableAffix: "해당 장비 물리 대미지 (7-10) ~ (14-17) 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -34,7 +33,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Gear Physical Damage",
+    craftableAffix: "해당 장비 물리 대미지 +(15-25)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -42,7 +41,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-8)% gear Attack Speed",
+    craftableAffix: "해당 장비 공격 속도 +(5-8)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -50,7 +49,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-6)% Attack Critical Strike Rating for this gear",
+    craftableAffix: "해당 장비 공격 크리티컬 수치 +(3-6)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -58,7 +57,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-15)% Skill Area",
+    craftableAffix: "스킬 범위 +(10-15)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -66,7 +65,7 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(40-45)% Elemental Damage",
+    craftableAffix: "원소대미지 +(40-45)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -74,7 +73,6 @@ export const FIRE_CANNON_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "-30% additional Damage Over Time taken while standing still",
+    craftableAffix: "정지 시, 받는 지속 대미지 추가 -30%",
   },
 ];

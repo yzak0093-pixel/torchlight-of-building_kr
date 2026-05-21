@@ -9,7 +9,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2)% Max Fire Resistance",
+    craftableAffix: "화염 최대 저항 +(1-2)%",
   },
   {
     equipmentSlot: "Shield",
@@ -17,7 +17,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2)% Max Cold Resistance",
+    craftableAffix: "냉기 최대 저항 +(1-2)%",
   },
   {
     equipmentSlot: "Shield",
@@ -25,7 +25,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2)% Max Lightning Resistance",
+    craftableAffix: "번개 최대 저항 +(1-2)%",
   },
   {
     equipmentSlot: "Shield",
@@ -33,7 +33,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Has a (5-10)% chance to avoid Blocked damage",
+    craftableAffix: "(5-10)% 확률로 막기 당한 대미지 면역",
   },
   {
     equipmentSlot: "Shield",
@@ -41,7 +41,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-8)% Block Ratio",
+    craftableAffix: "막기 비율 +(5-8)%",
   },
   {
     equipmentSlot: "Shield",
@@ -49,7 +49,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-12)% Attack Block Chance",
+    craftableAffix: "공격 막기 확률 +(8-12)%",
   },
   {
     equipmentSlot: "Shield",
@@ -57,7 +57,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(12-15)% Spell Block Chance",
+    craftableAffix: "주술 막기 확률 +(12-15)%",
   },
   {
     equipmentSlot: "Shield",
@@ -65,7 +65,7 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Energy Shield",
+    craftableAffix: "최대 보호막 +(3-5)%",
   },
   {
     equipmentSlot: "Shield",
@@ -73,6 +73,6 @@ export const SHIELD_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Life",
+    craftableAffix: "최대 HP +(3-5)%",
   },
 ];

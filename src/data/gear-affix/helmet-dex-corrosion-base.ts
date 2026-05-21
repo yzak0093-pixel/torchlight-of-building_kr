@@ -9,7 +9,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Focus Blessing Stacks",
+    craftableAffix: "집요한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Helmet",
@@ -17,7 +17,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-15)% Sealed Mana Compensation",
+    craftableAffix: "MP 봉인 보상 +(10-15)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -26,7 +26,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Triggers Lv. (15-20) Timid Curse upon inflicting damage. Cooldown: 0.3 s",
+      "대미지를 입히면 (15-20) 레벨 위축 저주를 발동한다. 쿨타임 0.3 초",
   },
   {
     equipmentSlot: "Helmet",
@@ -34,7 +34,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Nearby enemies within 15 m are cursed by Lv. 20 Ominous",
+    craftableAffix: "주변 15 미터 내의 적이 20 레벨의 불길 저주를 받는다.",
   },
   {
     equipmentSlot: "Helmet",
@@ -42,7 +42,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Immune to Blinding\nImmune to Paralysis",
+    craftableAffix: "실명 면역\n마비 면역",
   },
   {
     equipmentSlot: "Helmet",
@@ -50,7 +50,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Max Energy Shield",
+    craftableAffix: "최대 보호막 +(15-20)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -58,7 +58,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Max Life",
+    craftableAffix: "최대 HP +(15-20)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -66,7 +66,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "(-50--30)% Curse effect against you",
+    craftableAffix: "받는 저주 효과 (-50--30)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -74,7 +74,7 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-50)% gear Evasion",
+    craftableAffix: "해당 장비 회피 수치 +(30-50)%",
   },
   {
     equipmentSlot: "Helmet",
@@ -82,6 +82,6 @@ export const HELMET_DEX_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-70)% damage",
+    craftableAffix: "대미지 +(50-70)%",
   },
 ];

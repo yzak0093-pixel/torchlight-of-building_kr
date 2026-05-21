@@ -10,7 +10,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(87-117) Max Energy Shield",
+      craftableAffix: "최대 보호막 +(87-117)",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -18,7 +18,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(15-20)% Energy Shield Charge Speed",
+      craftableAffix: "보호막 에너지 충전 속도 +(15-20)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -26,7 +26,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(5-10)% Fire Resistance",
+      craftableAffix: "화염 저항 +(5-10)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -34,7 +34,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(5-10)% Cold Resistance",
+      craftableAffix: "냉기 저항 +(5-10)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -42,7 +42,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(5-10)% Lightning Resistance",
+      craftableAffix: "번개 저항 +(5-10)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -50,7 +50,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(5-10)% Erosion Resistance",
+      craftableAffix: "부식 저항 +(5-10)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -58,7 +58,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(15-20) Strength",
+      craftableAffix: "힘 +(15-20)",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -66,7 +66,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(15-20) Dexterity",
+      craftableAffix: "민첩 +(15-20)",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -74,7 +74,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(15-20) Intelligence",
+      craftableAffix: "지혜 +(15-20)",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -82,7 +82,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(20-24)% Skill Area",
+      craftableAffix: "스킬 범위 +(20-24)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -91,7 +91,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       craftingPool: "",
       tier: "1",
       craftableAffix:
-        "+(6-8)% Elemental and Erosion Resistance Penetration\n+(6-8)% Elemental and Erosion Resistance Penetration for Minions",
+        "원소와 부식 저항 관통 +(6-8)%\n소환체의 원소 및 부식 저항 관통 +(6-8)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -100,7 +100,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       craftingPool: "",
       tier: "1",
       craftableAffix:
-        "+(5-7)% Armor DMG Mitigation Penetration\n+(5-7)% Armor DMG Mitigation Penetration for Minions",
+        "아머 대미지 감소 관통 +(5-7)%\n소환체의 아머 대미지 감소 관통 +(5-7)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -108,7 +108,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+(6-8)% Sealed Mana Compensation",
+      craftableAffix: "MP 봉인 보상 +(6-8)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -116,7 +116,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+(7-8)% Aura Effect",
+      craftableAffix: "오라 효과 +(7-8)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -124,7 +124,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(3-5)% Max Elemental Resistance",
+      craftableAffix: "원소 저항 최대치 +(3-5)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -132,8 +132,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix:
-        "Converts (16-20)% of Physical Damage taken to Cold Damage",
+      craftableAffix: "받은 물리 대미지의 (16-20)% 가 냉기 대미지로 전환",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -141,7 +140,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "Takes 10 True Damage every 0.1s",
+      craftableAffix: "0.1초당 10포인트의 트루 대미지를 받는다.",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -149,8 +148,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix:
-        "Converts (36-45)% of Erosion Damage taken to Cold Damage",
+      craftableAffix: "받은 부식 대미지의 (36-45)% 가 냉기 대미지로 전환",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -158,7 +156,7 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+1 Max Fortitude Stacks",
+      craftableAffix: "강직 최대 중첩 수 +1",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -166,6 +164,6 @@ export const CHEST_ARMOR_INT_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[]
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+3 Max Fortitude Stacks",
+      craftableAffix: "강직 최대 중첩 수 +3",
     },
   ];

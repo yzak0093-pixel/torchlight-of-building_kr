@@ -10,7 +10,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "0",
     craftableAffix:
-      "Enemies have a 30% chance to explode when defeated, dealing True Damage equal to (50-100)% of their Max Life to enemies within a 6 m radius",
+      "적 처치 시 30% 의 확률로 폭발하여 반경 6 미터 이내의 적에게 처치된 적의 최대 HP (50-100)% 만큼 트루 대미지를 입힌다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -18,8 +18,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(6-12)% chance to gain 1 stack of Tenacity Blessing on defeat",
+    craftableAffix: "처치 시 +(6-12)% 의 확률로 강건한 축복 1회 획득",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -27,7 +26,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (7-10) - (14-17) Physical Damage to the gear",
+    craftableAffix: "해당 장비 물리 대미지 (7-10) ~ (14-17) 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -35,7 +34,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Gear Physical Damage",
+    craftableAffix: "해당 장비 물리 대미지 +(15-25)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -43,7 +42,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-8)% gear Attack Speed",
+    craftableAffix: "해당 장비 공격 속도 +(5-8)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -51,7 +50,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-6)% Attack Critical Strike Rating for this gear",
+    craftableAffix: "해당 장비 공격 크리티컬 수치 +(3-6)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -59,8 +58,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "Eliminates enemies under (5-8)% Life upon inflicting damage",
+    craftableAffix: "대미지 부여 시, HP가 (5-8)% 미만인 적을 처치한다.",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -68,7 +66,7 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(40-45)% Elemental Damage",
+    craftableAffix: "원소대미지 +(40-45)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -76,6 +74,6 @@ export const CROSSBOW_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-12)% chance to deal double Trauma Damage",
+    craftableAffix: "+(8-12)% 의 확률로 외상 대미지를 2배 부여한다.",
   },
 ];

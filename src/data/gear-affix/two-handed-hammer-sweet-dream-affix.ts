@@ -10,7 +10,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "Adds (10-13) - (14-19) Physical Damage to Attacks",
+      craftableAffix: "공격에 물리 대미지 (10-13) ~ (14-19) 포인트 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -18,7 +18,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "Adds (9-14) - (15-20) Fire Damage to Attacks",
+      craftableAffix: "공격에 화염 대미지 (9-14) ~ (15-20) 포인트 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -26,7 +26,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "Adds (10-13) - (14-19) Cold Damage to Attacks",
+      craftableAffix: "공격에 냉기 대미지 (10-13) ~ (14-19) 포인트 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -34,7 +34,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "Adds (1-2) - (28-32) Lightning Damage to Attacks",
+      craftableAffix: "공격에 번개 대미지 (1-2) ~ (28-32) 포인트 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -42,7 +42,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "Adds (11-13) - (15-18) Erosion Damage to Attacks",
+      craftableAffix: "공격에 부식 대미지 (11-13) ~ (15-18) 포인트 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -50,7 +50,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(20-24)% Physical Damage",
+      craftableAffix: "물리 대미지 +(20-24)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -58,7 +58,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(20-24)% Elemental Damage",
+      craftableAffix: "원소 대미지 +(20-24)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -66,7 +66,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(20-24)% Erosion Damage",
+      craftableAffix: "부식 대미지 +(20-24)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -74,7 +74,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(20-24)% Melee Damage",
+      craftableAffix: "근접 대미지 +(20-24)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -82,7 +82,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "2",
-      craftableAffix: "+(6-8)% Attack Speed",
+      craftableAffix: "공격 속도 +(6-8)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -91,7 +91,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       craftingPool: "",
       tier: "1",
       craftableAffix:
-        "+(14-16)% additional skill damage when Demolisher Charge is consumed",
+        "파괴 에너지 소모 시 해당 회차 스킬의 추가 대미지 +(14-16)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -99,8 +99,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix:
-        "Eliminates enemies under (5-7)% Life upon inflicting damage",
+      craftableAffix: "대미지 부여 시, HP가 (5-7)% 미만인 적을 처치한다.",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -108,7 +107,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+(6-8)% Elemental and Erosion Resistance Penetration",
+      craftableAffix: "원소와 부식 저항 관통 +(6-8)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -116,7 +115,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+(5-7)% Armor DMG Mitigation Penetration",
+      craftableAffix: "아머 대미지 감소 관통 +(5-7)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -124,7 +123,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+1 to Max Tenacity Blessing Stacks",
+      craftableAffix: "강건한 축복 최대 중첩 수 +1",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -132,7 +131,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+1 to Max Agility Blessing Stacks",
+      craftableAffix: "황홀한 축복 최대 중첩 수 +1",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -140,7 +139,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+1 to Max Focus Blessing Stacks",
+      craftableAffix: "집요한 축복 최대 중첩 수 +1",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -148,7 +147,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "+(24-32)% Gear Physical Damage",
+      craftableAffix: "해당 장비 물리 대미지 +(24-32)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -156,7 +155,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "1",
-      craftableAffix: "Adds (32-34) - (40-42) Physical Damage to the gear",
+      craftableAffix: "해당 장비 물리 대미지 (32-34) ~ (40-42) 추가",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -164,8 +163,7 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       affixType: "Sweet Dream Affix",
       craftingPool: "",
       tier: "0",
-      craftableAffix:
-        "Lucky Critical Strike\n(-80--50)% Critical Strike Rating",
+      craftableAffix: "행운크리티컬\n크리티컬 수치 (-80--50)%",
     },
     {
       equipmentSlot: "Two-Handed",
@@ -174,6 +172,6 @@ export const TWO_HANDED_HAMMER_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix
       craftingPool: "",
       tier: "0",
       craftableAffix:
-        "Enemies have a (20-25)% chance to explode when defeated by an Attack or Spell, dealing True Damage equal to (250-300)% of their Max Life to enemies within a 6 m radius",
+        "공격 또는 주술로 적 처치 시 (20-25)% 확률로 폭발하여 반경 6 미터 내의 적에게 처치된 적의 최대 HP (250-300)% 만큼 트루 대미지를 입힌다.",
     },
   ];

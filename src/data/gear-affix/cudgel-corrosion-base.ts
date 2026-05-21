@@ -9,8 +9,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(6-12)% chance to gain 1 stack of Focus Blessing on defeat",
+    craftableAffix: "처치 시, +(6-12)% 의 확률로 집요한 축복 1회 획득",
   },
   {
     equipmentSlot: "One-Handed",
@@ -18,7 +17,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Damage Penetrates (8-12)% Elemental Resistance",
+    craftableAffix: "대미지가 (8-12)% 원소 저항 관통",
   },
   {
     equipmentSlot: "One-Handed",
@@ -26,7 +25,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(18-24)% Cast Speed",
+    craftableAffix: "시전 속도 +(18-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -34,7 +33,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(35-45)% Spell Damage",
+    craftableAffix: "주술 대미지 +(35-45)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -42,7 +41,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-60)% Spell Critical Strike Rating",
+    craftableAffix: "주술 크리티컬 수치 +(50-60)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -50,7 +49,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(40-48)% Critical Strike Damage",
+    craftableAffix: "크리티컬 대미지 +(40-48)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -58,7 +57,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(8-15)% Cooldown Recovery Speed",
+    craftableAffix: "쿨타임 회복 속도 +(8-15)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -66,7 +65,7 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (7-12)% of Elemental Damage as Erosion Damage",
+    craftableAffix: "원소대미지를 (7-12)% 가 추가된 부식 대미지",
   },
   {
     equipmentSlot: "One-Handed",
@@ -74,6 +73,6 @@ export const CUDGEL_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(1-2) Support Skill Level",
+    craftableAffix: "보조 스킬 레벨 +(1-2)",
   },
 ];

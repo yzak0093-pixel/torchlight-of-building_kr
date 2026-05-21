@@ -10,7 +10,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+2 Active Skill Level",
+      craftableAffix: "액티브 스킬 레벨 +2",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -18,7 +18,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+1 Support Skill Level",
+      craftableAffix: "보조 스킬 레벨 +1",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -26,7 +26,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(3-5)% Max Elemental Resistance",
+      craftableAffix: "원소 저항 최대치 +(3-5)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -34,7 +34,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "(-6--4)% additional Physical Damage taken",
+      craftableAffix: "받는 물리 대미지 추가 (-6--4)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -42,8 +42,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix:
-        "+(10-15)% Attack and Spell Block Chance while standing still",
+      craftableAffix: "정지 시, 공격 및 주술 막기 확률 +(10-15)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -51,7 +50,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(50-70)% damage",
+      craftableAffix: "대미지 +(50-70)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -59,7 +58,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(15-20)% Max Energy Shield",
+      craftableAffix: "최대 보호막 +(15-20)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -67,7 +66,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(15-20)% Max Life",
+      craftableAffix: "최대 HP +(15-20)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -75,7 +74,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "Immune to Elemental Ailments",
+      craftableAffix: "원소 상태 이상에 면역된다.",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -83,7 +82,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(8-10)% Elemental and Erosion Resistance",
+      craftableAffix: "원소 저항과 부식 저항 +(8-10)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -91,7 +90,7 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "+(30-50)% Gear Armor",
+      craftableAffix: "해당 장비 아머 수치 +(30-50)%",
     },
     {
       equipmentSlot: "Chest Armor",
@@ -99,6 +98,6 @@ export const CHEST_ARMOR_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] =
       affixType: "Corrosion Base",
       craftingPool: "",
       tier: "0",
-      craftableAffix: "50% chance to gain Hardened when you are hit",
+      craftableAffix: "적중 당할 경우, 50% 확률로 경화 획득",
     },
   ];

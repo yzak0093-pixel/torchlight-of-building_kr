@@ -9,8 +9,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(5-8)% chance to trigger the Main Spell Skill 1 additional time when using it",
+    craftableAffix: "메인 주술 스킬 사용 시, +(5-8)% 확률로 1회 추가 발동",
   },
   {
     equipmentSlot: "One-Handed",
@@ -18,8 +17,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(4-8)% chance to gain 1 stack of Focus Blessing on defeat",
+    craftableAffix: "처치 시, +(4-8)% 의 확률로 집요한 축복 1회 획득",
   },
   {
     equipmentSlot: "One-Handed",
@@ -27,8 +25,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(5-8)% Elemental and Erosion Resistance Penetration for Minions",
+    craftableAffix: "소환체의 원소 및 부식 저항 관통 +(5-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -36,7 +33,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(10-16)% Cast Speed",
+    craftableAffix: "시전 속도 +(10-16)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -44,7 +41,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-30)% Minion Damage",
+    craftableAffix: "소환체 대미지 +(20-30)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -52,7 +49,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-40)% Minion Critical Strike Rating",
+    craftableAffix: "소환체 크리티컬 수치 +(30-40)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -60,7 +57,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(25-32)% Minion Critical Strike Damage",
+    craftableAffix: "소환체 크리티컬 대미지 +(25-32)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -68,7 +65,7 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(6-10)% Cooldown Recovery Speed",
+    craftableAffix: "쿨타임 회복 속도 +(6-10)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -76,6 +73,6 @@ export const ROD_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (5-8)% of Elemental Damage as Erosion Damage",
+    craftableAffix: "원소대미지를 (5-8)% 가 추가된 부식 대미지",
   },
 ];

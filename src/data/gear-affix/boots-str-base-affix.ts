@@ -9,7 +9,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Boots",
@@ -17,7 +17,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(760-960) Armor",
+    craftableAffix: "아머 수치 +(760-960)",
   },
   {
     equipmentSlot: "Boots",
@@ -25,7 +25,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Boots",
@@ -33,7 +33,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Boots",
@@ -41,7 +41,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Boots",
@@ -49,7 +49,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Boots",
@@ -57,7 +57,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "Boots",
@@ -65,7 +65,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "Boots",
@@ -73,7 +73,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "Boots",
@@ -81,7 +81,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Skill Area",
+    craftableAffix: "스킬 범위 +(20-24)%",
   },
   {
     equipmentSlot: "Boots",
@@ -90,7 +90,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(6-8)% Elemental and Erosion Resistance Penetration\n+(6-8)% Elemental and Erosion Resistance Penetration for Minions",
+      "원소와 부식 저항 관통 +(6-8)%\n소환체의 원소 및 부식 저항 관통 +(6-8)%",
   },
   {
     equipmentSlot: "Boots",
@@ -99,7 +99,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+(5-7)% Armor DMG Mitigation Penetration\n+(5-7)% Armor DMG Mitigation Penetration for Minions",
+      "아머 대미지 감소 관통 +(5-7)%\n소환체의 아머 대미지 감소 관통 +(5-7)%",
   },
   {
     equipmentSlot: "Boots",
@@ -107,7 +107,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(20-25)% Movement Speed",
+    craftableAffix: "이동 속도 +(20-25)%",
   },
   {
     equipmentSlot: "Boots",
@@ -115,7 +115,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts (36-45)% of Erosion Damage taken to Fire Damage",
+    craftableAffix: "받은 부식 대미지의 (36-45)% 를 화염 대미지로 전환",
   },
   {
     equipmentSlot: "Boots",
@@ -123,7 +123,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(17-24)% Cooldown Recovery Speed",
+    craftableAffix: "쿨타임 회복 속도 +(17-24)%",
   },
   {
     equipmentSlot: "Boots",
@@ -131,7 +131,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-5)% Max Elemental Resistance",
+    craftableAffix: "원소 저항 최대치 +(3-5)%",
   },
   {
     equipmentSlot: "Boots",
@@ -139,7 +139,7 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(12-20)% Critical Strike Damage Mitigation",
+    craftableAffix: "크리티컬 대미지 감면 +(12-20)%",
   },
   {
     equipmentSlot: "Boots",
@@ -147,6 +147,6 @@ export const BOOTS_STR_BASE_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Base Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts (16-20)% of Physical Damage taken to Fire Damage",
+    craftableAffix: "받은 물리 대미지의 (16-20)% 를 화염 대미지로 전환",
   },
 ];

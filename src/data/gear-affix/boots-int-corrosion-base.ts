@@ -9,7 +9,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Movement Speed",
+    craftableAffix: "이동 속도 +(15-20)%",
   },
   {
     equipmentSlot: "Boots",
@@ -17,7 +17,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Agility Blessing Stacks",
+    craftableAffix: "황홀한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Boots",
@@ -25,7 +25,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-40)% Cooldown Recovery Speed for Mobility Skills",
+    craftableAffix: "위치 이동 스킬 쿨타임 회복 속도 +(30-40)%",
   },
   {
     equipmentSlot: "Boots",
@@ -33,7 +33,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 Mobility Skill Level",
+    craftableAffix: "위치 이동 스킬 레벨 +1",
   },
   {
     equipmentSlot: "Boots",
@@ -41,7 +41,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Regenerates 1% Mana per second while moving",
+    craftableAffix: "이동 시, 초당 1% 의 MP 자연 회복",
   },
   {
     equipmentSlot: "Boots",
@@ -49,7 +49,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Regenerates 1% of Life per second while moving",
+    craftableAffix: "이동 시, 초당 1% 의 HP 자연 회복",
   },
   {
     equipmentSlot: "Boots",
@@ -57,7 +57,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Max Energy Shield",
+    craftableAffix: "최대 보호막 +(15-20)%",
   },
   {
     equipmentSlot: "Boots",
@@ -65,7 +65,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Max Life",
+    craftableAffix: "최대 HP +(15-20)%",
   },
   {
     equipmentSlot: "Boots",
@@ -73,7 +73,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-50)% gear Energy Shield",
+    craftableAffix: "해당 장비 보호막 +(30-50)%",
   },
   {
     equipmentSlot: "Boots",
@@ -81,7 +81,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-70)% damage",
+    craftableAffix: "대미지 +(50-70)%",
   },
   {
     equipmentSlot: "Boots",
@@ -89,7 +89,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% Cooldown Recovery Speed",
+    craftableAffix: "쿨타임 회복 속도 +(15-20)%",
   },
   {
     equipmentSlot: "Boots",
@@ -97,7 +97,7 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Triggers Lv. 20 Stoneskin when moving. Interval: 2 s",
+    craftableAffix: "이동 시, 20 레벨 스톤 스킨을 발동한다. 2 초 간격",
   },
   {
     equipmentSlot: "Boots",
@@ -105,6 +105,6 @@ export const BOOTS_INT_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Has Hasten",
+    craftableAffix: "신속을 보유한다.",
   },
 ];

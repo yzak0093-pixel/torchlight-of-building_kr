@@ -43,7 +43,9 @@ function EquipmentPage(): React.ReactNode {
 
   // Legendary crafting modal state
   const [isLegendaryModalOpen, setIsLegendaryModalOpen] = useState(false);
-  const [legendaryEditItem, setLegendaryEditItem] = useState<import("../../lib/save-data").Gear | undefined>(undefined);
+  const [legendaryEditItem, setLegendaryEditItem] = useState<
+    import("../../lib/save-data").Gear | undefined
+  >(undefined);
 
   // Selected inventory item
   const [selectedItemId, setSelectedItemId] = useState<string | undefined>(

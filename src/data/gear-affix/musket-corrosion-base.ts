@@ -9,8 +9,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "+(6-12)% chance to gain 1 stack of Agility Blessing on defeat",
+    craftableAffix: "처치 시, +(6-12)% 의 확률로 황홀한 축복 1회 획득",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -18,7 +17,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Damage Penetrates (8-12)% Elemental Resistance",
+    craftableAffix: "대미지가 (8-12)% 원소 저항 관통",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -26,7 +25,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (7-10) - (14-17) Physical Damage to the gear",
+    craftableAffix: "해당 장비 물리 대미지 (7-10) ~ (14-17) 추가",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -34,7 +33,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-25)% Gear Physical Damage",
+    craftableAffix: "해당 장비 물리 대미지 +(15-25)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -42,7 +41,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(5-8)% gear Attack Speed",
+    craftableAffix: "해당 장비 공격 속도 +(5-8)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -50,7 +49,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(3-6)% Attack Critical Strike Rating for this gear",
+    craftableAffix: "해당 장비 공격 크리티컬 수치 +(3-6)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -58,7 +57,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(40-45)% Elemental Damage",
+    craftableAffix: "원소대미지 +(40-45)%",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -66,7 +65,7 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Adds (7-12)% of Elemental Damage as Erosion Damage",
+    craftableAffix: "원소대미지를 (7-12)% 가 추가된 부식 대미지",
   },
   {
     equipmentSlot: "Two-Handed",
@@ -74,6 +73,6 @@ export const MUSKET_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(12-15)% chance for Attacks to inflict Damaging Ailments",
+    craftableAffix: "공격의 대미지 유형 상태 이상 부여 확률 +(12-15)%",
   },
 ];

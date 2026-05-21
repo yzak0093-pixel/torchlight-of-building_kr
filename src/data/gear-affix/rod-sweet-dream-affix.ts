@@ -9,7 +9,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (10-13) - (14-19) Physical Damage to Minions",
+    craftableAffix: "소환체에 물리 대미지가 (10-13) ~ (14-19) 포인트 추가된다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -17,7 +17,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (9-14) - (15-20) Fire Damage to Minions",
+    craftableAffix: "소환체에 화염 대미지가 (9-14) ~ (15-20) 별도 증가한다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -25,7 +25,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (10-13) - (14-19) Cold Damage to Minions",
+    craftableAffix: "소환체에 냉기 대미지가 (10-13) ~ (14-19) 별도 증가한다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -33,7 +33,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (1-2) - (28-32) Lightning Damage to Minions",
+    craftableAffix: "소환체 번개 대미지 (1-2) ~ (28-32) 포인트 추가",
   },
   {
     equipmentSlot: "One-Handed",
@@ -41,7 +41,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "Adds (11-13) - (15-18) Erosion Damage to Minions",
+    craftableAffix: "소환체에 부식 대미지가 (11-13) ~ (15-18) 별도 증가한다.",
   },
   {
     equipmentSlot: "One-Handed",
@@ -49,7 +49,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Strength",
+    craftableAffix: "힘 +(15-20)",
   },
   {
     equipmentSlot: "One-Handed",
@@ -57,7 +57,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Dexterity",
+    craftableAffix: "민첩 +(15-20)",
   },
   {
     equipmentSlot: "One-Handed",
@@ -65,7 +65,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(15-20) Intelligence",
+    craftableAffix: "지혜 +(15-20)",
   },
   {
     equipmentSlot: "One-Handed",
@@ -73,7 +73,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Minion Damage",
+    craftableAffix: "소환체 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -81,7 +81,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(6-8)% Minion Attack and Cast Speed",
+    craftableAffix: "소환체 공격 및 시전 속도 +(6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -90,7 +90,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+100% chance to gain 1 stack of Tenacity Blessing when casting a skill. Interval: 1 s",
+      "소환 스킬 시전 시, +100% 의 확률로 강건한 축복 1회 획득, 1 초 간격",
   },
   {
     equipmentSlot: "One-Handed",
@@ -99,7 +99,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     craftingPool: "",
     tier: "1",
     craftableAffix:
-      "+100% chance to gain 1 stack of Focus Blessing when casting a Summon Skill. Interval: 1 s",
+      "소환 스킬 시전 시, +100% 의 확률로 집요한 축복 1회 획득, 1 초 간격",
   },
   {
     equipmentSlot: "One-Handed",
@@ -107,7 +107,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% additional Minion Damage",
+    craftableAffix: "소환체 대미지 추가 +(6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -115,7 +115,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "Minion Damage penetrates (6-8)% Elemental Resistance",
+    craftableAffix: "소환체의 대미지가 원소 저항 관통 (6-8)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -123,7 +123,7 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(5-7)% Armor DMG Mitigation Penetration for Minions",
+    craftableAffix: "소환체의 아머 대미지 감소 관통 +(5-7)%",
   },
   {
     equipmentSlot: "One-Handed",
@@ -131,6 +131,6 @@ export const ROD_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Focus Blessing Stacks",
+    craftableAffix: "집요한 축복 최대 중첩 수 +1",
   },
 ];

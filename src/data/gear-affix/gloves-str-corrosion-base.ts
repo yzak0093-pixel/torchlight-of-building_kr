@@ -9,7 +9,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+1 to Max Tenacity Blessing Stacks",
+    craftableAffix: "강건한 축복 최대 중첩 수 +1",
   },
   {
     equipmentSlot: "Gloves",
@@ -17,7 +17,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts 50% of Physical Damage to Cold Damage",
+    craftableAffix: "물리 대미지 50% 를 냉기 대미지로 전환",
   },
   {
     equipmentSlot: "Gloves",
@@ -25,7 +25,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts 50% of Physical Damage to Lightning Damage",
+    craftableAffix: "물리 대미지 50% 를 번개 대미지로 전환",
   },
   {
     equipmentSlot: "Gloves",
@@ -33,7 +33,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts 50% of Physical Damage to Fire Damage",
+    craftableAffix: "물리 대미지의 50% 를 화염 대미지로 전환",
   },
   {
     equipmentSlot: "Gloves",
@@ -41,7 +41,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Converts 50% of Physical Damage to Erosion Damage",
+    craftableAffix: "물리 대미지 50% 를 부식 대미지로 전환",
   },
   {
     equipmentSlot: "Gloves",
@@ -49,7 +49,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(12-15)% Attack Speed",
+    craftableAffix: "공격 속도 +(12-15)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -57,7 +57,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(12-15)% Cast Speed",
+    craftableAffix: "시전 속도 +(12-15)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -65,7 +65,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% chance to Blind the target on hit",
+    craftableAffix: "적중 시, +(15-20)% 의 확률로 실명을 부여한다.",
   },
   {
     equipmentSlot: "Gloves",
@@ -73,7 +73,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% chance to Mark the target on hit",
+    craftableAffix: "적중 시, 표식 추가 확률 +(15-20)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -81,7 +81,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(15-20)% chance to inflict Paralysis on hit",
+    craftableAffix: "적중 시, +(15-20)% 의 확률로 마비를 부여한다.",
   },
   {
     equipmentSlot: "Gloves",
@@ -89,7 +89,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Eliminates enemies under 15% Life upon inflicting damage",
+    craftableAffix: "대미지 부여 시, HP가 15% 미만인 적을 처치한다.",
   },
   {
     equipmentSlot: "Gloves",
@@ -97,7 +97,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Lucky Critical Strike\n(-150--120) Critical Strike Rating",
+    craftableAffix: "행운크리티컬\n크리티컬 (-150--120)",
   },
   {
     equipmentSlot: "Gloves",
@@ -105,7 +105,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(30-50)% Gear Armor",
+    craftableAffix: "해당 장비 아머 수치 +(30-50)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -113,7 +113,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(50-70)% damage",
+    craftableAffix: "대미지 +(50-70)%",
   },
   {
     equipmentSlot: "Gloves",
@@ -121,7 +121,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Gains a stack of Fortitude when using a Melee Skill",
+    craftableAffix: "근접 스킬 사용 시 강직을 1회 획득한다.",
   },
   {
     equipmentSlot: "Gloves",
@@ -129,7 +129,7 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Inflicts Frail when dealing Spell Damage",
+    craftableAffix: "주술 대미지를 입힐 시, 연약을 부여한다.",
   },
   {
     equipmentSlot: "Gloves",
@@ -137,6 +137,6 @@ export const GLOVES_STR_CORROSION_BASE_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Corrosion Base",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "Gains a stack of Torment when Reaping",
+    craftableAffix: "수확 시, 고문을 1회 획득한다.",
   },
 ];

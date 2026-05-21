@@ -424,7 +424,11 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
           fullWidth
           disabled={selectedLegendary === undefined || hasUnselectedChoices}
         >
-          {isEditMode ? <Trans>Save Changes</Trans> : <Trans>Save to Inventory</Trans>}
+          {isEditMode ? (
+            <Trans>Save Changes</Trans>
+          ) : (
+            <Trans>Save to Inventory</Trans>
+          )}
         </ModalButton>
       </ModalActions>
     </Modal>

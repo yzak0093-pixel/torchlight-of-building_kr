@@ -9,7 +9,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(54-74) Max Life",
+    craftableAffix: "최대 HP +(54-74)",
   },
   {
     equipmentSlot: "Shield",
@@ -17,7 +17,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(10-14)% Evasion",
+    craftableAffix: "회피 수치 +(10-14)%",
   },
   {
     equipmentSlot: "Shield",
@@ -25,7 +25,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Fire Resistance",
+    craftableAffix: "화염 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Shield",
@@ -33,7 +33,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Cold Resistance",
+    craftableAffix: "냉기 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Shield",
@@ -41,7 +41,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Lightning Resistance",
+    craftableAffix: "번개 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Shield",
@@ -49,7 +49,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(5-10)% Erosion Resistance",
+    craftableAffix: "부식 저항 +(5-10)%",
   },
   {
     equipmentSlot: "Shield",
@@ -57,7 +57,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Physical Damage",
+    craftableAffix: "물리 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "Shield",
@@ -65,7 +65,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Elemental Damage",
+    craftableAffix: "원소 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "Shield",
@@ -73,7 +73,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(20-24)% Erosion Damage",
+    craftableAffix: "부식 대미지 +(20-24)%",
   },
   {
     equipmentSlot: "Shield",
@@ -81,7 +81,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "2",
-    craftableAffix: "+(8-10)% Attack and Spell Block Chance",
+    craftableAffix: "공격 및 주술 막기 확률 +(8-10)%",
   },
   {
     equipmentSlot: "Shield",
@@ -89,7 +89,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(6-8)% additional damage",
+    craftableAffix: "대미지 추가 +(6-8)%",
   },
   {
     equipmentSlot: "Shield",
@@ -97,7 +97,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(35-40) Strength",
+    craftableAffix: "힘 +(35-40)",
   },
   {
     equipmentSlot: "Shield",
@@ -105,7 +105,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(35-40) Dexterity",
+    craftableAffix: "민첩 +(35-40)",
   },
   {
     equipmentSlot: "Shield",
@@ -113,7 +113,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix: "+(35-40) Intelligence",
+    craftableAffix: "지혜 +(35-40)",
   },
   {
     equipmentSlot: "Shield",
@@ -121,7 +121,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix: "+(4-5)% Max Elemental and Erosion Resistance",
+    craftableAffix: "원소와 부식 최대 저항 +(4-5)%",
   },
   {
     equipmentSlot: "Shield",
@@ -129,8 +129,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "Converts (16-20)% of Physical Damage taken to Lightning Damage",
+    craftableAffix: "받은 물리 대미지의 (16-20)% 가 번개 대미지로 전환",
   },
   {
     equipmentSlot: "Shield",
@@ -138,8 +137,7 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "0",
-    craftableAffix:
-      "Converts (36-45)% of Erosion Damage taken to Lightning Damage",
+    craftableAffix: "받는 부식 대미지의 (36-45)% 를 번개 대미지로 전환",
   },
   {
     equipmentSlot: "Shield",
@@ -147,7 +145,6 @@ export const SHIELD_DEX_SWEET_DREAM_AFFIX_AFFIXES: readonly BaseGearAffix[] = [
     affixType: "Sweet Dream Affix",
     craftingPool: "",
     tier: "1",
-    craftableAffix:
-      "+100% chance to gain a stack of Fortitude when using a Melee Skill",
+    craftableAffix: "근접 스킬 사용 시 +100% 확률로 강직을 1회 획득한다.",
   },
 ];
