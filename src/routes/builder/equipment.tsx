@@ -43,6 +43,7 @@ function EquipmentPage(): React.ReactNode {
 
   // Legendary crafting modal state
   const [isLegendaryModalOpen, setIsLegendaryModalOpen] = useState(false);
+  const [legendaryEditItem, setLegendaryEditItem] = useState<import("../../lib/save-data").Gear | undefined>(undefined);
 
   // Selected inventory item
   const [selectedItemId, setSelectedItemId] = useState<string | undefined>(
@@ -186,16 +187,16 @@ function EquipmentPage(): React.ReactNode {
             <div className="flex gap-2">
               <button
                 type="button"
-                disabled={
-                  effectiveSelectedId === undefined ||
-                  selectedItem?.rarity === "legendary"
-                }
+                disabled={effectiveSelectedId === undefined}
                 onClick={() => {
                   if (
                     effectiveSelectedId !== undefined &&
                     selectedItem !== undefined
                   ) {
-                    if (selectedItem.rarity === "vorax") {
+                    if (selectedItem.rarity === "legendary") {
+                      setLegendaryEditItem(selectedItem);
+                      setIsLegendaryModalOpen(true);
+                    } else if (selectedItem.rarity === "vorax") {
                       setVoraxEditItem(selectedItem);
                       setIsVoraxModalOpen(true);
                     } else {
@@ -272,8 +273,17 @@ function EquipmentPage(): React.ReactNode {
 
       <LegendaryGearModule
         isOpen={isLegendaryModalOpen}
-        onClose={() => setIsLegendaryModalOpen(false)}
+        onClose={() => {
+          setIsLegendaryModalOpen(false);
+          setLegendaryEditItem(undefined);
+        }}
         onSaveToInventory={addItemToInventory}
+        editItem={legendaryEditItem}
+        onUpdate={(itemId, item) => {
+          updateItem(itemId, item);
+          setLegendaryEditItem(undefined);
+          setIsLegendaryModalOpen(false);
+        }}
       />
 
       <VoraxGearModule

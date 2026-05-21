@@ -72,26 +72,40 @@ interface LegendaryGearModuleProps {
   isOpen: boolean;
   onClose: () => void;
   onSaveToInventory: (item: Gear) => void;
+  editItem?: Gear;
+  onUpdate?: (itemId: string, item: Gear) => void;
 }
 
 export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
   isOpen,
   onClose,
   onSaveToInventory,
+  editItem,
+  onUpdate,
 }) => {
-  const [selectedLegendaryIndex, setSelectedLegendaryIndex] = useState<
-    number | undefined
-  >(undefined);
-  const [affixStates, setAffixStates] = useState<LegendaryAffixState[]>([]);
-  const [selectedBlendIndex, setSelectedBlendIndex] = useState<
-    number | undefined
-  >(undefined);
+  const isEditMode = editItem !== undefined;
 
   const blendAffixes = useMemo(() => getBlendAffixes(), []);
 
   const sortedLegendaries = useMemo(() => {
     return [...Legendaries].sort((a, b) => a.name.localeCompare(b.name));
   }, []);
+
+  const initialLegendaryIndex = useMemo(() => {
+    if (editItem?.legendaryName === undefined) return undefined;
+    const idx = sortedLegendaries.findIndex(
+      (l) => l.name === editItem.legendaryName,
+    );
+    return idx >= 0 ? idx : undefined;
+  }, [editItem, sortedLegendaries]);
+
+  const [selectedLegendaryIndex, setSelectedLegendaryIndex] = useState<
+    number | undefined
+  >(initialLegendaryIndex);
+  const [affixStates, setAffixStates] = useState<LegendaryAffixState[]>([]);
+  const [selectedBlendIndex, setSelectedBlendIndex] = useState<
+    number | undefined
+  >(undefined);
 
   const legendaryOptions = useMemo(() => {
     return sortedLegendaries.map((legendary, idx) => ({
@@ -269,7 +283,11 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
     const saveData = buildSaveDataGear();
     if (saveData === undefined) return;
 
-    onSaveToInventory({ ...saveData, id: generateItemId() });
+    if (isEditMode && editItem?.id !== undefined && onUpdate !== undefined) {
+      onUpdate(editItem.id, { ...saveData, id: editItem.id });
+    } else {
+      onSaveToInventory({ ...saveData, id: generateItemId() });
+    }
 
     setSelectedLegendaryIndex(undefined);
     setAffixStates([]);
@@ -310,7 +328,7 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
     <Modal
       isOpen={isOpen}
       onClose={onClose}
-      title={i18n._("Add Legendary")}
+      title={isEditMode ? i18n._("Edit Legendary") : i18n._("Add Legendary")}
       maxWidth="4xl"
       dismissible={false}
     >
@@ -406,7 +424,7 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
           fullWidth
           disabled={selectedLegendary === undefined || hasUnselectedChoices}
         >
-          <Trans>Save to Inventory</Trans>
+          {isEditMode ? <Trans>Save Changes</Trans> : <Trans>Save to Inventory</Trans>}
         </ModalButton>
       </ModalActions>
     </Modal>

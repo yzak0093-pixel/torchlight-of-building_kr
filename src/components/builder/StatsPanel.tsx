@@ -59,12 +59,12 @@ const PersistentDpsSection = ({
   return (
     <>
       <StatLine
-        label="Persistent DPS"
+        label="지속 DPS"
         value={formatStatValue.dps(summary.total)}
         highlight
       />
       <StatLine
-        label="Duration"
+        label="지속 시간"
         value={formatStatValue.duration(summary.duration)}
       />
     </>
@@ -79,16 +79,16 @@ const ReapDpsSection = ({
   return (
     <>
       <StatLine
-        label="Total Reap DPS"
+        label="총 수확 DPS"
         value={formatStatValue.dps(summary.totalReapDps)}
         highlight
       />
       <StatLine
-        label="Duration Bonus"
+        label="지속 시간 보너스"
         value={formatStatValue.pct(summary.reapDurationBonusPct)}
       />
       <StatLine
-        label="CDR Bonus"
+        label="쿨타임 감소 보너스"
         value={formatStatValue.pct(summary.reapCdrBonusPct)}
       />
     </>
@@ -103,24 +103,24 @@ const SpellDpsSection = ({
   return (
     <>
       <StatLine
-        label="Spell DPS"
+        label="주술 DPS"
         value={formatStatValue.dps(summary.avgDps)}
         highlight
       />
       <StatLine
-        label="Avg Hit (crit)"
+        label="평균 적중 (치명)"
         value={formatStatValue.damage(summary.avgHitWithCrit)}
       />
       <StatLine
-        label="Crit Chance"
+        label="크리티컬 확률"
         value={formatCritChance(summary.critChance)}
       />
       <StatLine
-        label="Crit Multiplier"
+        label="크리티컬 배율"
         value={formatStatValue.multiplier(summary.critDmgMult)}
       />
       <StatLine
-        label="Casts/sec"
+        label="시전/초"
         value={formatStatValue.aps(summary.castsPerSec)}
       />
     </>
@@ -135,17 +135,17 @@ const ComboDpsSection = ({
   return (
     <>
       <StatLine
-        label="Combo DPS"
+        label="콤보 DPS"
         value={formatStatValue.dps(summary.avgDps)}
         highlight
       />
-      <StatLine label="Combo Points" value={summary.comboPoints} />
+      <StatLine label="콤보 포인트" value={summary.comboPoints} />
       <StatLine
-        label="Finisher Amplification"
+        label="피니셔 증폭"
         value={formatStatValue.pct(summary.comboFinisherAmplificationPct)}
       />
       <StatLine
-        label="Crit Multiplier"
+        label="크리티컬 배율"
         value={formatStatValue.multiplier(summary.critDmgMult)}
       />
     </>
@@ -160,50 +160,50 @@ const SlashStrikeDpsSection = ({
   return (
     <>
       <StatLine
-        label="Slash Strike DPS"
+        label="베기 공격 DPS"
         value={formatStatValue.dps(summary.avgDps)}
         highlight
       />
       <StatLine
-        label="Steep Strike Chance"
+        label="가파른 타격 확률"
         value={formatStatValue.pct(summary.steepStrikeChancePct)}
       />
       <StatLine
-        label="Crit Multiplier"
+        label="크리티컬 배율"
         value={formatStatValue.multiplier(summary.critDmgMult)}
       />
       <StatLine
-        label="Sweep Avg Hit"
+        label="휩쓸기 평균 적중"
         value={formatStatValue.damage(summary.sweep.mainhand.avgHit)}
       />
       <StatLine
-        label="Sweep Avg (crit)"
+        label="휩쓸기 평균 (치명)"
         value={formatStatValue.damage(summary.sweep.mainhand.avgHitWithCrit)}
       />
       <StatLine
-        label="Steep Avg Hit"
+        label="가파른 타격 평균 적중"
         value={formatStatValue.damage(summary.steep.mainhand.avgHit)}
       />
       <StatLine
-        label="Steep Avg (crit)"
+        label="가파른 타격 평균 (치명)"
         value={formatStatValue.damage(summary.steep.mainhand.avgHitWithCrit)}
       />
       <StatLine
-        label="Crit Chance"
+        label="크리티컬 확률"
         value={formatCritChance(summary.sweep.mainhand.critChance)}
       />
       <StatLine
-        label="Attack Speed"
+        label="공격 속도"
         value={formatStatValue.aps(summary.sweep.mainhand.aspd)}
       />
       {summary.multistrikeChancePct > 0 && (
         <>
           <StatLine
-            label="Multistrike Chance"
+            label="다중 타격 확률"
             value={formatStatValue.pct(summary.multistrikeChancePct)}
           />
           <StatLine
-            label="Multistrike Dmg Inc"
+            label="다중 타격 대미지 증가"
             value={formatStatValue.pct(summary.multistrikeIncDmgPct)}
           />
         </>
@@ -220,24 +220,24 @@ const SpellBurstDpsSection = ({
   return (
     <>
       <StatLine
-        label="Burst DPS"
+        label="버스트 DPS"
         value={formatStatValue.dps(summary.avgDps)}
         highlight
       />
-      <StatLine label="Bursts/sec" value={summary.burstsPerSec.toFixed(2)} />
+      <StatLine label="버스트/초" value={summary.burstsPerSec.toFixed(2)} />
       <StatLine
-        label="Max Spell Burst"
+        label="최대 주술 버스트"
         value={formatStatValue.integer(summary.maxSpellBurst)}
       />
       {summary.ingenuityOverload !== undefined && (
         <>
           <StatLine
-            label="Overload DPS"
+            label="과부하 DPS"
             value={formatStatValue.dps(summary.ingenuityOverload.avgDps)}
             color="text-teal-400"
           />
           <StatLine
-            label="Overload Interval"
+            label="과부하 간격"
             value={formatStatValue.duration(summary.ingenuityOverload.interval)}
             color="text-teal-400"
           />
@@ -269,14 +269,14 @@ export const StatsPanel = (): React.ReactNode => {
 
   return (
     <div className="rounded-lg border border-zinc-700 bg-zinc-900 p-4">
-      <h3 className="mb-3 text-lg font-semibold text-zinc-50">Stats Summary</h3>
+      <h3 className="mb-3 text-lg font-semibold text-zinc-50">스탯 요약</h3>
 
       <div className="space-y-0.5">
         {hasDamageStats && offenseSummary !== undefined ? (
           <>
-            <StatLine label="Skill" value={selectedSkill ?? ""} />
+            <StatLine label="스킬" value={selectedSkill ?? ""} />
             <StatLine
-              label="Total DPS"
+              label="총 DPS"
               value={formatStatValue.dps(offenseSummary.totalDps)}
               highlight
             />
@@ -284,14 +284,14 @@ export const StatsPanel = (): React.ReactNode => {
             {offenseSummary.attackDpsSummary !== undefined && (
               <>
                 <StatLine
-                  label="Average DPS"
+                  label="평균 DPS"
                   value={formatStatValue.dps(
                     offenseSummary.attackDpsSummary.avgDps,
                   )}
                   highlight
                 />
                 <StatLine
-                  label="Crit Multiplier"
+                  label="크리티컬 배율"
                   value={formatStatValue.multiplier(
                     offenseSummary.attackDpsSummary.critDmgMult,
                   )}
@@ -310,7 +310,7 @@ export const StatsPanel = (): React.ReactNode => {
                   label={
                     offenseSummary.attackDpsSummary.offhand !== undefined
                       ? "Avg Hit crit (MH)"
-                      : "Avg Hit (crit)"
+                      : "평균 적중 (치명)"
                   }
                   value={formatStatValue.damage(
                     offenseSummary.attackDpsSummary.mainhand.avgHitWithCrit,
@@ -320,7 +320,7 @@ export const StatsPanel = (): React.ReactNode => {
                   label={
                     offenseSummary.attackDpsSummary.offhand !== undefined
                       ? "Crit Chance (MH)"
-                      : "Crit Chance"
+                      : "크리티컬 확률"
                   }
                   value={formatCritChance(
                     offenseSummary.attackDpsSummary.mainhand.critChance,
@@ -330,7 +330,7 @@ export const StatsPanel = (): React.ReactNode => {
                   label={
                     offenseSummary.attackDpsSummary.offhand !== undefined
                       ? "Attack Speed (MH)"
-                      : "Attack Speed"
+                      : "공격 속도"
                   }
                   value={formatStatValue.aps(
                     offenseSummary.attackDpsSummary.mainhand.aspd,
@@ -339,25 +339,25 @@ export const StatsPanel = (): React.ReactNode => {
                 {offenseSummary.attackDpsSummary.offhand !== undefined && (
                   <>
                     <StatLine
-                      label="Avg Hit (OH)"
+                      label="평균 적중 (부무기)"
                       value={formatStatValue.damage(
                         offenseSummary.attackDpsSummary.offhand.avgHit,
                       )}
                     />
                     <StatLine
-                      label="Avg Hit crit (OH)"
+                      label="평균 적중 치명 (부무기)"
                       value={formatStatValue.damage(
                         offenseSummary.attackDpsSummary.offhand.avgHitWithCrit,
                       )}
                     />
                     <StatLine
-                      label="Crit Chance (OH)"
+                      label="크리티컬 확률 (부무기)"
                       value={formatCritChance(
                         offenseSummary.attackDpsSummary.offhand.critChance,
                       )}
                     />
                     <StatLine
-                      label="Attack Speed (OH)"
+                      label="공격 속도 (부무기)"
                       value={formatStatValue.aps(
                         offenseSummary.attackDpsSummary.offhand.aspd,
                       )}
@@ -367,13 +367,13 @@ export const StatsPanel = (): React.ReactNode => {
                 {offenseSummary.attackDpsSummary.multistrikeChancePct > 0 && (
                   <>
                     <StatLine
-                      label="Multistrike Chance"
+                      label="다중 타격 확률"
                       value={formatStatValue.pct(
                         offenseSummary.attackDpsSummary.multistrikeChancePct,
                       )}
                     />
                     <StatLine
-                      label="Multistrike Dmg Inc"
+                      label="다중 타격 대미지 증가"
                       value={formatStatValue.pct(
                         offenseSummary.attackDpsSummary.multistrikeIncDmgPct,
                       )}
@@ -432,13 +432,13 @@ export const StatsPanel = (): React.ReactNode => {
               <>
                 <div className="h-2" />
                 <StatLine
-                  label="Max Tangles"
+                  label="최대 엉킴"
                   value={formatStatValue.integer(
                     offenseSummary.tangleSummary.maxTangles,
                   )}
                 />
                 <StatLine
-                  label="Max Tangles/Enemy"
+                  label="적당 최대 엉킴"
                   value={formatStatValue.integer(
                     offenseSummary.tangleSummary.maxTanglesPerEnemy,
                   )}
@@ -448,7 +448,7 @@ export const StatsPanel = (): React.ReactNode => {
 
             <div className="h-2" />
             <StatLine
-              label="Movement Speed"
+              label="이동 속도"
               value={formatStatValue.pct(offenseSummary.movementSpeedBonusPct)}
               color="text-green-400"
             />
@@ -462,33 +462,33 @@ export const StatsPanel = (): React.ReactNode => {
         )}
 
         <StatLine
-          label="STR"
+          label="힘"
           value={formatStatValue.integer(resourcePool.stats.str)}
         />
         <StatLine
-          label="DEX"
+          label="민첩"
           value={formatStatValue.integer(resourcePool.stats.dex)}
         />
         <StatLine
-          label="INT"
+          label="지능"
           value={formatStatValue.integer(resourcePool.stats.int)}
         />
 
         <div className="h-2" />
 
         <StatLine
-          label="Max Life"
+          label="최대 HP"
           value={formatStatValue.integer(resourcePool.maxLife)}
           color="text-red-400"
         />
         <StatLine
-          label="Max Mana"
+          label="최대 MP"
           value={formatStatValue.integer(resourcePool.maxMana)}
           color="text-blue-400"
         />
         {resourcePool.sealedResources.sealedManaPct > 0 && (
           <StatLine
-            label="Sealed Mana"
+            label="봉인 MP"
             value={formatStatValue.pct(
               resourcePool.sealedResources.sealedManaPct,
             )}
@@ -497,7 +497,7 @@ export const StatsPanel = (): React.ReactNode => {
         )}
         {resourcePool.sealedResources.sealedLifePct > 0 && (
           <StatLine
-            label="Sealed Life"
+            label="봉인 HP"
             value={formatStatValue.pct(
               resourcePool.sealedResources.sealedLifePct,
             )}
@@ -506,7 +506,7 @@ export const StatsPanel = (): React.ReactNode => {
         )}
         {resourcePool.mercuryPts !== undefined && (
           <StatLine
-            label="Mercury"
+            label="수은"
             value={formatStatValue.integer(resourcePool.mercuryPts)}
             color="text-purple-400"
           />
@@ -515,19 +515,19 @@ export const StatsPanel = (): React.ReactNode => {
         <div className="h-2" />
 
         <StatLine
-          label="Energy Shield"
+          label="보호막"
           value={formatStatValue.integer(defenses.energyShield)}
           color="text-teal-400"
         />
 
         <StatLine
-          label="Armor"
+          label="방어도"
           value={formatStatValue.integer(defenses.armor)}
           color="text-red-400"
         />
 
         <StatLine
-          label="Evasion"
+          label="회피"
           value={formatStatValue.integer(defenses.evasion)}
           color="text-green-400"
         />
@@ -535,22 +535,22 @@ export const StatsPanel = (): React.ReactNode => {
         <div className="h-2" />
 
         <StatLine
-          label="Cold Res"
+          label="냉기 저항"
           value={formatRes(defenses.coldRes)}
           color="text-cyan-400"
         />
         <StatLine
-          label="Lightning Res"
+          label="번개 저항"
           value={formatRes(defenses.lightningRes)}
           color="text-yellow-400"
         />
         <StatLine
-          label="Fire Res"
+          label="화염 저항"
           value={formatRes(defenses.fireRes)}
           color="text-orange-400"
         />
         <StatLine
-          label="Erosion Res"
+          label="부식 저항"
           value={formatRes(defenses.erosionRes)}
           color="text-fuchsia-400"
         />
@@ -558,17 +558,17 @@ export const StatsPanel = (): React.ReactNode => {
         <div className="h-2" />
 
         <StatLine
-          label="Attack Block"
+          label="공격 막기"
           value={formatStatValue.pct(defenses.attackBlockPct)}
           color="text-slate-300"
         />
         <StatLine
-          label="Spell Block"
+          label="주술 막기"
           value={formatStatValue.pct(defenses.spellBlockPct)}
           color="text-slate-300"
         />
         <StatLine
-          label="Block Ratio"
+          label="막기 비율"
           value={formatStatValue.pct(defenses.blockRatioPct)}
           color="text-slate-300"
         />
