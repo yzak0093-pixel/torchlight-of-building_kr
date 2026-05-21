@@ -274,7 +274,7 @@ const parseSimpleAffixTable = (
       DEXShield: "민첩방패",
       // INT Armor
       INTChestArmor: "지혜흉갑",
-      INTHelmet: "지혜투구", // (HTML 기준 지혜투구)
+      INTHelmet: "지혜투구",
       INTGloves: "지혜장갑",
       INTBoots: "지혜신발",
       INTShield: "지혜방패",
@@ -398,7 +398,7 @@ const parseCraftAffixes = (
       DEXShield: "민첩방패",
       // INT Armor
       INTChestArmor: "지혜흉갑",
-      INTHelmet: "지혜투구", // (HTML 기준 지혜투구)
+      INTHelmet: "지혜투구",
       INTGloves: "지혜장갑",
       INTBoots: "지혜신발",
       INTShield: "지혜방패",
