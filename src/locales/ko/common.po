@@ -196,7 +196,7 @@ msgstr "새 빌드 만들기"
 #. js-lingui-explicit-id
 #: src/data/translate/translate-tab.ts:9
 msgid "Divinity Slate"
-msgstr "신성 석판"
+msgstr "석판(큐브)"
 
 #: src/routes/index.tsx:384
 msgid "Import Build"
@@ -368,7 +368,7 @@ msgstr "한손 검"
 #. js-lingui-explicit-id
 #: src/data/translate/translate-tab.ts:8
 msgid "Pactspirit"
-msgstr "계약령"
+msgstr "정령"
 
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:38
