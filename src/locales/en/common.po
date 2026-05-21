@@ -30,8 +30,8 @@ msgid "Base Stats (1 max)"
 msgstr "Base Stats (1 max)"
 
 #: src/routes/builder/talents/$slot.tsx:408
-msgid "Tree"
-msgstr "Tree"
+#~ msgid "Tree"
+#~ msgstr "Tree"
 
 #: src/routes/index.tsx:417
 msgid "Create your first character build to get started"
@@ -59,16 +59,16 @@ msgstr "Vorax Limb"
 msgid "Create New"
 msgstr "Create New"
 
-#: src/routes/builder/equipment.tsx:146
+#: src/routes/builder/equipment.tsx:149
 msgid "Craft New Item"
 msgstr "Craft New Item"
 
-#: src/routes/builder/equipment.tsx:238
+#: src/routes/builder/equipment.tsx:241
 msgid "No items in inventory. Craft items above to add them here."
 msgstr "No items in inventory. Craft items above to add them here."
 
 #: src/components/equipment/EditGearModal.tsx:987
-#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/LegendaryGearModule.tsx:430
 #: src/components/equipment/VoraxGearModule.tsx:953
 msgid "Save to Inventory"
 msgstr "Save to Inventory"
@@ -79,7 +79,7 @@ msgid "Active Skills"
 msgstr "Active Skills"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/LegendaryGearModule.tsx:313
+#: src/components/equipment/LegendaryGearModule.tsx:331
 msgid "Add Legendary"
 msgstr "Add Legendary"
 
@@ -156,13 +156,13 @@ msgstr "Configuration"
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:60
-msgid "Core Talent 1"
-msgstr "Core Talent 1"
+#~ msgid "Core Talent 1"
+#~ msgstr "Core Talent 1"
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:67
-msgid "Core Talent 2"
-msgstr "Core Talent 2"
+#~ msgid "Core Talent 2"
+#~ msgstr "Core Talent 2"
 
 #. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:713
@@ -201,6 +201,11 @@ msgstr "Divinity Slate"
 #: src/routes/index.tsx:384
 msgid "Import Build"
 msgstr "Import Build"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/LegendaryGearModule.tsx:331
+msgid "Edit Legendary"
+msgstr "Edit Legendary"
 
 #. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:714
@@ -274,6 +279,7 @@ msgstr "No builds yet"
 msgid "The build code in the URL was invalid or could not be imported."
 msgstr "The build code in the URL was invalid or could not be imported."
 
+#: src/components/equipment/LegendaryGearModule.tsx:428
 #: src/components/equipment/VoraxGearModule.tsx:951
 msgid "Save Changes"
 msgstr "Save Changes"
@@ -437,12 +443,12 @@ msgid "My Builds"
 msgstr "My Builds"
 
 #: src/components/equipment/EditGearModal.tsx:971
-#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/LegendaryGearModule.tsx:412
 #: src/components/equipment/VoraxGearModule.tsx:935
 msgid "No affixes"
 msgstr "No affixes"
 
-#: src/routes/builder/equipment.tsx:124
+#: src/routes/builder/equipment.tsx:127
 msgid "Equipment Slots"
 msgstr "Equipment Slots"
 
@@ -461,8 +467,8 @@ msgid "Equipment Type"
 msgstr "Equipment Type"
 
 #: src/routes/builder/talents/$slot.tsx:363
-msgid "Tree Slot"
-msgstr "Tree Slot"
+#~ msgid "Tree Slot"
+#~ msgstr "Tree Slot"
 
 #: src/components/equipment/EditGearModal.tsx:961
 #~ msgid "Select an equipment type to begin crafting"
@@ -472,7 +478,7 @@ msgstr "Tree Slot"
 msgid "Active Skill"
 msgstr "Active Skill"
 
-#: src/routes/builder/equipment.tsx:183
+#: src/routes/builder/equipment.tsx:186
 msgid "Inventory"
 msgstr "Inventory"
 
@@ -488,7 +494,7 @@ msgid "Prefixes (3 max)"
 msgstr "Prefixes (3 max)"
 
 #: src/components/equipment/EditGearModal.tsx:979
-#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/LegendaryGearModule.tsx:420
 #: src/components/equipment/VoraxGearModule.tsx:943
 #: src/routes/index.tsx:108
 #: src/routes/index.tsx:151
@@ -504,14 +510,14 @@ msgid "Blending (1 max)"
 msgstr "Blending (1 max)"
 
 #: src/components/talents/PrismSection.tsx:66
-msgid "Prisms"
-msgstr "Prisms"
+#~ msgid "Prisms"
+#~ msgstr "Prisms"
 
 #: src/routes/index.tsx:173
 msgid "Copy"
 msgstr "Copy"
 
-#: src/routes/builder/equipment.tsx:184
+#: src/routes/builder/equipment.tsx:187
 msgid "items"
 msgstr "items"
 
@@ -524,21 +530,25 @@ msgstr "Suffixes (3 max)"
 msgid "Sweet Dream Affix (1 max)"
 msgstr "Sweet Dream Affix (1 max)"
 
+#: src/components/talents/PrismSection.tsx:66
+msgid "제노프리즘"
+msgstr "제노프리즘"
+
 #: src/components/equipment/VoraxGearModule.tsx:755
 #~ msgid "Select a vorax limb to configure"
 #~ msgstr "Select a vorax limb to configure"
 
 #: src/components/talents/CoreTalentSelector.tsx:90
 #: src/components/talents/CoreTalentSelector.tsx:102
-msgid "Core Talents"
-msgstr "Core Talents"
+#~ msgid "Core Talents"
+#~ msgstr "Core Talents"
 
 #. placeholder {0}: save.name
 #: src/routes/index.tsx:135
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Are you sure you want to delete \"{0}\"?"
 
-#: src/components/equipment/LegendaryGearModule.tsx:323
+#: src/components/equipment/LegendaryGearModule.tsx:341
 msgid "Select Legendary"
 msgstr "Select Legendary"
 

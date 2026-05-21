@@ -30,8 +30,8 @@ msgid "Base Stats (1 max)"
 msgstr "기본 스탯 (최대 1개)"
 
 #: src/routes/builder/talents/$slot.tsx:408
-msgid "Tree"
-msgstr "트리"
+#~ msgid "Tree"
+#~ msgstr "트리"
 
 #: src/routes/index.tsx:417
 msgid "Create your first character build to get started"
@@ -59,16 +59,16 @@ msgstr "블러드러스트 부위"
 msgid "Create New"
 msgstr "새로 만들기"
 
-#: src/routes/builder/equipment.tsx:146
+#: src/routes/builder/equipment.tsx:149
 msgid "Craft New Item"
 msgstr "아이템 제작"
 
-#: src/routes/builder/equipment.tsx:238
+#: src/routes/builder/equipment.tsx:241
 msgid "No items in inventory. Craft items above to add them here."
 msgstr "인벤토리가 비어 있습니다. 위에서 아이템을 제작하여 추가하세요."
 
 #: src/components/equipment/EditGearModal.tsx:987
-#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/LegendaryGearModule.tsx:430
 #: src/components/equipment/VoraxGearModule.tsx:953
 msgid "Save to Inventory"
 msgstr "인벤토리에 저장"
@@ -79,7 +79,7 @@ msgid "Active Skills"
 msgstr "액티브 스킬"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/LegendaryGearModule.tsx:313
+#: src/components/equipment/LegendaryGearModule.tsx:331
 msgid "Add Legendary"
 msgstr "전설 장비 추가"
 
@@ -156,13 +156,13 @@ msgstr "설정"
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:60
-msgid "Core Talent 1"
-msgstr "코어 재능 1"
+#~ msgid "Core Talent 1"
+#~ msgstr "코어 재능 1"
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:67
-msgid "Core Talent 2"
-msgstr "코어 재능 2"
+#~ msgid "Core Talent 2"
+#~ msgstr "코어 재능 2"
 
 #. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:713
@@ -203,6 +203,11 @@ msgid "Import Build"
 msgstr "빌드 불러오기"
 
 #. js-lingui-explicit-id
+#: src/components/equipment/LegendaryGearModule.tsx:331
+msgid "Edit Legendary"
+msgstr ""
+
+#. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:714
 msgid "Edit {equipmentType}"
 msgstr "{equipmentType} 편집"
@@ -212,10 +217,16 @@ msgstr "{equipmentType} 편집"
 msgid "Equipment"
 msgstr "장비"
 
+#~ msgid "Vorax Limb: Waist"
+#~ msgstr "블러드 러스트 부위: 허리"
+
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:20
 msgid "Fire Cannon"
 msgstr "화염포"
+
+#~ msgid "Vorax Limb: Chest"
+#~ msgstr "블러드 러스트 부위: 상체"
 
 #: src/components/equipment/EditGearModal.tsx:843
 msgid "Tower Sequence (1 max)"
@@ -274,9 +285,16 @@ msgstr "저장된 빌드가 없습니다"
 msgid "The build code in the URL was invalid or could not be imported."
 msgstr "URL의 빌드 코드가 올바르지 않거나 불러올 수 없습니다."
 
+#: src/components/equipment/LegendaryGearModule.tsx:428
 #: src/components/equipment/VoraxGearModule.tsx:951
 msgid "Save Changes"
 msgstr "변경사항 저장"
+
+#~ msgid "Vorax Limb: Hands"
+#~ msgstr "블러드 러스트 부위: 팔"
+
+#~ msgid "Vorax Limb: Digits"
+#~ msgstr "블러드 러스트 부위: 손가락"
 
 #. js-lingui-explicit-id
 #: src/data/translate/equipment-types.ts:29
@@ -437,12 +455,12 @@ msgid "My Builds"
 msgstr "내 빌드"
 
 #: src/components/equipment/EditGearModal.tsx:971
-#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/LegendaryGearModule.tsx:412
 #: src/components/equipment/VoraxGearModule.tsx:935
 msgid "No affixes"
 msgstr "접사 없음"
 
-#: src/routes/builder/equipment.tsx:124
+#: src/routes/builder/equipment.tsx:127
 msgid "Equipment Slots"
 msgstr "장비 슬롯"
 
@@ -461,8 +479,8 @@ msgid "Equipment Type"
 msgstr "장비 유형"
 
 #: src/routes/builder/talents/$slot.tsx:363
-msgid "Tree Slot"
-msgstr "트리 슬롯"
+#~ msgid "Tree Slot"
+#~ msgstr "트리 슬롯"
 
 #: src/components/equipment/EditGearModal.tsx:961
 #~ msgid "Select an equipment type to begin crafting"
@@ -472,9 +490,12 @@ msgstr "트리 슬롯"
 msgid "Active Skill"
 msgstr "액티브 스킬"
 
-#: src/routes/builder/equipment.tsx:183
+#: src/routes/builder/equipment.tsx:186
 msgid "Inventory"
 msgstr "인벤토리"
+
+#~ msgid "Vorax Limb: Legs"
+#~ msgstr "블러드 러스트 부위: 다리"
 
 #: src/components/equipment/VoraxGearModule.tsx:735
 #: src/routes/index.tsx:145
@@ -488,7 +509,7 @@ msgid "Prefixes (3 max)"
 msgstr "접두사 (최대 3개)"
 
 #: src/components/equipment/EditGearModal.tsx:979
-#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/LegendaryGearModule.tsx:420
 #: src/components/equipment/VoraxGearModule.tsx:943
 #: src/routes/index.tsx:108
 #: src/routes/index.tsx:151
@@ -504,14 +525,14 @@ msgid "Blending (1 max)"
 msgstr "조향옵션 (최대 1개)"
 
 #: src/components/talents/PrismSection.tsx:66
-msgid "Prisms"
-msgstr "프리즘"
+#~ msgid "Prisms"
+#~ msgstr "프리즘"
 
 #: src/routes/index.tsx:173
 msgid "Copy"
 msgstr "복사"
 
-#: src/routes/builder/equipment.tsx:184
+#: src/routes/builder/equipment.tsx:187
 msgid "items"
 msgstr "개"
 
@@ -524,21 +545,28 @@ msgstr "접미사 (최대 3개)"
 msgid "Sweet Dream Affix (1 max)"
 msgstr "해몽 접사 (최대 1개)"
 
+#: src/components/talents/PrismSection.tsx:66
+msgid "제노프리즘"
+msgstr ""
+
 #: src/components/equipment/VoraxGearModule.tsx:755
 #~ msgid "Select a vorax limb to configure"
 #~ msgstr "Select a vorax limb to configure"
 
 #: src/components/talents/CoreTalentSelector.tsx:90
 #: src/components/talents/CoreTalentSelector.tsx:102
-msgid "Core Talents"
-msgstr "코어 재능"
+#~ msgid "Core Talents"
+#~ msgstr "코어 재능"
 
 #. placeholder {0}: save.name
 #: src/routes/index.tsx:135
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "\"{0}\"을(를) 삭제하시겠습니까?"
 
-#: src/components/equipment/LegendaryGearModule.tsx:323
+#~ msgid "Vorax Limb: Head"
+#~ msgstr "블러드 러스트 부위: 머리"
+
+#: src/components/equipment/LegendaryGearModule.tsx:341
 msgid "Select Legendary"
 msgstr "전설 장비 선택"
 
@@ -547,6 +575,9 @@ msgstr "전설 장비 선택"
 msgid "Save"
 msgstr "저장"
 
+#~ msgid "Vorax Limb: Neck"
+#~ msgstr "블러드 러스트 부위: 목"
+
 #: src/components/equipment/EditGearModal.tsx:786
 msgid "Clear"
 msgstr "초기화"
@@ -554,45 +585,3 @@ msgstr "초기화"
 #: src/routes/index.tsx:355
 msgid "Import Failed"
 msgstr "불러오기 실패"
-
-msgid "Vorax Limb: Hands"
-msgstr "블러드러스트 부위: 손"
-
-msgid "Vorax Limb: Legs"
-msgstr "블러드러스트 부위: 다리"
-
-msgid "Vorax Limb: Chest"
-msgstr "블러드러스트 부위: 상체"
-
-msgid "Vorax Limb: Head"
-msgstr "블러드러스트 부위: 머리"
-
-msgid "Vorax Limb: Neck"
-msgstr "블러드러스트 부위: 목"
-
-msgid "Vorax Limb: Waist"
-msgstr "블러드러스트 부위: 허리"
-
-msgid "Vorax Limb: Digits"
-msgstr "블러드러스트 부위: 손가락"
-
-msgid "Vorax Limb: Hands"
-msgstr "블러드 러스트 부위: 팔"
-
-msgid "Vorax Limb: Legs"
-msgstr "블러드 러스트 부위: 다리"
-
-msgid "Vorax Limb: Chest"
-msgstr "블러드 러스트 부위: 상체"
-
-msgid "Vorax Limb: Head"
-msgstr "블러드 러스트 부위: 머리"
-
-msgid "Vorax Limb: Neck"
-msgstr "블러드 러스트 부위: 목"
-
-msgid "Vorax Limb: Waist"
-msgstr "블러드 러스트 부위: 허리"
-
-msgid "Vorax Limb: Digits"
-msgstr "블러드 러스트 부위: 손가락"

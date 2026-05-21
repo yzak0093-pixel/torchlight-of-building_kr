@@ -27,8 +27,8 @@ msgid "Base Stats (1 max)"
 msgstr "基底词缀 (1 max)"
 
 #: src/routes/builder/talents/$slot.tsx:408
-msgid "Tree"
-msgstr ""
+#~ msgid "Tree"
+#~ msgstr ""
 
 #: src/routes/index.tsx:417
 msgid "Create your first character build to get started"
@@ -56,16 +56,16 @@ msgstr ""
 msgid "Create New"
 msgstr "新建"
 
-#: src/routes/builder/equipment.tsx:146
+#: src/routes/builder/equipment.tsx:149
 msgid "Craft New Item"
 msgstr "制作新物品"
 
-#: src/routes/builder/equipment.tsx:238
+#: src/routes/builder/equipment.tsx:241
 msgid "No items in inventory. Craft items above to add them here."
 msgstr "库存中没有物品。在上方制作物品以添加到此处。"
 
 #: src/components/equipment/EditGearModal.tsx:987
-#: src/components/equipment/LegendaryGearModule.tsx:409
+#: src/components/equipment/LegendaryGearModule.tsx:430
 #: src/components/equipment/VoraxGearModule.tsx:953
 msgid "Save to Inventory"
 msgstr "保存到库存"
@@ -76,7 +76,7 @@ msgid "Active Skills"
 msgstr "主动技能"
 
 #. js-lingui-explicit-id
-#: src/components/equipment/LegendaryGearModule.tsx:313
+#: src/components/equipment/LegendaryGearModule.tsx:331
 msgid "Add Legendary"
 msgstr ""
 
@@ -153,13 +153,13 @@ msgstr "配置"
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:60
-msgid "Core Talent 1"
-msgstr ""
+#~ msgid "Core Talent 1"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/components/talents/CoreTalentSelector.tsx:67
-msgid "Core Talent 2"
-msgstr ""
+#~ msgid "Core Talent 2"
+#~ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:713
@@ -198,6 +198,11 @@ msgstr "神格石板"
 #: src/routes/index.tsx:384
 msgid "Import Build"
 msgstr "导入流派"
+
+#. js-lingui-explicit-id
+#: src/components/equipment/LegendaryGearModule.tsx:331
+msgid "Edit Legendary"
+msgstr ""
 
 #. js-lingui-explicit-id
 #: src/components/equipment/EditGearModal.tsx:714
@@ -271,6 +276,7 @@ msgstr "暂无流派"
 msgid "The build code in the URL was invalid or could not be imported."
 msgstr ""
 
+#: src/components/equipment/LegendaryGearModule.tsx:428
 #: src/components/equipment/VoraxGearModule.tsx:951
 msgid "Save Changes"
 msgstr ""
@@ -434,12 +440,12 @@ msgid "My Builds"
 msgstr "我的配装"
 
 #: src/components/equipment/EditGearModal.tsx:971
-#: src/components/equipment/LegendaryGearModule.tsx:394
+#: src/components/equipment/LegendaryGearModule.tsx:412
 #: src/components/equipment/VoraxGearModule.tsx:935
 msgid "No affixes"
 msgstr ""
 
-#: src/routes/builder/equipment.tsx:124
+#: src/routes/builder/equipment.tsx:127
 msgid "Equipment Slots"
 msgstr "装备槽位"
 
@@ -458,8 +464,8 @@ msgid "Equipment Type"
 msgstr "装备类型"
 
 #: src/routes/builder/talents/$slot.tsx:363
-msgid "Tree Slot"
-msgstr ""
+#~ msgid "Tree Slot"
+#~ msgstr ""
 
 #: src/components/equipment/EditGearModal.tsx:961
 #~ msgid "Select an equipment type to begin crafting"
@@ -469,7 +475,7 @@ msgstr ""
 msgid "Active Skill"
 msgstr ""
 
-#: src/routes/builder/equipment.tsx:183
+#: src/routes/builder/equipment.tsx:186
 msgid "Inventory"
 msgstr "库存"
 
@@ -485,7 +491,7 @@ msgid "Prefixes (3 max)"
 msgstr "前缀 (3 max)"
 
 #: src/components/equipment/EditGearModal.tsx:979
-#: src/components/equipment/LegendaryGearModule.tsx:402
+#: src/components/equipment/LegendaryGearModule.tsx:420
 #: src/components/equipment/VoraxGearModule.tsx:943
 #: src/routes/index.tsx:108
 #: src/routes/index.tsx:151
@@ -501,14 +507,14 @@ msgid "Blending (1 max)"
 msgstr "调香词缀 (1 max)"
 
 #: src/components/talents/PrismSection.tsx:66
-msgid "Prisms"
-msgstr "棱镜"
+#~ msgid "Prisms"
+#~ msgstr "棱镜"
 
 #: src/routes/index.tsx:173
 msgid "Copy"
 msgstr "复制"
 
-#: src/routes/builder/equipment.tsx:184
+#: src/routes/builder/equipment.tsx:187
 msgid "items"
 msgstr "物品"
 
@@ -521,21 +527,25 @@ msgstr "后缀 (3 max)"
 msgid "Sweet Dream Affix (1 max)"
 msgstr "美梦词缀 (1 max)"
 
+#: src/components/talents/PrismSection.tsx:66
+msgid "제노프리즘"
+msgstr ""
+
 #: src/components/equipment/VoraxGearModule.tsx:755
 #~ msgid "Select a vorax limb to configure"
 #~ msgstr ""
 
 #: src/components/talents/CoreTalentSelector.tsx:90
 #: src/components/talents/CoreTalentSelector.tsx:102
-msgid "Core Talents"
-msgstr "核心天赋"
+#~ msgid "Core Talents"
+#~ msgstr "核心天赋"
 
 #. placeholder {0}: save.name
 #: src/routes/index.tsx:135
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "您确定要删除“{0}”吗？"
 
-#: src/components/equipment/LegendaryGearModule.tsx:323
+#: src/components/equipment/LegendaryGearModule.tsx:341
 msgid "Select Legendary"
 msgstr "选择一个传奇物品"
 
