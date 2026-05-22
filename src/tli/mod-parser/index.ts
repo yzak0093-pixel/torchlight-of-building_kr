@@ -21,7 +21,22 @@ const multi = (parsers: ModParser[]): ModParser => ({
 const combinedParser = multi(allParsers);
 
 export const parseMod = (input: string): Mod[] | undefined => {
-  const translated = translateAffixToEn(input.trim());
+  const trimmed = input.trim();
+  const translated = translateAffixToEn(trimmed);
+
+  // 변환 실패 감지: 한글이 여전히 남아있으면 매핑 미스
+  if (translated === trimmed && /[가-힣]/.test(trimmed)) {
+    console.warn(`[매핑 누락] 한글 변환 실패: "${trimmed}"`);
+  } else if (translated !== trimmed) {
+    console.log(`[변환 성공] "${trimmed}" → "${translated}"`);
+  }
+
   const normalized = translated.trim().toLowerCase();
-  return combinedParser.parse(normalized);
+  const result = combinedParser.parse(normalized);
+
+  if (result === undefined) {
+    console.warn(`[파싱 실패] normalized: "${normalized}"`);
+  }
+
+  return result;
 };

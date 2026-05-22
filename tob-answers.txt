@@ -1,0 +1,26 @@
+🎯 [TOB 엔진 템플릿 정답지]
+
+[키워드: hasten] "{value:+dec%} attack speed, cast speed, and movement speed when having hasten",
+[키워드: hasten] cond: "has_hasten",
+[키워드: hasten] cond: "has_hasten",
+[키워드: hasten] cond: "has_hasten",
+[키워드: hasten] t("has hasten").output(() => ({ type: "HasHasten" })),
+[키워드: wilt] "reaps {duration:dec} s of damage over time when {(dealing damage over time|inflicting ignite|inflicting trauma|inflicting wilt)}. the effect has a {cooldown:dec} s recovery time against the same target",
+[키워드: ailment duration] t("{value:+dec%} ailment duration").output((c) => ({
+[키워드: wilt] t("{value:+dec%} wilt duration").output((c) => ({
+[키워드: wilt] type: "WiltDurationPct",
+[키워드: wilt] t("{value:+dec%} wilt chance").output((c) => ({
+[키워드: wilt] type: "WiltChancePct",
+[키워드: wilt] t("{value:+dec%} [additional] wilt damage").output((c) => ({
+[키워드: wilt] type: "WiltDmgPct",
+[키워드: true damage] "spell skills on hit have a {chancePct:dec%} chance to spawn a pulse, dealing true damage equal to {pctOfHitDmg:dec%} of hit damage. interval: {interval:dec}s",
+[키워드: wilt] t("adds {min:int} - {max:int} base wilt damage").output((c) => ({
+[키워드: wilt] type: "BaseWiltFlatDmg",
+[키워드: wilt] t("immune to wilt").output(() => ({ type: "ImmuneToWilt" })),
+[키워드: channeling] t("{value:+dec%} [additional] damage when channeling").output((c) => ({
+[키워드: channeling] cond: "channeling",
+[키워드: true damage] t("takes {value:int} true damage every {interval:dec}s").outputNone(),
+[키워드: hasten] t("gains hasten when minions land a critical strike").output(() => ({
+[키워드: hasten] type: "GeneratesHasten",
+[키워드: wilt] "{value:dec%} chance to inflict {stacks:int} additional stack(s) of wilt",
+[키워드: wilt] ).output((c) => ({ type: "InflictWiltPct", value: c.value })),
