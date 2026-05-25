@@ -99,6 +99,13 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
     return idx >= 0 ? idx : undefined;
   }, [editItem, sortedLegendaries]);
 
+  const [selectedEquipmentType, setSelectedEquipmentType] = useState<
+    string | undefined
+  >(
+    initialLegendaryIndex !== undefined
+      ? sortedLegendaries[initialLegendaryIndex].equipmentType
+      : undefined,
+  );
   const [selectedLegendaryIndex, setSelectedLegendaryIndex] = useState<
     number | undefined
   >(initialLegendaryIndex);
@@ -107,13 +114,56 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
     number | undefined
   >(undefined);
 
+  const getBroadCategory = (rawType: string) => {
+    if (!rawType) return "무기 / 보조 무기";
+
+    const t = String(i18n._(rawType)).toLowerCase();
+    const orig = String(rawType).toLowerCase();
+
+    const check = (words: string[]) =>
+      words.some((w) => t.includes(w) || orig.includes(w));
+
+    if (check(["투구", "helmet", "hood", "crown", "mask"])) return "투구";
+    if (check(["갑옷", "흉갑", "의복", "armor", "chest", "robe"]))
+      return "갑옷";
+    if (check(["목", "necklace", "amulet", "choker"])) return "목 장식";
+    if (check(["장갑", "gloves", "gauntlets", "mitts"])) return "장갑";
+    if (check(["벨트", "허리띠", "belt", "sash"])) return "벨트";
+    if (check(["신발", "장화", "boots", "shoes", "greaves"])) return "신발";
+    if (check(["반지", "ring", "band"])) return "반지";
+
+    // 위 조건에 안 걸리면 전부 무기/보조무기로 판정
+    return "무기 / 보조 무기";
+  };
+
+  const equipmentTypeOptions = useMemo(() => {
+    const categories = [
+      "투구",
+      "갑옷",
+      "목 장식",
+      "장갑",
+      "벨트",
+      "신발",
+      "반지",
+      "무기 / 보조 무기",
+    ];
+    return categories.map((cat) => ({ value: cat, label: cat }));
+  }, []);
+
   const legendaryOptions = useMemo(() => {
-    return sortedLegendaries.map((legendary, idx) => ({
-      value: idx,
-      label: i18n._(legendary.name),
-      sublabel: i18n._(legendary.equipmentType),
-    }));
-  }, [sortedLegendaries]);
+    return sortedLegendaries
+      .map((legendary, idx) => ({
+        value: idx,
+        label: i18n._(legendary.name),
+        sublabel: i18n._(legendary.equipmentType),
+        broadCategory: getBroadCategory(legendary.equipmentType),
+      }))
+      .filter(
+        (opt) =>
+          selectedEquipmentType === undefined ||
+          opt.broadCategory === selectedEquipmentType,
+      );
+  }, [sortedLegendaries, selectedEquipmentType]);
 
   const selectedLegendary =
     selectedLegendaryIndex !== undefined
@@ -338,14 +388,34 @@ export const LegendaryGearModule: React.FC<LegendaryGearModuleProps> = ({
           {/* Legendary Selector */}
           <div>
             <label className="mb-1 block text-sm font-medium text-zinc-50">
-              <Trans>Select Legendary</Trans>
+              장비 유형 (Type)
+            </label>
+            <SearchableSelect
+              value={selectedEquipmentType}
+              onChange={(val) => {
+                setSelectedEquipmentType(val);
+                handleLegendarySelect(undefined); // 부위를 바꾸면 전설 선택 초기화
+              }}
+              options={equipmentTypeOptions}
+              placeholder="장비 유형을 선택하세요..."
+            />
+          </div>
+
+          <div className="mt-3">
+            <label className="mb-1 block text-sm font-medium text-zinc-50">
+              전설 장비 선택 (Legendary)
             </label>
             <SearchableSelect
               value={selectedLegendaryIndex}
               onChange={handleLegendarySelect}
               options={legendaryOptions}
-              placeholder="Select a legendary..."
+              placeholder={
+                selectedEquipmentType
+                  ? "전설 장비를 선택하세요..."
+                  : "장비 유형을 먼저 선택하세요"
+              }
               renderOptionTooltip={renderLegendaryTooltip}
+              disabled={selectedEquipmentType === undefined}
             />
           </div>
 

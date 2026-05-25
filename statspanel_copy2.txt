@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import type { ImplementedActiveSkillName } from "@/src/data/skill/types";
 import type {
   CritChance,
@@ -18,10 +18,7 @@ import {
   STAT_CATEGORIES,
 } from "../../lib/calculations-utils";
 import { ModGroup } from "../../components/calculations/ModGroup";
-import {
-  useCalculationsSelectedSkill,
-  useLoadout,
-} from "../../stores/builderStore";
+import { useCalculationsSelectedSkill } from "../../stores/builderStore";
 import { useOffenseResults } from "./OffenseResultsContext";
 
 const formatRes = (res: Resistance): string => {
@@ -54,7 +51,6 @@ const StatLine = ({
     highlight === true
       ? "text-amber-400 font-bold"
       : (color ?? "text-zinc-200");
-
   return (
     <div className="flex justify-between text-sm">
       <span className="text-zinc-400">{label}:</span>
@@ -260,53 +256,6 @@ const SpellBurstDpsSection = ({
 };
 
 export const StatsPanel = (): React.ReactNode => {
-  const loadout = useLoadout();
-
-  const customStats = (() => {
-    let auraEffect = 0;
-    let reservation = 0;
-    let maxIgnite = 0;
-    let magicBurst = 0;
-    let hasHaste = false;
-
-    const processText = (rawText: string | undefined) => {
-      if (!rawText) return;
-      const text = rawText.toString();
-      if (text.includes("오라 효과")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) auraEffect += parseFloat(m[1]);
-      }
-      if (text.includes("점유 효율") || text.includes("봉인 보상")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) reservation += parseFloat(m[1]);
-      }
-      if (text.includes("점화 최대치")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) maxIgnite += parseFloat(m[1]);
-      }
-      if (text.includes("매직 버스트 상한")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) magicBurst += parseFloat(m[1]);
-      }
-      if (text.includes("신속")) {
-        hasHaste = true;
-      }
-    };
-
-    if (loadout?.equipment) {
-      Object.values(loadout.equipment).forEach((gear) => {
-        if (!gear) return;
-        gear.implicitAffixes?.forEach((a) => processText(a.text));
-        gear.affixes?.forEach((a) => processText(a.text));
-        gear.corruptionAffixes?.forEach((a) => processText(a.text));
-        gear.legendaryAffixes?.forEach((a) =>
-          processText(a.text || a.choiceDescriptor || ""),
-        );
-      });
-    }
-    return { auraEffect, reservation, maxIgnite, magicBurst, hasHaste };
-  })();
-
   const [showDetails, setShowDetails] = useState(false);
   const savedSkillName = useCalculationsSelectedSkill();
   const selectedSkill = savedSkillName as
@@ -317,10 +266,10 @@ export const StatsPanel = (): React.ReactNode => {
   const { skills, resourcePool, defenses } = offenseResults;
   const offenseSummary =
     selectedSkill !== undefined ? skills[selectedSkill] : undefined;
-  // 🚀 스킬 계산 실패와 무관하게 엔진 최상단의 옵션을 직결합니다.
-  const groupedMods = offenseResults.globalMods
-    ? groupModsByEffect(offenseResults.globalMods)
+  const groupedMods = offenseSummary
+    ? groupModsByEffect(offenseSummary.resolvedMods)
     : undefined;
+
   const hasDamageStats =
     offenseSummary?.attackDpsSummary !== undefined ||
     offenseSummary?.comboDpsSummary !== undefined ||
@@ -817,49 +766,29 @@ export const StatsPanel = (): React.ReactNode => {
                   );
                 })()}
 
-                {/* 🚀 글로벌 특수 스탯 다이렉트 렌더링 (엔진 무관) */}
-                <div className="col-span-2 mt-4 bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
-                  <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1 flex justify-between items-end">
-                    <span>✨ 오라 및 특수 스탯 요약</span>
-                    <span className="text-xs text-amber-200/50 font-normal">
-                      장비 다이렉트 연동
-                    </span>
-                  </h3>
-                  <div className="space-y-1.5 bg-zinc-900/50 p-3 rounded border border-zinc-700/30">
-                    <StatLine
-                      label="오라 효과 (Aura Effect)"
-                      value={`+${Number(customStats.auraEffect.toFixed(1))}%`}
-                      highlight={customStats.auraEffect > 0}
-                    />
-                    <StatLine
-                      label="마나/생명력 점유 효율 (Reservation Efficiency)"
-                      value={`+${Number(customStats.reservation.toFixed(1))}%`}
-                      highlight={customStats.reservation > 0}
-                    />
-                    <StatLine
-                      label="매직 버스트 상한 (Magic Burst Limit)"
-                      value={`+${customStats.magicBurst}`}
-                      highlight={customStats.magicBurst > 0}
-                    />
-                    <StatLine
-                      label="점화 최대치 (Max Ignite Limit)"
-                      value={`+${customStats.maxIgnite}`}
-                      highlight={customStats.maxIgnite > 0}
-                    />
-                    {customStats.hasHaste && (
-                      <StatLine
-                        label="신속 (Haste)"
-                        value="보유함 (Active)"
-                        highlight={true}
-                        color="text-amber-400"
-                      />
-                    )}
+                {/* 🚀 전체 적용 옵션 동적 렌더링 섹션 */}
+                {groupedMods && (
+                  <div className="col-span-2 mt-4 bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
+                    <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
+                      장비 및 패시브 전체 적용 옵션 (All Applied Mods)
+                    </h3>
+                    <div className="space-y-2 max-h-80 overflow-y-auto pr-2 custom-scrollbar">
+                      {STAT_CATEGORIES.map((category) => {
+                        const mods = groupedMods[category];
+                        if (!mods || mods.length === 0) return null;
+                        return (
+                          <ModGroup
+                            key={category}
+                            title={getStatCategoryLabel(category)}
+                            description={getStatCategoryDescription(category)}
+                            mods={mods}
+                            defaultExpanded={false}
+                          />
+                        );
+                      })}
+                    </div>
                   </div>
-                  <p className="text-xs text-zinc-500 mt-3 leading-relaxed">
-                    * 위 스탯은 계산 엔진의 스킬 호환성과 무관하게, 장착하신
-                    장비에서 다이렉트로 추출되어 무조건 표시됩니다.
-                  </p>
-                </div>
+                )}
               </div>
             </div>
           </div>

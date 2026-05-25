@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import type { ImplementedActiveSkillName } from "@/src/data/skill/types";
 import type {
   CritChance,
@@ -54,6 +54,53 @@ const StatLine = ({
     highlight === true
       ? "text-amber-400 font-bold"
       : (color ?? "text-zinc-200");
+
+  const loadout = useLoadout();
+
+  const customStats = (() => {
+    let auraEffect = 0;
+    let reservation = 0;
+    let maxIgnite = 0;
+    let magicBurst = 0;
+    let hasHaste = false;
+
+    const processText = (rawText: string | undefined) => {
+      if (!rawText) return;
+      const text = rawText.toString();
+      if (text.includes("오라 효과")) {
+        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
+        if (m) auraEffect += parseFloat(m[1]);
+      }
+      if (text.includes("점유 효율") || text.includes("봉인 보상")) {
+        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
+        if (m) reservation += parseFloat(m[1]);
+      }
+      if (text.includes("점화 최대치")) {
+        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
+        if (m) maxIgnite += parseFloat(m[1]);
+      }
+      if (text.includes("매직 버스트 상한")) {
+        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
+        if (m) magicBurst += parseFloat(m[1]);
+      }
+      if (text.includes("신속")) {
+        hasHaste = true;
+      }
+    };
+
+    if (loadout?.equipment) {
+      Object.values(loadout.equipment).forEach((gear) => {
+        if (!gear) return;
+        gear.implicitAffixes?.forEach((a) => processText(a.text));
+        gear.affixes?.forEach((a) => processText(a.text));
+        gear.corruptionAffixes?.forEach((a) => processText(a.text));
+        gear.legendaryAffixes?.forEach((a) =>
+          processText(a.text || a.choiceDescriptor || ""),
+        );
+      });
+    }
+    return { auraEffect, reservation, maxIgnite, magicBurst, hasHaste };
+  })();
 
   return (
     <div className="flex justify-between text-sm">
@@ -260,53 +307,6 @@ const SpellBurstDpsSection = ({
 };
 
 export const StatsPanel = (): React.ReactNode => {
-  const loadout = useLoadout();
-
-  const customStats = (() => {
-    let auraEffect = 0;
-    let reservation = 0;
-    let maxIgnite = 0;
-    let magicBurst = 0;
-    let hasHaste = false;
-
-    const processText = (rawText: string | undefined) => {
-      if (!rawText) return;
-      const text = rawText.toString();
-      if (text.includes("오라 효과")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) auraEffect += parseFloat(m[1]);
-      }
-      if (text.includes("점유 효율") || text.includes("봉인 보상")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) reservation += parseFloat(m[1]);
-      }
-      if (text.includes("점화 최대치")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) maxIgnite += parseFloat(m[1]);
-      }
-      if (text.includes("매직 버스트 상한")) {
-        const m = text.match(/([+-]?\d+(?:\.\d+)?)/);
-        if (m) magicBurst += parseFloat(m[1]);
-      }
-      if (text.includes("신속")) {
-        hasHaste = true;
-      }
-    };
-
-    if (loadout?.equipment) {
-      Object.values(loadout.equipment).forEach((gear) => {
-        if (!gear) return;
-        gear.implicitAffixes?.forEach((a) => processText(a.text));
-        gear.affixes?.forEach((a) => processText(a.text));
-        gear.corruptionAffixes?.forEach((a) => processText(a.text));
-        gear.legendaryAffixes?.forEach((a) =>
-          processText(a.text || a.choiceDescriptor || ""),
-        );
-      });
-    }
-    return { auraEffect, reservation, maxIgnite, magicBurst, hasHaste };
-  })();
-
   const [showDetails, setShowDetails] = useState(false);
   const savedSkillName = useCalculationsSelectedSkill();
   const selectedSkill = savedSkillName as

@@ -28,7 +28,7 @@ export const SkillSelector: React.FC<SkillSelectorProps> = ({
       .map((slot) => slot.skillName)
       .filter((name): name is ImplementedActiveSkillName => {
         const skill = ActiveSkills.find((s) => s.name === name);
-        return skill !== undefined && "levelValues" in skill;
+        return skill !== undefined;
       });
   }, [loadout.skillPage.activeSkills]);
 
@@ -53,9 +53,8 @@ export const SkillSelector: React.FC<SkillSelectorProps> = ({
       />
       {availableSkills.length === 0 && (
         <p className="mt-2 text-sm text-zinc-500">
-          No implemented active skills enabled. Enable an active skill in the
-          Skills section (currently supported: Berserking Blade, Frost Spike,
-          Spectral Slash).
+          계산할 액티브 스킬이 없습니다. [스킬] 탭에서 액티브 스킬을 먼저 장착해
+          주세요.
         </p>
       )}
     </div>
