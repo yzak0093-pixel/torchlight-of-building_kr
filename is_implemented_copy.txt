@@ -1,4 +1,4 @@
-import type {
+﻿import type {
   ActiveSkillName,
   BaseSkill,
   PassiveSkillName,
@@ -11,7 +11,6 @@ import { passiveSkillModFactories } from "./passive-factories";
  * Skills without implementations don't contribute to calculations.
  */
 export const isSkillImplemented = (skill: BaseSkill): boolean => {
-  return true; // 🚀 모든 스킬 계산기 프리패스 강제 허용
   switch (skill.type) {
     case "Active":
       return (

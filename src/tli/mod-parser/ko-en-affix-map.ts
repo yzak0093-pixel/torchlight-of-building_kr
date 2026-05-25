@@ -3174,28 +3174,63 @@ export const translateAffixToEn = (text: string): string => {
     return t;
   }
 
-  // 2. 고정 텍스트 완벽 매칭 (DB 기준)
-  if (KO_EN_AFFIX_MAP[t]) return KO_EN_AFFIX_MAP[t];
+  let m;
+  // 🚀 2. TOB 엔진 전용 최우선 강제 치환 (대현자 벨트 에러 및 마침표 찌꺼기 완벽 호환)
+  if ((m = t.match(/신속을 보유한다\.?/))) return "has hasten";
+  if ((m = t.match(/흉갑에서 획득한 방어\s*\+?([\d\.\-–~]+)%\s*\.?/)))
+    return `+${m[1]}% Armor from Chest Armor`;
+  if ((m = t.match(/악화 대미지\s*\+?([\d\.\-–~]+)%/)))
+    return `+${m[1]}% wilt damage`;
+  if ((m = t.match(/악화 확률\s*\+?([\d\.\-–~]+)%/)))
+    return `+${m[1]}% wilt chance`;
+  if ((m = t.match(/악화 지속 시간\s*\+?([\d\.\-–~]+)%/)))
+    return `+${m[1]}% wilt duration`;
+  if ((m = t.match(/MP 봉인 보상\s*\+?([\d\.\-–~]+)%/)))
+    return `+${m[1]}% Sealed Mana Compensation`;
+  if ((m = t.match(/점화 최대치\s*\+?([\d\.\-–~]+)/)))
+    return `+${m[1]} Maximum Ignites`;
+  if ((m = t.match(/점화 대미지 추가\s*\+?([\d\.\-–~]+)%/)))
+    return `+${m[1]}% Ignite Damage`;
+  if (
+    (m = t.match(
+      /([\d\.\-–~]+)초당\s*([\d\.\-–~]+)포인트의 트루 대미지를 받는다/,
+    ))
+  )
+    return `takes ${m[2]} true damage every ${m[1]}s`;
 
-  // 3. 수치형 패턴 안전 매칭 (DB 기준)
+  // 3. 고정 텍스트 완벽 매칭 (DB 기준)
+  if (KO_EN_AFFIX_MAP[t]) {
+    let res = KO_EN_AFFIX_MAP[t];
+    if (
+      res.includes("Wilt") ||
+      res.includes("Ailment") ||
+      res.includes("Hasten")
+    )
+      return res.toLowerCase();
+    return res;
+  }
+
+  // 4. 수치형 패턴 안전 매칭 (DB 기준)
   const numbers: string[] = [];
-  const extract = (n: string) => {
-    numbers.push(n);
-    return "{N}";
-  };
-  // normalizeToPattern과 동일한 3단계 순서로 치환
   const koPat = t
-    .replace(/[+-]?\(\d+(\.\d+)?(–\d+(\.\d+)?)?\)/g, extract)
-    .replace(/[+-]?\d+(\.\d+)?–\d+(\.\d+)?/g, extract)
-    .replace(/[+-]?\d+(\.\d+)?/g, extract)
+    .replace(/[+-]?\d+(\.\d+)?(–\d+(\.\d+)?)?/g, (n) => {
+      numbers.push(n);
+      return "{N}";
+    })
     .replace(/\s+/g, " ")
     .trim();
 
   const enPat = KO_EN_PATTERN_MAP[koPat];
   if (enPat) {
     let i = 0;
-    // 추출한 실제 숫자를 DB 기반의 영어 패턴 위치에 그대로 삽입
-    return enPat.replace(/\{N\}/g, () => numbers[i++] ?? "");
+    let res = enPat.replace(/\{N\}/g, () => numbers[i++] ?? "");
+    if (
+      res.includes("Wilt") ||
+      res.includes("Ailment") ||
+      res.includes("Hasten")
+    )
+      return res.toLowerCase();
+    return res;
   }
 
   // DB에 매칭되지 않은 데이터는 원본 반환 (계산기 충돌 방지)

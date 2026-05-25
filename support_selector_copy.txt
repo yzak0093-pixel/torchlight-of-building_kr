@@ -207,49 +207,26 @@ export const SupportSkillSelector: React.FC<SupportSkillSelectorProps> = ({
         )
         .map((name) => ({ value: name, label: i18n._(name) }));
 
-    // 🚀 3차 패치: 슬롯 제한(1=촉발, 3=부귀, 5=숭고) 및 메인 스킬 전용 매칭 로직 적용
-    if (slotIndex === 1) {
-      // 1번 슬롯: 촉발 매개체 전용
-      let validAm = available.activationMedium;
-      if (validAm.length === 0)
-        validAm = ActivationMediumSkills.map((s) => s.name);
-      const filteredAm = filterAndMap(validAm);
-      if (filteredAm.length > 0)
-        grps.push({ label: "Activation Medium", options: filteredAm });
+    // Add groups only if they have options
+    if (available.activationMedium.length > 0) {
+      const filtered = filterAndMap(available.activationMedium);
+      if (filtered.length > 0) {
+        grps.push({ label: "Activation Medium", options: filtered });
+      }
     }
 
-    if (slotIndex === 3) {
-      // 3번 슬롯: 부귀(Noble) 전용 & 메인 스킬 이름 매칭
-      let validNobles = available.noble;
-      if (validNobles.length === 0 && mainSkill) {
-        const mainName = mainSkill.name.replace(/\s+/g, "");
-        validNobles = NobleSupportSkills.filter(
-          (s) =>
-            s.name.replace(/\s+/g, "") === mainName || // 이름이 완전히 같거나
-            s.name.includes(mainSkill.name) || // 포함되어 있는 경우만 필터링
-            mainSkill.name.includes(s.name),
-        ).map((s) => s.name);
+    if (available.magnificent.length > 0) {
+      const filtered = filterAndMap(available.magnificent);
+      if (filtered.length > 0) {
+        grps.push({ label: "Magnificent", options: filtered });
       }
-      const filteredNoble = filterAndMap(validNobles);
-      if (filteredNoble.length > 0)
-        grps.push({ label: "Noble", options: filteredNoble });
     }
 
-    if (slotIndex === 5) {
-      // 5번 슬롯: 숭고(Magnificent) 전용 & 메인 스킬 이름 매칭
-      let validMags = available.magnificent;
-      if (validMags.length === 0 && mainSkill) {
-        const mainName = mainSkill.name.replace(/\s+/g, "");
-        validMags = MagnificentSupportSkills.filter(
-          (s) =>
-            s.name.replace(/\s+/g, "") === mainName ||
-            s.name.includes(mainSkill.name) ||
-            mainSkill.name.includes(s.name),
-        ).map((s) => s.name);
+    if (available.noble.length > 0) {
+      const filtered = filterAndMap(available.noble);
+      if (filtered.length > 0) {
+        grps.push({ label: "Noble", options: filtered });
       }
-      const filteredMag = filterAndMap(validMags);
-      if (filteredMag.length > 0)
-        grps.push({ label: "Magnificent", options: filteredMag });
     }
 
     if (available.compatible.length > 0) {

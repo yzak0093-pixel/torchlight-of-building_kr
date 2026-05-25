@@ -608,109 +608,153 @@ export const StatsPanel = (): React.ReactNode => {
 
             <div className="p-5 overflow-y-auto space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                {/* 1. 상태 및 버프 */}
-                <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
-                  <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
-                    상태 & 버프 (States)
-                  </h3>
-                  <div className="space-y-1.5">
-                    <StatLine
-                      label="전의 (Fervor)"
-                      value={
-                        resourcePool.hasFervor
-                          ? `적용 중 (${resourcePool.fervorPts} pts)`
-                          : "미적용"
-                      }
-                      highlight={resourcePool.hasFervor}
-                    />
-                    {resourcePool.hasHasten !== undefined && (
-                      <StatLine
-                        label="신속 (Hasten)"
-                        value={resourcePool.hasHasten ? "적용 중" : "미적용"}
-                        highlight={resourcePool.hasHasten}
-                      />
-                    )}
-                  </div>
-                </div>
+                {(() => {
+                  const hasStates =
+                    resourcePool.hasFervor || resourcePool.hasHasten;
+                  const focusB = resourcePool.focusBlessings ?? 0;
+                  const agilityB = resourcePool.agilityBlessings ?? 0;
+                  const tenacityB = resourcePool.tenacityBlessings ?? 0;
+                  const hasBlessings =
+                    focusB > 0 || agilityB > 0 || tenacityB > 0;
+                  const chanStacks =
+                    resourcePool.additionalMaxChanneledStacks ?? 0;
+                  const mpSeal =
+                    resourcePool.sealedResources?.sealedManaPct ?? 0;
+                  const hpSeal =
+                    resourcePool.sealedResources?.sealedLifePct ?? 0;
+                  const hasSpecial = chanStacks > 0 || mpSeal > 0 || hpSeal > 0;
+                  const cMax = defenses.coldRes?.max ?? 60;
+                  const lMax = defenses.lightningRes?.max ?? 60;
+                  const fMax = defenses.fireRes?.max ?? 60;
+                  const eMax = defenses.erosionRes?.max ?? 60;
+                  const hasMaxRes = true;
+                  const hasAnyAdvancedStats =
+                    hasStates || hasBlessings || hasSpecial || hasMaxRes;
 
-                {/* 2. 축복 중첩 현황 */}
-                <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
-                  <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
-                    축복 스택 (Blessings)
-                  </h3>
-                  <div className="space-y-1.5">
-                    <StatLine
-                      label="집요한 축복"
-                      value={`${resourcePool.focusBlessings ?? 0} / ${resourcePool.maxFocusBlessings ?? 0}`}
-                      highlight={(resourcePool.focusBlessings ?? 0) > 0}
-                    />
-                    <StatLine
-                      label="황홀한 축복"
-                      value={`${resourcePool.agilityBlessings ?? 0} / ${resourcePool.maxAgilityBlessings ?? 0}`}
-                      highlight={(resourcePool.agilityBlessings ?? 0) > 0}
-                    />
-                    <StatLine
-                      label="강건한 축복"
-                      value={`${resourcePool.tenacityBlessings ?? 0} / ${resourcePool.maxTenacityBlessings ?? 0}`}
-                      highlight={(resourcePool.tenacityBlessings ?? 0) > 0}
-                    />
-                  </div>
-                </div>
+                  if (!hasAnyAdvancedStats) {
+                    return (
+                      <div className="col-span-2 text-center text-zinc-400 py-10 bg-zinc-800/30 rounded-lg border border-zinc-700/50 border-dashed">
+                        활성화된 고급 스탯이나 버프가 없습니다.
+                      </div>
+                    );
+                  }
 
-                {/* 3. 특수 자원 & 채널링 */}
-                <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
-                  <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
-                    특수 & 채널링 (Special)
-                  </h3>
-                  <div className="space-y-1.5">
-                    <StatLine
-                      label="채널링 최대 중첩 증가"
-                      value={`+${resourcePool.additionalMaxChanneledStacks ?? 0}`}
-                      highlight={
-                        (resourcePool.additionalMaxChanneledStacks ?? 0) > 0
-                      }
-                    />
-                    <StatLine
-                      label="MP 봉인 보상"
-                      value={`${resourcePool.sealedResources?.sealedManaPct ?? 0}%`}
-                      highlight={
-                        (resourcePool.sealedResources?.sealedManaPct ?? 0) > 0
-                      }
-                    />
-                    <StatLine
-                      label="HP 봉인 보상"
-                      value={`${resourcePool.sealedResources?.sealedLifePct ?? 0}%`}
-                      highlight={
-                        (resourcePool.sealedResources?.sealedLifePct ?? 0) > 0
-                      }
-                    />
-                  </div>
-                </div>
+                  return (
+                    <>
+                      {hasStates && (
+                        <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50 h-fit">
+                          <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
+                            상태 & 버프 (States)
+                          </h3>
+                          <div className="space-y-1.5">
+                            {resourcePool.hasFervor && (
+                              <StatLine
+                                label="전의 (Fervor)"
+                                value={`적용 중 (${resourcePool.fervorPts} pts)`}
+                                highlight
+                              />
+                            )}
+                            {resourcePool.hasHasten && (
+                              <StatLine
+                                label="신속 (Hasten)"
+                                value="적용 중"
+                                highlight
+                              />
+                            )}
+                          </div>
+                        </div>
+                      )}
 
-                {/* 4. 최대 저항력 한도 */}
-                <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50">
-                  <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
-                    최대 저항 한도 (Max Res)
-                  </h3>
-                  <div className="space-y-1.5">
-                    <StatLine
-                      label="냉기 저항 한도"
-                      value={`${defenses.coldRes?.max ?? 60}%`}
-                    />
-                    <StatLine
-                      label="번개 저항 한도"
-                      value={`${defenses.lightningRes?.max ?? 60}%`}
-                    />
-                    <StatLine
-                      label="화염 저항 한도"
-                      value={`${defenses.fireRes?.max ?? 60}%`}
-                    />
-                    <StatLine
-                      label="부식 저항 한도"
-                      value={`${defenses.erosionRes?.max ?? 60}%`}
-                    />
-                  </div>
-                </div>
+                      {hasBlessings && (
+                        <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50 h-fit">
+                          <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
+                            축복 스택 (Blessings)
+                          </h3>
+                          <div className="space-y-1.5">
+                            {focusB > 0 && (
+                              <StatLine
+                                label="집요한 축복"
+                                value={`${focusB} / ${resourcePool.maxFocusBlessings ?? 0}`}
+                                highlight
+                              />
+                            )}
+                            {agilityB > 0 && (
+                              <StatLine
+                                label="황홀한 축복"
+                                value={`${agilityB} / ${resourcePool.maxAgilityBlessings ?? 0}`}
+                                highlight
+                              />
+                            )}
+                            {tenacityB > 0 && (
+                              <StatLine
+                                label="강건한 축복"
+                                value={`${tenacityB} / ${resourcePool.maxTenacityBlessings ?? 0}`}
+                                highlight
+                              />
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {hasSpecial && (
+                        <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50 h-fit">
+                          <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
+                            특수 & 채널링 (Special)
+                          </h3>
+                          <div className="space-y-1.5">
+                            {chanStacks > 0 && (
+                              <StatLine
+                                label="채널링 최대 중첩 증가"
+                                value={`+${chanStacks}`}
+                                highlight
+                              />
+                            )}
+                            {mpSeal > 0 && (
+                              <StatLine
+                                label="MP 봉인 보상"
+                                value={`${mpSeal}%`}
+                                highlight
+                              />
+                            )}
+                            {hpSeal > 0 && (
+                              <StatLine
+                                label="HP 봉인 보상"
+                                value={`${hpSeal}%`}
+                                highlight
+                              />
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {hasMaxRes && (
+                        <div className="bg-zinc-800/50 p-4 rounded-lg border border-zinc-700/50 h-fit">
+                          <h3 className="text-amber-500 font-bold mb-3 border-b border-zinc-700 pb-1">
+                            최대 저항 한도 (Max Res)
+                          </h3>
+                          <div className="space-y-1.5">
+                            <StatLine
+                              label="냉기 저항 한도"
+                              value={`${cMax}%`}
+                            />
+                            <StatLine
+                              label="번개 저항 한도"
+                              value={`${lMax}%`}
+                            />
+                            <StatLine
+                              label="화염 저항 한도"
+                              value={`${fMax}%`}
+                            />
+                            <StatLine
+                              label="부식 저항 한도"
+                              value={`${eMax}%`}
+                            />
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  );
+                })()}
               </div>
             </div>
           </div>
