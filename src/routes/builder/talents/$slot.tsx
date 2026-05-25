@@ -294,6 +294,7 @@ function TalentsSlotPage(): React.ReactNode {
 
       const result = canPlaceInverseImage(
         x,
+        y, // 🚀 새로 추가된 y 인자 전달
         treeSlot as "tree2" | "tree3" | "tree4",
         currentTalentTree.nodes,
         placedPrism,

@@ -512,6 +512,7 @@ export const canDeallocateReflectedNode = (
 // Check if an inverse image can be placed at a position
 export const canPlaceInverseImage = (
   x: number,
+  y: number, // 🚀 Y 좌표 검증 추가
   treeSlot: string,
   nodes: TalentNode[],
   placedPrism?: PlacedPrism,
@@ -526,11 +527,11 @@ export const canPlaceInverseImage = (
     };
   }
 
-  // Not in the 3 center-most columns (columns 2, 3, 4)
-  if (x >= 2 && x <= 4) {
+  // 🚫 데드존 검증: 6, 9, 12pts 중앙 3줄 (x: 2~4, y: 1~3)
+  if (x >= 2 && x <= 4 && y >= 1 && y <= 3) {
     return {
       canPlace: false,
-      reason: "Inverse images cannot be placed in the center columns (2, 3, 4)",
+      reason: "Inverse images cannot be placed in the center dead zone.",
     };
   }
 

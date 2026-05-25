@@ -1,4 +1,4 @@
-import {
+﻿import {
   getSourceAreaPositions,
   getTargetAreaPositions,
   isInSourceArea as isInSourceAreaUtil,
@@ -325,61 +325,8 @@ export const TalentGrid: React.FC<TalentGridProps> = ({
             [0, 1, 2, 3, 4, 5, 6].map((x) => {
               const node = nodeMap.get(`${x},${y}`);
 
-              // 🚫 데드존 정의: 6, 9, 12pts 중앙 3줄 (y: 1~3)
-              const isInverseImageDeadZone =
-                x >= 2 && x <= 4 && y >= 1 && y <= 3;
-              const nodeHasInverseImageRaw = hasInverseImageAtPosition(
-                placedInverseImage,
-                treeSlot,
-                x,
-                y,
-              );
-
               // If no node exists at this position, show empty space
               if (!node) {
-                if (nodeHasInverseImageRaw && placedInverseImage) {
-                  return (
-                    <TalentNodeDisplay
-                      key={`${x}-${y}`}
-                      node={
-                        {
-                          maxPoints: 0,
-                          points: 0,
-                          x,
-                          y,
-                          affix: { affixLines: [] },
-                          isReflected: false,
-                        } as any
-                      }
-                      canAllocate={false}
-                      canDeallocate={false}
-                      onAllocate={() => {}}
-                      onDeallocate={() => {}}
-                      hasInverseImage={true}
-                      inverseImage={placedInverseImage.inverseImage}
-                      onRemoveInverseImage={onRemoveInverseImage}
-                      canRemoveInverseImage={
-                        canRemoveInverseImage(nodes) && !hasReflectedAllocations
-                      }
-                    />
-                  );
-                }
-
-                if (!!selectedInverseImage && !isInverseImageDeadZone) {
-                  return (
-                    <div
-                      key={`${x}-${y}`}
-                      className="relative w-20 h-20 rounded-lg border-2 transition-all border-cyan-500 bg-cyan-500/20 cursor-pointer hover:bg-cyan-500/30"
-                      onClick={() => onPlaceInverseImage?.(x, y)}
-                    >
-                      <div className="absolute -top-2 -right-2">
-                        <div className="w-5 h-5 rounded-full bg-cyan-500 text-white text-xs font-bold flex items-center justify-center animate-pulse">
-                          +
-                        </div>
-                      </div>
-                    </div>
-                  );
-                }
                 return <div key={`${x}-${y}`} className="w-20 h-20" />;
               }
 
@@ -477,11 +424,9 @@ export const TalentGrid: React.FC<TalentGridProps> = ({
                       ? placedInverseImage?.inverseImage
                       : undefined
                   }
-                  isSelectingInverseImage={
-                    !!selectedInverseImage && !isInverseImageDeadZone
-                  }
+                  isSelectingInverseImage={!!selectedInverseImage}
                   onPlaceInverseImage={
-                    onPlaceInverseImage && !isInverseImageDeadZone
+                    onPlaceInverseImage
                       ? () => onPlaceInverseImage(x, y)
                       : undefined
                   }

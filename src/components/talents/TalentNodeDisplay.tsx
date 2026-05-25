@@ -70,11 +70,7 @@ export const TalentNodeDisplay: React.FC<TalentNodeDisplayProps> = ({
   const canPlacePrism =
     isSelectingPrism && allocated === 0 && !hasPrism && !hasInverseImage;
   const canPlaceInverseImage =
-    isSelectingInverseImage &&
-    allocated === 0 &&
-    !hasInverseImage &&
-    !hasPrism &&
-    node.x !== 3; // Not in center column
+    isSelectingInverseImage && allocated === 0 && !hasInverseImage && !hasPrism; // Not in center column
 
   const talentTypeName =
     node.nodeType === "micro"
